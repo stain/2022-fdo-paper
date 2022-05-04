@@ -1,0 +1,113 @@
+{
+  "pandoc": {
+    "title": "Evaluating FAIR Digital Object as a distributed object system",
+    "keywords": [
+      "FDO",
+      "distributed",
+      "digital object"
+    ],
+    "lang": "en-GB",
+    "date-meta": "2022-05-04",
+    "author-meta": [
+      "Stian Soiland-Reyes",
+      "Carole Goble",
+      "Paul Groth"
+    ],
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Evaluating FAIR Digital Object as a distributed object system\" />\n<meta name=\"citation_title\" content=\"Evaluating FAIR Digital Object as a distributed object system\" />\n<meta property=\"og:title\" content=\"Evaluating FAIR Digital Object as a distributed object system\" />\n<meta property=\"twitter:title\" content=\"Evaluating FAIR Digital Object as a distributed object system\" />\n<meta name=\"dc.date\" content=\"2022-05-04\" />\n<meta name=\"citation_publication_date\" content=\"2022-05-04\" />\n<meta name=\"dc.language\" content=\"en-GB\" />\n<meta name=\"citation_language\" content=\"en-GB\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Stian Soiland-Reyes\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, The University of Manchester, UK\" />\n<meta name=\"citation_author_institution\" content=\"Informatics Institute, Faculty of Science, University of Amsterdam, NL\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9842-9718\" />\n<meta name=\"twitter:creator\" content=\"@soilandreyes\" />\n<meta name=\"citation_author\" content=\"Carole Goble\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, The University of Manchester, UK\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1219-2137\" />\n<meta name=\"twitter:creator\" content=\"@CaroleAnneGoble\" />\n<meta name=\"citation_author\" content=\"Paul Groth\" />\n<meta name=\"citation_author_institution\" content=\"Informatics Institute, Faculty of Science, University of Amsterdam, NL\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0183-6910\" />\n<meta name=\"twitter:creator\" content=\"@pgroth\" />\n<link rel=\"canonical\" href=\"https://stain.github.io/2022-fdo-paper/\" />\n<meta property=\"og:url\" content=\"https://stain.github.io/2022-fdo-paper/\" />\n<meta property=\"twitter:url\" content=\"https://stain.github.io/2022-fdo-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://stain.github.io/2022-fdo-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://stain.github.io/2022-fdo-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://stain.github.io/2022-fdo-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://stain.github.io/2022-fdo-paper/v/80c6399f51995269f287cfb1dfdc23762d577569/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://stain.github.io/2022-fdo-paper/v/80c6399f51995269f287cfb1dfdc23762d577569/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://stain.github.io/2022-fdo-paper/v/80c6399f51995269f287cfb1dfdc23762d577569/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "bibliography": [
+      "content/manual-references.json"
+    ],
+    "manubot-output-bibliography": "output/references.json",
+    "manubot-output-citekeys": "output/citations.tsv",
+    "manubot-requests-cache-path": "ci/cache/requests-cache",
+    "manubot-clear-requests-cache": false
+  },
+  "manubot": {
+    "date": "May 4, 2022",
+    "randomize_author_order": false,
+    "authors": [
+      {
+        "github": "stain",
+        "name": "Stian Soiland-Reyes",
+        "initials": "SSR",
+        "orcid": "0000-0001-9842-9718",
+        "twitter": "soilandreyes",
+        "email": "soiland-reyes@manchester.ac.uk",
+        "affiliations": [
+          "Department of Computer Science, The University of Manchester, UK",
+          "Informatics Institute, Faculty of Science, University of Amsterdam, NL"
+        ],
+        "funders": [
+          "[BioExcel-2](https://bioexcel.eu/) (European Commission [H2020-INFRAEDI-2018-1 823830](https://cordis.europa.eu/project/id/823830))",
+          "[BY-COVID](https://by-covid.eu/) (European Commission [HORIZON-INFRA-2021-EMERGENCY-01 101046203](https://cordis.europa.eu/project/id/101046203))"
+        ],
+        "affiliation_numbers": [
+          1,
+          2
+        ]
+      },
+      {
+        "github": "carolegoble",
+        "name": "Carole Goble",
+        "initials": "CG",
+        "twitter": "CaroleAnneGoble",
+        "orcid": "0000-0003-1219-2137",
+        "email": "carole.goble@manchester.ac.uk",
+        "affiliations": [
+          "Department of Computer Science, The University of Manchester, UK"
+        ],
+        "funders": [
+          "[BioExcel-2](https://bioexcel.eu/) (European Commission [H2020-INFRAEDI-2018-1 823830](https://cordis.europa.eu/project/id/823830))",
+          "[EOSC-Life](https://www.eosc-life.eu/) (European Commission [H2020-INFRAEOSC-2018-2 824087](https://cordis.europa.eu/project/id/824087))",
+          "[BY-COVID](https://by-covid.eu/) (European Commission [HORIZON-INFRA-2021-EMERGENCY-01 101046203](https://cordis.europa.eu/project/id/101046203))"
+        ],
+        "affiliation_numbers": [
+          1
+        ]
+      },
+      {
+        "github": "pgroth",
+        "name": "Paul Groth",
+        "initials": "PG",
+        "orcid": "0000-0003-0183-6910",
+        "twitter": "pgroth",
+        "email": "p.groth@uva.nl",
+        "affiliations": [
+          "Informatics Institute, Faculty of Science, University of Amsterdam, NL"
+        ],
+        "affiliation_numbers": [
+          2
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "affiliation": "Department of Computer Science, The University of Manchester, UK",
+        "affiliation_number": 1
+      },
+      {
+        "affiliation": "Informatics Institute, Faculty of Science, University of Amsterdam, NL",
+        "affiliation_number": 2
+      }
+    ],
+    "ci_source": {
+      "provider": "github",
+      "repo_slug": "stain/2022-fdo-paper",
+      "repo_owner": "stain",
+      "repo_name": "2022-fdo-paper",
+      "commit": "80c6399f51995269f287cfb1dfdc23762d577569",
+      "triggering_commit": "80c6399f51995269f287cfb1dfdc23762d577569",
+      "build_url": "https://github.com/stain/2022-fdo-paper/commit/80c6399f51995269f287cfb1dfdc23762d577569/checks",
+      "job_url": "https://github.com/stain/2022-fdo-paper/actions/runs/2268956992"
+    },
+    "html_url": "https://stain.github.io/2022-fdo-paper/",
+    "pdf_url": "https://stain.github.io/2022-fdo-paper/manuscript.pdf",
+    "html_url_versioned": "https://stain.github.io/2022-fdo-paper/v/80c6399f51995269f287cfb1dfdc23762d577569/",
+    "pdf_url_versioned": "https://stain.github.io/2022-fdo-paper/v/80c6399f51995269f287cfb1dfdc23762d577569/manuscript.pdf",
+    "manubot_version": "0.5.2",
+    "rootstock_commit": null,
+    "manuscript_stats": {
+      "word_count": 2563
+    }
+  }
+}
