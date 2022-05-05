@@ -73,9 +73,9 @@
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/d34820e084e902ed5c19062af0097a567d3a4198/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/d34820e084e902ed5c19062af0097a567d3a4198/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/d34820e084e902ed5c19062af0097a567d3a4198/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/3e9ffc1adf45b553a9499ae5ee18c9e1a383383a/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/3e9ffc1adf45b553a9499ae5ee18c9e1a383383a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/3e9ffc1adf45b553a9499ae5ee18c9e1a383383a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,9 +92,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://stain.github.io/2022-fdo-paper/v/d34820e084e902ed5c19062af0097a567d3a4198/">permalink</a>)
+(<a href="https://stain.github.io/2022-fdo-paper/v/3e9ffc1adf45b553a9499ae5ee18c9e1a383383a/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/stain/2022-fdo-paper/tree/d34820e084e902ed5c19062af0097a567d3a4198">stain/2022-fdo-paper@d34820e</a>
+from <a href="https://github.com/stain/2022-fdo-paper/tree/3e9ffc1adf45b553a9499ae5ee18c9e1a383383a">stain/2022-fdo-paper@3e9ffc1</a>
 on May 5, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -180,10 +180,10 @@ TODO: Remove quotes from cited articles
 <p><strong>Operation interfaces</strong>: defining operations that can be invoked on instances, providing these interfaces. Invoking an operation causes a request message to be sent by the invoker to the invoked instance. Invoking an operation may further result in a reply sent from the invoked instance to the invoking instance.</p>
 <p><strong>Stream interfaces</strong>: defining operations that can be invoked on instances, providing these interfaces. The result of invoking a stream operation is the continuous conveyance of information from the invoked instance to the invoking instance.</p>
 <h3 id="comparing-fdo-and-web-as-middleware-infrastructures">Comparing FDO and Web as middleware infrastructures</h3>
-<p>DOIP <span class="citation" data-cites="doi:0.DOIP/DOIPV2.0">[<a href="#ref-doi:0.DOIP/DOIPV2.0" role="doc-biblioref"><strong>doi:0.DOIP/DOIPV2.0?</strong></a>]</span></p>
-<div id="tbl:bowling-scores" class="tablenos">
-<table id="tbl:bowling-scores">
-<caption><span>Table 1:</span> Comparing FAIR Digital Object and Web technologies as middleware infrastructures <span class="citation" data-cites="hRzcHhPD">[<a href="#ref-hRzcHhPD" role="doc-biblioref">2</a>]</span>
+<p>DOIP <span class="citation" data-cites="vQKvITcJ">[<a href="#ref-vQKvITcJ" role="doc-biblioref">3</a>]</span></p>
+<div id="tbl:fdo-web-middleware" class="tablenos">
+<table id="tbl:fdo-web-middleware">
+<caption><span>Table 1:</span> Comparing FAIR Digital Object (with the DOIP 2.0 protocol <span class="citation" data-cites="vQKvITcJ">[<a href="#ref-vQKvITcJ" role="doc-biblioref">3</a>]</span>) and Web technologies (using Linked Data) as middleware infrastructures <span class="citation" data-cites="hRzcHhPD">[<a href="#ref-hRzcHhPD" role="doc-biblioref">2</a>]</span>
 </caption>
 <colgroup>
 <col style="width: 16%" />
@@ -193,8 +193,8 @@ TODO: Remove quotes from cited articles
 <thead>
 <tr class="header">
 <th style="text-align: left;"><em>Quality</em></th>
-<th style="text-align: center;">FDO / DOIP</th>
-<th style="text-align: center;">Web / Linked Data</th>
+<th style="text-align: center;">FDO w/ DOIP</th>
+<th style="text-align: center;">Web w/ Linked Data</th>
 </tr>
 </thead>
 <tbody>
@@ -220,28 +220,28 @@ TODO: Remove quotes from cited articles
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Access transparency</strong></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">FDOs always accessed through PID indirection, but this means difficult to make private test setup.</td>
+<td style="text-align: center;">Global HTTP protocol frequently used locally and behind firewalls, but at risk of non-global URIs (e.g. <code>http://localhost/object/1</code>) and SSL issues (e.g. self-signed certificates, local CAs)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Location transparency</strong></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">FDOs always accessed through PIDs. Multiple locations possible in Handle system, can expose geo-info.</td>
+<td style="text-align: center;">PIDs and URL redirects. DNS aliases and IP routing can hide location. Geo-localized servers common for large cloud deployments.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Concurrency transparency</strong></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">No explicit concurrency measures. FDO kernel metadata can include checksum and date.</td>
+<td style="text-align: center;">Operations are classified as stateless and indempotent. Cache control, <code>ETag</code> (~ checksum) and date in HTTP headers. Limited transaction capabilities (e.g. <code>If-Not-Modified</code>) on same resource.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Failure transparency</strong></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">DOIP status codes, e.g. <code>0.DOIP/Status.104</code>, additional codes can be added as custom attributes</td>
+<td style="text-align: center;">HTTP <a href="https://datatracker.ietf.org/doc/html/rfc7231#section-6.5">status codes</a> e.g. <code>404 Not Found</code>, structured error documents in Open API (??)</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Migration transparency</strong></td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">HTTP <code>300</code> status can provide temporary or permanent redirections.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Persistence transparency</strong></td>
@@ -260,28 +260,28 @@ TODO: Remove quotes from cited articles
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Encapsulation</strong></td>
-<td style="text-align: center;">FDO principles independent of protocols. Indirection by PID, but unclear how to know which protocol to use for which FDO. Some FDO Types may be protocol-bound (e.g. custom operations)</td>
-<td style="text-align: center;">HTTP 1 semantics apply also in HTTP 2. <code>http</code> vs <code>https</code> exposes encryption detail. Need URI Design <span class="citation" data-cites="iME5l1kk">[<a href="#ref-iME5l1kk" role="doc-biblioref">3</a>]</span> to avoid application dependence, e.g. use of PURL services.</td>
+<td style="text-align: center;">FDO principles are protocol independent. Indirection by PID, unclear which protocol to use for which FDO (e.g. CODRA supports <a href="https://www.cordra.org/documentation/api/doip.html">native DOIP</a>, <a href="https://www.cordra.org/documentation/api/doip-api-for-http-clients.html">DOIP over HTTP</a> and <a href="https://www.cordra.org/documentation/api/rest-api.html">CODRA REST API</a>)</td>
+<td style="text-align: center;">HTTP 1 semantics seemlessly upgrades to HTTP 2. <code>http</code> vs <code>https</code> exposes encryption detail <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Need URI Design <span class="citation" data-cites="iME5l1kk">[<a href="#ref-iME5l1kk" role="doc-biblioref">5</a>]</span> to avoid application dependence, e.g. use of PURL services.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Inheritance</strong></td>
-<td style="text-align: center;">Type system currently undefined for FDO and DOIP, can piggyback of FDO type’s schema (e.g. <a href="(https://www.cordra.org/documentation/design/schemas.html#schema-references)">CORDRA <code>$ref</code></a> use of <a href="https://json-schema.org/draft/2020-12/json-schema-core.html#references">JSON Schema references</a> <span class="citation" data-cites="15EZ2D0Rm">[<a href="#ref-15EZ2D0Rm" role="doc-biblioref">4</a>]</span>)</td>
-<td style="text-align: center;">Media Type with multiple suffixes <span class="citation" data-cites="nlH2rm1s">[<a href="#ref-nlH2rm1s" role="doc-biblioref">5</a>]</span>, multiple profiles (RFC6906) <span class="citation" data-cites="nCzRO0pK">[<a href="#ref-nCzRO0pK" role="doc-biblioref">6</a>]</span>, Semantic type systems (RDFS <span class="citation" data-cites="ZwAcGQKY">[<a href="#ref-ZwAcGQKY" role="doc-biblioref">7</a>]</span>, OWL2 <span class="citation" data-cites="3IXECgoO">[{ <a href="#ref-3IXECgoO" role="doc-biblioref">8</a>/}]</span>, SKOS <span class="citation" data-cites="16SVc3pvk">[<a href="#ref-16SVc3pvk" role="doc-biblioref">9</a>]</span>), OpenAPI 3 <span class="citation" data-cites="k0AfCGzw">[<a href="#ref-k0AfCGzw" role="doc-biblioref">10</a>]</span> <a href="https://spec.openapis.org/oas/v3.1.0#composition-and-inheritance-polymorphism">inheritance and Polymorphism</a></td>
+<td style="text-align: center;">Type system currently undefined for FDO and DOIP, can piggyback of FDO type’s schema (e.g. <a href="(https://www.cordra.org/documentation/design/schemas.html#schema-references)">CORDRA <code>$ref</code></a> use of <a href="https://json-schema.org/draft/2020-12/json-schema-core.html#references">JSON Schema references</a> <span class="citation" data-cites="15EZ2D0Rm">[<a href="#ref-15EZ2D0Rm" role="doc-biblioref">6</a>]</span>)</td>
+<td style="text-align: center;">Media Type with multiple suffixes <span class="citation" data-cites="nlH2rm1s">[<a href="#ref-nlH2rm1s" role="doc-biblioref">7</a>]</span>, multiple profiles (RFC6906) <span class="citation" data-cites="nCzRO0pK">[<a href="#ref-nCzRO0pK" role="doc-biblioref">8</a>]</span>, Semantic type systems (RDFS <span class="citation" data-cites="ZwAcGQKY">[<a href="#ref-ZwAcGQKY" role="doc-biblioref">9</a>]</span>, OWL2 <span class="citation" data-cites="1p4IWJpI">[<a href="#ref-1p4IWJpI" role="doc-biblioref">10</a>]</span>, SKOS <span class="citation" data-cites="16SVc3pvk">[<a href="#ref-16SVc3pvk" role="doc-biblioref">11</a>]</span>), OpenAPI 3 <span class="citation" data-cites="k0AfCGzw">[<a href="#ref-k0AfCGzw" role="doc-biblioref">12</a>]</span> <a href="https://spec.openapis.org/oas/v3.1.0#composition-and-inheritance-polymorphism">inheritance and Polymorphism</a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Signal interfaces</strong></td>
-<td style="text-align: center;">DOIP 2.0 is synchronous, FDO async operations undefined. Could be handled as custom jobs/futures FDOs</td>
-<td style="text-align: center;">HTTP/2 <a href="https://datatracker.ietf.org/doc/html/rfc7540#section-5">multiplexed streams</a> <span class="citation" data-cites="KbbW0kGT">[<a href="#ref-KbbW0kGT" role="doc-biblioref">11</a>]</span>, Web Sockets <span class="citation" data-cites="7IcXrgNd">[<a href="#ref-7IcXrgNd" role="doc-biblioref">12</a>]</span>, Linked Data Notifications <span class="citation" data-cites="zlGYiuWC">[<a href="#ref-zlGYiuWC" role="doc-biblioref">13</a>]</span>, custom jobs/futures REST resources</td>
+<td style="text-align: center;">DOIP 2.0 is synchronous, in FDO async operations undefined. Could be handled as custom jobs/futures FDOs</td>
+<td style="text-align: center;">HTTP/2 <a href="https://datatracker.ietf.org/doc/html/rfc7540#section-5">multiplexed streams</a> <span class="citation" data-cites="KbbW0kGT">[<a href="#ref-KbbW0kGT" role="doc-biblioref">13</a>]</span>, Web Sockets <span class="citation" data-cites="qgqADk45">[<a href="#ref-qgqADk45" role="doc-biblioref">14</a>]</span>, Linked Data Notifications <span class="citation" data-cites="zlGYiuWC">[<a href="#ref-zlGYiuWC" role="doc-biblioref">15</a>]</span>, custom jobs/futures REST resources</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Operation interfaces</strong></td>
 <td style="text-align: center;">CRUD predefined in DOIP, custom operations through <code>0.DOIP/Op.ListOperations</code> (<em>Operation FDO</em> currently undefined)</td>
-<td style="text-align: center;">CRUD predefined in HTTP, custom URI templates and REST requests in OpenAPI</td>
+<td style="text-align: center;">CRUD predefined in <a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3">HTTP methods</a> [@{doi:10.17487/RFC7231], URI Templates <span class="citation" data-cites="11hxwwuRt">[<a href="#ref-11hxwwuRt" role="doc-biblioref">16</a>]</span>, <a href="https://spec.openapis.org/oas/v3.1.0.html#operation-object">OpenAPI operations</a> <span class="citation" data-cites="k0AfCGzw">[<a href="#ref-k0AfCGzw" role="doc-biblioref">12</a>]</span>, HATEOAS incl. <a href="https://schema.org/docs/actions.html">schema.org Actions</a>, JSON HAL <span class="citation" data-cites="nyrPYHoP">[<a href="#ref-nyrPYHoP" role="doc-biblioref">17</a>]</span> &amp; Link headers (RFC8288) <span class="citation" data-cites="ozdWB3O7">[<a href="#ref-ozdWB3O7" role="doc-biblioref">18</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Stream interfaces</strong></td>
 <td style="text-align: center;">Undefined in FDO, DOIP can support multiple byte stream elements with custom FDO type to determine their combination</td>
-<td style="text-align: center;">HTTP 1.1 <span class="citation" data-cites="tIkSXrb5">[<a href="#ref-tIkSXrb5" role="doc-biblioref">14</a>]</span> <a href="https://datatracker.ietf.org/doc/html/rfc7230#section-4.1">chunked transfer</a>, HLS (RFC8216) {<span class="citation" data-cites="PL512B0X">[<a href="#ref-PL512B0X" role="doc-biblioref">15</a>]</span>}, MPEG-DASH (ISO/IEC 23009-1:2019) {<span class="citation" data-cites="ikO7e0mh">[<a href="#ref-ikO7e0mh" role="doc-biblioref">16</a>]</span>}</td>
+<td style="text-align: center;">HTTP 1.1 <span class="citation" data-cites="tIkSXrb5">[<a href="#ref-tIkSXrb5" role="doc-biblioref">19</a>]</span> <a href="https://datatracker.ietf.org/doc/html/rfc7230#section-4.1">chunked transfer</a>, HLS (RFC8216) <span class="citation" data-cites="PL512B0X">[<a href="#ref-PL512B0X" role="doc-biblioref">20</a>]</span>, MPEG-DASH (ISO/IEC 23009-1:2019) <span class="citation" data-cites="ikO7e0mh">[<a href="#ref-ikO7e0mh" role="doc-biblioref">21</a>]</span></td>
 </tr>
 </tbody>
 </table>
@@ -297,49 +297,70 @@ TODO: Remove quotes from cited articles
 <div id="ref-hRzcHhPD" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>A Comparison Framework for Middleware Infrastructures.</strong> <div class="csl-block">Apostolos Zarras</div> <em>The Journal of Object Technology</em> (2004) <a href="https://doi.org/cj5q8r">https://doi.org/cj5q8r</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5381/jot.2004.3.5.a2">10.5381/jot.2004.3.5.a2</a></div></div>
 </div>
+<div id="ref-vQKvITcJ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><a href="https://hdl.handle.net/0.DOIP/DOIPV2.0">https://hdl.handle.net/0.DOIP/DOIPV2.0</a></div>
+</div>
+<div id="ref-1B16WfR7q" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Upgrading to TLS Within HTTP/1.1</strong> <div class="csl-block">R Khare, S Lawrence</div> <em>RFC Editor</em> (2000-05) <a href="https://doi.org/gp33dv">https://doi.org/gp33dv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc2817">10.17487/rfc2817</a></div></div>
+</div>
 <div id="ref-iME5l1kk" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Hypertext Style: Cool URIs don't change.</strong> <a href="https://www.w3.org/Provider/Style/URI.html">https://www.w3.org/Provider/Style/URI.html</a></div>
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Hypertext Style: Cool URIs don't change.</strong> <a href="https://www.w3.org/Provider/Style/URI.html">https://www.w3.org/Provider/Style/URI.html</a></div>
 </div>
 <div id="ref-15EZ2D0Rm" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>draft-bhutton-json-schema-00</strong> <a href="https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00">https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00</a></div>
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>draft-bhutton-json-schema-00</strong> <a href="https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00">https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00</a></div>
 </div>
 <div id="ref-nlH2rm1s" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>draft-ietf-mediaman-suffixes-00 - Media Types with Multiple Suffixes</strong> <a href="https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/00/">https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/00/</a></div>
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>draft-ietf-mediaman-suffixes-00 - Media Types with Multiple Suffixes</strong> <a href="https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/00/">https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/00/</a></div>
 </div>
 <div id="ref-nCzRO0pK" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>The 'profile' Link Relation Type</strong> <div class="csl-block">E Wilde</div> <em>RFC Editor</em> (2013-03) <a href="https://doi.org/gp32q7">https://doi.org/gp32q7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc6906">10.17487/rfc6906</a></div></div>
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>The 'profile' Link Relation Type</strong> <div class="csl-block">E Wilde</div> <em>RFC Editor</em> (2013-03) <a href="https://doi.org/gp32q7">https://doi.org/gp32q7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc6906">10.17487/rfc6906</a></div></div>
 </div>
 <div id="ref-ZwAcGQKY" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>RDF Schema 1.1</strong> <a href="http://www.w3.org/TR/rdf-schema/">http://www.w3.org/TR/rdf-schema/</a></div>
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>RDF Schema 1.1</strong> <a href="http://www.w3.org/TR/rdf-schema/">http://www.w3.org/TR/rdf-schema/</a></div>
 </div>
-<div id="ref-3IXECgoO" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>OWL 2 Web Ontology Language Document Overview (Second Edition)</strong> <a href="http://www.w3.org/TR/owl2-overview/">http://www.w3.org/TR/owl2-overview/</a></div>
+<div id="ref-1p4IWJpI" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>OWL 2 Web Ontology Language Document Overview (Second Edition)</strong> <a href="http://www.w3.org/TR/owl2-overview/">http://www.w3.org/TR/owl2-overview/</a></div>
 </div>
 <div id="ref-16SVc3pvk" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>SKOS Simple Knowledge Organization System Reference</strong> <a href="http://www.w3.org/TR/skos-reference/">http://www.w3.org/TR/skos-reference/</a></div>
+<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>SKOS Simple Knowledge Organization System Reference</strong> <a href="http://www.w3.org/TR/skos-reference/">http://www.w3.org/TR/skos-reference/</a></div>
 </div>
 <div id="ref-k0AfCGzw" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>OpenAPI Specification v3.1.0 | Introduction, Definitions, &amp; More</strong> <a href="https://spec.openapis.org/oas/v3.1.0.html">https://spec.openapis.org/oas/v3.1.0.html</a></div>
+<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>OpenAPI Specification v3.1.0 | Introduction, Definitions, &amp; More</strong> <a href="https://spec.openapis.org/oas/v3.1.0.html">https://spec.openapis.org/oas/v3.1.0.html</a></div>
 </div>
 <div id="ref-KbbW0kGT" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>Hypertext Transfer Protocol Version 2 (HTTP/2)</strong> <div class="csl-block">M Belshe, R Peon</div> <em>RFC Editor</em> (2015-05) <a href="https://doi.org/gp32q9">https://doi.org/gp32q9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7540">10.17487/rfc7540</a></div></div>
+<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>Hypertext Transfer Protocol Version 2 (HTTP/2)</strong> <div class="csl-block">M Belshe, R Peon</div> <em>RFC Editor</em> (2015-05) <a href="https://doi.org/gp32q9">https://doi.org/gp32q9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7540">10.17487/rfc7540</a></div></div>
 </div>
-<div id="ref-7IcXrgNd" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>WebSockets Standard</strong> <a href="https://websockets.spec.whatwg.org//">https://websockets.spec.whatwg.org//</a></div>
+<div id="ref-qgqADk45" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>WebSockets Standard</strong> <a href="https://websockets.spec.whatwg.org/">https://websockets.spec.whatwg.org/</a></div>
 </div>
 <div id="ref-zlGYiuWC" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>Linked Data Notifications</strong> <a href="https://www.w3.org/TR/ldn/">https://www.w3.org/TR/ldn/</a></div>
+<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>Linked Data Notifications</strong> <a href="https://www.w3.org/TR/ldn/">https://www.w3.org/TR/ldn/</a></div>
+</div>
+<div id="ref-11hxwwuRt" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>URI Template</strong> <div class="csl-block">J Gregorio, R Fielding, M Hadley, M Nottingham, D Orchard</div> <em>RFC Editor</em> (2012-03) <a href="https://doi.org/gp33dw">https://doi.org/gp33dw</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc6570">10.17487/rfc6570</a></div></div>
+</div>
+<div id="ref-nyrPYHoP" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>draft-kelly-json-hal-08</strong> <a href="https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-08">https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-08</a></div>
+</div>
+<div id="ref-ozdWB3O7" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>Web Linking</strong> <div class="csl-block">M Nottingham</div> <em>RFC Editor</em> (2017-10) <a href="https://doi.org/gf8jcd">https://doi.org/gf8jcd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc8288">10.17487/rfc8288</a></div></div>
 </div>
 <div id="ref-tIkSXrb5" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing</strong> <div class="csl-block">R Fielding, J Reschke (editors)</div> <em>RFC Editor</em> (2014-06) <a href="https://doi.org/gp32q8">https://doi.org/gp32q8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7230">10.17487/rfc7230</a></div></div>
+<div class="csl-left-margin">19. </div><div class="csl-right-inline"><strong>Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing</strong> <div class="csl-block">R Fielding, J Reschke (editors)</div> <em>RFC Editor</em> (2014-06) <a href="https://doi.org/gp32q8">https://doi.org/gp32q8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7230">10.17487/rfc7230</a></div></div>
 </div>
 <div id="ref-PL512B0X" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>HTTP Live Streaming</strong> <div class="csl-block">W May</div> <em>RFC Editor</em> (2017-08) <a href="https://doi.org/gp32rc">https://doi.org/gp32rc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc8216">10.17487/rfc8216</a></div></div>
+<div class="csl-left-margin">20. </div><div class="csl-right-inline"><strong>HTTP Live Streaming</strong> <div class="csl-block">W May</div> <em>RFC Editor</em> (2017-08) <a href="https://doi.org/gp32rc">https://doi.org/gp32rc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc8216">10.17487/rfc8216</a></div></div>
 </div>
 <div id="ref-ikO7e0mh" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>ISO/IEC 23009-1:2019</strong> <div class="csl-block">14:00-17:00</div> <em>ISO</em> <a href="https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html">https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html</a></div>
+<div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>ISO/IEC 23009-1:2019</strong> <div class="csl-block">14:00-17:00</div> <em>ISO</em> <a href="https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html">https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html</a></div>
 </div>
 </div>
+<section class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>The <code>http</code> protocol (port 80) can in theory also upgrade <span class="citation" data-cites="1B16WfR7q">[<a href="#ref-1B16WfR7q" role="doc-biblioref">4</a>]</span> to TLS encryption, as used by <a href="https://www.rfc-editor.org/rfc/rfc8010.html#section-8.2">Internet Printing Protocol</a> for <code>ipp</code> URIs, but on the web, best practice is explicit <code>https</code> (port 443) URLs to ensure followed links stay secure.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 <!-- default theme -->
 
 <style>
