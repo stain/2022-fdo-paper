@@ -38,7 +38,9 @@ content/10.comparison.md:69:USD
 content/10.comparison.md:69:USD
 content/10.comparison.md:70:backend
 content/10.comparison.md:70:backend
+content/10.comparison.md:70:backend
 content/10.comparison.md:70:CDNs
+content/10.comparison.md:70:Cordra
 content/10.comparison.md:70:FDO
 content/10.comparison.md:70:scalability
 content/10.comparison.md:70:Scalability

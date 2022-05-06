@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/eebdf66fe05670d5dbb1796e8fa9ed2e7615483a/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/eebdf66fe05670d5dbb1796e8fa9ed2e7615483a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/eebdf66fe05670d5dbb1796e8fa9ed2e7615483a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/ee06f6d99efa048809512fdfde66069385cf7fb1/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/ee06f6d99efa048809512fdfde66069385cf7fb1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/ee06f6d99efa048809512fdfde66069385cf7fb1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/eebdf66fe05670d5dbb1796e8fa9ed2e7615483a/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/ee06f6d99efa048809512fdfde66069385cf7fb1/))
 was automatically generated
-from [stain/2022-fdo-paper@eebdf66](https://github.com/stain/2022-fdo-paper/tree/eebdf66fe05670d5dbb1796e8fa9ed2e7615483a)
+from [stain/2022-fdo-paper@ee06f6d](https://github.com/stain/2022-fdo-paper/tree/ee06f6d99efa048809512fdfde66069385cf7fb1)
 on May 6, 2022.
 </em></small>
 
@@ -192,7 +192,7 @@ DOIP [@handle:0.DOIP/DOIPV2.0]
 | *Quality* |  FDO w/ DOIP               | Web w/ Linked Data          |
 |:----------|:--------------------------:|:--------------------------:|
 | **Openness** |  FDOs can be cross-linked using PIDs, pointing to multiple FDO endpoints. Custom DOIP operations can be exposed, although it is unclear if these can be outside the FDO server. PID minting requires a Handle.net prefix (~ 50 USD/year), or through services like [Datacite](https://datacite.org/), [B2Handle](https://eudat.eu/services/userdoc/b2handle).  |  The Web is inheritedly open and made by cross-linked URLs.  Participation requires DNS dmain ~10 USD/year (many free or nested alternatives also exists, e.g. subdomain). PID minting can be free using CURL services or ARK or use DOI/Handle with HTTP redirects.  |
-| **Scalability** |  No defined methods for caching or mirroring, although this could be handled by backend, depending on exposed FDO operations. |  Cache control headers reduce repeated transfer and assist explicit and transparent proxies for speed-up.  HTTP `GET` can be scaled to world-population-wide with Content-Delivery Networks (CDNs), while write-access scalability is typically manage by backend. |
+| **Scalability** |  No defined methods for caching or mirroring, although this could be handled by backend, depending on exposed FDO operations (e.g.  Cordra can scale to multiple backend nodes) |  Cache control headers reduce repeated transfer and assist explicit and transparent proxies for speed-up.  HTTP `GET` can be scaled to world-population-wide with Content-Delivery Networks (CDNs), while write-access scalability is typically manage by backend. |
 | **Performance** | DOIP has been shown moderately scalable to 100 millions of objects, but create requests are only at 900 requests/second [@{https://www.rd-alliance.org/sites/default/files/Cordra.2022.pdf}]. DOIP protocol is serial and reusable, but multiple connections can be made. Setup is typically through TCP and TLS which adds latency. |  HTTP traffic is about 10% of global Internet traffic, excluding video and social networks [{@https://www.sandvine.com/global-internet-phenomena-report-2022}]. HTTP 1 connections are serial and reusable, and concurrent connections is common. HTTP/2 adds multiplexed streams [@{doi:10.17487/RFC7540}] but still has TCP+TLS startup costs.  For reduced latency [@{https://blog.cloudflare.com/http-3-vs-http-2/}], HTTP/3 [{@https://datatracker.ietf.org/doc/html/draft-ietf-quic-http-34}] use QUIC [{@doi:10.17487/RFC9000}]) rather than TCP, already adapted heavily (30% of EMEA traffic) of which [Instagram & Facebook video](https://engineering.fb.com/2020/10/21/networking-traffic/how-facebook-is-bringing-quic-to-billions/) is the majority of traffic. |
 | **Distribution transparency** | Each FDO is accessed separately along with its components (typically from the same endpoint). FDOs should provide the mandatory kernel metadata fields. FDOs of the same declared type typically share additional attributes (although that schema may not be declared). DOIP does not enforce metadata typing constraints, this need to be established as FDO conventions.  |  Each URL accessed separately. Common HTTP headers provide basic metadata, although it is often not reliable. A multitude of schemas and serializations for metadata exists, conventions might be implied by a declared profile or certain media types. Metadata is not always machine findable, may need pre-agreed API URI Templates [@doi:10.17487/RFC6570], content-negotiation [@{https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation}] or FAIR Signposting [@{https://signposting.org/FAIR/}]. |
 | **Access transparency** |  FDOs always accessed through PID indirection, but this means difficult to make private test setup. | Global HTTP protocol frequently used locally and behind firewalls, but at risk of non-global URIs (e.g. `http://localhost/object/1`) and SSL issues (e.g. self-signed certificates, local CAs) |
