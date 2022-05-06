@@ -1,0 +1,631 @@
+
+- id: lin_2020
+  type: article-journal
+  author:
+  - family: Lin
+    given: Dawei
+  - family: Crabtree
+    given: Jonathan
+  - family: Dillo
+    given: Ingrid
+  - family: Downs
+    given: Robert R
+  - family: Edmunds
+    given: Rorie
+  - family: Giaretta
+    given: David
+  - family: De Giusti
+    given: Marisa
+  - family: L’Hours
+    given: Hervé
+  - family: Hugo
+    given: Wim
+  - family: Jenkyns
+    given: Reyna
+  - family: Khodiyar
+    given: Varsha
+  - family: Martone
+    given: Maryann E
+  - family: Mokrane
+    given: Mustapha
+  - family: Navale
+    given: Vivek
+  - family: Petters
+    given: Jonathan
+  - family: Sierman
+    given: Barbara
+  - family: Sokolova
+    given: Dina V
+  - family: Stockhause
+    given: Martina
+  - family: Westbrook
+    given: John
+  issued:
+  - year: 2020
+    month: 5
+    day: 14
+  accessed:
+  - year: 2022
+    month: 5
+    day: 3
+  title: The TRUST principles for digital repositories.
+  container-title: Scientific data
+  page: '144'
+  volume: '7'
+  issue: '1'
+  URL: http://www.nature.com/articles/s41597-020-0486-7
+  DOI: 10.1038/s41597-020-0486-7
+  ISSN: 2052-4463
+  PMCID: PMC7224370
+  PMID: '32409645'
+
+- id: desmedt_2020
+  type: article-journal
+  author:
+  - family: De Smedt
+    given: Koenraad
+  - family: Koureas
+    given: Dimitris
+  - family: Wittenburg
+    given: Peter
+  issued:
+  - year: 2020
+    month: 4
+    day: 11
+  accessed:
+  - year: 2021
+    month: 5
+    day: 4
+  title: 'FAIR digital objects for science: From data pieces to actionable knowledge
+    units'
+  title-short: FAIR digital objects for science
+  container-title: Publications
+  page: '21'
+  volume: '8'
+  issue: '2'
+  abstract: 'Data science is facing the following major challenges: (1) developing
+    scalable cross-disciplinary capabilities, (2) dealing with the increasing data
+    volumes and their inherent complexity, (3) building tools that help to build trust,
+    (4) creating mechanisms to efficiently operate in the domain of scientific assertions,
+    (5) turning data into actionable knowledge units and (6) promoting data interoperability.
+    As a way to overcome these challenges, we further develop the proposals by early
+    Internet pioneers for Digital Objects as encapsulations of data and metadata made
+    accessible by persistent identifiers. In the past decade, this concept was revisited
+    by various groups within the Research Data Alliance and put in the context of
+    the FAIR Guiding Principles for findable, accessible, interoperable and reusable
+    data. The basic components of a FAIR Digital Object (FDO) as a self-contained,
+    typed, machine-actionable data package are explained. A survey of use cases has
+    indicated the growing interest of research communities in FDO solutions. We conclude
+    that the FDO concept has the potential to act as the interoperable federative
+    core of a hyperinfrastructure initiative such as the European Open Science Cloud
+    (EOSC).'
+  keyword: data management and FAIR
+  URL: https://www.mdpi.com/2304-6775/8/2/21
+  DOI: 10.3390/publications8020021
+  ISSN: 2304-6775
+
+- id: garriga_2016
+  type: article-journal
+  author:
+  - family: Garriga
+    given: Martin
+  - family: Mateos
+    given: Cristian
+  - family: Flores
+    given: Andres
+  - family: Cechich
+    given: Alejandra
+  - family: Zunino
+    given: Alejandro
+  issued:
+  - year: 2016
+    month: 1
+  accessed:
+  - year: 2022
+    month: 5
+    day: 3
+  title: 'RESTful service composition at a glance: A survey'
+  title-short: RESTful service composition at a glance
+  container-title: Journal of Network and Computer Applications
+  page: 32-53
+  volume: '60'
+  URL: https://linkinghub.elsevier.com/retrieve/pii/S1084804515002933
+  DOI: 10.1016/j.jnca.2015.11.020
+  ISSN: '10848045'
+
+- id: wittenburg_2022
+  type: article-journal
+  author:
+  - family: Wittenburg
+    given: Peter
+  - family: Anders
+    given: Ivonne
+  - family: Blanchi
+    given: Christophe
+  - family: Buurman
+    given: Merret
+  - family: Goble
+    given: Carole
+  - family: Grieb
+    given: Jonas
+  - family: Hardisty
+    given: Alex
+  - family: Islam
+    given: Sharif
+  - family: Jejkal
+    given: Thomas
+  - family: Kálmán
+    given: Tibor
+  - family: Kirkpatrick
+    given: Christine
+  - family: Lannom
+    given: Laurence
+  - family: Lauer
+    given: Thomas
+  - family: Manepalli
+    given: Giridhar
+  - family: Peters-von Gehlen
+    given: Karsten
+  - family: Pfeil
+    given: Andreas
+  - family: Quick
+    given: Robert
+  - family: Sanden
+    given: Mark
+    dropping-particle: van de
+  - family: Schwardmann
+    given: Ulrich
+  - family: Soiland-Reyes
+    given: Stian
+  - family: Stotzka
+    given: Rainer
+  - family: Trautt
+    given: Zachary
+  - family: Van Uytvanck
+    given: Dieter
+  - family: Weiland
+    given: Claus
+  - family: Wieder
+    given: Philipp
+  issued:
+  - year: 2022
+  accessed:
+  - year: 2022
+    month: 1
+    day: 18
+  title: FAIR digital object demonstrators 2021
+  container-title: Zenodo
+  abstract: This paper gives a summary of implementation activities in the realm of
+    FAIR Digital Objects (FDO). It gives an idea which software components are robust
+    and used for many years, which components are comparatively new and are being
+    tested out in pilot projects and what the challenges are that need to be urgently
+    addressed by the FDO community. After basically only one year of advancing the
+    FDO specifications by the FDO Forum we can recognise an increasing momentum to
+    test and integrate essential FDO components. However, many developments still
+    occur as soloistic engagements that offer a scattered picture. It is widely agreed
+    that it is now time to combine these different pilots to comprehensive testbeds,
+    to identify still existing gaps and to turn some services into components of a
+    convincing and stable infrastructure. This step is urgently needed to convince
+    even more institutions to invest in FDO technology and therefore to increase FAIRness
+    of the evolving global data space.
+  keyword: FDO
+  URL: https://zenodo.org/record/5872645
+  DOI: 10.5281/zenodo.5872645
+
+- id: florio_2021
+  type: report
+  author:
+  - family: Florio
+    given: Licia
+  - family: Van de Sanden
+    given: Mark
+  - family: Scardaci
+    given: Diego
+  - family: Williams
+    given: Michelle
+  - family: Appleton
+    given: Owen
+  - family: Manghi
+    given: Paolo
+  - family: Jeffery
+    given: Keith
+  issued:
+  - year: 2021
+    month: 12
+    day: 22
+  accessed:
+  - year: 2022
+    month: 3
+    day: 10
+  title: EOSC architecture and interoperability framework
+  collection-title: EOSC future consortium
+  publisher: European Open Science Cloud
+  publisher-place: EOSC Portal
+  page: '54'
+  edition: '1.0'
+  abstract: "This document builds on the output of the EOSC Interoperability Framework
+    Report produced by the EOSC Executive Board Working Groups FAIR and Architecture,
+    past EOSC projects (EOSC Enhance, EOSC-hub, OpenAIRE Advance, etc.) and on work
+    carried out during the EOSC Future project preparation. The document highlights
+    why an EOSC Interoperability Framework (EOSC IF) is needed and defines a lightweight
+    process to build such a framework. It focuses primarily on the definition of the
+    Interoperability Framework governance and on aspects related to interoperability
+    in the EOSC-Core and EOSC-Exchangeplatforms."
+  keyword: EOSC and interoperability
+  URL: '{https://eosc-portal.eu/sites/default/files/EOSC%20Future-WP3-EOSC%20Architecture%20and%20Interoperability%20Framework-2021-12-22%5B17%5D%5B6%5D-2.pdf}'
+
+- id: wittenburg_2019
+  type: article-journal
+  author:
+  - family: Wittenburg
+    given: Peter
+  issued:
+  - year: 2019
+    month: 3
+  accessed:
+  - year: 2022
+    month: 5
+    day: 3
+  title: From persistent identifiers to digital objects to make data science more
+    efficient
+  container-title: Data Intelligence
+  page: 6-21
+  volume: '1'
+  issue: '1'
+  abstract: Data-intensive science is reality in large scientific organizations such
+    as the Max Planck Society, but due to the inefficiency of our data practices when
+    it comes to integrating data from different sources, many projects cannot be carried
+    out and many researchers are excluded. Since about 80% of the time in data-intensive
+    projects is wasted according to surveys we need to conclude that we are not fit
+    for the challenges that will come with the billions of smart devices producing
+    continuous streams of datamethods do not scale. Therefore experts worldwide are
+    looking for strategies and methods that have a potential for the future. The first
+    steps have been made since there is now a wide agreement from the Research Data
+    Alliance to the FAIR principles that data should be associated with persistent
+    identifiers (PID) and metadata (MD). In fact after 20 years of experience we can
+    claim that there are trustworthy PID systems already in broad use. It is argued,
+    however, that assigning PIDs is just the first ...
+  keyword: FDO and PID
+  DOI: 10.1162/dint\_a\_00004
+  ISSN: 2641-{435X}
+
+- id: surianarayanan_2019
+  type: book
+  author:
+  - family: Surianarayanan
+    given: Chellammal
+  - family: Ganapathy
+    given: Gopinath
+  - family: Raj
+    given: Pethuru
+  issued:
+  - year: 2019
+    month: 8
+    day: 28
+  accessed:
+  - year: 2022
+    month: 5
+    day: 3
+  title: 'Essentials of microservices architecture: Paradigms, applications, and techniques'
+  title-short: Essentials of microservices architecture
+  publisher: Taylor & Francis
+  keyword: REST
+  URL: https://www.taylorfrancis.com/books/9781000617566
+  DOI: 10.1201/9780429329920
+  ISBN: '9780429329920'
+
+- id: zarras_2004
+  type: article-journal
+  author:
+  - family: Zarras
+    given: Apostolos
+  issued:
+  - year: 2004
+  accessed:
+  - year: 2022
+    month: 5
+    day: 3
+  title: A comparison framework for middleware infrastructures.
+  container-title: The Journal of Object Technology
+  page: '103'
+  volume: '3'
+  issue: '5'
+  URL: http://www.jot.fm/contents/issue\_2004\_05/article2.html
+  DOI: 10.5381/jot.2004.3.5.a2
+  ISSN: 1660-1769
+
+- id: dastgheib_nd
+  type: article-journal
+  author:
+  - family: Dastgheib
+    given: Shima
+  - family: Whetzel
+    given: Trish
+  - family: Zaveri
+    given: Amrapali
+  - family: Afrasiabi
+    given: Cyrus
+  - family: Assis
+    given: Pedro
+  - family: Avillach
+    given: Paul
+  - family: Jagodnik
+    given: Kathleen
+  - family: Korodi
+    given: Gabor
+  - family: Pilarczyk
+    given: Marcin
+  - family: De Pons
+    given: Jeff
+  - family: Schürer
+    given: Stephan
+  - family: Terryn
+    given: Raymond
+  - family: Verborgh
+    given: Ruben
+  - family: Wu
+    given: Chunlei
+  - family: Dumontier
+    given: Michel
+  accessed:
+  - year: 2022
+    month: 5
+    day: 3
+  title: The <span class="nocase">smartAPI</span> ecosystem for making web APIs FAIR
+
+- id: rao_2018
+  type: article-journal
+  author:
+  - family: Rao
+    given: T. Ramalingeswara
+  - family: Mitra
+    given: Pabitra
+  - family: Bhatt
+    given: Ravindara
+  - family: Goswami
+    given: A.
+  issued:
+  - year: 2018
+    month: 9
+    day: 18
+  accessed:
+  - year: 2022
+    month: 5
+    day: 3
+  title: 'The big data system, components, tools, and technologies: A survey'
+  title-short: The big data system, components, tools, and technologies
+  container-title: Knowledge and information systems
+  abstract: 'The traditional databases are not capable of handling unstructured data
+    and high volumes of real-time datasets. Diverse datasets are unstructured lead
+    to big data, and it is laborious to store, manage, process, analyze, visualize,
+    and extract the useful insights from these datasets using traditional database
+    approaches. However, many technical aspects exist in refining large heterogeneous
+    datasets in the trend of big data. This paper aims to present a generalized view
+    of complete big data system which includes several stages and key components of
+    each stage in processing the big data. In particular, we compare and contrast
+    various distributed file systems and MapReduce-supported NoSQL databases concerning
+    certain parameters in data management process. Further, we present distinct distributed/cloud-based
+    machine learning (ML) tools that play a key role to design, develop and deploy
+    data models. The paper investigates case studies on distributed ML tools such
+    as Mahout, Spark MLlib, and FlinkML. Further, we classify analytics based on the
+    type of data, domain, and application. We distinguish various visualization tools
+    pertaining three parameters: functionality, analysis capabilities, and supported
+    development environment. Furthermore, we systematically investigate big data tools
+    and technologies (Hadoop 3.0, Spark 2.3) including distributed/cloud-based stream
+    processing tools in a comparative approach. Moreover, we discuss functionalities
+    of several SQL Query tools on Hadoop based on 10 parameters. Finally, We present
+    some critical points relevant to research directions and opportunities according
+    to the current trend of big data. Investigating infrastructure tools for big data
+    with recent developments provides a better understanding that how different tools
+    and technologies apply to solve real-life applications.'
+  URL: http://link.springer.com/10.1007/s10115-018-1248-0
+  DOI: 10.1007/s10115-018-1248-0
+  ISSN: 0219-1377
+
+- id: delgado_2016
+  type: chapter
+  author:
+  - family: Delgado
+    given: José Carlos Martins
+  editor:
+  - family: Mahmood
+    given: Zaigham
+  issued:
+  - year: 2016
+  accessed:
+  - year: 2022
+    month: 5
+    day: 3
+  title: An interoperability framework and distributed platform for fast data applications
+  container-title: Data science and big data computing
+  publisher: Springer International Publishing
+  publisher-place: Cham
+  page: 3-39
+  URL: http://link.springer.com/10.1007/978-3-319-31861-5\_1
+  DOI: 10.1007/978-3-319-31861-5\_1
+  ISBN: 978-3-319-31859-2
+
+- id: na_website_nd
+  type: no-type
+  accessed:
+  - year: 2022
+    month: 5
+    day: 3
+  title: Microservices and the first law of distributed objects
+  genre: WEBSITE
+  URL: https://martinfowler.com/articles/distributed-objects-microservices.html
+
+- id: na_website_nda
+  type: no-type
+  accessed:
+  - year: 2022
+    month: 5
+    day: 3
+  title: DOIP API for HTTP clients cordra documentation
+  genre: WEBSITE
+  keyword: FDO
+  URL: https://www.cordra.org/documentation/api/doip-api-for-http-clients.html
+
+- id: na_website_ndb
+  type: no-type
+  accessed:
+  - year: 2022
+    month: 5
+    day: 3
+  title: DOIP and examples cordra documentation
+  genre: WEBSITE
+  keyword: FDO
+  URL: https://www.cordra.org/documentation/api/doip.html
+
+- id: adamczyk_2011
+  type: chapter
+  author:
+  - family: Adamczyk
+    given: Paul
+  - family: Smith
+    given: Patrick H.
+  - family: Johnson
+    given: Ralph E.
+  - family: Hafiz
+    given: Munawar
+  editor:
+  - family: Wilde
+    given: Erik
+  - family: Pautasso
+    given: Cesare
+  issued:
+  - year: 2011
+  accessed:
+  - year: 2022
+    month: 5
+    day: 3
+  title: 'REST and web services: In theory and in practice'
+  title-short: REST and web services
+  container-title: 'REST: From research to practice'
+  publisher: Springer New York
+  publisher-place: New York, NY
+  page: 35-57
+  keyword: REST
+  URL: http://link.springer.com/10.1007/978-1-4419-8303-9\_2
+  DOI: 10.1007/978-1-4419-8303-9\_2
+  ISBN: 978-1-4419-8302-2
+
+- id: peterwittenburg_2018
+  type: article-journal
+  author:
+  - family: Peter Wittenburg
+    given: George Strawn
+  issued:
+  - year: 2018
+  accessed:
+  - year: 2022
+    month: 5
+    day: 4
+  title: Common patterns in revolutionary infrastructures and data
+  container-title: https://b2share.eudat.eu
+  abstract: Large Infrastructures follow certain patterns during their evolution.
+    The paper looks into three examples (electrification, Internet, WorldWide Web),
+    extracts some reoccuring patterns and finally compares it with th state and potential
+    of the data domain. Summarising it states that we seem to be close to a convergence
+    step, but that we lack the agreement yet on a fairly simple concept all could
+    agree with and that can serve as commodity to build upon.
+  keyword: FDO
+  URL: https://b2share.eudat.eu/records/4e8ac36c0dd343da81fd9e83e72805a0
+  DOI: 10.23728/b2share.4e8ac36c0dd343da81fd9e83e72805a0
+
+- id: desmedt_2020
+  type: article-journal
+  author:
+  - family: De Smedt
+    given: Koenraad
+  - family: Koureas
+    given: Dimitris
+  - family: Wittenburg
+    given: Peter
+  issued:
+  - year: 2020
+    month: 4
+    day: 11
+  accessed:
+  - year: 2021
+    month: 5
+    day: 4
+  title: 'FAIR digital objects for science: From data pieces to actionable knowledge
+    units'
+  title-short: FAIR digital objects for science
+  container-title: Publications
+  page: '21'
+  volume: '8'
+  issue: '2'
+  abstract: 'Data science is facing the following major challenges: (1) developing
+    scalable cross-disciplinary capabilities, (2) dealing with the increasing data
+    volumes and their inherent complexity, (3) building tools that help to build trust,
+    (4) creating mechanisms to efficiently operate in the domain of scientific assertions,
+    (5) turning data into actionable knowledge units and (6) promoting data interoperability.
+    As a way to overcome these challenges, we further develop the proposals by early
+    Internet pioneers for Digital Objects as encapsulations of data and metadata made
+    accessible by persistent identifiers. In the past decade, this concept was revisited
+    by various groups within the Research Data Alliance and put in the context of
+    the FAIR Guiding Principles for findable, accessible, interoperable and reusable
+    data. The basic components of a FAIR Digital Object (FDO) as a self-contained,
+    typed, machine-actionable data package are explained. A survey of use cases has
+    indicated the growing interest of research communities in FDO solutions. We conclude
+    that the FDO concept has the potential to act as the interoperable federative
+    core of a hyperinfrastructure initiative such as the European Open Science Cloud
+    (EOSC).'
+  keyword: data management and FAIR
+  URL: https://www.mdpi.com/2304-6775/8/2/21
+  DOI: 10.3390/publications8020021
+  ISSN: 2304-6775
+
+- id: bonino_2019
+  type: report
+  author:
+  - family: Bonino
+    given: Luiz
+  - family: Wittenburg
+    given: Oeter
+  - family: Carroll
+    given: Bonnie
+  - family: Hardisty
+    given: Alex
+  - family: Leggott
+    given: Mark
+  - family: Zwölf
+    given: Carlo
+  issued:
+  - year: 2019
+    month: 11
+    day: 22
+  accessed:
+  - year: 2022
+    month: 5
+    day: 5
+  title: FAIR digital object framework
+  collection-title: FDOF technical implementation guideline
+  edition: '1.02'
+  abstract: This document includes some generic guidelines to be met (chapter 2),
+    a normative part defining the FAIR Digital Object Framework (FDOF) at an abstract
+    level which will develop over time (chapter 3) and a glossary of terms (chapter
+    4). Related documents such as implementation examples can be found at the Github
+    site1 and a Google Doc version is used for open comments which will lead to new
+    versions2.
+  URL: '{https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx}'
+
+- id: handle:0.DOIP/DOIPV2.0
+  type: report
+  author:
+  - family: Foundation
+    given: DONA
+  issued:
+  - year: 2018
+    month: 11
+    day: 12
+  accessed:
+  - year: 2021
+    month: 11
+    day: 19
+  title: Digital object interface protocol specification, version 2.0
+  publisher: DONA foundation
+  keyword: doip and FDO
+  URL: https://hdl.handle.net/0.DOIP/DOIPV2.0
