@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-05-05'
+date-meta: '2022-05-06'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-05-05" />
-  <meta name="citation_publication_date" content="2022-05-05" />
+  <meta name="dc.date" content="2022-05-06" />
+  <meta name="citation_publication_date" content="2022-05-06" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/3e9ffc1adf45b553a9499ae5ee18c9e1a383383a/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/3e9ffc1adf45b553a9499ae5ee18c9e1a383383a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/3e9ffc1adf45b553a9499ae5ee18c9e1a383383a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/6ff8ad56bae6d51fb1ff12e2e8b6b6a4beaa31f5/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/6ff8ad56bae6d51fb1ff12e2e8b6b6a4beaa31f5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/6ff8ad56bae6d51fb1ff12e2e8b6b6a4beaa31f5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -57,8 +57,7 @@ header-includes: |-
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
 bibliography:
-- content/manual-references-sciwheel.bib
-- content/manual-references.json
+- content/manual-references-sciwheel.yaml
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
@@ -72,10 +71,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/3e9ffc1adf45b553a9499ae5ee18c9e1a383383a/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/6ff8ad56bae6d51fb1ff12e2e8b6b6a4beaa31f5/))
 was automatically generated
-from [stain/2022-fdo-paper@3e9ffc1](https://github.com/stain/2022-fdo-paper/tree/3e9ffc1adf45b553a9499ae5ee18c9e1a383383a)
-on May 5, 2022.
+from [stain/2022-fdo-paper@6ff8ad5](https://github.com/stain/2022-fdo-paper/tree/6ff8ad56bae6d51fb1ff12e2e8b6b6a4beaa31f5)
+on May 6, 2022.
 </em></small>
 
 ## Authors
@@ -188,7 +187,7 @@ Quotes from [@doi:10.5381/jot.2004.3.5.a2]:
 
 ### Comparing FDO and Web as middleware infrastructures 
 
-DOIP [@{https://hdl.handle.net/0.DOIP/DOIPV2.0}]
+DOIP [@handle:0.DOIP/DOIPV2.0]
 
 | *Quality* |  FDO w/ DOIP               | Web w/ Linked Data          |
 |:----------|:--------------------------:|:--------------------------:|
@@ -211,7 +210,7 @@ DOIP [@{https://hdl.handle.net/0.DOIP/DOIPV2.0}]
 | **Stream interfaces** | Undefined in FDO, DOIP can support multiple byte stream elements with custom FDO type to determine their combination | HTTP 1.1 [@doi:10.17487/RFC7230] [chunked transfer](https://datatracker.ietf.org/doc/html/rfc7230#section-4.1), HLS (RFC8216) [@doi:10.17487/RFC8216], MPEG-DASH (ISO/IEC 23009-1:2019) [@{https://www.iso.org/standard/79329.html}]  |
 
 
-Table: Comparing FAIR Digital Object (with the DOIP 2.0 protocol [@{https://hdl.handle.net/0.DOIP/DOIPV2.0}]) and Web technologies (using Linked Data) as middleware infrastructures [@doi:10.5381/jot.2004.3.5.a2]
+Table: Comparing FAIR Digital Object (with the DOIP 2.0 protocol [@handle:0.DOIP/DOIPV2.0]) and Web technologies (using Linked Data) as middleware infrastructures [@doi:10.5381/jot.2004.3.5.a2]
 {#tbl:fdo-web-middleware}
 
 [^1]: The `http` protocol (port 80) can in theory also upgrade [@doi:10.17487/RFC2817] to TLS encryption, as used by [Internet Printing Protocol](https://www.rfc-editor.org/rfc/rfc8010.html#section-8.2) for `ipp` URIs, but on the web, best practice is explicit `https` (port 443) URLs to ensure followed links stay secure. 
