@@ -24,7 +24,6 @@ content/10.comparison.md:67:DOIP
 content/10.comparison.md:67:FDO
 content/10.comparison.md:69:datacite
 content/10.comparison.md:69:Datacite
-content/10.comparison.md:69:dmain
 content/10.comparison.md:69:DNS
 content/10.comparison.md:69:DOIP
 content/10.comparison.md:69:FDO
