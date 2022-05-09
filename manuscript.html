@@ -73,9 +73,9 @@
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/3c945f76034e7a2a9f02240d9737311c02375ab6/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/3c945f76034e7a2a9f02240d9737311c02375ab6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/3c945f76034e7a2a9f02240d9737311c02375ab6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/433b0eb66802e6b5ade251025ee19d7080107f0a/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/433b0eb66802e6b5ade251025ee19d7080107f0a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/433b0eb66802e6b5ade251025ee19d7080107f0a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,9 +92,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://stain.github.io/2022-fdo-paper/v/3c945f76034e7a2a9f02240d9737311c02375ab6/">permalink</a>)
+(<a href="https://stain.github.io/2022-fdo-paper/v/433b0eb66802e6b5ade251025ee19d7080107f0a/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/stain/2022-fdo-paper/tree/3c945f76034e7a2a9f02240d9737311c02375ab6">stain/2022-fdo-paper@3c945f7</a>
+from <a href="https://github.com/stain/2022-fdo-paper/tree/433b0eb66802e6b5ade251025ee19d7080107f0a">stain/2022-fdo-paper@433b0eb</a>
 on May 9, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -240,7 +240,7 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 </tr>
 <tr class="even">
 <td style="text-align: center;">Message</td>
-<td style="text-align: center;">Segment</td>
+<td style="text-align: center;">Segment, <code>requestId</code></td>
 <td style="text-align: center;">Message, Representation</td>
 </tr>
 <tr class="odd">
@@ -283,7 +283,7 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 <tr class="odd">
 <td style="text-align: left;"><strong>Openness</strong>: <em>framework enable extension of applications</em></td>
 <td style="text-align: center;">FDOs can be cross-linked using PIDs, pointing to multiple FDO endpoints. Custom DOIP operations can be exposed, although it is unclear if these can be outside the FDO server. PID minting requires Handle.net prefix subscription, or use of services like <a href="https://datacite.org/">Datacite</a>, <a href="https://eudat.eu/services/userdoc/b2handle">B2Handle</a>.</td>
-<td style="text-align: center;">The Web is inheritedly open and made by cross-linked URLs. Participation requires DNS domain purchase (many free alternatives also exists). PID minting can be free using CURL/ARK services, or can use DOI/Handle with HTTP redirects.</td>
+<td style="text-align: center;">The Web is inheritedly open and made by cross-linked URLs. Participation requires DNS domain purchase (many free alternatives also exists). PID minting can be free using PURL/ARK services, or can use DOI/Handle with HTTP redirects.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Scalability</strong>: <em>application should be effective at many different scales</em></td>
@@ -292,8 +292,8 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Performance</strong>: <em>efficient and predictable execution</em></td>
-<td style="text-align: center;">DOIP has been shown moderately scalable to 100 millions of objects, create operation at 900 requests/second <span class="citation" data-cites="18P9txgeB">[<a href="#ref-18P9txgeB" role="doc-biblioref">8</a>]</span>. DOIP protocol is serial and reusable, but multiple connections can be made. Setup is typically through TCP and TLS which adds latency.</td>
-<td style="text-align: center;">HTTP traffic is about 10% of global Internet traffic, excluding video and social networks <span class="citation" data-cites="F8VZ86hu">[{ <a href="#ref-F8VZ86hu" role="doc-biblioref">9</a>}]</span>. HTTP 1 connections are serial and reusable, and concurrent connections is common. HTTP/2 adds multiplexed streams <span class="citation" data-cites="KbbW0kGT">[<a href="#ref-KbbW0kGT" role="doc-biblioref">10</a>]</span> but still has TCP+TLS startup costs. For reduced latency <span class="citation" data-cites="CJuBupCW">[<a href="#ref-CJuBupCW" role="doc-biblioref">11</a>]</span>, HTTP/3 <span class="citation" data-cites="Amit86Tp">[{ <a href="#ref-Amit86Tp" role="doc-biblioref">12</a>}]</span> use QUIC <span class="citation" data-cites="1GWvyEmUf">[<a href="#ref-1GWvyEmUf" role="doc-biblioref">13</a>]</span>) rather than TCP, already adapted heavily (30% of EMEA traffic) of which <a href="https://engineering.fb.com/2020/10/21/networking-traffic/how-facebook-is-bringing-quic-to-billions/">Instagram &amp; Facebook video</a> is the majority of traffic.</td>
+<td style="text-align: center;">DOIP has been shown moderately scalable to 100 millions of objects, create operation at 900 requests/second <span class="citation" data-cites="18P9txgeB">[<a href="#ref-18P9txgeB" role="doc-biblioref">8</a>]</span>. DOIP protocol is reusable for many operations, multiple requests may be answered out of order (by <code>requestId</code>). Multiple connections possible. Setup is typically through TCP and TLS which adds latency.</td>
+<td style="text-align: center;">HTTP traffic is about 10% of global Internet traffic, excluding video and social networks <span class="citation" data-cites="F8VZ86hu">[{ <a href="#ref-F8VZ86hu" role="doc-biblioref">9</a>}]</span>. HTTP 1 connections are serial and reusable, and concurrent connections is common. HTTP/2 adds asynchronous responses and multiplexed streams <span class="citation" data-cites="KbbW0kGT">[<a href="#ref-KbbW0kGT" role="doc-biblioref">10</a>]</span> but still has TCP+TLS startup costs. For reduced latency <span class="citation" data-cites="CJuBupCW">[<a href="#ref-CJuBupCW" role="doc-biblioref">11</a>]</span>, HTTP/3 <span class="citation" data-cites="Amit86Tp">[{ <a href="#ref-Amit86Tp" role="doc-biblioref">12</a>}]</span> use QUIC <span class="citation" data-cites="1GWvyEmUf">[<a href="#ref-1GWvyEmUf" role="doc-biblioref">13</a>]</span>) rather than TCP, already adapted heavily (30% of EMEA traffic) of which <a href="https://engineering.fb.com/2020/10/21/networking-traffic/how-facebook-is-bringing-quic-to-billions/">Instagram &amp; Facebook video</a> is the majority of traffic.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Distribution transparency</strong>: <em>application perceived as a consistent whole rather than independent elements.</em></td>
@@ -323,12 +323,12 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 <tr class="odd">
 <td style="text-align: left;"><strong>Migration transparency</strong>: <em>allow relocating elements without interferring application</em></td>
 <td style="text-align: center;">Update of PID record URLs, indirection through <code>0.TYPE/DOIPServiceInfo</code> (not always used consistently). No redirection from DOIP service.</td>
-<td style="text-align: center;">HTTP <code>30x</code> status codes provide temporary or permanent redirections, commonly used for CURLs but also by endpoints.</td>
+<td style="text-align: center;">HTTP <code>30x</code> status codes provide temporary or permanent redirections, commonly used for PURLs but also by endpoints.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Persistence transparency</strong>: <em>conceal deactivation/reactivation of elements from their users</em></td>
 <td style="text-align: center;">FDO requires use of PIDs for object persistence, including a thumbstone response for deleted objects. There is no guarantee that an FDO is immutable or will even stay the same type (note: CORDRA extends DOIP with <a href="https://www.cordra.org/documentation/design/object-versioning.html">version tracking</a>).</td>
-<td style="text-align: center;">URLs are not required to persist, although encouraged <span class="citation" data-cites="rbG9uRKw">[<a href="#ref-rbG9uRKw" role="doc-biblioref">17</a>]</span>. Persistence requires convention to use PIDs/CURLs and HTTP <code>410 Gone</code>. An URL may change its content, change in type may sometimes force new URLs if exposing extensions like <code>.json</code>. Memento <span class="citation" data-cites="DNjcMi4a">[<a href="#ref-DNjcMi4a" role="doc-biblioref">18</a>]</span> expose versioned snapshots. WebDAV <code>VERSION-CONTROL</code> method <span class="citation" data-cites="hRUsaTiz">[<a href="#ref-hRUsaTiz" role="doc-biblioref">19</a>]</span> (used by SVN).</td>
+<td style="text-align: center;">URLs are not required to persist, although encouraged <span class="citation" data-cites="rbG9uRKw">[<a href="#ref-rbG9uRKw" role="doc-biblioref">17</a>]</span>. Persistence requires convention to use PIDs/PURLs and HTTP <code>410 Gone</code>. An URL may change its content, change in type may sometimes force new URLs if exposing extensions like <code>.json</code>. Memento <span class="citation" data-cites="DNjcMi4a">[<a href="#ref-DNjcMi4a" role="doc-biblioref">18</a>]</span> expose versioned snapshots. WebDAV <code>VERSION-CONTROL</code> method <span class="citation" data-cites="hRUsaTiz">[<a href="#ref-hRUsaTiz" role="doc-biblioref">19</a>]</span> (used by SVN).</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Transaction transparency</strong>: <em>coordinate execution of atomic/isolated transactions</em></td>
@@ -542,6 +542,116 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 </div>
 <p>The draft update specification <em>WD-RequirementSpec-1.0-20220317</em> (at time of writing in internal review by FAIR Digital Object Forum) clarifies these definitions with equivalent identifiers <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> and relates them to further FDO requiremes such as FDO Data Type Registries.</p>
 <h2 id="assessing-fdo-against-fair">Assessing FDO against FAIR</h2>
+<table>
+<caption>Assessing how FAIR principles is/can be fulfilled by FDOs <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">41</a>]</span> as DOIP <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">6</a>]</span>, Linked Data Platform (LDP) <span class="citation" data-cites="7szz7dwO">[<a href="#ref-7szz7dwO" role="doc-biblioref">42</a>]</span>, with examples øf existing Linked Data practices.</caption>
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 19%" />
+<col style="width: 17%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Principle</th>
+<th style="text-align: center;">FDO/DOIP</th>
+<th style="text-align: center;">FDO/LDP</th>
+<th style="text-align: center;">Linked Data examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>F1</strong>: <em>PID for data/metadata</em></td>
+<td style="text-align: center;">PIDs required (FDOF1). Handle, DOI.</td>
+<td style="text-align: center;">FDOF-IR (Identifier Record). PID can be any URI?</td>
+<td style="text-align: center;">“Cool” URIs <span class="citation" data-cites="rbG9uRKw">[<a href="#ref-rbG9uRKw" role="doc-biblioref">17</a>]</span>, PID using PURL services.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>F2</strong>: <em>data has metadata</em></td>
+<td style="text-align: center;">FDO has key-value metadata. Unclear how to link to additional metadata.</td>
+<td style="text-align: center;">FDOF-IR links to multiple metadata records</td>
+<td style="text-align: center;">RDF-based metadata by content negotiation or FAIR Signposting. Embedded in landing page (RDFa).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>F3</strong>: <em>metadata include PID</em></td>
+<td style="text-align: center;">No, implicit as requests always use PID</td>
+<td style="text-align: center;">PID only required in FDOF-IR record.</td>
+<td style="text-align: center;">PID inclusion typical, but often inconsistent (e.g. <code>www.example.com</code> vs <code>example.com</code>) or missing (use of <code>&lt;&gt;</code> as <em>this</em> subject)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>F4</strong>: <em>searchable registration</em></td>
+<td style="text-align: center;">No, registries not required (except Data Type Registries). Handle registry only searchable by PID.</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>A1</strong>: <em>retrieve by standard protocol</em></td>
+<td style="text-align: center;">Retrievable from PID (FDOF3). Informal DOIP standard maintaned by DONA Foundation</td>
+<td style="text-align: center;">Formal HTTP standards maintained by IETF</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>A1.1</strong>: <em>protocol open/free/universal</em></td>
+<td style="text-align: center;">Required by G1. Partially realized, although Handle system is open protocol <span class="citation" data-cites="I9Kx0Hjy">[<a href="#ref-I9Kx0Hjy" role="doc-biblioref">43</a>]</span> it was covered by software patent <a href="https://patents.google.com/patent/US6135646A/en">US6135646A</a> (expired in 2013(), and only implementation of <code>Handle.net</code> software currently only available by <a href="http://www.handle.net/HNRj/HNR-9-License.pdf">public license</a>] (not OSI Open Source). <a href="https://www.cordra.org/">CORDRA</a> free to use under BSD-like license, although not recognized by OSI as Open Source.</td>
+<td style="text-align: center;">DNS, HTTP, TLS, RDF standards are open, free and universal, multiple open source clients/servers exist.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>A1.2</strong>: <em>protocol can do auth&amp;auth</em></td>
+<td style="text-align: center;">TLS certificates, <code>authentication</code> field (details unspecified)</td>
+<td style="text-align: center;">HTTP authentication, TLS certificates</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>A2</strong>: <em>metadata even if data gone</em></td>
+<td style="text-align: center;">FDO thumbstone required (FDOF12)</td>
+<td style="text-align: center;">Unspecified, however FDOF-IR links to separate metadata records</td>
+<td style="text-align: center;"><code>410 Gone</code> status infrequently used, without metadata. Possible <a href="https://w3id.org/a2a-fair-metrics/25-http-citeas-author-410-gone/">with signposting</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>I1</strong>: <em>formal knowledge representation</em></td>
+<td style="text-align: center;">Required by FDOF8</td>
+<td style="text-align: center;">Unspecified</td>
+<td style="text-align: center;">Required when using RDF syntaxes.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>I2</strong>: <em>use FAIR vocabularies</em></td>
+<td style="text-align: center;">Informally required by G3, formally by FDOF10 (but not in FDOR10)</td>
+<td style="text-align: center;">Unspecified, implied by use of RDF?</td>
+<td style="text-align: center;">FAIR practices for LD vocabularies increasingly common, sometimes inconsistent (e.g. PURLs that don’t resolve) or incomplete (e.g. unknown license)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>I3</strong>: <em>qualified references</em></td>
+<td style="text-align: center;">Implied by attributes to PIDs of other FDO</td>
+<td style="text-align: center;">Unspecified</td>
+<td style="text-align: center;">By definition (Linked Data is relating to pre-existing URIs <span class="citation" data-cites="o4h92LpS">[<a href="#ref-o4h92LpS" role="doc-biblioref">44</a>]</span>). Link relations</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>R1</strong>: <em>relevant attributes</em></td>
+<td style="text-align: center;">Required (FDOF4)</td>
+<td style="text-align: center;">Unspecified. Multiple metadata records can allow multiple semantic profiles.</td>
+<td style="text-align: center;">Usually, however a plethora</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>R1.1</strong>: <em>clear data license</em></td>
+<td style="text-align: center;">Unspecified (but will be in PID Kernal metadata?)</td>
+<td style="text-align: center;">Unspecified</td>
+<td style="text-align: center;">Required by DCAT</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>R1.2</strong>: <em>detailed provenance</em></td>
+<td style="text-align: center;">Unspecified (some CORDRA types add <code>getProvenance</code> methods)</td>
+<td style="text-align: center;">Unspecified</td>
+<td style="text-align: center;">W3C PROV-O, PAV</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>R1.3</strong>: <em>follows community standards</em></td>
+<td style="text-align: center;">Recommended (FDOF4, FDOF10)</td>
+<td style="text-align: center;">Unspecified</td>
+<td style="text-align: center;">Common practice, specially in bioinformatics, e.g. BioSchemas <span class="citation" data-cites="1F8S9FeHf">[<a href="#ref-1F8S9FeHf" role="doc-biblioref">45</a>]</span>, BioPortal <span class="citation" data-cites="1Gsq23e51">[<a href="#ref-1Gsq23e51" role="doc-biblioref">46</a>]</span></td>
+</tr>
+</tbody>
+</table>
+<p>{#tbl:fair-fdos}</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
@@ -670,6 +780,18 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 </div>
 <div id="ref-7szz7dwO" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">42. </div><div class="csl-right-inline"><strong>FAIR Digital Object Framework Documentation</strong> <a href="https://fairdigitalobjectframework.org/">https://fairdigitalobjectframework.org/</a></div>
+</div>
+<div id="ref-I9Kx0Hjy" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">43. </div><div class="csl-right-inline"><strong>Handle System Protocol (ver 2.1) Specification</strong> <div class="csl-block">S Sun, S Reilly, L Lannom, J Petrone</div> <em>RFC Editor</em> (2003-11) <a href="https://doi.org/ggn83x">https://doi.org/ggn83x</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc3652">10.17487/rfc3652</a></div></div>
+</div>
+<div id="ref-o4h92LpS" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">44. </div><div class="csl-right-inline"><strong>Data - W3C</strong> <a href="https://www.w3.org/standards/semanticweb/data">https://www.w3.org/standards/semanticweb/data</a></div>
+</div>
+<div id="ref-1F8S9FeHf" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">45. </div><div class="csl-right-inline"><strong>Bioschemas - Bioschemas</strong> <a href="http://bioschemas.org/">http://bioschemas.org/</a></div>
+</div>
+<div id="ref-1Gsq23e51" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">46. </div><div class="csl-right-inline"><strong>NCBO BioPortal</strong> <a href="https://bioportal.bioontology.org/ontologies">https://bioportal.bioontology.org/ontologies</a></div>
 </div>
 </div>
 <section class="footnotes footnotes-end-of-document" role="doc-endnotes">

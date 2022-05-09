@@ -3,9 +3,12 @@ API’s
 APIs
 async
 AtomPub
+auth
 backend
 backends
 BioExcel
+bioinformatics
+BioPortal
 bytestream
 CaroleAnneGoble
 carolegoble
@@ -16,6 +19,7 @@ Cordra
 COVID
 CWFP
 Datacite
+DCAT
 DNS
 DOIP
 EMEA
@@ -31,6 +35,7 @@ HATEOAS
 HLS
 hoc
 IEC
+IETF
 InfoType
 INFRAEDI
 INFRAEOSC
@@ -39,9 +44,11 @@ inheritently
 interferring
 JSON
 JSWS
+Kernal
 LD
 LDP
-Metamodel
+maintaned
+metamodel
 Microdata
 Micropub
 middleware
@@ -49,8 +56,11 @@ modularity
 NIST
 NL
 occassionally
+øf
 ontologies
 OpenAPI
+OSI
+PAV
 pgroth
 PID
 PIDs
@@ -64,7 +74,7 @@ redirections
 RequirementSpec
 requiremes
 resiliant
-Scalability
+scalability
 scalable
 schemas
 seemlessly
@@ -74,6 +84,7 @@ soilandreyes
 SSL
 Stian
 subtypes
+syntaxes
 TCP
 thumbstone
 TLS
