@@ -7,7 +7,7 @@
   <meta name="author" content="Stian Soiland-Reyes" />
   <meta name="author" content="Carole Goble" />
   <meta name="author" content="Paul Groth" />
-  <meta name="dcterms.date" content="2022-05-08" />
+  <meta name="dcterms.date" content="2022-05-09" />
   <meta name="keywords" content="FDO, distributed, digital object" />
   <title>Evaluating FAIR Digital Object as a distributed object system</title>
   <style>
@@ -46,8 +46,8 @@
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-05-08" />
-  <meta name="citation_publication_date" content="2022-05-08" />
+  <meta name="dc.date" content="2022-05-09" />
+  <meta name="citation_publication_date" content="2022-05-09" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -73,9 +73,9 @@
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/1933158c3a935307039a1a24e9902037cfe11e53/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1933158c3a935307039a1a24e9902037cfe11e53/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1933158c3a935307039a1a24e9902037cfe11e53/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/cf1ed8888599bdb9ee85f2e53c33fb9db3b10d41/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/cf1ed8888599bdb9ee85f2e53c33fb9db3b10d41/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/cf1ed8888599bdb9ee85f2e53c33fb9db3b10d41/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,10 +92,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://stain.github.io/2022-fdo-paper/v/1933158c3a935307039a1a24e9902037cfe11e53/">permalink</a>)
+(<a href="https://stain.github.io/2022-fdo-paper/v/cf1ed8888599bdb9ee85f2e53c33fb9db3b10d41/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/stain/2022-fdo-paper/tree/1933158c3a935307039a1a24e9902037cfe11e53">stain/2022-fdo-paper@1933158</a>
-on May 8, 2022.
+from <a href="https://github.com/stain/2022-fdo-paper/tree/cf1ed8888599bdb9ee85f2e53c33fb9db3b10d41">stain/2022-fdo-paper@cf1ed88</a>
+on May 9, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -205,6 +205,11 @@ TODO: Remove quotes from cited articles
 <table id="tbl:metamodel-concepts">
 <caption><span>Table 2:</span> Mapping the Metamodel concepts from the Interoperability Framework for Fast Data <span class="citation" data-cites="KlCFFFyL">[<a href="#ref-KlCFFFyL" role="doc-biblioref">1</a>]</span> to equivalent concepts for FDO and Web:
 </caption>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 33%" />
+<col style="width: 30%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: center;">Metamodel concept</th>
@@ -220,38 +225,38 @@ TODO: Remove quotes from cited articles
 </tr>
 <tr class="even">
 <td style="text-align: center;">Service</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">HTTP server, endpoint</td>
+<td style="text-align: center;">DOIP service</td>
+<td style="text-align: center;">Server/endpoint</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">Transaction</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">(not supported)</td>
+<td style="text-align: center;">Conditional requests, <code>409 Conflict</code></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Process</td>
+<td style="text-align: center;">Extended operations</td>
+<td style="text-align: center;">Primarily stateless, <code>100 Continue</code>, <code>202 Accepted</code></td>
+</tr>
+<tr class="odd">
 <td style="text-align: center;">Operation</td>
+<td style="text-align: center;">DOIP Operation</td>
 <td style="text-align: center;">Method</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Request</td>
+<td style="text-align: center;">Request</td>
+<td style="text-align: center;">Request</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">Response</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Operation</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Request</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">Response</td>
+<td style="text-align: center;">Response</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Message</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">Segment</td>
+<td style="text-align: center;">Message, Representation</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">Channel</td>
@@ -260,13 +265,13 @@ TODO: Remove quotes from cited articles
 </tr>
 <tr class="even">
 <td style="text-align: center;">Protocol</td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">DOIP 2.0, ++</td>
 <td style="text-align: center;">HTTP/1.1, HTTP/2, HTTP/3</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">Link</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">PID/Handle</td>
+<td style="text-align: center;">URL</td>
 </tr>
 </tbody>
 </table>

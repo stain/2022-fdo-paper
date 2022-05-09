@@ -84,11 +84,15 @@ content/10.comparison.md:42:FDO
 content/10.comparison.md:42:LD
 content/10.comparison.md:42:Metamodel
 content/10.comparison.md:44:FDO
+content/10.comparison.md:45:DOIP
+content/10.comparison.md:48:DOIP
 content/10.comparison.md:52:TCP
 content/10.comparison.md:52:TCP
 content/10.comparison.md:52:TLS
 content/10.comparison.md:52:TLS
 content/10.comparison.md:52:UDP
+content/10.comparison.md:53:DOIP
+content/10.comparison.md:54:PID
 content/10.comparison.md:56:FDO
 content/10.comparison.md:56:Metamodel
 content/10.comparison.md:57:metamodel

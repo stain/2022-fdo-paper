@@ -40,7 +40,7 @@ LD
 Metamodel
 Microdata
 middleware
-Modularity
+modularity
 NIST
 NL
 occassionally
@@ -56,7 +56,7 @@ RDF
 RDFa
 RDFS
 redirections
-Scalability
+scalability
 scalable
 schemas
 seemlessly

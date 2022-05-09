@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-05-08'
+date-meta: '2022-05-09'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-05-08" />
-  <meta name="citation_publication_date" content="2022-05-08" />
+  <meta name="dc.date" content="2022-05-09" />
+  <meta name="citation_publication_date" content="2022-05-09" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/1933158c3a935307039a1a24e9902037cfe11e53/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1933158c3a935307039a1a24e9902037cfe11e53/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1933158c3a935307039a1a24e9902037cfe11e53/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/cf1ed8888599bdb9ee85f2e53c33fb9db3b10d41/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/cf1ed8888599bdb9ee85f2e53c33fb9db3b10d41/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/cf1ed8888599bdb9ee85f2e53c33fb9db3b10d41/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/1933158c3a935307039a1a24e9902037cfe11e53/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/cf1ed8888599bdb9ee85f2e53c33fb9db3b10d41/))
 was automatically generated
-from [stain/2022-fdo-paper@1933158](https://github.com/stain/2022-fdo-paper/tree/1933158c3a935307039a1a24e9902037cfe11e53)
-on May 8, 2022.
+from [stain/2022-fdo-paper@cf1ed88](https://github.com/stain/2022-fdo-paper/tree/cf1ed8888599bdb9ee85f2e53c33fb9db3b10d41)
+on May 9, 2022.
 </em></small>
 
 ## Authors
@@ -165,18 +165,18 @@ Table: Considering FDO and Web according to the levels of interoperability [@doi
 Mapping of Metamodel concepts:
 
 | Metamodel concept | FDO/DOIP concept | Web/LD concept |
-|:-----------------:|:-----------:|:--------------:|
-|  Resource         |  FDO/DO     |  Resource |
-|  Service          |             |  HTTP server, endpoint |
-|  Transaction      |             |                |
-|  Process          |  Operation  |  Method        |
-|  Response         |             |                |
-|  Operation        |             |                |
-|  Request          |             |                |
-|  Message          |             |                |
-|  Channel          |  TCP/IP, TLS | TCP/IP, TLS, UDP |
-|  Protocol         |             |  HTTP/1.1, HTTP/2, HTTP/3     |
-|  Link             |             |                |
+|:-----------------:|:----------------:|:--------------:|
+|  Resource         | FDO/DO           |  Resource       |
+|  Service          | DOIP service     |  Server/endpoint |
+|  Transaction      | (not supported)  |  Conditional requests, `409 Conflict` |
+|  Process          | Extended operations  |  Primarily stateless, `100 Continue`, `202 Accepted` |
+|  Operation        | DOIP Operation   |  Method        |
+|  Request          | Request          |  Request       |
+|  Response         | Response         |  Response      |
+|  Message          | Segment          |  Message, Representation |
+|  Channel          | TCP/IP, TLS      | TCP/IP, TLS, UDP |
+|  Protocol         | DOIP 2.0, ++     | HTTP/1.1, HTTP/2, HTTP/3  |
+|  Link             | PID/Handle       | URL          |
 
 Table: Mapping the Metamodel concepts from the Interoperability Framework for Fast Data [@doi:10.1007/978-3-319-31861-5_1] to equivalent concepts for FDO and Web:
 {#tbl:metamodel-concepts}
