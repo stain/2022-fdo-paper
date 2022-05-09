@@ -1,3 +1,4 @@
+actionability
 API’s
 APIs
 async
@@ -5,6 +6,7 @@ AtomPub
 backend
 backends
 BioExcel
+bytestream
 CaroleAnneGoble
 carolegoble
 CAs
@@ -19,6 +21,8 @@ DOIP
 EMEA
 EOSC
 FDO
+FDOF
+FDOR
 FDOs
 findable
 Goble
@@ -34,7 +38,9 @@ inheritedly
 inheritently
 interferring
 JSON
+JSWS
 LD
+LDP
 Metamodel
 Microdata
 Micropub
@@ -55,8 +61,10 @@ RDF
 RDFa
 RDFS
 redirections
+RequirementSpec
+requiremes
 resiliant
-scalability
+Scalability
 scalable
 schemas
 seemlessly
@@ -71,5 +79,6 @@ thumbstone
 TLS
 UDP
 URI
+WD
 WebDAV
 WSDL

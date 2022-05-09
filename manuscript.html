@@ -73,9 +73,9 @@
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/b046b0b925dd9d2c46f3fe7e104392676dc3c953/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/b046b0b925dd9d2c46f3fe7e104392676dc3c953/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/b046b0b925dd9d2c46f3fe7e104392676dc3c953/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/3c945f76034e7a2a9f02240d9737311c02375ab6/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/3c945f76034e7a2a9f02240d9737311c02375ab6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/3c945f76034e7a2a9f02240d9737311c02375ab6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,9 +92,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://stain.github.io/2022-fdo-paper/v/b046b0b925dd9d2c46f3fe7e104392676dc3c953/">permalink</a>)
+(<a href="https://stain.github.io/2022-fdo-paper/v/3c945f76034e7a2a9f02240d9737311c02375ab6/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/stain/2022-fdo-paper/tree/b046b0b925dd9d2c46f3fe7e104392676dc3c953">stain/2022-fdo-paper@b046b0b</a>
+from <a href="https://github.com/stain/2022-fdo-paper/tree/3c945f76034e7a2a9f02240d9737311c02375ab6">stain/2022-fdo-paper@3c945f7</a>
 on May 9, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -159,8 +159,8 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Pragmatic</strong>: <em>using interaction contracts so processes can be choreographed in workflows</em></td>
-<td style="text-align: center;">FDO types and operations enable detailed choreography (see CWFP). <code>0.TYPE/DOIPOperation</code> has lightweight definition of operation, e.g. <code>0.DOIP/Request</code>/<code>0.DOIP/Response</code> may give FDO Type (or any other kind of “specifics”). Semantics/purpose of operations not formalized (similar operations can be grouped with <code>0.DOIP/OperationReference</code>).</td>
-<td style="text-align: center;">“Follow your nose” crawler navigation, which may lead to frequent dead ends. Operational composition, typically within a single API provider, by OpenAPI 3 <span class="citation" data-cites="k0AfCGzw">[<a href="#ref-k0AfCGzw" role="doc-biblioref">2</a>]</span>, schema.org Actions [<span class="citation" data-cites="dKAekUjL">[<a href="#ref-dKAekUjL" role="doc-biblioref">3</a>]</span>), WSDL/SOAP <span class="citation" data-cites="LmudecyN">[<a href="#ref-LmudecyN" role="doc-biblioref">4</a>]</span></td>
+<td style="text-align: center;">FDO types and operations enable detailed choreography (see CWFP). <code>0.TYPE/DOIPOperation</code> has lightweight definition of operation, <code>0.DOIP/Request</code> or <code>0.DOIP/Response</code> may give FDO Type or any other kind of “specifics” (incl. human readable docs). Semantics/purpose of operations not formalized (similar operations can be grouped with <code>0.DOIP/OperationReference</code>).</td>
+<td style="text-align: center;">“Follow your nose” crawler navigation, which may lead to frequent dead ends. Operational composition, typically within a single API provider, documented by OpenAPI 3 <span class="citation" data-cites="k0AfCGzw">[<a href="#ref-k0AfCGzw" role="doc-biblioref">2</a>]</span>, schema.org Actions [<span class="citation" data-cites="dKAekUjL">[<a href="#ref-dKAekUjL" role="doc-biblioref">3</a>]</span>), WSDL/SOAP <span class="citation" data-cites="LmudecyN">[<a href="#ref-LmudecyN" role="doc-biblioref">4</a>]</span>, but frequently just as human-readable developer documentation/examples.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Semantic</strong>: <em>ensuring consistent understanding of messages, interoperability of rules, knowledge and ontologies</em></td>
@@ -226,16 +226,16 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 <tr class="odd">
 <td style="text-align: center;">Operation</td>
 <td style="text-align: center;">DOIP Operation</td>
-<td style="text-align: center;">Method</td>
+<td style="text-align: center;">Method, query parameters</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Request</td>
-<td style="text-align: center;">Request</td>
+<td style="text-align: center;">DOIP Request</td>
 <td style="text-align: center;">Request</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">Response</td>
-<td style="text-align: center;">Response</td>
+<td style="text-align: center;">DOIP Response</td>
 <td style="text-align: center;">Response</td>
 </tr>
 <tr class="even">
@@ -245,7 +245,7 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 </tr>
 <tr class="odd">
 <td style="text-align: center;">Channel</td>
-<td style="text-align: center;">TCP/IP, TLS</td>
+<td style="text-align: center;">DOIP Transport protocol (e.g. TCP/IP, TLS). JSWS signatures.</td>
 <td style="text-align: center;">TCP/IP, TLS, UDP</td>
 </tr>
 <tr class="even">
@@ -369,6 +369,178 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 </table>
 </div>
 <h2 id="assessing-doip-against-fdo">Assessing DOIP against FDO</h2>
+<div id="tbl:fdo-checks" class="tablenos">
+<table id="tbl:fdo-checks">
+<caption><span>Table 4:</span> Checking FDO guidelines <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">41</a>]</span> against its current implementations as DOIP <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">6</a>]</span> and Linked Data Platform (LDP) <span class="citation" data-cites="7szz7dwO">[<a href="#ref-7szz7dwO" role="doc-biblioref">42</a>]</span>, with suggestions for required additions.
+</caption>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Guideline</strong></th>
+<th style="text-align: center;">DOIP 2.0</th>
+<th style="text-align: center;">FDO suggestions</th>
+<th style="text-align: center;">Linked Data Platform</th>
+<th style="text-align: center;">LDP suggestion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">G1: <em>invest for many decades</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">G2: <em>trustworthiness</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">G3: <em>FAIR principles</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">G4: <em>machine actionability</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">G5: <em>abstraction principle</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">G6: <em>stable binding</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">G7: <em>encapsulation</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">G8: <em>technology independence</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">G9: <em>standard compliance</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">FDOF1: <em>PID as basis</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">FDOF2: <em>PID record w/ type</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">FDOF3: <em>PID resolvable to bytestream &amp; metadata</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">FDOF4: <em>Additional attributes</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">FDOF5: <em>Interface: operation by PID</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">FDOF6: <em>CRUD operations + extensions</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">FDOF7: <em>FDOF Types related to operations</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">FDOF8: <em>Metadata as FDO, semantic assertions</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">FDOF9: <em>Different metadata levels</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">FDOF10: <em>Metadata schemas by community</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">FDOF11: <em>FDO collections w/ semantic relations</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">FDOF12: <em>Deleted FDO preserve PID w/ tombstone</em></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The draft update specification <em>WD-RequirementSpec-1.0-20220317</em> (at time of writing in internal review by FAIR Digital Object Forum) clarifies these definitions with equivalent identifiers <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> and relates them to further FDO requiremes such as FDO Data Type Registries.</p>
 <h2 id="assessing-fdo-against-fair">Assessing FDO against FAIR</h2>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
@@ -493,11 +665,18 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 <div id="ref-ikO7e0mh" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>ISO/IEC 23009-1:2019</strong> <div class="csl-block">14:00-17:00</div> <em>ISO</em> <a href="https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html">https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html</a></div>
 </div>
+<div id="ref-RwvirqWg" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>FAIR digital object framework</strong> <div class="csl-block">Luiz Bonino, Oeter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark Leggott, Carlo Zwölf</div> <em>FDOF technical implementation guideline</em> (2019-11-22) <a href="{https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx}">{https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx}</a></div>
+</div>
+<div id="ref-7szz7dwO" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">42. </div><div class="csl-right-inline"><strong>FAIR Digital Object Framework Documentation</strong> <a href="https://fairdigitalobjectframework.org/">https://fairdigitalobjectframework.org/</a></div>
+</div>
 </div>
 <section class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr />
 <ol>
 <li id="fn1" role="doc-endnote"><p>The <code>http</code> protocol (port 80) can in theory also upgrade <span class="citation" data-cites="1B16WfR7q">[<a href="#ref-1B16WfR7q" role="doc-biblioref">21</a>]</span> to TLS encryption, as commonly used by <a href="https://www.rfc-editor.org/rfc/rfc8010.html#section-8.2">Internet Printing Protocol</a> for <code>ipp</code> URIs, but on the Web, best practice is explicit <code>https</code> (port 443) URLs to ensure following links stay secure.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>FDOF* renamed to FDOR*. FDOF3/FDOF4 are swapped to FDOR4/FDOR3 in <em>WD-RequirementSpec-1.0-20220317</em>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <!-- default theme -->
