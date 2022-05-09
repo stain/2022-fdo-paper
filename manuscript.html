@@ -73,9 +73,9 @@
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/cf1ed8888599bdb9ee85f2e53c33fb9db3b10d41/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/cf1ed8888599bdb9ee85f2e53c33fb9db3b10d41/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/cf1ed8888599bdb9ee85f2e53c33fb9db3b10d41/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/b046b0b925dd9d2c46f3fe7e104392676dc3c953/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/b046b0b925dd9d2c46f3fe7e104392676dc3c953/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/b046b0b925dd9d2c46f3fe7e104392676dc3c953/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,9 +92,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://stain.github.io/2022-fdo-paper/v/cf1ed8888599bdb9ee85f2e53c33fb9db3b10d41/">permalink</a>)
+(<a href="https://stain.github.io/2022-fdo-paper/v/b046b0b925dd9d2c46f3fe7e104392676dc3c953/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/stain/2022-fdo-paper/tree/cf1ed8888599bdb9ee85f2e53c33fb9db3b10d41">stain/2022-fdo-paper@cf1ed88</a>
+from <a href="https://github.com/stain/2022-fdo-paper/tree/b046b0b925dd9d2c46f3fe7e104392676dc3c953">stain/2022-fdo-paper@b046b0b</a>
 on May 9, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -133,22 +133,7 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 </small></p></li>
 </ul>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
-<!--
-
-TODO: Remove quotes from cited articles
-
--->
 <h2 id="interoperability-framework-for-fast-data">Interoperability Framework for Fast Data</h2>
-<p>Quotes from <span class="citation" data-cites="KlCFFFyL">[<a href="#ref-KlCFFFyL" role="doc-biblioref">1</a>]</span>:</p>
-<blockquote>
-<p><strong>Symbiotic</strong>: Expresses the purpose and intent of two interacting applications to engage in a mutually beneficial agreement. Enterprise engineering is usually the topmost level in application interaction complexity, since it goes up to the human level, with governance and strategy heavily involved. Therefore, it maps mainly onto the symbiotic category, although the same principles apply (in a more rudimentary fashion) to simpler subsystems. This can entail a tight coordination under a common governance (if the applications are controlled by the same entity), a joint venture agreement (if the two applications are substantially aligned), a collaboration involving a partnership agreement (if some goals are shared) or a mere value chain cooperation (an outsourcing contract).</p>
-<p><strong>Pragmatic</strong>: The effect of an interaction between a consumer and a provider is the outcome of a contract, which is implemented by a choreography that coordinates processes, which in turn implement workflow behaviour by orchestrating service invocations. Languages such as Business Process Execution Language (BPEL ) support the implementation of processes and Web Services Choreography Description Language (WS-CDL) is an example of a language that allows choreographies to be specified.</p>
-<p><strong>Semantic</strong>: Both interacting applications must be able to understand the meaning of the content of the messages exchanged: both requests and responses. This implies interoperability in rules, knowledge and ontologies, so that meaning is not lost when transferring a message from the context of the sender to that of the receiver. Semantic languages and specifications such as Web Ontology Language (OWL ) and Resource Description Framework (RDF), map onto this category.</p>
-<p><strong>Syntactic</strong>: This deals mainly with form, rather than content. Each message has a structure composed of data (primitive applications) according to some structural definition (its schema). Data need to be serialized to be sent over the network as messages using representations such as XML or JSON .</p>
-<p><strong>Connective</strong>: The main objective is to transfer a message from the context of one application to the other regardless of its content. This usually involves enclosing that content in another message with control information and implementing a message protocol (such as SOAP or HTTP) over a communications network according to its own protocol (such as TCP/IP) and possibly resorting to routing gateways if different networks are involved.</p>
-<p><strong>Environmental</strong>: Each application also interacts with the environment (e.g. a cloud or a server) in which it is deployed, anewed or by migration. The environment’s management application programming interface (API) and the infrastructure level that the application requires will most likely have impact on the way applications interact, particularly if they are deployed in (or migrate between) different environments, from different vendors. Interoperability between an application and the environment in which it is deployed usually known as portability.</p>
-<p><strong>Metamodel</strong>: Resource, Service, Transaction, Process, Response, Operation, Request, Channel, Protocol, Link</p>
-</blockquote>
 <h3 id="considering-fdoweb-as-interoperability-framework-for-fast-data">Considering FDO/Web as interoperability framework for Fast Data</h3>
 <div id="tbl:fdo-web-interoperability-framework" class="tablenos">
 <table id="tbl:fdo-web-interoperability-framework">
@@ -168,32 +153,32 @@ TODO: Remove quotes from cited articles
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><strong>Symbiotic</strong></td>
+<td style="text-align: left;"><strong>Symbiotic</strong>: <em>to what extent multiple applications can agree to interact/align/collaborate/cooperate</em></td>
 <td style="text-align: center;">Purpose of FDO is to enable federated machine actionable digital objects for scholarly purposes, in practice this also requires agreement of or compatibility between FDO types. FDO encourages research communities to develop common type registries to be shared across instances. In current DOIP practice, each service have their own types, attributes and operations. The wider symbiosis is consistent use of PIDs.</td>
 <td style="text-align: center;">Web is loosely coupled and encourages collaboration and linking by URL. In practice, REST APIs end up being mandated centrally by dominant (often commercial) providers, which clients are required to use as-is with special code per service. Use of Linked Data enables common tooling and semantic mapping across differences.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Pragmatic</strong></td>
+<td style="text-align: left;"><strong>Pragmatic</strong>: <em>using interaction contracts so processes can be choreographed in workflows</em></td>
 <td style="text-align: center;">FDO types and operations enable detailed choreography (see CWFP). <code>0.TYPE/DOIPOperation</code> has lightweight definition of operation, e.g. <code>0.DOIP/Request</code>/<code>0.DOIP/Response</code> may give FDO Type (or any other kind of “specifics”). Semantics/purpose of operations not formalized (similar operations can be grouped with <code>0.DOIP/OperationReference</code>).</td>
 <td style="text-align: center;">“Follow your nose” crawler navigation, which may lead to frequent dead ends. Operational composition, typically within a single API provider, by OpenAPI 3 <span class="citation" data-cites="k0AfCGzw">[<a href="#ref-k0AfCGzw" role="doc-biblioref">2</a>]</span>, schema.org Actions [<span class="citation" data-cites="dKAekUjL">[<a href="#ref-dKAekUjL" role="doc-biblioref">3</a>]</span>), WSDL/SOAP <span class="citation" data-cites="LmudecyN">[<a href="#ref-LmudecyN" role="doc-biblioref">4</a>]</span></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Semantic</strong></td>
+<td style="text-align: left;"><strong>Semantic</strong>: <em>ensuring consistent understanding of messages, interoperability of rules, knowledge and ontologies</em></td>
 <td style="text-align: center;">FDO semantic enable navigation and typing. Every FDO have a type. Types maintained in FDO Type registries, which may add additional semantics, e.g. the ePIC <a href="https://hdl.handle.net/21.11104/c1a0ec5ad347427f25d6">PID-InfoType for Model</a>. No single type semantic, Type FDOs can link to existing vocabularies &amp; ontologies. JSON-LD used within some FDO objects (e.g. DISSCO Digital Specimen, NIST Material Science schema) <span class="citation" data-cites="GNm0278Y">[<a href="#ref-GNm0278Y" role="doc-biblioref">5</a>]</span></td>
 <td style="text-align: center;">Lightweight HTTP semantics for authenticity/navigation. Semantic Type not commonly expressed on PID/header level, may be declared within Linked Data metadata. Semantic of type implied by Linked Data formats (e.g. OWL2, RDFS), although choice of type system may not be explicit.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Syntactic</strong></td>
+<td style="text-align: left;"><strong>Syntactic</strong>: <em>serializing messages for digital exchange, structure representation</em></td>
 <td style="text-align: center;">DOIP serialize FDOs as JSON, metadata commonly use JSON, typed with JSON Schema. Multiple byte stream attachments of any media type.</td>
 <td style="text-align: center;">Textual HTTP headers (including any signposting), single byte stream of any media type, e.g. Linked Data formats (JSON-LD, Turtle, RDF/XML) or embedded in document (HTML with RDFa, JSON-LD or Microdata). XML previously main syntax used by APIs, JSON now dominant.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Connective</strong></td>
+<td style="text-align: left;"><strong>Connective</strong>: <em>transferring messages to another application, e.g. wrapping in other protocols</em></td>
 <td style="text-align: center;">DOIP <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">6</a>]</span> is transport-independent, commonly TLS TCP/IP port 9000), <a href="https://www.cordra.org/documentation/api/doip-api-for-http-clients.html">DOIP over HTTP</a></td>
 <td style="text-align: center;">HTTP/1.1 (TCP/IP port 80), HTTP/1.1+TLS (TCP/IP 443), HTTP/2 (as HTTP/1* but binary), HTTP/3 (like HTTP/2+TLS but UDP)</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Environmental</strong></td>
+<td style="text-align: left;"><strong>Environmental</strong>: <em>how applications are deployed and affected by its environment, portability</em></td>
 <td style="text-align: center;">Main DOIP implementation is <a href="https://www.cordra.org/">Cordra</a>, which can be single-instance or <a href="https://www.cordra.org/documentation/configuration/distributed-deployment.html">distributed</a>. Cordra <a href="https://www.cordra.org/documentation/configuration/storage-backends.html">storage backends</a> include file system, S3, MongoDB (itself scalable). Unique DOIP protocol can be hard to add to existing Web application frameworks, although proxy services have been developed (e.g. B2SHARE adapter).</td>
 <td style="text-align: center;">HTTP services widely deployed in a myriad of ways, ranging from single instance servers, horizontally &amp; vertically scaled application servers, to (for static content) multi-cloud Content-Delivery Networks (CDN). Current scalable cloud technologies for Web hosting may not support HTTP features previously seen as important for Semantic Web, e.g. content negotiation and semantic HTTP status codes.</td>
 </tr>
@@ -206,9 +191,9 @@ TODO: Remove quotes from cited articles
 <caption><span>Table 2:</span> Mapping the Metamodel concepts from the Interoperability Framework for Fast Data <span class="citation" data-cites="KlCFFFyL">[<a href="#ref-KlCFFFyL" role="doc-biblioref">1</a>]</span> to equivalent concepts for FDO and Web:
 </caption>
 <colgroup>
-<col style="width: 35%" />
-<col style="width: 33%" />
-<col style="width: 30%" />
+<col style="width: 29%" />
+<col style="width: 27%" />
+<col style="width: 43%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -277,32 +262,7 @@ TODO: Remove quotes from cited articles
 </table>
 </div>
 <h2 id="a-comparison-framework-for-middleware-infrastructures">A comparison framework for middleware infrastructures</h2>
-<p>Quotes from <span class="citation" data-cites="hRzcHhPD">[<a href="#ref-hRzcHhPD" role="doc-biblioref">7</a>]</span>:</p>
-<blockquote>
-<ul>
-<li><strong>Openness</strong>: The middleware infrastructure should enable extending the applications built on top of it in various ways. (e.g., adding, removing, upgrading, composing services, etc.).</li>
-<li><strong>Scalability</strong>: The middleware infrastructure should facilitate the effective operation of the applications at many different scales.</li>
-<li><strong>Performance</strong>: The middleware infrastructure should enable the efficient and predictable, if needed, execution of the applications that are built on top of it.</li>
-<li><strong>Distribution transparency</strong>: is the property that determines if the application is perceived by users, or developers as a whole rather than as a collection of independent constituent elements. The requirement for distribution transparency is quite generic and it is usually refined into a number of more specific transparencies including:
-<ul>
-<li><strong>Access transparency</strong>: the infrastructure should enable accessing local and remote application elements in the same way.</li>
-<li><strong>Location transparency</strong>: the infrastructure should enable accessing the application elements without knowledge of their physical location.</li>
-<li><strong>Concurrency transparency</strong>: the infrastructure should allow concurrent processing on resources, without interference.</li>
-<li><strong>Failure transparency</strong>: the infrastructure should enable service provisioning despite the occurrence of failures.</li>
-<li><strong>Migration transparency</strong>: the infrastructure should provide means for changing the location of elements of the application without compromising the application’s correct operation, i.e. without affecting the elements that depend on the migrated elements.</li>
-<li><strong>Persistence transparency</strong>: the infrastructure should provide means for concealing the deactivation and reactivation of elements from other elements that are using them.</li>
-<li><strong>Transaction transparency</strong>: the infrastructure should provide means for coordinating the execution of atomic and isolated transactions.</li>
-</ul></li>
-</ul>
-<p><strong>Modularity</strong>: The application should consist of a collection of elements, each one providing services, used by the others. Modularity enables the identification of dependencies between the elements that make up the system. Consequently, it allows determining, which elements are affected by the eventual addition, removal or upgrade of services.</p>
-<p><strong>Encapsulation</strong>: For each constituent element, there is a clear separation between the element’s interface and implementation. The interface is a well-defined specification of the provided services, the contract between the element and the entities using it. The implementation is the realization of the provided services. In general, it is safe to change the implementation of an element as long as the element’s interface is preserved. Changing an element’s interface without compromising the overall application integrity requires that the rest of the application does not depend on this particular interface, at the time of the change.</p>
-<p><strong>Inheritance</strong>: An interface specification (resp. implementation) may be derived from another one. The derived interface (resp. implementation) provides at least the services of the base interface (resp. implementation). Inheritance enables the vertical and horizontal composition of services.</p>
-<p><strong>Signal interfaces</strong>: defining asynchronous stimuli that can be handled by instances of engineering objects, providing these interfaces.</p>
-<p><strong>Operation interfaces</strong>: defining operations that can be invoked on instances, providing these interfaces. Invoking an operation causes a request message to be sent by the invoker to the invoked instance. Invoking an operation may further result in a reply sent from the invoked instance to the invoking instance.</p>
-<p><strong>Stream interfaces</strong>: defining operations that can be invoked on instances, providing these interfaces. The result of invoking a stream operation is the continuous conveyance of information from the invoked instance to the invoking instance.</p>
-</blockquote>
 <h3 id="comparing-fdo-and-web-as-middleware-infrastructures">Comparing FDO and Web as middleware infrastructures</h3>
-<p>DOIP <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">6</a>]</span></p>
 <div id="tbl:fdo-web-middleware" class="tablenos">
 <table id="tbl:fdo-web-middleware">
 <caption><span>Table 3:</span> Comparing FAIR Digital Object (with the DOIP 2.0 protocol <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">6</a>]</span>) and Web technologies (using Linked Data) as middleware infrastructures <span class="citation" data-cites="hRzcHhPD">[<a href="#ref-hRzcHhPD" role="doc-biblioref">7</a>]</span>
@@ -321,89 +281,89 @@ TODO: Remove quotes from cited articles
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><strong>Openness</strong></td>
+<td style="text-align: left;"><strong>Openness</strong>: <em>framework enable extension of applications</em></td>
 <td style="text-align: center;">FDOs can be cross-linked using PIDs, pointing to multiple FDO endpoints. Custom DOIP operations can be exposed, although it is unclear if these can be outside the FDO server. PID minting requires Handle.net prefix subscription, or use of services like <a href="https://datacite.org/">Datacite</a>, <a href="https://eudat.eu/services/userdoc/b2handle">B2Handle</a>.</td>
 <td style="text-align: center;">The Web is inheritedly open and made by cross-linked URLs. Participation requires DNS domain purchase (many free alternatives also exists). PID minting can be free using CURL/ARK services, or can use DOI/Handle with HTTP redirects.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Scalability</strong></td>
+<td style="text-align: left;"><strong>Scalability</strong>: <em>application should be effective at many different scales</em></td>
 <td style="text-align: center;">No defined methods for caching or mirroring, although this could be handled by backend, depending on exposed FDO operations (e.g. Cordra can scale to multiple backend nodes)</td>
 <td style="text-align: center;">Cache control headers reduce repeated transfer and assist explicit and transparent proxies for speed-up. HTTP <code>GET</code> can be scaled to world-population-wide with Content-Delivery Networks (CDNs), while write-access scalability is typically manage by backend.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Performance</strong></td>
+<td style="text-align: left;"><strong>Performance</strong>: <em>efficient and predictable execution</em></td>
 <td style="text-align: center;">DOIP has been shown moderately scalable to 100 millions of objects, create operation at 900 requests/second <span class="citation" data-cites="18P9txgeB">[<a href="#ref-18P9txgeB" role="doc-biblioref">8</a>]</span>. DOIP protocol is serial and reusable, but multiple connections can be made. Setup is typically through TCP and TLS which adds latency.</td>
-<td style="text-align: center;">HTTP traffic is about 10% of global Internet traffic, excluding video and social networks <span class="citation" data-cites="F8VZ86hu">[{ <a href="#ref-F8VZ86hu" role="doc-biblioref">9</a>}]</span>. HTTP 1 connections are serial and reusable, and concurrent connections is common. HTTP/2 adds multiplexed streams <span class="citation" data-cites="KbbW0kGT">[<a href="#ref-KbbW0kGT" role="doc-biblioref">10</a>]</span> but still has TCP+TLS startup costs. For reduced latency <span class="citation" data-cites="CJuBupCW">[<a href="#ref-CJuBupCW" role="doc-biblioref">11</a>]</span>, HTTP/3 <span class="citation" data-cites="Amit86Tp">[{ <a href="#ref-Amit86Tp" role="doc-biblioref">12</a>}]</span> use QUIC <span class="citation" data-cites="1GWvyEmUf">[{ <a href="#ref-1GWvyEmUf" role="doc-biblioref">13</a>}]</span>) rather than TCP, already adapted heavily (30% of EMEA traffic) of which <a href="https://engineering.fb.com/2020/10/21/networking-traffic/how-facebook-is-bringing-quic-to-billions/">Instagram &amp; Facebook video</a> is the majority of traffic.</td>
+<td style="text-align: center;">HTTP traffic is about 10% of global Internet traffic, excluding video and social networks <span class="citation" data-cites="F8VZ86hu">[{ <a href="#ref-F8VZ86hu" role="doc-biblioref">9</a>}]</span>. HTTP 1 connections are serial and reusable, and concurrent connections is common. HTTP/2 adds multiplexed streams <span class="citation" data-cites="KbbW0kGT">[<a href="#ref-KbbW0kGT" role="doc-biblioref">10</a>]</span> but still has TCP+TLS startup costs. For reduced latency <span class="citation" data-cites="CJuBupCW">[<a href="#ref-CJuBupCW" role="doc-biblioref">11</a>]</span>, HTTP/3 <span class="citation" data-cites="Amit86Tp">[{ <a href="#ref-Amit86Tp" role="doc-biblioref">12</a>}]</span> use QUIC <span class="citation" data-cites="1GWvyEmUf">[<a href="#ref-1GWvyEmUf" role="doc-biblioref">13</a>]</span>) rather than TCP, already adapted heavily (30% of EMEA traffic) of which <a href="https://engineering.fb.com/2020/10/21/networking-traffic/how-facebook-is-bringing-quic-to-billions/">Instagram &amp; Facebook video</a> is the majority of traffic.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Distribution transparency</strong></td>
+<td style="text-align: left;"><strong>Distribution transparency</strong>: <em>application perceived as a consistent whole rather than independent elements.</em></td>
 <td style="text-align: center;">Each FDO is accessed separately along with its components (typically from the same endpoint). FDOs should provide the mandatory kernel metadata fields. FDOs of the same declared type typically share additional attributes (although that schema may not be declared). DOIP does not enforce metadata typing constraints, this need to be established as FDO conventions.</td>
 <td style="text-align: center;">Each URL accessed separately. Common HTTP headers provide basic metadata, although it is often not reliable. A multitude of schemas and serializations for metadata exists, conventions might be implied by a declared profile or certain media types. Metadata is not always machine findable, may need pre-agreed API URI Templates <span class="citation" data-cites="11hxwwuRt">[<a href="#ref-11hxwwuRt" role="doc-biblioref">14</a>]</span>, content-negotiation <span class="citation" data-cites="n2f3TfoI">[<a href="#ref-n2f3TfoI" role="doc-biblioref">15</a>]</span> or FAIR Signposting <span class="citation" data-cites="snykkm7R">[<a href="#ref-snykkm7R" role="doc-biblioref">16</a>]</span>.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Access transparency</strong></td>
+<td style="text-align: left;"><strong>Access transparency</strong>: <em>local/remote elements accessed similarly</em></td>
 <td style="text-align: center;">FDOs always accessed through PID indirection, but this means difficult to make private test setup.</td>
 <td style="text-align: center;">Global HTTP protocol frequently used locally and behind firewalls, but at risk of non-global URIs (e.g. <code>http://localhost/object/1</code>) and SSL issues (e.g. self-signed certificates, local CAs)</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Location transparency</strong></td>
+<td style="text-align: left;"><strong>Location transparency</strong>: <em>elements accessed without knowledge of physical location</em></td>
 <td style="text-align: center;">FDOs always accessed through PIDs. Multiple locations possible in Handle system, can expose geo-info.</td>
 <td style="text-align: center;">PIDs and URL redirects. DNS aliases and IP routing can hide location. Geo-localized servers common for large cloud deployments.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Concurrency transparency</strong></td>
+<td style="text-align: left;"><strong>Concurrency transparency</strong>: <em>concurrent processing without interference</em></td>
 <td style="text-align: center;">No explicit concurrency measures. FDO kernel metadata can include checksum and date.</td>
 <td style="text-align: center;">HTTP operations are classified as being stateless/idempotent or not (e.g. <code>PUT</code> changes state, but can be repeated on failure), although these constraints are occassionally violated by Web applications. Cache control, <code>ETag</code> (~ checksum) and modification date in HTTP headers allows detection of concurrent changes on a single resource.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Failure transparency</strong></td>
+<td style="text-align: left;"><strong>Failure transparency</strong>: <em>service provisioning resiliant to failures</em></td>
 <td style="text-align: center;">DOIP status codes, e.g. <code>0.DOIP/Status.104</code>, additional codes can be added as custom attributes</td>
 <td style="text-align: center;">HTTP <a href="https://datatracker.ietf.org/doc/html/rfc7231#section-6.5">status codes</a> e.g. <code>404 Not Found</code>, structured error documents in Open API (??)</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Migration transparency</strong></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">HTTP <code>300</code> status can provide temporary or permanent redirections.</td>
+<td style="text-align: left;"><strong>Migration transparency</strong>: <em>allow relocating elements without interferring application</em></td>
+<td style="text-align: center;">Update of PID record URLs, indirection through <code>0.TYPE/DOIPServiceInfo</code> (not always used consistently). No redirection from DOIP service.</td>
+<td style="text-align: center;">HTTP <code>30x</code> status codes provide temporary or permanent redirections, commonly used for CURLs but also by endpoints.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Persistence transparency</strong></td>
+<td style="text-align: left;"><strong>Persistence transparency</strong>: <em>conceal deactivation/reactivation of elements from their users</em></td>
 <td style="text-align: center;">FDO requires use of PIDs for object persistence, including a thumbstone response for deleted objects. There is no guarantee that an FDO is immutable or will even stay the same type (note: CORDRA extends DOIP with <a href="https://www.cordra.org/documentation/design/object-versioning.html">version tracking</a>).</td>
-<td style="text-align: center;">URLs are not required to persist, although encouraged <span class="citation" data-cites="rbG9uRKw">[<a href="#ref-rbG9uRKw" role="doc-biblioref">17</a>]</span>. Persistence requires convention to use PIDs/CURLs and HTTP <code>410 Gone</code>. An URL may change its content, change in type may sometimes force new URLs if exposing extensions like <code>.json</code>. Memento <span class="citation" data-cites="DNjcMi4a">[<a href="#ref-DNjcMi4a" role="doc-biblioref">18</a>]</span> expose versioned snapshots. WebDAV adds <code>VERSION-CONTROL</code> method <span class="citation" data-cites="hRUsaTiz">[<a href="#ref-hRUsaTiz" role="doc-biblioref">19</a>]</span> (used by SVN).</td>
+<td style="text-align: center;">URLs are not required to persist, although encouraged <span class="citation" data-cites="rbG9uRKw">[<a href="#ref-rbG9uRKw" role="doc-biblioref">17</a>]</span>. Persistence requires convention to use PIDs/CURLs and HTTP <code>410 Gone</code>. An URL may change its content, change in type may sometimes force new URLs if exposing extensions like <code>.json</code>. Memento <span class="citation" data-cites="DNjcMi4a">[<a href="#ref-DNjcMi4a" role="doc-biblioref">18</a>]</span> expose versioned snapshots. WebDAV <code>VERSION-CONTROL</code> method <span class="citation" data-cites="hRUsaTiz">[<a href="#ref-hRUsaTiz" role="doc-biblioref">19</a>]</span> (used by SVN).</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Transaction transparency</strong></td>
-<td style="text-align: center;">No transaction capabilities declared by FDO or DOIP.</td>
+<td style="text-align: left;"><strong>Transaction transparency</strong>: <em>coordinate execution of atomic/isolated transactions</em></td>
+<td style="text-align: center;">No transaction capabilities declared by FDO or DOIP. Internal synchronization possible in backend for Extended operations.</td>
 <td style="text-align: center;">Limited transaction capabilities (e.g. <code>If-Unmodified-Since</code>) on same resource. WebDAV <a href="https://datatracker.ietf.org/doc/html/rfc4918#section-6">locking mechanisms</a> <span class="citation" data-cites="xvMAyRAc">[<a href="#ref-xvMAyRAc" role="doc-biblioref">20</a>]</span> with <code>LOCK</code> and <code>UNLOCK</code> methods.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Modularity</strong></td>
+<td style="text-align: left;"><strong>Modularity</strong>: <em>application as collection of connected/distributed elements</em></td>
 <td style="text-align: center;">FDOs are inheritedly modular using global PID spaces and their cross-references. In practice, FDOs of a given type are exposed through a single server shared within a particular community/institution.</td>
 <td style="text-align: center;">The Web is inheritently modular in that distributed objects are cross-referenced within a global URI space. In practice, an API’s set of resources will be exposed through a single HTTP service, but modularity enables fine-grained scalability in backend.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Encapsulation</strong></td>
+<td style="text-align: left;"><strong>Encapsulation</strong>: <em>separate interface from implementation. Specify interface as contract, multiple implementations possible</em></td>
 <td style="text-align: center;">Indirection by PID gives separation. FDO principles are protocol independent, although it may be unclear which protocol to use for which FDO (although <code>0.DOIP/Transport</code> can be specified after already contacting DOIP). Cordra supports <a href="https://www.cordra.org/documentation/api/doip.html">native DOIP</a>, <a href="https://www.cordra.org/documentation/api/doip-api-for-http-clients.html">DOIP over HTTP</a> and <a href="https://www.cordra.org/documentation/api/rest-api.html">Cordra REST API</a>)</td>
 <td style="text-align: center;">HTTP/1.1 semantics can seemlessly upgrade to HTTP/2 and HTTP/3. <code>http</code> vs <code>https</code> URIs exposes encryption detail <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Implementation details may leak into URIs (e.g. <code>search.aspx</code>), countered by deliberate design of URI patterns <span class="citation" data-cites="iME5l1kk">[<a href="#ref-iME5l1kk" role="doc-biblioref">22</a>]</span> and PIDs via Persistent URLs (PURL).</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Inheritance</strong></td>
-<td style="text-align: center;">FDO establishes need for multiple Data Type Registries (e.g. managed by a community for a particular domain). Semantics of type system currently undefined for FDO and DOIP, for syntactic type can piggyback of FDO type’s schema (e.g. <a href="(https://www.cordra.org/documentation/design/schemas.html#schema-references)">CORDRA <code>$ref</code></a> use of <a href="https://json-schema.org/draft/2020-12/json-schema-core.html#references">JSON Schema references</a> <span class="citation" data-cites="15EZ2D0Rm">[<a href="#ref-15EZ2D0Rm" role="doc-biblioref">23</a>]</span>)</td>
+<td style="text-align: left;"><strong>Inheritance</strong>: <em>Deriving specialized interface from another type</em></td>
+<td style="text-align: center;">DOIP types nested with parents, implying shared FDO structures (unclear if operations are inherited). FDO establishes need for multiple Data Type Registries (e.g. managed by a community for a particular domain). Semantics of type system currently undefined for FDO and DOIP, syntactic types can also piggyback of FDO type’s schema (e.g. <a href="(https://www.cordra.org/documentation/design/schemas.html#schema-references)">CORDRA <code>$ref</code></a> use of <a href="https://json-schema.org/draft/2020-12/json-schema-core.html#references">JSON Schema references</a> <span class="citation" data-cites="15EZ2D0Rm">[<a href="#ref-15EZ2D0Rm" role="doc-biblioref">23</a>]</span>)</td>
 <td style="text-align: center;">Syntactically Media Type with multiple suffixes <span class="citation" data-cites="nlH2rm1s">[<a href="#ref-nlH2rm1s" role="doc-biblioref">24</a>]</span> (mainly used with <code>+json</code>), declaration of subtypes as profiles (RFC6906) <span class="citation" data-cites="nCzRO0pK">[<a href="#ref-nCzRO0pK" role="doc-biblioref">25</a>]</span>. In metadata, semantic type systems (RDFS <span class="citation" data-cites="ZwAcGQKY">[<a href="#ref-ZwAcGQKY" role="doc-biblioref">26</a>]</span>, OWL2 <span class="citation" data-cites="1p4IWJpI">[<a href="#ref-1p4IWJpI" role="doc-biblioref">27</a>]</span>, SKOS <span class="citation" data-cites="16SVc3pvk">[<a href="#ref-16SVc3pvk" role="doc-biblioref">28</a>]</span>). OpenAPI 3 <span class="citation" data-cites="k0AfCGzw">[<a href="#ref-k0AfCGzw" role="doc-biblioref">2</a>]</span> <a href="https://spec.openapis.org/oas/v3.1.0#composition-and-inheritance-polymorphism">inheritance and Polymorphism</a>. XML <code>xsd:schemaLocation</code> &amp;<code>xsd:type</code> <span class="citation" data-cites="11oVTMsuZ">[<a href="#ref-11oVTMsuZ" role="doc-biblioref">29</a>]</span>, JSON <code>$schema</code> <span class="citation" data-cites="15EZ2D0Rm">[<a href="#ref-15EZ2D0Rm" role="doc-biblioref">23</a>]</span>), JSON-LD <code>@context</code> <span class="citation" data-cites="by6CfOmv">[<a href="#ref-by6CfOmv" role="doc-biblioref">30</a>]</span>. Large number of domain-specific and general ontologies define semantic types, but finding and selecting remains a challenge.</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Signal interfaces</strong></td>
+<td style="text-align: left;"><strong>Signal interfaces</strong>: <em>asynchronous handling of messages</em></td>
 <td style="text-align: center;">DOIP 2.0 is synchronous, in FDO async operations undefined. Could be handled as custom jobs/futures FDOs</td>
-<td style="text-align: center;">HTTP/2 <a href="https://datatracker.ietf.org/doc/html/rfc7540#section-5">multiplexed streams</a> <span class="citation" data-cites="KbbW0kGT">[<a href="#ref-KbbW0kGT" role="doc-biblioref">10</a>]</span>, Web Sockets <span class="citation" data-cites="qgqADk45">[<a href="#ref-qgqADk45" role="doc-biblioref">31</a>]</span>, Linked Data Notifications <span class="citation" data-cites="zlGYiuWC">[<a href="#ref-zlGYiuWC" role="doc-biblioref">32</a>]</span>, custom jobs/futures REST resources</td>
+<td style="text-align: center;">HTTP/2 <a href="https://datatracker.ietf.org/doc/html/rfc7540#section-5">multiplexed streams</a> <span class="citation" data-cites="KbbW0kGT">[<a href="#ref-KbbW0kGT" role="doc-biblioref">10</a>]</span>, Web Sockets <span class="citation" data-cites="qgqADk45">[<a href="#ref-qgqADk45" role="doc-biblioref">31</a>]</span>, Linked Data Notifications <span class="citation" data-cites="zlGYiuWC">[<a href="#ref-zlGYiuWC" role="doc-biblioref">32</a>]</span>, AtomPub <span class="citation" data-cites="IbaebabD">[<a href="#ref-IbaebabD" role="doc-biblioref">33</a>]</span>, SWORD <span class="citation" data-cites="7DGllKzG">[<a href="#ref-7DGllKzG" role="doc-biblioref">34</a>]</span>, Micropub, more typically ad-hoc jobs/futures REST resources</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Operation interfaces</strong></td>
+<td style="text-align: left;"><strong>Operation interfaces</strong>: <em>defining operations possible on an instance, interface of request/response messages</em></td>
 <td style="text-align: center;">CRUD predefined in DOIP, custom operations through <code>0.DOIP/Op.ListOperations</code> (can be FDOs of type <code>0.TYPE/DOIPOperation</code>, more typically local identifiers like <code>"getProvenance"</code>)</td>
-<td style="text-align: center;">CRUD predefined in <a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3">HTTP methods</a> <span class="citation" data-cites="HE7Ikwwl">[<a href="#ref-HE7Ikwwl" role="doc-biblioref">33</a>]</span>, (<a href="https://www.iana.org/assignments/http-methods/http-methods.xhtml">extended by registration</a>), URI Templates <span class="citation" data-cites="11hxwwuRt">[<a href="#ref-11hxwwuRt" role="doc-biblioref">14</a>]</span>, <a href="https://spec.openapis.org/oas/v3.1.0.html#operation-object">OpenAPI operations</a> <span class="citation" data-cites="k0AfCGzw">[<a href="#ref-k0AfCGzw" role="doc-biblioref">2</a>]</span>, HATEOAS incl. schema.org Actions [<span class="citation" data-cites="dKAekUjL">[<a href="#ref-dKAekUjL" role="doc-biblioref">3</a>]</span>), JSON HAL <span class="citation" data-cites="nyrPYHoP">[<a href="#ref-nyrPYHoP" role="doc-biblioref">34</a>]</span> &amp; Link headers (RFC8288) <span class="citation" data-cites="ozdWB3O7">[<a href="#ref-ozdWB3O7" role="doc-biblioref">35</a>]</span></td>
+<td style="text-align: center;">CRUD predefined in <a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3">HTTP methods</a> <span class="citation" data-cites="HE7Ikwwl">[<a href="#ref-HE7Ikwwl" role="doc-biblioref">35</a>]</span>, (<a href="https://www.iana.org/assignments/http-methods/http-methods.xhtml">extended by registration</a>), URI Templates <span class="citation" data-cites="11hxwwuRt">[<a href="#ref-11hxwwuRt" role="doc-biblioref">14</a>]</span>, <a href="https://spec.openapis.org/oas/v3.1.0.html#operation-object">OpenAPI operations</a> <span class="citation" data-cites="k0AfCGzw">[<a href="#ref-k0AfCGzw" role="doc-biblioref">2</a>]</span>, HATEOAS incl. schema.org Actions [<span class="citation" data-cites="dKAekUjL">[<a href="#ref-dKAekUjL" role="doc-biblioref">3</a>]</span>), JSON HAL <span class="citation" data-cites="nyrPYHoP">[<a href="#ref-nyrPYHoP" role="doc-biblioref">36</a>]</span> &amp; Link headers (RFC8288) <span class="citation" data-cites="ozdWB3O7">[<a href="#ref-ozdWB3O7" role="doc-biblioref">37</a>]</span></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Stream interfaces</strong></td>
-<td style="text-align: center;">Undefined in FDO, DOIP can support multiple byte stream elements (custom FDO type to determine their semantics?)</td>
-<td style="text-align: center;">HTTP 1.1 <span class="citation" data-cites="tIkSXrb5">[<a href="#ref-tIkSXrb5" role="doc-biblioref">36</a>]</span> <a href="https://datatracker.ietf.org/doc/html/rfc7230#section-4.1">chunked transfer</a>, HLS (RFC8216) <span class="citation" data-cites="PL512B0X">[<a href="#ref-PL512B0X" role="doc-biblioref">37</a>]</span>, MPEG-DASH (ISO/IEC 23009-1:2019) <span class="citation" data-cites="ikO7e0mh">[<a href="#ref-ikO7e0mh" role="doc-biblioref">38</a>]</span></td>
+<td style="text-align: left;"><strong>Stream interfaces</strong>: <em>operations that can handle continuous information streams</em></td>
+<td style="text-align: center;">Undefined in FDO. DOIP can support multiple byte stream elements (need custom FDO type to determine stream semantics)</td>
+<td style="text-align: center;">HTTP 1.1 <span class="citation" data-cites="tIkSXrb5">[<a href="#ref-tIkSXrb5" role="doc-biblioref">38</a>]</span> <a href="https://datatracker.ietf.org/doc/html/rfc7230#section-4.1">chunked transfer</a>, HLS (RFC8216) <span class="citation" data-cites="PL512B0X">[<a href="#ref-PL512B0X" role="doc-biblioref">39</a>]</span>, MPEG-DASH (ISO/IEC 23009-1:2019) <span class="citation" data-cites="ikO7e0mh">[<a href="#ref-ikO7e0mh" role="doc-biblioref">40</a>]</span></td>
 </tr>
 </tbody>
 </table>
@@ -509,23 +469,29 @@ TODO: Remove quotes from cited articles
 <div id="ref-zlGYiuWC" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>Linked Data Notifications</strong> <a href="https://www.w3.org/TR/ldn/">https://www.w3.org/TR/ldn/</a></div>
 </div>
+<div id="ref-IbaebabD" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>The Atom Publishing Protocol</strong> <div class="csl-block">J Gregorio, B de hOra (editors)</div> <em>RFC Editor</em> (2007-10) <a href="https://doi.org/gp4p2c">https://doi.org/gp4p2c</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc5023">10.17487/rfc5023</a></div></div>
+</div>
+<div id="ref-7DGllKzG" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>SWORD 3.0 Specification</strong> <a href="https://swordapp.github.io/swordv3/swordv3.html">https://swordapp.github.io/swordv3/swordv3.html</a></div>
+</div>
 <div id="ref-HE7Ikwwl" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content</strong> <div class="csl-block">R Fielding, J Reschke (editors)</div> <em>RFC Editor</em> (2014-06) <a href="https://doi.org/gh4jxc">https://doi.org/gh4jxc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7231">10.17487/rfc7231</a></div></div>
+<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content</strong> <div class="csl-block">R Fielding, J Reschke (editors)</div> <em>RFC Editor</em> (2014-06) <a href="https://doi.org/gh4jxc">https://doi.org/gh4jxc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7231">10.17487/rfc7231</a></div></div>
 </div>
 <div id="ref-nyrPYHoP" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>draft-kelly-json-hal-08</strong> <a href="https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-08">https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-08</a></div>
+<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>draft-kelly-json-hal-08</strong> <a href="https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-08">https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-08</a></div>
 </div>
 <div id="ref-ozdWB3O7" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Web Linking</strong> <div class="csl-block">M Nottingham</div> <em>RFC Editor</em> (2017-10) <a href="https://doi.org/gf8jcd">https://doi.org/gf8jcd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc8288">10.17487/rfc8288</a></div></div>
+<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>Web Linking</strong> <div class="csl-block">M Nottingham</div> <em>RFC Editor</em> (2017-10) <a href="https://doi.org/gf8jcd">https://doi.org/gf8jcd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc8288">10.17487/rfc8288</a></div></div>
 </div>
 <div id="ref-tIkSXrb5" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing</strong> <div class="csl-block">R Fielding, J Reschke (editors)</div> <em>RFC Editor</em> (2014-06) <a href="https://doi.org/gp32q8">https://doi.org/gp32q8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7230">10.17487/rfc7230</a></div></div>
+<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing</strong> <div class="csl-block">R Fielding, J Reschke (editors)</div> <em>RFC Editor</em> (2014-06) <a href="https://doi.org/gp32q8">https://doi.org/gp32q8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7230">10.17487/rfc7230</a></div></div>
 </div>
 <div id="ref-PL512B0X" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>HTTP Live Streaming</strong> <div class="csl-block">W May</div> <em>RFC Editor</em> (2017-08) <a href="https://doi.org/gp32rc">https://doi.org/gp32rc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc8216">10.17487/rfc8216</a></div></div>
+<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>HTTP Live Streaming</strong> <div class="csl-block">W May</div> <em>RFC Editor</em> (2017-08) <a href="https://doi.org/gp32rc">https://doi.org/gp32rc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc8216">10.17487/rfc8216</a></div></div>
 </div>
 <div id="ref-ikO7e0mh" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>ISO/IEC 23009-1:2019</strong> <div class="csl-block">14:00-17:00</div> <em>ISO</em> <a href="https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html">https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html</a></div>
+<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>ISO/IEC 23009-1:2019</strong> <div class="csl-block">14:00-17:00</div> <em>ISO</em> <a href="https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html">https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html</a></div>
 </div>
 </div>
 <section class="footnotes footnotes-end-of-document" role="doc-endnotes">
