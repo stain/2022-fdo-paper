@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/3aebbe9140de056746cf7e02f493dc9b8bb611b9/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/3aebbe9140de056746cf7e02f493dc9b8bb611b9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/3aebbe9140de056746cf7e02f493dc9b8bb611b9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/0300e10f189a96c3c1e1591501d8a0b184fc56db/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/0300e10f189a96c3c1e1591501d8a0b184fc56db/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/0300e10f189a96c3c1e1591501d8a0b184fc56db/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -57,6 +57,7 @@ header-includes: |-
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
 bibliography:
+- content/manual-references-sciwheel.bib
 - content/manual-references-sciwheel.yaml
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
@@ -71,9 +72,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/3aebbe9140de056746cf7e02f493dc9b8bb611b9/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/0300e10f189a96c3c1e1591501d8a0b184fc56db/))
 was automatically generated
-from [stain/2022-fdo-paper@3aebbe9](https://github.com/stain/2022-fdo-paper/tree/3aebbe9140de056746cf7e02f493dc9b8bb611b9)
+from [stain/2022-fdo-paper@0300e10](https://github.com/stain/2022-fdo-paper/tree/0300e10f189a96c3c1e1591501d8a0b184fc56db)
 on May 9, 2022.
 </em></small>
 
@@ -119,6 +120,22 @@ on May 9, 2022.
 
 
 ## Abstract {.page_break_before}
+
+
+
+
+## FAIR Digital Object
+
+Introduced by ..
+
+Recommended by EOSC Interoperability Framework [@doi:10.2777/620649]
+
+FDO Forum..
+
+DOIP and FDOF.
+
+Alternatives using RO-Crate and FAIR Signposting.
+
 
 
 
@@ -240,20 +257,41 @@ The draft update specification _WD-RequirementSpec-1.0-20220317_ (at time of wri
 | **F3**: _metadata include PID_ | No, implicit as requests always use PID | PID only required in FDOF-IR record. | PID inclusion typical, but often inconsistent (e.g. `www.example.com` vs `example.com`) or missing (use of `<>` as _this_ subject) | 
 | **F4**: _searchable registration_ | No, registries not required (except Data Type Registries). Handle registry only searchable by PID. | 
 | **A1**: _retrieve by standard protocol_ | Retrievable from PID (FDOF3). Informal DOIP standard maintaned by DONA Foundation | Formal HTTP standards maintained by IETF |
-| **A1.1**: _protocol open/free/universal_ | Required by G1. Partially realized, although Handle system is open protocol [@{10.17487/RFC3652}] it was covered by software patent [US6135646A](https://patents.google.com/patent/US6135646A/en) (expired in 2013(), and only implementation of `Handle.net` software currently only available by [public license](http://www.handle.net/HNRj/HNR-9-License.pdf)] (not OSI Open Source). [CORDRA](https://www.cordra.org/) free to use under BSD-like license, although not recognized by OSI as Open Source. |  DNS, HTTP, TLS, RDF standards are open, free and universal, multiple open source clients/servers exist. | 
+| **A1.1**: _protocol open/free/universal_ | Required by G1. Partially realized, although Handle system is open protocol [@{10.17487/RFC3652}] it was covered by software patent [US6135646A](https://patents.google.com/patent/US6135646A/en) ([expired](https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461) in 2013), and only implementation of `Handle.net` software currently only available by [public license](http://www.handle.net/HNRj/HNR-9-License.pdf)] (not OSI Open Source). [CORDRA](https://www.cordra.org/) free to use under BSD-like license, although not recognized by OSI as Open Source. |  DNS, HTTP, TLS, RDF standards are open, free and universal, multiple open source clients/servers exist. | 
 | **A1.2**: _protocol can do auth&auth_ |  TLS certificates, `authentication` field (details unspecified) |  HTTP authentication, TLS certificates | 
 | **A2**: _metadata even if data gone_ | FDO thumbstone required (FDOF12) | Unspecified, however FDOF-IR links to separate metadata records | `410 Gone` status infrequently used, without metadata. Possible [with signposting](https://w3id.org/a2a-fair-metrics/25-http-citeas-author-410-gone/) | 
 | **I1**: _formal knowledge representation_ | Required by FDOF8 | Unspecified | Always implied by use of RDF syntaxes.  |
 | **I2**: _use FAIR vocabularies_ | Informally required by G3, formally by FDOF10 (but not in FDOR10) | Unspecified, implied by use of RDF? |  FAIR practices for LD vocabularies increasingly common, sometimes inconsistent (e.g. PURLs that don't resolve) or incomplete (e.g. unknown license)  | 
 | **I3**: _qualified references_ | Implied by attributes to PIDs of other FDO | Unspecified | By definition (Linked Data is relating to pre-existing URIs [@{https://www.w3.org/standards/semanticweb/data}]). Link relations |
 | **R1**: _relevant attributes_ | Required (FDOF4) | Unspecified. Multiple metadata records can allow multiple semantic profiles. |  Usually, however a plethora  | 
-| **R1.1**: _clear data license_ | Unspecified (but will be in PID Kernal metadata?) | Unspecified | Required by DCAT
-| **R1.2**: _detailed provenance_ |  Unspecified (some CORDRA types add `getProvenance` methods) | Unspecified  | W3C PROV-O, PAV |
+| **R1.1**: _clear data license_ | Unspecified (but will be in PID Kernal metadata?) | Unspecified | Dublin Core Terms `dct:license` frequently recommended, but not required, e.g. [by DCAT 2](https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license) [@{https://www.w3.org/TR/vocab-dcat-2/}]
+| **R1.2**: _detailed provenance_ |  Unspecified (some CORDRA types add `getProvenance` methods). PID Kernel attributes? | Unspecified  | W3C PROV-O, PAV |
 | **R1.3**: _follows community standards_ | Recommended (FDOF4, FDOF10) |  Unspecified |  Common practice, specially in bioinformatics, e.g. BioSchemas [@{https://bioschemas.org/}], BioPortal [@{https://bioportal.bioontology.org/ontologies}] |
 
-Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019]  as DOIP [@handle:0.DOIP/DOIPV2.0], Linked Data Platform (LDP) [@{https://fairdigitalobjectframework.org/}], with examples øf existing Linked Data practices.
-
+Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019] as DOIP [@handle:0.DOIP/DOIPV2.0], Linked Data Platform (LDP) [@{https://fairdigitalobjectframework.org/}], with examples øf existing Linked Data practices.
 {#tbl:fair-fdos}
+
+
+
+Documents currently undergoing internal review:
+
+WD-DocProcessStd-1.1-20220129
+WD-MachineActionDef-1.1-20220301
+WD-RequirementSpec-1.0-20220317
+WD-ConfigurationTypes-1.0-20220317
+WD-Granularity-1.0-20220317
+WD-PIDProfileAttributes-1.0-20220317
+WD-FDO-Upload-0.1-20220320
+PED-DOIPEndorsement-0.1-20220326
+WD-TypingFDOs-1.0-20220310
+
+
+
+FDO Requirement Specifications 1.1
+FDO Machine Actionability 1.1
+FDO Configuration Types 1.0
+FDO0 PID Profiles and Attributes 1.0
+FDO FDO Granularity 1.0
 
 
 ## References {.page_break_before}

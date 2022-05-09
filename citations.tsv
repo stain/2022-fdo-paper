@@ -1,4 +1,5 @@
 input_id	dealiased_id	standard_id	short_id
+doi:10.2777/620649	doi:10.2777/620649	doi:10.2777/620649	aCye3KpE
 https://spec.openapis.org/oas/v3.1.0.html	https://spec.openapis.org/oas/v3.1.0.html	url:https://spec.openapis.org/oas/v3.1.0.html	k0AfCGzw
 https://schema.org/docs/actions.html	https://schema.org/docs/actions.html	url:https://schema.org/docs/actions.html	dKAekUjL
 http://www.w3.org/TR/wsdl20-primer	http://www.w3.org/TR/wsdl20-primer	url:http://www.w3.org/TR/wsdl20-primer	LmudecyN
@@ -43,5 +44,6 @@ bonino_2019	bonino_2019	bonino_2019	RwvirqWg
 https://fairdigitalobjectframework.org/	https://fairdigitalobjectframework.org/	url:https://fairdigitalobjectframework.org/	7szz7dwO
 10.17487/RFC3652	10.17487/RFC3652	doi:10.17487/rfc3652	I9Kx0Hjy
 https://www.w3.org/standards/semanticweb/data	https://www.w3.org/standards/semanticweb/data	url:https://www.w3.org/standards/semanticweb/data	o4h92LpS
+https://www.w3.org/TR/vocab-dcat-2/	https://www.w3.org/TR/vocab-dcat-2/	url:https://www.w3.org/TR/vocab-dcat-2/	lnH0hEuh
 https://bioschemas.org/	https://bioschemas.org/	url:https://bioschemas.org/	1F8S9FeHf
 https://bioportal.bioontology.org/ontologies	https://bioportal.bioontology.org/ontologies	url:https://bioportal.bioontology.org/ontologies	1Gsq23e51
