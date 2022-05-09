@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/433b0eb66802e6b5ade251025ee19d7080107f0a/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/433b0eb66802e6b5ade251025ee19d7080107f0a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/433b0eb66802e6b5ade251025ee19d7080107f0a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/3aebbe9140de056746cf7e02f493dc9b8bb611b9/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/3aebbe9140de056746cf7e02f493dc9b8bb611b9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/3aebbe9140de056746cf7e02f493dc9b8bb611b9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/433b0eb66802e6b5ade251025ee19d7080107f0a/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/3aebbe9140de056746cf7e02f493dc9b8bb611b9/))
 was automatically generated
-from [stain/2022-fdo-paper@433b0eb](https://github.com/stain/2022-fdo-paper/tree/433b0eb66802e6b5ade251025ee19d7080107f0a)
+from [stain/2022-fdo-paper@3aebbe9](https://github.com/stain/2022-fdo-paper/tree/3aebbe9140de056746cf7e02f493dc9b8bb611b9)
 on May 9, 2022.
 </em></small>
 
@@ -243,7 +243,7 @@ The draft update specification _WD-RequirementSpec-1.0-20220317_ (at time of wri
 | **A1.1**: _protocol open/free/universal_ | Required by G1. Partially realized, although Handle system is open protocol [@{10.17487/RFC3652}] it was covered by software patent [US6135646A](https://patents.google.com/patent/US6135646A/en) (expired in 2013(), and only implementation of `Handle.net` software currently only available by [public license](http://www.handle.net/HNRj/HNR-9-License.pdf)] (not OSI Open Source). [CORDRA](https://www.cordra.org/) free to use under BSD-like license, although not recognized by OSI as Open Source. |  DNS, HTTP, TLS, RDF standards are open, free and universal, multiple open source clients/servers exist. | 
 | **A1.2**: _protocol can do auth&auth_ |  TLS certificates, `authentication` field (details unspecified) |  HTTP authentication, TLS certificates | 
 | **A2**: _metadata even if data gone_ | FDO thumbstone required (FDOF12) | Unspecified, however FDOF-IR links to separate metadata records | `410 Gone` status infrequently used, without metadata. Possible [with signposting](https://w3id.org/a2a-fair-metrics/25-http-citeas-author-410-gone/) | 
-| **I1**: _formal knowledge representation_ | Required by FDOF8 | Unspecified | Required when using RDF syntaxes.  |
+| **I1**: _formal knowledge representation_ | Required by FDOF8 | Unspecified | Always implied by use of RDF syntaxes.  |
 | **I2**: _use FAIR vocabularies_ | Informally required by G3, formally by FDOF10 (but not in FDOR10) | Unspecified, implied by use of RDF? |  FAIR practices for LD vocabularies increasingly common, sometimes inconsistent (e.g. PURLs that don't resolve) or incomplete (e.g. unknown license)  | 
 | **I3**: _qualified references_ | Implied by attributes to PIDs of other FDO | Unspecified | By definition (Linked Data is relating to pre-existing URIs [@{https://www.w3.org/standards/semanticweb/data}]). Link relations |
 | **R1**: _relevant attributes_ | Required (FDOF4) | Unspecified. Multiple metadata records can allow multiple semantic profiles. |  Usually, however a plethora  | 

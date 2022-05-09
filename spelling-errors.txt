@@ -27,7 +27,7 @@ EOSC
 FDO
 FDOF
 FDOR
-FDOs
+fdos
 findable
 Goble
 Groth
@@ -52,7 +52,7 @@ metamodel
 Microdata
 Micropub
 middleware
-modularity
+Modularity
 NIST
 NL
 occassionally
@@ -74,7 +74,7 @@ redirections
 RequirementSpec
 requiremes
 resiliant
-scalability
+Scalability
 scalable
 schemas
 seemlessly
