@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-05-09'
+date-meta: '2022-05-10'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-05-09" />
-  <meta name="citation_publication_date" content="2022-05-09" />
+  <meta name="dc.date" content="2022-05-10" />
+  <meta name="citation_publication_date" content="2022-05-10" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/0300e10f189a96c3c1e1591501d8a0b184fc56db/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/0300e10f189a96c3c1e1591501d8a0b184fc56db/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/0300e10f189a96c3c1e1591501d8a0b184fc56db/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/a1e8721292086151fd9f84e7cc87daff5e2a49f0/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/a1e8721292086151fd9f84e7cc87daff5e2a49f0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/a1e8721292086151fd9f84e7cc87daff5e2a49f0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -72,10 +72,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/0300e10f189a96c3c1e1591501d8a0b184fc56db/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/a1e8721292086151fd9f84e7cc87daff5e2a49f0/))
 was automatically generated
-from [stain/2022-fdo-paper@0300e10](https://github.com/stain/2022-fdo-paper/tree/0300e10f189a96c3c1e1591501d8a0b184fc56db)
-on May 9, 2022.
+from [stain/2022-fdo-paper@a1e8721](https://github.com/stain/2022-fdo-paper/tree/a1e8721292086151fd9f84e7cc87daff5e2a49f0)
+on May 10, 2022.
 </em></small>
 
 ## Authors
@@ -126,17 +126,27 @@ on May 9, 2022.
 
 ## FAIR Digital Object
 
-Introduced by ..
+The concept of _FAIR Digital Object_ [@doi:10.1007/978-3-030-23584-0_1] has been introduced as way to expose research data as active objects that conform to the FAIR principles [@doi:10.1038/sdata.2016.18]. This builds on the _Digital Object_ concept [@doi:10.1007/s00799-005-0128-x] first introduced in 1995 [@kahn_1995] as a system of _repositories_ containing _digital objects_ identified by _handles_ and described by _metadata_ which may have references to other handles. This  was the inspiration for the ITU X.1255 framework [@{https://www.itu.int/rec/T-REC-X.1255-201309-I}] which introduced an abstract _Digital Entity Interface Protocol_ for managing such objects programmatically, first realized by the Digital Object Interface Protocol (DOIP) [@{https://www.dona.net/doipv1doc}].
 
-Recommended by EOSC Interoperability Framework [@doi:10.2777/620649]
+In brief, the structure of a FAIR Digital Object (FDO) is to, given a _persistent identifier_ (PID) such as a DOI, resolve to a _PID Record_ that gives the object a _type_ along with mechanism to retrieve its _bit sequence_, _metadata_ and references to further programmatic _operations_. The type of an FDO (itself an FDO) defines further attributes to semantically describe and relate it to other concepts (other FDOs referenced by PIDs). The premise of systematically building an ecosystem of such digital objects is to give researchers a way to organize complex digital entities, associated with identifiers and metadata, and support automated processing [@doi:10.23728/b2share.b605d85809ca45679b110719b6c6cb11].
 
-FDO Forum..
+Recently, FDOs have been recognized by the European Open Science Cloud ([EOSC](https://eosc.eu/)) as a suggested part of its Interoperability Framework [@doi:10.2777/620649], in particular for deploying active and interoperable FAIR resources that are machine actionable. Following the development of the FDO concept within Research Data Alliance ([RDA](https://www.rd-alliance.org/)) groups and EOSC projects like [GO-FAIR](https://www.go-fair.org/), which specified the initial guidelines for implementing FDO [@bonino_2019]. The [FAIR Digital Objects Forum](https://fairdo.org/) has since taken over the maturing of FDO through working groups that are creating additional specification documents (see section @sec:next-step-fdo). 
+
+FDO is an evolving concept. A set of FDO Demonstrators [@doi:10.5281/zenodo.5872645] highlight how current adapters are approaching implementations of FDO, mainly from two different angles:
+
+ * Building on the Digital Object concept, through the DOIP protocol [@handle:0.DOIP/DOIPV2.0], which uses JSON objects through a custom text-based protocol[^3] (encrypted over TLS) that allows invocation of operations such as retrieving and creating digital objects. These are mostly realized using the reference implementation [Cordra](https://cordra.org/). FDO types are registered in the local Cordra instance, where they are specified using JSON Schema [@{https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00}]) and PIDs are assigned using the Handle system. Several type registries have been established.
+ * Following a more Linked Data approach, either use JSON-LD and schema.org within the DOIP approach (NIST), or following the FDO principles on the Web (e.g. WorkflowHub use of RO-Crate).
+
+[^3]: For a brief introduction to DOIP 2.0 [@handle:0.DOIP/DOIPV2.0], see $[{https://www.cordra.org/documentation/api/doip.html}].
+
+
 
 DOIP and FDOF.
 
 Alternatives using RO-Crate and FAIR Signposting.
 
 
+## Linked Data
 
 
 
@@ -210,7 +220,15 @@ Table: Mapping the Metamodel concepts from the Interoperability Framework for Fa
 Table: Comparing FAIR Digital Object (with the DOIP 2.0 protocol [@handle:0.DOIP/DOIPV2.0]) and Web technologies (using Linked Data) as middleware infrastructures [@doi:10.5381/jot.2004.3.5.a2]
 {#tbl:fdo-web-middleware}
 
+...
+
+As for the aspect of _Performance_, it is interesting to note that while the first version of DOIP [@{https://www.dona.net/doipv1doc}] supported multiplexed channels similar to HTTP/2, allowing concurrent transfer of several digital objects. However multiplexing was removed for the much simplified DOIP 2.0 [@handle:0.DOIP/DOIPV2.0], which do support multiple asynchronous requests, but unlike DOIP 1.0 will require a DO response to be sent back completely, as a series of segments (which again can be split the bytes of each binary _element_ into sized _chunks_), before transmission of another DO response can start on the transport channel. It is unclear what is the purpose of splitting a binary into chunks on a channel which no longer can be multiplexed and the only property of a chunk is its size [^4]. 
+
+
 [^1]: The `http` protocol (port 80) can in theory also upgrade [@doi:10.17487/RFC2817] to TLS encryption, as commonly used by [Internet Printing Protocol](https://www.rfc-editor.org/rfc/rfc8010.html#section-8.2) for `ipp` URIs, but on the Web, best practice is explicit `https` (port 443) URLs to ensure following links stay secure. 
+
+
+[^4]: Although it is possible with `0.DOIP/Op.Retrieve` to request only particular individual elements of an DO (e.g. one file), unlike HTTP's `Range` request, it is not possible to select individual chunks of an element's bytestream.
 
 
 
@@ -254,7 +272,7 @@ The draft update specification _WD-RequirementSpec-1.0-20220317_ (at time of wri
 |:---------:|:--------:|:-------:|:--------------------:|
 | **F1**: _PID for data/metadata_  | PIDs required (FDOF1). Handle, DOI. |  FDOF-IR (Identifier Record). PID can be any URI?  |  "Cool" URIs [@{https://www.w3.org/Provider/Style/URI}], PID using PURL services.  | 
 | **F2**: _data has metadata_ | FDO has key-value metadata. Unclear how to link to additional metadata.  |  FDOF-IR links to multiple metadata records |  RDF-based metadata by content negotiation or FAIR Signposting. Embedded in landing page (RDFa).  |  
-| **F3**: _metadata include PID_ | No, implicit as requests always use PID | PID only required in FDOF-IR record. | PID inclusion typical, but often inconsistent (e.g. `www.example.com` vs `example.com`) or missing (use of `<>` as _this_ subject) | 
+| **F3**: _metadata include PID_ | `id` and `type` are required metadata elements PIDs, also implicit as requests must use PID | PID only required in FDOF-IR record. | PID inclusion typical, but often inconsistent (e.g. `www.example.com` vs `example.com`) or missing (use of `<>` as _this_ subject) | 
 | **F4**: _searchable registration_ | No, registries not required (except Data Type Registries). Handle registry only searchable by PID. | 
 | **A1**: _retrieve by standard protocol_ | Retrievable from PID (FDOF3). Informal DOIP standard maintaned by DONA Foundation | Formal HTTP standards maintained by IETF |
 | **A1.1**: _protocol open/free/universal_ | Required by G1. Partially realized, although Handle system is open protocol [@{10.17487/RFC3652}] it was covered by software patent [US6135646A](https://patents.google.com/patent/US6135646A/en) ([expired](https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461) in 2013), and only implementation of `Handle.net` software currently only available by [public license](http://www.handle.net/HNRj/HNR-9-License.pdf)] (not OSI Open Source). [CORDRA](https://www.cordra.org/) free to use under BSD-like license, although not recognized by OSI as Open Source. |  DNS, HTTP, TLS, RDF standards are open, free and universal, multiple open source clients/servers exist. | 
@@ -272,6 +290,8 @@ Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019] 
 {#tbl:fair-fdos}
 
 
+
+## Next steps for FDO {#sec:next-step-fdo}
 
 Documents currently undergoing internal review:
 

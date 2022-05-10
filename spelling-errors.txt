@@ -27,16 +27,17 @@ DOIP
 DOIPEndorsement
 EMEA
 EOSC
-FDO
+fdo
 FDOF
 FDOR
-fdos
+FDOs
 findable
 Goble
 Groth
 HATEOAS
 HLS
 hoc
+HTTP’s
 IEC
 IETF
 InfoType
@@ -45,6 +46,8 @@ INFRAEOSC
 inheritedly
 inheritently
 interferring
+interoperable
+ITU
 JSON
 JSWS
 Kernal
@@ -72,6 +75,7 @@ PIDProfileAttributes
 PIDs
 Polymorphism
 pre
+programmatically
 QUIC
 RDF
 RDFa
