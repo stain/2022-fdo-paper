@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-05-10'
+date-meta: '2022-05-11'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-05-10" />
-  <meta name="citation_publication_date" content="2022-05-10" />
+  <meta name="dc.date" content="2022-05-11" />
+  <meta name="citation_publication_date" content="2022-05-11" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/a1e8721292086151fd9f84e7cc87daff5e2a49f0/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/a1e8721292086151fd9f84e7cc87daff5e2a49f0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/a1e8721292086151fd9f84e7cc87daff5e2a49f0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/1211cb98cd7eadf9a7634098f01df1206961e0e0/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1211cb98cd7eadf9a7634098f01df1206961e0e0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1211cb98cd7eadf9a7634098f01df1206961e0e0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -72,10 +72,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/a1e8721292086151fd9f84e7cc87daff5e2a49f0/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/1211cb98cd7eadf9a7634098f01df1206961e0e0/))
 was automatically generated
-from [stain/2022-fdo-paper@a1e8721](https://github.com/stain/2022-fdo-paper/tree/a1e8721292086151fd9f84e7cc87daff5e2a49f0)
-on May 10, 2022.
+from [stain/2022-fdo-paper@1211cb9](https://github.com/stain/2022-fdo-paper/tree/1211cb98cd7eadf9a7634098f01df1206961e0e0)
+on May 11, 2022.
 </em></small>
 
 ## Authors
@@ -126,27 +126,64 @@ on May 10, 2022.
 
 ## FAIR Digital Object
 
-The concept of _FAIR Digital Object_ [@doi:10.1007/978-3-030-23584-0_1] has been introduced as way to expose research data as active objects that conform to the FAIR principles [@doi:10.1038/sdata.2016.18]. This builds on the _Digital Object_ concept [@doi:10.1007/s00799-005-0128-x] first introduced in 1995 [@kahn_1995] as a system of _repositories_ containing _digital objects_ identified by _handles_ and described by _metadata_ which may have references to other handles. This  was the inspiration for the ITU X.1255 framework [@{https://www.itu.int/rec/T-REC-X.1255-201309-I}] which introduced an abstract _Digital Entity Interface Protocol_ for managing such objects programmatically, first realized by the Digital Object Interface Protocol (DOIP) [@{https://www.dona.net/doipv1doc}].
+The concept of **FAIR Digital Object** [@doi:10.1007/978-3-030-23584-0_1] has been introduced as way to expose research data as active objects that conform to the FAIR principles [@doi:10.1038/sdata.2016.18]. This builds on the _Digital Object_ (DO) concept [@doi:10.1007/s00799-005-0128-x], first introduced in 1995 [@kahn_1995] as a system of _repositories_ containing _digital objects_ identified by _handles_ and described by _metadata_ which may have references to other handles. DO was the inspiration for the ITU X.1255 framework [@{https://www.itu.int/rec/T-REC-X.1255-201309-I}] which introduced an abstract _Digital Entity Interface Protocol_ for managing such objects programmatically, first realized by the Digital Object Interface Protocol (DOIP) v1 [@{https://www.dona.net/doipv1doc}].
 
-In brief, the structure of a FAIR Digital Object (FDO) is to, given a _persistent identifier_ (PID) such as a DOI, resolve to a _PID Record_ that gives the object a _type_ along with mechanism to retrieve its _bit sequence_, _metadata_ and references to further programmatic _operations_. The type of an FDO (itself an FDO) defines further attributes to semantically describe and relate it to other concepts (other FDOs referenced by PIDs). The premise of systematically building an ecosystem of such digital objects is to give researchers a way to organize complex digital entities, associated with identifiers and metadata, and support automated processing [@doi:10.23728/b2share.b605d85809ca45679b110719b6c6cb11].
+In brief, the structure of a FAIR Digital Object (FDO) is to, given a _persistent identifier_ (PID) such as a DOI, resolve to a _PID Record_ that gives the object a _type_ along with a mechanism to retrieve its _bit sequences_, _metadata_ and references to further programmatic _operations_. The type of an FDO (itself an FDO) defines attributes to semantically describe and relate such FDOs to other concepts (typically other FDOs referenced by PIDs). The premise of systematically building an ecosystem of such digital objects is to give researchers a way to organize complex digital entities, associated with identifiers,  metadata, and supporting automated processing [@doi:10.23728/b2share.b605d85809ca45679b110719b6c6cb11].
 
-Recently, FDOs have been recognized by the European Open Science Cloud ([EOSC](https://eosc.eu/)) as a suggested part of its Interoperability Framework [@doi:10.2777/620649], in particular for deploying active and interoperable FAIR resources that are machine actionable. Following the development of the FDO concept within Research Data Alliance ([RDA](https://www.rd-alliance.org/)) groups and EOSC projects like [GO-FAIR](https://www.go-fair.org/), which specified the initial guidelines for implementing FDO [@bonino_2019]. The [FAIR Digital Objects Forum](https://fairdo.org/) has since taken over the maturing of FDO through working groups that are creating additional specification documents (see section @sec:next-step-fdo). 
+Recently, FDOs have been recognized by the European Open Science Cloud ([EOSC](https://eosc.eu/)) as a suggested part of its Interoperability Framework [@doi:10.2777/620649], in particular for deploying active and interoperable FAIR resources that are _machine actionable_. Sevelopment of the FDO concept continued within Research Data Alliance ([RDA](https://www.rd-alliance.org/)) groups and EOSC projects like [GO-FAIR](https://www.go-fair.org/), concluding with a set of guidelines for implementing FDO [@bonino_2019]. The [FAIR Digital Objects Forum](https://fairdo.org/) has since taken over the maturing of FDO through focused working groups which have currently drafted several more detailed specification documents (see section @sec:next-step-fdo). 
 
-FDO is an evolving concept. A set of FDO Demonstrators [@doi:10.5281/zenodo.5872645] highlight how current adapters are approaching implementations of FDO, mainly from two different angles:
+FDO is an evolving concept. A set of FDO Demonstrators [@doi:10.5281/zenodo.5872645] highlight how current adapters are approaching implementations of FDO from different angles:
 
- * Building on the Digital Object concept, through the DOIP protocol [@handle:0.DOIP/DOIPV2.0], which uses JSON objects through a custom text-based protocol[^3] (encrypted over TLS) that allows invocation of operations such as retrieving and creating digital objects. These are mostly realized using the reference implementation [Cordra](https://cordra.org/). FDO types are registered in the local Cordra instance, where they are specified using JSON Schema [@{https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00}]) and PIDs are assigned using the Handle system. Several type registries have been established.
- * Following a more Linked Data approach, either use JSON-LD and schema.org within the DOIP approach (NIST), or following the FDO principles on the Web (e.g. WorkflowHub use of RO-Crate).
+ * Building on the Digital Object concept, using the simplified DOIP v2 specification [@handle:0.DOIP/DOIPV2.0], which detail how to exchange JSON objects through a text-based protocol [^3] (usually TCP/IP over TLS). The main DOIP operations are retrieving, creating and updating digital objects. These are mostly realized using the reference implementation [Cordra](https://cordra.org/). FDO types are registered in the local Cordra instance, where they are specified using JSON Schema [@{https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00}]) and PIDs are assigned using the Handle system. Several type registries have been established.
+ * Following the traditional Linked Data approach, but using the DOIP protocol, e.g. using JSON-LD and schema.org within DOIP (NIST for material science).
+ * Approaching the FDO principles from existing Linked Data practices on the Web (e.g. WorkflowHub use of RO-Crate and schema.org).
 
+From this it becomes apparant that there is a potentially large overlap between the goals and approaches of FAIR Digital Objects and Linked Data, which we'll cover in the next section.
+ 
 [^3]: For a brief introduction to DOIP 2.0 [@handle:0.DOIP/DOIPV2.0], see $[{https://www.cordra.org/documentation/api/doip.html}].
 
 
-
-DOIP and FDOF.
-
-Alternatives using RO-Crate and FAIR Signposting.
-
-
 ## Linked Data
+
+In order to describe _Linked Data_ as it is used today, we'll start with an (opinionated) briefing of the evolution of its foundation, the _Semantic Web_.
+
+### A brief history of the Semantic Web
+
+The **Semantic Web** was developed as a vision by Tim Berners-Lee since 200?, at a time the Web had been widely established for information exchange, as a global set of hypermedia documents cross-related using universal links in the form of URLs, standardized by W3C and IETF to HTML and HTTP. The goal of Semantic Web was to further develop the machine-readable aspects of the Web, in particular adding _meaning_ (or semantics) to not just the link relations, but also to the _resources_ that the URLs identified.
+
+Through W3C the Semantic Web was realized with the Resource Description Framework (RDF) that used _triples_ of subject-predicate-object statements, with its initial serialization format being RDF/XML (XML was seen as a machine-focused evolvement of the document-centric SGML and HTML). 
+
+The main innovation of RDF compared to other triple-based knowledge representation models at the time was the use of URIs [^4] as the primary identifier of the _subject_ (what the statement is about), _predicate_ (relation/attribute of the subject) and _object_ (what is pointed to). By using URIs not just for documents, the Semantic Web builds a self-described system of types and properties, the meaning of a relation can be resolved by following its hyperlink to the definition within a _vocabulary_. 
+
+[^4]: URIs [?] are generalized forms of URLs that include location-less identifiers 
+  such as DOI handles and ISBN book numbers (URNs). The distinction between locatable and location-less identifiers have weakened in recent years, for instance DOI identifiers now are commonly expressed with the prefix `https://doi.org/` rather than `info:doi:` as the URL/URN gap is bridged by HTTP resolvers and the use of Persistent Identifiers (PIDs).
+
+URIs can also stand in as _non-information resources_ that represent any kind of physical object (e.g. people), resolving it typically resolves with a redirection to a corresponding _information resource_. 
+
+The early days of the Semantic Web saw fairly lightweight approaches with the establishment of vocabularies such as FOAF (to describe people and their affiliations) and Dublin Core (for bibliographic data). Vocabularies themselves were formalized using RDFS or simply as human-readable HTML web pages defining each term.  The main approach was that a URI identified a _resource_ (e.g. an author) had a HTML _representation_ for human readers, along with a RDF representation for machine-readable data of the same resource. By using _content negotiation_ in HTTP, the same identifier could be used in both views, avoiding `index.html` vs `index.rdf` exposure in the URLs. The concept of _namespaces_ gave a way to give a group of RDF resources with the same URI base from a Semantic Web-aware service a common _prefix_, avoiding repeated long URLs.
+
+The mid-2000s saw a large academic interest and growth of the Semantic Web, with the development of more formal representation system for ontologies, such as OWL, allowing complex class hierarchies and logic inference rules following _open world_ paradigm (e.g. a _ex:Parent_ is equivalent to a subclass of _foaf:Person_ which must _ex:hasChild_ at least one _foaf:Person_, then if we know _:Alice a ex:Parent_ we can infer _:Alice ex:hasChild [a foaf:Person]_ even if we don't know who that child is). More human-readable syntaxes of RDF such as Turtle (shown in this paragraph) evolved at this time, and conferences such as ISWC gained traction, with a large interest in knowledge representation and logic systems based on Semantic Web technologies evolving at the same time.
+
+Mature Semantic Web services and standards include SPARQL (pattern-based triple queries), named graphs (triples expanded to quads, to indicate statement source and processing of conflicting views), triple/quad stores (enterprise graph databases such as Virtuoso, GraphDB), mature RDF libraries (Apache Jena, Sesame/RDF4J, rdflib.py, rdflib.rb), and numerous graph visualization (which frequently collapsed in usability if more than 20 nodes appeared).
+
+The creation of RDF-based knowledge bases grew particularly in fields like bioinformatics, e.g. for describing proteins. In theory the use of RDF by the life sciences would enable interoperability between the many repositories and enable computational processing of the many aspects of bio-entities, however in practice most institutions ended up making their own ontologies and identifiers for what to the untrained eye would mean roughly the same.  The toll of adding the semantic logic system of rich ontologies meant that small, but fundamental, differences in opinion (e.g. should a _gene identifier_ signify which protein a DNA sequence would make, or just the particular DNA sequence letters, or those letters as they appear in a particular position on a human chromosome?) could lead to large differences in representation granularity, and thus different namespaces.
+
+Facing these challenges, thanks to the use of universal identifiers in the form of URIs, _mappings_ could be developed not just between resources, but also across vocabularies. The mappings can be expressed themselves using lightweight and flexible RDF vocabularies such as SKOS (e.g. `dct:title skos:nearMatch schema:name` to indicate rough equivalence).
+
+The move towards _open science_ practices in the late 2000s encouraged knowledge providers to distribute collections of RDF resources as downloadable _datasets_, so that their clients can avoid thousands of HTTP requests for individual resources. This enabled local processing and data integration across datasets, rather than relying on the providers' SPARQL endpoints (which could become overloaded by handling concurrent complex queries). 
+
+Along with experiments on logic systems in the Semantic Web academia, an unfortunate side-effect appeared. RDF datasets would use URIs which no longer (or never) resolved to a Semantic Web representation of the described resources. Inconsistencies would emerge as the production of RDF largely focused on building graph representations of internal databases in order to use the Semantic Web tooling, rather than as a way to expose knowledge on the Web. Ironically, `http` based URLs then becomes location-less identifiers, mainly signifying a localized node within a graph, rather than a resolvable resource.
+
+
+## Linked Data: Making the links work again
+
+The Linked Data was kickstarted as a counter-reaction to this development of the Semantic Web, as a way to bring the URLs back onto the Web. Crucially to Linked Data is to _reuse existing URLs_ where they exist, rather than always make new identifiers. This means a loosening of the semantic restrictions previously applied.
+
+Vocabularies like schema.org evolved at the same time, together with JSON-LD.  (..)
+
+Linked Data APIs..
+
+Reducing choice.
 
 
 
