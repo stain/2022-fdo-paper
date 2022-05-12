@@ -7,7 +7,7 @@
   <meta name="author" content="Stian Soiland-Reyes" />
   <meta name="author" content="Carole Goble" />
   <meta name="author" content="Paul Groth" />
-  <meta name="dcterms.date" content="2022-05-11" />
+  <meta name="dcterms.date" content="2022-05-12" />
   <meta name="keywords" content="FDO, distributed, digital object" />
   <title>Evaluating FAIR Digital Object as a distributed object system</title>
   <style>
@@ -46,8 +46,8 @@
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-05-11" />
-  <meta name="citation_publication_date" content="2022-05-11" />
+  <meta name="dc.date" content="2022-05-12" />
+  <meta name="citation_publication_date" content="2022-05-12" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -73,9 +73,9 @@
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/1211cb98cd7eadf9a7634098f01df1206961e0e0/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1211cb98cd7eadf9a7634098f01df1206961e0e0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1211cb98cd7eadf9a7634098f01df1206961e0e0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/25b1e520c562148acaed550b7f671c9c227ab042/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/25b1e520c562148acaed550b7f671c9c227ab042/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/25b1e520c562148acaed550b7f671c9c227ab042/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,10 +92,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://stain.github.io/2022-fdo-paper/v/1211cb98cd7eadf9a7634098f01df1206961e0e0/">permalink</a>)
+(<a href="https://stain.github.io/2022-fdo-paper/v/25b1e520c562148acaed550b7f671c9c227ab042/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/stain/2022-fdo-paper/tree/1211cb98cd7eadf9a7634098f01df1206961e0e0">stain/2022-fdo-paper@1211cb9</a>
-on May 11, 2022.
+from <a href="https://github.com/stain/2022-fdo-paper/tree/25b1e520c562148acaed550b7f671c9c227ab042">stain/2022-fdo-paper@25b1e52</a>
+on May 12, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -147,27 +147,31 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 <h2 id="linked-data">Linked Data</h2>
 <p>In order to describe <em>Linked Data</em> as it is used today, we’ll start with an (opinionated) briefing of the evolution of its foundation, the <em>Semantic Web</em>.</p>
 <h3 id="a-brief-history-of-the-semantic-web">A brief history of the Semantic Web</h3>
-<p>The <strong>Semantic Web</strong> was developed as a vision by Tim Berners-Lee since 200?, at a time the Web had been widely established for information exchange, as a global set of hypermedia documents cross-related using universal links in the form of URLs, standardized by W3C and IETF to HTML and HTTP. The goal of Semantic Web was to further develop the machine-readable aspects of the Web, in particular adding <em>meaning</em> (or semantics) to not just the link relations, but also to the <em>resources</em> that the URLs identified.</p>
-<p>Through W3C the Semantic Web was realized with the Resource Description Framework (RDF) that used <em>triples</em> of subject-predicate-object statements, with its initial serialization format being RDF/XML (XML was seen as a machine-focused evolvement of the document-centric SGML and HTML).</p>
-<p>The main innovation of RDF compared to other triple-based knowledge representation models at the time was the use of URIs <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> as the primary identifier of the <em>subject</em> (what the statement is about), <em>predicate</em> (relation/attribute of the subject) and <em>object</em> (what is pointed to). By using URIs not just for documents, the Semantic Web builds a self-described system of types and properties, the meaning of a relation can be resolved by following its hyperlink to the definition within a <em>vocabulary</em>.</p>
-<p>URIs can also stand in as <em>non-information resources</em> that represent any kind of physical object (e.g. people), resolving it typically resolves with a redirection to a corresponding <em>information resource</em>.</p>
-<p>The early days of the Semantic Web saw fairly lightweight approaches with the establishment of vocabularies such as FOAF (to describe people and their affiliations) and Dublin Core (for bibliographic data). Vocabularies themselves were formalized using RDFS or simply as human-readable HTML web pages defining each term. The main approach was that a URI identified a <em>resource</em> (e.g. an author) had a HTML <em>representation</em> for human readers, along with a RDF representation for machine-readable data of the same resource. By using <em>content negotiation</em> in HTTP, the same identifier could be used in both views, avoiding <code>index.html</code> vs <code>index.rdf</code> exposure in the URLs. The concept of <em>namespaces</em> gave a way to give a group of RDF resources with the same URI base from a Semantic Web-aware service a common <em>prefix</em>, avoiding repeated long URLs.</p>
+<p>The <strong>Semantic Web</strong> was developed as a vision by Tim Berners-Lee <span class="citation" data-cites="Guy7cjVY">[<a href="#ref-Guy7cjVY" role="doc-biblioref">13</a>]</span>, at a time the Web had been widely established for information exchange, as a global set of hypermedia documents that eare cross-related using universal links in the form of URLs. The foundations of the Web (e.g. URLs, HTTP, SSL/TLS, HTML, CSS, ECMAScript/JavaScript, media types) were standardized by <a href="https://www.w3.org/standards/">W3C</a>, <a href="https://www.ecma-international.org/">Ecma</a>, <a href="https://www.ietf.org/standards/">IETF</a> and later <a href="https://whatwg.org/">WHATWG</a>. The goal of Semantic Web was to further develop the machine-readable aspects of the Web, in particular adding <em>meaning</em> (or semantics) to not just the link relations, but also to the <em>resources</em> that the URLs identified, and for machines thus being able to meaningfully navigate across such resources, e.g. to answer a particular query.</p>
+<p>Through W3C, the Semantic Web was realized with the Resource Description Framework (RDF) <span class="citation" data-cites="16WGmCih8">[<a href="#ref-16WGmCih8" role="doc-biblioref">14</a>]</span> that used <em>triples</em> of subject-predicate-object statements, with its initial serialization format <span class="citation" data-cites="16wvFH4nh">[<a href="#ref-16wvFH4nh" role="doc-biblioref">15</a>]</span> being RDF/XML (XML was at the time seen as a natural data-focused evolution from the document-centric SGML and HTML).</p>
+<p>While triple-based knowledge representations were not new [doi:10.21954/ou.ro.0000f821], the main innovation of RDF was the use of global identifiers in the form of URIs<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> as the primary identifier of the <em>subject</em> (what the statement is about), <em>predicate</em> (relation/attribute of the subject) and <em>object</em> (what is pointed to). By using URIs not just for documents[^5], the Semantic Web builds a self-described system of types and properties, the meaning of a relation can be resolved by following its hyperlink to the definition within a <em>vocabulary</em>.</p>
+<p>[^5] URIs can also identify <em>non-information resources</em> for any kind of physical object (e.g. people), such identifiers can resolve with <code>303 See Other</code> redirections to a corresponding <em>information resources</em> [doi:10.22028/D291-25086].</p>
+<p>The early days of the Semantic Web saw fairly lightweight approaches with the establishment of vocabularies such as FOAF (to describe people and their affiliations) and Dublin Core (for bibliographic data). Vocabularies themselves were formalized using RDFS or simply as human-readable HTML web pages defining each term. The main approach of this <em>Web of Data</em> was that a URI identified a <em>resource</em> (e.g. an author) had a HTML <em>representation</em> for human readers, along with a RDF representation for machine-readable data of the same resource. By using <em>content negotiation</em> in HTTP, the same identifier could be used in both views, avoiding <code>index.html</code> vs <code>index.rdf</code> exposure in the URLs. The concept of <em>namespaces</em> gave a way to give a group of RDF resources with the same URI base from a Semantic Web-aware service a common <em>prefix</em>, avoiding repeated long URLs.</p>
 <p>The mid-2000s saw a large academic interest and growth of the Semantic Web, with the development of more formal representation system for ontologies, such as OWL, allowing complex class hierarchies and logic inference rules following <em>open world</em> paradigm (e.g. a <em>ex:Parent</em> is equivalent to a subclass of <em>foaf:Person</em> which must <em>ex:hasChild</em> at least one <em>foaf:Person</em>, then if we know <em>:Alice a ex:Parent</em> we can infer <em>:Alice ex:hasChild [a foaf:Person]</em> even if we don’t know who that child is). More human-readable syntaxes of RDF such as Turtle (shown in this paragraph) evolved at this time, and conferences such as ISWC gained traction, with a large interest in knowledge representation and logic systems based on Semantic Web technologies evolving at the same time.</p>
-<p>Mature Semantic Web services and standards include SPARQL (pattern-based triple queries), named graphs (triples expanded to quads, to indicate statement source and processing of conflicting views), triple/quad stores (enterprise graph databases such as Virtuoso, GraphDB), mature RDF libraries (Apache Jena, Sesame/RDF4J, rdflib.py, rdflib.rb), and numerous graph visualization (which frequently collapsed in usability if more than 20 nodes appeared).</p>
-<p>The creation of RDF-based knowledge bases grew particularly in fields like bioinformatics, e.g. for describing proteins. In theory the use of RDF by the life sciences would enable interoperability between the many repositories and enable computational processing of the many aspects of bio-entities, however in practice most institutions ended up making their own ontologies and identifiers for what to the untrained eye would mean roughly the same. The toll of adding the semantic logic system of rich ontologies meant that small, but fundamental, differences in opinion (e.g. should a <em>gene identifier</em> signify which protein a DNA sequence would make, or just the particular DNA sequence letters, or those letters as they appear in a particular position on a human chromosome?) could lead to large differences in representation granularity, and thus different namespaces.</p>
-<p>Facing these challenges, thanks to the use of universal identifiers in the form of URIs, <em>mappings</em> could be developed not just between resources, but also across vocabularies. The mappings can be expressed themselves using lightweight and flexible RDF vocabularies such as SKOS (e.g. <code>dct:title skos:nearMatch schema:name</code> to indicate rough equivalence).</p>
-<p>The move towards <em>open science</em> practices in the late 2000s encouraged knowledge providers to distribute collections of RDF resources as downloadable <em>datasets</em>, so that their clients can avoid thousands of HTTP requests for individual resources. This enabled local processing and data integration across datasets, rather than relying on the providers’ SPARQL endpoints (which could become overloaded by handling concurrent complex queries).</p>
-<p>Along with experiments on logic systems in the Semantic Web academia, an unfortunate side-effect appeared. RDF datasets would use URIs which no longer (or never) resolved to a Semantic Web representation of the described resources. Inconsistencies would emerge as the production of RDF largely focused on building graph representations of internal databases in order to use the Semantic Web tooling, rather than as a way to expose knowledge on the Web. Ironically, <code>http</code> based URLs then becomes location-less identifiers, mainly signifying a localized node within a graph, rather than a resolvable resource.</p>
-<h2 id="linked-data-making-the-links-work-again">Linked Data: Making the links work again</h2>
-<p>The Linked Data was kickstarted as a counter-reaction to this development of the Semantic Web, as a way to bring the URLs back onto the Web. Crucially to Linked Data is to <em>reuse existing URLs</em> where they exist, rather than always make new identifiers. This means a loosening of the semantic restrictions previously applied.</p>
-<p>Vocabularies like schema.org evolved at the same time, together with JSON-LD. (..)</p>
-<p>Linked Data APIs..</p>
-<p>Reducing choice.</p>
+<p>Established Semantic Web services and standards include SPARQL <span class="citation" data-cites="xww8fb1B">[<a href="#ref-xww8fb1B" role="doc-biblioref">16</a>]</span> (pattern-based triple queries), <a href="https://www.w3.org/TR/rdf11-concepts/#section-dataset">named graphs</a> (triples expanded to <em>quads</em> to indicate statement source or represent conflicting views), triple/quad stores (graph databases such as OpenLink Virtuoso, GraphDB, 4Store), mature RDF libraries (including Redland RDF, Apache Jena, Eclipse RDF4J, RDFLib, RDF.rb, rdflib.js), and numerous graph visualization (many of which struggle with usability for more than 20 nodes).</p>
+<p>The creation of RDF-based knowledge graphs grew particularly in fields like bioinformatics, e.g. for describing genomes and proteins. In theory, the use of RDF by the life sciences would enable interoperability between the many data repositories and support combined views of the many aspects of bio-entities – however in practice most institutions ended up making their own ontologies and identifiers, for what to the untrained eye would mean roughly the same. One can argue that the toll of adding the semantic logic system of rich ontologies meant that small, but fundamental, differences in opinion (e.g. should a <em>gene identifier</em> signify which protein a DNA sequence would make, or just the particular DNA sequence letters, or those letters as they appear in a particular position on a human chromosome?) lead to large differences in representational granularity, and thus needed different identifiers.</p>
+<p>Facing these challenges, thanks to the use of universal identifiers in the form of URIs, <em>mappings</em> could retrospectively be developed not just between resources, but also across vocabularies. Such mappings can be expressed themselves using lightweight and flexible RDF vocabularies such as SKOS <span class="citation" data-cites="15gQDya5B">[<a href="#ref-15gQDya5B" role="doc-biblioref">17</a>]</span> (e.g. <code>dct:title skos:closeMatch schema:name</code> to indicate near equivalence of two properties). Automated ontology mappings have identified large potential overlaps (e.g. 372 definitions of <code>Person</code>) <span class="citation" data-cites="FDDmgO6s">[<a href="#ref-FDDmgO6s" role="doc-biblioref">18</a>]</span> .</p>
+<p>The move towards <em>open science</em> data sharing practices from the late 2000s encouraged knowledge providers to distribute collections of RDF descriptions as downloadable <em>datasets</em> <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, so that their clients can avoid thousands of HTTP requests for individual resources. This enabled local processing, mapping and data integration across datasets (e.g. Open PHACTS [doi:10.1016/j.websem.2014.03.003]), rather than relying on the providers’ RDF and SPARQL endpoints (which could become overloaded when handling many concurrent, complex queries).</p>
+<!-- UNFOUNDED - can't find good citations to evidence this anecdotal claim.
+
+Along with experiments on logic systems in the Semantic Web academia, an unfortunate side-effect appeared. RDF datasets would use URIs which no longer (or never) resolved to a Semantic Web representation of the described resources. Inconsistencies would emerge as the production of RDF largely focused on building graph representations of internal databases in order to use the Semantic Web tooling, rather than as a way to expose knowledge on the Web. Ironically, `http` based URLs then becomes location-less identifiers, mainly signifying a localized node within a graph, rather than a resolvable resource.
+-->
+<p>With these trends, an emerging problem was that adapters of the Semantic Web primarily utillized it as a set of graph technologies, with little consideration to existing Web resources. This meant that links stayed mainly within a single information system. Another challenge facing potential adapters is the plethora of choices, not just to navigate, understand and select to reuse the many possible vocabularies and ontologies [doi:10.3233/SSW200033] <!--https://arxiv.org/abs/2011.12599 -->, but also technological choices on RDF serialization (at least <a href="https://www.w3.org/TR/rdf11-primer/#section-graph-syntax">7 formats</a>), type system (RDFS <span class="citation" data-cites="ZwAcGQKY">[<a href="#ref-ZwAcGQKY" role="doc-biblioref">19</a>]</span>, OWL <span class="citation" data-cites="1p4IWJpI">[<a href="#ref-1p4IWJpI" role="doc-biblioref">20</a>]</span>, OBO <span class="citation" data-cites="1DalZuKct">[<a href="#ref-1DalZuKct" role="doc-biblioref">21</a>]</span>, SKOS <span class="citation" data-cites="15gQDya5B">[<a href="#ref-15gQDya5B" role="doc-biblioref">17</a>]</span>), hash vs slash, HTTP status codes and PID redirection strategies [doi:10.22028/D291-25086].</p>
+<h2 id="linked-data-rebuilding-the-web-of-data">Linked Data: Rebuilding the Web of Data</h2>
+<p>The <strong>Linked Data</strong> concept <span class="citation" data-cites="19s3yyxDn">[<a href="#ref-19s3yyxDn" role="doc-biblioref">22</a>]</span> <!--preprint http://eprints.soton.ac.uk/id/eprint/271285 --> was kickstarted as a counter-reaction to this development of the Semantic Web, as a set of best practices <span class="citation" data-cites="OGXYtGZ8">[<a href="#ref-OGXYtGZ8" role="doc-biblioref">23</a>]</span> to bring the Web aspect back into focus. Crucially to Linked Data is to <em>reuse existing URIs</em> where they exist, rather than always make new identifiers. This means a loosening of the semantic restrictions previously applied, and an emphasis on building navigatable data resources, rather than elaborate graph representations.</p>
+<p>Vocabularies like <a href="https://schema.org/">schema.org</a> evolved not long after, intended for lightweight semantic markup of existing Web pages, primarily to improve search engines’ understanding of types and embedded data. In addition to several such embedded <em>microformats</em> (Open Graph <span class="citation" data-cites="oN9D5LkD">[<a href="#ref-oN9D5LkD" role="doc-biblioref">24</a>]</span>, RDFa <span class="citation" data-cites="FKIF6ApB">[<a href="#ref-FKIF6ApB" role="doc-biblioref">25</a>]</span>, Microdata <span class="citation" data-cites="14Utscfe4">[<a href="#ref-14Utscfe4" role="doc-biblioref">26</a>]</span>) we find JSON-LD <span class="citation" data-cites="X5SWPqSU">[<a href="#ref-X5SWPqSU" role="doc-biblioref">27</a>]</span> as a Web-focused RDF serialization that aims for improved programmatic generation and consumption, including from Web applications. JSON-LD is at time of writing used by 42.6% of the top 10 million websites <span class="citation" data-cites="j3SqQLBR">[<a href="#ref-j3SqQLBR" role="doc-biblioref">28</a>]</span> <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+<p>Recently there has also been a renewed emphasis to improve the <em>Linked Data Developer Experience</em> <span class="citation" data-cites="BFMoe8FC">[<a href="#ref-BFMoe8FC" role="doc-biblioref">29</a>]</span>, for instance RDF Shapes (expressed in SHACL <span class="citation" data-cites="GDrm9dgX">[<a href="#ref-GDrm9dgX" role="doc-biblioref">30</a>]</span> or ShEx <span class="citation" data-cites="YUzogaV">[<a href="#ref-YUzogaV" role="doc-biblioref">31</a>]</span>) [doi:10.1007/978-3-030-21348-0_39] can be used to validate RDF Data [doi:https://doi.org/10.2200/S00786ED1V01Y201707WBE016] <!-- https://book.validatingrdf.com/ --> before consuming it programmatically or shaping it to other models.</p>
+<p>Still more work to be done in adapting the Web [doi:10.3233/SW-190372]</p>
 <h2 id="interoperability-framework-for-fast-data">Interoperability Framework for Fast Data</h2>
 <h3 id="considering-fdoweb-as-interoperability-framework-for-fast-data">Considering FDO/Web as interoperability framework for Fast Data</h3>
 <div id="tbl:fdo-web-interoperability-framework" class="tablenos">
 <table id="tbl:fdo-web-interoperability-framework">
-<caption><span>Table 1:</span> Considering FDO and Web according to the levels of interoperability <span class="citation" data-cites="KlCFFFyL">[<a href="#ref-KlCFFFyL" role="doc-biblioref">13</a>]</span>:
+<caption><span>Table 1:</span> Considering FDO and Web according to the levels of interoperability <span class="citation" data-cites="KlCFFFyL">[<a href="#ref-KlCFFFyL" role="doc-biblioref">32</a>]</span>:
 </caption>
 <colgroup>
 <col style="width: 16%" />
@@ -190,11 +194,11 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 <tr class="even">
 <td style="text-align: left;"><strong>Pragmatic</strong>: <em>using interaction contracts so processes can be choreographed in workflows</em></td>
 <td style="text-align: center;">FDO types and operations enable detailed choreography (see CWFP). <code>0.TYPE/DOIPOperation</code> has lightweight definition of operation, <code>0.DOIP/Request</code> or <code>0.DOIP/Response</code> may give FDO Type or any other kind of “specifics” (incl. human readable docs). Semantics/purpose of operations not formalized (similar operations can be grouped with <code>0.DOIP/OperationReference</code>).</td>
-<td style="text-align: center;">“Follow your nose” crawler navigation, which may lead to frequent dead ends. Operational composition, typically within a single API provider, documented by OpenAPI 3 <span class="citation" data-cites="k0AfCGzw">[<a href="#ref-k0AfCGzw" role="doc-biblioref">14</a>]</span>, schema.org Actions [<span class="citation" data-cites="dKAekUjL">[<a href="#ref-dKAekUjL" role="doc-biblioref">15</a>]</span>), WSDL/SOAP <span class="citation" data-cites="LmudecyN">[<a href="#ref-LmudecyN" role="doc-biblioref">16</a>]</span>, but frequently just as human-readable developer documentation/examples.</td>
+<td style="text-align: center;">“Follow your nose” crawler navigation, which may lead to frequent dead ends. Operational composition, typically within a single API provider, documented by OpenAPI 3 <span class="citation" data-cites="k0AfCGzw">[<a href="#ref-k0AfCGzw" role="doc-biblioref">33</a>]</span>, schema.org Actions [<span class="citation" data-cites="dKAekUjL">[<a href="#ref-dKAekUjL" role="doc-biblioref">34</a>]</span>), WSDL/SOAP <span class="citation" data-cites="LmudecyN">[<a href="#ref-LmudecyN" role="doc-biblioref">35</a>]</span>, but frequently just as human-readable developer documentation/examples.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Semantic</strong>: <em>ensuring consistent understanding of messages, interoperability of rules, knowledge and ontologies</em></td>
-<td style="text-align: center;">FDO semantic enable navigation and typing. Every FDO have a type. Types maintained in FDO Type registries, which may add additional semantics, e.g. the ePIC <a href="https://hdl.handle.net/21.11104/c1a0ec5ad347427f25d6">PID-InfoType for Model</a>. No single type semantic, Type FDOs can link to existing vocabularies &amp; ontologies. JSON-LD used within some FDO objects (e.g. DISSCO Digital Specimen, NIST Material Science schema) <span class="citation" data-cites="GNm0278Y">[<a href="#ref-GNm0278Y" role="doc-biblioref">17</a>]</span></td>
+<td style="text-align: center;">FDO semantic enable navigation and typing. Every FDO have a type. Types maintained in FDO Type registries, which may add additional semantics, e.g. the ePIC <a href="https://hdl.handle.net/21.11104/c1a0ec5ad347427f25d6">PID-InfoType for Model</a>. No single type semantic, Type FDOs can link to existing vocabularies &amp; ontologies. JSON-LD used within some FDO objects (e.g. DISSCO Digital Specimen, NIST Material Science schema) <span class="citation" data-cites="GNm0278Y">[<a href="#ref-GNm0278Y" role="doc-biblioref">36</a>]</span></td>
 <td style="text-align: center;">Lightweight HTTP semantics for authenticity/navigation. Semantic Type not commonly expressed on PID/header level, may be declared within Linked Data metadata. Semantic of type implied by Linked Data formats (e.g. OWL2, RDFS), although choice of type system may not be explicit.</td>
 </tr>
 <tr class="even">
@@ -218,7 +222,7 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 <p>Mapping of Metamodel concepts:</p>
 <div id="tbl:metamodel-concepts" class="tablenos">
 <table id="tbl:metamodel-concepts">
-<caption><span>Table 2:</span> Mapping the Metamodel concepts from the Interoperability Framework for Fast Data <span class="citation" data-cites="KlCFFFyL">[<a href="#ref-KlCFFFyL" role="doc-biblioref">13</a>]</span> to equivalent concepts for FDO and Web:
+<caption><span>Table 2:</span> Mapping the Metamodel concepts from the Interoperability Framework for Fast Data <span class="citation" data-cites="KlCFFFyL">[<a href="#ref-KlCFFFyL" role="doc-biblioref">32</a>]</span> to equivalent concepts for FDO and Web:
 </caption>
 <colgroup>
 <col style="width: 29%" />
@@ -295,7 +299,7 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 <h3 id="comparing-fdo-and-web-as-middleware-infrastructures">Comparing FDO and Web as middleware infrastructures</h3>
 <div id="tbl:fdo-web-middleware" class="tablenos">
 <table id="tbl:fdo-web-middleware">
-<caption><span>Table 3:</span> Comparing FAIR Digital Object (with the DOIP 2.0 protocol <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">11</a>]</span>) and Web technologies (using Linked Data) as middleware infrastructures <span class="citation" data-cites="hRzcHhPD">[<a href="#ref-hRzcHhPD" role="doc-biblioref">18</a>]</span>
+<caption><span>Table 3:</span> Comparing FAIR Digital Object (with the DOIP 2.0 protocol <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">11</a>]</span>) and Web technologies (using Linked Data) as middleware infrastructures <span class="citation" data-cites="hRzcHhPD">[<a href="#ref-hRzcHhPD" role="doc-biblioref">37</a>]</span>
 </caption>
 <colgroup>
 <col style="width: 16%" />
@@ -322,13 +326,13 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Performance</strong>: <em>efficient and predictable execution</em></td>
-<td style="text-align: center;">DOIP has been shown moderately scalable to 100 millions of objects, create operation at 900 requests/second <span class="citation" data-cites="18P9txgeB">[<a href="#ref-18P9txgeB" role="doc-biblioref">19</a>]</span>. DOIP protocol is reusable for many operations, multiple requests may be answered out of order (by <code>requestId</code>). Multiple connections possible. Setup is typically through TCP and TLS which adds latency.</td>
-<td style="text-align: center;">HTTP traffic is about 10% of global Internet traffic, excluding video and social networks <span class="citation" data-cites="F8VZ86hu">[{ <a href="#ref-F8VZ86hu" role="doc-biblioref">20</a>}]</span>. HTTP 1 connections are serial and reusable, and concurrent connections is common. HTTP/2 adds asynchronous responses and multiplexed streams <span class="citation" data-cites="KbbW0kGT">[<a href="#ref-KbbW0kGT" role="doc-biblioref">21</a>]</span> but still has TCP+TLS startup costs. For reduced latency <span class="citation" data-cites="CJuBupCW">[<a href="#ref-CJuBupCW" role="doc-biblioref">22</a>]</span>, HTTP/3 <span class="citation" data-cites="Amit86Tp">[{ <a href="#ref-Amit86Tp" role="doc-biblioref">23</a>}]</span> use QUIC <span class="citation" data-cites="1GWvyEmUf">[<a href="#ref-1GWvyEmUf" role="doc-biblioref">24</a>]</span>) rather than TCP, already adapted heavily (30% of EMEA traffic) of which <a href="https://engineering.fb.com/2020/10/21/networking-traffic/how-facebook-is-bringing-quic-to-billions/">Instagram &amp; Facebook video</a> is the majority of traffic.</td>
+<td style="text-align: center;">DOIP has been shown moderately scalable to 100 millions of objects, create operation at 900 requests/second <span class="citation" data-cites="18P9txgeB">[<a href="#ref-18P9txgeB" role="doc-biblioref">38</a>]</span>. DOIP protocol is reusable for many operations, multiple requests may be answered out of order (by <code>requestId</code>). Multiple connections possible. Setup is typically through TCP and TLS which adds latency.</td>
+<td style="text-align: center;">HTTP traffic is about 10% of global Internet traffic, excluding video and social networks <span class="citation" data-cites="F8VZ86hu">[{ <a href="#ref-F8VZ86hu" role="doc-biblioref">39</a>}]</span>. HTTP 1 connections are serial and reusable, and concurrent connections is common. HTTP/2 adds asynchronous responses and multiplexed streams <span class="citation" data-cites="KbbW0kGT">[<a href="#ref-KbbW0kGT" role="doc-biblioref">40</a>]</span> but still has TCP+TLS startup costs. For reduced latency <span class="citation" data-cites="CJuBupCW">[<a href="#ref-CJuBupCW" role="doc-biblioref">41</a>]</span>, HTTP/3 <span class="citation" data-cites="Amit86Tp">[{ <a href="#ref-Amit86Tp" role="doc-biblioref">42</a>}]</span> use QUIC <span class="citation" data-cites="1GWvyEmUf">[<a href="#ref-1GWvyEmUf" role="doc-biblioref">43</a>]</span>) rather than TCP, already adapted heavily (30% of EMEA traffic) of which <a href="https://engineering.fb.com/2020/10/21/networking-traffic/how-facebook-is-bringing-quic-to-billions/">Instagram &amp; Facebook video</a> is the majority of traffic.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Distribution transparency</strong>: <em>application perceived as a consistent whole rather than independent elements.</em></td>
 <td style="text-align: center;">Each FDO is accessed separately along with its components (typically from the same endpoint). FDOs should provide the mandatory kernel metadata fields. FDOs of the same declared type typically share additional attributes (although that schema may not be declared). DOIP does not enforce metadata typing constraints, this need to be established as FDO conventions.</td>
-<td style="text-align: center;">Each URL accessed separately. Common HTTP headers provide basic metadata, although it is often not reliable. A multitude of schemas and serializations for metadata exists, conventions might be implied by a declared profile or certain media types. Metadata is not always machine findable, may need pre-agreed API URI Templates <span class="citation" data-cites="11hxwwuRt">[<a href="#ref-11hxwwuRt" role="doc-biblioref">25</a>]</span>, content-negotiation <span class="citation" data-cites="n2f3TfoI">[<a href="#ref-n2f3TfoI" role="doc-biblioref">26</a>]</span> or FAIR Signposting <span class="citation" data-cites="snykkm7R">[<a href="#ref-snykkm7R" role="doc-biblioref">27</a>]</span>.</td>
+<td style="text-align: center;">Each URL accessed separately. Common HTTP headers provide basic metadata, although it is often not reliable. A multitude of schemas and serializations for metadata exists, conventions might be implied by a declared profile or certain media types. Metadata is not always machine findable, may need pre-agreed API URI Templates <span class="citation" data-cites="11hxwwuRt">[<a href="#ref-11hxwwuRt" role="doc-biblioref">44</a>]</span>, content-negotiation <span class="citation" data-cites="n2f3TfoI">[<a href="#ref-n2f3TfoI" role="doc-biblioref">45</a>]</span> or FAIR Signposting <span class="citation" data-cites="snykkm7R">[<a href="#ref-snykkm7R" role="doc-biblioref">46</a>]</span>.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Access transparency</strong>: <em>local/remote elements accessed similarly</em></td>
@@ -358,12 +362,12 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 <tr class="even">
 <td style="text-align: left;"><strong>Persistence transparency</strong>: <em>conceal deactivation/reactivation of elements from their users</em></td>
 <td style="text-align: center;">FDO requires use of PIDs for object persistence, including a thumbstone response for deleted objects. There is no guarantee that an FDO is immutable or will even stay the same type (note: CORDRA extends DOIP with <a href="https://www.cordra.org/documentation/design/object-versioning.html">version tracking</a>).</td>
-<td style="text-align: center;">URLs are not required to persist, although encouraged <span class="citation" data-cites="rbG9uRKw">[<a href="#ref-rbG9uRKw" role="doc-biblioref">28</a>]</span>. Persistence requires convention to use PIDs/PURLs and HTTP <code>410 Gone</code>. An URL may change its content, change in type may sometimes force new URLs if exposing extensions like <code>.json</code>. Memento <span class="citation" data-cites="DNjcMi4a">[<a href="#ref-DNjcMi4a" role="doc-biblioref">29</a>]</span> expose versioned snapshots. WebDAV <code>VERSION-CONTROL</code> method <span class="citation" data-cites="hRUsaTiz">[<a href="#ref-hRUsaTiz" role="doc-biblioref">30</a>]</span> (used by SVN).</td>
+<td style="text-align: center;">URLs are not required to persist, although encouraged <span class="citation" data-cites="rbG9uRKw">[<a href="#ref-rbG9uRKw" role="doc-biblioref">47</a>]</span>. Persistence requires convention to use PIDs/PURLs and HTTP <code>410 Gone</code>. An URL may change its content, change in type may sometimes force new URLs if exposing extensions like <code>.json</code>. Memento <span class="citation" data-cites="DNjcMi4a">[<a href="#ref-DNjcMi4a" role="doc-biblioref">48</a>]</span> expose versioned snapshots. WebDAV <code>VERSION-CONTROL</code> method <span class="citation" data-cites="hRUsaTiz">[<a href="#ref-hRUsaTiz" role="doc-biblioref">49</a>]</span> (used by SVN).</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Transaction transparency</strong>: <em>coordinate execution of atomic/isolated transactions</em></td>
 <td style="text-align: center;">No transaction capabilities declared by FDO or DOIP. Internal synchronization possible in backend for Extended operations.</td>
-<td style="text-align: center;">Limited transaction capabilities (e.g. <code>If-Unmodified-Since</code>) on same resource. WebDAV <a href="https://datatracker.ietf.org/doc/html/rfc4918#section-6">locking mechanisms</a> <span class="citation" data-cites="xvMAyRAc">[<a href="#ref-xvMAyRAc" role="doc-biblioref">31</a>]</span> with <code>LOCK</code> and <code>UNLOCK</code> methods.</td>
+<td style="text-align: center;">Limited transaction capabilities (e.g. <code>If-Unmodified-Since</code>) on same resource. WebDAV <a href="https://datatracker.ietf.org/doc/html/rfc4918#section-6">locking mechanisms</a> <span class="citation" data-cites="xvMAyRAc">[<a href="#ref-xvMAyRAc" role="doc-biblioref">50</a>]</span> with <code>LOCK</code> and <code>UNLOCK</code> methods.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Modularity</strong>: <em>application as collection of connected/distributed elements</em></td>
@@ -373,37 +377,37 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 <tr class="odd">
 <td style="text-align: left;"><strong>Encapsulation</strong>: <em>separate interface from implementation. Specify interface as contract, multiple implementations possible</em></td>
 <td style="text-align: center;">Indirection by PID gives separation. FDO principles are protocol independent, although it may be unclear which protocol to use for which FDO (although <code>0.DOIP/Transport</code> can be specified after already contacting DOIP). Cordra supports <a href="https://www.cordra.org/documentation/api/doip.html">native DOIP</a>, <a href="https://www.cordra.org/documentation/api/doip-api-for-http-clients.html">DOIP over HTTP</a> and <a href="https://www.cordra.org/documentation/api/rest-api.html">Cordra REST API</a>)</td>
-<td style="text-align: center;">HTTP/1.1 semantics can seemlessly upgrade to HTTP/2 and HTTP/3. <code>http</code> vs <code>https</code> URIs exposes encryption detail <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Implementation details may leak into URIs (e.g. <code>search.aspx</code>), countered by deliberate design of URI patterns <span class="citation" data-cites="iME5l1kk">[<a href="#ref-iME5l1kk" role="doc-biblioref">33</a>]</span> and PIDs via Persistent URLs (PURL).</td>
+<td style="text-align: center;">HTTP/1.1 semantics can seemlessly upgrade to HTTP/2 and HTTP/3. <code>http</code> vs <code>https</code> URIs exposes encryption detail <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>. Implementation details may leak into URIs (e.g. <code>search.aspx</code>), countered by deliberate design of URI patterns <span class="citation" data-cites="iME5l1kk">[<a href="#ref-iME5l1kk" role="doc-biblioref">52</a>]</span> and PIDs via Persistent URLs (PURL).</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Inheritance</strong>: <em>Deriving specialized interface from another type</em></td>
 <td style="text-align: center;">DOIP types nested with parents, implying shared FDO structures (unclear if operations are inherited). FDO establishes need for multiple Data Type Registries (e.g. managed by a community for a particular domain). Semantics of type system currently undefined for FDO and DOIP, syntactic types can also piggyback of FDO type’s schema (e.g. <a href="(https://www.cordra.org/documentation/design/schemas.html#schema-references)">CORDRA <code>$ref</code></a> use of <a href="https://json-schema.org/draft/2020-12/json-schema-core.html#references">JSON Schema references</a> <span class="citation" data-cites="15EZ2D0Rm">[<a href="#ref-15EZ2D0Rm" role="doc-biblioref">12</a>]</span>)</td>
-<td style="text-align: center;">Syntactically Media Type with multiple suffixes <span class="citation" data-cites="nlH2rm1s">[<a href="#ref-nlH2rm1s" role="doc-biblioref">34</a>]</span> (mainly used with <code>+json</code>), declaration of subtypes as profiles (RFC6906) <span class="citation" data-cites="nCzRO0pK">[<a href="#ref-nCzRO0pK" role="doc-biblioref">35</a>]</span>. In metadata, semantic type systems (RDFS <span class="citation" data-cites="ZwAcGQKY">[<a href="#ref-ZwAcGQKY" role="doc-biblioref">36</a>]</span>, OWL2 <span class="citation" data-cites="1p4IWJpI">[<a href="#ref-1p4IWJpI" role="doc-biblioref">37</a>]</span>, SKOS <span class="citation" data-cites="16SVc3pvk">[<a href="#ref-16SVc3pvk" role="doc-biblioref">38</a>]</span>). OpenAPI 3 <span class="citation" data-cites="k0AfCGzw">[<a href="#ref-k0AfCGzw" role="doc-biblioref">14</a>]</span> <a href="https://spec.openapis.org/oas/v3.1.0#composition-and-inheritance-polymorphism">inheritance and Polymorphism</a>. XML <code>xsd:schemaLocation</code> &amp;<code>xsd:type</code> <span class="citation" data-cites="11oVTMsuZ">[<a href="#ref-11oVTMsuZ" role="doc-biblioref">39</a>]</span>, JSON <code>$schema</code> <span class="citation" data-cites="15EZ2D0Rm">[<a href="#ref-15EZ2D0Rm" role="doc-biblioref">12</a>]</span>), JSON-LD <code>@context</code> <span class="citation" data-cites="by6CfOmv">[<a href="#ref-by6CfOmv" role="doc-biblioref">40</a>]</span>. Large number of domain-specific and general ontologies define semantic types, but finding and selecting remains a challenge.</td>
+<td style="text-align: center;">Syntactically Media Type with multiple suffixes <span class="citation" data-cites="nlH2rm1s">[<a href="#ref-nlH2rm1s" role="doc-biblioref">53</a>]</span> (mainly used with <code>+json</code>), declaration of subtypes as profiles (RFC6906) <span class="citation" data-cites="nCzRO0pK">[<a href="#ref-nCzRO0pK" role="doc-biblioref">54</a>]</span>. In metadata, semantic type systems (RDFS <span class="citation" data-cites="ZwAcGQKY">[<a href="#ref-ZwAcGQKY" role="doc-biblioref">19</a>]</span>, OWL2 <span class="citation" data-cites="1p4IWJpI">[<a href="#ref-1p4IWJpI" role="doc-biblioref">20</a>]</span>, SKOS <span class="citation" data-cites="15gQDya5B">[<a href="#ref-15gQDya5B" role="doc-biblioref">17</a>]</span>). OpenAPI 3 <span class="citation" data-cites="k0AfCGzw">[<a href="#ref-k0AfCGzw" role="doc-biblioref">33</a>]</span> <a href="https://spec.openapis.org/oas/v3.1.0#composition-and-inheritance-polymorphism">inheritance and Polymorphism</a>. XML <code>xsd:schemaLocation</code> &amp;<code>xsd:type</code> <span class="citation" data-cites="11oVTMsuZ">[<a href="#ref-11oVTMsuZ" role="doc-biblioref">55</a>]</span>, JSON <code>$schema</code> <span class="citation" data-cites="15EZ2D0Rm">[<a href="#ref-15EZ2D0Rm" role="doc-biblioref">12</a>]</span>), JSON-LD <code>@context</code> <span class="citation" data-cites="by6CfOmv">[<a href="#ref-by6CfOmv" role="doc-biblioref">56</a>]</span>. Large number of domain-specific and general ontologies define semantic types, but finding and selecting remains a challenge.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Signal interfaces</strong>: <em>asynchronous handling of messages</em></td>
 <td style="text-align: center;">DOIP 2.0 is synchronous, in FDO async operations undefined. Could be handled as custom jobs/futures FDOs</td>
-<td style="text-align: center;">HTTP/2 <a href="https://datatracker.ietf.org/doc/html/rfc7540#section-5">multiplexed streams</a> <span class="citation" data-cites="KbbW0kGT">[<a href="#ref-KbbW0kGT" role="doc-biblioref">21</a>]</span>, Web Sockets <span class="citation" data-cites="qgqADk45">[<a href="#ref-qgqADk45" role="doc-biblioref">41</a>]</span>, Linked Data Notifications <span class="citation" data-cites="zlGYiuWC">[<a href="#ref-zlGYiuWC" role="doc-biblioref">42</a>]</span>, AtomPub <span class="citation" data-cites="IbaebabD">[<a href="#ref-IbaebabD" role="doc-biblioref">43</a>]</span>, SWORD <span class="citation" data-cites="7DGllKzG">[<a href="#ref-7DGllKzG" role="doc-biblioref">44</a>]</span>, Micropub, more typically ad-hoc jobs/futures REST resources</td>
+<td style="text-align: center;">HTTP/2 <a href="https://datatracker.ietf.org/doc/html/rfc7540#section-5">multiplexed streams</a> <span class="citation" data-cites="KbbW0kGT">[<a href="#ref-KbbW0kGT" role="doc-biblioref">40</a>]</span>, Web Sockets <span class="citation" data-cites="qgqADk45">[<a href="#ref-qgqADk45" role="doc-biblioref">57</a>]</span>, Linked Data Notifications <span class="citation" data-cites="zlGYiuWC">[<a href="#ref-zlGYiuWC" role="doc-biblioref">58</a>]</span>, AtomPub <span class="citation" data-cites="IbaebabD">[<a href="#ref-IbaebabD" role="doc-biblioref">59</a>]</span>, SWORD <span class="citation" data-cites="7DGllKzG">[<a href="#ref-7DGllKzG" role="doc-biblioref">60</a>]</span>, Micropub, more typically ad-hoc jobs/futures REST resources</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Operation interfaces</strong>: <em>defining operations possible on an instance, interface of request/response messages</em></td>
 <td style="text-align: center;">CRUD predefined in DOIP, custom operations through <code>0.DOIP/Op.ListOperations</code> (can be FDOs of type <code>0.TYPE/DOIPOperation</code>, more typically local identifiers like <code>"getProvenance"</code>)</td>
-<td style="text-align: center;">CRUD predefined in <a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3">HTTP methods</a> <span class="citation" data-cites="HE7Ikwwl">[<a href="#ref-HE7Ikwwl" role="doc-biblioref">45</a>]</span>, (<a href="https://www.iana.org/assignments/http-methods/http-methods.xhtml">extended by registration</a>), URI Templates <span class="citation" data-cites="11hxwwuRt">[<a href="#ref-11hxwwuRt" role="doc-biblioref">25</a>]</span>, <a href="https://spec.openapis.org/oas/v3.1.0.html#operation-object">OpenAPI operations</a> <span class="citation" data-cites="k0AfCGzw">[<a href="#ref-k0AfCGzw" role="doc-biblioref">14</a>]</span>, HATEOAS incl. schema.org Actions [<span class="citation" data-cites="dKAekUjL">[<a href="#ref-dKAekUjL" role="doc-biblioref">15</a>]</span>), JSON HAL <span class="citation" data-cites="nyrPYHoP">[<a href="#ref-nyrPYHoP" role="doc-biblioref">46</a>]</span> &amp; Link headers (RFC8288) <span class="citation" data-cites="ozdWB3O7">[<a href="#ref-ozdWB3O7" role="doc-biblioref">47</a>]</span></td>
+<td style="text-align: center;">CRUD predefined in <a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3">HTTP methods</a> <span class="citation" data-cites="HE7Ikwwl">[<a href="#ref-HE7Ikwwl" role="doc-biblioref">61</a>]</span>, (<a href="https://www.iana.org/assignments/http-methods/http-methods.xhtml">extended by registration</a>), URI Templates <span class="citation" data-cites="11hxwwuRt">[<a href="#ref-11hxwwuRt" role="doc-biblioref">44</a>]</span>, <a href="https://spec.openapis.org/oas/v3.1.0.html#operation-object">OpenAPI operations</a> <span class="citation" data-cites="k0AfCGzw">[<a href="#ref-k0AfCGzw" role="doc-biblioref">33</a>]</span>, HATEOAS incl. schema.org Actions [<span class="citation" data-cites="dKAekUjL">[<a href="#ref-dKAekUjL" role="doc-biblioref">34</a>]</span>), JSON HAL <span class="citation" data-cites="nyrPYHoP">[<a href="#ref-nyrPYHoP" role="doc-biblioref">62</a>]</span> &amp; Link headers (RFC8288) <span class="citation" data-cites="ozdWB3O7">[<a href="#ref-ozdWB3O7" role="doc-biblioref">63</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Stream interfaces</strong>: <em>operations that can handle continuous information streams</em></td>
 <td style="text-align: center;">Undefined in FDO. DOIP can support multiple byte stream elements (need custom FDO type to determine stream semantics)</td>
-<td style="text-align: center;">HTTP 1.1 <span class="citation" data-cites="tIkSXrb5">[<a href="#ref-tIkSXrb5" role="doc-biblioref">48</a>]</span> <a href="https://datatracker.ietf.org/doc/html/rfc7230#section-4.1">chunked transfer</a>, HLS (RFC8216) <span class="citation" data-cites="PL512B0X">[<a href="#ref-PL512B0X" role="doc-biblioref">49</a>]</span>, MPEG-DASH (ISO/IEC 23009-1:2019) <span class="citation" data-cites="ikO7e0mh">[<a href="#ref-ikO7e0mh" role="doc-biblioref">50</a>]</span></td>
+<td style="text-align: center;">HTTP 1.1 <span class="citation" data-cites="tIkSXrb5">[<a href="#ref-tIkSXrb5" role="doc-biblioref">64</a>]</span> <a href="https://datatracker.ietf.org/doc/html/rfc7230#section-4.1">chunked transfer</a>, HLS (RFC8216) <span class="citation" data-cites="PL512B0X">[<a href="#ref-PL512B0X" role="doc-biblioref">65</a>]</span>, MPEG-DASH (ISO/IEC 23009-1:2019) <span class="citation" data-cites="ikO7e0mh">[<a href="#ref-ikO7e0mh" role="doc-biblioref">66</a>]</span></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p>…</p>
-<p>As for the aspect of <em>Performance</em>, it is interesting to note that while the first version of DOIP <span class="citation" data-cites="16uB3jxpa">[<a href="#ref-16uB3jxpa" role="doc-biblioref">6</a>]</span> supported multiplexed channels similar to HTTP/2, allowing concurrent transfer of several digital objects. However multiplexing was removed for the much simplified DOIP 2.0 <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">11</a>]</span>, which do support multiple asynchronous requests, but unlike DOIP 1.0 will require a DO response to be sent back completely, as a series of segments (which again can be split the bytes of each binary <em>element</em> into sized <em>chunks</em>), before transmission of another DO response can start on the transport channel. It is unclear what is the purpose of splitting a binary into chunks on a channel which no longer can be multiplexed and the only property of a chunk is its size <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+<p>As for the aspect of <em>Performance</em>, it is interesting to note that while the first version of DOIP <span class="citation" data-cites="16uB3jxpa">[<a href="#ref-16uB3jxpa" role="doc-biblioref">6</a>]</span> supported multiplexed channels similar to HTTP/2, allowing concurrent transfer of several digital objects. However multiplexing was removed for the much simplified DOIP 2.0 <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">11</a>]</span>, which do support multiple asynchronous requests, but unlike DOIP 1.0 will require a DO response to be sent back completely, as a series of segments (which again can be split the bytes of each binary <em>element</em> into sized <em>chunks</em>), before transmission of another DO response can start on the transport channel. It is unclear what is the purpose of splitting a binary into chunks on a channel which no longer can be multiplexed and the only property of a chunk is its size <a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>.</p>
 <h2 id="assessing-doip-against-fdo">Assessing DOIP against FDO</h2>
 <div id="tbl:fdo-checks" class="tablenos">
 <table id="tbl:fdo-checks">
-<caption><span>Table 4:</span> Checking FDO guidelines <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">9</a>]</span> against its current implementations as DOIP <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">11</a>]</span> and Linked Data Platform (LDP) <span class="citation" data-cites="7szz7dwO">[<a href="#ref-7szz7dwO" role="doc-biblioref">51</a>]</span>, with suggestions for required additions.
+<caption><span>Table 4:</span> Checking FDO guidelines <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">9</a>]</span> against its current implementations as DOIP <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">11</a>]</span> and Linked Data Platform (LDP) <span class="citation" data-cites="7szz7dwO">[<a href="#ref-7szz7dwO" role="doc-biblioref">67</a>]</span>, with suggestions for required additions.
 </caption>
 <colgroup>
 <col style="width: 36%" />
@@ -572,11 +576,11 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 </tbody>
 </table>
 </div>
-<p>The draft update specification <em>WD-RequirementSpec-1.0-20220317</em> (at time of writing in internal review by FAIR Digital Object Forum) clarifies these definitions with equivalent identifiers <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> and relates them to further FDO requiremes such as FDO Data Type Registries.</p>
+<p>The draft update specification <em>WD-RequirementSpec-1.0-20220317</em> (at time of writing in internal review by FAIR Digital Object Forum) clarifies these definitions with equivalent identifiers <a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> and relates them to further FDO requiremes such as FDO Data Type Registries.</p>
 <h2 id="assessing-fdo-against-fair">Assessing FDO against FAIR</h2>
 <div id="tbl:fair-fdos" class="tablenos">
 <table id="tbl:fair-fdos">
-<caption><span>Table 5:</span> Assessing how FAIR principles is/can be fulfilled by FDOs <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">9</a>]</span> as DOIP <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">11</a>]</span>, Linked Data Platform (LDP) <span class="citation" data-cites="7szz7dwO">[<a href="#ref-7szz7dwO" role="doc-biblioref">51</a>]</span>, with examples øf existing Linked Data practices.
+<caption><span>Table 5:</span> Assessing how FAIR principles is/can be fulfilled by FDOs <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">9</a>]</span> as DOIP <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">11</a>]</span>, Linked Data Platform (LDP) <span class="citation" data-cites="7szz7dwO">[<a href="#ref-7szz7dwO" role="doc-biblioref">67</a>]</span>, with examples øf existing Linked Data practices.
 </caption>
 <colgroup>
 <col style="width: 21%" />
@@ -597,7 +601,7 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 <td style="text-align: center;"><strong>F1</strong>: <em>PID for data/metadata</em></td>
 <td style="text-align: center;">PIDs required (FDOF1). Handle, DOI.</td>
 <td style="text-align: center;">FDOF-IR (Identifier Record). PID can be any URI?</td>
-<td style="text-align: center;">“Cool” URIs <span class="citation" data-cites="rbG9uRKw">[<a href="#ref-rbG9uRKw" role="doc-biblioref">28</a>]</span>, PID using PURL services.</td>
+<td style="text-align: center;">“Cool” URIs <span class="citation" data-cites="rbG9uRKw">[<a href="#ref-rbG9uRKw" role="doc-biblioref">47</a>]</span>, PID using PURL services.</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><strong>F2</strong>: <em>data has metadata</em></td>
@@ -625,7 +629,7 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 </tr>
 <tr class="even">
 <td style="text-align: center;"><strong>A1.1</strong>: <em>protocol open/free/universal</em></td>
-<td style="text-align: center;">Required by G1. Partially realized, although Handle system is open protocol <span class="citation" data-cites="I9Kx0Hjy">[<a href="#ref-I9Kx0Hjy" role="doc-biblioref">52</a>]</span> it was covered by software patent <a href="https://patents.google.com/patent/US6135646A/en">US6135646A</a> (<a href="https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461">expired</a> in 2013), and only implementation of <code>Handle.net</code> software currently only available by <a href="http://www.handle.net/HNRj/HNR-9-License.pdf">public license</a>] (not OSI Open Source). <a href="https://www.cordra.org/">CORDRA</a> free to use under BSD-like license, although not recognized by OSI as Open Source.</td>
+<td style="text-align: center;">Required by G1. Partially realized, although Handle system is open protocol <span class="citation" data-cites="I9Kx0Hjy">[<a href="#ref-I9Kx0Hjy" role="doc-biblioref">68</a>]</span> it was covered by software patent <a href="https://patents.google.com/patent/US6135646A/en">US6135646A</a> (<a href="https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461">expired</a> in 2013), and only implementation of <code>Handle.net</code> software currently only available by <a href="http://www.handle.net/HNRj/HNR-9-License.pdf">public license</a>] (not OSI Open Source). <a href="https://www.cordra.org/">CORDRA</a> free to use under BSD-like license, although not recognized by OSI as Open Source.</td>
 <td style="text-align: center;">DNS, HTTP, TLS, RDF standards are open, free and universal, multiple open source clients/servers exist.</td>
 <td style="text-align: center;"></td>
 </tr>
@@ -657,7 +661,7 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 <td style="text-align: center;"><strong>I3</strong>: <em>qualified references</em></td>
 <td style="text-align: center;">Implied by attributes to PIDs of other FDO</td>
 <td style="text-align: center;">Unspecified</td>
-<td style="text-align: center;">By definition (Linked Data is relating to pre-existing URIs <span class="citation" data-cites="o4h92LpS">[<a href="#ref-o4h92LpS" role="doc-biblioref">53</a>]</span>). Link relations</td>
+<td style="text-align: center;">By definition (Linked Data is relating to pre-existing URIs <span class="citation" data-cites="o4h92LpS">[<a href="#ref-o4h92LpS" role="doc-biblioref">69</a>]</span>). Link relations</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><strong>R1</strong>: <em>relevant attributes</em></td>
@@ -669,7 +673,7 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 <td style="text-align: center;"><strong>R1.1</strong>: <em>clear data license</em></td>
 <td style="text-align: center;">Unspecified (but will be in PID Kernal metadata?)</td>
 <td style="text-align: center;">Unspecified</td>
-<td style="text-align: center;">Dublin Core Terms <code>dct:license</code> frequently recommended, but not required, e.g. <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license">by DCAT 2</a> <span class="citation" data-cites="lnH0hEuh">[<a href="#ref-lnH0hEuh" role="doc-biblioref">54</a>]</span></td>
+<td style="text-align: center;">Dublin Core Terms <code>dct:license</code> frequently recommended, but not required, e.g. <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license">by DCAT 2</a> <span class="citation" data-cites="lnH0hEuh">[<a href="#ref-lnH0hEuh" role="doc-biblioref">70</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><strong>R1.2</strong>: <em>detailed provenance</em></td>
@@ -681,7 +685,7 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 <td style="text-align: center;"><strong>R1.3</strong>: <em>follows community standards</em></td>
 <td style="text-align: center;">Recommended (FDOF4, FDOF10)</td>
 <td style="text-align: center;">Unspecified</td>
-<td style="text-align: center;">Common practice, specially in bioinformatics, e.g. BioSchemas <span class="citation" data-cites="1F8S9FeHf">[<a href="#ref-1F8S9FeHf" role="doc-biblioref">55</a>]</span>, BioPortal <span class="citation" data-cites="1Gsq23e51">[<a href="#ref-1Gsq23e51" role="doc-biblioref">56</a>]</span></td>
+<td style="text-align: center;">Common practice, specially in bioinformatics, e.g. BioSchemas <span class="citation" data-cites="1F8S9FeHf">[<a href="#ref-1F8S9FeHf" role="doc-biblioref">71</a>]</span>, BioPortal <span class="citation" data-cites="1Gsq23e51">[<a href="#ref-1Gsq23e51" role="doc-biblioref">72</a>]</span></td>
 </tr>
 </tbody>
 </table>
@@ -741,137 +745,185 @@ FDO FDO Granularity 1.0</p>
 <div id="ref-15EZ2D0Rm" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>draft-bhutton-json-schema-00</strong> <a href="https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00">https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00</a></div>
 </div>
-<div id="ref-KlCFFFyL" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>An Interoperability Framework and Distributed Platform for Fast Data Applications</strong> <div class="csl-block">José Carlos Martins Delgado</div> <em>Data Science and Big Data Computing</em> (2016) <a href="https://doi.org/gp3rds">https://doi.org/gp3rds</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-319-31861-5_1">10.1007/978-3-319-31861-5_1</a></div></div>
+<div id="ref-Guy7cjVY" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>Weaving the Web: the original design and ultimate destiny of the World Wide Web by its inventor</strong> <div class="csl-block">Tim Berners-Lee, Mark Fischetti</div> <em>HarperSanFrancisco</em> (1999) <div class="csl-block">ISBN: 9780062515865</div></div>
 </div>
-<div id="ref-k0AfCGzw" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>OpenAPI Specification v3.1.0 | Introduction, Definitions, &amp; More</strong> <a href="https://spec.openapis.org/oas/v3.1.0.html">https://spec.openapis.org/oas/v3.1.0.html</a></div>
+<div id="ref-16WGmCih8" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>RDF 1.1 Primer</strong> <a href="http://www.w3.org/TR/rdf11-primer/">http://www.w3.org/TR/rdf11-primer/</a></div>
 </div>
-<div id="ref-dKAekUjL" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>Schema.org Actions - schema.org</strong> <a href="https://schema.org/docs/actions.html">https://schema.org/docs/actions.html</a></div>
+<div id="ref-16wvFH4nh" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>Resource Description Framework (RDF) Model and Syntax Specification</strong> <a href="https://www.w3.org/TR/1999/REC-rdf-syntax-19990222/">https://www.w3.org/TR/1999/REC-rdf-syntax-19990222/</a></div>
 </div>
-<div id="ref-LmudecyN" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Web Services Description Language (WSDL) Version 2.0 Part 0: Primer</strong> <a href="http://www.w3.org/TR/wsdl20-primer/">http://www.w3.org/TR/wsdl20-primer/</a></div>
+<div id="ref-xww8fb1B" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>SPARQL 1.1 Overview</strong> <a href="http://www.w3.org/TR/sparql11-overview/">http://www.w3.org/TR/sparql11-overview/</a></div>
 </div>
-<div id="ref-GNm0278Y" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>FAIR digital object demonstrators 2021</strong> <div class="csl-block">Peter Wittenburg, Ivonne Anders, Christophe Blanchi, Merret Buurman, Carole Goble, Jonas Grieb, Alex Hardisty, Sharif Islam, Thomas Jejkal, Tibor Kálmán, … Philipp Wieder</div> <em>Zenodo</em> (2022) <a href="https://zenodo.org/record/5872645">https://zenodo.org/record/5872645</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.5872645">10.5281/zenodo.5872645</a></div></div>
+<div id="ref-15gQDya5B" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>SKOS Simple Knowledge Organization System Primer</strong> <a href="http://www.w3.org/TR/skos-primer/">http://www.w3.org/TR/skos-primer/</a></div>
 </div>
-<div id="ref-hRzcHhPD" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>A Comparison Framework for Middleware Infrastructures.</strong> <div class="csl-block">Apostolos Zarras</div> <em>The Journal of Object Technology</em> (2004) <a href="https://doi.org/cj5q8r">https://doi.org/cj5q8r</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5381/jot.2004.3.5.a2">10.5381/jot.2004.3.5.a2</a></div></div>
-</div>
-<div id="ref-18P9txgeB" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">19. </div><div class="csl-right-inline"><a href="https://www.rd-alliance.org/sites/default/files/Cordra.2022.pdf">https://www.rd-alliance.org/sites/default/files/Cordra.2022.pdf</a></div>
-</div>
-<div id="ref-F8VZ86hu" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">20. </div><div class="csl-right-inline"><strong>Global Internet Phenomena Report 2022</strong> <div class="csl-block">Sandvine</div> <a href="https://www.sandvine.com/global-internet-phenomena-report-2022">https://www.sandvine.com/global-internet-phenomena-report-2022</a></div>
-</div>
-<div id="ref-KbbW0kGT" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>Hypertext Transfer Protocol Version 2 (HTTP/2)</strong> <div class="csl-block">M Belshe, R Peon</div> <em>RFC Editor</em> (2015-05) <a href="https://doi.org/gp32q9">https://doi.org/gp32q9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7540">10.17487/rfc7540</a></div></div>
-</div>
-<div id="ref-CJuBupCW" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">22. </div><div class="csl-right-inline"><a href="https://blog.cloudflare.com/http-3-vs-http-2/">https://blog.cloudflare.com/http-3-vs-http-2/</a></div>
-</div>
-<div id="ref-Amit86Tp" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>draft-ietf-quic-http-34</strong> <a href="https://datatracker.ietf.org/doc/html/draft-ietf-quic-http-34">https://datatracker.ietf.org/doc/html/draft-ietf-quic-http-34</a></div>
-</div>
-<div id="ref-1GWvyEmUf" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>QUIC: A UDP-Based Multiplexed and Secure Transport</strong> <div class="csl-block">J Iyengar, M Thomson (editors)</div> <em>RFC Editor</em> (2021-05) <a href="https://doi.org/gkctrr">https://doi.org/gkctrr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc9000">10.17487/rfc9000</a></div></div>
-</div>
-<div id="ref-11hxwwuRt" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>URI Template</strong> <div class="csl-block">J Gregorio, R Fielding, M Hadley, M Nottingham, D Orchard</div> <em>RFC Editor</em> (2012-03) <a href="https://doi.org/gp33dw">https://doi.org/gp33dw</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc6570">10.17487/rfc6570</a></div></div>
-</div>
-<div id="ref-n2f3TfoI" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>Content negotiation - HTTP | MDN</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation">https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation</a></div>
-</div>
-<div id="ref-snykkm7R" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>FAIR Signposting Profile - Signposting the Scholarly Web</strong> <a href="https://signposting.org/FAIR/">https://signposting.org/FAIR/</a></div>
-</div>
-<div id="ref-rbG9uRKw" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>Hypertext Style: Cool URIs don't change.</strong> <a href="https://www.w3.org/Provider/Style/URI">https://www.w3.org/Provider/Style/URI</a></div>
-</div>
-<div id="ref-DNjcMi4a" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>HTTP Framework for Time-Based Access to Resource States -- Memento</strong> <div class="csl-block">H Van de Sompel, M Nelson, R Sanderson</div> <em>RFC Editor</em> (2013-12) <a href="https://doi.org/ggqvps">https://doi.org/ggqvps</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7089">10.17487/rfc7089</a></div></div>
-</div>
-<div id="ref-hRUsaTiz" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>Versioning Extensions to WebDAV (Web Distributed Authoring and Versioning)</strong> <div class="csl-block">G Clemm, J Amsden, T Ellison, C Kaler, J Whitehead</div> <em>RFC Editor</em> (2002-03) <a href="https://doi.org/gp37bd">https://doi.org/gp37bd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc3253">10.17487/rfc3253</a></div></div>
-</div>
-<div id="ref-xvMAyRAc" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV)</strong> <div class="csl-block">L Dusseault (editor)</div> <em>RFC Editor</em> (2007-06) <a href="https://doi.org/gp37bf">https://doi.org/gp37bf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc4918">10.17487/rfc4918</a></div></div>
-</div>
-<div id="ref-1B16WfR7q" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>Upgrading to TLS Within HTTP/1.1</strong> <div class="csl-block">R Khare, S Lawrence</div> <em>RFC Editor</em> (2000-05) <a href="https://doi.org/gp33dv">https://doi.org/gp33dv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc2817">10.17487/rfc2817</a></div></div>
-</div>
-<div id="ref-iME5l1kk" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>Hypertext Style: Cool URIs don't change.</strong> <a href="https://www.w3.org/Provider/Style/URI.html">https://www.w3.org/Provider/Style/URI.html</a></div>
-</div>
-<div id="ref-nlH2rm1s" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>draft-ietf-mediaman-suffixes-00 - Media Types with Multiple Suffixes</strong> <a href="https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/00/">https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/00/</a></div>
-</div>
-<div id="ref-nCzRO0pK" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>The 'profile' Link Relation Type</strong> <div class="csl-block">E Wilde</div> <em>RFC Editor</em> (2013-03) <a href="https://doi.org/gp32q7">https://doi.org/gp32q7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc6906">10.17487/rfc6906</a></div></div>
+<div id="ref-FDDmgO6s" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>How Matchable Are Four Thousand Ontologies on the Semantic Web</strong> <div class="csl-block">Wei Hu, Jianfeng Chen, Hang Zhang, Yuzhong Qu</div> <em>Lecture Notes in Computer Science</em> (2011) <a href="https://doi.org/bwdp52">https://doi.org/bwdp52</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-642-21034-1_20">10.1007/978-3-642-21034-1_20</a></div></div>
 </div>
 <div id="ref-ZwAcGQKY" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>RDF Schema 1.1</strong> <a href="http://www.w3.org/TR/rdf-schema/">http://www.w3.org/TR/rdf-schema/</a></div>
+<div class="csl-left-margin">19. </div><div class="csl-right-inline"><strong>RDF Schema 1.1</strong> <a href="http://www.w3.org/TR/rdf-schema/">http://www.w3.org/TR/rdf-schema/</a></div>
 </div>
 <div id="ref-1p4IWJpI" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>OWL 2 Web Ontology Language Document Overview (Second Edition)</strong> <a href="http://www.w3.org/TR/owl2-overview/">http://www.w3.org/TR/owl2-overview/</a></div>
+<div class="csl-left-margin">20. </div><div class="csl-right-inline"><strong>OWL 2 Web Ontology Language Document Overview (Second Edition)</strong> <a href="http://www.w3.org/TR/owl2-overview/">http://www.w3.org/TR/owl2-overview/</a></div>
 </div>
-<div id="ref-16SVc3pvk" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>SKOS Simple Knowledge Organization System Reference</strong> <a href="http://www.w3.org/TR/skos-reference/">http://www.w3.org/TR/skos-reference/</a></div>
+<div id="ref-1DalZuKct" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>Mapping between the OBO and OWL ontology languages</strong> <div class="csl-block">Syed Tirmizi, Stuart Aitken, Dilvan A Moreira, Chris Mungall, Juan Sequeda, Nigam H Shah, Daniel P Miranker</div> <em>Journal of Biomedical Semantics</em> (2011) <a href="https://doi.org/bn3fsc">https://doi.org/bn3fsc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/2041-1480-2-s1-s3">10.1186/2041-1480-2-s1-s3</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21388572">21388572</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3105495">PMC3105495</a></div></div>
+</div>
+<div id="ref-19s3yyxDn" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline"><strong>Linked Data - The Story So Far</strong> <div class="csl-block">Christian Bizer, Tom Heath, Tim Berners-Lee</div> <em>International Journal on Semantic Web and Information Systems</em> (2009-07) <a href="https://doi.org/fc8zjt">https://doi.org/fc8zjt</a> <div class="csl-block">DOI: <a href="https://doi.org/10.4018/jswis.2009081901">10.4018/jswis.2009081901</a></div></div>
+</div>
+<div id="ref-OGXYtGZ8" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>Linked Data - Design Issues</strong> <a href="https://www.w3.org/DesignIssues/LinkedData.html">https://www.w3.org/DesignIssues/LinkedData.html</a></div>
+</div>
+<div id="ref-oN9D5LkD" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>The Open Graph protocol</strong> <a href="https://ogp.me/">https://ogp.me/</a></div>
+</div>
+<div id="ref-FKIF6ApB" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>RDFa 1.1 Primer - Third Edition</strong> <a href="http://www.w3.org/TR/rdfa-primer/">http://www.w3.org/TR/rdfa-primer/</a></div>
+</div>
+<div id="ref-14Utscfe4" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>HTML Standard</strong> <a href="https://html.spec.whatwg.org/multipage/microdata.html">https://html.spec.whatwg.org/multipage/microdata.html</a></div>
+</div>
+<div id="ref-X5SWPqSU" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>JSON-LD 1.1</strong> <a href="https://www.w3.org/TR/json-ld/">https://www.w3.org/TR/json-ld/</a></div>
+</div>
+<div id="ref-j3SqQLBR" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>Usage Statistics of JSON-LD for Websites, May 2022</strong> <a href="https://w3techs.com/technologies/details/da-jsonld">https://w3techs.com/technologies/details/da-jsonld</a></div>
+</div>
+<div id="ref-BFMoe8FC" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>Designing a Linked Data developer experience</strong> (2018-12-28) <a href="https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/">https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/</a></div>
+</div>
+<div id="ref-GDrm9dgX" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>Shapes Constraint Language (SHACL)</strong> <a href="https://www.w3.org/TR/shacl/">https://www.w3.org/TR/shacl/</a></div>
+</div>
+<div id="ref-YUzogaV" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>Shape Expressions (ShEx) 2.1 Primer</strong> <a href="http://shex.io/shex-primer/">http://shex.io/shex-primer/</a></div>
+</div>
+<div id="ref-KlCFFFyL" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>An Interoperability Framework and Distributed Platform for Fast Data Applications</strong> <div class="csl-block">José Carlos Martins Delgado</div> <em>Data Science and Big Data Computing</em> (2016) <a href="https://doi.org/gp3rds">https://doi.org/gp3rds</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-319-31861-5_1">10.1007/978-3-319-31861-5_1</a></div></div>
+</div>
+<div id="ref-k0AfCGzw" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>OpenAPI Specification v3.1.0 | Introduction, Definitions, &amp; More</strong> <a href="https://spec.openapis.org/oas/v3.1.0.html">https://spec.openapis.org/oas/v3.1.0.html</a></div>
+</div>
+<div id="ref-dKAekUjL" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>Schema.org Actions - schema.org</strong> <a href="https://schema.org/docs/actions.html">https://schema.org/docs/actions.html</a></div>
+</div>
+<div id="ref-LmudecyN" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Web Services Description Language (WSDL) Version 2.0 Part 0: Primer</strong> <a href="http://www.w3.org/TR/wsdl20-primer/">http://www.w3.org/TR/wsdl20-primer/</a></div>
+</div>
+<div id="ref-GNm0278Y" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>FAIR digital object demonstrators 2021</strong> <div class="csl-block">Peter Wittenburg, Ivonne Anders, Christophe Blanchi, Merret Buurman, Carole Goble, Jonas Grieb, Alex Hardisty, Sharif Islam, Thomas Jejkal, Tibor Kálmán, … Philipp Wieder</div> <em>Zenodo</em> (2022) <a href="https://zenodo.org/record/5872645">https://zenodo.org/record/5872645</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.5872645">10.5281/zenodo.5872645</a></div></div>
+</div>
+<div id="ref-hRzcHhPD" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>A Comparison Framework for Middleware Infrastructures.</strong> <div class="csl-block">Apostolos Zarras</div> <em>The Journal of Object Technology</em> (2004) <a href="https://doi.org/cj5q8r">https://doi.org/cj5q8r</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5381/jot.2004.3.5.a2">10.5381/jot.2004.3.5.a2</a></div></div>
+</div>
+<div id="ref-18P9txgeB" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">38. </div><div class="csl-right-inline"><a href="https://www.rd-alliance.org/sites/default/files/Cordra.2022.pdf">https://www.rd-alliance.org/sites/default/files/Cordra.2022.pdf</a></div>
+</div>
+<div id="ref-F8VZ86hu" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>Global Internet Phenomena Report 2022</strong> <div class="csl-block">Sandvine</div> <a href="https://www.sandvine.com/global-internet-phenomena-report-2022">https://www.sandvine.com/global-internet-phenomena-report-2022</a></div>
+</div>
+<div id="ref-KbbW0kGT" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>Hypertext Transfer Protocol Version 2 (HTTP/2)</strong> <div class="csl-block">M Belshe, R Peon</div> <em>RFC Editor</em> (2015-05) <a href="https://doi.org/gp32q9">https://doi.org/gp32q9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7540">10.17487/rfc7540</a></div></div>
+</div>
+<div id="ref-CJuBupCW" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">41. </div><div class="csl-right-inline"><a href="https://blog.cloudflare.com/http-3-vs-http-2/">https://blog.cloudflare.com/http-3-vs-http-2/</a></div>
+</div>
+<div id="ref-Amit86Tp" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">42. </div><div class="csl-right-inline"><strong>draft-ietf-quic-http-34</strong> <a href="https://datatracker.ietf.org/doc/html/draft-ietf-quic-http-34">https://datatracker.ietf.org/doc/html/draft-ietf-quic-http-34</a></div>
+</div>
+<div id="ref-1GWvyEmUf" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">43. </div><div class="csl-right-inline"><strong>QUIC: A UDP-Based Multiplexed and Secure Transport</strong> <div class="csl-block">J Iyengar, M Thomson (editors)</div> <em>RFC Editor</em> (2021-05) <a href="https://doi.org/gkctrr">https://doi.org/gkctrr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc9000">10.17487/rfc9000</a></div></div>
+</div>
+<div id="ref-11hxwwuRt" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">44. </div><div class="csl-right-inline"><strong>URI Template</strong> <div class="csl-block">J Gregorio, R Fielding, M Hadley, M Nottingham, D Orchard</div> <em>RFC Editor</em> (2012-03) <a href="https://doi.org/gp33dw">https://doi.org/gp33dw</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc6570">10.17487/rfc6570</a></div></div>
+</div>
+<div id="ref-n2f3TfoI" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">45. </div><div class="csl-right-inline"><strong>Content negotiation - HTTP | MDN</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation">https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation</a></div>
+</div>
+<div id="ref-snykkm7R" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">46. </div><div class="csl-right-inline"><strong>FAIR Signposting Profile - Signposting the Scholarly Web</strong> <a href="https://signposting.org/FAIR/">https://signposting.org/FAIR/</a></div>
+</div>
+<div id="ref-rbG9uRKw" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">47. </div><div class="csl-right-inline"><strong>Hypertext Style: Cool URIs don't change.</strong> <a href="https://www.w3.org/Provider/Style/URI">https://www.w3.org/Provider/Style/URI</a></div>
+</div>
+<div id="ref-DNjcMi4a" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">48. </div><div class="csl-right-inline"><strong>HTTP Framework for Time-Based Access to Resource States -- Memento</strong> <div class="csl-block">H Van de Sompel, M Nelson, R Sanderson</div> <em>RFC Editor</em> (2013-12) <a href="https://doi.org/ggqvps">https://doi.org/ggqvps</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7089">10.17487/rfc7089</a></div></div>
+</div>
+<div id="ref-hRUsaTiz" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">49. </div><div class="csl-right-inline"><strong>Versioning Extensions to WebDAV (Web Distributed Authoring and Versioning)</strong> <div class="csl-block">G Clemm, J Amsden, T Ellison, C Kaler, J Whitehead</div> <em>RFC Editor</em> (2002-03) <a href="https://doi.org/gp37bd">https://doi.org/gp37bd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc3253">10.17487/rfc3253</a></div></div>
+</div>
+<div id="ref-xvMAyRAc" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">50. </div><div class="csl-right-inline"><strong>HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV)</strong> <div class="csl-block">L Dusseault (editor)</div> <em>RFC Editor</em> (2007-06) <a href="https://doi.org/gp37bf">https://doi.org/gp37bf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc4918">10.17487/rfc4918</a></div></div>
+</div>
+<div id="ref-1B16WfR7q" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">51. </div><div class="csl-right-inline"><strong>Upgrading to TLS Within HTTP/1.1</strong> <div class="csl-block">R Khare, S Lawrence</div> <em>RFC Editor</em> (2000-05) <a href="https://doi.org/gp33dv">https://doi.org/gp33dv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc2817">10.17487/rfc2817</a></div></div>
+</div>
+<div id="ref-iME5l1kk" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">52. </div><div class="csl-right-inline"><strong>Hypertext Style: Cool URIs don't change.</strong> <a href="https://www.w3.org/Provider/Style/URI.html">https://www.w3.org/Provider/Style/URI.html</a></div>
+</div>
+<div id="ref-nlH2rm1s" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">53. </div><div class="csl-right-inline"><strong>draft-ietf-mediaman-suffixes-00 - Media Types with Multiple Suffixes</strong> <a href="https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/00/">https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/00/</a></div>
+</div>
+<div id="ref-nCzRO0pK" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">54. </div><div class="csl-right-inline"><strong>The 'profile' Link Relation Type</strong> <div class="csl-block">E Wilde</div> <em>RFC Editor</em> (2013-03) <a href="https://doi.org/gp32q7">https://doi.org/gp32q7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc6906">10.17487/rfc6906</a></div></div>
 </div>
 <div id="ref-11oVTMsuZ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures</strong> <a href="http://www.w3.org/TR/xmlschema11-1/">http://www.w3.org/TR/xmlschema11-1/</a></div>
+<div class="csl-left-margin">55. </div><div class="csl-right-inline"><strong>W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures</strong> <a href="http://www.w3.org/TR/xmlschema11-1/">http://www.w3.org/TR/xmlschema11-1/</a></div>
 </div>
 <div id="ref-by6CfOmv" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>JSON-LD 1.1</strong> <a href="http://www.w3.org/TR/json-ld/">http://www.w3.org/TR/json-ld/</a></div>
+<div class="csl-left-margin">56. </div><div class="csl-right-inline"><strong>JSON-LD 1.1</strong> <a href="http://www.w3.org/TR/json-ld/">http://www.w3.org/TR/json-ld/</a></div>
 </div>
 <div id="ref-qgqADk45" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>WebSockets Standard</strong> <a href="https://websockets.spec.whatwg.org/">https://websockets.spec.whatwg.org/</a></div>
+<div class="csl-left-margin">57. </div><div class="csl-right-inline"><strong>WebSockets Standard</strong> <a href="https://websockets.spec.whatwg.org/">https://websockets.spec.whatwg.org/</a></div>
 </div>
 <div id="ref-zlGYiuWC" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">42. </div><div class="csl-right-inline"><strong>Linked Data Notifications</strong> <a href="https://www.w3.org/TR/ldn/">https://www.w3.org/TR/ldn/</a></div>
+<div class="csl-left-margin">58. </div><div class="csl-right-inline"><strong>Linked Data Notifications</strong> <a href="https://www.w3.org/TR/ldn/">https://www.w3.org/TR/ldn/</a></div>
 </div>
 <div id="ref-IbaebabD" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">43. </div><div class="csl-right-inline"><strong>The Atom Publishing Protocol</strong> <div class="csl-block">J Gregorio, B de hOra (editors)</div> <em>RFC Editor</em> (2007-10) <a href="https://doi.org/gp4p2c">https://doi.org/gp4p2c</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc5023">10.17487/rfc5023</a></div></div>
+<div class="csl-left-margin">59. </div><div class="csl-right-inline"><strong>The Atom Publishing Protocol</strong> <div class="csl-block">J Gregorio, B de hOra (editors)</div> <em>RFC Editor</em> (2007-10) <a href="https://doi.org/gp4p2c">https://doi.org/gp4p2c</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc5023">10.17487/rfc5023</a></div></div>
 </div>
 <div id="ref-7DGllKzG" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">44. </div><div class="csl-right-inline"><strong>SWORD 3.0 Specification</strong> <a href="https://swordapp.github.io/swordv3/swordv3.html">https://swordapp.github.io/swordv3/swordv3.html</a></div>
+<div class="csl-left-margin">60. </div><div class="csl-right-inline"><strong>SWORD 3.0 Specification</strong> <a href="https://swordapp.github.io/swordv3/swordv3.html">https://swordapp.github.io/swordv3/swordv3.html</a></div>
 </div>
 <div id="ref-HE7Ikwwl" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">45. </div><div class="csl-right-inline"><strong>Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content</strong> <div class="csl-block">R Fielding, J Reschke (editors)</div> <em>RFC Editor</em> (2014-06) <a href="https://doi.org/gh4jxc">https://doi.org/gh4jxc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7231">10.17487/rfc7231</a></div></div>
+<div class="csl-left-margin">61. </div><div class="csl-right-inline"><strong>Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content</strong> <div class="csl-block">R Fielding, J Reschke (editors)</div> <em>RFC Editor</em> (2014-06) <a href="https://doi.org/gh4jxc">https://doi.org/gh4jxc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7231">10.17487/rfc7231</a></div></div>
 </div>
 <div id="ref-nyrPYHoP" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">46. </div><div class="csl-right-inline"><strong>draft-kelly-json-hal-08</strong> <a href="https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-08">https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-08</a></div>
+<div class="csl-left-margin">62. </div><div class="csl-right-inline"><strong>draft-kelly-json-hal-08</strong> <a href="https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-08">https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-08</a></div>
 </div>
 <div id="ref-ozdWB3O7" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">47. </div><div class="csl-right-inline"><strong>Web Linking</strong> <div class="csl-block">M Nottingham</div> <em>RFC Editor</em> (2017-10) <a href="https://doi.org/gf8jcd">https://doi.org/gf8jcd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc8288">10.17487/rfc8288</a></div></div>
+<div class="csl-left-margin">63. </div><div class="csl-right-inline"><strong>Web Linking</strong> <div class="csl-block">M Nottingham</div> <em>RFC Editor</em> (2017-10) <a href="https://doi.org/gf8jcd">https://doi.org/gf8jcd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc8288">10.17487/rfc8288</a></div></div>
 </div>
 <div id="ref-tIkSXrb5" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">48. </div><div class="csl-right-inline"><strong>Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing</strong> <div class="csl-block">R Fielding, J Reschke (editors)</div> <em>RFC Editor</em> (2014-06) <a href="https://doi.org/gp32q8">https://doi.org/gp32q8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7230">10.17487/rfc7230</a></div></div>
+<div class="csl-left-margin">64. </div><div class="csl-right-inline"><strong>Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing</strong> <div class="csl-block">R Fielding, J Reschke (editors)</div> <em>RFC Editor</em> (2014-06) <a href="https://doi.org/gp32q8">https://doi.org/gp32q8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc7230">10.17487/rfc7230</a></div></div>
 </div>
 <div id="ref-PL512B0X" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">49. </div><div class="csl-right-inline"><strong>HTTP Live Streaming</strong> <div class="csl-block">W May</div> <em>RFC Editor</em> (2017-08) <a href="https://doi.org/gp32rc">https://doi.org/gp32rc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc8216">10.17487/rfc8216</a></div></div>
+<div class="csl-left-margin">65. </div><div class="csl-right-inline"><strong>HTTP Live Streaming</strong> <div class="csl-block">W May</div> <em>RFC Editor</em> (2017-08) <a href="https://doi.org/gp32rc">https://doi.org/gp32rc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc8216">10.17487/rfc8216</a></div></div>
 </div>
 <div id="ref-ikO7e0mh" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">50. </div><div class="csl-right-inline"><strong>ISO/IEC 23009-1:2019</strong> <div class="csl-block">14:00-17:00</div> <em>ISO</em> <a href="https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html">https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html</a></div>
+<div class="csl-left-margin">66. </div><div class="csl-right-inline"><strong>ISO/IEC 23009-1:2019</strong> <div class="csl-block">14:00-17:00</div> <em>ISO</em> <a href="https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html">https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html</a></div>
 </div>
 <div id="ref-7szz7dwO" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">51. </div><div class="csl-right-inline"><strong>FAIR Digital Object Framework Documentation</strong> <a href="https://fairdigitalobjectframework.org/">https://fairdigitalobjectframework.org/</a></div>
+<div class="csl-left-margin">67. </div><div class="csl-right-inline"><strong>FAIR Digital Object Framework Documentation</strong> <a href="https://fairdigitalobjectframework.org/">https://fairdigitalobjectframework.org/</a></div>
 </div>
 <div id="ref-I9Kx0Hjy" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">52. </div><div class="csl-right-inline"><strong>Handle System Protocol (ver 2.1) Specification</strong> <div class="csl-block">S Sun, S Reilly, L Lannom, J Petrone</div> <em>RFC Editor</em> (2003-11) <a href="https://doi.org/ggn83x">https://doi.org/ggn83x</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc3652">10.17487/rfc3652</a></div></div>
+<div class="csl-left-margin">68. </div><div class="csl-right-inline"><strong>Handle System Protocol (ver 2.1) Specification</strong> <div class="csl-block">S Sun, S Reilly, L Lannom, J Petrone</div> <em>RFC Editor</em> (2003-11) <a href="https://doi.org/ggn83x">https://doi.org/ggn83x</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc3652">10.17487/rfc3652</a></div></div>
 </div>
 <div id="ref-o4h92LpS" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">53. </div><div class="csl-right-inline"><strong>Data - W3C</strong> <a href="https://www.w3.org/standards/semanticweb/data">https://www.w3.org/standards/semanticweb/data</a></div>
+<div class="csl-left-margin">69. </div><div class="csl-right-inline"><strong>Data - W3C</strong> <a href="https://www.w3.org/standards/semanticweb/data">https://www.w3.org/standards/semanticweb/data</a></div>
 </div>
 <div id="ref-lnH0hEuh" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">54. </div><div class="csl-right-inline"><strong>Data Catalog Vocabulary (DCAT) - Version 2</strong> <a href="https://www.w3.org/TR/vocab-dcat-2/">https://www.w3.org/TR/vocab-dcat-2/</a></div>
+<div class="csl-left-margin">70. </div><div class="csl-right-inline"><strong>Data Catalog Vocabulary (DCAT) - Version 2</strong> <a href="https://www.w3.org/TR/vocab-dcat-2/">https://www.w3.org/TR/vocab-dcat-2/</a></div>
 </div>
 <div id="ref-1F8S9FeHf" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">55. </div><div class="csl-right-inline"><strong>Bioschemas - Bioschemas</strong> <a href="http://bioschemas.org/">http://bioschemas.org/</a></div>
+<div class="csl-left-margin">71. </div><div class="csl-right-inline"><strong>Bioschemas - Bioschemas</strong> <a href="http://bioschemas.org/">http://bioschemas.org/</a></div>
 </div>
 <div id="ref-1Gsq23e51" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">56. </div><div class="csl-right-inline"><strong>NCBO BioPortal</strong> <a href="https://bioportal.bioontology.org/ontologies">https://bioportal.bioontology.org/ontologies</a></div>
+<div class="csl-left-margin">72. </div><div class="csl-right-inline"><strong>NCBO BioPortal</strong> <a href="https://bioportal.bioontology.org/ontologies">https://bioportal.bioontology.org/ontologies</a></div>
 </div>
 </div>
 <section class="footnotes footnotes-end-of-document" role="doc-endnotes">
@@ -879,9 +931,11 @@ FDO FDO Granularity 1.0</p>
 <ol>
 <li id="fn1" role="doc-endnote"><p>For a brief introduction to DOIP 2.0 <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">11</a>]</span>, see $[{https://www.cordra.org/documentation/api/doip.html}].<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2" role="doc-endnote"><p>Although it is possible with <code>0.DOIP/Op.Retrieve</code> to request only particular individual elements of an DO (e.g. one file), unlike HTTP’s <code>Range</code> request, it is not possible to select individual chunks of an element’s bytestream.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3" role="doc-endnote"><p>The <code>http</code> protocol (port 80) can in theory also upgrade <span class="citation" data-cites="1B16WfR7q">[<a href="#ref-1B16WfR7q" role="doc-biblioref">32</a>]</span> to TLS encryption, as commonly used by <a href="https://www.rfc-editor.org/rfc/rfc8010.html#section-8.2">Internet Printing Protocol</a> for <code>ipp</code> URIs, but on the Web, best practice is explicit <code>https</code> (port 443) URLs to ensure following links stay secure.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4" role="doc-endnote"><p>Although it is possible with <code>0.DOIP/Op.Retrieve</code> to request only particular individual elements of an DO (e.g. one file), unlike HTTP’s <code>Range</code> request, it is not possible to select individual chunks of an element’s bytestream.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5" role="doc-endnote"><p>FDOF* renamed to FDOR*. FDOF3/FDOF4 are swapped to FDOR4/FDOR3 in <em>WD-RequirementSpec-1.0-20220317</em>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p><em>Datasets</em> that distribute RDF graphs should not be confused with <a href="https://www.w3.org/TR/rdf11-concepts/#section-dataset">RDF Datasets</a> used for partioning <em>named graphs</em>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>Presumably this large uptake of JSON-LD is mainly for the purpose of search engine optimization (SEO), with typically small amounts of metadata which may not constitute Linked Data as introduced above, however this nevertheless constitute machine-actionable structured data.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>The <code>http</code> protocol (port 80) can in theory also upgrade <span class="citation" data-cites="1B16WfR7q">[<a href="#ref-1B16WfR7q" role="doc-biblioref">51</a>]</span> to TLS encryption, as commonly used by <a href="https://www.rfc-editor.org/rfc/rfc8010.html#section-8.2">Internet Printing Protocol</a> for <code>ipp</code> URIs, but on the Web, best practice is explicit <code>https</code> (port 443) URLs to ensure following links stay secure.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6" role="doc-endnote"><p>Although it is possible with <code>0.DOIP/Op.Retrieve</code> to request only particular individual elements of an DO (e.g. one file), unlike HTTP’s <code>Range</code> request, it is not possible to select individual chunks of an element’s bytestream.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7" role="doc-endnote"><p>FDOF* renamed to FDOR*. FDOF3/FDOF4 are swapped to FDOR4/FDOR3 in <em>WD-RequirementSpec-1.0-20220317</em>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <!-- default theme -->
