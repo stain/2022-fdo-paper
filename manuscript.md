@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-05-12'
+date-meta: '2022-05-13'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-05-12" />
-  <meta name="citation_publication_date" content="2022-05-12" />
+  <meta name="dc.date" content="2022-05-13" />
+  <meta name="citation_publication_date" content="2022-05-13" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/25b1e520c562148acaed550b7f671c9c227ab042/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/25b1e520c562148acaed550b7f671c9c227ab042/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/25b1e520c562148acaed550b7f671c9c227ab042/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/c136987d417b66bbec2211db26e6f8181aa0e5b7/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/c136987d417b66bbec2211db26e6f8181aa0e5b7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/c136987d417b66bbec2211db26e6f8181aa0e5b7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,10 +73,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/25b1e520c562148acaed550b7f671c9c227ab042/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/c136987d417b66bbec2211db26e6f8181aa0e5b7/))
 was automatically generated
-from [stain/2022-fdo-paper@25b1e52](https://github.com/stain/2022-fdo-paper/tree/25b1e520c562148acaed550b7f671c9c227ab042)
-on May 12, 2022.
+from [stain/2022-fdo-paper@c136987](https://github.com/stain/2022-fdo-paper/tree/c136987d417b66bbec2211db26e6f8181aa0e5b7)
+on May 13, 2022.
 </em></small>
 
 ## Authors
@@ -157,7 +157,7 @@ Through W3C, the Semantic Web was realized with the Resource Description Framewo
 While triple-based knowledge representations were not new [doi:10.21954/ou.ro.0000f821], the main innovation of RDF was the use of global identifiers in the form of URIs[^4] as the primary identifier of the _subject_ (what the statement is about), _predicate_ (relation/attribute of the subject) and _object_ (what is pointed to). By using URIs not just for documents[^5], the Semantic Web builds a self-described system of types and properties, the meaning of a relation can be resolved by following its hyperlink to the definition within a _vocabulary_. 
 
 [^4]: URIs [doi:10.17487/RFC3986] are generalized forms of URLs that include locator-less identifiers 
-  such as ISBN book numbers (URNs). The distinction between locator-full and locator-less identifiers have weakened in recent years [@{http://info-uri.info/}], for instance DOI identifiers now are commonly expressed with the prefix `https://doi.org/` rather than as URNs with `info:doi:` given that the URL/URN gap has been bridged by HTTP resolvers and the use of Persistent Identifiers (PIDs) [@doi:10.1093/nar/gkr1097].
+  such as ISBN book numbers (URNs). The distinction between locator-full and locator-less identifiers have weakened in recent years [@{http://info-uri.info/}], for instance DOI identifiers now are commonly expressed with the prefix `https://doi.org/` rather than as URNs with `info:doi:` given that the URL/URN gap has been bridged by HTTP resolvers and the use of Persistent Identifiers (PIDs) [@doi:10.1093/nar/gkr1097]. RDF 1.1 formats use Unicode to support IRIs [doi:10.17487/RFC3987], which extends URIs to include international characters and domain names.
 
 [^5] URIs can also identify _non-information resources_ for any kind of physical object (e.g. people), such identifiers can resolve with `303 See Other` redirections to a corresponding _information resources_ [doi:10.22028/D291-25086].
 
@@ -180,20 +180,22 @@ The move towards _open science_ data sharing practices from the late 2000s encou
 Along with experiments on logic systems in the Semantic Web academia, an unfortunate side-effect appeared. RDF datasets would use URIs which no longer (or never) resolved to a Semantic Web representation of the described resources. Inconsistencies would emerge as the production of RDF largely focused on building graph representations of internal databases in order to use the Semantic Web tooling, rather than as a way to expose knowledge on the Web. Ironically, `http` based URLs then becomes location-less identifiers, mainly signifying a localized node within a graph, rather than a resolvable resource.
 -->
 
-With these trends, an emerging problem was that adapters of the Semantic Web primarily utillized it as a set of graph technologies, with little consideration to existing Web resources. This meant that links stayed mainly within a single information system. Another challenge facing potential adapters is the plethora of choices, not just to navigate, understand and select to reuse the many possible vocabularies and ontologies [doi:10.3233/SSW200033] <!--https://arxiv.org/abs/2011.12599 -->, but also technological choices on RDF serialization (at least [7 formats](https://www.w3.org/TR/rdf11-primer/#section-graph-syntax)), type system (RDFS [@{http://www.w3.org/TR/rdf-schema/}], OWL [@{http://www.w3.org/TR/owl2-overview/}], OBO [@doi:10.1186/2041-1480-2-S1-S3], SKOS [@{http://www.w3.org/TR/skos-primer}]), hash vs slash, HTTP status codes and PID redirection strategies [doi:10.22028/D291-25086].
+With these trends, an emerging problem was that adapters of the Semantic Web primarily utillized it as a set of graph technologies, with little consideration to existing Web resources. This meant that links stayed mainly within a single information system, with little URI reuse even with large term overlaps [doi:10.3233/SW-160238]. Just like _link rot_ affect regular Web pages and their citations from scholarly communication [@{10.1371/journal.pone.0115253}], for a majority of described RDF resources in the [Linked Open Data](https://lod-cloud.net/) (LOD) Cloud's gathering of more than thousand datasets, unfortunately they don't actually link to (still) downloadable (_dereferenceable_) Linked Data [doi:10.3233/SW-190380, handle:20.500.11811/7183].   Another challenge facing potential adapters is the plethora of choices, not just to navigate, understand and select to reuse the many possible vocabularies and ontologies [doi:10.3233/SSW200033] <!--https://arxiv.org/abs/2011.12599 -->, but also technological choices on RDF serialization (at least [7 formats](https://www.w3.org/TR/rdf11-primer/#section-graph-syntax)), type system (RDFS [@{http://www.w3.org/TR/rdf-schema/}], OWL [@{http://www.w3.org/TR/owl2-overview/}], OBO [@doi:10.1186/2041-1480-2-S1-S3], SKOS [@{http://www.w3.org/TR/skos-primer}]), hash vs slash, HTTP status codes and PID redirection strategies [doi:10.22028/D291-25086].
 
 
 ## Linked Data: Rebuilding the Web of Data
 
 The **Linked Data** concept [@doi:10.4018/jswis.2009081901] <!--preprint http://eprints.soton.ac.uk/id/eprint/271285 --> was kickstarted as a counter-reaction to this development of the Semantic Web, as a set of best practices [@{https://www.w3.org/DesignIssues/LinkedData.html}] to bring the Web aspect back into focus. Crucially to Linked Data is to _reuse existing URIs_ where they exist, rather than always make new identifiers. This means a loosening of the semantic restrictions previously applied, and an emphasis on building navigatable data resources, rather than elaborate graph representations.
 
-Vocabularies like [schema.org](https://schema.org/) evolved not long after, intended for lightweight semantic markup of existing Web pages, primarily to improve search engines' understanding of types and embedded data. In addition to several such embedded _microformats_ (Open Graph [@{https://ogp.me/}], RDFa [@{http://www.w3.org/TR/rdfa-primer/}], Microdata [@{https://html.spec.whatwg.org/multipage/microdata.html}]) we find JSON-LD [@{https://www.w3.org/TR/json-ld/}] as a Web-focused RDF serialization that aims for improved programmatic generation and consumption, including from Web applications. JSON-LD is at time of writing used by 42.6% of the top 10 million websites [@{https://w3techs.com/technologies/details/da-jsonld}] [^8].
+Vocabularies like [schema.org](https://schema.org/) evolved not long after, intended for lightweight semantic markup of existing Web pages, primarily to improve search engines' understanding of types and embedded data. In addition to several such embedded _microformats_ (Open Graph [@{https://ogp.me/}], RDFa [@{http://www.w3.org/TR/rdfa-primer/}], Microdata [@{https://html.spec.whatwg.org/multipage/microdata.html}]) we find JSON-LD [@{https://www.w3.org/TR/json-ld/}] as a Web-focused RDF serialization that aims for improved programmatic generation and consumption, including from Web applications. JSON-LD is as of 2022-05-13 used[^8] by 42.7% of the top 10 million websites [@{https://w3techs.com/technologies/details/da-jsonld}].
 
-[^8]: Presumably this large uptake of JSON-LD is mainly for the purpose of search engine optimization (SEO), with typically small amounts of metadata which may not constitute Linked Data as introduced above, however this nevertheless constitute machine-actionable structured data.
+[^8]: Presumably this large uptake of JSON-LD is mainly for the purpose of Search Engine Optimization (SEO), with typically small amounts of metadata which may not constitute Linked Data as introduced above, however this deployment nevertheless constitute machine-actionable structured data.
 
-Recently there has also been a renewed emphasis to improve the _Linked Data Developer Experience_ [@{https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/}], for instance RDF Shapes (expressed in SHACL [@{https://www.w3.org/TR/shacl/}] or ShEx [@{http://shex.io/shex-primer/}]) [doi:10.1007/978-3-030-21348-0_39] can be used to validate RDF Data [doi:https://doi.org/10.2200/S00786ED1V01Y201707WBE016] <!-- https://book.validatingrdf.com/ --> before consuming it programmatically or shaping it to other models. 
+Recently there has been a renewed emphasis to improve the _Developer Experience_ [@{https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/}] for consumption of Linked Data, for instance RDF Shapes (expressed in SHACL [@{https://www.w3.org/TR/shacl/}] or ShEx [@{http://shex.io/shex-primer/}]) [doi:10.1007/978-3-030-21348-0_39] can be used to validate RDF Data [doi:10.2200/S00786ED1V01Y201707WBE016] <!-- https://book.validatingrdf.com/ --> before consuming it programmatically, or reshaping data to fit other models. While a varied set of tools for Linked Data consumptions have been identified, most of them still require developers to gain significant knowledge of the underlying technologies, which hampers adaption by non-LD experts [doi:10.3233/SW-180316], <!--http://www.semantic-web-journal.net/system/files/swj1849.pdf --> which then tend to prefer non-semantic two-dimensional formats such as CSV files.  
 
-Still more work to be done in adapting the Web [doi:10.3233/SW-190372]
+A valid concern is that the Semantic Web research community has still not fully embraced the Web, and that the "final 20%" engineering effort is frequently overlooked in favour of chasing new trends such as Big Data and AI, rather than making powerful Linked Data technologies available to the wider groups of Web developers [doi:10.3233/SW-190372]. One bridging gap here by the Linked Data movement has been "linked data by stealth" approaches such as structured data entry spreadsheets powered by ontologies [@{doi:10.1093/bioinformatics/btr312}], the use of Linked Data as part of REST Web APIs [@10.1145/1967428.1967435] <!-- http://eprints.soton.ac.uk/id/eprint/272098 -->, and as shown by the big uptake by publishers to annotate the Web using schema.org [@doi:10.1109/MIC.2015.81], showing vocabulary use patterns documented by copy-pastable JSON-LD examples, rather than by formalized ontologies or developer requirements to understand the full Semantic Web stack.
+
+
 
 
 ## Interoperability Framework for Fast Data 
