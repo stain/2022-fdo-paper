@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/251f1b71ae59f1a8d555956f46a90bc9d167a252/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/251f1b71ae59f1a8d555956f46a90bc9d167a252/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/251f1b71ae59f1a8d555956f46a90bc9d167a252/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/ad545814e0619775205f89d21a9169452a41ec7a/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/ad545814e0619775205f89d21a9169452a41ec7a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/ad545814e0619775205f89d21a9169452a41ec7a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/251f1b71ae59f1a8d555956f46a90bc9d167a252/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/ad545814e0619775205f89d21a9169452a41ec7a/))
 was automatically generated
-from [stain/2022-fdo-paper@251f1b7](https://github.com/stain/2022-fdo-paper/tree/251f1b71ae59f1a8d555956f46a90bc9d167a252)
+from [stain/2022-fdo-paper@ad54581](https://github.com/stain/2022-fdo-paper/tree/ad545814e0619775205f89d21a9169452a41ec7a)
 on May 13, 2022.
 </em></small>
 
@@ -127,6 +127,9 @@ on May 13, 2022.
 
 ## Background
 
+
+
+
 ### FAIR Digital Object
 
 The concept of **FAIR Digital Object** [@doi:10.1007/978-3-030-23584-0_1] has been introduced as way to expose research data as active objects that conform to the FAIR principles [@doi:10.1038/sdata.2016.18]. This builds on the _Digital Object_ (DO) concept [@doi:10.1007/s00799-005-0128-x], first introduced in 1995 [@kahn_1995] as a system of _repositories_ containing _digital objects_ identified by _handles_ and described by _metadata_ which may have references to other handles. DO was the inspiration for the ITU X.1255 framework [@{https://www.itu.int/rec/T-REC-X.1255-201309-I}] which introduced an abstract _Digital Entity Interface Protocol_ for managing such objects programmatically, first realized by the Digital Object Interface Protocol (DOIP) v1 [@{https://www.dona.net/doipv1doc}].
@@ -134,6 +137,8 @@ The concept of **FAIR Digital Object** [@doi:10.1007/978-3-030-23584-0_1] has be
 In brief, the structure of a FAIR Digital Object (FDO) is to, given a _persistent identifier_ (PID) such as a DOI, resolve to a _PID Record_ that gives the object a _type_ along with a mechanism to retrieve its _bit sequences_, _metadata_ and references to further programmatic _operations_. The type of an FDO (itself an FDO) defines attributes to semantically describe and relate such FDOs to other concepts (typically other FDOs referenced by PIDs). The premise of systematically building an ecosystem of such digital objects is to give researchers a way to organize complex digital entities, associated with identifiers,  metadata, and supporting automated processing [@doi:10.23728/b2share.b605d85809ca45679b110719b6c6cb11].
 
 Recently, FDOs have been recognized by the European Open Science Cloud ([EOSC](https://eosc.eu/)) as a suggested part of its Interoperability Framework [@doi:10.2777/620649], in particular for deploying active and interoperable FAIR resources that are _machine actionable_. Sevelopment of the FDO concept continued within Research Data Alliance ([RDA](https://www.rd-alliance.org/)) groups and EOSC projects like [GO-FAIR](https://www.go-fair.org/), concluding with a set of guidelines for implementing FDO [@bonino_2019]. The [FAIR Digital Objects Forum](https://fairdo.org/) has since taken over the maturing of FDO through focused working groups which have currently drafted several more detailed specification documents (see section @sec:next-step-fdo). 
+
+
 
 #### FDO approaches
 
@@ -146,6 +151,8 @@ FDO is an evolving concept. A set of FDO Demonstrators [@doi:10.5281/zenodo.5872
 From this it becomes apparant that there is a potentially large overlap between the goals and approaches of FAIR Digital Objects and Linked Data, which we'll cover in the next section.
  
 [^3]: For a brief introduction to DOIP 2.0 [@handle:0.DOIP/DOIPV2.0], see $[{https://www.cordra.org/documentation/api/doip.html}].
+
+
 
 
 ### Linked Data
@@ -163,7 +170,7 @@ While triple-based knowledge representations were not new [doi:10.21954/ou.ro.00
 [^4]: URIs [doi:10.17487/RFC3986] are generalized forms of URLs that include locator-less identifiers 
   such as ISBN book numbers (URNs). The distinction between locator-full and locator-less identifiers have weakened in recent years [@{http://info-uri.info/}], for instance DOI identifiers now are commonly expressed with the prefix `https://doi.org/` rather than as URNs with `info:doi:` given that the URL/URN gap has been bridged by HTTP resolvers and the use of Persistent Identifiers (PIDs) [@doi:10.1093/nar/gkr1097]. RDF 1.1 formats use Unicode to support IRIs [doi:10.17487/RFC3987], which extends URIs to include international characters and domain names.
 
-[^5] URIs can also identify _non-information resources_ for any kind of physical object (e.g. people), such identifiers can resolve with `303 See Other` redirections to a corresponding _information resources_ [doi:10.22028/D291-25086].
+[^5]: URIs can also identify _non-information resources_ for any kind of physical object (e.g. people), such identifiers can resolve with `303 See Other` redirections to a corresponding _information resources_ [doi:10.22028/D291-25086].
 
 The early days of the Semantic Web saw fairly lightweight approaches with the establishment of vocabularies such as FOAF (to describe people and their affiliations) and Dublin Core (for bibliographic data). Vocabularies themselves were formalized using RDFS or simply as human-readable HTML web pages defining each term.  The main approach of this _Web of Data_ was that a URI identified a _resource_ (e.g. an author) had a HTML _representation_ for human readers, along with a RDF representation for machine-readable data of the same resource. By using _content negotiation_ in HTTP, the same identifier could be used in both views, avoiding `index.html` vs `index.rdf` exposure in the URLs. The concept of _namespaces_ gave a way to give a group of RDF resources with the same URI base from a Semantic Web-aware service a common _prefix_, avoiding repeated long URLs.
 
@@ -187,6 +194,8 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 With these trends, an emerging problem was that adapters of the Semantic Web primarily utillized it as a set of graph technologies, with little consideration to existing Web resources. This meant that links stayed mainly within a single information system, with little URI reuse even with large term overlaps [doi:10.3233/SW-160238]. Just like _link rot_ affect regular Web pages and their citations from scholarly communication [@{10.1371/journal.pone.0115253}], for a majority of described RDF resources in the [Linked Open Data](https://lod-cloud.net/) (LOD) Cloud's gathering of more than thousand datasets, unfortunately they don't actually link to (still) downloadable (_dereferenceable_) Linked Data [doi:10.3233/SW-190380, handle:20.500.11811/7183].   Another challenge facing potential adapters is the plethora of choices, not just to navigate, understand and select to reuse the many possible vocabularies and ontologies [doi:10.3233/SSW200033] <!--https://arxiv.org/abs/2011.12599 -->, but also technological choices on RDF serialization (at least [7 formats](https://www.w3.org/TR/rdf11-primer/#section-graph-syntax)), type system (RDFS [@{http://www.w3.org/TR/rdf-schema/}], OWL [@{http://www.w3.org/TR/owl2-overview/}], OBO [@doi:10.1186/2041-1480-2-S1-S3], SKOS [@{http://www.w3.org/TR/skos-primer}]), hash vs slash, HTTP status codes and PID redirection strategies [doi:10.22028/D291-25086].
 
 
+
+
 #### Linked Data: Rebuilding the Web of Data
 
 The **Linked Data** concept [@doi:10.4018/jswis.2009081901] <!--preprint http://eprints.soton.ac.uk/id/eprint/271285 --> was kickstarted as a counter-reaction to this development of the Semantic Web, as a set of best practices [@{https://www.w3.org/DesignIssues/LinkedData.html}] to bring the Web aspect back into focus. Crucially to Linked Data is to _reuse existing URIs_ where they exist, rather than always make new identifiers. This means a loosening of the semantic restrictions previously applied, and an emphasis on building navigatable data resources, rather than elaborate graph representations.
@@ -199,18 +208,23 @@ Recently there has been a renewed emphasis to improve the _Developer Experience_
 
 A valid concern is that the Semantic Web research community has still not fully embraced the Web, and that the "final 20%" engineering effort is frequently overlooked in favour of chasing new trends such as Big Data and AI, rather than making powerful Linked Data technologies available to the wider groups of Web developers [doi:10.3233/SW-190372]. One bridging gap here by the Linked Data movement has been "linked data by stealth" approaches such as structured data entry spreadsheets powered by ontologies [@{doi:10.1093/bioinformatics/btr312}], the use of Linked Data as part of REST Web APIs [@10.1145/1967428.1967435] <!-- http://eprints.soton.ac.uk/id/eprint/272098 -->, and as shown by the big uptake by publishers to annotate the Web using schema.org [@doi:10.1109/MIC.2015.81], showing vocabulary use patterns documented by copy-pastable JSON-LD examples, rather than by formalized ontologies or developer requirements to understand the full Semantic Web stack.
 
-## FAIR
+
+
+### FAIR
 
 
 
+## Comparing FDO and Web approaches
 
-## Interoperability Framework for Fast Data 
+In this section we facilitate a couple of existing frameworks for comparing the FDO and Web approach.
+
+
 
 
 
 ### Considering FDO/Web as interoperability framework for Fast Data
 
-| *Quality* |  FDO w/ DOIP               | Web w/ Linked Data          |
+| *Quality* |  FDO w/ DOIP               | Web w/ Linked Data         |
 |:----------|:--------------------------:|:--------------------------:|
 | **Symbiotic**: _to what extent multiple applications can agree to interact/align/collaborate/cooperate_      |  Purpose of FDO is to enable federated machine actionable digital objects for scholarly purposes, in practice this also requires agreement of or compatibility between FDO types. FDO encourages research communities to develop common type registries to be shared across instances. In current DOIP practice, each service have their own types, attributes and operations.  The wider symbiosis is consistent use of PIDs. |  Web is loosely coupled and encourages collaboration and linking by URL. In practice, REST APIs end up being mandated centrally by dominant (often commercial) providers, which clients are required to use as-is with special code per service. Use of Linked Data enables common tooling and semantic mapping across differences.  |
 | **Pragmatic**: _using interaction contracts so processes can be choreographed in workflows_      |  FDO types and operations enable detailed choreography (see CWFP). `0.TYPE/DOIPOperation` has lightweight definition of operation, `0.DOIP/Request` or `0.DOIP/Response` may give FDO Type or any other kind of "specifics" (incl. human readable docs). Semantics/purpose of operations not formalized (similar operations can be grouped with `0.DOIP/OperationReference`).   |  "Follow your nose" crawler navigation, which may lead to frequent dead ends. Operational composition, typically within a single API provider, documented by OpenAPI 3 [@{https://spec.openapis.org/oas/v3.1.0.html}], schema.org Actions [@{https://schema.org/docs/actions.html}), WSDL/SOAP [@{http://www.w3.org/TR/wsdl20-primer}], but frequently just as human-readable developer documentation/examples. |
@@ -243,7 +257,38 @@ Table: Mapping the Metamodel concepts from the Interoperability Framework for Fa
 {#tbl:metamodel-concepts}
 
 
-## A comparison framework for middleware infrastructures
+## Assessing DOIP against FDO 
+
+| **Guideline**                                    | DOIP 2.0            | FDO suggestions     | Linked Data Platform | LDP suggestion       |
+|:------------------------------------------------:|:-------------------:|:-------------------:|:--------------------:|:--------------------:|
+| G1: _invest for many decades_                    |
+| G2: _trustworthiness_                            |
+| G3: _FAIR principles_                            |
+| G4: _machine actionability_                      | 
+| G5: _abstraction principle_                      |
+| G6: _stable binding_                             |
+| G7: _encapsulation_                              |
+| G8: _technology independence_                    |
+| G9: _standard compliance_                        |
+| FDOF1: _PID as basis_                            |
+| FDOF2: _PID record w/ type_                      | 
+| FDOF3: _PID resolvable to bytestream & metadata_ |
+| FDOF4: _Additional attributes_                   | 
+| FDOF5: _Interface: operation by PID_             | 
+| FDOF6: _CRUD operations + extensions_            |
+| FDOF7: _FDOF Types related to operations_        |
+| FDOF8: _Metadata as FDO, semantic assertions_    | 
+| FDOF9: _Different metadata levels_               |
+| FDOF10: _Metadata schemas by community_          |
+| FDOF11: _FDO collections w/ semantic relations_  |
+| FDOF12: _Deleted FDO preserve PID w/ tombstone_  |
+Table: Checking FDO guidelines [@bonino_2019] against its current implementations as DOIP [@handle:0.DOIP/DOIPV2.0] and Linked Data Platform (LDP) [@{https://fairdigitalobjectframework.org/}], with suggestions for required additions.
+{#tbl:fdo-checks}
+
+Note that the draft update to FDO specification [@WD-RequirementSpec-1.0-20220317] (see section [sec:next-step-fdo]) clarifies these definitions with equivalent identifiers [^2] and relates them to further FDO requirements such as FDO Data Type Registries. 
+
+[^2]: FDOF* renamed to FDOR*. FDOF3/FDOF4 are swapped to FDOR4/FDOR3 in [@WD-RequirementSpec-1.0-20220317].
+
 
 
 
@@ -282,40 +327,6 @@ As for the aspect of _Performance_, it is interesting to note that while the fir
 
 
 [^4]: Although it is possible with `0.DOIP/Op.Retrieve` to request only particular individual elements of an DO (e.g. one file), unlike HTTP's `Range` request, it is not possible to select individual chunks of an element's bytestream.
-
-
-
-## Assessing DOIP against FDO 
-
-| **Guideline**                                    | DOIP 2.0            | FDO suggestions     | Linked Data Platform | LDP suggestion       |
-|:------------------------------------------------:|:-------------------:|:-------------------:|:--------------------:|:--------------------:|
-| G1: _invest for many decades_                    |
-| G2: _trustworthiness_                            |
-| G3: _FAIR principles_                            |
-| G4: _machine actionability_                      | 
-| G5: _abstraction principle_                      |
-| G6: _stable binding_                             |
-| G7: _encapsulation_                              |
-| G8: _technology independence_                    |
-| G9: _standard compliance_                        |
-| FDOF1: _PID as basis_                            |
-| FDOF2: _PID record w/ type_                      | 
-| FDOF3: _PID resolvable to bytestream & metadata_ |
-| FDOF4: _Additional attributes_                   | 
-| FDOF5: _Interface: operation by PID_             | 
-| FDOF6: _CRUD operations + extensions_            |
-| FDOF7: _FDOF Types related to operations_        |
-| FDOF8: _Metadata as FDO, semantic assertions_    | 
-| FDOF9: _Different metadata levels_               |
-| FDOF10: _Metadata schemas by community_          |
-| FDOF11: _FDO collections w/ semantic relations_  |
-| FDOF12: _Deleted FDO preserve PID w/ tombstone_  |
-Table: Checking FDO guidelines [@bonino_2019] against its current implementations as DOIP [@handle:0.DOIP/DOIPV2.0] and Linked Data Platform (LDP) [@{https://fairdigitalobjectframework.org/}], with suggestions for required additions.
-{#tbl:fdo-checks}
-
-The draft update specification [@WD-RequirementSpec-1.0-20220317] (see section [sec:next-step-fdo]) clarifies these definitions with equivalent identifiers [^2] and relates them to further FDO requirements such as FDO Data Type Registries. 
-
-[^2]: FDOF* renamed to FDOR*. FDOF3/FDOF4 are swapped to FDOR4/FDOR3 in _WD-RequirementSpec-1.0-20220317_.
 
 
 
@@ -367,6 +378,10 @@ The **Machine actionability** [@WD-MachineActionDef-1.1-20220301] sets out to de
 **Typing FAIR Digital Objects** [@WD-TypingFDOs-1.0-20220310] defines what _type_ means for FDOs, primarily to enable machine actionability and to define an FDO's purpose. This document lays out requirements for how _FDO Types_ should themselves be specified as FDOs, and how an _FDO Type Framework_ allows organizing and locating types. Operations applicable to an FDO is not predefined for a type, however operations naturally will require certain FDO types to work. How to define such FDO operations is not specified.
 
 It is worth pointing out at that, except for the DOIP endorsement, all of these documents are abstract, in the sense that they permit any technical implementation of FDO, if used according to the recommendations.
+
+
+## Discussion
+
 
 
 ## References {.page_break_before}
