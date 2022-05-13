@@ -71,12 +71,12 @@ LD
 LDP
 LOD
 maintaned
-metamodel
+Metamodel
 Microdata
 microformats
 Micropub
 middleware
-modularity
+Modularity
 namespaces
 navigatable
 NIST

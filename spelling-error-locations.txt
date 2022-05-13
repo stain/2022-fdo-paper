@@ -49,6 +49,7 @@ content/11.fdo.md:21:cordra
 content/11.fdo.md:21:doip
 content/11.fdo.md:21:DOIP
 content/11.fdo.md:21:DOIP
+content/12.semweb.md:3:ld
 content/12.semweb.md:9:Berners
 content/12.semweb.md:9:eare
 content/12.semweb.md:9:ecma
@@ -128,6 +129,7 @@ content/12.semweb.md:39:skos
 content/12.semweb.md:39:SKOS
 content/12.semweb.md:39:URI
 content/12.semweb.md:39:utillized
+content/13.ld.md:3:ld
 content/13.ld.md:5:kickstarted
 content/13.ld.md:5:navigatable
 content/13.ld.md:7:json
@@ -257,7 +259,9 @@ content/21.interoperability-framework.md:31:PID
 content/21.interoperability-framework.md:33:FDO
 content/21.interoperability-framework.md:33:Metamodel
 content/21.interoperability-framework.md:34:metamodel
+content/22.fdo-compare.md:1:doip
 content/22.fdo-compare.md:1:DOIP
+content/22.fdo-compare.md:1:fdo
 content/22.fdo-compare.md:1:FDO
 content/22.fdo-compare.md:3:DOIP
 content/22.fdo-compare.md:3:FDO
@@ -277,10 +281,9 @@ content/22.fdo-compare.md:29:FDO
 content/22.fdo-compare.md:29:FDO
 content/22.fdo-compare.md:29:FDO
 content/22.fdo-compare.md:29:WD
-content/22.fdo-compare.md:31:FDOF
-content/22.fdo-compare.md:31:FDOR
 content/22.fdo-compare.md:31:WD
 content/23.middleware.md:2:FDO
+content/23.middleware.md:2:middleware
 content/23.middleware.md:2:middleware
 content/23.middleware.md:5:DOIP
 content/23.middleware.md:5:FDO

@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/9cd2ef8e32fc2a286e1e53fe46569abf8247932d/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/9cd2ef8e32fc2a286e1e53fe46569abf8247932d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/9cd2ef8e32fc2a286e1e53fe46569abf8247932d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/4c357b0143ba0111682cff9afbeffb92dc302d15/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/4c357b0143ba0111682cff9afbeffb92dc302d15/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/4c357b0143ba0111682cff9afbeffb92dc302d15/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/9cd2ef8e32fc2a286e1e53fe46569abf8247932d/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/4c357b0143ba0111682cff9afbeffb92dc302d15/))
 was automatically generated
-from [stain/2022-fdo-paper@9cd2ef8](https://github.com/stain/2022-fdo-paper/tree/9cd2ef8e32fc2a286e1e53fe46569abf8247932d)
+from [stain/2022-fdo-paper@4c357b0](https://github.com/stain/2022-fdo-paper/tree/4c357b0143ba0111682cff9afbeffb92dc302d15)
 on May 13, 2022.
 </em></small>
 
@@ -125,7 +125,7 @@ on May 13, 2022.
 
 
 
-## Background
+## Background {#sec:background}
 
 
 
@@ -148,18 +148,18 @@ FDO is an evolving concept. A set of FDO Demonstrators [@doi:10.5281/zenodo.5872
  * Following the traditional Linked Data approach, but using the DOIP protocol, e.g. using JSON-LD and schema.org within DOIP (NIST for material science).
  * Approaching the FDO principles from existing Linked Data practices on the Web (e.g. WorkflowHub use of RO-Crate and schema.org).
 
-From this it becomes apparant that there is a potentially large overlap between the goals and approaches of FAIR Digital Objects and Linked Data, which we'll cover in the next section.
+From this it becomes apparant that there is a potentially large overlap between the goals and approaches of FAIR Digital Objects and Linked Data, which we'll cover in the following section @.
  
-[^3]: For a brief introduction to DOIP 2.0 [@handle:0.DOIP/DOIPV2.0], see $[{https://www.cordra.org/documentation/api/doip.html}].
+[^3]: For a brief introduction to DOIP 2.0 [@handle:0.DOIP/DOIPV2.0], see [@{https://www.cordra.org/documentation/api/doip.html}].
 
 
 
 
-### Linked Data
+### Linked Data {#sec:ld}
 
 In order to describe _Linked Data_ as it is used today, we'll start with an (opinionated) briefing of the evolution of its foundation, the _Semantic Web_.
 
-#### A brief history of the Semantic Web
+#### A brief history of the Semantic Web {#sec:semweb}
 
 The **Semantic Web** was developed as a vision by Tim Berners-Lee [@isbn:978-0-06-251587-2], at a time the Web had been widely established for information exchange, as a global set of hypermedia documents that eare cross-related using universal links in the form of URLs. The foundations of the Web (e.g. URLs, HTTP, SSL/TLS, HTML, CSS, ECMAScript/JavaScript, media types) were standardized by [W3C](https://www.w3.org/standards/), [Ecma](https://www.ecma-international.org/), [IETF](https://www.ietf.org/standards/) and later [WHATWG](https://whatwg.org/). The goal of Semantic Web was to further develop the machine-readable aspects of the Web, in particular adding _meaning_ (or semantics) to not just the link relations, but also to the _resources_ that the URLs identified, and for machines thus being able to meaningfully navigate across such resources, e.g. to answer a particular query.
 
@@ -196,7 +196,7 @@ With these trends, an emerging problem was that adapters of the Semantic Web pri
 
 
 
-#### Linked Data: Rebuilding the Web of Data
+#### Linked Data: Rebuilding the Web of Data {#sec:ld-web}
 
 The **Linked Data** concept [@doi:10.4018/jswis.2009081901] <!--preprint http://eprints.soton.ac.uk/id/eprint/271285 --> was kickstarted as a counter-reaction to this development of the Semantic Web, as a set of best practices [@{https://www.w3.org/DesignIssues/LinkedData.html}] to bring the Web aspect back into focus. Crucially to Linked Data is to _reuse existing URIs_ where they exist, rather than always make new identifiers. This means a loosening of the semantic restrictions previously applied, and an emphasis on building navigatable data resources, rather than elaborate graph representations.
 
@@ -210,11 +210,11 @@ A valid concern is that the Semantic Web research community has still not fully 
 
 
 
-### FAIR
+### FAIR {#sec:fair}
 
 
 
-## Comparing FDO and Web approaches
+## Comparing FDO and Web approaches {#sec:comparing}
 
 In this section we facilitate a couple of existing frameworks for comparing the FDO and Web approach.
 
@@ -222,7 +222,7 @@ In this section we facilitate a couple of existing frameworks for comparing the 
 
 
 
-### Considering FDO/Web as interoperability framework for Fast Data
+### Considering FDO/Web as interoperability framework for Fast Data {#sec:interoperability-compare}
 
 | *Quality* |  FDO w/ DOIP               | Web w/ Linked Data         |
 |:----------|:--------------------------:|:--------------------------:|
@@ -257,7 +257,7 @@ Table: Mapping the Metamodel concepts from the Interoperability Framework for Fa
 {#tbl:metamodel-concepts}
 
 
-## Assessing DOIP against FDO 
+## Assessing DOIP against FDO {sec:doip-fdo-compare}
 
 | **Guideline**                                    | DOIP 2.0            | FDO suggestions     | Linked Data Platform | LDP suggestion       |
 |:------------------------------------------------:|:-------------------:|:-------------------:|:--------------------:|:--------------------:|
@@ -285,14 +285,14 @@ Table: Mapping the Metamodel concepts from the Interoperability Framework for Fa
 Table: Checking FDO guidelines [@bonino_2019] against its current implementations as DOIP [@handle:0.DOIP/DOIPV2.0] and Linked Data Platform (LDP) [@{https://fairdigitalobjectframework.org/}], with suggestions for required additions.
 {#tbl:fdo-checks}
 
-Note that the draft update to FDO specification [@WD-RequirementSpec-1.0-20220317] (see section [sec:next-step-fdo]) clarifies these definitions with equivalent identifiers [^2] and relates them to further FDO requirements such as FDO Data Type Registries. 
+Note that the draft update to FDO specification [@WD-RequirementSpec-1.0-20220317] (see section @sec:next-step-fdo) clarifies these definitions with equivalent identifiers [^2] and relates them to further FDO requirements such as FDO Data Type Registries. 
 
-[^2]: FDOF* renamed to FDOR*. FDOF3/FDOF4 are swapped to FDOR4/FDOR3 in [@WD-RequirementSpec-1.0-20220317].
-
-
+[^2]: [@WD-RequirementSpec-1.0-20220317] renames _FDOF*_ to _FDOR*_, FDOF3/FDOF4 are swapped to FDOR4/FDOR3.
 
 
-### Comparing FDO and Web as middleware infrastructures 
+
+
+### Comparing FDO and Web as middleware infrastructures {#sec:middleware}
 
 
 | *Quality* |  FDO w/ DOIP               | Web w/ Linked Data          |
@@ -330,7 +330,7 @@ As for the aspect of _Performance_, it is interesting to note that while the fir
 
 
 
-## Assessing FDO against FAIR
+## Assessing FDO against FAIR {#sec:fair-compare}
 
 | Principle | FDO/DOIP | FDO/LDP | Linked Data examples |
 |:---------:|:--------:|:-------:|:--------------------:|
@@ -382,7 +382,7 @@ The **Machine actionability** [@WD-MachineActionDef-1.1-20220301] sets out to de
 It is worth pointing out at that, except for the DOIP endorsement, all of these documents are abstract, in the sense that they permit any technical implementation of FDO, if used according to the recommendations.
 
 
-## Discussion
+## Discussion {#sec@discussion}
 
 
 
