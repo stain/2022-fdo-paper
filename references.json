@@ -1,5 +1,474 @@
 [
   {
+    "abstract": "The DOIP Version 2.0 as released by the DONA Foundation is endorsed as an important contribution to the FDO Forum specification stack. The DOIP interfacing protocol specifies how clients can interact with DOs independent of the technology used by a DOIP server and independent of the data organization chosen. Since FD0s are a subset of DOs, restricted by the requirement to be FAIR compliant and thus machine actionable, DOIP will also work for FDOs as specified by the FDO Forum. DOIP is an important component for implementation of FDOs using the DO approach. It has been tested by several institutions, as the Demonstrator paper from the eING WG has shown, there is a tested Software Development Kit, and there is an open-source reference implementation.",
+    "author": [
+      {
+        "dropping-particle": "FDO-TSIG",
+        "family": "Working Group"
+      }
+    ],
+    "collection-title": "FDO forum",
+    "edition": "0.1",
+    "editor": [
+      {
+        "family": "Schwardmann",
+        "given": "U."
+      },
+      {
+        "family": "Strawn",
+        "given": "G."
+      },
+      {
+        "family": "Quick",
+        "given": "R."
+      },
+      {
+        "family": "Wittenburg",
+        "given": "P."
+      }
+    ],
+    "genre": "Enforsement Request",
+    "id": "TIKhgTv2",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          26
+        ]
+      ]
+    },
+    "publisher": "FDO Forum",
+    "publisher-place": "(internal draft)",
+    "title": "DOIP endorsement request",
+    "type": "report",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: PED-DOIPEndorsement-0.1-20220326"
+  },
+  {
+    "abstract": "Intensive discussions within the FDO Forum revealed that there are many different ways to organize FAIR Digital Objects and many of them listed in this document are being used in daily practice. Investigating these different organizations and checking the compliance with the FDO Requirement Specifications and the FAIR Principles are essential. For illustration purposes this document includes simple diagrams and verbose descriptions of the different configurations which are also called ”. The major conclusions from this analysis need to be integrated into the full FDO Specifications.",
+    "author": [
+      {
+        "family": "Lannom",
+        "given": "Larry"
+      },
+      {
+        "family": "Peters-von Gehlen",
+        "given": "Karsten"
+      },
+      {
+        "family": "Anders",
+        "given": "Ivonne"
+      },
+      {
+        "family": "Pfeil",
+        "given": "Andreas"
+      },
+      {
+        "family": "Schlemmer",
+        "given": "Alexander"
+      },
+      {
+        "family": "Trautt",
+        "given": "Zach"
+      },
+      {
+        "family": "Wittenburg",
+        "given": "Peter"
+      }
+    ],
+    "collection-title": "FDO forum",
+    "edition": "1.0",
+    "editor": [
+      {
+        "family": "Anders",
+        "given": "Ivonne"
+      },
+      {
+        "family": "Pfeil",
+        "given": "Andreas"
+      },
+      {
+        "family": "Wittenburg",
+        "given": "Peter"
+      }
+    ],
+    "genre": "Working Draft",
+    "id": "1FnJihgWr",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          17
+        ]
+      ]
+    },
+    "publisher": "FDO Forum",
+    "publisher-place": "(internal draft)",
+    "title": "FDO Configuration Types",
+    "type": "report",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-ConfigurationTypes-1.0-20220317"
+  },
+  {
+    "abstract": "The FDO Forum differentiates between different types of documents such as: 1. Documents that will include specifications for FDOs which are of relevance for all persons engaged in FDO usage and which therefore will have binding functions. These documents which we call  Recommendations”will need to undergo a phased process of review and endorsement. 2. Documents from external bodies which will play an important role in specifying and using FDOs. These need to be compliant with the FDO Recommendations and thus need to be endorsed by the FDO Forum. Obviously, a shorter process will be required. 3. Documents that will have a role in defining FDO Forum activities, but will not influence the FDO specifications directly (scoping documents, event announcements, liaison documents, etc.). In this paper we will primarily describe the process for FDO Recommendations of type 1 and the special process for documents from external bodies.",
+    "author": [
+      {
+        "family": "Weiland",
+        "given": "C."
+      },
+      {
+        "family": "Schwardmann",
+        "given": "U."
+      },
+      {
+        "family": "Wittenburg",
+        "given": "P."
+      },
+      {
+        "family": "Kirkpatrick",
+        "given": "C."
+      },
+      {
+        "family": "Hanisch",
+        "given": "R."
+      },
+      {
+        "family": "Trautt",
+        "given": "Z."
+      }
+    ],
+    "collection-title": "FDO forum",
+    "edition": "1.0",
+    "editor": [
+      {
+        "family": "Weiland",
+        "given": "C."
+      },
+      {
+        "family": "Schwardmann",
+        "given": "U."
+      },
+      {
+        "family": "Wittenburg",
+        "given": "P."
+      }
+    ],
+    "genre": "Working Draft",
+    "id": "TQdku4YF",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          29
+        ]
+      ]
+    },
+    "publisher": "FDO Forum",
+    "publisher-place": "(internal draft)",
+    "title": "FDO Forum Document Standards",
+    "type": "report",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-DocProcessStd-1.1-20220129"
+  },
+  {
+    "abstract": "This document illustrates the type of operations and checks that need to be done when an FDO or a set of FDOs of two specific FDO configuration types are being uploaded to the domain of FDOs. It also indicates the type of services that can be thought of at different FDO levels (PID, PID record information, metadata and content based). Finally, it describes the scope of checks that can be carried out at different levels (PID, metadata, bit-sequence). A special problem is indicated that is related to the fact that the community-based metadata can include references that are relevant for FDO level checks. A suggestion is made how to bridge between semantic spaces.",
+    "author": [
+      {
+        "family": "Blanchi",
+        "given": "Christophe"
+      },
+      {
+        "family": "Broeder",
+        "given": "Daan"
+      },
+      {
+        "family": "Jejkal",
+        "given": "Thomas"
+      },
+      {
+        "family": "Sharif",
+        "given": "Islam"
+      },
+      {
+        "family": "Schlemmer",
+        "given": "Alexander"
+      },
+      {
+        "dropping-particle": "van",
+        "family": "Uytvanck",
+        "given": "Dieter"
+      },
+      {
+        "family": "Wittenburg",
+        "given": "Peter"
+      }
+    ],
+    "collection-title": "FDO forum",
+    "edition": "0.1",
+    "editor": [
+      {
+        "family": "Broeder",
+        "given": "Daan"
+      },
+      {
+        "family": "Sharif",
+        "given": "Islam"
+      },
+      {
+        "family": "Wittenburg",
+        "given": "Peter"
+      }
+    ],
+    "genre": "Working Draft",
+    "id": "zl4AS4Sw",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          20
+        ]
+      ]
+    },
+    "publisher": "FDO Forum",
+    "publisher-place": "(internal draft)",
+    "title": "Upload of FDO",
+    "type": "report",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-FDO-Upload-0.1-20220320"
+  },
+  {
+    "abstract": "The FDO Forum needs a comprehensive definition of what a FAIR Digital Object (FDO) is and what it is not. This requires understanding the various aspects of FDOs, of which aspects of granularity and versioning are highly important. When several ESFRI communities discussed the use of PIDs, the issues of granularity, versioning and mutability were broadly discussed. The results can be transferred to FDOs due to the direct relationship between PIDs and FDO. This document presents aspects that have been mentioned. The main message is that granularity needs to be defined by the community of users.",
+    "author": [
+      {
+        "literal": "FDO-TSIG Working Group"
+      }
+    ],
+    "collection-title": "FDO forum",
+    "edition": "1.0",
+    "editor": [
+      {
+        "family": "Hellström",
+        "given": "Maggie"
+      },
+      {
+        "family": "Zwölf",
+        "given": "Carlo"
+      },
+      {
+        "family": "Wittenburg",
+        "given": "Peter"
+      }
+    ],
+    "genre": "Working Draft",
+    "id": "1GSyvgyTr",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          17
+        ]
+      ]
+    },
+    "publisher": "FDO Forum",
+    "publisher-place": "(internal draft)",
+    "title": "FDO – Granularity, Versioning, Mutability",
+    "type": "report",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-Granularity-1.0-20220317"
+  },
+  {
+    "abstract": "The FDO Forum will refer in many of its documents to the term actionability”which was coined in the foundational article and later exemplified by GO FAIR implementation networks in the realm of the FAIR principles. For the FDO work we need a clear definition of what is meant with the term actionability”. This document includes a verbose description of relevant terms and draws conclusions in the form of a definition for use in the FDO Forum. Machine actionability, in the context of FDO, represents the FDO Forum communityfocus on architecting the FDO to maximize dynamic data accessibility, parsability, interpretability, understandability, and synthesizability by machines while minimizing or eliminating the need for human oversight.",
+    "author": [
+      {
+        "family": "Weiland",
+        "given": "Claus"
+      },
+      {
+        "family": "Islam",
+        "given": "Sharif"
+      },
+      {
+        "family": "Broder",
+        "given": "Daan"
+      },
+      {
+        "family": "Anders",
+        "given": "Ivonne"
+      },
+      {
+        "family": "Wittenburg",
+        "given": "PEter"
+      }
+    ],
+    "collection-title": "FDO forum",
+    "edition": "1.1",
+    "editor": [
+      {
+        "family": "Weiland",
+        "given": "Claus"
+      },
+      {
+        "family": "Wittenburg",
+        "given": "Peter"
+      }
+    ],
+    "genre": "Working Draft",
+    "id": "UTzzPcce",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          2,
+          25
+        ]
+      ]
+    },
+    "publisher": "FDO Forum",
+    "publisher-place": "(internal draft)",
+    "title": "FDO Machine Actionability",
+    "type": "report",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-MachineActionDef-1.1-20220301"
+  },
+  {
+    "abstract": "The FDO Forum needs a comprehensive definition of what a FAIR Digital Object (FDO) is and what its relevant components are. The PID Profiles and the set of kernel attributes that can be used in PID Profiles are such key pillars. The purpose of this paper is to specify these two aspects in order to incorporate them in the comprehensive FDO specification paper to be written.",
+    "author": [
+      {
+        "family": "Anders",
+        "given": "Ivonne"
+      },
+      {
+        "family": "Hellström",
+        "given": "Maggie"
+      },
+      {
+        "family": "Islam",
+        "given": "Sharif"
+      },
+      {
+        "family": "Jejkal",
+        "given": "Thomas"
+      },
+      {
+        "family": "Lannom",
+        "given": "Larry"
+      },
+      {
+        "family": "Schwardmann",
+        "given": "Ulrich"
+      },
+      {
+        "family": "Wittenburg",
+        "given": "Peter"
+      }
+    ],
+    "collection-title": "FDO forum",
+    "edition": "1.0",
+    "editor": [
+      {
+        "family": "Hellström",
+        "given": "Maggie"
+      }
+    ],
+    "genre": "Working Draft",
+    "id": "1D3S8mpov",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          17
+        ]
+      ]
+    },
+    "publisher": "FDO Forum",
+    "publisher-place": "(internal draft)",
+    "title": "FDO PID Profiles & Attributes",
+    "type": "report",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-PIDProfileAttributes-1.0-20220317"
+  },
+  {
+    "abstract": "This FDO Requirement Specification document specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
+    "author": [
+      {
+        "dropping-particle": "FDO-TSIG working",
+        "family": "group"
+      }
+    ],
+    "collection-title": "FDO forum",
+    "edition": "1.0",
+    "editor": [
+      {
+        "family": "Strawn",
+        "given": "G."
+      },
+      {
+        "family": "Wittenburg",
+        "given": "P."
+      }
+    ],
+    "genre": "Working Draft",
+    "id": "STXtoppr",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          17
+        ]
+      ]
+    },
+    "publisher": "FDO Forum",
+    "publisher-place": "(internal draft)",
+    "title": "FDO Requirement Specifications",
+    "type": "report",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-RequirementSpec-1.0-20220317"
+  },
+  {
+    "abstract": "FAIR Digital Objects promote machine-actionability by requiring that each digital object be characterized using signals that will clearly hint at the potential processing steps any machine accessing it may perform. We call those signals types and the remainder of this document describes the need for types and the principles that the FDO community is following in the development of a framework for creating and applying those types.",
+    "author": [
+      {
+        "family": "Lannom",
+        "given": "Larry"
+      },
+      {
+        "family": "Schwardmann",
+        "given": "U."
+      },
+      {
+        "family": "Blanchi",
+        "given": "C."
+      },
+      {
+        "family": "Wittenburg",
+        "given": "P."
+      }
+    ],
+    "collection-title": "FDO forum",
+    "edition": "1.0",
+    "editor": [
+      {
+        "family": "Lannom",
+        "given": "Larry"
+      }
+    ],
+    "genre": "Enforsement Request",
+    "id": "11WHHh04H",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          10
+        ]
+      ]
+    },
+    "publisher": "FDO Forum",
+    "publisher-place": "(internal draft)",
+    "title": "Typing FAIR Digital Objects",
+    "type": "report",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-TypingFDOs-1.0-20220310"
+  },
+  {
     "id": "RwvirqWg",
     "type": "report",
     "author": [
@@ -683,6 +1152,64 @@
     "PMID": "25541969",
     "id": "AGHR9oyr",
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1371/journal.pone.0115253"
+  },
+  {
+    "type": "article-journal",
+    "id": "lCoshHXg",
+    "language": "en",
+    "author": [
+      {
+        "family": "Weigel",
+        "given": "Tobias"
+      },
+      {
+        "family": "Plale",
+        "given": "Beth"
+      },
+      {
+        "family": "Parsons",
+        "given": "Mark"
+      },
+      {
+        "family": "Zhou",
+        "given": "Gabriel"
+      },
+      {
+        "family": "Luo",
+        "given": "Yu"
+      },
+      {
+        "family": "Schwardmann",
+        "given": "Ulrich"
+      },
+      {
+        "family": "Quick",
+        "given": "Robert"
+      },
+      {
+        "family": "Hellström",
+        "given": "Margareta"
+      },
+      {
+        "family": "Kurakawa",
+        "given": "Kei"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "abstract": "Global middleware infrastructure is insufficient for robust data identification, discovery, and use. While infrastructure is emerging within sub- ecosystems such as the DOI ecosystem of services purposed for data and literature objects (i.e., DataCite, CHORUS, CrossRef), in general the layers of abstraction that have made the Internet so easy to build on, is lacking for data especially for computer (machine) automated services. The goal of the PID Kernel Information recommendation is to advance a small change to middleware infrastructure by injecting a tiny amount of carefully selected metadata into a Persistent ID (PID) record. This carefully chosen and placed information has the potential to stimulate development of an entire ecosystem of third party services that can process the billions of expected PIDs and do so with more information at hand about an object (no need for costly link following) than just a unique ID. The key challenge of the PID Kernel Information working group was to determine which from amongst thousands of relevant metadata elements are suitable to embed in the PID record. This recommendation lays out principles to guide in the identification of information suitable for inclusion in the PID record. The information contained in a PID record is represented by a PID Kernel Information profile which must be publicly and globally available. For PID Kernel Information to be effective in stimulating an ecosystem of data services, the number of different profiles of PID Kernel Information must be small and their content stable. The recommendation includes a draft profile with illustrating examples and cases for adoption in practice.",
+    "container-title": "Research Data Alliance",
+    "DOI": "10.15497/rda00031",
+    "publisher": "Research Data Alliance",
+    "title": "RDA Recommendation on PID Kernel Information",
+    "URL": "https://doi.org/gp5fpd",
+    "version": "1",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.15497/rda00031"
   },
   {
     "publisher": "RFC Editor",
@@ -1516,6 +2043,24 @@
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: kahn_1995"
   },
   {
+    "id": "wAbZpOsr",
+    "type": "webpage",
+    "abstract": "This document is an up-to-date specification of all metadata terms maintained by the Dublin Core Metadata Initiative, including properties, vocabulary encoding schemes, syntax encoding schemes, and classes.",
+    "language": "en",
+    "title": "DCMI Metadata Terms",
+    "URL": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+    "accessed": {
+      "date-parts": [
+        [
+          "2022",
+          5,
+          13
+        ]
+      ]
+    },
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: url:http://purl.org/dc/terms/"
+  },
+  {
     "id": "YUzogaV",
     "type": "webpage",
     "abstract": "Shape Expressions (ShEx) is a language for describing RDF graph structures.\n        A ShEx schema prescribes conditions that RDF data graphs must meet in order to be considered \"conformant\": which subjects, predicates, and objects may appear in a given graph, in what combinations and with what cardinalities and datatypes.  \n        In the ShEx model, an RDF graph is tested against a ShEx schema to yield a validation result that flags any parts of the data which do not conform.\n        ShEx schemas are intended for use in validating RDF data, communicating interface parameters and data structures, generating user interfaces, and transforming RDF graphs into other data formats and structures.  \n        This primer introduces ShEx by means of annotated examples.  \n        Readers should already be familiar with the basic concepts of RDF.\n        The primer is a companion to the full ShEx language specification [shex-semantics].",
@@ -1531,6 +2076,22 @@
       ]
     },
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: url:http://shex.io/shex-primer/"
+  },
+  {
+    "id": "eS5y9TRh",
+    "type": "webpage",
+    "title": "ResourceSync Framework Specification - Table of Contents",
+    "URL": "http://www.openarchives.org/rs/toc",
+    "accessed": {
+      "date-parts": [
+        [
+          "2022",
+          5,
+          13
+        ]
+      ]
+    },
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: url:http://www.openarchives.org/rs/toc"
   },
   {
     "id": "by6CfOmv",
@@ -1679,6 +2240,22 @@
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: url:http://www.w3.org/TR/xmlschema11-1/"
   },
   {
+    "id": "XmUY0cZB",
+    "type": "webpage",
+    "title": "FOAF Vocabulary Specification",
+    "URL": "http://xmlns.com/foaf/spec/",
+    "accessed": {
+      "date-parts": [
+        [
+          "2022",
+          5,
+          13
+        ]
+      ]
+    },
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: url:http://xmlns.com/foaf/spec/"
+  },
+  {
     "id": "1Gsq23e51",
     "type": "webpage",
     "title": "NCBO BioPortal",
@@ -1821,6 +2398,23 @@
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: url:https://fairdigitalobjectframework.org/"
   },
   {
+    "id": "DMEBhHID",
+    "type": "post-weblog",
+    "language": "en-US",
+    "title": "FAIR Digital Objects Forum |",
+    "URL": "https://fairdo.org/",
+    "accessed": {
+      "date-parts": [
+        [
+          "2022",
+          5,
+          13
+        ]
+      ]
+    },
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: url:https://fairdo.org/"
+  },
+  {
     "id": "14Utscfe4",
     "type": "webpage",
     "title": "HTML Standard",
@@ -1879,6 +2473,23 @@
       ]
     },
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: url:https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/"
+  },
+  {
+    "id": "10pzKCEUE",
+    "type": "webpage",
+    "abstract": "Schema.org is a set of extensible schemas that enables webmasters to embed\n    structured data on their web pages for use by search engines and other applications.",
+    "title": "Schema.org - Schema.org",
+    "URL": "https://schema.org/",
+    "accessed": {
+      "date-parts": [
+        [
+          "2022",
+          5,
+          13
+        ]
+      ]
+    },
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: url:https://schema.org/"
   },
   {
     "id": "dKAekUjL",

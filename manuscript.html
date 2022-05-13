@@ -73,9 +73,9 @@
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/c136987d417b66bbec2211db26e6f8181aa0e5b7/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/c136987d417b66bbec2211db26e6f8181aa0e5b7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/c136987d417b66bbec2211db26e6f8181aa0e5b7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/8e2cc24629750f6be2371d344b19b3d829068276/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/8e2cc24629750f6be2371d344b19b3d829068276/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/8e2cc24629750f6be2371d344b19b3d829068276/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,9 +92,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://stain.github.io/2022-fdo-paper/v/c136987d417b66bbec2211db26e6f8181aa0e5b7/">permalink</a>)
+(<a href="https://stain.github.io/2022-fdo-paper/v/8e2cc24629750f6be2371d344b19b3d829068276/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/stain/2022-fdo-paper/tree/c136987d417b66bbec2211db26e6f8181aa0e5b7">stain/2022-fdo-paper@c136987</a>
+from <a href="https://github.com/stain/2022-fdo-paper/tree/8e2cc24629750f6be2371d344b19b3d829068276">stain/2022-fdo-paper@8e2cc24</a>
 on May 13, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -133,10 +133,12 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 </small></p></li>
 </ul>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
-<h2 id="fair-digital-object">FAIR Digital Object</h2>
+<h2 id="background">Background</h2>
+<h3 id="fair-digital-object">FAIR Digital Object</h3>
 <p>The concept of <strong>FAIR Digital Object</strong> <span class="citation" data-cites="IHLT6hye">[<a href="#ref-IHLT6hye" role="doc-biblioref">1</a>]</span> has been introduced as way to expose research data as active objects that conform to the FAIR principles <span class="citation" data-cites="6DjakjNS">[<a href="#ref-6DjakjNS" role="doc-biblioref">2</a>]</span>. This builds on the <em>Digital Object</em> (DO) concept <span class="citation" data-cites="11MnuwJ4l">[<a href="#ref-11MnuwJ4l" role="doc-biblioref">3</a>]</span>, first introduced in 1995 <span class="citation" data-cites="3Uqe3fuK">[<a href="#ref-3Uqe3fuK" role="doc-biblioref">4</a>]</span> as a system of <em>repositories</em> containing <em>digital objects</em> identified by <em>handles</em> and described by <em>metadata</em> which may have references to other handles. DO was the inspiration for the ITU X.1255 framework <span class="citation" data-cites="103Hw8H43">[<a href="#ref-103Hw8H43" role="doc-biblioref">5</a>]</span> which introduced an abstract <em>Digital Entity Interface Protocol</em> for managing such objects programmatically, first realized by the Digital Object Interface Protocol (DOIP) v1 <span class="citation" data-cites="16uB3jxpa">[<a href="#ref-16uB3jxpa" role="doc-biblioref">6</a>]</span>.</p>
 <p>In brief, the structure of a FAIR Digital Object (FDO) is to, given a <em>persistent identifier</em> (PID) such as a DOI, resolve to a <em>PID Record</em> that gives the object a <em>type</em> along with a mechanism to retrieve its <em>bit sequences</em>, <em>metadata</em> and references to further programmatic <em>operations</em>. The type of an FDO (itself an FDO) defines attributes to semantically describe and relate such FDOs to other concepts (typically other FDOs referenced by PIDs). The premise of systematically building an ecosystem of such digital objects is to give researchers a way to organize complex digital entities, associated with identifiers, metadata, and supporting automated processing <span class="citation" data-cites="tz0P3DTC">[<a href="#ref-tz0P3DTC" role="doc-biblioref">7</a>]</span>.</p>
 <p>Recently, FDOs have been recognized by the European Open Science Cloud (<a href="https://eosc.eu/">EOSC</a>) as a suggested part of its Interoperability Framework <span class="citation" data-cites="aCye3KpE">[<a href="#ref-aCye3KpE" role="doc-biblioref">8</a>]</span>, in particular for deploying active and interoperable FAIR resources that are <em>machine actionable</em>. Sevelopment of the FDO concept continued within Research Data Alliance (<a href="https://www.rd-alliance.org/">RDA</a>) groups and EOSC projects like <a href="https://www.go-fair.org/">GO-FAIR</a>, concluding with a set of guidelines for implementing FDO <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">9</a>]</span>. The <a href="https://fairdo.org/">FAIR Digital Objects Forum</a> has since taken over the maturing of FDO through focused working groups which have currently drafted several more detailed specification documents (see section <span class="citation" data-cites="sec:next-step-fdo">[<a href="#ref-sec:next-step-fdo" role="doc-biblioref"><strong>sec:next-step-fdo?</strong></a>]</span>).</p>
+<h4 id="fdo-approaches">FDO approaches</h4>
 <p>FDO is an evolving concept. A set of FDO Demonstrators <span class="citation" data-cites="jRWurmQc">[<a href="#ref-jRWurmQc" role="doc-biblioref">10</a>]</span> highlight how current adapters are approaching implementations of FDO from different angles:</p>
 <ul>
 <li>Building on the Digital Object concept, using the simplified DOIP v2 specification <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">11</a>]</span>, which detail how to exchange JSON objects through a text-based protocol <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> (usually TCP/IP over TLS). The main DOIP operations are retrieving, creating and updating digital objects. These are mostly realized using the reference implementation <a href="https://cordra.org/">Cordra</a>. FDO types are registered in the local Cordra instance, where they are specified using JSON Schema <span class="citation" data-cites="15EZ2D0Rm">[<a href="#ref-15EZ2D0Rm" role="doc-biblioref">12</a>]</span>) and PIDs are assigned using the Handle system. Several type registries have been established.</li>
@@ -144,9 +146,9 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 <li>Approaching the FDO principles from existing Linked Data practices on the Web (e.g. WorkflowHub use of RO-Crate and schema.org).</li>
 </ul>
 <p>From this it becomes apparant that there is a potentially large overlap between the goals and approaches of FAIR Digital Objects and Linked Data, which we’ll cover in the next section.</p>
-<h2 id="linked-data">Linked Data</h2>
+<h3 id="linked-data">Linked Data</h3>
 <p>In order to describe <em>Linked Data</em> as it is used today, we’ll start with an (opinionated) briefing of the evolution of its foundation, the <em>Semantic Web</em>.</p>
-<h3 id="a-brief-history-of-the-semantic-web">A brief history of the Semantic Web</h3>
+<h4 id="a-brief-history-of-the-semantic-web">A brief history of the Semantic Web</h4>
 <p>The <strong>Semantic Web</strong> was developed as a vision by Tim Berners-Lee <span class="citation" data-cites="Guy7cjVY">[<a href="#ref-Guy7cjVY" role="doc-biblioref">13</a>]</span>, at a time the Web had been widely established for information exchange, as a global set of hypermedia documents that eare cross-related using universal links in the form of URLs. The foundations of the Web (e.g. URLs, HTTP, SSL/TLS, HTML, CSS, ECMAScript/JavaScript, media types) were standardized by <a href="https://www.w3.org/standards/">W3C</a>, <a href="https://www.ecma-international.org/">Ecma</a>, <a href="https://www.ietf.org/standards/">IETF</a> and later <a href="https://whatwg.org/">WHATWG</a>. The goal of Semantic Web was to further develop the machine-readable aspects of the Web, in particular adding <em>meaning</em> (or semantics) to not just the link relations, but also to the <em>resources</em> that the URLs identified, and for machines thus being able to meaningfully navigate across such resources, e.g. to answer a particular query.</p>
 <p>Through W3C, the Semantic Web was realized with the Resource Description Framework (RDF) <span class="citation" data-cites="16WGmCih8">[<a href="#ref-16WGmCih8" role="doc-biblioref">14</a>]</span> that used <em>triples</em> of subject-predicate-object statements, with its initial serialization format <span class="citation" data-cites="16wvFH4nh">[<a href="#ref-16wvFH4nh" role="doc-biblioref">15</a>]</span> being RDF/XML (XML was at the time seen as a natural data-focused evolution from the document-centric SGML and HTML).</p>
 <p>While triple-based knowledge representations were not new [doi:10.21954/ou.ro.0000f821], the main innovation of RDF was the use of global identifiers in the form of URIs<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> as the primary identifier of the <em>subject</em> (what the statement is about), <em>predicate</em> (relation/attribute of the subject) and <em>object</em> (what is pointed to). By using URIs not just for documents[^5], the Semantic Web builds a self-described system of types and properties, the meaning of a relation can be resolved by following its hyperlink to the definition within a <em>vocabulary</em>.</p>
@@ -162,11 +164,12 @@ Informatics Institute, Faculty of Science, University of Amsterdam, NL
 Along with experiments on logic systems in the Semantic Web academia, an unfortunate side-effect appeared. RDF datasets would use URIs which no longer (or never) resolved to a Semantic Web representation of the described resources. Inconsistencies would emerge as the production of RDF largely focused on building graph representations of internal databases in order to use the Semantic Web tooling, rather than as a way to expose knowledge on the Web. Ironically, `http` based URLs then becomes location-less identifiers, mainly signifying a localized node within a graph, rather than a resolvable resource.
 -->
 <p>With these trends, an emerging problem was that adapters of the Semantic Web primarily utillized it as a set of graph technologies, with little consideration to existing Web resources. This meant that links stayed mainly within a single information system, with little URI reuse even with large term overlaps [doi:10.3233/SW-160238]. Just like <em>link rot</em> affect regular Web pages and their citations from scholarly communication <span class="citation" data-cites="AGHR9oyr">[<a href="#ref-AGHR9oyr" role="doc-biblioref">19</a>]</span>, for a majority of described RDF resources in the <a href="https://lod-cloud.net/">Linked Open Data</a> (LOD) Cloud’s gathering of more than thousand datasets, unfortunately they don’t actually link to (still) downloadable (<em>dereferenceable</em>) Linked Data [doi:10.3233/SW-190380, handle:20.500.11811/7183]. Another challenge facing potential adapters is the plethora of choices, not just to navigate, understand and select to reuse the many possible vocabularies and ontologies [doi:10.3233/SSW200033] <!--https://arxiv.org/abs/2011.12599 -->, but also technological choices on RDF serialization (at least <a href="https://www.w3.org/TR/rdf11-primer/#section-graph-syntax">7 formats</a>), type system (RDFS <span class="citation" data-cites="ZwAcGQKY">[<a href="#ref-ZwAcGQKY" role="doc-biblioref">20</a>]</span>, OWL <span class="citation" data-cites="1p4IWJpI">[<a href="#ref-1p4IWJpI" role="doc-biblioref">21</a>]</span>, OBO <span class="citation" data-cites="1DalZuKct">[<a href="#ref-1DalZuKct" role="doc-biblioref">22</a>]</span>, SKOS <span class="citation" data-cites="15gQDya5B">[<a href="#ref-15gQDya5B" role="doc-biblioref">17</a>]</span>), hash vs slash, HTTP status codes and PID redirection strategies [doi:10.22028/D291-25086].</p>
-<h2 id="linked-data-rebuilding-the-web-of-data">Linked Data: Rebuilding the Web of Data</h2>
+<h4 id="linked-data-rebuilding-the-web-of-data">Linked Data: Rebuilding the Web of Data</h4>
 <p>The <strong>Linked Data</strong> concept <span class="citation" data-cites="19s3yyxDn">[<a href="#ref-19s3yyxDn" role="doc-biblioref">23</a>]</span> <!--preprint http://eprints.soton.ac.uk/id/eprint/271285 --> was kickstarted as a counter-reaction to this development of the Semantic Web, as a set of best practices <span class="citation" data-cites="OGXYtGZ8">[<a href="#ref-OGXYtGZ8" role="doc-biblioref">24</a>]</span> to bring the Web aspect back into focus. Crucially to Linked Data is to <em>reuse existing URIs</em> where they exist, rather than always make new identifiers. This means a loosening of the semantic restrictions previously applied, and an emphasis on building navigatable data resources, rather than elaborate graph representations.</p>
 <p>Vocabularies like <a href="https://schema.org/">schema.org</a> evolved not long after, intended for lightweight semantic markup of existing Web pages, primarily to improve search engines’ understanding of types and embedded data. In addition to several such embedded <em>microformats</em> (Open Graph <span class="citation" data-cites="oN9D5LkD">[<a href="#ref-oN9D5LkD" role="doc-biblioref">25</a>]</span>, RDFa <span class="citation" data-cites="FKIF6ApB">[<a href="#ref-FKIF6ApB" role="doc-biblioref">26</a>]</span>, Microdata <span class="citation" data-cites="14Utscfe4">[<a href="#ref-14Utscfe4" role="doc-biblioref">27</a>]</span>) we find JSON-LD <span class="citation" data-cites="X5SWPqSU">[<a href="#ref-X5SWPqSU" role="doc-biblioref">28</a>]</span> as a Web-focused RDF serialization that aims for improved programmatic generation and consumption, including from Web applications. JSON-LD is as of 2022-05-13 used<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> by 42.7% of the top 10 million websites <span class="citation" data-cites="j3SqQLBR">[<a href="#ref-j3SqQLBR" role="doc-biblioref">29</a>]</span>.</p>
 <p>Recently there has been a renewed emphasis to improve the <em>Developer Experience</em> <span class="citation" data-cites="BFMoe8FC">[<a href="#ref-BFMoe8FC" role="doc-biblioref">30</a>]</span> for consumption of Linked Data, for instance RDF Shapes (expressed in SHACL <span class="citation" data-cites="GDrm9dgX">[<a href="#ref-GDrm9dgX" role="doc-biblioref">31</a>]</span> or ShEx <span class="citation" data-cites="YUzogaV">[<a href="#ref-YUzogaV" role="doc-biblioref">32</a>]</span>) [doi:10.1007/978-3-030-21348-0_39] can be used to validate RDF Data [doi:10.2200/S00786ED1V01Y201707WBE016] <!-- https://book.validatingrdf.com/ --> before consuming it programmatically, or reshaping data to fit other models. While a varied set of tools for Linked Data consumptions have been identified, most of them still require developers to gain significant knowledge of the underlying technologies, which hampers adaption by non-LD experts [doi:10.3233/SW-180316], <!--http://www.semantic-web-journal.net/system/files/swj1849.pdf --> which then tend to prefer non-semantic two-dimensional formats such as CSV files.</p>
 <p>A valid concern is that the Semantic Web research community has still not fully embraced the Web, and that the “final 20%” engineering effort is frequently overlooked in favour of chasing new trends such as Big Data and AI, rather than making powerful Linked Data technologies available to the wider groups of Web developers [doi:10.3233/SW-190372]. One bridging gap here by the Linked Data movement has been “linked data by stealth” approaches such as structured data entry spreadsheets powered by ontologies <span class="citation" data-cites="MhsCt4P3">[<a href="#ref-MhsCt4P3" role="doc-biblioref">33</a>]</span>, the use of Linked Data as part of REST Web APIs <span class="citation" data-cites="eS6a6tlz">[<a href="#ref-eS6a6tlz" role="doc-biblioref">34</a>]</span> <!-- http://eprints.soton.ac.uk/id/eprint/272098 -->, and as shown by the big uptake by publishers to annotate the Web using schema.org <span class="citation" data-cites="tZOPTKnJ">[<a href="#ref-tZOPTKnJ" role="doc-biblioref">35</a>]</span>, showing vocabulary use patterns documented by copy-pastable JSON-LD examples, rather than by formalized ontologies or developer requirements to understand the full Semantic Web stack.</p>
+<h2 id="fair">FAIR</h2>
 <h2 id="interoperability-framework-for-fast-data">Interoperability Framework for Fast Data</h2>
 <h3 id="considering-fdoweb-as-interoperability-framework-for-fast-data">Considering FDO/Web as interoperability framework for Fast Data</h3>
 <div id="tbl:fdo-web-interoperability-framework" class="tablenos">
@@ -576,7 +579,7 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 </tbody>
 </table>
 </div>
-<p>The draft update specification <em>WD-RequirementSpec-1.0-20220317</em> (at time of writing in internal review by FAIR Digital Object Forum) clarifies these definitions with equivalent identifiers <a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> and relates them to further FDO requiremes such as FDO Data Type Registries.</p>
+<p>The draft update specification <span class="citation" data-cites="STXtoppr">[<a href="#ref-STXtoppr" role="doc-biblioref">72</a>]</span> (see section [sec:next-step-fdo]) clarifies these definitions with equivalent identifiers <a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> and relates them to further FDO requirements such as FDO Data Type Registries.</p>
 <h2 id="assessing-fdo-against-fair">Assessing FDO against FAIR</h2>
 <div id="tbl:fair-fdos" class="tablenos">
 <table id="tbl:fair-fdos">
@@ -618,18 +621,18 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <tr class="even">
 <td style="text-align: center;"><strong>F4</strong>: <em>searchable registration</em></td>
 <td style="text-align: center;">No, registries not required (except Data Type Registries). Handle registry only searchable by PID.</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">Not specified</td>
+<td style="text-align: center;">Not specified, several registries/catalogues for vocabularies/types (e.g. <span class="citation" data-cites="1Gsq23e51">[<a href="#ref-1Gsq23e51" role="doc-biblioref">73</a>]</span>). Indexing by search engines if exposing HTML w/schema.org.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><strong>A1</strong>: <em>retrieve by standard protocol</em></td>
 <td style="text-align: center;">Retrievable from PID (FDOF3). Informal DOIP standard maintaned by DONA Foundation</td>
-<td style="text-align: center;">Formal HTTP standards maintained by IETF</td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">HTTP standards maintained by IETF, FDO components resolved by informal proposals (custom vocabulary, extra HTTP methods) or HTTP content negotiation)</td>
+<td style="text-align: center;">Formal HTTP standards maintained by IETF, HTTP content negotiation, FAIR Signposting</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><strong>A1.1</strong>: <em>protocol open/free/universal</em></td>
-<td style="text-align: center;">Required by G1. Partially realized, although Handle system is open protocol <span class="citation" data-cites="I9Kx0Hjy">[<a href="#ref-I9Kx0Hjy" role="doc-biblioref">72</a>]</span> it was covered by software patent <a href="https://patents.google.com/patent/US6135646A/en">US6135646A</a> (<a href="https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461">expired</a> in 2013), and only implementation of <code>Handle.net</code> software currently only available by <a href="http://www.handle.net/HNRj/HNR-9-License.pdf">public license</a>] (not OSI Open Source). <a href="https://www.cordra.org/">CORDRA</a> free to use under BSD-like license, although not recognized by OSI as Open Source.</td>
+<td style="text-align: center;">Required by G1. Partially realized, although Handle system is open protocol <span class="citation" data-cites="I9Kx0Hjy">[<a href="#ref-I9Kx0Hjy" role="doc-biblioref">74</a>]</span> it was covered by software patent <a href="https://patents.google.com/patent/US6135646A/en">US6135646A</a> (<a href="https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461">expired</a> in 2013), and only implementation of <code>Handle.net</code> software currently only available by <a href="http://www.handle.net/HNRj/HNR-9-License.pdf">public license</a>] (not OSI Open Source). <a href="https://www.cordra.org/">CORDRA</a> free to use under BSD-like license, although not recognized by OSI as Open Source.</td>
 <td style="text-align: center;">DNS, HTTP, TLS, RDF standards are open, free and universal, multiple open source clients/servers exist.</td>
 <td style="text-align: center;"></td>
 </tr>
@@ -661,19 +664,19 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: center;"><strong>I3</strong>: <em>qualified references</em></td>
 <td style="text-align: center;">Implied by attributes to PIDs of other FDO</td>
 <td style="text-align: center;">Unspecified</td>
-<td style="text-align: center;">By definition (Linked Data is relating to pre-existing URIs <span class="citation" data-cites="o4h92LpS">[<a href="#ref-o4h92LpS" role="doc-biblioref">73</a>]</span>). Link relations</td>
+<td style="text-align: center;">By definition (Linked Data is relating to pre-existing URIs <span class="citation" data-cites="o4h92LpS">[<a href="#ref-o4h92LpS" role="doc-biblioref">75</a>]</span>). Link relations</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><strong>R1</strong>: <em>relevant attributes</em></td>
-<td style="text-align: center;">Required (FDOF4)</td>
+<td style="text-align: center;">Required (FDOF4). Kernel metadata attributes desired, not yet decided.</td>
 <td style="text-align: center;">Unspecified. Multiple metadata records can allow multiple semantic profiles.</td>
-<td style="text-align: center;">Usually, however a plethora</td>
+<td style="text-align: center;">Large number of general and domain-specific vocabularies can make it hard to find relevant attributes. Rough consensus on kernel metadata: schema.org <span class="citation" data-cites="10pzKCEUE">[<a href="#ref-10pzKCEUE" role="doc-biblioref">76</a>]</span>, Dublin Core Terms <span class="citation" data-cites="wAbZpOsr">[<a href="#ref-wAbZpOsr" role="doc-biblioref">77</a>]</span>, DCAT <span class="citation" data-cites="lnH0hEuh">[<a href="#ref-lnH0hEuh" role="doc-biblioref">78</a>]</span>, FOAF <span class="citation" data-cites="XmUY0cZB">[<a href="#ref-XmUY0cZB" role="doc-biblioref">79</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><strong>R1.1</strong>: <em>clear data license</em></td>
 <td style="text-align: center;">Unspecified (but will be in PID Kernal metadata?)</td>
 <td style="text-align: center;">Unspecified</td>
-<td style="text-align: center;">Dublin Core Terms <code>dct:license</code> frequently recommended, but not required, e.g. <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license">by DCAT 2</a> <span class="citation" data-cites="lnH0hEuh">[<a href="#ref-lnH0hEuh" role="doc-biblioref">74</a>]</span></td>
+<td style="text-align: center;">Dublin Core Terms <code>dct:license</code> frequently recommended, but not required, e.g. <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license">by DCAT 2</a> <span class="citation" data-cites="lnH0hEuh">[<a href="#ref-lnH0hEuh" role="doc-biblioref">78</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><strong>R1.2</strong>: <em>detailed provenance</em></td>
@@ -685,27 +688,23 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: center;"><strong>R1.3</strong>: <em>follows community standards</em></td>
 <td style="text-align: center;">Recommended (FDOF4, FDOF10)</td>
 <td style="text-align: center;">Unspecified</td>
-<td style="text-align: center;">Common practice, specially in bioinformatics, e.g. BioSchemas <span class="citation" data-cites="1F8S9FeHf">[<a href="#ref-1F8S9FeHf" role="doc-biblioref">75</a>]</span>, BioPortal <span class="citation" data-cites="1Gsq23e51">[<a href="#ref-1Gsq23e51" role="doc-biblioref">76</a>]</span></td>
+<td style="text-align: center;">Common practice, specially in bioinformatics, e.g. BioSchemas <span class="citation" data-cites="1F8S9FeHf">[<a href="#ref-1F8S9FeHf" role="doc-biblioref">80</a>]</span>, BioPortal <span class="citation" data-cites="1Gsq23e51">[<a href="#ref-1Gsq23e51" role="doc-biblioref">73</a>]</span></td>
 </tr>
 </tbody>
 </table>
 </div>
 <h2 id="sec:next-step-fdo">Next steps for FDO</h2>
-<p>Documents currently undergoing internal review:</p>
-<p>WD-DocProcessStd-1.1-20220129
-WD-MachineActionDef-1.1-20220301
-WD-RequirementSpec-1.0-20220317
-WD-ConfigurationTypes-1.0-20220317
-WD-Granularity-1.0-20220317
-WD-PIDProfileAttributes-1.0-20220317
-WD-FDO-Upload-0.1-20220320
-PED-DOIPEndorsement-0.1-20220326
-WD-TypingFDOs-1.0-20220310</p>
-<p>FDO Requirement Specifications 1.1
-FDO Machine Actionability 1.1
-FDO Configuration Types 1.0
-FDO0 PID Profiles and Attributes 1.0
-FDO FDO Granularity 1.0</p>
+<p>The FAIR Digital Object Forum <span class="citation" data-cites="DMEBhHID">[<a href="#ref-DMEBhHID" role="doc-biblioref">81</a>]</span> working groups are preparing more detailed requirement documentations setting out the path for realizing FDOs, named <em>FDO Recommendations</em>. At time of writing, these documents are in draft stage, undergoing internal review, but the FDO Forum is formalizing the process for developing and publishing these recommendations. As these documents lay out the future directions for FAIR Digital Objects, below follows a brief summary of the current drafts with consideration to this article’s focus.</p>
+<p>The <strong>FDO Forum Document Standards</strong> <span class="citation" data-cites="TQdku4YF">[<a href="#ref-TQdku4YF" role="doc-biblioref">82</a>]</span> documents the recommendation process within the forum, starting at <em>Working Draft</em> (WD) status within the working group and later within the forum, then <em>Proposed Recommendation</em> (PR) published for public review, and <em>FDO Forum Recommendation</em> (REC) published following revisions after public review. In addition, the forum may choose to <em>endorse</em> existing third-party notes and specifications.</p>
+<p>The <strong>FDO Requirement Specifications</strong> <span class="citation" data-cites="STXtoppr">[<a href="#ref-STXtoppr" role="doc-biblioref">72</a>]</span> is an update of <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">9</a>]</span> to lay out the criteria for classifying an digital entity as a FAIR Digital Object, allowing for multiple implementations. The requirements shown in table [tbl:fdo-checks] are largely equivalent, but clarified with references to other FDO documents.</p>
+<p>The <strong>Machine actionability</strong> <span class="citation" data-cites="UTzzPcce">[<a href="#ref-UTzzPcce" role="doc-biblioref">83</a>]</span> sets out to define what is meant by <em>machine actionability</em> for FDOs. <em>Machine readable</em> is defined as elements of bit-sequences defined by structural specification, <em>machine interpretable</em> elements that can be identified and related with semantic artifacts, while <em>machine actionable</em> are elements with a type with operations in a symbolic grammar. The document largely describes requirements for resolving an FDO to metadata, and how types should be related to possible operations.</p>
+<p><strong>Configuration Types</strong> <span class="citation" data-cites="1FnJihgWr">[<a href="#ref-1FnJihgWr" role="doc-biblioref">84</a>]</span> classifies different granularities for organizing FDOs in terms of PIDs, PID Records, Metadata and bit sequences, e.g. as a single FDO or several daisy-chained FDOs. Different patterns used by current DOIP deployments are considered, as well as FAIR Signposting <span class="citation" data-cites="snykkm7R">[<a href="#ref-snykkm7R" role="doc-biblioref">50</a>]</span></p>
+<p><strong>PID Profiles &amp; Attributes</strong> <span class="citation" data-cites="1D3S8mpov">[<a href="#ref-1D3S8mpov" role="doc-biblioref">85</a>]</span> specifies that PIDs must be formally associated with a <em>PID Profile</em>, a separate FDO that defines attributes required and recommended by FDOs following said profile. This forms the <em>kernel attributes</em>, building on recommendations from RDA’s <em>PID Information Types</em> working group <span class="citation" data-cites="lCoshHXg">[<a href="#ref-lCoshHXg" role="doc-biblioref">86</a>]</span>. This document makes a clear distinction between a minimal set of attributes needed for PID resolution and FDO navigation, which needs to be part of the <em>PID Record</em>, compared with a richer set of more specific attributes as part of the <em>metadata</em> for an FDO, possibly represented as a separate FDO.</p>
+<p><strong>Granularity, Versioning, Mutability</strong> <span class="citation" data-cites="1GSyvgyTr">[<a href="#ref-1GSyvgyTr" role="doc-biblioref">87</a>]</span> considers how granularity decisions for forming FDOs must be agreed by different communities depending on their pragmatic usage requirements. The affect on versioning, mutability and changes to PIDs are considered, based on use cases and existing PID practices.</p>
+<p><strong>DOIP Endorsement Request</strong> <span class="citation" data-cites="TIKhgTv2">[<a href="#ref-TIKhgTv2" role="doc-biblioref">88</a>]</span> is an endorsement of the DOIP v2.0 <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">11</a>]</span> specification as a potential FDO implementation, as it has been applied by several institutions <span class="citation" data-cites="jRWurmQc">[<a href="#ref-jRWurmQc" role="doc-biblioref">10</a>]</span>. The document proposes that DOIP shall be assessed for completeness against FDO; in this initial draft this is justified as <em>“we can state that DOIP is compliant with the FDO specification documents in process”</em> (the documents listed above).</p>
+<p><strong>Upload of FDO</strong> <span class="citation" data-cites="zl4AS4Sw">[<a href="#ref-zl4AS4Sw" role="doc-biblioref">89</a>]</span> illustrates the operations for uploading an FDO to a repository, what checks it should do (for instance conformance with the PID Profile, if PIDs resolve). ResourceSync <span class="citation" data-cites="eS5y9TRh">[<a href="#ref-eS5y9TRh" role="doc-biblioref">90</a>]</span> is suggested as one type of service to list FDOs. This document highlights potential practices by repositories and their clients, but adds no particular requirements (e.g. how should failed upload checks be reported?).</p>
+<p><strong>Typing FAIR Digital Objects</strong> <span class="citation" data-cites="11WHHh04H">[<a href="#ref-11WHHh04H" role="doc-biblioref">91</a>]</span> defines what <em>type</em> means for FDOs, primarily to enable machine actionability and to define an FDO’s purpose. This document lays out requirements for how <em>FDO Types</em> should themselves be specified as FDOs, and how an <em>FDO Type Framework</em> allows organizing and locating types. Operations applicable to an FDO is not predefined for a type, however operations naturally will require certain FDO types to work. How to define such FDO operations is not specified.</p>
+<p>It is worth pointing out at that, except for the DOIP endorsement, all of these documents are abstract, in the sense that they permit any technical implementation of FDO, if used according to the recommendations set out.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
@@ -922,20 +921,65 @@ FDO FDO Granularity 1.0</p>
 <div id="ref-7szz7dwO" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">71. </div><div class="csl-right-inline"><strong>FAIR Digital Object Framework Documentation</strong> <a href="https://fairdigitalobjectframework.org/">https://fairdigitalobjectframework.org/</a></div>
 </div>
-<div id="ref-I9Kx0Hjy" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">72. </div><div class="csl-right-inline"><strong>Handle System Protocol (ver 2.1) Specification</strong> <div class="csl-block">S Sun, S Reilly, L Lannom, J Petrone</div> <em>RFC Editor</em> (2003-11) <a href="https://doi.org/ggn83x">https://doi.org/ggn83x</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc3652">10.17487/rfc3652</a></div></div>
-</div>
-<div id="ref-o4h92LpS" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">73. </div><div class="csl-right-inline"><strong>Data - W3C</strong> <a href="https://www.w3.org/standards/semanticweb/data">https://www.w3.org/standards/semanticweb/data</a></div>
-</div>
-<div id="ref-lnH0hEuh" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">74. </div><div class="csl-right-inline"><strong>Data Catalog Vocabulary (DCAT) - Version 2</strong> <a href="https://www.w3.org/TR/vocab-dcat-2/">https://www.w3.org/TR/vocab-dcat-2/</a></div>
-</div>
-<div id="ref-1F8S9FeHf" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">75. </div><div class="csl-right-inline"><strong>Bioschemas - Bioschemas</strong> <a href="http://bioschemas.org/">http://bioschemas.org/</a></div>
+<div id="ref-STXtoppr" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">72. </div><div class="csl-right-inline"><strong>FDO Requirement Specifications</strong> <div class="csl-block">FDO-TSIG working group</div> <em>FDO Forum</em> (2022-03-17)</div>
 </div>
 <div id="ref-1Gsq23e51" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">76. </div><div class="csl-right-inline"><strong>NCBO BioPortal</strong> <a href="https://bioportal.bioontology.org/ontologies">https://bioportal.bioontology.org/ontologies</a></div>
+<div class="csl-left-margin">73. </div><div class="csl-right-inline"><strong>NCBO BioPortal</strong> <a href="https://bioportal.bioontology.org/ontologies">https://bioportal.bioontology.org/ontologies</a></div>
+</div>
+<div id="ref-I9Kx0Hjy" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">74. </div><div class="csl-right-inline"><strong>Handle System Protocol (ver 2.1) Specification</strong> <div class="csl-block">S Sun, S Reilly, L Lannom, J Petrone</div> <em>RFC Editor</em> (2003-11) <a href="https://doi.org/ggn83x">https://doi.org/ggn83x</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc3652">10.17487/rfc3652</a></div></div>
+</div>
+<div id="ref-o4h92LpS" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">75. </div><div class="csl-right-inline"><strong>Data - W3C</strong> <a href="https://www.w3.org/standards/semanticweb/data">https://www.w3.org/standards/semanticweb/data</a></div>
+</div>
+<div id="ref-10pzKCEUE" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">76. </div><div class="csl-right-inline"><strong>Schema.org - Schema.org</strong> <a href="https://schema.org/">https://schema.org/</a></div>
+</div>
+<div id="ref-wAbZpOsr" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">77. </div><div class="csl-right-inline"><strong>DCMI Metadata Terms</strong> <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</a></div>
+</div>
+<div id="ref-lnH0hEuh" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">78. </div><div class="csl-right-inline"><strong>Data Catalog Vocabulary (DCAT) - Version 2</strong> <a href="https://www.w3.org/TR/vocab-dcat-2/">https://www.w3.org/TR/vocab-dcat-2/</a></div>
+</div>
+<div id="ref-XmUY0cZB" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">79. </div><div class="csl-right-inline"><strong>FOAF Vocabulary Specification</strong> <a href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a></div>
+</div>
+<div id="ref-1F8S9FeHf" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">80. </div><div class="csl-right-inline"><strong>Bioschemas - Bioschemas</strong> <a href="http://bioschemas.org/">http://bioschemas.org/</a></div>
+</div>
+<div id="ref-DMEBhHID" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">81. </div><div class="csl-right-inline"><strong>FAIR Digital Objects Forum |</strong> <a href="https://fairdo.org/">https://fairdo.org/</a></div>
+</div>
+<div id="ref-TQdku4YF" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">82. </div><div class="csl-right-inline"><strong>FDO Forum Document Standards</strong> <div class="csl-block">C Weiland, U Schwardmann, P Wittenburg, C Kirkpatrick, R Hanisch, Z Trautt</div> <em>FDO Forum</em> (2022-01-29)</div>
+</div>
+<div id="ref-UTzzPcce" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">83. </div><div class="csl-right-inline"><strong>FDO Machine Actionability</strong> <div class="csl-block">Claus Weiland, Sharif Islam, Daan Broder, Ivonne Anders, PEter Wittenburg</div> <em>FDO Forum</em> (2022-02-25)</div>
+</div>
+<div id="ref-1FnJihgWr" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">84. </div><div class="csl-right-inline"><strong>FDO Configuration Types</strong> <div class="csl-block">Larry Lannom, Karsten Peters-von Gehlen, Ivonne Anders, Andreas Pfeil, Alexander Schlemmer, Zach Trautt, Peter Wittenburg</div> <em>FDO Forum</em> (2022-03-17)</div>
+</div>
+<div id="ref-1D3S8mpov" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">85. </div><div class="csl-right-inline"><strong>FDO PID Profiles &amp; Attributes</strong> <div class="csl-block">Ivonne Anders, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Ulrich Schwardmann, Peter Wittenburg</div> <em>FDO Forum</em> (2022-03-17)</div>
+</div>
+<div id="ref-lCoshHXg" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">86. </div><div class="csl-right-inline"><strong>RDA Recommendation on PID Kernel Information</strong> <div class="csl-block">Tobias Weigel, Beth Plale, Mark Parsons, Gabriel Zhou, Yu Luo, Ulrich Schwardmann, Robert Quick, Margareta Hellström, Kei Kurakawa</div> <em>Research Data Alliance</em> (2018) <a href="https://doi.org/gp5fpd">https://doi.org/gp5fpd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.15497/rda00031">10.15497/rda00031</a></div></div>
+</div>
+<div id="ref-1GSyvgyTr" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">87. </div><div class="csl-right-inline"><strong>FDO – Granularity, Versioning, Mutability</strong> <div class="csl-block">FDO-TSIG Working Group</div> <em>FDO Forum</em> (2022-03-17)</div>
+</div>
+<div id="ref-TIKhgTv2" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">88. </div><div class="csl-right-inline"><strong>DOIP endorsement request</strong> <div class="csl-block">FDO-TSIG Working Group</div> <em>FDO Forum</em> (2022-03-26)</div>
+</div>
+<div id="ref-zl4AS4Sw" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">89. </div><div class="csl-right-inline"><strong>Upload of FDO</strong> <div class="csl-block">Christophe Blanchi, Daan Broeder, Thomas Jejkal, Islam Sharif, Alexander Schlemmer, Dieter van Uytvanck, Peter Wittenburg</div> <em>FDO Forum</em> (2022-03-20)</div>
+</div>
+<div id="ref-eS5y9TRh" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">90. </div><div class="csl-right-inline"><strong>ResourceSync Framework Specification - Table of Contents</strong> <a href="http://www.openarchives.org/rs/toc">http://www.openarchives.org/rs/toc</a></div>
+</div>
+<div id="ref-11WHHh04H" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">91. </div><div class="csl-right-inline"><strong>Typing FAIR Digital Objects</strong> <div class="csl-block">Larry Lannom, U Schwardmann, C Blanchi, P Wittenburg</div> <em>FDO Forum</em> (2022-03-10)</div>
 </div>
 </div>
 <section class="footnotes footnotes-end-of-document" role="doc-endnotes">
