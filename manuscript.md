@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/8e2cc24629750f6be2371d344b19b3d829068276/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/8e2cc24629750f6be2371d344b19b3d829068276/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/8e2cc24629750f6be2371d344b19b3d829068276/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/251f1b71ae59f1a8d555956f46a90bc9d167a252/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/251f1b71ae59f1a8d555956f46a90bc9d167a252/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/251f1b71ae59f1a8d555956f46a90bc9d167a252/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/8e2cc24629750f6be2371d344b19b3d829068276/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/251f1b71ae59f1a8d555956f46a90bc9d167a252/))
 was automatically generated
-from [stain/2022-fdo-paper@8e2cc24](https://github.com/stain/2022-fdo-paper/tree/8e2cc24629750f6be2371d344b19b3d829068276)
+from [stain/2022-fdo-paper@251f1b7](https://github.com/stain/2022-fdo-paper/tree/251f1b71ae59f1a8d555956f46a90bc9d167a252)
 on May 13, 2022.
 </em></small>
 
@@ -346,11 +346,11 @@ Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019] 
 
 ## Next steps for FDO {#sec:next-step-fdo}
 
-The FAIR Digital Object Forum [@{https://fairdo.org/}] working groups are preparing more detailed requirement documentations setting out the path for realizing FDOs, named _FDO Recommendations_. At time of writing, these documents are in draft stage, undergoing internal review, but the FDO Forum is formalizing the process for developing and publishing these recommendations.  As these documents lay out the future directions for FAIR Digital Objects, below follows a brief summary of the current drafts with consideration to this article's focus. 
+The FAIR Digital Object Forum [@{https://fairdo.org/}] working groups are preparing more detailed [requirement documents](https://docs.google.com/spreadsheets/d/1O1PTLmVWqjQgvJsIcPgaZJe9BntHZt8_QndEG0eRwUY/edit) setting out the path for realizing FDOs, named _FDO Recommendations_. As of 2022-05-13, these documents are in draft stage, undergoing internal review, meanwhile the FDO Forum is formalizing the process for maturing and making these recommendations open for public review. As these drafts clarify the future aims and focus of FAIR Digital Objects, we provide their brief summaries below:
 
-The **FDO Forum Document Standards** [@WD-DocProcessStd-1.1-20220129] documents the recommendation process within the forum, starting at _Working Draft_ (WD) status within the working group and later within the forum, then _Proposed Recommendation_ (PR) published for public review, and _FDO Forum Recommendation_ (REC) published following revisions after public review. In addition, the forum may choose to _endorse_ existing third-party notes and specifications.
+The **FDO Forum Document Standards** [@WD-DocProcessStd-1.1-20220129] documents the recommendation process within the forum, starting at _Working Draft_ (WD) status within the closed working group and later within the open forum, then _Proposed Recommendation_ (PR) published for public review, finalized as _FDO Forum Recommendation_ (REC) following any revisions. In addition, the forum may choose to _endorse_ existing third-party notes and specifications.
 
-The **FDO Requirement Specifications** [@WD-RequirementSpec-1.0-20220317] is an update of [@bonino_2019] to lay out the criteria for classifying an digital entity as a FAIR Digital Object, allowing for multiple implementations. The requirements shown in table [tbl:fdo-checks] are largely equivalent, but clarified with references to other FDO documents.
+The **FDO Requirement Specifications** [@WD-RequirementSpec-1.0-20220317] is an update of [@bonino_2019] as the foundational definition of FDO. This sets the criteria for classifying an digital entity as a FAIR Digital Object, allowing for multiple implementations. The requirements shown in table [tbl:fdo-checks] are largely equivalent, but here clarified with references to other FDO documents.
 
 The **Machine actionability** [@WD-MachineActionDef-1.1-20220301] sets out to define what is meant by _machine actionability_ for FDOs. _Machine readable_ is defined as elements of bit-sequences defined by structural specification, _machine interpretable_ elements that can be identified and related with semantic artifacts, while _machine actionable_ are elements with a type with operations in a symbolic grammar. The document largely describes requirements for resolving an FDO to metadata, and how types should be related to possible operations.
 
@@ -366,8 +366,7 @@ The **Machine actionability** [@WD-MachineActionDef-1.1-20220301] sets out to de
 
 **Typing FAIR Digital Objects** [@WD-TypingFDOs-1.0-20220310] defines what _type_ means for FDOs, primarily to enable machine actionability and to define an FDO's purpose. This document lays out requirements for how _FDO Types_ should themselves be specified as FDOs, and how an _FDO Type Framework_ allows organizing and locating types. Operations applicable to an FDO is not predefined for a type, however operations naturally will require certain FDO types to work. How to define such FDO operations is not specified.
 
-It is worth pointing out at that, except for the DOIP endorsement, all of these documents are abstract, in the sense that they permit any technical implementation of FDO, if used according to the recommendations set out.
-
+It is worth pointing out at that, except for the DOIP endorsement, all of these documents are abstract, in the sense that they permit any technical implementation of FDO, if used according to the recommendations.
 
 
 ## References {.page_break_before}
