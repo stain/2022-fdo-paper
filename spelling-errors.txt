@@ -33,7 +33,7 @@ eare
 Ecma
 EMEA
 EOSC
-FDO
+fdo
 FDOF
 FDOR
 FDO’s
@@ -76,7 +76,7 @@ Microdata
 microformats
 Micropub
 middleware
-Modularity
+modularity
 namespaces
 navigatable
 NIST
@@ -102,7 +102,7 @@ QUIC
 RDA’s
 RDF
 RDFa
-rdflib
+RDFLib
 RDFS
 redirections
 Redland

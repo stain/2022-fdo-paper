@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/ad545814e0619775205f89d21a9169452a41ec7a/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/ad545814e0619775205f89d21a9169452a41ec7a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/ad545814e0619775205f89d21a9169452a41ec7a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/9cd2ef8e32fc2a286e1e53fe46569abf8247932d/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/9cd2ef8e32fc2a286e1e53fe46569abf8247932d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/9cd2ef8e32fc2a286e1e53fe46569abf8247932d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/ad545814e0619775205f89d21a9169452a41ec7a/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/9cd2ef8e32fc2a286e1e53fe46569abf8247932d/))
 was automatically generated
-from [stain/2022-fdo-paper@ad54581](https://github.com/stain/2022-fdo-paper/tree/ad545814e0619775205f89d21a9169452a41ec7a)
+from [stain/2022-fdo-paper@9cd2ef8](https://github.com/stain/2022-fdo-paper/tree/9cd2ef8e32fc2a286e1e53fe46569abf8247932d)
 on May 13, 2022.
 </em></small>
 
@@ -356,6 +356,8 @@ Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019] 
 
 
 ## Next steps for FDO {#sec:next-step-fdo}
+
+_This section may be styled as an inset box_
 
 The FAIR Digital Object Forum [@{https://fairdo.org/}] working groups are preparing more detailed [requirement documents](https://docs.google.com/spreadsheets/d/1O1PTLmVWqjQgvJsIcPgaZJe9BntHZt8_QndEG0eRwUY/edit) setting out the path for realizing FDOs, named _FDO Recommendations_. As of 2022-05-13, these documents are in draft stage, undergoing internal review, meanwhile the FDO Forum is formalizing the process for maturing and making these recommendations open for public review. As these drafts clarify the future aims and focus of FAIR Digital Objects, we provide their brief summaries below:
 
