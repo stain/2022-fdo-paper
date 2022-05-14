@@ -4,6 +4,9 @@
   /* import google fonts */
   @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
   @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+  @import url("https://fonts.googleapis.com/css?family=Rasa:400,600,700");
+  @import url("https://fonts.googleapis.com/css?family=Liberation+Serif:400,600,700");
+  @import url("https://fonts.googleapis.com/css?family=Nimbus+Roman:400,600,700");
 
   /* -------------------------------------------------- */
   /* global */
@@ -11,8 +14,10 @@
 
   /* all elements */
   * {
-    /* force sans-serif font unless specified otherwise */
-    font-family: "Open Sans", "Helvetica", sans-serif;
+    /* force sans-serif font unless specified otherwise 
+    font-family: "Open Sans", "Helvetica", sans-serif; */
+    /* Let's go old-fashioned with serif instead! */
+    font-family: "Rasa", "Liberation Serif", "Nimbus Roman", "Calibri", serif;
 
     /* prevent text inflation on some mobile browsers */
     -webkit-text-size-adjust: none !important;
@@ -299,7 +304,9 @@
   code,
   code * {
     /* force monospace font */
-    font-family: "Source Code Pro", "Courier New", monospace;
+    font-family: "Source Code Pro", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+    /* monospaced often look too big inline along serifs */
+    font-size: 90%;
   }
 
   /* -------------------------------------------------- */
@@ -663,4 +670,28 @@
       overflow-wrap: normal !important;
     }
   }
+
+    /* Breakout box */
+    .breakout {
+      display: block;
+      margin: auto;
+      border: thin #424242 solid;
+      padding: 0.5em;
+      margin: 1em;
+      font-size: small;
+      max-width: 25em;
+      min-width: 20em;
+      float: right;
+      background: #e3f2fd;
+    }
+    .breakout h4 {
+      margin-top: 0;
+      font-family: "Open Sans", "Helvetica", sans-serif;
+      border: none; 
+      line-height: 1;
+    }
+    .breakout p {
+      margin: 0;     
+      text-indent: 2em initial;
+    }
 </style>
