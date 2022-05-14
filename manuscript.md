@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-05-13'
+date-meta: '2022-05-14'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-05-13" />
-  <meta name="citation_publication_date" content="2022-05-13" />
+  <meta name="dc.date" content="2022-05-14" />
+  <meta name="citation_publication_date" content="2022-05-14" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/4c357b0143ba0111682cff9afbeffb92dc302d15/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/4c357b0143ba0111682cff9afbeffb92dc302d15/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/4c357b0143ba0111682cff9afbeffb92dc302d15/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/909ca15df540b2bcf762182c20d781198af9a442/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/909ca15df540b2bcf762182c20d781198af9a442/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/909ca15df540b2bcf762182c20d781198af9a442/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,10 +73,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/4c357b0143ba0111682cff9afbeffb92dc302d15/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/909ca15df540b2bcf762182c20d781198af9a442/))
 was automatically generated
-from [stain/2022-fdo-paper@4c357b0](https://github.com/stain/2022-fdo-paper/tree/4c357b0143ba0111682cff9afbeffb92dc302d15)
-on May 13, 2022.
+from [stain/2022-fdo-paper@909ca15](https://github.com/stain/2022-fdo-paper/tree/909ca15df540b2bcf762182c20d781198af9a442)
+on May 14, 2022.
 </em></small>
 
 ## Authors
@@ -128,6 +128,35 @@ on May 13, 2022.
 ## Background {#sec:background}
 
 
+
+
+::: {.breakout}
+
+#### Next steps for FDO {#sec:next-step-fdo}
+
+The FAIR Digital Object Forum [@{https://fairdo.org/}] working groups are preparing more detailed [requirement documents](https://docs.google.com/spreadsheets/d/1O1PTLmVWqjQgvJsIcPgaZJe9BntHZt8_QndEG0eRwUY/edit) setting out the path for realizing FDOs, named _FDO Recommendations_. As of 2022-05-13, these documents are in draft stage, undergoing internal review, meanwhile the FDO Forum is formalizing the process for maturing and making these recommendations open for public review. As these drafts clarify the future aims and focus of FAIR Digital Objects, we provide their brief summaries below:
+
+The **FDO Forum Document Standards** [@WD-DocProcessStd-1.1-20220129] documents the recommendation process within the forum, starting at _Working Draft_ (WD) status within the closed working group and later within the open forum, then _Proposed Recommendation_ (PR) published for public review, finalized as _FDO Forum Recommendation_ (REC) following any revisions. In addition, the forum may choose to _endorse_ existing third-party notes and specifications.
+
+The **FDO Requirement Specifications** [@WD-RequirementSpec-1.0-20220317] is an update of [@bonino_2019] as the foundational definition of FDO. This sets the criteria for classifying an digital entity as a FAIR Digital Object, allowing for multiple implementations. The requirements shown in table [tbl:fdo-checks] are largely equivalent, but here clarified with references to other FDO documents.
+
+The **Machine actionability** [@WD-MachineActionDef-1.1-20220301] sets out to define what is meant by _machine actionability_ for FDOs. _Machine readable_ is defined as elements of bit-sequences defined by structural specification, _machine interpretable_ elements that can be identified and related with semantic artifacts, while _machine actionable_ are elements with a type with operations in a symbolic grammar. The document largely describes requirements for resolving an FDO to metadata, and how types should be related to possible operations.
+
+**Configuration Types** [@WD-ConfigurationTypes-1.0-20220317] classifies different granularities for organizing FDOs in terms of PIDs, PID Records, Metadata and bit sequences, e.g. as a single FDO or several daisy-chained FDOs. Different patterns used by current DOIP deployments are considered, as well as FAIR Signposting [@{https://signposting.org/FAIR/}]
+
+**PID Profiles & Attributes** [@WD-PIDProfileAttributes-1.0-20220317] specifies that PIDs must be formally associated with a _PID Profile_, a separate FDO that defines attributes required and recommended by FDOs following said profile. This forms the _kernel attributes_, building on recommendations from RDA's _PID Information Types_ working group [@doi:10.15497/rda00031]. This document makes a clear distinction between a minimal set of attributes needed for PID resolution and FDO navigation, which  needs to be part of the _PID Record_, compared with a richer set of more specific attributes as part of the _metadata_ for an FDO, possibly represented as a separate FDO. 
+
+**Granularity, Versioning, Mutability** [@WD-Granularity-1.0-20220317] considers how granularity decisions for forming FDOs must be agreed by different communities depending on their pragmatic usage requirements. The affect on versioning, mutability and changes to PIDs are considered, based on use cases and existing PID practices.
+
+**DOIP Endorsement Request** [@PED-DOIPEndorsement-0.1-20220326] is an endorsement of the DOIP v2.0 [@handle:0.DOIP/DOIPV2.0] specification as a potential FDO implementation, as it has been applied by several institutions [@doi:10.5281/zenodo.5872645]. The document proposes that DOIP shall be assessed for completeness against FDO; in this initial draft this is justified as _"we can state that DOIP is compliant with the FDO specification documents in process"_ (the documents listed above).
+
+**Upload of FDO** [@WD-FDO-Upload-0.1-20220320] illustrates the operations for uploading an FDO to a repository, what checks it should do (for instance conformance with the PID Profile, if PIDs resolve). ResourceSync [@{http://www.openarchives.org/rs/toc}] is suggested as one type of service to list FDOs. This document highlights potential practices by repositories and their clients, but adds no particular requirements (e.g. how should failed upload checks be reported?).
+
+**Typing FAIR Digital Objects** [@WD-TypingFDOs-1.0-20220310] defines what _type_ means for FDOs, primarily to enable machine actionability and to define an FDO's purpose. This document lays out requirements for how _FDO Types_ should themselves be specified as FDOs, and how an _FDO Type Framework_ allows organizing and locating types. Operations applicable to an FDO is not predefined for a type, however operations naturally will require certain FDO types to work. How to define such FDO operations is not specified.
+
+It is worth pointing out at that, except for the DOIP endorsement, all of these documents are abstract, in the sense that they permit any technical implementation of FDO, if used according to the recommendations.
+
+:::
 
 
 ### FAIR Digital Object
@@ -206,7 +235,7 @@ Vocabularies like [schema.org](https://schema.org/) evolved not long after, inte
 
 Recently there has been a renewed emphasis to improve the _Developer Experience_ [@{https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/}] for consumption of Linked Data, for instance RDF Shapes (expressed in SHACL [@{https://www.w3.org/TR/shacl/}] or ShEx [@{http://shex.io/shex-primer/}]) [doi:10.1007/978-3-030-21348-0_39] can be used to validate RDF Data [doi:10.2200/S00786ED1V01Y201707WBE016] <!-- https://book.validatingrdf.com/ --> before consuming it programmatically, or reshaping data to fit other models. While a varied set of tools for Linked Data consumptions have been identified, most of them still require developers to gain significant knowledge of the underlying technologies, which hampers adaption by non-LD experts [doi:10.3233/SW-180316], <!--http://www.semantic-web-journal.net/system/files/swj1849.pdf --> which then tend to prefer non-semantic two-dimensional formats such as CSV files.  
 
-A valid concern is that the Semantic Web research community has still not fully embraced the Web, and that the "final 20%" engineering effort is frequently overlooked in favour of chasing new trends such as Big Data and AI, rather than making powerful Linked Data technologies available to the wider groups of Web developers [doi:10.3233/SW-190372]. One bridging gap here by the Linked Data movement has been "linked data by stealth" approaches such as structured data entry spreadsheets powered by ontologies [@{doi:10.1093/bioinformatics/btr312}], the use of Linked Data as part of REST Web APIs [@10.1145/1967428.1967435] <!-- http://eprints.soton.ac.uk/id/eprint/272098 -->, and as shown by the big uptake by publishers to annotate the Web using schema.org [@doi:10.1109/MIC.2015.81], showing vocabulary use patterns documented by copy-pastable JSON-LD examples, rather than by formalized ontologies or developer requirements to understand the full Semantic Web stack.
+A valid concern is that the Semantic Web research community has still not fully embraced the Web, and that the "final 20%" engineering effort is frequently overlooked in favour of chasing new trends such as Big Data and AI, rather than making powerful Linked Data technologies available to the wider groups of Web developers [doi:10.3233/SW-190372]. One bridging gap here by the Linked Data movement has been "linked data by stealth" approaches such as structured data entry spreadsheets powered by ontologies [@{doi:10.1093/bioinformatics/btr312}], the use of Linked Data as part of REST Web APIs [@10.1145/1967428.1967435] <!-- http://eprints.soton.ac.uk/id/eprint/272098 -->, and as shown by the big uptake by publishers to annotate the Web using schema.org [@doi:10.1109/MIC.2015.81], with vocabulary use patterns documented by copy-pastable JSON-LD examples, rather than by formalized ontologies or developer requirements to understand the full Semantic Web stack.
 
 
 
@@ -257,25 +286,25 @@ Table: Mapping the Metamodel concepts from the Interoperability Framework for Fa
 {#tbl:metamodel-concepts}
 
 
-## Assessing DOIP against FDO {sec:doip-fdo-compare}
+## Assessing DOIP against FDO {#sec:doip-fdo-compare}
 
-| **Guideline**                                    | DOIP 2.0            | FDO suggestions     | Linked Data Platform | LDP suggestion       |
+| **FDO Guideline**                                    | DOIP 2.0            | FDO suggestions     | Linked Data Platform | LDP suggestion       |
 |:------------------------------------------------:|:-------------------:|:-------------------:|:--------------------:|:--------------------:|
-| G1: _invest for many decades_                    |
-| G2: _trustworthiness_                            |
-| G3: _FAIR principles_                            |
-| G4: _machine actionability_                      | 
-| G5: _abstraction principle_                      |
-| G6: _stable binding_                             |
+| G1: _invest for many decades_                    | Handle system stable for 20 years, DOIP 2.0 since 2017. | Ensure FDO types will not be protocol-bound as DOIP might be updated/replaced | HTTP stable for 30 years, Semantic Web for 20 years | Keep flexibility of RDF serialization formats which may change more frequently | 
+| G2: _trustworthiness_                            | DOI/Handle trusted by all major academic publishers and data repositories. DOIP relatively unknown, in effect only one implementation. |  Further promote DOIP and justify its benefits. Build tutorials and OSI open source implementations. Standardize DOIP-over-HTTP alternative.  |  JSON-LD used by half of all websites [@{}], however previous bad experiences with Semantic Web may deter adapters  |  Ensure simplicity for end developers, rather than semantic overengineering. Example-driven documentation.  |
+| G3: _FAIR principles_                            | See table @tbl:fair-fdos |  Ensure all FAIR principles are covered, build complete examples.   |  Touched briefly, see table @tbl:fair-fdos |  Add explicit expression to show each FAIR pcinciple fulfilled.  | 
+| G4: _machine actionability_                      | CRUD and extension operations dynamically listed (see table @#tbl:fdo-web-middleware) |  Specify which operations should work for a given type, to reduce need for dynamic lookup. Specify input/output expectations formally (e.g. JSON Schema).  |  HTTP CRUD operations, Open API (see table @#tbl:fdo-web-middleware) |  Document operations so client can make subsequent HTTP calls.  |
+| G5: _abstraction principle_                      |  Handle PIDs as abstraction base. DOIP operations can use any transport protocol.  | Document transport protocols as FDOs, recommend which transport to use. |  URI as abstraction base. Does not specify PID requirements.  | Give stronger deployment recommendations. |   
+| G6: _stable binding_                             | 
 | G7: _encapsulation_                              |
-| G8: _technology independence_                    |
-| G9: _standard compliance_                        |
-| FDOF1: _PID as basis_                            |
-| FDOF2: _PID record w/ type_                      | 
-| FDOF3: _PID resolvable to bytestream & metadata_ |
-| FDOF4: _Additional attributes_                   | 
-| FDOF5: _Interface: operation by PID_             | 
-| FDOF6: _CRUD operations + extensions_            |
+| G8: _technology independence_                    | In theory independent, in reality depends on single implementations of Handle system and DOIP  | Encourage open source DOIP testbeds and lighter reference implementations  |  Multiple HTTP implementations, multiple LDP implementations. No FDOF implementations.  |  Develop demonstrator of FDOF usage based on existing LDP server.  |
+| G9: _standard compliance_                        | Handle [RFC??], DOIP []. FDO requirements not standardized yet.   | Formalize standard process of FDO requirements [@WD-DOC] |  HTTP, LDP. FDOF not yet standardized |  Formalize FDOF from FDOF-SEM working group | 
+| FDOF1: _PID as basis_                            | Extensive use of Handle system.  |  Clarify how local testing handles can be used during development, how "temporary" FDOs should evolve [@PID policy]. Register `0.DOIP/*` and `0.FDO/*` as PIDs.  | 
+| FDOF2: _PID record w/ type_                      |  |  Document requirements for PID Record {@..} |
+| FDOF3: _PID resolvable to bytestream & metadata_ | Byte stream resolvable trough `0.DOIP/REtrieve`. No method/attribute defined for separate metadata, only directly in PID Rcord. Unclear meaning of multiple items and bytestream chunks. | Clarify expectations for multiple items. Recommend chunks to not be used. | URIs resolvable by default. Multiple ways to resolve metadata, unclear preference. |  Add FAIR Signposting and preference order.  | 
+| FDOF4: _Additional attributes_                   |  Freetext attribute keys. Attributes should be defined for FDO type (?). |  Require that attribute keys should be PIDs (or have predefined mapping to PIDs). Explicitly allow attributes not already defined in type.  |  All attributes individually identified. Any Linked Data attributes can be used by URI or with mapped prefix.  |  Clarify type expectations of required/recommended/optional attributes.  |
+| FDOF5: _Interface: operation by PID_             | Extended operations use PID, but "pid-like" DOIP operations/types are not registered as handles. | Register `0.DOIP/*` and `0.FDO/*` as PIDs. Clarify that operations can be mapped to protocol directly. | CRUD operations used directly in HTTP (e.g. `PUT`). Unclear how to provide PID for additional operations. |  Specify how additional operations should be called over HTTP. | 
+| FDOF6: _CRUD operations + extensions_            | `0.DOIP/Op.Create` etc. | | `GET`, `PUT`, `POST`, `DELETE`. |  |
 | FDOF7: _FDOF Types related to operations_        |
 | FDOF8: _Metadata as FDO, semantic assertions_    | 
 | FDOF9: _Different metadata levels_               |
@@ -285,7 +314,7 @@ Table: Mapping the Metamodel concepts from the Interoperability Framework for Fa
 Table: Checking FDO guidelines [@bonino_2019] against its current implementations as DOIP [@handle:0.DOIP/DOIPV2.0] and Linked Data Platform (LDP) [@{https://fairdigitalobjectframework.org/}], with suggestions for required additions.
 {#tbl:fdo-checks}
 
-Note that the draft update to FDO specification [@WD-RequirementSpec-1.0-20220317] (see section @sec:next-step-fdo) clarifies these definitions with equivalent identifiers [^2] and relates them to further FDO requirements such as FDO Data Type Registries. 
+Note that the draft update to FDO specification [@WD-RequirementSpec-1.0-20220317] (see box @sec:next-step-fdo) clarifies these definitions with equivalent identifiers [^2] and relates them to further FDO requirements such as FDO Data Type Registries. 
 
 [^2]: [@WD-RequirementSpec-1.0-20220317] renames _FDOF*_ to _FDOR*_, FDOF3/FDOF4 are swapped to FDOR4/FDOR3.
 
@@ -353,33 +382,6 @@ As for the aspect of _Performance_, it is interesting to note that while the fir
 Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019] as DOIP [@handle:0.DOIP/DOIPV2.0], Linked Data Platform (LDP) [@{https://fairdigitalobjectframework.org/}], with examples øf existing Linked Data practices.
 {#tbl:fair-fdos}
 
-
-
-## Next steps for FDO {#sec:next-step-fdo}
-
-_This section may be styled as an inset box_
-
-The FAIR Digital Object Forum [@{https://fairdo.org/}] working groups are preparing more detailed [requirement documents](https://docs.google.com/spreadsheets/d/1O1PTLmVWqjQgvJsIcPgaZJe9BntHZt8_QndEG0eRwUY/edit) setting out the path for realizing FDOs, named _FDO Recommendations_. As of 2022-05-13, these documents are in draft stage, undergoing internal review, meanwhile the FDO Forum is formalizing the process for maturing and making these recommendations open for public review. As these drafts clarify the future aims and focus of FAIR Digital Objects, we provide their brief summaries below:
-
-The **FDO Forum Document Standards** [@WD-DocProcessStd-1.1-20220129] documents the recommendation process within the forum, starting at _Working Draft_ (WD) status within the closed working group and later within the open forum, then _Proposed Recommendation_ (PR) published for public review, finalized as _FDO Forum Recommendation_ (REC) following any revisions. In addition, the forum may choose to _endorse_ existing third-party notes and specifications.
-
-The **FDO Requirement Specifications** [@WD-RequirementSpec-1.0-20220317] is an update of [@bonino_2019] as the foundational definition of FDO. This sets the criteria for classifying an digital entity as a FAIR Digital Object, allowing for multiple implementations. The requirements shown in table [tbl:fdo-checks] are largely equivalent, but here clarified with references to other FDO documents.
-
-The **Machine actionability** [@WD-MachineActionDef-1.1-20220301] sets out to define what is meant by _machine actionability_ for FDOs. _Machine readable_ is defined as elements of bit-sequences defined by structural specification, _machine interpretable_ elements that can be identified and related with semantic artifacts, while _machine actionable_ are elements with a type with operations in a symbolic grammar. The document largely describes requirements for resolving an FDO to metadata, and how types should be related to possible operations.
-
-**Configuration Types** [@WD-ConfigurationTypes-1.0-20220317] classifies different granularities for organizing FDOs in terms of PIDs, PID Records, Metadata and bit sequences, e.g. as a single FDO or several daisy-chained FDOs. Different patterns used by current DOIP deployments are considered, as well as FAIR Signposting [@{https://signposting.org/FAIR/}]
-
-**PID Profiles & Attributes** [@WD-PIDProfileAttributes-1.0-20220317] specifies that PIDs must be formally associated with a _PID Profile_, a separate FDO that defines attributes required and recommended by FDOs following said profile. This forms the _kernel attributes_, building on recommendations from RDA's _PID Information Types_ working group [@doi:10.15497/rda00031]. This document makes a clear distinction between a minimal set of attributes needed for PID resolution and FDO navigation, which  needs to be part of the _PID Record_, compared with a richer set of more specific attributes as part of the _metadata_ for an FDO, possibly represented as a separate FDO. 
-
-**Granularity, Versioning, Mutability** [@WD-Granularity-1.0-20220317] considers how granularity decisions for forming FDOs must be agreed by different communities depending on their pragmatic usage requirements. The affect on versioning, mutability and changes to PIDs are considered, based on use cases and existing PID practices.
-
-**DOIP Endorsement Request** [@PED-DOIPEndorsement-0.1-20220326] is an endorsement of the DOIP v2.0 [@handle:0.DOIP/DOIPV2.0] specification as a potential FDO implementation, as it has been applied by several institutions [@doi:10.5281/zenodo.5872645]. The document proposes that DOIP shall be assessed for completeness against FDO; in this initial draft this is justified as _"we can state that DOIP is compliant with the FDO specification documents in process"_ (the documents listed above).
-
-**Upload of FDO** [@WD-FDO-Upload-0.1-20220320] illustrates the operations for uploading an FDO to a repository, what checks it should do (for instance conformance with the PID Profile, if PIDs resolve). ResourceSync [@{http://www.openarchives.org/rs/toc}] is suggested as one type of service to list FDOs. This document highlights potential practices by repositories and their clients, but adds no particular requirements (e.g. how should failed upload checks be reported?).
-
-**Typing FAIR Digital Objects** [@WD-TypingFDOs-1.0-20220310] defines what _type_ means for FDOs, primarily to enable machine actionability and to define an FDO's purpose. This document lays out requirements for how _FDO Types_ should themselves be specified as FDOs, and how an _FDO Type Framework_ allows organizing and locating types. Operations applicable to an FDO is not predefined for a type, however operations naturally will require certain FDO types to work. How to define such FDO operations is not specified.
-
-It is worth pointing out at that, except for the DOIP endorsement, all of these documents are abstract, in the sense that they permit any technical implementation of FDO, if used according to the recommendations.
 
 
 ## Discussion {#sec@discussion}

@@ -40,6 +40,7 @@ FDO’s
 FDOs
 findable
 foaf
+Freetext
 Goble
 granularities
 GraphDB
@@ -76,7 +77,7 @@ Microdata
 microformats
 Micropub
 middleware
-Modularity
+modularity
 namespaces
 navigatable
 NIST
@@ -88,9 +89,11 @@ ontologies
 OpenAPI
 OpenLink
 OSI
+overengineering
 partioning
 pastable
 PAV
+pcinciple
 pgroth
 PHACTS
 PID
@@ -99,6 +102,7 @@ Polymorphism
 pre
 programmatically
 QUIC
+Rcord
 RDA’s
 RDF
 RDFa
@@ -113,6 +117,7 @@ scalability
 scalable
 schemas
 seemlessly
+SEM
 SEO
 Sevelopment
 SHACL
@@ -126,6 +131,7 @@ Stian
 subtypes
 syntaxes
 TCP
+testbeds
 thumbstone
 TLS
 UDP
