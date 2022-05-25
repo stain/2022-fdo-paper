@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-05-23'
+date-meta: '2022-05-25'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-05-23" />
-  <meta name="citation_publication_date" content="2022-05-23" />
+  <meta name="dc.date" content="2022-05-25" />
+  <meta name="citation_publication_date" content="2022-05-25" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/7ea2318bfc68a59da64981015410466cfbcdb471/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7ea2318bfc68a59da64981015410466cfbcdb471/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7ea2318bfc68a59da64981015410466cfbcdb471/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/28321c1cc2f620e956bdec6a3ced00cfffde330d/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/28321c1cc2f620e956bdec6a3ced00cfffde330d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/28321c1cc2f620e956bdec6a3ced00cfffde330d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,10 +73,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/7ea2318bfc68a59da64981015410466cfbcdb471/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/28321c1cc2f620e956bdec6a3ced00cfffde330d/))
 was automatically generated
-from [stain/2022-fdo-paper@7ea2318](https://github.com/stain/2022-fdo-paper/tree/7ea2318bfc68a59da64981015410466cfbcdb471)
-on May 23, 2022.
+from [stain/2022-fdo-paper@28321c1](https://github.com/stain/2022-fdo-paper/tree/28321c1cc2f620e956bdec6a3ced00cfffde330d)
+on May 25, 2022.
 </em></small>
 
 ## Authors
@@ -383,6 +383,28 @@ As for the aspect of _Performance_, it is interesting to note that while the fir
 Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019] as DOIP [@handle:0.DOIP/DOIPV2.0], Linked Data Platform (LDP) [@{https://fairdigitalobjectframework.org/}], with examples øf existing Linked Data practices.
 {#tbl:fair-fdos}
 
+
+## EOSC Interoperability Framework
+
+The EOSC Interoperability Framework [@doi:10.2777/620649] recommends:
+
+| Layer | Recommendation | FDO | Linked Data | 
+| ----- | -------------- | --- | ----------- |
+| Technical | Open Specification |  |   |
+| Technical | Common security&privacy framework |  |  |
+| Technical | Easy SLAs for service providers | None | None |
+| Technical | Access data in different formats | None formalized, custom operations or relations | Content-negotiation, `rel=alternate` relations |
+| Technical | Coarse-grained/fine-grained search tools | None | ?  | 
+| Technical | Clear PID policy | FDO requirements [], tends towards Handle system. | Not required, different communities set policies |
+| Semantic | Clear definitions for concepts/metadata/schemas | FDO requirements[], not yet formalized | Ontologies, SKOS, ... | 
+| Semantic | Semantic artefacts w/ open licenses | All artefacts are PIDs w/ license required by kernel metadata? | Open License is best practice for ontology publishing | 
+| Semantic | Documentation for each semantic artefact |  No direct rendering from FDO, no requirement for human-readable description  |  Ontology rendering, content-negotiation  |
+| Semantic | Repositories of artefacts | Required, but not formalized  | Bioontologies, etc |
+| Semantic | Repositories w/ clear governance | Recommended |  Largely self-governed repositories, if well-established may have clear governance.   | 
+| Semantic | Minimal metadata model for federated discovery | Kernel metadata | DCAT, ++ | 
+| Semantic | Crosswalks from minimal metadata model |  Can be part of definition?  |  Several crosswalks  |
+| Semantic | Extensibility options for diciplinary metadata |  Communities encouraged to establish own types  |  Extensible by design, domain-specific metadata may be at different granularity |
+| Semantic | Clear protocols/building blocks for federation/harvesting of artefact catalogues |  Collection types not yet defined  |  SWORD, OAI-PMH  | 
 
 
 ## Discussion {#sec@discussion}

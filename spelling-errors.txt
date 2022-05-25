@@ -10,6 +10,7 @@ backends
 Berners
 BioExcel
 bioinformatics
+Bioontologies
 BioPortal
 bytestream
 CaroleAnneGoble
@@ -19,7 +20,7 @@ CDN
 CDNs
 centric
 consumptions
-CORDRA
+Cordra
 COVID
 CSV
 CWFP
@@ -27,17 +28,19 @@ Datacite
 datasets
 DCAT
 dereferenceable
+diciplinary
 DNS
 DOIP
 eare
 Ecma
 EMEA
 EOSC
+Extensibility
 FDO
 FDOF
 FDOR
 FDO’s
-FDOs
+fdos
 findable
 foaf
 Freetext
@@ -72,7 +75,7 @@ LD
 LDP
 LOD
 maintaned
-Metamodel
+metamodel
 Microdata
 microformats
 Micropub
@@ -82,6 +85,7 @@ namespaces
 navigatable
 NIST
 NL
+OAI
 OBO
 occassionally
 øf
@@ -98,6 +102,7 @@ pgroth
 PHACTS
 PID
 PIDs
+PMH
 Polymorphism
 pre
 programmatically
@@ -123,6 +128,7 @@ Sevelopment
 SHACL
 ShEx
 SKOS
+SLAs
 Soiland
 soilandreyes
 SPARQL

@@ -7,7 +7,7 @@
   <meta name="author" content="Stian Soiland-Reyes" />
   <meta name="author" content="Carole Goble" />
   <meta name="author" content="Paul Groth" />
-  <meta name="dcterms.date" content="2022-05-23" />
+  <meta name="dcterms.date" content="2022-05-25" />
   <meta name="keywords" content="FDO, distributed, digital object" />
   <title>Evaluating FAIR Digital Object as a distributed object system</title>
   <style>
@@ -46,8 +46,8 @@
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-05-23" />
-  <meta name="citation_publication_date" content="2022-05-23" />
+  <meta name="dc.date" content="2022-05-25" />
+  <meta name="citation_publication_date" content="2022-05-25" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -73,9 +73,9 @@
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/7ea2318bfc68a59da64981015410466cfbcdb471/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7ea2318bfc68a59da64981015410466cfbcdb471/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7ea2318bfc68a59da64981015410466cfbcdb471/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/28321c1cc2f620e956bdec6a3ced00cfffde330d/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/28321c1cc2f620e956bdec6a3ced00cfffde330d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/28321c1cc2f620e956bdec6a3ced00cfffde330d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,10 +92,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://stain.github.io/2022-fdo-paper/v/7ea2318bfc68a59da64981015410466cfbcdb471/">permalink</a>)
+(<a href="https://stain.github.io/2022-fdo-paper/v/28321c1cc2f620e956bdec6a3ced00cfffde330d/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/stain/2022-fdo-paper/tree/7ea2318bfc68a59da64981015410466cfbcdb471">stain/2022-fdo-paper@7ea2318</a>
-on May 23, 2022.
+from <a href="https://github.com/stain/2022-fdo-paper/tree/28321c1cc2f620e956bdec6a3ced00cfffde330d">stain/2022-fdo-paper@28321c1</a>
+on May 25, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -706,6 +706,116 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 </tbody>
 </table>
 </div>
+<h2 id="eosc-interoperability-framework">EOSC Interoperability Framework</h2>
+<p>The EOSC Interoperability Framework <span class="citation" data-cites="aCye3KpE">[<a href="#ref-aCye3KpE" role="doc-biblioref">24</a>]</span> recommends:</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 42%" />
+<col style="width: 9%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Recommendation</th>
+<th>FDO</th>
+<th>Linked Data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Technical</td>
+<td>Open Specification</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Technical</td>
+<td>Common security&amp;privacy framework</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Technical</td>
+<td>Easy SLAs for service providers</td>
+<td>None</td>
+<td>None</td>
+</tr>
+<tr class="even">
+<td>Technical</td>
+<td>Access data in different formats</td>
+<td>None formalized, custom operations or relations</td>
+<td>Content-negotiation, <code>rel=alternate</code> relations</td>
+</tr>
+<tr class="odd">
+<td>Technical</td>
+<td>Coarse-grained/fine-grained search tools</td>
+<td>None</td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td>Technical</td>
+<td>Clear PID policy</td>
+<td>FDO requirements [], tends towards Handle system.</td>
+<td>Not required, different communities set policies</td>
+</tr>
+<tr class="odd">
+<td>Semantic</td>
+<td>Clear definitions for concepts/metadata/schemas</td>
+<td>FDO requirements[], not yet formalized</td>
+<td>Ontologies, SKOS, …</td>
+</tr>
+<tr class="even">
+<td>Semantic</td>
+<td>Semantic artefacts w/ open licenses</td>
+<td>All artefacts are PIDs w/ license required by kernel metadata?</td>
+<td>Open License is best practice for ontology publishing</td>
+</tr>
+<tr class="odd">
+<td>Semantic</td>
+<td>Documentation for each semantic artefact</td>
+<td>No direct rendering from FDO, no requirement for human-readable description</td>
+<td>Ontology rendering, content-negotiation</td>
+</tr>
+<tr class="even">
+<td>Semantic</td>
+<td>Repositories of artefacts</td>
+<td>Required, but not formalized</td>
+<td>Bioontologies, etc</td>
+</tr>
+<tr class="odd">
+<td>Semantic</td>
+<td>Repositories w/ clear governance</td>
+<td>Recommended</td>
+<td>Largely self-governed repositories, if well-established may have clear governance.</td>
+</tr>
+<tr class="even">
+<td>Semantic</td>
+<td>Minimal metadata model for federated discovery</td>
+<td>Kernel metadata</td>
+<td>DCAT, ++</td>
+</tr>
+<tr class="odd">
+<td>Semantic</td>
+<td>Crosswalks from minimal metadata model</td>
+<td>Can be part of definition?</td>
+<td>Several crosswalks</td>
+</tr>
+<tr class="even">
+<td>Semantic</td>
+<td>Extensibility options for diciplinary metadata</td>
+<td>Communities encouraged to establish own types</td>
+<td>Extensible by design, domain-specific metadata may be at different granularity</td>
+</tr>
+<tr class="odd">
+<td>Semantic</td>
+<td>Clear protocols/building blocks for federation/harvesting of artefact catalogues</td>
+<td>Collection types not yet defined</td>
+<td>SWORD, OAI-PMH</td>
+</tr>
+</tbody>
+</table>
 <h2 id="discussion-secdiscussion">Discussion {#sec@discussion}</h2>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
