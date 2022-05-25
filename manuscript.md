@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/28321c1cc2f620e956bdec6a3ced00cfffde330d/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/28321c1cc2f620e956bdec6a3ced00cfffde330d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/28321c1cc2f620e956bdec6a3ced00cfffde330d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/8988a3acb5117ea74f214040f95f63eee167664b/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/8988a3acb5117ea74f214040f95f63eee167664b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/8988a3acb5117ea74f214040f95f63eee167664b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/28321c1cc2f620e956bdec6a3ced00cfffde330d/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/8988a3acb5117ea74f214040f95f63eee167664b/))
 was automatically generated
-from [stain/2022-fdo-paper@28321c1](https://github.com/stain/2022-fdo-paper/tree/28321c1cc2f620e956bdec6a3ced00cfffde330d)
+from [stain/2022-fdo-paper@8988a3a](https://github.com/stain/2022-fdo-paper/tree/8988a3acb5117ea74f214040f95f63eee167664b)
 on May 25, 2022.
 </em></small>
 
@@ -386,7 +386,7 @@ Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019] 
 
 ## EOSC Interoperability Framework
 
-The EOSC Interoperability Framework [@doi:10.2777/620649] recommends:
+The EOSC Interoperability Framework [@doi:10.2777/620649] (...), and in section 3.6 recommends:
 
 | Layer | Recommendation | FDO | Linked Data | 
 | ----- | -------------- | --- | ----------- |
@@ -405,6 +405,24 @@ The EOSC Interoperability Framework [@doi:10.2777/620649] recommends:
 | Semantic | Crosswalks from minimal metadata model |  Can be part of definition?  |  Several crosswalks  |
 | Semantic | Extensibility options for diciplinary metadata |  Communities encouraged to establish own types  |  Extensible by design, domain-specific metadata may be at different granularity |
 | Semantic | Clear protocols/building blocks for federation/harvesting of artefact catalogues |  Collection types not yet defined  |  SWORD, OAI-PMH  | 
+| Organisational | Interoperability-focused rules of participation recommendations |  |  |
+| Organisational | Usage recommendations of standardised data formats | None  |  | 
+| Organisational | Usage recommendations of vocabularies | None |  [RDMKit](https://rdmkit.elixir-europe.org/metadata_management) | 
+| Organisational | Usage recommendations of metadata. | None |  RO-Crate, Bioschemas | 
+| Organisational | Management of permanent organization names/functions  |  Handle owner, but unclear contact. Contact info in DOIP service provider  | ROR. DCAT contacts.  | 
+| Legal | Standardised human and machine-readable licenses  |  None  |  SPDX  | 
+| Legal | Permissive licenses for metadata (CC0, CC-BY-4.0) |  Undefined  |  Both CC0, CC-BY-4.0 common, e.g. in DCAT.  | 
+| Legal | Different licenses for different parts |  Each part as separate FDO can have separate license.  |  DCAT, RO-Crate  | 
+| Legal | Mark expired/inexistent copyright | Undefined  |  Unclear, semantics assume copyright valid  | 
+| Legal | Mark orphaned data |  Thumbstone for deleted data, but no owner means FDO disappears  |    | 
+| Legal | List recommended licenses |  Undefined  |  Best practice recommendations  | 
+| Legal | Track license evolution for dataset |  Undefined  |  Versioning with PAV/PROV/DCAT   | 
+| Legal | Policy/guidance for patent/trade secrets violation | Undefined |  Undefined, legal owner may be specified | 
+| Legal | GDPR compliance for personal data |  |  |
+| Legal | Restrict access/use if legally required | By transport protocol (undefined by FDO/DOIP) |  Diverging approaches, typically landing pages w/ auth&auth or click-thru  |
+| Legal | Harmonized terms-of-use |  Undefined |  Undefined | 
+| Legal | Alignment between EOSC and national legislation | Not applicable | Not applicable | 
+
 
 
 ## Discussion {#sec@discussion}
