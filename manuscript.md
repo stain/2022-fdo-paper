@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/b4f3adb1ed01b1a9ec11f6987148cf0b1c173301/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/b4f3adb1ed01b1a9ec11f6987148cf0b1c173301/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/b4f3adb1ed01b1a9ec11f6987148cf0b1c173301/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/bf0080dd469aa553ca3e6ed3c3bf22e24131fa48/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/bf0080dd469aa553ca3e6ed3c3bf22e24131fa48/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/bf0080dd469aa553ca3e6ed3c3bf22e24131fa48/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/b4f3adb1ed01b1a9ec11f6987148cf0b1c173301/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/bf0080dd469aa553ca3e6ed3c3bf22e24131fa48/))
 was automatically generated
-from [stain/2022-fdo-paper@b4f3adb](https://github.com/stain/2022-fdo-paper/tree/b4f3adb1ed01b1a9ec11f6987148cf0b1c173301)
+from [stain/2022-fdo-paper@bf0080d](https://github.com/stain/2022-fdo-paper/tree/bf0080dd469aa553ca3e6ed3c3bf22e24131fa48)
 on May 26, 2022.
 </em></small>
 
@@ -128,7 +128,7 @@ on May 26, 2022.
 ## Background {#sec:background}
 
 
-
+**TODO** Why we are examining FDO. Proposed by EOSC etc. Why we want to compare with Linked Data.
 
 ::: {.breakout}
 
@@ -184,7 +184,7 @@ From this it becomes apparant that there is a potentially large overlap between 
 
 
 
-### Linked Data {#sec:ld}
+### From the Semantic Web to Linked Data {#sec:ld}
 
 In order to describe _Linked Data_ as it is used today, we'll start with an (opinionated) briefing of the evolution of its foundation, the _Semantic Web_.
 
@@ -248,8 +248,7 @@ A valid concern is that the Semantic Web research community has still not fully 
 
 In this section we facilitate a couple of existing frameworks for comparing the FDO and Web approach.
 
-
-
+**TODO: Why these particular frameworks?**
 
 
 ### Considering FDO/Web as interoperability framework for Fast Data {#sec:interoperability-compare}
@@ -384,9 +383,60 @@ Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019] 
 {#tbl:fair-fdos}
 
 
+**TODO**: Redo above, using RDA's FAIR Data Maturity Model's more concrete requirements [@doi:10.15497/RDA0050]:
+
+|FAIR | ID | Indicator | Priority |
+| -- | --- | --------------- | --- |
+| F1 | RDA-F1-01M | Metadata is identified by a persistent identifier | ⬤⬤⬤ Essential |
+| F1 | RDA-F1-01D | Data is identified by a persistent identifier | ⬤⬤⬤ Essential |
+| F1 | RDA-F1-02M | Metadata is identified by a globally unique identifier | ⬤⬤⬤ Essential |
+| F1 | RDA-F1-02D | Data is identified by a globally unique identifier | ⬤⬤⬤ Essential |
+| F2 | RDA-F2-01M | Rich metadata is provided to allow discovery | ⬤⬤⬤ Essential |
+| F3 | RDA-F3-01M | Metadata includes the identifier for the data | ⬤⬤⬤ Essential |
+| F4 | RDA-F4-01M | Metadata is offered in such a way that it can be harvested and indexed | ⬤⬤⬤ Essential |
+| A1 | RDA-A1-01M | Metadata contains information to enable the user to get access to the data | ⬤⬤ Important |
+| A1 | RDA-A1-02M | Metadata can be accessed manually (i.e. with human intervention) | ⬤⬤⬤ Essential |
+| A1 | RDA-A1-02D | Data can be accessed manually (i.e. with human intervention) | ⬤⬤⬤ Essential |
+| A1 | RDA-A1-03M | Metadata identifier resolves to a metadata record | ⬤⬤⬤ Essential |
+| A1 | RDA-A1-03D | Data identifier resolves to a digital object | ⬤⬤⬤ Essential |
+| A1 | RDA-A1-04M | Metadata is accessed through standardised protocol | ⬤⬤⬤ Essential |
+| A1 | RDA-A1-04D | Data is accessible through standardised protocol | ⬤⬤⬤ Essential |
+| A1 | RDA-A1-05D | Data can be accessed automatically (i.e. by a computer program) | ⬤⬤ Important |
+| A1.1 | RDA-A1.1-01M | Metadata is accessible through a free access protocol | ⬤⬤⬤ Essential |
+| A1.1 | RDA-A1.1-01D | Data is accessible through a free access protocol | ⬤⬤ Important |
+| A1.2 | RDA-A1.2-01D | Data is accessible through an access protocol that supports authentication and authorisation | ⬤ Useful |
+| A2 | RDA-A2-01M | Metadata is guaranteed to remain available after data is no longer available | ⬤⬤⬤ Essential |
+| I1 | RDA-I1-01M | Metadata uses knowledge representation expressed in standardised format | ⬤⬤ Important |
+| I1 | RDA-I1-01D | Data uses knowledge representation expressed in standardised format | ⬤⬤ Important |
+| I1 | RDA-I1-02M | Metadata uses machine-understandable knowledge representation | ⬤⬤ Important |
+| I1 | RDA-I1-02D | Data uses machine-understandable knowledge representation | ⬤⬤ Important |
+| I2 | RDA-I2-01M | Metadata uses FAIR-compliant vocabularies | ⬤⬤ Important |
+| I2 | RDA-I2-01D | Data uses FAIR-compliant vocabularies | ⬤ Useful |
+| I3 | RDA-I3-01M | Metadata includes references to other metadata | ⬤⬤ Important |
+| I3 | RDA-I3-01D | Data includes references to other data | ⬤ Useful |
+| I3 | RDA-I3-02M | Metadata includes references to other data |  |
+| I3 | RDA-I3-02D | Data includes qualified references to other data | ⬤ Useful |
+| I3 | RDA-I3-03M | Metadata includes qualified references to other metadata | ⬤⬤ Important |
+| I3 | RDA-I3-04M | Metadata include qualified references to other data | ⬤ Useful |
+| R1 | RDA-R1-01M | Plurality of accurate and relevant attributes are provided to allow reuse | ⬤⬤⬤ Essential |
+| R1.1 | RDA-R1.1-01M | Metadata includes information about the licence under which the data can be reused | ⬤⬤⬤ Essential |
+| R1.1 | RDA-R1.1-02M | Metadata refers to a standard reuse licence | ⬤⬤ Important |
+| R1.1 | RDA-R1.1-03M | Metadata refers to a machine-understandable reuse licence | ⬤⬤ Important |
+| R1.2 | RDA-R1.2-01M | Metadata includes provenance information according to community-specific standards | ⬤⬤ Important |
+| R1.2 | RDA-R1.2-02M | Metadata includes provenance information according to a cross-community language | ⬤ Useful |
+| R1.3 | RDA-R1.3-01M | Metadata complies with a community standard | ⬤⬤⬤ Essential |
+| R1.3 | RDA-R1.3-01D | Data complies with a community standard | ⬤⬤⬤ Essential |
+| R1.3 | RDA-R1.3-02M | Metadata is expressed in compliance with a machine-understandable community standard | ⬤⬤⬤ Essential |
+| R1.3 | RDA-R1.3-02D | Data is expressed in compliance with a machine-understandable community standard | ⬤⬤ Important |
+
+
 ## EOSC Interoperability Framework
 
+**TODO**: Introduce EOSC IF
+
 The EOSC Interoperability Framework [@doi:10.2777/620649] (...), and in section 3.6 recommends:
+
+**TODO: Draft table**
 
 | Layer | Recommendation | FDO         | Linked Data | 
 | --- | ----------- | ----------- | ----------- |
@@ -425,9 +475,9 @@ The EOSC Interoperability Framework [@doi:10.2777/620649] (...), and in section 
 
 
 
-## Discussion {#sec@discussion}
+## Discussion {#sec:discussion}
 
-
+**TODO**
 
 ## References {.page_break_before}
 

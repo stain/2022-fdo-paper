@@ -27,7 +27,7 @@ CSV
 CWFP
 Datacite
 dataset
-datasets
+Datasets
 DCAT
 dereferenceable
 diciplinary
@@ -44,7 +44,7 @@ FDOR
 FDO’s
 FDOs
 findable
-FOAF
+foaf
 Freetext
 GDPR
 Goble
@@ -79,12 +79,12 @@ LD
 LDP
 LOD
 maintaned
-metamodel
+Metamodel
 Microdata
 microformats
 Micropub
 middleware
-modularity
+Modularity
 namespaces
 navigatable
 NIST
@@ -124,7 +124,7 @@ resiliant
 ResourceSync
 RO
 ROR
-Scalability
+scalability
 scalable
 schemas
 seemlessly
@@ -147,6 +147,7 @@ TCP
 testbeds
 Thumbstone
 TLS
+TODO
 UDP
 URI
 utillized
