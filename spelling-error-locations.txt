@@ -1,3 +1,13 @@
+content/01.abstract.md:3:abstrat
+content/01.abstract.md:3:TODO
+content/01.abstract.md:5:EOSC
+content/01.abstract.md:5:Worthwile
+content/01.abstract.md:9:FDO
+content/01.abstract.md:12:FDO
+content/01.abstract.md:13:Middleware
+content/01.abstract.md:15:FDO
+content/01.abstract.md:17:FDO
+content/01.abstract.md:17:FDO
 content/10.background.md:4:EOSC
 content/10.background.md:4:FDO
 content/10.background.md:4:TODO

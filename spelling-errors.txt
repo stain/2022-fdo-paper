@@ -1,3 +1,4 @@
+abstrat
 actionability
 API’s
 APIs
@@ -27,7 +28,7 @@ CSV
 CWFP
 Datacite
 dataset
-datasets
+Datasets
 DCAT
 dereferenceable
 diciplinary
@@ -38,11 +39,11 @@ Ecma
 EMEA
 EOSC
 Extensibility
-FDO
+fdo
 FDOF
 FDOR
 FDO’s
-FDOs
+fdos
 findable
 foaf
 Freetext
@@ -84,7 +85,7 @@ Microdata
 microformats
 Micropub
 middleware
-Modularity
+modularity
 namespaces
 navigatable
 NIST
@@ -92,7 +93,7 @@ NL
 OAI
 OBO
 occassionally
-ontologies
+Ontologies
 OpenAPI
 OpenLink
 OSI
@@ -114,7 +115,7 @@ Rcord
 RDA’s
 RDF
 RDFa
-RDFLib
+rdflib
 RDFS
 RDMKit
 redirections
@@ -144,7 +145,7 @@ subtypes
 syntaxes
 TCP
 testbeds
-Thumbstone
+thumbstone
 TLS
 TODO
 UDP
@@ -153,4 +154,5 @@ utillized
 WD
 WebDAV
 WHATWG
+Worthwile
 WSDL
