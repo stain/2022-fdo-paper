@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/fa75ede80482920ac929859145235f42ea76a29c/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/fa75ede80482920ac929859145235f42ea76a29c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/fa75ede80482920ac929859145235f42ea76a29c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/1b1bf51908f49ac6bbfea5265f7ec0582241a57c/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1b1bf51908f49ac6bbfea5265f7ec0582241a57c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1b1bf51908f49ac6bbfea5265f7ec0582241a57c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/fa75ede80482920ac929859145235f42ea76a29c/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/1b1bf51908f49ac6bbfea5265f7ec0582241a57c/))
 was automatically generated
-from [stain/2022-fdo-paper@fa75ede](https://github.com/stain/2022-fdo-paper/tree/fa75ede80482920ac929859145235f42ea76a29c)
+from [stain/2022-fdo-paper@1b1bf51](https://github.com/stain/2022-fdo-paper/tree/1b1bf51908f49ac6bbfea5265f7ec0582241a57c)
 on May 26, 2022.
 </em></small>
 
@@ -406,7 +406,7 @@ Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019] 
 {#tbl:fair-fdos}
 
 
-**TODO**: Redo above, using RDA's FAIR Data Maturity Model's more concrete requirements [@doi:10.15497/RDA0050; @doi:10.5334/dsj-2020-041]:
+**TODO**: Redo above table, using RDA's FAIR Data Maturity Model [@doi:10.15497/rda00050; @doi:10.5334/dsj-2020-041] which has more concrete requirements shown below:
 
 |FAIR | ID | Indicator | Priority |
 | -- | --- | --------------- | --- |
@@ -452,6 +452,8 @@ Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019] 
 | R1.3 | RDA-R1.3-02M | Metadata is expressed in compliance with a machine-understandable community standard | ⬤⬤⬤ Essential |
 | R1.3 | RDA-R1.3-02D | Data is expressed in compliance with a machine-understandable community standard | ⬤⬤ Important |
 
+Table: RDA's FAIR Data Maturity Model [@doi:10.15497/rda00050; @doi:10.5334/dsj-2020-041]
+{#tbl:fair-data-maturity-model}
 
 ## EOSC Interoperability Framework
 
