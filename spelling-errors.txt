@@ -22,7 +22,7 @@ CDN
 CDNs
 centric
 consumptions
-Cordra
+CORDRA
 COVID
 CSV
 CWFP
@@ -84,8 +84,8 @@ Metamodel
 Microdata
 microformats
 Micropub
-middleware
-modularity
+Middleware
+Modularity
 namespaces
 navigatable
 NIST
@@ -93,7 +93,7 @@ NL
 OAI
 OBO
 occassionally
-Ontologies
+ontologies
 OpenAPI
 OpenLink
 OSI
@@ -115,7 +115,7 @@ Rcord
 RDA’s
 RDF
 RDFa
-rdflib
+RDFLib
 RDFS
 RDMKit
 redirections
@@ -124,7 +124,7 @@ resiliant
 ResourceSync
 RO
 ROR
-scalability
+Scalability
 scalable
 schemas
 seemlessly
@@ -145,7 +145,7 @@ subtypes
 syntaxes
 TCP
 testbeds
-thumbstone
+Thumbstone
 TLS
 TODO
 UDP

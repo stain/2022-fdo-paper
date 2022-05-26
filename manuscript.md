@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/7c72523c72c05f3b078cbf892184826340ac4bf2/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7c72523c72c05f3b078cbf892184826340ac4bf2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7c72523c72c05f3b078cbf892184826340ac4bf2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/fa75ede80482920ac929859145235f42ea76a29c/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/fa75ede80482920ac929859145235f42ea76a29c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/fa75ede80482920ac929859145235f42ea76a29c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -57,6 +57,7 @@ header-includes: |-
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
 bibliography:
+- content/manual-references-manubot.yaml
 - content/manual-references-sciwheel.bib
 - content/manual-references-sciwheel.yaml
 - content/manual-references.bib
@@ -73,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/7c72523c72c05f3b078cbf892184826340ac4bf2/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/fa75ede80482920ac929859145235f42ea76a29c/))
 was automatically generated
-from [stain/2022-fdo-paper@7c72523](https://github.com/stain/2022-fdo-paper/tree/7c72523c72c05f3b078cbf892184826340ac4bf2)
+from [stain/2022-fdo-paper@fa75ede](https://github.com/stain/2022-fdo-paper/tree/fa75ede80482920ac929859145235f42ea76a29c)
 on May 26, 2022.
 </em></small>
 
@@ -126,7 +127,8 @@ on May 26, 2022.
 
 FAIR Digital Object is an emerging concept from EOSC. This is important. Worthwile to understand how semantic technologies and semantic web vision relate to this emerging landscape.  Here we do this systematically by comparing the technologies introduced under the banner of FAIR digital Object and Semantic Web.
 
-What is the point of the paper?
+What is the message of this paper?
+
 1. These are the overlaps
 2. This is what FDO is requiring but not commonly deployed
 3. DOI indirection is emphasized. It is used in SW, but the idea for stability. Embrace it! 
