@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-05-25'
+date-meta: '2022-05-26'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-05-25" />
-  <meta name="citation_publication_date" content="2022-05-25" />
+  <meta name="dc.date" content="2022-05-26" />
+  <meta name="citation_publication_date" content="2022-05-26" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/8988a3acb5117ea74f214040f95f63eee167664b/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/8988a3acb5117ea74f214040f95f63eee167664b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/8988a3acb5117ea74f214040f95f63eee167664b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/b4f3adb1ed01b1a9ec11f6987148cf0b1c173301/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/b4f3adb1ed01b1a9ec11f6987148cf0b1c173301/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/b4f3adb1ed01b1a9ec11f6987148cf0b1c173301/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,10 +73,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/8988a3acb5117ea74f214040f95f63eee167664b/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/b4f3adb1ed01b1a9ec11f6987148cf0b1c173301/))
 was automatically generated
-from [stain/2022-fdo-paper@8988a3a](https://github.com/stain/2022-fdo-paper/tree/8988a3acb5117ea74f214040f95f63eee167664b)
-on May 25, 2022.
+from [stain/2022-fdo-paper@b4f3adb](https://github.com/stain/2022-fdo-paper/tree/b4f3adb1ed01b1a9ec11f6987148cf0b1c173301)
+on May 26, 2022.
 </em></small>
 
 ## Authors
@@ -388,8 +388,8 @@ Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019] 
 
 The EOSC Interoperability Framework [@doi:10.2777/620649] (...), and in section 3.6 recommends:
 
-| Layer | Recommendation | FDO | Linked Data | 
-| ----- | -------------- | --- | ----------- |
+| Layer | Recommendation | FDO         | Linked Data | 
+| --- | ----------- | ----------- | ----------- |
 | Technical | Open Specification |  |   |
 | Technical | Common security&privacy framework |  |  |
 | Technical | Easy SLAs for service providers | None | None |
