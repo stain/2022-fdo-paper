@@ -671,7 +671,6 @@ content/24.fair-compare.md:21:DOIP
 content/24.fair-compare.md:21:DOIP
 content/24.fair-compare.md:21:FDOs
 content/24.fair-compare.md:21:LDP
-content/24.fair-compare.md:21:øf
 content/24.fair-compare.md:22:fdos
 content/24.fair-compare.md:25:RDA's
 content/24.fair-compare.md:25:TODO

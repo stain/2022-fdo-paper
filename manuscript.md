@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/7a81a6fe20b79d1f03888a53ae187bb17e42b4a1/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7a81a6fe20b79d1f03888a53ae187bb17e42b4a1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7a81a6fe20b79d1f03888a53ae187bb17e42b4a1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/cda751891c04874d2e263761eede91a902061402/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/cda751891c04874d2e263761eede91a902061402/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/cda751891c04874d2e263761eede91a902061402/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/7a81a6fe20b79d1f03888a53ae187bb17e42b4a1/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/cda751891c04874d2e263761eede91a902061402/))
 was automatically generated
-from [stain/2022-fdo-paper@7a81a6f](https://github.com/stain/2022-fdo-paper/tree/7a81a6fe20b79d1f03888a53ae187bb17e42b4a1)
+from [stain/2022-fdo-paper@cda7518](https://github.com/stain/2022-fdo-paper/tree/cda751891c04874d2e263761eede91a902061402)
 on May 26, 2022.
 </em></small>
 
@@ -379,7 +379,7 @@ As for the aspect of _Performance_, it is interesting to note that while the fir
 | **R1.2**: _detailed provenance_ |  Unspecified (some CORDRA types add `getProvenance` methods). PID Kernel attributes? | Unspecified  | W3C PROV-O, PAV |
 | **R1.3**: _follows community standards_ | Recommended (FDOF4, FDOF10) |  Unspecified |  Common practice, specially in bioinformatics, e.g. BioSchemas [@{https://bioschemas.org/}], BioPortal [@{https://bioportal.bioontology.org/ontologies}] |
 
-Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019] as DOIP [@handle:0.DOIP/DOIPV2.0], Linked Data Platform (LDP) [@{https://fairdigitalobjectframework.org/}], with examples øf existing Linked Data practices.
+Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019] as DOIP [@handle:0.DOIP/DOIPV2.0], Linked Data Platform (LDP) [@{https://fairdigitalobjectframework.org/}], with examples of existing Linked Data practices.
 {#tbl:fair-fdos}
 
 

@@ -21,7 +21,7 @@ CDN
 CDNs
 centric
 consumptions
-CORDRA
+Cordra
 COVID
 CSV
 CWFP
@@ -42,9 +42,9 @@ FDO
 FDOF
 FDOR
 FDO’s
-fdos
+FDOs
 findable
-FOAF
+foaf
 Freetext
 GDPR
 Goble
@@ -79,7 +79,7 @@ LD
 LDP
 LOD
 maintaned
-metamodel
+Metamodel
 Microdata
 microformats
 Micropub
@@ -92,7 +92,6 @@ NL
 OAI
 OBO
 occassionally
-øf
 ontologies
 OpenAPI
 OpenLink
@@ -145,7 +144,7 @@ subtypes
 syntaxes
 TCP
 testbeds
-thumbstone
+Thumbstone
 TLS
 TODO
 UDP
