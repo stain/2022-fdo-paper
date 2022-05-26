@@ -27,7 +27,7 @@ CSV
 CWFP
 Datacite
 dataset
-Datasets
+datasets
 DCAT
 dereferenceable
 diciplinary
@@ -38,13 +38,13 @@ Ecma
 EMEA
 EOSC
 Extensibility
-fdo
+FDO
 FDOF
 FDOR
 FDO’s
-FDOs
+fdos
 findable
-foaf
+FOAF
 Freetext
 GDPR
 Goble
@@ -79,7 +79,7 @@ LD
 LDP
 LOD
 maintaned
-Metamodel
+metamodel
 Microdata
 microformats
 Micropub
@@ -145,7 +145,7 @@ subtypes
 syntaxes
 TCP
 testbeds
-Thumbstone
+thumbstone
 TLS
 TODO
 UDP
