@@ -28,7 +28,7 @@ CSV
 CWFP
 Datacite
 dataset
-datasets
+Datasets
 DCAT
 dereferenceable
 diciplinary
@@ -39,7 +39,7 @@ Ecma
 EMEA
 EOSC
 Extensibility
-FDO
+fdo
 FDOF
 FDOR
 FDO’s
@@ -80,12 +80,12 @@ LD
 LDP
 LOD
 maintaned
-Metamodel
+metamodel
 Microdata
 microformats
 Micropub
-Middleware
-Modularity
+middleware
+modularity
 namespaces
 navigatable
 NIST
@@ -124,7 +124,7 @@ resiliant
 ResourceSync
 RO
 ROR
-Scalability
+scalability
 scalable
 schemas
 seemlessly

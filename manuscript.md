@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-05-26'
+date-meta: '2022-06-16'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-05-26" />
-  <meta name="citation_publication_date" content="2022-05-26" />
+  <meta name="dc.date" content="2022-06-16" />
+  <meta name="citation_publication_date" content="2022-06-16" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/1b1bf51908f49ac6bbfea5265f7ec0582241a57c/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1b1bf51908f49ac6bbfea5265f7ec0582241a57c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1b1bf51908f49ac6bbfea5265f7ec0582241a57c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/4d4b8e7d21d908e8c30a79e54341e27e960bf1b6/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/4d4b8e7d21d908e8c30a79e54341e27e960bf1b6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/4d4b8e7d21d908e8c30a79e54341e27e960bf1b6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,10 +74,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/1b1bf51908f49ac6bbfea5265f7ec0582241a57c/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/4d4b8e7d21d908e8c30a79e54341e27e960bf1b6/))
 was automatically generated
-from [stain/2022-fdo-paper@1b1bf51](https://github.com/stain/2022-fdo-paper/tree/1b1bf51908f49ac6bbfea5265f7ec0582241a57c)
-on May 26, 2022.
+from [stain/2022-fdo-paper@4d4b8e7](https://github.com/stain/2022-fdo-paper/tree/4d4b8e7d21d908e8c30a79e54341e27e960bf1b6)
+on June 16, 2022.
 </em></small>
 
 ## Authors
@@ -503,6 +503,17 @@ The EOSC Interoperability Framework [@doi:10.2777/620649] (...), and in section 
 ## Discussion {#sec:discussion}
 
 **TODO**
+
+### Random Notes
+
+(Likely to be deleted from paper)
+
+* <https://www.nist.gov/programs-projects/facilitating-adoption-fair-digital-object-framework-material-science>
+  - <https://github.com/usnistgov/mgi-json-schema/> 
+  - <https://pages.nist.gov/material-schema/>
+* <https://doi.org/20.5000.1025/ZZX7-CEFZ>
+  - <https://sandbox.dissco.tech/#objects/test/448aa5396edcee5940e4>
+  
 
 ## References {.page_break_before}
 

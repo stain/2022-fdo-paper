@@ -2218,7 +2218,7 @@
   {
     "publisher": "IGI Global",
     "issue": "3",
-    "abstract": "<jats:p>The term “Linked Data” refers to a set of best practices for publishing and connecting structured data on the Web. These best practices have been adopted by an increasing number of data providers over the last three years, leading to the creation of a global data space containing billions of assertions— the Web of Data. In this article, the authors present the concept and technical principles of Linked Data, and situate these within the broader context of related technological developments. They describe progress to date in publishing Linked Data on the Web, review applications that have been developed to exploit the Web of Data, and map out a research agenda for the Linked Data community as it moves forward.</jats:p>",
+    "abstract": "<p>The term “Linked Data” refers to a set of best practices for publishing and connecting structured data on the Web. These best practices have been adopted by an increasing number of data providers over the last three years, leading to the creation of a global data space containing billions of assertions— the Web of Data. In this article, the authors present the concept and technical principles of Linked Data, and situate these within the broader context of related technological developments. They describe progress to date in publishing Linked Data on the Web, review applications that have been developed to exploit the Web of Data, and map out a research agenda for the Linked Data community as it moves forward.</p>",
     "DOI": "10.4018/jswis.2009081901",
     "type": "article-journal",
     "page": "1-22",
@@ -2240,12 +2240,13 @@
       }
     ],
     "container-title": "International Journal on Semantic Web and Information Systems",
-    "language": "en",
+    "language": "ng",
     "issued": {
       "date-parts": [
         [
           2009,
-          7
+          7,
+          1
         ]
       ]
     },
@@ -2581,8 +2582,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2598,8 +2599,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2614,8 +2615,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2631,8 +2632,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2647,8 +2648,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2663,8 +2664,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2679,8 +2680,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2696,8 +2697,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2712,8 +2713,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2728,8 +2729,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2744,8 +2745,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2760,8 +2761,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2776,8 +2777,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2792,8 +2793,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2810,8 +2811,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2833,8 +2834,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2850,8 +2851,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2867,8 +2868,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2884,8 +2885,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2902,8 +2903,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2918,8 +2919,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2935,8 +2936,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2951,8 +2952,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2968,8 +2969,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -2986,8 +2987,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3012,8 +3013,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3029,8 +3030,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3045,8 +3046,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3062,8 +3063,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3078,8 +3079,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3089,14 +3090,14 @@
     "id": "j3SqQLBR",
     "type": "webpage",
     "abstract": "How many websites are using JSON-LD",
-    "title": "Usage Statistics of JSON-LD for Websites, May 2022",
+    "title": "Usage Statistics of JSON-LD for Websites, June 2022",
     "URL": "https://w3techs.com/technologies/details/da-jsonld",
     "accessed": {
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3111,8 +3112,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3127,8 +3128,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3143,8 +3144,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3169,8 +3170,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3185,8 +3186,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3215,8 +3216,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3231,8 +3232,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3247,8 +3248,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3263,8 +3264,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3279,8 +3280,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3296,8 +3297,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3312,8 +3313,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3329,8 +3330,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3346,8 +3347,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },
@@ -3362,8 +3363,8 @@
       "date-parts": [
         [
           "2022",
-          5,
-          26
+          6,
+          16
         ]
       ]
     },

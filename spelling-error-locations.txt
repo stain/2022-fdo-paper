@@ -731,3 +731,6 @@ content/24.fair-compare.md:113:DOIP
 content/24.fair-compare.md:113:FDO
 content/24.fair-compare.md:115:EOSC
 content/50.discussion.md:3:TODO
+content/60.notes.md:5:nist
+content/60.notes.md:6:json
+content/60.notes.md:7:nist
