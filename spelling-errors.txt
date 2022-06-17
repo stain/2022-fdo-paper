@@ -22,7 +22,7 @@ CDN
 CDNs
 centric
 consumptions
-CORDRA
+Cordra
 COVID
 CSV
 CWFP
@@ -33,7 +33,7 @@ DCAT
 dereferenceable
 diciplinary
 DNS
-DOIP
+doip
 eare
 Ecma
 EMEA
@@ -77,15 +77,15 @@ JSWS
 Kernal
 kickstarted
 LD
-LDP
+ldp
 LOD
 maintaned
-metamodel
+Metamodel
 Microdata
 microformats
 Micropub
 middleware
-modularity
+Modularity
 namespaces
 navigatable
 NIST
@@ -93,7 +93,7 @@ NL
 OAI
 OBO
 occassionally
-ontologies
+Ontologies
 OpenAPI
 OpenLink
 OSI

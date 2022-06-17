@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/d95f2f0f7cbd86f8eaf5ea20a305fb695e71be9f/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/d95f2f0f7cbd86f8eaf5ea20a305fb695e71be9f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/d95f2f0f7cbd86f8eaf5ea20a305fb695e71be9f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/1a7c5508fbedc963a6431bbe9fe16a53a6944198/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1a7c5508fbedc963a6431bbe9fe16a53a6944198/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1a7c5508fbedc963a6431bbe9fe16a53a6944198/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/d95f2f0f7cbd86f8eaf5ea20a305fb695e71be9f/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/1a7c5508fbedc963a6431bbe9fe16a53a6944198/))
 was automatically generated
-from [stain/2022-fdo-paper@d95f2f0](https://github.com/stain/2022-fdo-paper/tree/d95f2f0f7cbd86f8eaf5ea20a305fb695e71be9f)
+from [stain/2022-fdo-paper@1a7c550](https://github.com/stain/2022-fdo-paper/tree/1a7c5508fbedc963a6431bbe9fe16a53a6944198)
 on June 17, 2022.
 </em></small>
 
@@ -158,6 +158,34 @@ Emerging stack - how does it compare to what we've already done? What are the im
 #### Next steps for FDO {#sec:next-step-fdo}
 
 The FAIR Digital Object Forum [@{https://fairdo.org/}] working groups are preparing more detailed [requirement documents](https://docs.google.com/spreadsheets/d/1O1PTLmVWqjQgvJsIcPgaZJe9BntHZt8_QndEG0eRwUY/edit) setting out the path for realizing FDOs, named _FDO Recommendations_. As of 2022-05-13, these documents are in draft stage, undergoing internal review, meanwhile the FDO Forum is formalizing the process for maturing and making these recommendations open for public review. As these drafts clarify the future aims and focus of FAIR Digital Objects, we provide their brief summaries below:
+
+<!-- TODO 
+ 
+Update below for new FDO Proposed Recommendation (PR)s due 2022-07-30:
+https://docs.google.com/spreadsheets/d/1O1PTLmVWqjQgvJsIcPgaZJe9BntHZt8_QndEG0eRwUY/edit
+
+
+PED-DOIPEndorsement-1.0-20220608 
+https://docs.google.com/document/d/1me0L8C5yDe39cYP1Sxud4Y10hxhphOimLB-K-KgHQUk/edit
+
+PEN-FDO-Upload-1.0-20220608
+https://docs.google.com/document/d/1fDR5VHbVIa2AbLsBR58idrfn_Ib3x6Fk-_LJ4c_Ftt4/edit
+
+PR-TypingFDOs-2.0-20220608
+https://docs.google.com/document/d/1X0hcOVIqP7iYIJf9u-7x3RwcXK8ecsauy0FZg_6-Bg0/edit
+
+PR-Granularity-2.0-20220608
+https://docs.google.com/document/d/1u4bpbwW0-UH-jLJmCOUoww5iF78vSKm1CLeA3LA-_B8/edit
+
+PR-PIDProfileAttributes-2.0-20220608
+https://docs.google.com/document/d/1c2mZziq5pIPmLxMHLcYqlWrjYsc2ezGMXvp0E46iljo/edit
+
+PR-ConfigurationTypes-2.0-20220608
+https://docs.google.com/document/d/1ivvg3C_QWSO9PIQwkKT89xG4fBhNAs7_6b0Dz11EwDg/edit
+
+PR-MachineActionDef-2.0-20220611
+https://docs.google.com/document/d/1GHFPAUGpNvYaxctkx-CpvY1vKf_aGZpSlWGOWvyXSiQ/edit
+-->
 
 The **FDO Forum Document Standards** [@WD-DocProcessStd-1.1-20220129] documents the recommendation process within the forum, starting at _Working Draft_ (WD) status within the closed working group and later within the open forum, then _Proposed Recommendation_ (PR) published for public review, finalized as _FDO Forum Recommendation_ (REC) following any revisions. In addition, the forum may choose to _endorse_ existing third-party notes and specifications.
 
