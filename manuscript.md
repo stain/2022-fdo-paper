@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-06-16'
+date-meta: '2022-06-17'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-06-16" />
-  <meta name="citation_publication_date" content="2022-06-16" />
+  <meta name="dc.date" content="2022-06-17" />
+  <meta name="citation_publication_date" content="2022-06-17" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/4d4b8e7d21d908e8c30a79e54341e27e960bf1b6/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/4d4b8e7d21d908e8c30a79e54341e27e960bf1b6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/4d4b8e7d21d908e8c30a79e54341e27e960bf1b6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/d95f2f0f7cbd86f8eaf5ea20a305fb695e71be9f/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/d95f2f0f7cbd86f8eaf5ea20a305fb695e71be9f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/d95f2f0f7cbd86f8eaf5ea20a305fb695e71be9f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,10 +74,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/4d4b8e7d21d908e8c30a79e54341e27e960bf1b6/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/d95f2f0f7cbd86f8eaf5ea20a305fb695e71be9f/))
 was automatically generated
-from [stain/2022-fdo-paper@4d4b8e7](https://github.com/stain/2022-fdo-paper/tree/4d4b8e7d21d908e8c30a79e54341e27e960bf1b6)
-on June 16, 2022.
+from [stain/2022-fdo-paper@d95f2f0](https://github.com/stain/2022-fdo-paper/tree/d95f2f0f7cbd86f8eaf5ea20a305fb695e71be9f)
+on June 17, 2022.
 </em></small>
 
 ## Authors
@@ -408,51 +408,51 @@ Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019] 
 
 **TODO**: Redo above table, using RDA's FAIR Data Maturity Model [@doi:10.15497/rda00050; @doi:10.5334/dsj-2020-041] which has more concrete requirements shown below:
 
-|FAIR | ID | Indicator | Priority |
-| -- | --- | --------------- | --- |
-| F1 | RDA-F1-01M | Metadata is identified by a persistent identifier | ⬤⬤⬤ Essential |
-| F1 | RDA-F1-01D | Data is identified by a persistent identifier | ⬤⬤⬤ Essential |
-| F1 | RDA-F1-02M | Metadata is identified by a globally unique identifier | ⬤⬤⬤ Essential |
-| F1 | RDA-F1-02D | Data is identified by a globally unique identifier | ⬤⬤⬤ Essential |
-| F2 | RDA-F2-01M | Rich metadata is provided to allow discovery | ⬤⬤⬤ Essential |
-| F3 | RDA-F3-01M | Metadata includes the identifier for the data | ⬤⬤⬤ Essential |
-| F4 | RDA-F4-01M | Metadata is offered in such a way that it can be harvested and indexed | ⬤⬤⬤ Essential |
-| A1 | RDA-A1-01M | Metadata contains information to enable the user to get access to the data | ⬤⬤ Important |
-| A1 | RDA-A1-02M | Metadata can be accessed manually (i.e. with human intervention) | ⬤⬤⬤ Essential |
-| A1 | RDA-A1-02D | Data can be accessed manually (i.e. with human intervention) | ⬤⬤⬤ Essential |
-| A1 | RDA-A1-03M | Metadata identifier resolves to a metadata record | ⬤⬤⬤ Essential |
-| A1 | RDA-A1-03D | Data identifier resolves to a digital object | ⬤⬤⬤ Essential |
-| A1 | RDA-A1-04M | Metadata is accessed through standardised protocol | ⬤⬤⬤ Essential |
-| A1 | RDA-A1-04D | Data is accessible through standardised protocol | ⬤⬤⬤ Essential |
-| A1 | RDA-A1-05D | Data can be accessed automatically (i.e. by a computer program) | ⬤⬤ Important |
-| A1.1 | RDA-A1.1-01M | Metadata is accessible through a free access protocol | ⬤⬤⬤ Essential |
-| A1.1 | RDA-A1.1-01D | Data is accessible through a free access protocol | ⬤⬤ Important |
-| A1.2 | RDA-A1.2-01D | Data is accessible through an access protocol that supports authentication and authorisation | ⬤ Useful |
-| A2 | RDA-A2-01M | Metadata is guaranteed to remain available after data is no longer available | ⬤⬤⬤ Essential |
-| I1 | RDA-I1-01M | Metadata uses knowledge representation expressed in standardised format | ⬤⬤ Important |
-| I1 | RDA-I1-01D | Data uses knowledge representation expressed in standardised format | ⬤⬤ Important |
-| I1 | RDA-I1-02M | Metadata uses machine-understandable knowledge representation | ⬤⬤ Important |
-| I1 | RDA-I1-02D | Data uses machine-understandable knowledge representation | ⬤⬤ Important |
-| I2 | RDA-I2-01M | Metadata uses FAIR-compliant vocabularies | ⬤⬤ Important |
-| I2 | RDA-I2-01D | Data uses FAIR-compliant vocabularies | ⬤ Useful |
-| I3 | RDA-I3-01M | Metadata includes references to other metadata | ⬤⬤ Important |
-| I3 | RDA-I3-01D | Data includes references to other data | ⬤ Useful |
-| I3 | RDA-I3-02M | Metadata includes references to other data |  |
-| I3 | RDA-I3-02D | Data includes qualified references to other data | ⬤ Useful |
-| I3 | RDA-I3-03M | Metadata includes qualified references to other metadata | ⬤⬤ Important |
-| I3 | RDA-I3-04M | Metadata include qualified references to other data | ⬤ Useful |
-| R1 | RDA-R1-01M | Plurality of accurate and relevant attributes are provided to allow reuse | ⬤⬤⬤ Essential |
-| R1.1 | RDA-R1.1-01M | Metadata includes information about the licence under which the data can be reused | ⬤⬤⬤ Essential |
-| R1.1 | RDA-R1.1-02M | Metadata refers to a standard reuse licence | ⬤⬤ Important |
-| R1.1 | RDA-R1.1-03M | Metadata refers to a machine-understandable reuse licence | ⬤⬤ Important |
-| R1.2 | RDA-R1.2-01M | Metadata includes provenance information according to community-specific standards | ⬤⬤ Important |
-| R1.2 | RDA-R1.2-02M | Metadata includes provenance information according to a cross-community language | ⬤ Useful |
-| R1.3 | RDA-R1.3-01M | Metadata complies with a community standard | ⬤⬤⬤ Essential |
-| R1.3 | RDA-R1.3-01D | Data complies with a community standard | ⬤⬤⬤ Essential |
-| R1.3 | RDA-R1.3-02M | Metadata is expressed in compliance with a machine-understandable community standard | ⬤⬤⬤ Essential |
-| R1.3 | RDA-R1.3-02D | Data is expressed in compliance with a machine-understandable community standard | ⬤⬤ Important |
+|FAIR ID | Indicator | Priority  | FDO guideline |  FDO/DOIP | FDO/LDP | Linked Data examples |
+|:---|:---------------|:---:|:----:|:--------:|:-------:|:--------------------:|
+| RDA-F1-01M | Metadata is identified by a persistent identifier | ⬤⬤⬤ |  FDOR4 | Optional _Metadata FDO_ w/separate PID | Content-negotiation to URL, not required to be PID | Metadata typically don't have own PID | 
+| RDA-F1-01D | Data is identified by a persistent identifier | ⬤⬤⬤ |  ? | PIDs required (FDOF1). Handle, DOI. |  FDOF-IR (Identifier Record). PID can be any URI?  |  "Cool" URIs [@{https://www.w3.org/Provider/Style/URI},{https://www.w3.org/TR/cooluris/}], PURL services incl. `purl.org`, `w3id.org`  | 
+| RDA-F1-02M | Metadata is identified by a globally unique identifier | ⬤⬤⬤ |  FDOR4 | Optional _Metadata FDO_ | Content-negotiation to URL |  Not required, content-negotiation can redirect to URL or `Content-Location`. FAIR Signposting. |
+| RDA-F1-02D | Data is identified by a globally unique identifier | ⬤⬤⬤ |  ? | All FDOs have PIDs (FDOR1), DOIP uses Handle system | FDOF-IR (Identifier Record) | Always accessed by URL |
+| RDA-F2-01M | Rich metadata is provided to allow discovery | ⬤⬤⬤ | ? |  FDO has key-value metadata. Unclear how to link to additional metadata.  |  FDOF-IR links to multiple metadata records |  RDF-based metadata by content negotiation or FAIR Signposting. Embedded in landing page (RDFa).  |  
+| RDA-F3-01M | Metadata includes the identifier for the data | ⬤⬤⬤ |  ? | `id` and `type` are required metadata elements PIDs, also implicit as requests must use PID | PID only required in FDOF-IR record. | PID inclusion typical, but often inconsistent (e.g. `www.example.com` vs `example.com`) or missing (use of `<>` as _this_ subject) | 
+| RDA-F4-01M | Metadata is offered in such a way that it can be harvested and indexed | ⬤⬤⬤ |  ?fdo | ?doip | ?ldp | ?ld |
+| RDA-A1-01M | Metadata contains information to enable the user to get access to the data | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-A1-02M | Metadata can be accessed manually (i.e. with human intervention) | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
+| RDA-A1-02D | Data can be accessed manually (i.e. with human intervention) | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
+| RDA-A1-03M | Metadata identifier resolves to a metadata record | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
+| RDA-A1-03D | Data identifier resolves to a digital object | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
+| RDA-A1-04M | Metadata is accessed through standardised protocol | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
+| RDA-A1-04D | Data is accessible through standardised protocol | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
+| RDA-A1-05D | Data can be accessed automatically (i.e. by a computer program) | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-A1.1-01M | Metadata is accessible through a free access protocol | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
+| RDA-A1.1-01D | Data is accessible through a free access protocol | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-A1.2-01D | Data is accessible through an access protocol that supports authentication and authorisation | ⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-A2-01M | Metadata is guaranteed to remain available after data is no longer available | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I1-01M | Metadata uses knowledge representation expressed in standardised format | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I1-01D | Data uses knowledge representation expressed in standardised format | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I1-02M | Metadata uses machine-understandable knowledge representation | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I1-02D | Data uses machine-understandable knowledge representation | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I2-01M | Metadata uses FAIR-compliant vocabularies | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I2-01D | Data uses FAIR-compliant vocabularies | ⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I3-01M | Metadata includes references to other metadata | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I3-01D | Data includes references to other data | ⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I3-02M | Metadata includes references to other data | ⬤ | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I3-02D | Data includes qualified references to other data | ⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I3-03M | Metadata includes qualified references to other metadata | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I3-04M | Metadata include qualified references to other data | ⬤  |
+| RDA-R1-01M | Plurality of accurate and relevant attributes are provided to allow reuse | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
+| RDA-R1.1-01M | Metadata includes information about the licence under which the data can be reused | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
+| RDA-R1.1-02M | Metadata refers to a standard reuse licence | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-R1.1-03M | Metadata refers to a machine-understandable reuse licence | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-R1.2-01M | Metadata includes provenance information according to community-specific standards | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-R1.2-02M | Metadata includes provenance information according to a cross-community language | ⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-R1.3-01M | Metadata complies with a community standard | ⬤⬤⬤ |  ?fdo | ?doip | ?ldp | ?ld |
+| RDA-R1.3-01D | Data complies with a community standard | ⬤⬤⬤ | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-R1.3-02M | Metadata is expressed in compliance with a machine-understandable community standard | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
+| RDA-R1.3-02D | Data is expressed in compliance with a machine-understandable community standard | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
 
-Table: RDA's FAIR Data Maturity Model [@doi:10.15497/rda00050; @doi:10.5334/dsj-2020-041]
+Table: Assessing RDA's FAIR Data Maturity Model [@doi:10.15497/rda00050; @doi:10.5334/dsj-2020-041] (first 3 columns) against the FDO guidelines [@bonino_2019], FDO implemented as DOIP [@handle:0.DOIP/DOIPV2.0], Linked Data Platform [@{https://fairdigitalobjectframework.org/}] and Linked Data practices. Priorities from [@doi:10.15497/rda00050]: ⬤ Useful, ⬤⬤ Important, ⬤⬤⬤ Essential.
 {#tbl:fair-data-maturity-model}
 
 ## EOSC Interoperability Framework

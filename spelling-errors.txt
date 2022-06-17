@@ -22,7 +22,7 @@ CDN
 CDNs
 centric
 consumptions
-Cordra
+CORDRA
 COVID
 CSV
 CWFP
@@ -39,13 +39,13 @@ Ecma
 EMEA
 EOSC
 Extensibility
-fdo
+FDO
 FDOF
 FDOR
 FDO’s
 FDOs
 findable
-FOAF
+foaf
 Freetext
 GDPR
 Goble
