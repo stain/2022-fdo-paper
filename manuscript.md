@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-06-17'
+date-meta: '2022-06-20'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-06-17" />
-  <meta name="citation_publication_date" content="2022-06-17" />
+  <meta name="dc.date" content="2022-06-20" />
+  <meta name="citation_publication_date" content="2022-06-20" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/1a7c5508fbedc963a6431bbe9fe16a53a6944198/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1a7c5508fbedc963a6431bbe9fe16a53a6944198/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1a7c5508fbedc963a6431bbe9fe16a53a6944198/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/0bd79b2257106624d17557ccce031fc5c0487c6e/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/0bd79b2257106624d17557ccce031fc5c0487c6e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/0bd79b2257106624d17557ccce031fc5c0487c6e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,10 +74,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/1a7c5508fbedc963a6431bbe9fe16a53a6944198/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/0bd79b2257106624d17557ccce031fc5c0487c6e/))
 was automatically generated
-from [stain/2022-fdo-paper@1a7c550](https://github.com/stain/2022-fdo-paper/tree/1a7c5508fbedc963a6431bbe9fe16a53a6944198)
-on June 17, 2022.
+from [stain/2022-fdo-paper@0bd79b2](https://github.com/stain/2022-fdo-paper/tree/0bd79b2257106624d17557ccce031fc5c0487c6e)
+on June 20, 2022.
 </em></small>
 
 ## Authors
@@ -93,7 +93,7 @@ on June 17, 2022.
     [soilandreyes](https://twitter.com/soilandreyes)<br>
   <small>
      Department of Computer Science, The University of Manchester, UK; Informatics Institute, Faculty of Science, University of Amsterdam, NL
-     · Funded by [BioExcel-2](https://bioexcel.eu/) (European Commission [H2020-INFRAEDI-2018-1 823830](https://cordis.europa.eu/project/id/823830)); [BY-COVID](https://by-covid.eu/) (European Commission [HORIZON-INFRA-2021-EMERGENCY-01 101046203](https://cordis.europa.eu/project/id/101046203))
+     · Funded by [BioExcel-2](https://bioexcel.eu/) (European Commission [H2020-INFRAEDI-2018-1 823830](https://cordis.europa.eu/project/id/823830)); [BY-COVID](https://by-covid.eu/) (European Commission [HORIZON-INFRA-2021-EMERGENCY-01 101046203](https://cordis.europa.eu/project/id/101046203)); [FAIR-IMPACT](http://www.fair-impact.eu/) (European Commission (European Commission [HORIZON-INFRA-2021-EOSC-01 101057344](https://cordis.europa.eu/project/id/101057344))
   </small>
 
 + **Carole Goble**<br>
@@ -105,7 +105,7 @@ on June 17, 2022.
     [CaroleAnneGoble](https://twitter.com/CaroleAnneGoble)<br>
   <small>
      Department of Computer Science, The University of Manchester, UK
-     · Funded by [BioExcel-2](https://bioexcel.eu/) (European Commission [H2020-INFRAEDI-2018-1 823830](https://cordis.europa.eu/project/id/823830)); [EOSC-Life](https://www.eosc-life.eu/) (European Commission [H2020-INFRAEOSC-2018-2 824087](https://cordis.europa.eu/project/id/824087)); [BY-COVID](https://by-covid.eu/) (European Commission [HORIZON-INFRA-2021-EMERGENCY-01 101046203](https://cordis.europa.eu/project/id/101046203))
+     · Funded by [BioExcel-2](https://bioexcel.eu/) (European Commission [H2020-INFRAEDI-2018-1 823830](https://cordis.europa.eu/project/id/823830)); [EOSC-Life](https://www.eosc-life.eu/) (European Commission [H2020-INFRAEOSC-2018-2 824087](https://cordis.europa.eu/project/id/824087)); [BY-COVID](https://by-covid.eu/) (European Commission [HORIZON-INFRA-2021-EMERGENCY-01 101046203](https://cordis.europa.eu/project/id/101046203)); [BioDT](https://biodt.org/) (European Commission [HORIZON-INFRA-2021-TECH-01-01 101057437](https://cordis.europa.eu/project/id/101057437)); [FAIR-IMPACT](http://www.fair-impact.eu/) (European Commission (European Commission [HORIZON-INFRA-2021-EOSC-01 101057344](https://cordis.europa.eu/project/id/101057344))
   </small>
 
 + **Paul Groth**<br>

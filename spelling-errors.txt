@@ -9,6 +9,7 @@ auth
 backend
 backends
 Berners
+BioDT
 BioExcel
 bioinformatics
 Bioontologies
@@ -28,18 +29,18 @@ CSV
 CWFP
 Datacite
 dataset
-Datasets
+datasets
 DCAT
 dereferenceable
 diciplinary
 DNS
-doip
+DOIP
 eare
 Ecma
 EMEA
 EOSC
 Extensibility
-FDO
+fdo
 FDOF
 FDOR
 FDO’s
@@ -80,7 +81,7 @@ LD
 ldp
 LOD
 maintaned
-Metamodel
+metamodel
 Microdata
 microformats
 Micropub
@@ -93,7 +94,7 @@ NL
 OAI
 OBO
 occassionally
-Ontologies
+ontologies
 OpenAPI
 OpenLink
 OSI
@@ -115,7 +116,7 @@ Rcord
 RDA’s
 RDF
 RDFa
-rdflib
+RDFLib
 RDFS
 RDMKit
 redirections
@@ -124,7 +125,7 @@ resiliant
 ResourceSync
 RO
 ROR
-scalability
+Scalability
 scalable
 schemas
 seemlessly
