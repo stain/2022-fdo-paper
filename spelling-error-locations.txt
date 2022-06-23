@@ -1,4 +1,3 @@
-content/01.abstract.md:3:abstrat
 content/01.abstract.md:3:TODO
 content/01.abstract.md:5:EOSC
 content/01.abstract.md:5:Worthwile
