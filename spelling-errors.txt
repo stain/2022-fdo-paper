@@ -23,7 +23,7 @@ CDN
 CDNs
 centric
 consumptions
-Cordra
+CORDRA
 COVID
 CSV
 CWFP
@@ -39,16 +39,20 @@ eare
 Ecma
 EMEA
 EOSC
+ESRI
 Extensibility
-fdo
+FDO
 FDOF
 FDOR
 FDO’s
-FDOs
+fdos
 findable
 foaf
 Freetext
+FROR
 GDPR
+getProvenance
+GFF
 Goble
 granularities
 GraphDB
@@ -78,7 +82,7 @@ JSWS
 Kernal
 kickstarted
 LD
-ldp
+LDP
 LOD
 maintaned
 metamodel
@@ -86,7 +90,7 @@ Microdata
 microformats
 Micropub
 middleware
-Modularity
+modularity
 namespaces
 navigatable
 NIST
@@ -116,7 +120,7 @@ Rcord
 RDA’s
 RDF
 RDFa
-RDFLib
+rdflib
 RDFS
 RDMKit
 redirections
@@ -125,7 +129,7 @@ resiliant
 ResourceSync
 RO
 ROR
-Scalability
+scalability
 scalable
 schemas
 seemlessly

@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-06-20'
+date-meta: '2022-06-23'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-06-20" />
-  <meta name="citation_publication_date" content="2022-06-20" />
+  <meta name="dc.date" content="2022-06-23" />
+  <meta name="citation_publication_date" content="2022-06-23" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/0bd79b2257106624d17557ccce031fc5c0487c6e/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/0bd79b2257106624d17557ccce031fc5c0487c6e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/0bd79b2257106624d17557ccce031fc5c0487c6e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/29274a94f16e4608b3743027390b52acda115a01/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/29274a94f16e4608b3743027390b52acda115a01/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/29274a94f16e4608b3743027390b52acda115a01/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,10 +74,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/0bd79b2257106624d17557ccce031fc5c0487c6e/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/29274a94f16e4608b3743027390b52acda115a01/))
 was automatically generated
-from [stain/2022-fdo-paper@0bd79b2](https://github.com/stain/2022-fdo-paper/tree/0bd79b2257106624d17557ccce031fc5c0487c6e)
-on June 20, 2022.
+from [stain/2022-fdo-paper@29274a9](https://github.com/stain/2022-fdo-paper/tree/29274a94f16e4608b3743027390b52acda115a01)
+on June 23, 2022.
 </em></small>
 
 ## Authors
@@ -412,76 +412,55 @@ As for the aspect of _Performance_, it is interesting to note that while the fir
 
 ## Assessing FDO against FAIR {#sec:fair-compare}
 
-| Principle | FDO/DOIP | FDO/LDP | Linked Data examples |
-|:---------:|:--------:|:-------:|:--------------------:|
-| **F1**: _PID for data/metadata_  | PIDs required (FDOF1). Handle, DOI. |  FDOF-IR (Identifier Record). PID can be any URI?  |  "Cool" URIs [@{https://www.w3.org/Provider/Style/URI},{}], PID using PURL services.  | 
-| **F2**: _data has metadata_ | FDO has key-value metadata. Unclear how to link to additional metadata.  |  FDOF-IR links to multiple metadata records |  RDF-based metadata by content negotiation or FAIR Signposting. Embedded in landing page (RDFa).  |  
-| **F3**: _metadata include PID_ | `id` and `type` are required metadata elements PIDs, also implicit as requests must use PID | PID only required in FDOF-IR record. | PID inclusion typical, but often inconsistent (e.g. `www.example.com` vs `example.com`) or missing (use of `<>` as _this_ subject) | 
-| **F4**: _searchable registration_ | No, registries not required (except Data Type Registries). Handle registry only searchable by PID. | Not specified | Not specified, several registries/catalogues for vocabularies/types (e.g. [@{https://bioportal.bioontology.org/ontologies}, {https://lod-cloud.net/}]). Indexing by search engines if exposing HTML w/schema.org.  |
-| **A1**: _retrieve by standard protocol_ | Retrievable from PID (FDOF3). Informal DOIP standard maintaned by DONA Foundation | HTTP standards maintained by IETF, FDO components resolved by informal proposals (custom vocabulary, extra HTTP methods) or HTTP content negotiation) | Formal HTTP standards maintained by IETF, HTTP content negotiation, FAIR Signposting |
-| **A1.1**: _protocol open/free/universal_ | Required by G1. Partially realized, although Handle system is open protocol [@{10.17487/RFC3652}] it was covered by software patent [US6135646A](https://patents.google.com/patent/US6135646A/en) ([expired](https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461) in 2013), and only implementation of `Handle.net` software currently only available by [public license](http://www.handle.net/HNRj/HNR-9-License.pdf)] (not OSI Open Source). [CORDRA](https://www.cordra.org/) free to use under BSD-like license, although not recognized by OSI as Open Source. |  DNS, HTTP, TLS, RDF standards are open, free and universal, multiple open source clients/servers exist. | 
-| **A1.2**: _protocol can do auth&auth_ |  TLS certificates, `authentication` field (details unspecified) |  HTTP authentication, TLS certificates | 
-| **A2**: _metadata even if data gone_ | FDO thumbstone required (FDOF12) | Unspecified, however FDOF-IR links to separate metadata records | `410 Gone` status infrequently used, without metadata. Possible [with signposting](https://w3id.org/a2a-fair-metrics/25-http-citeas-author-410-gone/) | 
-| **I1**: _formal knowledge representation_ | Required by FDOF8 | Unspecified | Always implied by use of RDF syntaxes.  |
-| **I2**: _use FAIR vocabularies_ | Informally required by G3, formally by FDOF10 (but not in FDOR10) | Unspecified, implied by use of RDF? |  FAIR practices for LD vocabularies increasingly common, sometimes inconsistent (e.g. PURLs that don't resolve) or incomplete (e.g. unknown license)  | 
-| **I3**: _qualified references_ | Implied by attributes to PIDs of other FDO | Unspecified | By definition (Linked Data is relating to pre-existing URIs [@{https://www.w3.org/standards/semanticweb/data}]). Link relations |
-| **R1**: _relevant attributes_ | Required (FDOF4). Kernel metadata attributes desired, not yet decided. | Unspecified. Multiple metadata records can allow multiple semantic profiles. |  Large number of general and domain-specific vocabularies can make it hard to find relevant attributes. Rough consensus on kernel metadata: schema.org [@{https://schema.org/}], Dublin Core Terms [@{http://purl.org/dc/terms/}], DCAT [@{https://www.w3.org/TR/vocab-dcat-2/}], FOAF [@{http://xmlns.com/foaf/spec/}] | 
-| **R1.1**: _clear data license_ | Unspecified (but will be in PID Kernal metadata?) | Unspecified | Dublin Core Terms `dct:license` frequently recommended, but not required, e.g. [by DCAT 2](https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license) [@{https://www.w3.org/TR/vocab-dcat-2/}]
-| **R1.2**: _detailed provenance_ |  Unspecified (some CORDRA types add `getProvenance` methods). PID Kernel attributes? | Unspecified  | W3C PROV-O, PAV |
-| **R1.3**: _follows community standards_ | Recommended (FDOF4, FDOF10) |  Unspecified |  Common practice, specially in bioinformatics, e.g. BioSchemas [@{https://bioschemas.org/}], BioPortal [@{https://bioportal.bioontology.org/ontologies}] |
-
-Table: Assessing how FAIR principles is/can be fulfilled by FDOs [@bonino_2019] as DOIP [@handle:0.DOIP/DOIPV2.0], Linked Data Platform (LDP) [@{https://fairdigitalobjectframework.org/}], with examples of existing Linked Data practices.
-{#tbl:fair-fdos}
-
-
-**TODO**: Redo above table, using RDA's FAIR Data Maturity Model [@doi:10.15497/rda00050; @doi:10.5334/dsj-2020-041] which has more concrete requirements shown below:
 
 |FAIR ID | Indicator | Priority  | FDO guideline |  FDO/DOIP | FDO/LDP | Linked Data examples |
 |:---|:---------------|:---:|:----:|:--------:|:-------:|:--------------------:|
-| RDA-F1-01M | Metadata is identified by a persistent identifier | ⬤⬤⬤ |  FDOR4 | Optional _Metadata FDO_ w/separate PID | Content-negotiation to URL, not required to be PID | Metadata typically don't have own PID | 
-| RDA-F1-01D | Data is identified by a persistent identifier | ⬤⬤⬤ |  ? | PIDs required (FDOF1). Handle, DOI. |  FDOF-IR (Identifier Record). PID can be any URI?  |  "Cool" URIs [@{https://www.w3.org/Provider/Style/URI},{https://www.w3.org/TR/cooluris/}], PURL services incl. `purl.org`, `w3id.org`  | 
-| RDA-F1-02M | Metadata is identified by a globally unique identifier | ⬤⬤⬤ |  FDOR4 | Optional _Metadata FDO_ | Content-negotiation to URL |  Not required, content-negotiation can redirect to URL or `Content-Location`. FAIR Signposting. |
-| RDA-F1-02D | Data is identified by a globally unique identifier | ⬤⬤⬤ |  ? | All FDOs have PIDs (FDOR1), DOIP uses Handle system | FDOF-IR (Identifier Record) | Always accessed by URL |
-| RDA-F2-01M | Rich metadata is provided to allow discovery | ⬤⬤⬤ | ? |  FDO has key-value metadata. Unclear how to link to additional metadata.  |  FDOF-IR links to multiple metadata records |  RDF-based metadata by content negotiation or FAIR Signposting. Embedded in landing page (RDFa).  |  
-| RDA-F3-01M | Metadata includes the identifier for the data | ⬤⬤⬤ |  ? | `id` and `type` are required metadata elements PIDs, also implicit as requests must use PID | PID only required in FDOF-IR record. | PID inclusion typical, but often inconsistent (e.g. `www.example.com` vs `example.com`) or missing (use of `<>` as _this_ subject) | 
-| RDA-F4-01M | Metadata is offered in such a way that it can be harvested and indexed | ⬤⬤⬤ |  ?fdo | ?doip | ?ldp | ?ld |
-| RDA-A1-01M | Metadata contains information to enable the user to get access to the data | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
-| RDA-A1-02M | Metadata can be accessed manually (i.e. with human intervention) | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
-| RDA-A1-02D | Data can be accessed manually (i.e. with human intervention) | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
-| RDA-A1-03M | Metadata identifier resolves to a metadata record | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
-| RDA-A1-03D | Data identifier resolves to a digital object | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
-| RDA-A1-04M | Metadata is accessed through standardised protocol | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
-| RDA-A1-04D | Data is accessible through standardised protocol | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
-| RDA-A1-05D | Data can be accessed automatically (i.e. by a computer program) | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
-| RDA-A1.1-01M | Metadata is accessible through a free access protocol | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
-| RDA-A1.1-01D | Data is accessible through a free access protocol | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
-| RDA-A1.2-01D | Data is accessible through an access protocol that supports authentication and authorisation | ⬤  | ?fdo | ?doip | ?ldp | ?ld |
-| RDA-A2-01M | Metadata is guaranteed to remain available after data is no longer available | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
-| RDA-I1-01M | Metadata uses knowledge representation expressed in standardised format | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-F1-01M | Metadata is identified by a persistent identifier | ⬤⬤⬤ |  FDOF4 | Optional _Metadata FDO_ w/separate PID | Content-negotiation to URL, not required to be PID | Metadata typically don't have own PID | 
+| RDA-F1-01D | Data is identified by a persistent identifier | ⬤⬤⬤ |  FDOF1 | PIDs required (FDOF1). Handle, DOI. |  FDOF-IR (Identifier Record). PID can be any URI?  |  "Cool" URIs [@{https://www.w3.org/Provider/Style/URI},{https://www.w3.org/TR/cooluris/}], PURL services incl. `purl.org`, `w3id.org`  | 
+| RDA-F1-02M | Metadata is identified by a globally unique identifier | ⬤⬤⬤ |  FDOR4,FDOF8 | Optional _Metadata FDO_ | Content-negotiation to URL |  Not required, content-negotiation can redirect to URL or `Content-Location`. FAIR Signposting. |
+| RDA-F1-02D | Data is identified by a globally unique identifier | ⬤⬤⬤ |  FDOF1 | All FDOs have PIDs (FDOR1), DOIP uses Handle system | FDOF-IR (Identifier Record) | Always accessed by URL |
+| RDA-F2-01M | Rich metadata is provided to allow discovery | ⬤⬤⬤ | FDOF2,FDOF4,FDOF8,FDOF9 |  FDO has key-value metadata. Unclear how to link to additional metadata.  |  FDOF-IR links to multiple metadata records |  RDF-based metadata by content negotiation or FAIR Signposting. Embedded in landing page (RDFa).  |  
+| RDA-F3-01M | Metadata includes the identifier for the data | ⬤⬤⬤ |  -- | `id` and `type` are required metadata elements PIDs, also implicit as requests must use PID | PID only required in FDOF-IR record. | PID inclusion typical, but often inconsistent (e.g. `www.example.com` vs `example.com`) or missing (use of `<>` as _this_ subject) | 
+| RDA-F4-01M | Metadata is offered in such a way that it can be harvested and indexed | ⬤⬤⬤ |  FDOF10 | No, registries not required (except Data Type Registries). Handle registry only searchable by PID. | Not specified | Not specified, several registries/catalogues for vocabularies/types (e.g. [@{https://bioportal.bioontology.org/ontologies}, {https://lod-cloud.net/}]). Indexing by search engines if exposing HTML w/schema.org.  |
+| RDA-A1-01M | Metadata contains information to enable the user to get access to the data | ⬤⬤  | FDOF3,FDOF6 | ?doip | ?ldp | ?ld |
+| RDA-A1-02M | Metadata can be accessed manually (i.e. with human intervention) | ⬤⬤⬤ |  -- | ?doip | ?ldp | ?ld |
+| RDA-A1-02D | Data can be accessed manually (i.e. with human intervention) | ⬤⬤⬤ |  --  | ?doip | ?ldp | ?ld |
+| RDA-A1-03M | Metadata identifier resolves to a metadata record | ⬤⬤⬤ |  FDOF8+FDOF2 | ?doip | ?ldp | ?ld |
+| RDA-A1-03D | Data identifier resolves to a digital object | ⬤⬤⬤ |  FDOF2  | ?doip | ?ldp | ?ld |
+| RDA-A1-04M | Metadata is accessed through standardised protocol | ⬤⬤⬤ |  G9,FDOF3 |  Retrievable from PID (FDOF3). Informal DOIP standard maintaned by DONA Foundation | HTTP standards maintained by IETF, FDO components resolved by informal proposals (custom vocabulary, extra HTTP methods) or HTTP content negotiation) | Formal HTTP standards maintained by IETF, HTTP content negotiation, FAIR Signposting |
+| RDA-A1-04D | Data is accessible through standardised protocol | ⬤⬤⬤ |  G9  | ?doip | ?ldp | ?ld |
+| RDA-A1-05D | Data can be accessed automatically (i.e. by a computer program) | ⬤⬤ | G4,FDOF3,FDOF6  | ?doip | ?ldp | ?ld |
+| RDA-A1.1-01M | Metadata is accessible through a free access protocol | ⬤⬤⬤ |  G1,G8,G9 | Partially realized: Handle system is open protocol [@{10.17487/RFC3652}] previously covered by software patent[^patent], only server implementation available only by [public license](http://www.handle.net/HNRj/HNR-9-License.pdf)] (not approved by OSI as Open Source). [CORDRA](https://www.cordra.org/) free to use under BSD-like license, although not recognized by OSI as Open Source. | | [LDP](http://www.w3.org/TR/ldp/) is open W3C recommendation. |  DNS, HTTP, TLS, RDF standards are open, free and universal, multiple Open Source clients/servers exist. | 
+| RDA-A1.1-01D | Data is accessible through a free access protocol | ⬤⬤  | G9 | ?doip | ?ldp | ?ld |
+| RDA-A1.2-01D | Data is accessible through an access protocol that supports authentication and authorisation | ⬤ | (FDOR9) |  TLS certificates, `authentication` field (details unspecified) | Unspecified | HTTP authentication, TLS certificates | 
+| RDA-A2-01M | Metadata is guaranteed to remain available after data is no longer available | ⬤⬤⬤ |  FDOF12 | FDO thumbstone required | Unspecified, however FDOF-IR links to separate metadata records | Unspecified |  `410 Gone` status infrequently used, without metadata. Possible [with signposting](https://w3id.org/a2a-fair-metrics/25-http-citeas-author-410-gone/) | 
+| RDA-I1-01M | Metadata uses knowledge representation expressed in standardised format | ⬤⬤  | FDOF8 | Required, but not currently defined | Unspecified | Always implied by use of RDF syntaxes.  |
 | RDA-I1-01D | Data uses knowledge representation expressed in standardised format | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
-| RDA-I1-02M | Metadata uses machine-understandable knowledge representation | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I1-02M | Metadata uses machine-understandable knowledge representation | ⬤⬤  | FDOF8 | Required | Unspecified | Always implied by use of RDF syntaxes.  |
 | RDA-I1-02D | Data uses machine-understandable knowledge representation | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
-| RDA-I2-01M | Metadata uses FAIR-compliant vocabularies | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I2-01M | Metadata uses FAIR-compliant vocabularies | ⬤⬤  | G3,FDOF10 (but not FDOR10?) | Informally required  | Unspecified, implied by use of RDF? |  FAIR practices for LD vocabularies increasingly common, sometimes inconsistent (e.g. PURLs that don't resolve) or incomplete (e.g. unknown license)  | 
 | RDA-I2-01D | Data uses FAIR-compliant vocabularies | ⬤  | ?fdo | ?doip | ?ldp | ?ld |
-| RDA-I3-01M | Metadata includes references to other metadata | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I3-01M | Metadata includes references to other metadata | ⬤⬤  | ?fdo | Implied by attributes to PIDs of other FDO | Unspecified | By definition (Linked Data is relating to pre-existing URIs [@{https://www.w3.org/standards/semanticweb/data}]). Link relations |
 | RDA-I3-01D | Data includes references to other data | ⬤  | ?fdo | ?doip | ?ldp | ?ld |
 | RDA-I3-02M | Metadata includes references to other data | ⬤ | ?fdo | ?doip | ?ldp | ?ld |
 | RDA-I3-02D | Data includes qualified references to other data | ⬤  | ?fdo | ?doip | ?ldp | ?ld |
 | RDA-I3-03M | Metadata includes qualified references to other metadata | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
-| RDA-I3-04M | Metadata include qualified references to other data | ⬤  |
-| RDA-R1-01M | Plurality of accurate and relevant attributes are provided to allow reuse | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
-| RDA-R1.1-01M | Metadata includes information about the licence under which the data can be reused | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
-| RDA-R1.1-02M | Metadata refers to a standard reuse licence | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
-| RDA-R1.1-03M | Metadata refers to a machine-understandable reuse licence | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
-| RDA-R1.2-01M | Metadata includes provenance information according to community-specific standards | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
-| RDA-R1.2-02M | Metadata includes provenance information according to a cross-community language | ⬤  | ?fdo | ?doip | ?ldp | ?ld |
-| RDA-R1.3-01M | Metadata complies with a community standard | ⬤⬤⬤ |  ?fdo | ?doip | ?ldp | ?ld |
-| RDA-R1.3-01D | Data complies with a community standard | ⬤⬤⬤ | ?fdo | ?doip | ?ldp | ?ld |
-| RDA-R1.3-02M | Metadata is expressed in compliance with a machine-understandable community standard | ⬤⬤⬤ |  ? |  ?fdo | ?doip | ?ldp | ?ld |
-| RDA-R1.3-02D | Data is expressed in compliance with a machine-understandable community standard | ⬤⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-I3-04M | Metadata include qualified references to other data | ⬤  | ?fdo | ?doip | ?ldp | ?ld |
+| RDA-R1-01M | Plurality of accurate and relevant attributes are provided to allow reuse | ⬤⬤⬤ |  FDOF4 | Required. Kernel metadata attributes desired, not yet decided. | Unspecified. Multiple metadata records can allow multiple semantic profiles. |  Large number of general and domain-specific vocabularies can make it hard to find relevant attributes. Rough consensus on kernel metadata: schema.org [@{https://schema.org/}], Dublin Core Terms [@{http://purl.org/dc/terms/}], DCAT [@{https://www.w3.org/TR/vocab-dcat-2/}], FOAF [@{http://xmlns.com/foaf/spec/}] | 
+| RDA-R1.1-01M | Metadata includes information about the licence under which the data can be reused | ⬤⬤⬤ |  ? | Unspecified (but will be in PID Kernal metadata?) | Unspecified | Dublin Core Terms `dct:license` frequently recommended, but not required, e.g. [by DCAT 2](https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license) [@{https://www.w3.org/TR/vocab-dcat-2/}]
+| RDA-R1.1-02M | Metadata refers to a standard reuse licence | ⬤⬤  | -- | ?doip | ?ldp | ?ld |
+| RDA-R1.1-03M | Metadata refers to a machine-understandable reuse licence | ⬤⬤  |  -- | ?doip | ?ldp | [SPDX](https://spdx.org/licenses/) |
+| RDA-R1.2-01M | Metadata includes provenance information according to community-specific standards | ⬤⬤  | FDOR9,FDOR10 | Unspecified (some CORDRA types add getProvenance methods). PID Kernel attributes? 	Unspecified 	W3C PROV-O, PAV |
+| RDA-R1.2-02M | Metadata includes provenance information according to a cross-community language | ⬤  | FDOR9,FDOR8 | ?doip | ?ldp | ?ld |
+| RDA-R1.3-01M | Metadata complies with a community standard | ⬤⬤⬤ |  FDOR10,FROR8 | ?doip | ?ldp | ?ld |
+| RDA-R1.3-01D | Data complies with a community standard | ⬤⬤⬤ | (FDOR3) | ?doip | ?ldp | ?ld |
+| RDA-R1.3-02M | Metadata is expressed in compliance with a machine-understandable community standard | ⬤⬤⬤ |  FDOF4,FDOF10 | Recommended |  Unspecified |  Common practice, specially in bioinformatics, e.g. BioSchemas [@{https://bioschemas.org/}], BioPortal [@{https://bioportal.bioontology.org/ontologies}] |
+| RDA-R1.3-02D | Data is expressed in compliance with a machine-understandable community standard | ⬤⬤  | (FDOR2) | No, FDO is typed but data can be any bytestream | Unspecified | Common, but not required (e.g. [GFF3](https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md), [FITS](https://fits.gsfc.nasa.gov/fits_standard.html), [ESRI](https://www.loc.gov/preservation/digital/formats/fdd/fdd000280.shtml)) |
 
 Table: Assessing RDA's FAIR Data Maturity Model [@doi:10.15497/rda00050; @doi:10.5334/dsj-2020-041] (first 3 columns) against the FDO guidelines [@bonino_2019], FDO implemented as DOIP [@handle:0.DOIP/DOIPV2.0], Linked Data Platform [@{https://fairdigitalobjectframework.org/}] and Linked Data practices. Priorities from [@doi:10.15497/rda00050]: ⬤ Useful, ⬤⬤ Important, ⬤⬤⬤ Essential.
 {#tbl:fair-data-maturity-model}
+
+[^patent]: Patent [US6135646A](https://patents.google.com/patent/US6135646A/en) [expired](https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461) in 2013.
 
 ## EOSC Interoperability Framework
 
@@ -513,7 +492,7 @@ The EOSC Interoperability Framework [@doi:10.2777/620649] (...), and in section 
 | Organisational | Usage recommendations of vocabularies | None |  [RDMKit](https://rdmkit.elixir-europe.org/metadata_management) | 
 | Organisational | Usage recommendations of metadata. | None |  RO-Crate, Bioschemas | 
 | Organisational | Management of permanent organization names/functions  |  Handle owner, but unclear contact. Contact info in DOIP service provider  | ROR. DCAT contacts.  | 
-| Legal | Standardised human and machine-readable licenses  |  None  |  SPDX  | 
+| Legal | Standardised human and machine-readable licenses  |  None  | [SPDX](https://spdx.org/licenses/)  | 
 | Legal | Permissive licenses for metadata (CC0, CC-BY-4.0) |  Undefined  |  Both CC0, CC-BY-4.0 common, e.g. in DCAT.  | 
 | Legal | Different licenses for different parts |  Each part as separate FDO can have separate license.  |  DCAT, RO-Crate  | 
 | Legal | Mark expired/inexistent copyright | Undefined  |  Unclear, semantics assume copyright valid  | 
