@@ -7,7 +7,7 @@
   <meta name="author" content="Stian Soiland-Reyes" />
   <meta name="author" content="Carole Goble" />
   <meta name="author" content="Paul Groth" />
-  <meta name="dcterms.date" content="2022-06-20" />
+  <meta name="dcterms.date" content="2022-06-23" />
   <meta name="keywords" content="FDO, distributed, digital object" />
   <title>Evaluating FAIR Digital Object as a distributed object system</title>
   <style>
@@ -46,8 +46,8 @@
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-06-20" />
-  <meta name="citation_publication_date" content="2022-06-20" />
+  <meta name="dc.date" content="2022-06-23" />
+  <meta name="citation_publication_date" content="2022-06-23" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -73,9 +73,9 @@
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/0bd79b2257106624d17557ccce031fc5c0487c6e/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/0bd79b2257106624d17557ccce031fc5c0487c6e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/0bd79b2257106624d17557ccce031fc5c0487c6e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/29274a94f16e4608b3743027390b52acda115a01/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/29274a94f16e4608b3743027390b52acda115a01/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/29274a94f16e4608b3743027390b52acda115a01/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,10 +92,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://stain.github.io/2022-fdo-paper/v/0bd79b2257106624d17557ccce031fc5c0487c6e/">permalink</a>)
+(<a href="https://stain.github.io/2022-fdo-paper/v/29274a94f16e4608b3743027390b52acda115a01/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/stain/2022-fdo-paper/tree/0bd79b2257106624d17557ccce031fc5c0487c6e">stain/2022-fdo-paper@0bd79b2</a>
-on June 20, 2022.
+from <a href="https://github.com/stain/2022-fdo-paper/tree/29274a94f16e4608b3743027390b52acda115a01">stain/2022-fdo-paper@29274a9</a>
+on June 23, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -396,9 +396,9 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 </tr>
 <tr class="odd">
 <td style="text-align: center;">G3: <em>FAIR principles</em></td>
-<td style="text-align: center;">See table <a href="#tbl:fair-fdos">5</a></td>
+<td style="text-align: center;">See table ??</td>
 <td style="text-align: center;">Ensure all FAIR principles are covered, build complete examples.</td>
-<td style="text-align: center;">Touched briefly, see table <a href="#tbl:fair-fdos">5</a></td>
+<td style="text-align: center;">Touched briefly, see table ??</td>
 <td style="text-align: center;">Add explicit expression to show each FAIR pcinciple fulfilled.</td>
 </tr>
 <tr class="even">
@@ -640,122 +640,9 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <p>…</p>
 <p>As for the aspect of <em>Performance</em>, it is interesting to note that while the first version of DOIP <span class="citation" data-cites="16uB3jxpa">[<a href="#ref-16uB3jxpa" role="doc-biblioref">22</a>]</span> supported multiplexed channels similar to HTTP/2, allowing concurrent transfer of several digital objects. However multiplexing was removed for the much simplified DOIP 2.0 <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">12</a>]</span>, which do support multiple asynchronous requests, but unlike DOIP 1.0 will require a DO response to be sent back completely, as a series of segments (which again can be split the bytes of each binary <em>element</em> into sized <em>chunks</em>), before transmission of another DO response can start on the transport channel. It is unclear what is the purpose of splitting a binary into chunks on a channel which no longer can be multiplexed and the only property of a chunk is its size <a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>.</p>
 <h2 id="sec:fair-compare">Assessing FDO against FAIR</h2>
-<div id="tbl:fair-fdos" class="tablenos">
-<table id="tbl:fair-fdos">
-<caption><span>Table 5:</span> Assessing how FAIR principles is/can be fulfilled by FDOs <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">4</a>]</span> as DOIP <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">12</a>]</span>, Linked Data Platform (LDP) <span class="citation" data-cites="7szz7dwO">[<a href="#ref-7szz7dwO" role="doc-biblioref">65</a>]</span>, with examples of existing Linked Data practices.
-</caption>
-<colgroup>
-<col style="width: 21%" />
-<col style="width: 19%" />
-<col style="width: 17%" />
-<col style="width: 42%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Principle</th>
-<th style="text-align: center;">FDO/DOIP</th>
-<th style="text-align: center;">FDO/LDP</th>
-<th style="text-align: center;">Linked Data examples</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><strong>F1</strong>: <em>PID for data/metadata</em></td>
-<td style="text-align: center;">PIDs required (FDOF1). Handle, DOI.</td>
-<td style="text-align: center;">FDOF-IR (Identifier Record). PID can be any URI?</td>
-<td style="text-align: center;">“Cool” URIs <span class="citation" data-cites="rbG9uRKw">[<a href="#ref-rbG9uRKw" role="doc-biblioref">75</a>]</span>, PID using PURL services.</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>F2</strong>: <em>data has metadata</em></td>
-<td style="text-align: center;">FDO has key-value metadata. Unclear how to link to additional metadata.</td>
-<td style="text-align: center;">FDOF-IR links to multiple metadata records</td>
-<td style="text-align: center;">RDF-based metadata by content negotiation or FAIR Signposting. Embedded in landing page (RDFa).</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>F3</strong>: <em>metadata include PID</em></td>
-<td style="text-align: center;"><code>id</code> and <code>type</code> are required metadata elements PIDs, also implicit as requests must use PID</td>
-<td style="text-align: center;">PID only required in FDOF-IR record.</td>
-<td style="text-align: center;">PID inclusion typical, but often inconsistent (e.g. <code>www.example.com</code> vs <code>example.com</code>) or missing (use of <code>&lt;&gt;</code> as <em>this</em> subject)</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>F4</strong>: <em>searchable registration</em></td>
-<td style="text-align: center;">No, registries not required (except Data Type Registries). Handle registry only searchable by PID.</td>
-<td style="text-align: center;">Not specified</td>
-<td style="text-align: center;">Not specified, several registries/catalogues for vocabularies/types (e.g. <span class="citation" data-cites="1Gsq23e51">[<a href="#ref-1Gsq23e51" role="doc-biblioref">95</a>]</span>). Indexing by search engines if exposing HTML w/schema.org.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>A1</strong>: <em>retrieve by standard protocol</em></td>
-<td style="text-align: center;">Retrievable from PID (FDOF3). Informal DOIP standard maintaned by DONA Foundation</td>
-<td style="text-align: center;">HTTP standards maintained by IETF, FDO components resolved by informal proposals (custom vocabulary, extra HTTP methods) or HTTP content negotiation)</td>
-<td style="text-align: center;">Formal HTTP standards maintained by IETF, HTTP content negotiation, FAIR Signposting</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>A1.1</strong>: <em>protocol open/free/universal</em></td>
-<td style="text-align: center;">Required by G1. Partially realized, although Handle system is open protocol <span class="citation" data-cites="I9Kx0Hjy">[<a href="#ref-I9Kx0Hjy" role="doc-biblioref">96</a>]</span> it was covered by software patent <a href="https://patents.google.com/patent/US6135646A/en">US6135646A</a> (<a href="https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461">expired</a> in 2013), and only implementation of <code>Handle.net</code> software currently only available by <a href="http://www.handle.net/HNRj/HNR-9-License.pdf">public license</a>] (not OSI Open Source). <a href="https://www.cordra.org/">CORDRA</a> free to use under BSD-like license, although not recognized by OSI as Open Source.</td>
-<td style="text-align: center;">DNS, HTTP, TLS, RDF standards are open, free and universal, multiple open source clients/servers exist.</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>A1.2</strong>: <em>protocol can do auth&amp;auth</em></td>
-<td style="text-align: center;">TLS certificates, <code>authentication</code> field (details unspecified)</td>
-<td style="text-align: center;">HTTP authentication, TLS certificates</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>A2</strong>: <em>metadata even if data gone</em></td>
-<td style="text-align: center;">FDO thumbstone required (FDOF12)</td>
-<td style="text-align: center;">Unspecified, however FDOF-IR links to separate metadata records</td>
-<td style="text-align: center;"><code>410 Gone</code> status infrequently used, without metadata. Possible <a href="https://w3id.org/a2a-fair-metrics/25-http-citeas-author-410-gone/">with signposting</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>I1</strong>: <em>formal knowledge representation</em></td>
-<td style="text-align: center;">Required by FDOF8</td>
-<td style="text-align: center;">Unspecified</td>
-<td style="text-align: center;">Always implied by use of RDF syntaxes.</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>I2</strong>: <em>use FAIR vocabularies</em></td>
-<td style="text-align: center;">Informally required by G3, formally by FDOF10 (but not in FDOR10)</td>
-<td style="text-align: center;">Unspecified, implied by use of RDF?</td>
-<td style="text-align: center;">FAIR practices for LD vocabularies increasingly common, sometimes inconsistent (e.g. PURLs that don’t resolve) or incomplete (e.g. unknown license)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>I3</strong>: <em>qualified references</em></td>
-<td style="text-align: center;">Implied by attributes to PIDs of other FDO</td>
-<td style="text-align: center;">Unspecified</td>
-<td style="text-align: center;">By definition (Linked Data is relating to pre-existing URIs <span class="citation" data-cites="o4h92LpS">[<a href="#ref-o4h92LpS" role="doc-biblioref">97</a>]</span>). Link relations</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>R1</strong>: <em>relevant attributes</em></td>
-<td style="text-align: center;">Required (FDOF4). Kernel metadata attributes desired, not yet decided.</td>
-<td style="text-align: center;">Unspecified. Multiple metadata records can allow multiple semantic profiles.</td>
-<td style="text-align: center;">Large number of general and domain-specific vocabularies can make it hard to find relevant attributes. Rough consensus on kernel metadata: schema.org <span class="citation" data-cites="10pzKCEUE">[<a href="#ref-10pzKCEUE" role="doc-biblioref">98</a>]</span>, Dublin Core Terms <span class="citation" data-cites="wAbZpOsr">[<a href="#ref-wAbZpOsr" role="doc-biblioref">99</a>]</span>, DCAT <span class="citation" data-cites="lnH0hEuh">[<a href="#ref-lnH0hEuh" role="doc-biblioref">100</a>]</span>, FOAF <span class="citation" data-cites="XmUY0cZB">[<a href="#ref-XmUY0cZB" role="doc-biblioref">101</a>]</span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>R1.1</strong>: <em>clear data license</em></td>
-<td style="text-align: center;">Unspecified (but will be in PID Kernal metadata?)</td>
-<td style="text-align: center;">Unspecified</td>
-<td style="text-align: center;">Dublin Core Terms <code>dct:license</code> frequently recommended, but not required, e.g. <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license">by DCAT 2</a> <span class="citation" data-cites="lnH0hEuh">[<a href="#ref-lnH0hEuh" role="doc-biblioref">100</a>]</span></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>R1.2</strong>: <em>detailed provenance</em></td>
-<td style="text-align: center;">Unspecified (some CORDRA types add <code>getProvenance</code> methods). PID Kernel attributes?</td>
-<td style="text-align: center;">Unspecified</td>
-<td style="text-align: center;">W3C PROV-O, PAV</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><strong>R1.3</strong>: <em>follows community standards</em></td>
-<td style="text-align: center;">Recommended (FDOF4, FDOF10)</td>
-<td style="text-align: center;">Unspecified</td>
-<td style="text-align: center;">Common practice, specially in bioinformatics, e.g. BioSchemas <span class="citation" data-cites="1F8S9FeHf">[<a href="#ref-1F8S9FeHf" role="doc-biblioref">102</a>]</span>, BioPortal <span class="citation" data-cites="1Gsq23e51">[<a href="#ref-1Gsq23e51" role="doc-biblioref">95</a>]</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><strong>TODO</strong>: Redo above table, using RDA’s FAIR Data Maturity Model <span class="citation" data-cites="1GrKTFaK2 UzQhqk0M">[<a href="#ref-1GrKTFaK2" role="doc-biblioref">103</a>,<a href="#ref-UzQhqk0M" role="doc-biblioref">104</a>]</span> which has more concrete requirements shown below:</p>
 <div id="tbl:fair-data-maturity-model" class="tablenos">
 <table id="tbl:fair-data-maturity-model">
-<caption><span>Table 6:</span> Assessing RDA’s FAIR Data Maturity Model <span class="citation" data-cites="1GrKTFaK2 UzQhqk0M">[<a href="#ref-1GrKTFaK2" role="doc-biblioref">103</a>,<a href="#ref-UzQhqk0M" role="doc-biblioref">104</a>]</span> (first 3 columns) against the FDO guidelines <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">4</a>]</span>, FDO implemented as DOIP <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">12</a>]</span>, Linked Data Platform <span class="citation" data-cites="7szz7dwO">[<a href="#ref-7szz7dwO" role="doc-biblioref">65</a>]</span> and Linked Data practices. Priorities from <span class="citation" data-cites="1GrKTFaK2">[<a href="#ref-1GrKTFaK2" role="doc-biblioref">103</a>]</span>: ⬤ Useful, ⬤⬤ Important, ⬤⬤⬤ Essential.
+<caption><span>Table 5:</span> Assessing RDA’s FAIR Data Maturity Model <span class="citation" data-cites="1GrKTFaK2 UzQhqk0M">[<a href="#ref-1GrKTFaK2" role="doc-biblioref">95</a>,<a href="#ref-UzQhqk0M" role="doc-biblioref">96</a>]</span> (first 3 columns) against the FDO guidelines <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">4</a>]</span>, FDO implemented as DOIP <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">12</a>]</span>, Linked Data Platform <span class="citation" data-cites="7szz7dwO">[<a href="#ref-7szz7dwO" role="doc-biblioref">65</a>]</span> and Linked Data practices. Priorities from <span class="citation" data-cites="1GrKTFaK2">[<a href="#ref-1GrKTFaK2" role="doc-biblioref">95</a>]</span>: ⬤ Useful, ⬤⬤ Important, ⬤⬤⬤ Essential.
 </caption>
 <colgroup>
 <col style="width: 5%" />
@@ -782,7 +669,7 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-F1-01M</td>
 <td style="text-align: left;">Metadata is identified by a persistent identifier</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">FDOR4</td>
+<td style="text-align: center;">FDOF4</td>
 <td style="text-align: center;">Optional <em>Metadata FDO</em> w/separate PID</td>
 <td style="text-align: center;">Content-negotiation to URL, not required to be PID</td>
 <td style="text-align: center;">Metadata typically don’t have own PID</td>
@@ -791,7 +678,7 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-F1-01D</td>
 <td style="text-align: left;">Data is identified by a persistent identifier</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?</td>
+<td style="text-align: center;">FDOF1</td>
 <td style="text-align: center;">PIDs required (FDOF1). Handle, DOI.</td>
 <td style="text-align: center;">FDOF-IR (Identifier Record). PID can be any URI?</td>
 <td style="text-align: center;">“Cool” URIs <span class="citation" data-cites="rbG9uRKw">[<a href="#ref-rbG9uRKw" role="doc-biblioref">75</a>]</span>, PURL services incl. <code>purl.org</code>, <code>w3id.org</code></td>
@@ -800,7 +687,7 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-F1-02M</td>
 <td style="text-align: left;">Metadata is identified by a globally unique identifier</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">FDOR4</td>
+<td style="text-align: center;">FDOR4,FDOF8</td>
 <td style="text-align: center;">Optional <em>Metadata FDO</em></td>
 <td style="text-align: center;">Content-negotiation to URL</td>
 <td style="text-align: center;">Not required, content-negotiation can redirect to URL or <code>Content-Location</code>. FAIR Signposting.</td>
@@ -809,7 +696,7 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-F1-02D</td>
 <td style="text-align: left;">Data is identified by a globally unique identifier</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?</td>
+<td style="text-align: center;">FDOF1</td>
 <td style="text-align: center;">All FDOs have PIDs (FDOR1), DOIP uses Handle system</td>
 <td style="text-align: center;">FDOF-IR (Identifier Record)</td>
 <td style="text-align: center;">Always accessed by URL</td>
@@ -818,7 +705,7 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-F2-01M</td>
 <td style="text-align: left;">Rich metadata is provided to allow discovery</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?</td>
+<td style="text-align: center;">FDOF2,FDOF4,FDOF8,FDOF9</td>
 <td style="text-align: center;">FDO has key-value metadata. Unclear how to link to additional metadata.</td>
 <td style="text-align: center;">FDOF-IR links to multiple metadata records</td>
 <td style="text-align: center;">RDF-based metadata by content negotiation or FAIR Signposting. Embedded in landing page (RDFa).</td>
@@ -827,7 +714,7 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-F3-01M</td>
 <td style="text-align: left;">Metadata includes the identifier for the data</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?</td>
+<td style="text-align: center;">–</td>
 <td style="text-align: center;"><code>id</code> and <code>type</code> are required metadata elements PIDs, also implicit as requests must use PID</td>
 <td style="text-align: center;">PID only required in FDOF-IR record.</td>
 <td style="text-align: center;">PID inclusion typical, but often inconsistent (e.g. <code>www.example.com</code> vs <code>example.com</code>) or missing (use of <code>&lt;&gt;</code> as <em>this</em> subject)</td>
@@ -836,16 +723,16 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-F4-01M</td>
 <td style="text-align: left;">Metadata is offered in such a way that it can be harvested and indexed</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?fdo</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;">FDOF10</td>
+<td style="text-align: center;">No, registries not required (except Data Type Registries). Handle registry only searchable by PID.</td>
+<td style="text-align: center;">Not specified</td>
+<td style="text-align: center;">Not specified, several registries/catalogues for vocabularies/types (e.g. <span class="citation" data-cites="1Gsq23e51">[<a href="#ref-1Gsq23e51" role="doc-biblioref">97</a>]</span>). Indexing by search engines if exposing HTML w/schema.org.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">RDA-A1-01M</td>
 <td style="text-align: left;">Metadata contains information to enable the user to get access to the data</td>
 <td style="text-align: center;">⬤⬤</td>
-<td style="text-align: center;">?fdo</td>
+<td style="text-align: center;">FDOF3,FDOF6</td>
 <td style="text-align: center;">?doip</td>
 <td style="text-align: center;">?ldp</td>
 <td style="text-align: center;">?ld</td>
@@ -854,61 +741,61 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-A1-02M</td>
 <td style="text-align: left;">Metadata can be accessed manually (i.e. with human intervention)</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">?fdo</td>
+<td style="text-align: center;">–</td>
 <td style="text-align: center;">?doip</td>
 <td style="text-align: center;">?ldp</td>
+<td style="text-align: center;">?ld</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">RDA-A1-02D</td>
 <td style="text-align: left;">Data can be accessed manually (i.e. with human intervention)</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">?fdo</td>
+<td style="text-align: center;">–</td>
 <td style="text-align: center;">?doip</td>
 <td style="text-align: center;">?ldp</td>
+<td style="text-align: center;">?ld</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">RDA-A1-03M</td>
 <td style="text-align: left;">Metadata identifier resolves to a metadata record</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">?fdo</td>
+<td style="text-align: center;">FDOF8+FDOF2</td>
 <td style="text-align: center;">?doip</td>
 <td style="text-align: center;">?ldp</td>
+<td style="text-align: center;">?ld</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">RDA-A1-03D</td>
 <td style="text-align: left;">Data identifier resolves to a digital object</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">?fdo</td>
+<td style="text-align: center;">FDOF2</td>
 <td style="text-align: center;">?doip</td>
 <td style="text-align: center;">?ldp</td>
+<td style="text-align: center;">?ld</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">RDA-A1-04M</td>
 <td style="text-align: left;">Metadata is accessed through standardised protocol</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">?fdo</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
+<td style="text-align: center;">G9,FDOF3</td>
+<td style="text-align: center;">Retrievable from PID (FDOF3). Informal DOIP standard maintaned by DONA Foundation</td>
+<td style="text-align: center;">HTTP standards maintained by IETF, FDO components resolved by informal proposals (custom vocabulary, extra HTTP methods) or HTTP content negotiation)</td>
+<td style="text-align: center;">Formal HTTP standards maintained by IETF, HTTP content negotiation, FAIR Signposting</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">RDA-A1-04D</td>
 <td style="text-align: left;">Data is accessible through standardised protocol</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">?fdo</td>
+<td style="text-align: center;">G9</td>
 <td style="text-align: center;">?doip</td>
 <td style="text-align: center;">?ldp</td>
+<td style="text-align: center;">?ld</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">RDA-A1-05D</td>
 <td style="text-align: left;">Data can be accessed automatically (i.e. by a computer program)</td>
 <td style="text-align: center;">⬤⬤</td>
-<td style="text-align: center;">?fdo</td>
+<td style="text-align: center;">G4,FDOF3,FDOF6</td>
 <td style="text-align: center;">?doip</td>
 <td style="text-align: center;">?ldp</td>
 <td style="text-align: center;">?ld</td>
@@ -917,16 +804,16 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-A1.1-01M</td>
 <td style="text-align: left;">Metadata is accessible through a free access protocol</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">?fdo</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
+<td style="text-align: center;">G1,G8,G9</td>
+<td style="text-align: center;">Partially realized: Handle system is open protocol <span class="citation" data-cites="I9Kx0Hjy">[<a href="#ref-I9Kx0Hjy" role="doc-biblioref">98</a>]</span> previously covered by software patent<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>, only server implementation available only by <a href="http://www.handle.net/HNRj/HNR-9-License.pdf">public license</a>] (not approved by OSI as Open Source). <a href="https://www.cordra.org/">CORDRA</a> free to use under BSD-like license, although not recognized by OSI as Open Source.</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><a href="http://www.w3.org/TR/ldp/">LDP</a> is open W3C recommendation.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">RDA-A1.1-01D</td>
 <td style="text-align: left;">Data is accessible through a free access protocol</td>
 <td style="text-align: center;">⬤⬤</td>
-<td style="text-align: center;">?fdo</td>
+<td style="text-align: center;">G9</td>
 <td style="text-align: center;">?doip</td>
 <td style="text-align: center;">?ldp</td>
 <td style="text-align: center;">?ld</td>
@@ -935,28 +822,28 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-A1.2-01D</td>
 <td style="text-align: left;">Data is accessible through an access protocol that supports authentication and authorisation</td>
 <td style="text-align: center;">⬤</td>
-<td style="text-align: center;">?fdo</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;">(FDOR9)</td>
+<td style="text-align: center;">TLS certificates, <code>authentication</code> field (details unspecified)</td>
+<td style="text-align: center;">Unspecified</td>
+<td style="text-align: center;">HTTP authentication, TLS certificates</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">RDA-A2-01M</td>
 <td style="text-align: left;">Metadata is guaranteed to remain available after data is no longer available</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">?fdo</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
+<td style="text-align: center;">FDOF12</td>
+<td style="text-align: center;">FDO thumbstone required</td>
+<td style="text-align: center;">Unspecified, however FDOF-IR links to separate metadata records</td>
+<td style="text-align: center;">Unspecified</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">RDA-I1-01M</td>
 <td style="text-align: left;">Metadata uses knowledge representation expressed in standardised format</td>
 <td style="text-align: center;">⬤⬤</td>
-<td style="text-align: center;">?fdo</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;">FDOF8</td>
+<td style="text-align: center;">Required, but not currently defined</td>
+<td style="text-align: center;">Unspecified</td>
+<td style="text-align: center;">Always implied by use of RDF syntaxes.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">RDA-I1-01D</td>
@@ -971,10 +858,10 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-I1-02M</td>
 <td style="text-align: left;">Metadata uses machine-understandable knowledge representation</td>
 <td style="text-align: center;">⬤⬤</td>
-<td style="text-align: center;">?fdo</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;">FDOF8</td>
+<td style="text-align: center;">Required</td>
+<td style="text-align: center;">Unspecified</td>
+<td style="text-align: center;">Always implied by use of RDF syntaxes.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">RDA-I1-02D</td>
@@ -989,10 +876,10 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-I2-01M</td>
 <td style="text-align: left;">Metadata uses FAIR-compliant vocabularies</td>
 <td style="text-align: center;">⬤⬤</td>
-<td style="text-align: center;">?fdo</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;">G3,FDOF10 (but not FDOR10?)</td>
+<td style="text-align: center;">Informally required</td>
+<td style="text-align: center;">Unspecified, implied by use of RDF?</td>
+<td style="text-align: center;">FAIR practices for LD vocabularies increasingly common, sometimes inconsistent (e.g. PURLs that don’t resolve) or incomplete (e.g. unknown license)</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">RDA-I2-01D</td>
@@ -1008,9 +895,9 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">Metadata includes references to other metadata</td>
 <td style="text-align: center;">⬤⬤</td>
 <td style="text-align: center;">?fdo</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;">Implied by attributes to PIDs of other FDO</td>
+<td style="text-align: center;">Unspecified</td>
+<td style="text-align: center;">By definition (Linked Data is relating to pre-existing URIs <span class="citation" data-cites="o4h92LpS">[<a href="#ref-o4h92LpS" role="doc-biblioref">99</a>]</span>). Link relations</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">RDA-I3-01D</td>
@@ -1052,34 +939,34 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-I3-04M</td>
 <td style="text-align: left;">Metadata include qualified references to other data</td>
 <td style="text-align: center;">⬤</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;">?fdo</td>
+<td style="text-align: center;">?doip</td>
+<td style="text-align: center;">?ldp</td>
+<td style="text-align: center;">?ld</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">RDA-R1-01M</td>
 <td style="text-align: left;">Plurality of accurate and relevant attributes are provided to allow reuse</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">?fdo</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
+<td style="text-align: center;">FDOF4</td>
+<td style="text-align: center;">Required. Kernel metadata attributes desired, not yet decided.</td>
+<td style="text-align: center;">Unspecified. Multiple metadata records can allow multiple semantic profiles.</td>
+<td style="text-align: center;">Large number of general and domain-specific vocabularies can make it hard to find relevant attributes. Rough consensus on kernel metadata: schema.org <span class="citation" data-cites="10pzKCEUE">[<a href="#ref-10pzKCEUE" role="doc-biblioref">100</a>]</span>, Dublin Core Terms <span class="citation" data-cites="wAbZpOsr">[<a href="#ref-wAbZpOsr" role="doc-biblioref">101</a>]</span>, DCAT <span class="citation" data-cites="lnH0hEuh">[<a href="#ref-lnH0hEuh" role="doc-biblioref">102</a>]</span>, FOAF <span class="citation" data-cites="XmUY0cZB">[<a href="#ref-XmUY0cZB" role="doc-biblioref">103</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">RDA-R1.1-01M</td>
 <td style="text-align: left;">Metadata includes information about the licence under which the data can be reused</td>
 <td style="text-align: center;">⬤⬤⬤</td>
 <td style="text-align: center;">?</td>
-<td style="text-align: center;">?fdo</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
+<td style="text-align: center;">Unspecified (but will be in PID Kernal metadata?)</td>
+<td style="text-align: center;">Unspecified</td>
+<td style="text-align: center;">Dublin Core Terms <code>dct:license</code> frequently recommended, but not required, e.g. <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license">by DCAT 2</a> <span class="citation" data-cites="lnH0hEuh">[<a href="#ref-lnH0hEuh" role="doc-biblioref">102</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">RDA-R1.1-02M</td>
 <td style="text-align: left;">Metadata refers to a standard reuse licence</td>
 <td style="text-align: center;">⬤⬤</td>
-<td style="text-align: center;">?fdo</td>
+<td style="text-align: center;">–</td>
 <td style="text-align: center;">?doip</td>
 <td style="text-align: center;">?ldp</td>
 <td style="text-align: center;">?ld</td>
@@ -1088,25 +975,25 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-R1.1-03M</td>
 <td style="text-align: left;">Metadata refers to a machine-understandable reuse licence</td>
 <td style="text-align: center;">⬤⬤</td>
-<td style="text-align: center;">?fdo</td>
+<td style="text-align: center;">–</td>
 <td style="text-align: center;">?doip</td>
 <td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;"><a href="https://spdx.org/licenses/">SPDX</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">RDA-R1.2-01M</td>
 <td style="text-align: left;">Metadata includes provenance information according to community-specific standards</td>
 <td style="text-align: center;">⬤⬤</td>
-<td style="text-align: center;">?fdo</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;">FDOR9,FDOR10</td>
+<td style="text-align: center;">Unspecified (some CORDRA types add getProvenance methods). PID Kernel attributes? Unspecified W3C PROV-O, PAV</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">RDA-R1.2-02M</td>
 <td style="text-align: left;">Metadata includes provenance information according to a cross-community language</td>
 <td style="text-align: center;">⬤</td>
-<td style="text-align: center;">?fdo</td>
+<td style="text-align: center;">FDOR9,FDOR8</td>
 <td style="text-align: center;">?doip</td>
 <td style="text-align: center;">?ldp</td>
 <td style="text-align: center;">?ld</td>
@@ -1115,7 +1002,7 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-R1.3-01M</td>
 <td style="text-align: left;">Metadata complies with a community standard</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?fdo</td>
+<td style="text-align: center;">FDOR10,FROR8</td>
 <td style="text-align: center;">?doip</td>
 <td style="text-align: center;">?ldp</td>
 <td style="text-align: center;">?ld</td>
@@ -1124,7 +1011,7 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-R1.3-01D</td>
 <td style="text-align: left;">Data complies with a community standard</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?fdo</td>
+<td style="text-align: center;">(FDOR3)</td>
 <td style="text-align: center;">?doip</td>
 <td style="text-align: center;">?ldp</td>
 <td style="text-align: center;">?ld</td>
@@ -1133,19 +1020,19 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td style="text-align: left;">RDA-R1.3-02M</td>
 <td style="text-align: left;">Metadata is expressed in compliance with a machine-understandable community standard</td>
 <td style="text-align: center;">⬤⬤⬤</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">?fdo</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
+<td style="text-align: center;">FDOF4,FDOF10</td>
+<td style="text-align: center;">Recommended</td>
+<td style="text-align: center;">Unspecified</td>
+<td style="text-align: center;">Common practice, specially in bioinformatics, e.g. BioSchemas <span class="citation" data-cites="1F8S9FeHf">[<a href="#ref-1F8S9FeHf" role="doc-biblioref">104</a>]</span>, BioPortal <span class="citation" data-cites="1Gsq23e51">[<a href="#ref-1Gsq23e51" role="doc-biblioref">97</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">RDA-R1.3-02D</td>
 <td style="text-align: left;">Data is expressed in compliance with a machine-understandable community standard</td>
 <td style="text-align: center;">⬤⬤</td>
-<td style="text-align: center;">?fdo</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;">(FDOR2)</td>
+<td style="text-align: center;">No, FDO is typed but data can be any bytestream</td>
+<td style="text-align: center;">Unspecified</td>
+<td style="text-align: center;">Common, but not required (e.g. <a href="https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md">GFF3</a>, <a href="https://fits.gsfc.nasa.gov/fits_standard.html">FITS</a>, <a href="https://www.loc.gov/preservation/digital/formats/fdd/fdd000280.shtml">ESRI</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -1294,7 +1181,7 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <td>Legal</td>
 <td>Standardised human and machine-readable licenses</td>
 <td>None</td>
-<td>SPDX</td>
+<td><a href="https://spdx.org/licenses/">SPDX</a></td>
 </tr>
 <tr class="even">
 <td>Legal</td>
@@ -1461,7 +1348,7 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>draft-bhutton-json-schema-00</strong> <a href="https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00">https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00</a></div>
 </div>
 <div id="ref-Guy7cjVY" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>Weaving the web: the original design and ultimative destiny of the World Wide Web by its inventor</strong> <div class="csl-block">Tim Berners-Lee, Mark Fischetti</div> <em>HarperBusiness</em> (2011) <div class="csl-block">ISBN: 9780062515872</div></div>
+<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>Weaving the Web: the original design and ultimate destiny of the World Wide Web by its inventor</strong> <div class="csl-block">Tim Berners-Lee, Mark Fischetti</div> <em>HarperSanFrancisco</em> (1999) <div class="csl-block">ISBN: 9780062515865</div></div>
 </div>
 <div id="ref-16WGmCih8" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>RDF 1.1 Primer</strong> <a href="http://www.w3.org/TR/rdf11-primer/">http://www.w3.org/TR/rdf11-primer/</a></div>
@@ -1664,35 +1551,35 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <div id="ref-ikO7e0mh" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">94. </div><div class="csl-right-inline"><strong>ISO/IEC 23009-1:2019</strong> <div class="csl-block">14:00-17:00</div> <em>ISO</em> <a href="https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html">https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html</a></div>
 </div>
-<div id="ref-1Gsq23e51" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">95. </div><div class="csl-right-inline"><strong>NCBO BioPortal</strong> <a href="https://bioportal.bioontology.org/ontologies">https://bioportal.bioontology.org/ontologies</a></div>
-</div>
-<div id="ref-I9Kx0Hjy" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">96. </div><div class="csl-right-inline"><strong>Handle System Protocol (ver 2.1) Specification</strong> <div class="csl-block">S Sun, S Reilly, L Lannom, J Petrone</div> <em>RFC Editor</em> (2003-11) <a href="https://doi.org/ggn83x">https://doi.org/ggn83x</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc3652">10.17487/rfc3652</a></div></div>
-</div>
-<div id="ref-o4h92LpS" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">97. </div><div class="csl-right-inline"><strong>Data - W3C</strong> <a href="https://www.w3.org/standards/semanticweb/data">https://www.w3.org/standards/semanticweb/data</a></div>
-</div>
-<div id="ref-10pzKCEUE" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">98. </div><div class="csl-right-inline"><strong>Schema.org - Schema.org</strong> <a href="https://schema.org/">https://schema.org/</a></div>
-</div>
-<div id="ref-wAbZpOsr" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">99. </div><div class="csl-right-inline"><strong>DCMI Metadata Terms</strong> <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</a></div>
-</div>
-<div id="ref-lnH0hEuh" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">100. </div><div class="csl-right-inline"><strong>Data Catalog Vocabulary (DCAT) - Version 2</strong> <a href="https://www.w3.org/TR/vocab-dcat-2/">https://www.w3.org/TR/vocab-dcat-2/</a></div>
-</div>
-<div id="ref-XmUY0cZB" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">101. </div><div class="csl-right-inline"><strong>FOAF Vocabulary Specification</strong> <a href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a></div>
-</div>
-<div id="ref-1F8S9FeHf" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">102. </div><div class="csl-right-inline"><strong>Bioschemas - Bioschemas</strong> <a href="http://bioschemas.org/">http://bioschemas.org/</a></div>
-</div>
 <div id="ref-1GrKTFaK2" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">103. </div><div class="csl-right-inline"><strong>FAIR data maturity model: Specification and guidelines</strong> <div class="csl-block">Research Data Alliance FAIR Data Maturity Model Working Group</div> <em>Research Data Alliance</em> (2020) <a href="https://zenodo.org/record/3909563\#.{YGRNnq8za70}">https://zenodo.org/record/3909563\#.{YGRNnq8za70}</a> <div class="csl-block">DOI: <a href="https://doi.org/10.15497/rda00050">10.15497/rda00050</a></div></div>
+<div class="csl-left-margin">95. </div><div class="csl-right-inline"><strong>FAIR data maturity model: Specification and guidelines</strong> <div class="csl-block">Research Data Alliance FAIR Data Maturity Model Working Group</div> <em>Research Data Alliance</em> (2020) <a href="https://zenodo.org/record/3909563\#.{YGRNnq8za70}">https://zenodo.org/record/3909563\#.{YGRNnq8za70}</a> <div class="csl-block">DOI: <a href="https://doi.org/10.15497/rda00050">10.15497/rda00050</a></div></div>
 </div>
 <div id="ref-UzQhqk0M" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">104. </div><div class="csl-right-inline"><strong>The FAIR data maturity model: An approach to harmonise FAIR assessments</strong> <div class="csl-block">Christophe Bahim, Carlos Casorrán-Amilburu, Makx Dekkers, Edit Herczog, Nicolas Loozen, Konstantinos Repanas, Keith Russell, Shelley Stall</div> <em>Data Science Journal</em> (2020-10-27) <div class="csl-block">DOI: <a href="https://doi.org/10.5334/dsj-2020-041">10.5334/dsj-2020-041</a></div></div>
+<div class="csl-left-margin">96. </div><div class="csl-right-inline"><strong>The FAIR data maturity model: An approach to harmonise FAIR assessments</strong> <div class="csl-block">Christophe Bahim, Carlos Casorrán-Amilburu, Makx Dekkers, Edit Herczog, Nicolas Loozen, Konstantinos Repanas, Keith Russell, Shelley Stall</div> <em>Data Science Journal</em> (2020-10-27) <div class="csl-block">DOI: <a href="https://doi.org/10.5334/dsj-2020-041">10.5334/dsj-2020-041</a></div></div>
+</div>
+<div id="ref-1Gsq23e51" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">97. </div><div class="csl-right-inline"><strong>NCBO BioPortal</strong> <a href="https://bioportal.bioontology.org/ontologies">https://bioportal.bioontology.org/ontologies</a></div>
+</div>
+<div id="ref-I9Kx0Hjy" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">98. </div><div class="csl-right-inline"><strong>Handle System Protocol (ver 2.1) Specification</strong> <div class="csl-block">S Sun, S Reilly, L Lannom, J Petrone</div> <em>RFC Editor</em> (2003-11) <a href="https://doi.org/ggn83x">https://doi.org/ggn83x</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc3652">10.17487/rfc3652</a></div></div>
+</div>
+<div id="ref-o4h92LpS" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">99. </div><div class="csl-right-inline"><strong>Data - W3C</strong> <a href="https://www.w3.org/standards/semanticweb/data">https://www.w3.org/standards/semanticweb/data</a></div>
+</div>
+<div id="ref-10pzKCEUE" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">100. </div><div class="csl-right-inline"><strong>Schema.org - Schema.org</strong> <a href="https://schema.org/">https://schema.org/</a></div>
+</div>
+<div id="ref-wAbZpOsr" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">101. </div><div class="csl-right-inline"><strong>DCMI Metadata Terms</strong> <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</a></div>
+</div>
+<div id="ref-lnH0hEuh" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">102. </div><div class="csl-right-inline"><strong>Data Catalog Vocabulary (DCAT) - Version 2</strong> <a href="https://www.w3.org/TR/vocab-dcat-2/">https://www.w3.org/TR/vocab-dcat-2/</a></div>
+</div>
+<div id="ref-XmUY0cZB" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">103. </div><div class="csl-right-inline"><strong>FOAF Vocabulary Specification</strong> <a href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a></div>
+</div>
+<div id="ref-1F8S9FeHf" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">104. </div><div class="csl-right-inline"><strong>Bioschemas - Bioschemas</strong> <a href="http://bioschemas.org/">http://bioschemas.org/</a></div>
 </div>
 </div>
 <section class="footnotes footnotes-end-of-document" role="doc-endnotes">
@@ -1706,6 +1593,7 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <li id="fn6" role="doc-endnote"><p><span class="citation" data-cites="STXtoppr">[<a href="#ref-STXtoppr" role="doc-biblioref">3</a>]</span> renames _FDOF*_ to _FDOR*_, FDOF3/FDOF4 are swapped to FDOR4/FDOR3.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn7" role="doc-endnote"><p>The <code>http</code> protocol (port 80) can in theory also upgrade <span class="citation" data-cites="1B16WfR7q">[<a href="#ref-1B16WfR7q" role="doc-biblioref">79</a>]</span> to TLS encryption, as commonly used by <a href="https://www.rfc-editor.org/rfc/rfc8010.html#section-8.2">Internet Printing Protocol</a> for <code>ipp</code> URIs, but on the Web, best practice is explicit <code>https</code> (port 443) URLs to ensure following links stay secure.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn8" role="doc-endnote"><p>Although it is possible with <code>0.DOIP/Op.Retrieve</code> to request only particular individual elements of an DO (e.g. one file), unlike HTTP’s <code>Range</code> request, it is not possible to select individual chunks of an element’s bytestream.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9" role="doc-endnote"><p>Patent <a href="https://patents.google.com/patent/US6135646A/en">US6135646A</a> <a href="https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461">expired</a> in 2013.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <!-- default theme -->
