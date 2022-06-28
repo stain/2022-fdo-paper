@@ -26,7 +26,7 @@ CDNs
 centric
 Consoritium
 consumptions
-Cordra
+CORDRA
 COVID
 CSV
 CWFP
@@ -102,8 +102,8 @@ metamodel
 Microdata
 microformats
 Micropub
-Middleware
-modularity
+middleware
+Modularity
 namespaces
 navigatable
 NIST
@@ -169,7 +169,7 @@ subtypes
 syntaxes
 TCP
 testbeds
-thumbstone
+Thumbstone
 TLS
 TODO
 UDP

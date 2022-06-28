@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/2deb70f44ae9ec9795feef11aecb208ced76cb4a/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/2deb70f44ae9ec9795feef11aecb208ced76cb4a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/2deb70f44ae9ec9795feef11aecb208ced76cb4a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/9a328fd4665afd55df95188bd00666ec64fb97e5/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/9a328fd4665afd55df95188bd00666ec64fb97e5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/9a328fd4665afd55df95188bd00666ec64fb97e5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/2deb70f44ae9ec9795feef11aecb208ced76cb4a/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/9a328fd4665afd55df95188bd00666ec64fb97e5/))
 was automatically generated
-from [stain/2022-fdo-paper@2deb70f](https://github.com/stain/2022-fdo-paper/tree/2deb70f44ae9ec9795feef11aecb208ced76cb4a)
+from [stain/2022-fdo-paper@9a328fd](https://github.com/stain/2022-fdo-paper/tree/9a328fd4665afd55df95188bd00666ec64fb97e5)
 on June 28, 2022.
 </em></small>
 
@@ -315,7 +315,7 @@ interoperability framework for Fast Data is ... and here we do blaba
 
 | *Quality* |  FDO w/ DOIP               | Web w/ Linked Data         |
 |:----------|:--------------------------:|:--------------------------:|
-| **Symbiotic**: _to what extent multiple applications can agree to interact/align/collaborate/cooperate_      |  Purpose of FDO is to enable federated machine actionable digital objects for scholarly purposes, in practice this also requires agreement of or compatibility between FDO types. FDO encourages research communities to develop common type registries to be shared across instances. In current DOIP practice, each service have their own types, attributes and operations.  The wider symbiosis is consistent use of PIDs. |  Web is loosely coupled and encourages collaboration and linking by URL. In practice, REST APIs [@fielding_2000] end up being mandated centrally by dominant (often commercial) providers, which clients are required to use as-is with special code per service. Use of Linked Data enables common tooling and semantic mapping across differences.  |
+| **Symbiotic**: _to what extent multiple applications can agree to interact/align/collaborate/cooperate_      |  Purpose of FDO is to enable federated machine actionable digital objects for scholarly purposes, in practice this also requires agreement of or compatibility between FDO types. FDO encourages research communities to develop common type registries to be shared across instances. In current DOIP practice, each service have their own types, attributes and operations.  The wider symbiosis is consistent use of PIDs. |  Web is loosely coupled and encourages collaboration and linking by URL. In practice, REST APIs [@fielding_2000] end up being mandated centrally by dominant (often commercial) providers [@10.1145/3106237.3121282], which clients are required to use as-is with special code per service. Use of Linked Data enables common tooling and semantic mapping across differences.  |
 | **Pragmatic**: _using interaction contracts so processes can be choreographed in workflows_      |  FDO types and operations enable detailed choreography (see CWFP). `0.TYPE/DOIPOperation` has lightweight definition of operation, `0.DOIP/Request` or `0.DOIP/Response` may give FDO Type or any other kind of "specifics" (incl. human readable docs). Semantics/purpose of operations not formalized (similar operations can be grouped with `0.DOIP/OperationReference`).   |  "Follow your nose" crawler navigation, which may lead to frequent dead ends. Operational composition, typically within a single API provider, documented by OpenAPI 3 [@{https://spec.openapis.org/oas/v3.1.0.html}], schema.org Actions [@{https://schema.org/docs/actions.html}), WSDL/SOAP [@{http://www.w3.org/TR/wsdl20-primer}], but frequently just as human-readable developer documentation/examples. |
 | **Semantic**: _ensuring consistent understanding of messages, interoperability of rules, knowledge and ontologies_       |  FDO semantic enable navigation and typing. Every FDO have a type. Types maintained in FDO Type registries, which may add additional semantics, e.g. the ePIC [PID-InfoType for Model](https://hdl.handle.net/21.11104/c1a0ec5ad347427f25d6). No single type semantic, Type FDOs can link to existing vocabularies & ontologies. JSON-LD used within some FDO objects (e.g. DISSCO Digital Specimen, NIST Material Science schema) [@wittenburg_2022] |  Lightweight HTTP semantics for authenticity/navigation.  Semantic Type not commonly expressed on PID/header level, may be declared within Linked Data metadata. Semantic of type implied by Linked Data formats (e.g. OWL2, RDFS), although choice of type system may not be explicit.   |
 | **Syntactic**: _serializing messages for digital exchange, structure representation_      |  DOIP serialize FDOs as JSON, metadata commonly use JSON, typed with JSON Schema. Multiple byte stream attachments of any media type.  | Textual HTTP headers (including any signposting), single byte stream of any media type, e.g. Linked Data formats (JSON-LD, Turtle, RDF/XML) or embedded in document (HTML with RDFa, JSON-LD or Microdata). XML previously main syntax used by APIs, JSON now dominant. |
