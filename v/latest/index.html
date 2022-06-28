@@ -7,7 +7,7 @@
   <meta name="author" content="Stian Soiland-Reyes" />
   <meta name="author" content="Carole Goble" />
   <meta name="author" content="Paul Groth" />
-  <meta name="dcterms.date" content="2022-06-26" />
+  <meta name="dcterms.date" content="2022-06-28" />
   <meta name="keywords" content="FDO, distributed, digital object" />
   <title>Evaluating FAIR Digital Object as a distributed object system</title>
   <style>
@@ -46,8 +46,8 @@
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-06-26" />
-  <meta name="citation_publication_date" content="2022-06-26" />
+  <meta name="dc.date" content="2022-06-28" />
+  <meta name="citation_publication_date" content="2022-06-28" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -73,9 +73,9 @@
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/753d7b4464c2333a4b0f5f9435276f5ba8f096be/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/753d7b4464c2333a4b0f5f9435276f5ba8f096be/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/753d7b4464c2333a4b0f5f9435276f5ba8f096be/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/c299eba2052fad1e177cafbe2e37f9a6272d3026/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/c299eba2052fad1e177cafbe2e37f9a6272d3026/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/c299eba2052fad1e177cafbe2e37f9a6272d3026/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,10 +92,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://stain.github.io/2022-fdo-paper/v/753d7b4464c2333a4b0f5f9435276f5ba8f096be/">permalink</a>)
+(<a href="https://stain.github.io/2022-fdo-paper/v/c299eba2052fad1e177cafbe2e37f9a6272d3026/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/stain/2022-fdo-paper/tree/753d7b4464c2333a4b0f5f9435276f5ba8f096be">stain/2022-fdo-paper@753d7b4</a>
-on June 26, 2022.
+from <a href="https://github.com/stain/2022-fdo-paper/tree/c299eba2052fad1e177cafbe2e37f9a6272d3026">stain/2022-fdo-paper@c299eba</a>
+on June 28, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -228,10 +228,18 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 <p>Recently there has been a renewed emphasis to improve the <em>Developer Experience</em> <span class="citation" data-cites="BFMoe8FC">[<a href="#ref-BFMoe8FC" role="doc-biblioref">50</a>]</span> for consumption of Linked Data, for instance RDF Shapes (expressed in SHACL <span class="citation" data-cites="GDrm9dgX">[<a href="#ref-GDrm9dgX" role="doc-biblioref">51</a>]</span> or ShEx <span class="citation" data-cites="YUzogaV">[<a href="#ref-YUzogaV" role="doc-biblioref">52</a>]</span>) <span class="citation" data-cites="S5BI6Mwx">[<a href="#ref-S5BI6Mwx" role="doc-biblioref">53</a>]</span> can be used to validate RDF Data <span class="citation" data-cites="ZeOAPNHa">[<a href="#ref-ZeOAPNHa" role="doc-biblioref">54</a>]</span> <!-- https://book.validatingrdf.com/ --> before consuming it programmatically, or reshaping data to fit other models. While a varied set of tools for Linked Data consumptions have been identified, most of them still require developers to gain significant knowledge of the underlying technologies, which hampers adaption by non-LD experts <span class="citation" data-cites="o596f2JM">[<a href="#ref-o596f2JM" role="doc-biblioref">55</a>]</span>, <!--http://www.semantic-web-journal.net/system/files/swj1849.pdf --> which then tend to prefer non-semantic two-dimensional formats such as CSV files.</p>
 <p>A valid concern is that the Semantic Web research community has still not fully embraced the Web, and that the “final 20%” engineering effort is frequently overlooked in favour of chasing new trends such as Big Data and AI, rather than making powerful Linked Data technologies available to the wider groups of Web developers <span class="citation" data-cites="jHwttlTs">[<a href="#ref-jHwttlTs" role="doc-biblioref">56</a>]</span>. One bridging gap here by the Linked Data movement has been “linked data by stealth” approaches such as structured data entry spreadsheets powered by ontologies <span class="citation" data-cites="MhsCt4P3">[<a href="#ref-MhsCt4P3" role="doc-biblioref">57</a>]</span>, the use of Linked Data as part of REST Web APIs <span class="citation" data-cites="eS6a6tlz">[<a href="#ref-eS6a6tlz" role="doc-biblioref">58</a>]</span> <!-- http://eprints.soton.ac.uk/id/eprint/272098 -->, and as shown by the big uptake by publishers to annotate the Web using schema.org <span class="citation" data-cites="tZOPTKnJ">[<a href="#ref-tZOPTKnJ" role="doc-biblioref">59</a>]</span>, with vocabulary use patterns documented by copy-pastable JSON-LD examples, rather than by formalized ontologies or developer requirements to understand the full Semantic Web stack.</p>
 <h3 id="sec:fair">FAIR</h3>
-<h2 id="sec:comparing">Comparing FDO and Web approaches</h2>
-<p>In this section we facilitate a couple of existing frameworks for comparing the FDO and Web approach.</p>
+<h2 id="sec:comparing">Comparing FDO against existing frameworks</h2>
+<p>To better understand the relationship between the FDO framework and other exisiting frameworks, we use four approaches for analysis.</p>
+<ol type="1">
+<li>FAST Middleware - this approach compares frameworks along dimesions for xyz</li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<p>This will cover the different dimensions of FDOs (service, resources, metadata, ..).</p>
 <p><strong>TODO: Why these particular frameworks?</strong></p>
 <h3 id="sec:interoperability-compare">Considering FDO/Web as interoperability framework for Fast Data</h3>
+<p>interoperability framework for Fast Data is … and here we do blaba</p>
 <div id="tbl:fdo-web-interoperability-framework" class="tablenos">
 <table id="tbl:fdo-web-interoperability-framework">
 <caption><span>Table 1:</span> Considering FDO and Web according to the levels of interoperability <span class="citation" data-cites="KlCFFFyL">[<a href="#ref-KlCFFFyL" role="doc-biblioref">60</a>]</span>:
@@ -282,6 +290,10 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 </tbody>
 </table>
 </div>
+<p>Based on analysis shown in table, we draw the following conclusions:</p>
+<p>Web have already showed us we can compose workflows of hetereogeneous Web Services. However, this is mostly done via developer or human interaction []. Similiarly, FDO does not enable automatic composition because operation semantics are not well defined. There is a question as to whether the plethora of documentation and broad developer usage that is available for Web APIs can be developed for FDO.</p>
+<p>A difference between Web and FDO is the stringency of the requirements for both syntax and semantics. Whereas the Web allows many different syntactic formats (e.g. from HTML to XML, PDFs), FDO requires JSON. On the semantic front, FDO requries that every object have a well-defined. This is clearly not the case on the Web.</p>
+<p>In terms of connectivity and the deployment of applications, the Web has a plethora of software, services, and protocols that are widely deployed. These have shown interoprability. The standards bodies (e.g. IETF and Web Consoritium) are mainly open and have a diverse representation []. In contrast, FDO has a small number of implementations and corresponding protocols. This is not to say that they cannot be developed in the future, but we note that the functionality provided by FDO implemenations can be easily implemented using Web technologies. It’s also a question as to whether a highly constrained protocol revolving around persistent identifiers is in fact necessary. For example, DOIs are already implemented on the web [].</p>
 <p>Mapping of Metamodel concepts:</p>
 <div id="tbl:metamodel-concepts" class="tablenos">
 <table id="tbl:metamodel-concepts">
@@ -358,7 +370,7 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 </tbody>
 </table>
 </div>
-<h2 id="sec:doip-fdo-compare">Assessing DOIP against FDO</h2>
+<h3 id="sec:doip-fdo-compare">Assessing DOIP against FDO</h3>
 <div id="tbl:fdo-checks" class="tablenos">
 <table id="tbl:fdo-checks">
 <caption><span>Table 3:</span> Checking FDO guidelines <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">4</a>]</span> against its current implementations as DOIP <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">12</a>]</span> and Linked Data Platform (LDP) <span class="citation" data-cites="7szz7dwO">[<a href="#ref-7szz7dwO" role="doc-biblioref">65</a>]</span>, with suggestions for required additions.
@@ -639,7 +651,7 @@ Along with experiments on logic systems in the Semantic Web academia, an unfortu
 </div>
 <p>…</p>
 <p>As for the aspect of <em>Performance</em>, it is interesting to note that while the first version of DOIP <span class="citation" data-cites="16uB3jxpa">[<a href="#ref-16uB3jxpa" role="doc-biblioref">22</a>]</span> supported multiplexed channels similar to HTTP/2, allowing concurrent transfer of several digital objects. However multiplexing was removed for the much simplified DOIP 2.0 <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">12</a>]</span>, which do support multiple asynchronous requests, but unlike DOIP 1.0 will require a DO response to be sent back completely, as a series of segments (which again can be split the bytes of each binary <em>element</em> into sized <em>chunks</em>), before transmission of another DO response can start on the transport channel. It is unclear what is the purpose of splitting a binary into chunks on a channel which no longer can be multiplexed and the only property of a chunk is its size <a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>.</p>
-<h2 id="sec:fair-compare">Assessing FDO against FAIR</h2>
+<h3 id="sec:fair-compare">Assessing FDO against FAIR</h3>
 <div id="tbl:fair-data-maturity-model" class="tablenos">
 <table id="tbl:fair-data-maturity-model" style="width:100%;">
 <caption><span>Table 5:</span> Assessing RDA’s FAIR Data Maturity Model <span class="citation" data-cites="1GrKTFaK2 UzQhqk0M">[<a href="#ref-1GrKTFaK2" role="doc-biblioref">95</a>,<a href="#ref-UzQhqk0M" role="doc-biblioref">96</a>]</span> (first 2 columns) against the FDO guidelines <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">4</a>]</span>, FDO implemented as DOIP <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">12</a>]</span>, Linked Data Platform <span class="citation" data-cites="7szz7dwO">[<a href="#ref-7szz7dwO" role="doc-biblioref">65</a>]</span> and Linked Data practices. –: Unspecified.
@@ -1576,7 +1588,7 @@ Such a combination of efforts will utillize both the benefits of mature Semantic
 <div class="csl-left-margin">108. </div><div class="csl-right-inline"><strong>Data Catalog Vocabulary (DCAT) - Version 2</strong> <a href="https://www.w3.org/TR/vocab-dcat-2/">https://www.w3.org/TR/vocab-dcat-2/</a></div>
 </div>
 <div id="ref-XmUY0cZB" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">109. </div><div class="csl-right-inline"><strong>FOAF Vocabulary Specification</strong> <a href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a></div>
+<div class="csl-left-margin">109. </div><div class="csl-right-inline"><a href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a></div>
 </div>
 <div id="ref-1F8S9FeHf" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">110. </div><div class="csl-right-inline"><strong>Bioschemas - Bioschemas</strong> <a href="http://bioschemas.org/">http://bioschemas.org/</a></div>

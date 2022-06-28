@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/stain/2022-fdo-paper/tree/gh-pages) branch hosts the contents of this directory at <https://stain.github.io/2022-fdo-paper/>.
-The permalink for this webpage version is <https://stain.github.io/2022-fdo-paper/v/753d7b4464c2333a4b0f5f9435276f5ba8f096be/>.
+The permalink for this webpage version is <https://stain.github.io/2022-fdo-paper/v/c299eba2052fad1e177cafbe2e37f9a6272d3026/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://stain.github.io/2022-fdo-paper/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`753d7b4464c2333a4b0f5f9435276f5ba8f096be`](https://github.com/stain/2022-fdo-paper/commit/753d7b4464c2333a4b0f5f9435276f5ba8f096be).
+[`c299eba2052fad1e177cafbe2e37f9a6272d3026`](https://github.com/stain/2022-fdo-paper/commit/c299eba2052fad1e177cafbe2e37f9a6272d3026).
