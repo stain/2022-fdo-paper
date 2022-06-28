@@ -16,6 +16,7 @@ bioinformatics
 Bioontologies
 BioPortal
 Bioschemas
+blaba
 bytestream
 CaroleAnneGoble
 carolegoble
@@ -23,8 +24,9 @@ CAs
 CDN
 CDNs
 centric
+Consoritium
 consumptions
-Cordra
+CORDRA
 COVID
 CSV
 CWFP
@@ -34,6 +36,7 @@ datasets
 DCAT
 dereferenceable
 diciplinary
+dimesions
 DNS
 DOIP
 DOIPv
@@ -43,6 +46,7 @@ Ecma
 EMEA
 EOSC
 ESRI
+exisiting
 Extensibility
 FDO
 FDOF
@@ -63,12 +67,14 @@ GraphDB
 Groth
 hasChild
 HATEOAS
+hetereogeneous
 HLS
 hoc
 HTTP’s
 Idehen
 IEC
 IETF
+implemenations
 inexistent
 InfoType
 INFRAEDI
@@ -77,6 +83,7 @@ inheritedly
 inheritently
 interferring
 interoperable
+interoprability
 interpretable
 ISWC
 ITU
@@ -87,11 +94,11 @@ JSWS
 Kernal
 kickstarted
 Kingsley
-LD
+ld
 LDP
 LOD
 maintaned
-metamodel
+Metamodel
 Microdata
 microformats
 Micropub
@@ -114,6 +121,7 @@ partioning
 pastable
 PAV
 pcinciple
+PDFs
 pgroth
 PHACTS
 PID
@@ -128,11 +136,12 @@ Rcord
 RDA’s
 RDF
 RDFa
-RDFLib
+rdflib
 RDFS
 RDMKit
 redirections
 Redland
+requries
 resiliant
 ResourceSync
 RO
@@ -147,6 +156,7 @@ SEO
 Sevelopment
 SHACL
 ShEx
+Similiarly
 SKOS
 SLAs
 Soiland
@@ -172,3 +182,4 @@ WebDAV
 WHATWG
 Worthwile
 WSDL
+xyz

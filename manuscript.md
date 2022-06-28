@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-06-26'
+date-meta: '2022-06-28'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-06-26" />
-  <meta name="citation_publication_date" content="2022-06-26" />
+  <meta name="dc.date" content="2022-06-28" />
+  <meta name="citation_publication_date" content="2022-06-28" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/753d7b4464c2333a4b0f5f9435276f5ba8f096be/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/753d7b4464c2333a4b0f5f9435276f5ba8f096be/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/753d7b4464c2333a4b0f5f9435276f5ba8f096be/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/c299eba2052fad1e177cafbe2e37f9a6272d3026/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/c299eba2052fad1e177cafbe2e37f9a6272d3026/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/c299eba2052fad1e177cafbe2e37f9a6272d3026/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,10 +74,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/753d7b4464c2333a4b0f5f9435276f5ba8f096be/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/c299eba2052fad1e177cafbe2e37f9a6272d3026/))
 was automatically generated
-from [stain/2022-fdo-paper@753d7b4](https://github.com/stain/2022-fdo-paper/tree/753d7b4464c2333a4b0f5f9435276f5ba8f096be)
-on June 26, 2022.
+from [stain/2022-fdo-paper@c299eba](https://github.com/stain/2022-fdo-paper/tree/c299eba2052fad1e177cafbe2e37f9a6272d3026)
+on June 28, 2022.
 </em></small>
 
 ## Authors
@@ -295,14 +295,23 @@ A valid concern is that the Semantic Web research community has still not fully 
 
 
 
-## Comparing FDO and Web approaches {#sec:comparing}
+## Comparing FDO against existing frameworks {#sec:comparing}
 
-In this section we facilitate a couple of existing frameworks for comparing the FDO and Web approach.
+To better understand the relationship between the FDO framework and other exisiting frameworks, we use four approaches for analysis.
+
+1. FAST Middleware - this approach compares frameworks along dimesions for xyz
+2. 
+3.
+4. 
+
+This will cover the different dimensions of FDOs (service, resources, metadata, ..).
 
 **TODO: Why these particular frameworks?**
 
 
 ### Considering FDO/Web as interoperability framework for Fast Data {#sec:interoperability-compare}
+
+interoperability framework for Fast Data is ... and here we do blaba
 
 | *Quality* |  FDO w/ DOIP               | Web w/ Linked Data         |
 |:----------|:--------------------------:|:--------------------------:|
@@ -316,6 +325,13 @@ In this section we facilitate a couple of existing frameworks for comparing the 
 Table: Considering FDO and Web according to the levels of interoperability [@doi:10.1007/978-3-319-31861-5_1]:
 {#tbl:fdo-web-interoperability-framework}
 
+Based on analysis shown in table, we draw the following conclusions:
+
+Web have already showed us we can compose workflows of hetereogeneous Web Services. However, this is mostly done via developer or human interaction []. Similiarly, FDO does not enable automatic composition because operation semantics are not well defined. There is a question as to whether the plethora of documentation and broad developer usage that is available for Web APIs can be developed for FDO.
+
+A difference between Web and FDO is the stringency of the requirements for both syntax and semantics. Whereas the Web allows many different syntactic formats (e.g. from HTML to XML, PDFs), FDO requires JSON. On the semantic front, FDO requries that every object have a well-defined. This is clearly not the case on the Web.
+
+In terms of connectivity and the deployment of applications, the Web has a plethora of software, services, and protocols that are widely deployed. These have shown interoprability. The standards bodies (e.g. IETF and Web Consoritium) are mainly open and have a diverse representation []. In contrast, FDO has a small number of implementations and corresponding protocols. This is not to say that they cannot be developed in the future, but we note that the functionality provided by FDO implemenations can be easily implemented using Web technologies. It's also a question as to whether a highly constrained protocol revolving around persistent identifiers is in fact necessary. For example, DOIs are already implemented on the web [].
 
 Mapping of Metamodel concepts:
 
@@ -337,7 +353,7 @@ Table: Mapping the Metamodel concepts from the Interoperability Framework for Fa
 {#tbl:metamodel-concepts}
 
 
-## Assessing DOIP against FDO {#sec:doip-fdo-compare}
+### Assessing DOIP against FDO {#sec:doip-fdo-compare}
 
 | **FDO Guideline**                                    | DOIP 2.0            | FDO suggestions     | Linked Data Platform | LDP suggestion       |
 |:------------------------------------------------:|:-------------------:|:-------------------:|:--------------------:|:--------------------:|
@@ -410,7 +426,7 @@ As for the aspect of _Performance_, it is interesting to note that while the fir
 
 
 
-## Assessing FDO against FAIR {#sec:fair-compare}
+### Assessing FDO against FAIR {#sec:fair-compare}
 
 
 |FAIR ID                   | Indicator                                                                 | FDO guidelines   | FDO/DOIP    | FDO/LDP    | Linked Data examples    |
