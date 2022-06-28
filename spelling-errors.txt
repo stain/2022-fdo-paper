@@ -26,7 +26,7 @@ CDNs
 centric
 Consoritium
 consumptions
-CORDRA
+Cordra
 COVID
 CSV
 CWFP
@@ -94,15 +94,15 @@ JSWS
 Kernal
 kickstarted
 Kingsley
-ld
+LD
 LDP
 LOD
 maintaned
-Metamodel
+metamodel
 Microdata
 microformats
 Micropub
-middleware
+Middleware
 modularity
 namespaces
 navigatable
@@ -111,7 +111,7 @@ NL
 OAI
 OBO
 occassionally
-Ontologies
+ontologies
 OpenAPI
 OpenLink
 org’s
@@ -146,7 +146,7 @@ resiliant
 ResourceSync
 RO
 ROR
-scalability
+Scalability
 scalable
 schemaorg
 schemas
