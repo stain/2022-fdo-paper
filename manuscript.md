@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-06-28'
+date-meta: '2022-07-13'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-06-28" />
-  <meta name="citation_publication_date" content="2022-06-28" />
+  <meta name="dc.date" content="2022-07-13" />
+  <meta name="citation_publication_date" content="2022-07-13" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/9a328fd4665afd55df95188bd00666ec64fb97e5/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/9a328fd4665afd55df95188bd00666ec64fb97e5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/9a328fd4665afd55df95188bd00666ec64fb97e5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/f2975f11202df99f45b7a1e76c50dd11b9474bd8/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/f2975f11202df99f45b7a1e76c50dd11b9474bd8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/f2975f11202df99f45b7a1e76c50dd11b9474bd8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,10 +74,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/9a328fd4665afd55df95188bd00666ec64fb97e5/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/f2975f11202df99f45b7a1e76c50dd11b9474bd8/))
 was automatically generated
-from [stain/2022-fdo-paper@9a328fd](https://github.com/stain/2022-fdo-paper/tree/9a328fd4665afd55df95188bd00666ec64fb97e5)
-on June 28, 2022.
+from [stain/2022-fdo-paper@f2975f1](https://github.com/stain/2022-fdo-paper/tree/f2975f11202df99f45b7a1e76c50dd11b9474bd8)
+on July 13, 2022.
 </em></small>
 
 ## Authors
@@ -271,7 +271,7 @@ The move towards _open science_ data sharing practices from the late 2000s encou
 Along with experiments on logic systems in the Semantic Web academia, an unfortunate side-effect appeared. RDF datasets would use URIs which no longer (or never) resolved to a Semantic Web representation of the described resources. Inconsistencies would emerge as the production of RDF largely focused on building graph representations of internal databases in order to use the Semantic Web tooling, rather than as a way to expose knowledge on the Web. Ironically, `http` based URLs then becomes location-less identifiers, mainly signifying a localized node within a graph, rather than a resolvable resource.
 -->
 
-With these trends, an emerging problem was that adapters of the Semantic Web primarily utillized it as a set of graph technologies, with little consideration to existing Web resources. This meant that links stayed mainly within a single information system, with little URI reuse even with large term overlaps [@doi:10.3233/SW-160238]. Just like _link rot_ affect regular Web pages and their citations from scholarly communication [@{10.1371/journal.pone.0115253}], for a majority of described RDF resources in the [Linked Open Data](https://lod-cloud.net/) (LOD) Cloud's gathering of more than thousand datasets, unfortunately they don't actually link to (still) downloadable (_dereferenceable_) Linked Data [@doi:10.3233/SW-190380, handle:20.500.11811/7183].   Another challenge facing potential adapters is the plethora of choices, not just to navigate, understand and select to reuse the many possible vocabularies and ontologies [@doi:10.3233/SSW200033] <!--https://arxiv.org/abs/2011.12599 -->, but also technological choices on RDF serialization (at least [7 formats](https://www.w3.org/TR/rdf11-primer/#section-graph-syntax)), type system (RDFS [@{http://www.w3.org/TR/rdf-schema/}], OWL [@{http://www.w3.org/TR/owl2-overview/}], OBO [@doi:10.1186/2041-1480-2-S1-S3], SKOS [@{http://www.w3.org/TR/skos-primer}]), hash vs slash, HTTP status codes and PID redirection strategies [@doi:10.22028/D291-25086].
+With these trends, an emerging problem was that adapters of the Semantic Web primarily utillized it as a set of graph technologies, with little consideration to existing Web resources. This meant that links stayed mainly within a single information system, with little URI reuse even with large term overlaps [@doi:10.3233/SW-160238]. Just like _link rot_ affect regular Web pages and their citations from scholarly communication [@{10.1371/journal.pone.0115253}], for a majority of described RDF resources in the [Linked Open Data](https://lod-cloud.net/) (LOD) Cloud's gathering of more than thousand datasets, unfortunately they don't actually link to (still) downloadable (_dereferenceable_) Linked Data [@doi:10.3233/SW-190380, {handle:20.500.11811/7183}].   Another challenge facing potential adapters is the plethora of choices, not just to navigate, understand and select to reuse the many possible vocabularies and ontologies [@doi:10.3233/SSW200033] <!--https://arxiv.org/abs/2011.12599 -->, but also technological choices on RDF serialization (at least [7 formats](https://www.w3.org/TR/rdf11-primer/#section-graph-syntax)), type system (RDFS [@{http://www.w3.org/TR/rdf-schema/}], OWL [@{http://www.w3.org/TR/owl2-overview/}], OBO [@doi:10.1186/2041-1480-2-S1-S3], SKOS [@{http://www.w3.org/TR/skos-primer}]), hash vs slash, HTTP status codes and PID redirection strategies [@doi:10.22028/D291-25086].
 
 
 
