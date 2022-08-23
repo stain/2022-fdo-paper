@@ -280,3 +280,16 @@ edition = {2nd},
 isbn = {9780672226977},
 address = {Carmel, {IN}, {USA}}
 }
+@techreport{ldp1.0,
+title = {Linked Data Platform 1.0},
+author = {Linked Data Platform Working Group,},
+editor = {Speicher, Steve and Arwe, John and Malhotra, Ashok},
+publisher = {W3C},
+url = {https://www.w3.org/TR/2015/REC-ldp-20150226/},
+year = {2015},
+month = {feb},
+day = {26},
+urldate = {2022-08-23},
+abstract = {This specification describes the useof {HTTP} for accessing, updating, creating and deleting resources fromservers that expose their resources as Linked Data. It provides clarificationsand extensions of the rules of Linked Data [{LINKED}-{DATA}]:Use {URIs} as names for {thingsUse} {HTTP} {URIs} so that people can look up those {namesWhen} someone looks up a {URI}, provide useful information, using the standards({RDF}*, {SPARQL})Include links to other {URIs}, so that they can discover more {thingsThis} specification discusses standard {HTTP} and {RDF} techniques used when constructing clients and servers that create, read, and write Linked Data Platform Resources.{LDP} Primer provides an entry-level introduction with many examples in the context of a fictional application.{LDP} Best Practices and Guidelines discusses best practices that you should use, and anti-patterns you should avoid, when constructing these clients and servers. This specification defines a special type of Linked Data Platform Resource: a Container. Containers are very useful in building application models involving collections of resources, often homogeneous ones. For example, universities offer a collection of classes and a collection of faculty members, each faculty member teaches a collection of courses, and so on. This specification discusses how to work with containers. Resources can be added to containers using standard {HTTP} operations like {POST} (see section 5.2.3 {HTTP} {POST}).The intention of this specification is to enable additional rules and layered groupings of rules as additional specifications. The scope is intentionally narrow to provide a set of key rules for reading and writing Linked Data that most, if not all, other specifications will depend upon and implementations will support.This specification provides some approaches to deal with large resources. An extension to this specificationprovides the ability to break large resource representations into multiple paged responses [{LDP}-{PAGING}].For context and background, it could be useful to read Linked Data Platform Use Case and Requirements [{LDP}-{UCR}] and section 6. Notable information from normative references.},
+type = {{W3C} Recommendation}
+}
