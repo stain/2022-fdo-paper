@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-07-13'
+date-meta: '2022-08-23'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-07-13" />
-  <meta name="citation_publication_date" content="2022-07-13" />
+  <meta name="dc.date" content="2022-08-23" />
+  <meta name="citation_publication_date" content="2022-08-23" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/f2975f11202df99f45b7a1e76c50dd11b9474bd8/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/f2975f11202df99f45b7a1e76c50dd11b9474bd8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/f2975f11202df99f45b7a1e76c50dd11b9474bd8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/7c2ead76f2f33799395df384e59a98ad51643436/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7c2ead76f2f33799395df384e59a98ad51643436/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7c2ead76f2f33799395df384e59a98ad51643436/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,10 +74,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/f2975f11202df99f45b7a1e76c50dd11b9474bd8/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/7c2ead76f2f33799395df384e59a98ad51643436/))
 was automatically generated
-from [stain/2022-fdo-paper@f2975f1](https://github.com/stain/2022-fdo-paper/tree/f2975f11202df99f45b7a1e76c50dd11b9474bd8)
-on July 13, 2022.
+from [stain/2022-fdo-paper@7c2ead7](https://github.com/stain/2022-fdo-paper/tree/7c2ead76f2f33799395df384e59a98ad51643436)
+on August 23, 2022.
 </em></small>
 
 ## Authors
@@ -297,21 +297,28 @@ A valid concern is that the Semantic Web research community has still not fully 
 
 ## Comparing FDO against existing frameworks {#sec:comparing}
 
-To better understand the relationship between the FDO framework and other exisiting frameworks, we use four approaches for analysis.
+To better understand the relationship between the FDO framework and other exisiting frameworks, we use these approaches for analysis:
 
-1. FAST Middleware - this approach compares frameworks along dimesions for xyz
-2. 
-3.
-4. 
+1. An Interoperability Framework and Distributed Platform for Fast Data Applications [@doi:10.1007/978-3-319-31861-5_1], which proposes quality measurements for comparing how frameworks support interoperability, particularly from a service architectural view
+2. The FAIR Digital Object guidelines [@bonino_2019], validated against its implementations for completeness. 
+3. A Comparison Framework for Middleware Infrastructures [@doi:10.5381/jot.2004.3.5.a2], which suggest dimensions like openness, performance and transparancy, mainly focused on remote computational methods
+4. Cross-checks against RDA's FAIR Data Maturity Model [@doi:10.5334/dsj-2020-041] to find how the FAIR principles are achieved in FDO, in particular considering access, sharing and openness
+5. EOSC Interoperability Framework [@doi:10.2777/620649] which gives recommendations for technical, semantic, organizational and legal interoperability, particularly from a metadata perspective
 
-This will cover the different dimensions of FDOs (service, resources, metadata, ..).
+The reason for using this wide selection of frameworks in our comparison is to exercise the different dimensions that together form FAIR Digital Objects: Data, Metadata, Service, Access, Operations, Computation. 
+We have left out further comparisons on type systems, persistent identifiers and social aspects as principles and practices within these dimensions are still taking form within the FDO community (see section @sec:next-step-fdo).
 
-**TODO: Why these particular frameworks?**
+Some of these frameworks invite a comparison on a conceptual level, while others relate better to implementations and current practices. For these we consider FAIR Digital Objects and the Web conceptually, and for implementations we contrast between the main FDO realization using the DOIPv2 protocol [@handle:0.DOIP/DOIPV2.0] against Linked Data in general.
+
+
 
 
 ### Considering FDO/Web as interoperability framework for Fast Data {#sec:interoperability-compare}
 
-interoperability framework for Fast Data is ... and here we do blaba
+The Interoperability Framework for Fast Data Applications [@doi:10.1007/978-3-319-31861-5_1] categorizes interoperability between applications along 6 strands, covering different architectural levels: from _symbiotic_ (agreement to cooperate) and _pragmatic_ (ability to choreograph processes), through _semantic_ (common understanding) and _syntactic_ (common message formats), to low-level _connective_ (transport-level) and _environmental_ (deployment practices).
+
+We have chosen to investigate using this framework as it covers the higher levels of the OSI Model [@isbn:9780672226977] better with regards to automated machine-to-machine interaction (and thus interoperability), which is a crucial aspect of the FAIR principles. In table [@tbl:fdo-web-interoperability-framework] we use the interoperability framework to compare the current FAIR Digital Object approach against the Web and its Linked Data practices.
+
 
 | *Quality* |  FDO w/ DOIP               | Web w/ Linked Data         |
 |:----------|:--------------------------:|:--------------------------:|
@@ -322,25 +329,27 @@ interoperability framework for Fast Data is ... and here we do blaba
 | **Connective**: _transferring messages to another application, e.g. wrapping in other protocols_     |  DOIP [@handle:0.DOIP/DOIPV2.0] is transport-independent, commonly TLS TCP/IP port 9000), [DOIP over HTTP](https://www.cordra.org/documentation/api/doip-api-for-http-clients.html) | HTTP/1.1 (TCP/IP port 80), HTTP/1.1+TLS (TCP/IP 443), HTTP/2 (as HTTP/1* but binary), HTTP/3 (like HTTP/2+TLS but UDP)  |
 | **Environmental**: _how applications are deployed and affected by its environment, portability_  |  Main DOIP implementation is [Cordra](https://www.cordra.org/), which can be single-instance or [distributed](https://www.cordra.org/documentation/configuration/distributed-deployment.html). Cordra [storage backends](https://www.cordra.org/documentation/configuration/storage-backends.html) include file system, S3, MongoDB (itself scalable). Unique DOIP protocol can be hard to add to existing Web application frameworks, although proxy services have been developed (e.g. B2SHARE adapter). |  HTTP services widely deployed in a myriad of ways, ranging from single instance servers, horizontally & vertically scaled application servers, to (for static content) multi-cloud Content-Delivery Networks (CDN).  Current scalable cloud technologies for Web hosting may not support HTTP features previously seen as important for Semantic Web, e.g. content negotiation and semantic HTTP status codes.  |
 
-Table: Considering FDO and Web according to the levels of interoperability [@doi:10.1007/978-3-319-31861-5_1]:
+Table: Considering FDO and Web according to the quality levels of the Interoperability Framework for Fast Data [@doi:10.1007/978-3-319-31861-5_1].
 {#tbl:fdo-web-interoperability-framework}
 
-Based on analysis shown in table, we draw the following conclusions:
+Based on the analysis shown in table @tbl:fdo-web-interoperability-framework, we draw the following conclusions:
 
-Web have already showed us we can compose workflows of hetereogeneous Web Services. However, this is mostly done via developer or human interaction []. Similiarly, FDO does not enable automatic composition because operation semantics are not well defined. There is a question as to whether the plethora of documentation and broad developer usage that is available for Web APIs can be developed for FDO.
+Web have already showed us we can compose workflows of hetereogeneous Web Services [@10.1093/nar/gkt328]. However, this is mostly done via developer or human interaction [@10.12688/f1000research.54159.1]. Similiarly, FDO does not enable automatic composition because operation semantics are not well defined. There is a question as to whether the plethora of documentation and broad developer usage that is available for Web APIs can be developed for FDO.
 
-A difference between Web and FDO is the stringency of the requirements for both syntax and semantics. Whereas the Web allows many different syntactic formats (e.g. from HTML to XML, PDFs), FDO requires JSON. On the semantic front, FDO requries that every object have a well-defined. This is clearly not the case on the Web.
+A difference between Web and FDO is the stringency of the requirements for both syntax and semantics. Whereas the Web allows many different syntactic formats (e.g. from HTML to XML, PDFs), FDO realized with DOIP requires JSON. On the semantic front, FDO requries that every object have a well-defined type and structured form. This is clearly not the case on the Web.
 
 In terms of connectivity and the deployment of applications, the Web has a plethora of software, services, and protocols that are widely deployed. These have shown interoprability. The standards bodies (e.g. IETF and Web Consoritium) are mainly open and have a diverse representation []. In contrast, FDO has a small number of implementations and corresponding protocols. This is not to say that they cannot be developed in the future, but we note that the functionality provided by FDO implemenations can be easily implemented using Web technologies. It's also a question as to whether a highly constrained protocol revolving around persistent identifiers is in fact necessary. For example, DOIs are already implemented on the web [].
 
-Mapping of Metamodel concepts:
+#### Mapping of Metamodel concepts
 
-| Metamodel concept | FDO/DOIP concept | Web/LD concept             |
+The Interoperability Framework for Fast Data also provide a brief _metamodel_ which we use in table [@tbl:metamodel-concepts] to map and examplify corresponding concepts in FDO's DOIP realization and the Web using HTTP semantics [@10.17487/RFC9110].
+
+| Metamodel concept | FDO/DOIP concept | Web/HTTP concept           |
 |:-----------------:|:----------------:|:--------------------------:|
 |  Resource         | FDO/DO           |  Resource                  |
 |  Service          | DOIP service     |  Server/endpoint           |
 |  Transaction      | (not supported)  |  Conditional requests, `409 Conflict` |
-|  Process          | Extended operations  |  Primarily stateless, `100 Continue`, `202 Accepted` |
+|  Process          | Extended operations  |  (primarily stateless), `100 Continue`, `202 Accepted` |
 |  Operation        | DOIP Operation   |  Method, query parameters  |
 |  Request          | DOIP Request     |  Request                   |
 |  Response         | DOIP Response    |  Response                  |
@@ -349,30 +358,33 @@ Mapping of Metamodel concepts:
 |  Protocol         | DOIP 2.0, ++     |  HTTP/1.1, HTTP/2, HTTP/3  |
 |  Link             | PID/Handle       |  URL                       |
 
-Table: Mapping the Metamodel concepts from the Interoperability Framework for Fast Data [@doi:10.1007/978-3-319-31861-5_1] to equivalent concepts for FDO and Web:
+Table: Mapping the Metamodel concepts from the Interoperability Framework for Fast Data [@doi:10.1007/978-3-319-31861-5_1] to equivalent concepts for FDO and Web.
 {#tbl:metamodel-concepts}
 
+From this mapping we can identify the conceptual similarities between DOIP and HTTP, often with common terminology. Notable are that neither DOIP or HTTP have strong support for transactions (explored further in section @sec:middleware), as well that HTTP has poor direct support for processes, as the Web is primarily stateless by design. 
 
-### Assessing DOIP against FDO {#sec:doip-fdo-compare}
+### Assessing FDO implementations {#sec:doip-fdo-compare}
+
+The FAIR Digital Object guidelines [@bonino_2019] sets out recommendations for FDO implementations.  In Table @tbl:fdo-checks we evaluate the two current implementations, using DOIPv2 [@handle:0.DOIP/DOIPV2.0] and using Linked Data Platform [@ldp1.0], as proposed by [@{https://fairdigitalobjectframework.org/}]. 
 
 | **FDO Guideline**                                    | DOIP 2.0            | FDO suggestions     | Linked Data Platform | LDP suggestion       |
 |:------------------------------------------------:|:-------------------:|:-------------------:|:--------------------:|:--------------------:|
-| G1: _invest for many decades_                    | Handle system stable for 20 years, DOIP 2.0 since 2017. | Ensure FDO types will not be protocol-bound as DOIP might be updated/replaced | HTTP stable for 30 years, Semantic Web for 20 years | Keep flexibility of RDF serialization formats which may change more frequently | 
+| G1: _invest for many decades_                    | Handle system stable for 20 years, DOIP 2.0 since 2017. | Ensure FDO types will not be protocol-bound as DOIP might be updated/replaced | HTTP stable for 30 years, Semantic Web for 20 years. `http://` URIs replaced by `https://`. | Keep flexibility of RDF serialization formats which may change more frequently | 
 | G2: _trustworthiness_                            | DOI/Handle trusted by all major academic publishers and data repositories. DOIP relatively unknown, in effect only one implementation. |  Further promote DOIP and justify its benefits. Build tutorials and OSI open source implementations. Standardize DOIP-over-HTTP alternative.  |  JSON-LD used by half of all websites [@{}], however previous bad experiences with Semantic Web may deter adapters  |  Ensure simplicity for end developers, rather than semantic overengineering. Example-driven documentation.  |
-| G3: _FAIR principles_                            | See table @tbl:fair-fdos |  Ensure all FAIR principles are covered, build complete examples.   |  Touched briefly, see table @tbl:fair-fdos |  Add explicit expression to show each FAIR pcinciple fulfilled.  | 
+| G3: _follows FAIR principles_                    | See table @tbl:fair-fdos |  Ensure all FAIR principles are covered, build complete examples.   |  Touched briefly, see table @tbl:fair-fdos |  Add explicit expression to show each FAIR pcinciple fulfilled.  | 
 | G4: _machine actionability_                      | CRUD and extension operations dynamically listed (see table @#tbl:fdo-web-middleware) |  Specify which operations should work for a given type, to reduce need for dynamic lookup. Specify input/output expectations formally (e.g. JSON Schema).  |  HTTP CRUD operations, Open API (see table @#tbl:fdo-web-middleware) |  Document operations so client can make subsequent HTTP calls.  |
-| G5: _abstraction principle_                      |  Handle PIDs as abstraction base. DOIP operations can use any transport protocol.  | Document transport protocols as FDOs, recommend which transport to use. |  URI as abstraction base. Does not specify PID requirements.  | Give stronger deployment recommendations. |   
-| G6: _stable binding_                             | 
-| G7: _encapsulation_                              |
+| G5: _abstraction principle_                      | Handle PIDs as abstraction base. DOIP operations can use any transport protocol.  | Document transport protocols as FDOs, recommend which transport to use. |  URI as abstraction base. Does not specify PID requirements.  | Give stronger deployment recommendations. |   
+| G6: _stable binding between entities_            | Machine-navigation through PIDs and operations specified per type. Unclear when metadata field is a PID or plain text. | Make datatype of fields explicit to support navigation. | Machine-navigation through URIs via properties and types. Unclear when URI should be followed or is just identifier, but always distinct from plain text. |    |
+| G7: _encapsulation_                              | Operations discovered at runtime (`0.DOIP/Op.ListOperations`).  |  Allow method discovery by type FDOs in advance (see PR-TypingFDOs-2.0-20220608). | HTTP methods discovered at runtime (`OPTIONS`), indempotent methods attempted directly. Unsupported methods reported using LDP constraints to human-readable text. |  Declare supported methods in advance, e.g. OpenAPI [@{https://spec.openapis.org/oas/v3.1.0.html}]  | 
 | G8: _technology independence_                    | In theory independent, in reality depends on single implementations of Handle system and DOIP  | Encourage open source DOIP testbeds and lighter reference implementations  |  Multiple HTTP implementations, multiple LDP implementations. No FDOF implementations.  |  Develop demonstrator of FDOF usage based on existing LDP server.  |
-| G9: _standard compliance_                        | Handle [RFC??], DOIP []. FDO requirements not standardized yet.   | Formalize standard process of FDO requirements [@WD-DOC] |  HTTP, LDP. FDOF not yet standardized |  Formalize FDOF from FDOF-SEM working group | 
+| G9: _standard compliance_                        | Handle [@doi:10.17487/RFC3650], DOIP [@handle:0.DOIP/DOIPV2.0]. FDO requirements not standardized yet.   | Formalize standard process of FDO requirements [@WD-DOC] |  HTTP, LDP. FDOF not yet standardized |  Formalize FDOF from FDOF-SEM working group | 
 | FDOF1: _PID as basis_                            | Extensive use of Handle system.  |  Clarify how local testing handles can be used during development, how "temporary" FDOs should evolve [@PID policy]. Register `0.DOIP/*` and `0.FDO/*` as PIDs.  | 
-| FDOF2: _PID record w/ type_                      |  |  Document requirements for PID Record {@..} |
-| FDOF3: _PID resolvable to bytestream & metadata_ | Byte stream resolvable trough `0.DOIP/REtrieve`. No method/attribute defined for separate metadata, only directly in PID Rcord. Unclear meaning of multiple items and bytestream chunks. | Clarify expectations for multiple items. Recommend chunks to not be used. | URIs resolvable by default. Multiple ways to resolve metadata, unclear preference. |  Add FAIR Signposting and preference order.  | 
+| FDOF2: _PID record w/ type_                      |  Unspecified how to resolve from Handle to DOIP Service (!), in practice `10320/loc`, `0.TYPE/DOIPService`, `URL`, `URL_REPLICA` | Document requirements for PID Record () |
+| FDOF3: _PID resolvable to bytestream & metadata_ | Byte stream resolvable (`0.DOIP/Retrieve`). No method/attribute defined for separate metadata, only directly in PID Rcord. Unclear meaning of multiple items and bytestream chunks. | Clarify expectations for multiple items. Recommend chunks to not be used. | URIs resolvable by default. Multiple ways to resolve metadata, unclear preference. |  Add FAIR Signposting and preference order.  | 
 | FDOF4: _Additional attributes_                   |  Freetext attribute keys. Attributes should be defined for FDO type (?). |  Require that attribute keys should be PIDs (or have predefined mapping to PIDs). Explicitly allow attributes not already defined in type.  |  All attributes individually identified. Any Linked Data attributes can be used by URI or with mapped prefix.  |  Clarify type expectations of required/recommended/optional attributes.  |
 | FDOF5: _Interface: operation by PID_             | Extended operations use PID, but "pid-like" DOIP operations/types are not registered as handles. | Register `0.DOIP/*` and `0.FDO/*` as PIDs. Clarify that operations can be mapped to protocol directly. | CRUD operations used directly in HTTP (e.g. `PUT`). Unclear how to provide PID for additional operations. |  Specify how additional operations should be called over HTTP. | 
-| FDOF6: _CRUD operations + extensions_            | `0.DOIP/Op.Create` etc. | | `GET`, `PUT`, `POST`, `DELETE`. |  |
-| FDOF7: _FDOF Types related to operations_        |
+| FDOF6: _CRUD operations + extensions_            | `0.DOIP/Op.Create` etc. | | `PUT`, `GET`, `POST`, `DELETE`, `PATCH`, extensions uncommon. |  |
+| FDOF7: _FDOF Types related to operations_        | Not yet formalized, only discoverable on a given FDO of type. WD-PID leaves this open. |  Add explicit relation between type and operations  | 
 | FDOF8: _Metadata as FDO, semantic assertions_    | 
 | FDOF9: _Different metadata levels_               |
 | FDOF10: _Metadata schemas by community_          |
@@ -383,7 +395,7 @@ Table: Checking FDO guidelines [@bonino_2019] against its current implementation
 
 Note that the draft update to FDO specification [@WD-RequirementSpec-1.0-20220317] (see box @sec:next-step-fdo) clarifies these definitions with equivalent identifiers [^2] and relates them to further FDO requirements such as FDO Data Type Registries. 
 
-[^2]: [@WD-RequirementSpec-1.0-20220317] renames _FDOF*_ to _FDOR*_, FDOF3/FDOF4 are swapped to FDOR4/FDOR3.
+[^2]: [@WD-RequirementSpec-1.0-20220317] renames _FDOF*_ to _FDOR*_, FDOF3/FDOF4 are swapped to FDOR4/FDOR3. <!-- Fixed in later update-->
 
 
 
