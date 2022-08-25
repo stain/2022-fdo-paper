@@ -96,11 +96,11 @@ LD
 LDP
 LOD
 maintaned
-Metamodel
+metamodel
 Microdata
 microformats
 Micropub
-Middleware
+middleware
 Modularity
 namespaces
 navigatable
@@ -166,7 +166,7 @@ subtypes
 syntaxes
 TCP
 testbeds
-thumbstone
+Thumbstone
 TLS
 TODO
 transparancy

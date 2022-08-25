@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/5f2cad59cf543c669435064e5cf93b4d7fb2d78a/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/5f2cad59cf543c669435064e5cf93b4d7fb2d78a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/5f2cad59cf543c669435064e5cf93b4d7fb2d78a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/6753450b997aa006e5860fc83cfb90a88b5733ea/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/6753450b997aa006e5860fc83cfb90a88b5733ea/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/6753450b997aa006e5860fc83cfb90a88b5733ea/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/5f2cad59cf543c669435064e5cf93b4d7fb2d78a/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/6753450b997aa006e5860fc83cfb90a88b5733ea/))
 was automatically generated
-from [stain/2022-fdo-paper@5f2cad5](https://github.com/stain/2022-fdo-paper/tree/5f2cad59cf543c669435064e5cf93b4d7fb2d78a)
+from [stain/2022-fdo-paper@6753450](https://github.com/stain/2022-fdo-paper/tree/6753450b997aa006e5860fc83cfb90a88b5733ea)
 on August 25, 2022.
 </em></small>
 
@@ -156,7 +156,7 @@ Linked Data have been particularly highlighted [?] as an established set of prin
 
 The EOSC Interoperability framework highlights FAIR Digital Object [@doi:10.1007/978-3-030-23584-0_1] (FDO) as a possible foundations for building a semantically interoperable ecosystem to fully realize the FAIR principles beyond individual repositories and infrastructures.
 
-Therefore, in this article, we are examining the relationships between FAIR Digital Object and FAIR with the Web and Linked Data. We will utillize several frameworks to investigate commonalities, differences and remaining gaps. 
+Therefore, in this article, we are examining the relationships between FAIR and FAIR Digital Object contrasted with Linked Data and the Web in general. We will utillize several frameworks to investigate commonalities, differences and remaining gaps. 
 
 
 ::: {.breakout}
