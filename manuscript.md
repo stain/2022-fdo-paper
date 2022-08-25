@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-08-23'
+date-meta: '2022-08-25'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-08-23" />
-  <meta name="citation_publication_date" content="2022-08-23" />
+  <meta name="dc.date" content="2022-08-25" />
+  <meta name="citation_publication_date" content="2022-08-25" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/7c2ead76f2f33799395df384e59a98ad51643436/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7c2ead76f2f33799395df384e59a98ad51643436/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7c2ead76f2f33799395df384e59a98ad51643436/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/845260917f635be83139d88cd92826d167328fba/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/845260917f635be83139d88cd92826d167328fba/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/845260917f635be83139d88cd92826d167328fba/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,10 +74,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/7c2ead76f2f33799395df384e59a98ad51643436/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/845260917f635be83139d88cd92826d167328fba/))
 was automatically generated
-from [stain/2022-fdo-paper@7c2ead7](https://github.com/stain/2022-fdo-paper/tree/7c2ead76f2f33799395df384e59a98ad51643436)
-on August 23, 2022.
+from [stain/2022-fdo-paper@8452609](https://github.com/stain/2022-fdo-paper/tree/845260917f635be83139d88cd92826d167328fba)
+on August 25, 2022.
 </em></small>
 
 ## Authors
@@ -552,6 +552,9 @@ While RDF and Linked Data has been suggested as prime candidates for making FAIR
 We therefore identify the need for an explicit FDO profile of Linked Data that sets pragmatic constraints and stronger recommendations for consistent and developer-friendly deployment of digital objects. 
 Such a combination of efforts will utillize both the benefits of mature Semantic Web technologies (e.g. federated knowledge graph queries and rich validation) and data management practices that follow FDO guidance in order to grow a rigid (yet flexible) ecosystem of machine-actionable scholarly objects. 
 
+
+<!-- Leave out
+
 ## Simplifying the Semantic Web Architecture
 
 * [@10.1007/978-3-540-68234-9_22] updating Semantic Web Architeture
@@ -576,6 +579,7 @@ Below we reconsider the Semantic Web Architecture as updated by Kingsley, and si
 
 As technological improvements to Semantic Web continue, and FDO requirements mature, this FDO-LD profile will need to be regularly revised, for instance every 3 years.
 
+-->
 
 
 ### Random Notes

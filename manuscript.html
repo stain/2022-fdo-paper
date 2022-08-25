@@ -7,7 +7,7 @@
   <meta name="author" content="Stian Soiland-Reyes" />
   <meta name="author" content="Carole Goble" />
   <meta name="author" content="Paul Groth" />
-  <meta name="dcterms.date" content="2022-08-23" />
+  <meta name="dcterms.date" content="2022-08-25" />
   <meta name="keywords" content="FDO, distributed, digital object" />
   <title>Evaluating FAIR Digital Object as a distributed object system</title>
   <style>
@@ -46,8 +46,8 @@
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-08-23" />
-  <meta name="citation_publication_date" content="2022-08-23" />
+  <meta name="dc.date" content="2022-08-25" />
+  <meta name="citation_publication_date" content="2022-08-25" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -73,9 +73,9 @@
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/7c2ead76f2f33799395df384e59a98ad51643436/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7c2ead76f2f33799395df384e59a98ad51643436/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7c2ead76f2f33799395df384e59a98ad51643436/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/845260917f635be83139d88cd92826d167328fba/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/845260917f635be83139d88cd92826d167328fba/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/845260917f635be83139d88cd92826d167328fba/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,10 +92,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://stain.github.io/2022-fdo-paper/v/7c2ead76f2f33799395df384e59a98ad51643436/">permalink</a>)
+(<a href="https://stain.github.io/2022-fdo-paper/v/845260917f635be83139d88cd92826d167328fba/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/stain/2022-fdo-paper/tree/7c2ead76f2f33799395df384e59a98ad51643436">stain/2022-fdo-paper@7c2ead7</a>
-on August 23, 2022.
+from <a href="https://github.com/stain/2022-fdo-paper/tree/845260917f635be83139d88cd92826d167328fba">stain/2022-fdo-paper@8452609</a>
+on August 25, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -1235,24 +1235,33 @@ However, our deeper investigation, based on multiple frameworks, highlights that
 <p>While RDF and Linked Data has been suggested as prime candidates for making FAIR data, we argue that when different developers have too many degrees of freedom (such as serialization formats, vocabularies, identifiers, navigation), interoperability is hampered – this makes it hard for machines to reliably consume multiple FAIR resources across repositories and data providers.</p>
 <p>We therefore identify the need for an explicit FDO profile of Linked Data that sets pragmatic constraints and stronger recommendations for consistent and developer-friendly deployment of digital objects.
 Such a combination of efforts will utillize both the benefits of mature Semantic Web technologies (e.g. federated knowledge graph queries and rich validation) and data management practices that follow FDO guidance in order to grow a rigid (yet flexible) ecosystem of machine-actionable scholarly objects.</p>
-<h2 id="simplifying-the-semantic-web-architecture">Simplifying the Semantic Web Architecture</h2>
-<ul>
-<li><span class="citation" data-cites="S4X6BznB">[<a href="#ref-S4X6BznB" role="doc-biblioref">121</a>]</span> updating Semantic Web Architeture</li>
-<li><span class="citation" data-cites="1G1Os7eZz">[<a href="#ref-1G1Os7eZz" role="doc-biblioref">122</a>]</span> ?</li>
-</ul>
-<p>Kingsley Uyi Idehen points out that the traditional Semantic Web Cake has a serious flaw in implying that XML is a requirement and points out that the Semantic Web is <em>not</em> distinct from the World Wide Web <span class="citation" data-cites="ivZabDaF">[<a href="#ref-ivZabDaF" role="doc-biblioref">123</a>]</span> .</p>
-<p>Below we reconsider the Semantic Web Architecture as updated by Kingsley, and simplify it with the most obvious technical choices as of 2022 to align it with the main FDO requirements:</p>
-<ul>
-<li>Semantic Web of Linked Data: Use HTTP 1.1 or newer. HTTP resolution of PID must redirect to JSON-LD, optionally via a HTML landing page with FAIR Signposting link headers.</li>
-<li>Document Type: Use JSON-LD 1.1 or newer. <code>@context</code> must resolve by versioned PID<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>. Use flattened, compacted profile of JSON-LD for consistent JSON.</li>
-<li>Sentence Part identifiers: Use PIDs and <code>#</code>-fragments of PIDs, allowing other URLs for non-FDO references. Use DOIs or Handle</li>
-<li>Abstract language: Use a single graph. Explicitly declare <code>@type</code> and <code>s:name</code> of all subjects.</li>
-<li>Query: Use SPARQL 1.1 or newer.</li>
-<li>Dictionary: Use <code>https://schema.org/</code> as base vocabulary, extend using PID to vocabularies in SKOS.</li>
-<li>Rules: Use SHACL Core in JSON-LD</li>
-<li>Transmission: Always use TLS and <code>https://</code> URIs (including in new PIDs<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>). Use services like Let’s Encrypt for ad-hoc certificates.</li>
-</ul>
-<p>As technological improvements to Semantic Web continue, and FDO requirements mature, this FDO-LD profile will need to be regularly revised, for instance every 3 years.</p>
+<!-- Leave out
+
+## Simplifying the Semantic Web Architecture
+
+* [@10.1007/978-3-540-68234-9_22] updating Semantic Web Architeture
+* [@10.3991/ijet.v10i5.4754] ?
+
+Kingsley Uyi Idehen points out that the traditional Semantic Web Cake has a serious flaw in implying that XML is a requirement and points out that the Semantic Web is *not* distinct from the World Wide Web [@{https://medium.com/openlink-software-blog/semantic-web-layer-cake-tweak-explained-6ba5c6ac3fab}] . 
+
+Below we reconsider the Semantic Web Architecture as updated by Kingsley, and simplify it with the most obvious technical choices as of 2022 to align it with the main FDO requirements:
+
+* Semantic Web of Linked Data: Use HTTP 1.1 or newer. HTTP resolution of PID must redirect to JSON-LD, optionally via a HTML landing page with FAIR Signposting link headers.
+* Document Type: Use JSON-LD 1.1 or newer. `@context` must resolve by versioned PID[^schemapid]. Use flattened, compacted profile of JSON-LD for consistent JSON.
+* Sentence Part identifiers: Use PIDs and `#`-fragments of PIDs, allowing other URLs for non-FDO references. Use DOIs or Handle
+* Abstract language: Use a single graph. Explicitly declare `@type` and `s:name` of all subjects.
+* Query: Use SPARQL 1.1 or newer.
+* Dictionary: Use `https://schema.org/` as base vocabulary, extend using PID to vocabularies in SKOS. 
+* Rules: Use SHACL Core in JSON-LD
+* Transmission: Always use TLS and `https://` URIs (including in new PIDs[^schemahttps]). Use services like Let's Encrypt for ad-hoc certificates.
+
+[^schemapid]: Note that while schema.org's JSON-LD examples frequently use `"@context": "https://schema.org"` this is not a versioned PID (not even a complete URI). While releases of this particular vocabulary strive to not break backward compatibility, we suggest using for instance <https://schema.org/version/14.0/schemaorg-current-https.jsonld> or an indirect w3id 
+
+[^schemahttps]: The schema.org JSON-LD context used `http` PIDs since 2011, with a gradual transition to `https`, see [schemaorg/schemaorg#2853](https://github.com/schemaorg/schemaorg/issues/2853) and [schemaorg/schemaorg#2886](https://github.com/schemaorg/schemaorg/issues/2886)
+
+As technological improvements to Semantic Web continue, and FDO requirements mature, this FDO-LD profile will need to be regularly revised, for instance every 3 years.
+
+-->
 <h3 id="random-notes">Random Notes</h3>
 <p>(Likely to be deleted from paper)</p>
 <ul>
@@ -1615,7 +1624,7 @@ Such a combination of efforts will utillize both the benefits of mature Semantic
 <div class="csl-left-margin">115. </div><div class="csl-right-inline"><strong>Schema.org - Schema.org</strong> <a href="https://schema.org/">https://schema.org/</a></div>
 </div>
 <div id="ref-wAbZpOsr" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">116. </div><div class="csl-right-inline"><strong>DCMI Metadata Terms</strong> <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</a></div>
+<div class="csl-left-margin">116. </div><div class="csl-right-inline"><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a></div>
 </div>
 <div id="ref-lnH0hEuh" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">117. </div><div class="csl-right-inline"><strong>Data Catalog Vocabulary (DCAT) - Version 2</strong> <a href="https://www.w3.org/TR/vocab-dcat-2/">https://www.w3.org/TR/vocab-dcat-2/</a></div>
@@ -1628,15 +1637,6 @@ Such a combination of efforts will utillize both the benefits of mature Semantic
 </div>
 <div id="ref-kYjzRJ0H" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">120. </div><div class="csl-right-inline"><strong>Semantic Web - XML2000 - slide "Architecture"</strong> <a href="https://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html">https://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html</a></div>
-</div>
-<div id="ref-S4X6BznB" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">121. </div><div class="csl-right-inline"><strong>A Functional Semantic Web Architecture</strong> <div class="csl-block">Aurona Gerber, Alta van der Merwe, Andries Barnard</div> <em>Lecture Notes in Computer Science</em> (2008) <a href="https://doi.org/cn3mbp">https://doi.org/cn3mbp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-540-68234-9_22">10.1007/978-3-540-68234-9_22</a></div></div>
-</div>
-<div id="ref-1G1Os7eZz" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">122. </div><div class="csl-right-inline"><strong>Semantic Web Architecture and its Impact on E-learning Systems Development</strong> <div class="csl-block">Samir Abou El-Seoud, Hosam El-Sofany, Omar Karam</div> <em>International Journal of Emerging Technologies in Learning (iJET)</em> (2015-11-13) <a href="https://doi.org/gqdxxh">https://doi.org/gqdxxh</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3991/ijet.v10i5.4754">10.3991/ijet.v10i5.4754</a></div></div>
-</div>
-<div id="ref-ivZabDaF" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">123. </div><div class="csl-right-inline"><strong>Semantic Web Layer Cake Tweak, Explained</strong> <div class="csl-block">Kingsley Uyi Idehen</div> <em>OpenLink Software Blog</em> (2017-07-24) <a href="https://medium.com/openlink-software-blog/semantic-web-layer-cake-tweak-explained-6ba5c6ac3fab">https://medium.com/openlink-software-blog/semantic-web-layer-cake-tweak-explained-6ba5c6ac3fab</a></div>
 </div>
 </div>
 <section class="footnotes footnotes-end-of-document" role="doc-endnotes">
@@ -1652,8 +1652,6 @@ Such a combination of efforts will utillize both the benefits of mature Semantic
 <li id="fn8" role="doc-endnote"><p>HATEOAS: Hypermedia as the Engine of Application State <span class="citation" data-cites="174AwcFUL">[<a href="#ref-174AwcFUL" role="doc-biblioref">64</a>]</span>, an important element of the REST architectural style.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn9" role="doc-endnote"><p>Although it is possible with <code>0.DOIP/Op.Retrieve</code> to request only particular individual elements of an DO (e.g. one file), unlike HTTP’s <code>Range</code> request, it is not possible to select individual chunks of an element’s bytestream.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn10" role="doc-endnote"><p>The <code>Handle.net</code> system was previously covered by software patent <a href="https://patents.google.com/patent/US6135646A/en">US6135646A</a> which <a href="https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461">expired</a> in 2013.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11" role="doc-endnote"><p>Note that while schema.org’s JSON-LD examples frequently use <code>"@context": "https://schema.org"</code> this is not a versioned PID (not even a complete URI). While releases of this particular vocabulary strive to not break backward compatibility, we suggest using for instance <a href="https://schema.org/version/14.0/schemaorg-current-https.jsonld" class="uri">https://schema.org/version/14.0/schemaorg-current-https.jsonld</a> or an indirect w3id<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn12" role="doc-endnote"><p>The schema.org JSON-LD context used <code>http</code> PIDs since 2011, with a gradual transition to <code>https</code>, see <a href="https://github.com/schemaorg/schemaorg/issues/2853">schemaorg/schemaorg#2853</a> and <a href="https://github.com/schemaorg/schemaorg/issues/2886">schemaorg/schemaorg#2886</a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <!-- default theme -->

@@ -2,7 +2,6 @@ actionability
 API’s
 APIs
 apparant
-Architeture
 ary
 async
 AtomPub
@@ -48,7 +47,7 @@ ESRI
 examplify
 exisiting
 Extensibility
-fdo
+FDO
 FDOF
 FDOR
 FDO’s
@@ -71,7 +70,6 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-Idehen
 IEC
 IETF
 implemenations
@@ -94,17 +92,16 @@ JSON
 JSWS
 Kernal
 kickstarted
-Kingsley
 LD
-ldp
+LDP
 LOD
 maintaned
-metamodel
+Metamodel
 Microdata
 microformats
 Micropub
 middleware
-modularity
+Modularity
 namespaces
 navigatable
 NIST
@@ -115,7 +112,6 @@ occassionally
 ontologies
 OpenAPI
 OpenLink
-org’s
 OSI
 overengineering
 partioning
@@ -137,7 +133,7 @@ Rcord
 RDA’s
 RDF
 RDFa
-RDFLib
+rdflib
 RDFS
 RDMKit
 redirections
@@ -150,7 +146,6 @@ ROR
 runtime
 scalability
 scalable
-schemaorg
 schemas
 seemlessly
 SEM
@@ -171,7 +166,7 @@ subtypes
 syntaxes
 TCP
 testbeds
-thumbstone
+Thumbstone
 TLS
 TODO
 transparancy
@@ -180,7 +175,6 @@ UDP
 URI
 utillize
 utillized
-Uyi
 WD
 WebDAV
 WHATWG
