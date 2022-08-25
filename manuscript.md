@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/845260917f635be83139d88cd92826d167328fba/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/845260917f635be83139d88cd92826d167328fba/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/845260917f635be83139d88cd92826d167328fba/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/5f2cad59cf543c669435064e5cf93b4d7fb2d78a/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/5f2cad59cf543c669435064e5cf93b4d7fb2d78a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/5f2cad59cf543c669435064e5cf93b4d7fb2d78a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/845260917f635be83139d88cd92826d167328fba/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/5f2cad59cf543c669435064e5cf93b4d7fb2d78a/))
 was automatically generated
-from [stain/2022-fdo-paper@8452609](https://github.com/stain/2022-fdo-paper/tree/845260917f635be83139d88cd92826d167328fba)
+from [stain/2022-fdo-paper@5f2cad5](https://github.com/stain/2022-fdo-paper/tree/5f2cad59cf543c669435064e5cf93b4d7fb2d78a)
 on August 25, 2022.
 </em></small>
 
@@ -150,8 +150,14 @@ Emerging stack - how does it compare to what we've already done? What are the im
 
 ## Background {#sec:background}
 
+The FAIR principles [@doi:10.1038/sdata.2016.18] encourage sharing of scientific data with machine-readable metadata and using interoperable formats, and are being adapted by a wide range of research infrastructures. In particular, the European Open Science Cloud ([EOSC](https://www.eosc.eu/)) have promoted the FAIR. The EOSC Interoperability Framework [@doi:10.2777/620649] puts particular emphasis on how interoperability can be achieved technically, semantically, organisationally and legally, laying out a vision of how data, publication, software and services can work together to form an ecosystem of rich digital objects.
 
-**TODO** Why we are examining FDO. Proposed by EOSC etc. Why we want to compare with Linked Data.
+Linked Data have been particularly highlighted [?] as an established set of principles based on Semantic Web technologies that can achieve the vision of FAIR research data. Yet regular researchers and developers of emerging platforms for computation and data management are reluctant to adapt such a FAIR Linked Data approach fully [?], opting instead for custom in-house models and JSON-derived formats from RESTful Web services. While this gives rapid development, it raises concerns on interoperability and longevity in terms of data preservation [?].
+
+The EOSC Interoperability framework highlights FAIR Digital Object [@doi:10.1007/978-3-030-23584-0_1] (FDO) as a possible foundations for building a semantically interoperable ecosystem to fully realize the FAIR principles beyond individual repositories and infrastructures.
+
+Therefore, in this article, we are examining the relationships between FAIR Digital Object and FAIR with the Web and Linked Data. We will utillize several frameworks to investigate commonalities, differences and remaining gaps. 
+
 
 ::: {.breakout}
 

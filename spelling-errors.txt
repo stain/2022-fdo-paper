@@ -100,7 +100,7 @@ Metamodel
 Microdata
 microformats
 Micropub
-middleware
+Middleware
 Modularity
 namespaces
 navigatable
@@ -133,7 +133,7 @@ Rcord
 RDA’s
 RDF
 RDFa
-rdflib
+RDFLib
 RDFS
 RDMKit
 redirections
@@ -144,7 +144,7 @@ ResourceSync
 RO
 ROR
 runtime
-scalability
+Scalability
 scalable
 schemas
 seemlessly
@@ -166,7 +166,7 @@ subtypes
 syntaxes
 TCP
 testbeds
-Thumbstone
+thumbstone
 TLS
 TODO
 transparancy
