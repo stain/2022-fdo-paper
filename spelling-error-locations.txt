@@ -11,8 +11,11 @@ content/10.background.md:3:eosc
 content/10.background.md:3:EOSC
 content/10.background.md:3:EOSC
 content/10.background.md:3:interoperable
+content/10.background.md:5:apparant
+content/10.background.md:5:hetereogenity
 content/10.background.md:5:JSON
 content/10.background.md:7:EOSC
+content/10.background.md:7:FDO
 content/10.background.md:7:FDO
 content/10.background.md:7:interoperable
 content/10.background.md:9:utillize

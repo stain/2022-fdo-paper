@@ -24,7 +24,7 @@ CDNs
 centric
 Consoritium
 consumptions
-CORDRA
+Cordra
 COVID
 CSV
 CWFP
@@ -47,13 +47,13 @@ ESRI
 examplify
 exisiting
 Extensibility
-FDO
+fdo
 FDOF
 FDOR
 FDO’s
 FDOs
 findable
-FOAF
+foaf
 Freetext
 FROR
 furfill
@@ -67,6 +67,7 @@ Groth
 hasChild
 HATEOAS
 hetereogeneous
+hetereogenity
 HLS
 hoc
 HTTP’s
@@ -92,8 +93,8 @@ JSON
 JSWS
 Kernal
 kickstarted
-LD
-LDP
+ld
+ldp
 LOD
 maintaned
 metamodel
