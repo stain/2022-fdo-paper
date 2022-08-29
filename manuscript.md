@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-08-25'
+date-meta: '2022-08-29'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-08-25" />
-  <meta name="citation_publication_date" content="2022-08-25" />
+  <meta name="dc.date" content="2022-08-29" />
+  <meta name="citation_publication_date" content="2022-08-29" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/7175bc9954b9ec1b44811cf218fcae9f95d6d99f/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7175bc9954b9ec1b44811cf218fcae9f95d6d99f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7175bc9954b9ec1b44811cf218fcae9f95d6d99f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/fd8377c5cc795dfdb5068ac3d755593c7f0d5fb0/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/fd8377c5cc795dfdb5068ac3d755593c7f0d5fb0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/fd8377c5cc795dfdb5068ac3d755593c7f0d5fb0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,10 +74,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/7175bc9954b9ec1b44811cf218fcae9f95d6d99f/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/fd8377c5cc795dfdb5068ac3d755593c7f0d5fb0/))
 was automatically generated
-from [stain/2022-fdo-paper@7175bc9](https://github.com/stain/2022-fdo-paper/tree/7175bc9954b9ec1b44811cf218fcae9f95d6d99f)
-on August 25, 2022.
+from [stain/2022-fdo-paper@fd8377c](https://github.com/stain/2022-fdo-paper/tree/fd8377c5cc795dfdb5068ac3d755593c7f0d5fb0)
+on August 29, 2022.
 </em></small>
 
 ## Authors
@@ -386,22 +386,35 @@ The FAIR Digital Object guidelines [@bonino_2019] sets out recommendations for F
 | G9: _standard compliance_                        | Handle [@doi:10.17487/RFC3650], DOIP [@handle:0.DOIP/DOIPV2.0]. FDO requirements not standardized yet.   | Formalize standard process of FDO requirements [@WD-DOC] |  HTTP, LDP. FDOF not yet standardized |  Formalize FDOF from FDOF-SEM working group | 
 | FDOF1: _PID as basis_                            | Extensive use of Handle system.  |  Clarify how local testing handles can be used during development, how "temporary" FDOs should evolve [@PID policy]. Register `0.DOIP/*` and `0.FDO/*` as PIDs.  | 
 | FDOF2: _PID record w/ type_                      |  Unspecified how to resolve from Handle to DOIP Service (!), in practice `10320/loc`, `0.TYPE/DOIPService`, `URL`, `URL_REPLICA` | Document requirements for PID Record () |
-| FDOF3: _PID resolvable to bytestream & metadata_ | Byte stream resolvable (`0.DOIP/Retrieve`). No method/attribute defined for separate metadata, only directly in PID Rcord. Unclear meaning of multiple items and bytestream chunks. | Clarify expectations for multiple items. Recommend chunks to not be used. | URIs resolvable by default. Multiple ways to resolve metadata, unclear preference. |  Add FAIR Signposting and preference order.  | 
+| FDOF3: _PID resolvable to bytestream & metadata_ | Byte stream resolvable (`0.DOIP/Retrieve`), `includeElementData` option can retrieve bytestream or full object structure. No method/attribute defined for separate metadata, only directly in PID Record. Unclear meaning of multiple items and bytestream chunks. | Clarify expectations for multiple items. Recommend chunks to not be used. | URIs resolvable by default. Multiple ways to resolve metadata, unclear preference. |  Add FAIR Signposting and preference order.  | 
 | FDOF4: _Additional attributes_                   |  Freetext attribute keys. Attributes should be defined for FDO type (?). |  Require that attribute keys should be PIDs (or have predefined mapping to PIDs). Explicitly allow attributes not already defined in type.  |  All attributes individually identified. Any Linked Data attributes can be used by URI or with mapped prefix.  |  Clarify type expectations of required/recommended/optional attributes.  |
 | FDOF5: _Interface: operation by PID_             | Extended operations use PID, but "pid-like" DOIP operations/types are not registered as handles. | Register `0.DOIP/*` and `0.FDO/*` as PIDs. Clarify that operations can be mapped to protocol directly. | CRUD operations used directly in HTTP (e.g. `PUT`). Unclear how to provide PID for additional operations. |  Specify how additional operations should be called over HTTP. | 
-| FDOF6: _CRUD operations + extensions_            | `0.DOIP/Op.Create` etc. | | `PUT`, `GET`, `POST`, `DELETE`, `PATCH`, extensions uncommon. |  |
-| FDOF7: _FDOF Types related to operations_        | Not yet formalized, only discoverable on a given FDO of type. WD-PID leaves this open. |  Add explicit relation between type and operations  | 
-| FDOF8: _Metadata as FDO, semantic assertions_    | 
-| FDOF9: _Different metadata levels_               |
-| FDOF10: _Metadata schemas by community_          |
-| FDOF11: _FDO collections w/ semantic relations_  |
-| FDOF12: _Deleted FDO preserve PID w/ tombstone_  |
-Table: Checking FDO guidelines [@bonino_2019] against its current implementations as DOIP [@handle:0.DOIP/DOIPV2.0] and Linked Data Platform (LDP) [@{https://fairdigitalobjectframework.org/}], with suggestions for required additions.
+| FDOF6: _CRUD operations + extensions_            | `0.DOIP/Op.Create`, `Op.Retrieve`, `Op.Update`, `Op.Delete` but also `0.DOIP/Op.Search`.  | Document  | `PUT`, `GET`, `POST`, `DELETE`, `PATCH`, `HEAD` -- extension operations (e.g. WebDAV `COPY`) not used, resource patterns [@{https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#organize-the-api-design-around-resources}] are used instead. |  Document how operation resources can be discovered from an LPD container. Document search API.  |
+| FDOF7: _FDOF Types related to operations_        | Not yet formalized, by DOIP discoverable on a given FDO rather than type. PR-TypingFDOs leaves this open. |  Add explicit relation between type and operations  |  `OPTIONS` per LDP Resource, but not by type. Common types (`ldp:Resource`, `ldp:Container`) indicate LDP support, but are not requried.  |  Always make LDP types explicit in FDO profile.  | 
+| FDOF8: _Metadata as FDO, semantic assertions_    | DOIP includes all metadata in PID Record. Separate Metadata FDO need custom property. | Specify a `0.FDO/metadata` or similar to point to Metadata FDOs. | Assertions are always with semantics, using RDF vocabularies. Unspecified how to find additional metadata resources, `rdfs:seeAlso` is common.  | Use FAIR Signposting `describedby` link relation to additional metadata PIDs | 
+| FDOF9: _Different metadata levels_               | Defines open-ended "Response Attributes" without namespaces, but mandated as "None" for all CRUD operations.  Metadata would need to be bundled within custom FDO types/attributes. Unclear how levels are separated within single FDO representation (need FDOF8?). | Declare which metadata are expected within response attribute or within FDO object. Require PIDs for custom attributes. Define how alternate metadata levels can be represented separately. |  Undefined how to handle multiple metadata granularities or domains, alternative LDP containers can present different views on same stored objects.  |  Define how to navigate to alternate views and their semantic implications, e.g. `owl:sameAs` |
+| FDOF10: _Metadata schemas by community_          | Metadata schemas are in practice managed on single CORDA server as local types, using JSON Schema. | Require types to be FDOs with registered PIDs, implement shared types. |  Plethora of existing RDF vocabularies/ontologies managed by larger communities, e.g. [OBO Foundry](https://obofoundry.org/) [doi:https://doi.org/10.1038/nbt1346]  | Rather document better how individual ad-hoc schemas can be started for prototypes.  |
+| FDOF11: _FDO collections w/ semantic relations_  | Collection type undefined by DOIP. Informal use of `HAS_PARTS` Handle attribute (e.g. [@{https://hdl.handle.net/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87}]).  |  |  LDP Containers required by specification, also user-created (eg. `BasicContainer`). |  Clarify relation to other collections like DCAT 3 [@{https://www.w3.org/TR/2022/WD-vocab-dcat-3-20220510/}], [Schema.org Dataset](https://schema.org/Dataset),  OAI-ORE [@{http://www.openarchives.org/ore/1.0/primer}]  | 
+| FDOF12: _Deleted FDO preserve PID w/ tombstone_  | Tombstone for deleted resource undefined by DOIP. `0.DOIP/Status.104` status code does not distinguish "Not Found" or "Gone" |  Formalize tombstone requirements with new FDO type  |  `410 Gone` recommended, but `404 Not Found` common. No requirement for tombstone serialization | Formalize tombstone requirements and serialization | 
+Table: Checking FDO guidelines [@bonino_2019,@WD-RequirementSpec-1.0-20220317] against its current implementations as DOIP [@handle:0.DOIP/DOIPV2.0] and Linked Data Platform (LDP) [@{https://fairdigitalobjectframework.org/}], with suggestions for required additions.
 {#tbl:fdo-checks}
 
-Note that the draft update to FDO specification [@WD-RequirementSpec-1.0-20220317] (see box @sec:next-step-fdo) clarifies these definitions with equivalent identifiers [^2] and relates them to further FDO requirements such as FDO Data Type Registries. 
+Note that the draft update to FDO specification [@WD-RequirementSpec-1.0-20220317] (see box @sec:next-step-fdo) clarifies these definitions with equivalent identifiers [^2] and relates them to further FDO requirements such as FDO Data Type Registries.   <!-- PR-RequirementSpec-2.0-202209?? -->
 
 [^2]: [@WD-RequirementSpec-1.0-20220317] renames _FDOF*_ to _FDOR*_, FDOF3/FDOF4 are swapped to FDOR4/FDOR3. <!-- Fixed in later update-->
+
+A key observation from this is that simply using DOIP does not achieve many of the FDO guidelines. Rather the guidelines set out how a protocol like DOIPs should be used to achieve FAIR Digital Object goals. The DOIP Endorsement [@PED-DOIPEndorsement-1.0-20220608] sets out that to comply, DOIP must be used according to the set of FDO requirement documents (see box @sec:next-step-fdo), and notes _Achieving FDO compliance requires more than DOIP and full compliance is thus left to system designers_.  Likewise, a Linked Data approach will need to follow the same requirements to comply as an FDO implementation.
+
+From our evaluation we can observe:
+* G1 and G2 call for stability and trustworthiness. While the foundations of both DOIP and Linked Data approaches are now well established -- the FDO requirements and in particular how they can be implemented are still taking shape and subject to change.
+* Machine actionability (G4, G6) is a core feature of both FDOs and Linked Data. Conceptually they differ in the which way types and operations are discovered, with FDO seemingly more rigorous. In practice, however, we see that DOIP also relies on dynamic discovery of operations and that operation expectations for types (FDOF7) have not yet been defined.
+* FDO proposes that types can have additional operations beyond CRUD (FDOF5, FDOF6), while Linked Data mainly achieves this with RESTful patterns using CRUD on additional resources, e.g. `order/152/items`. These are mainly stylistics but affects the architectural view -- FDOs are more of an .
+* FDO puts strong emphasis on the use of PIDs (FDOF1, FDOF2, FDOF3, FDOF5), but in current practice DOIP use local types, local extended operations (FDOF5) and attributes (FDOF4) that are not bound to any global namespace.
+* Linked Data have a strong emphasis on semantics (FDOF8), and metadata schemas developed by community agreements (FDOF10).  FDO types need to be made reusable across servers.
+* While FDO recommends nested metadata FDOs (FDOF8, FDOF9), in practice this is not found (or linked with custom keys), particularly due to lack of namespaces and the favouring of local types rather than type/property re-use. Linked Data frequently have multiple representations, but often not sufficiently linked, perhaps `prov:specializationOf` [@{http://www.w3.org/TR/2013/REC-prov-o-20130430/}]
+* FDO collections are not yet defined for DOIP, while Linked Data seemingly have too many alternatives, LDP has specific native support for containers.
+* Tombstones for deleted resources are not well supported, nor specified, for either approach, although the continued availability of metadata when data is removed is a requirement for FAIR principles (see RDA-A2-01M in table @sec:fair-compare).
+* DOIP supports multiple chunks of data for an object (FDOF3), while Linked Data can support content-negotiation. In either case it can be unclear to clients what is the meaning or equivalence of any additional chunks.
 
 
 
@@ -469,7 +482,7 @@ As for the aspect of _Performance_, it is interesting to note that while the fir
 | RDA-A1.1-01M   | Metadata is accessible through a free access protocol                      | G1 G8 G9    | Partially realized: Handle system is open protocol [@{10.17487/RFC3652}][^patent]. One server implementation [@{https://www.handle.net/download_hnr.html}], free but [license](http://www.handle.net/HNRj/HNR-9-License.pdf)] not OSI-approved [@{https://opensource.org/licenses}]. One DOIPv2 implementation ([CORDRA](https://www.cordra.org/)): free under BSD-like license (not recognized as Open Source).    | [LDP](http://www.w3.org/TR/ldp/) is open W3C recommendation. [Multiple LDP implementations](https://www.w3.org/wiki/LDP_Implementations). | DNS, HTTP, TLS, RDF standards are open, free and universal, large number of Open Source clients and [servers](https://en.wikipedia.org/wiki/Comparison_of_web_server_software).    | 
 | RDA-A1.1-01D     | Data is accessible through a free access protocol                          | G9    | ?doip    | ?ldp    | ?ld    |
 | RDA-A1.2-01D       | Data is accessible through an access protocol that supports authentication and authorisation  | (FDOR9)    | TLS certificates, `authentication` field (details unspecified)    | Unspecified    | HTTP authentication, TLS certificates    | 
-| RDA-A2-01M     | Metadata is guaranteed to remain available after data is no longer available  | FDOF12    | FDO thumbstone required    | Unspecified, however FDOF-IR links to separate metadata records    | Unspecified    | `410 Gone` status infrequently used, without metadata. Possible [with signposting](https://w3id.org/a2a-fair-metrics/25-http-citeas-author-410-gone/)    | 
+| RDA-A2-01M     | Metadata is guaranteed to remain available after data is no longer available  | FDOF12    | Unspecified   | Unspecified, however FDOF-IR links to separate metadata records    | Unspecified    | `410 Gone` status infrequently used, without metadata. Possible [with signposting](https://w3id.org/a2a-fair-metrics/25-http-citeas-author-410-gone/)    | 
 | RDA-I1-01M       | Metadata uses knowledge representation expressed in standardised format    | FDOF8    | Required, but not currently defined    | Unspecified    | Always implied by use of RDF syntaxes.    |
 | RDA-I1-01D       | Data uses knowledge representation expressed in standardised format        | ?fdo    | ?doip    | ?ldp    | ?ld    |
 | RDA-I1-02M       | Metadata uses machine-understandable knowledge representation              | FDOF8    | Required    | Unspecified    | Always implied by use of RDF syntaxes.    |
@@ -532,7 +545,7 @@ The EOSC Interoperability Framework [@doi:10.2777/620649] (...), and in section 
 | Legal    | Permissive licenses for metadata (CC0, CC-BY-4.0)    | Undefined    | Both CC0, CC-BY-4.0 common, e.g. in DCAT.    | 
 | Legal    | Different licenses for different parts    | Each part as separate FDO can have separate license.    | DCAT, RO-Crate    | 
 | Legal    | Mark expired/inexistent copyright    | Undefined    | Unclear, semantics assume copyright valid    | 
-| Legal    | Mark orphaned data    | Thumbstone for deleted data, but no owner means FDO disappears    | | 
+| Legal    | Mark orphaned data    | Tombstone for deleted data, but no owner means FDO disappears    | | 
 | Legal    | List recommended licenses    | Undefined    | Best practice recommendations    | 
 | Legal    | Track license evolution for dataset    | Undefined    | Versioning with PAV/PROV/DCAT    | 
 | Legal    | Policy/guidance for patent/trade secrets violation    | Undefined    | Undefined, legal owner may be specified    | 
