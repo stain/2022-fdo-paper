@@ -52,14 +52,14 @@ ESRI
 examplify
 exisiting
 Extensibility
-fdo
+FDO
 FDOF
 FDOR
 FDO’s
 FDOs
 Findability
 findable
-foaf
+FOAF
 Freetext
 FROR
 furfill
@@ -78,7 +78,7 @@ hetereogenity
 HLS
 hoc
 HTTP’s
-HTTPS
+https
 IANA
 IEC
 IETF
@@ -113,7 +113,7 @@ microformats
 Micropub
 middleware
 middlewares
-Modularity
+modularity
 namespace
 namespaces
 navigatable
@@ -122,7 +122,7 @@ NL
 OAI
 OBO
 Occassionally
-Ontologies
+ontologies
 OpenAIRE
 OpenAPI
 OpenLink
@@ -147,7 +147,7 @@ QUIC
 RDA’s
 RDF
 RDFa
-RDFLib
+rdflib
 RDFS
 RDMKit
 redirections
@@ -162,7 +162,7 @@ ResourceSync
 RO
 ROR
 runtime
-scalability
+Scalability
 scalable
 schemas
 seemlessly
