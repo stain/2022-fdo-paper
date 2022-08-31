@@ -13,7 +13,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-BioSchemas
+Bioschemas
 bytestream
 CaroleAnneGoble
 carolegoble
@@ -40,6 +40,7 @@ DOIP
 DOIPs
 DOIPv
 DOIs
+DRM
 eare
 Ecma
 eg
@@ -49,13 +50,13 @@ ESRI
 examplify
 exisiting
 Extensibility
-fdo
+FDO
 FDOF
 FDOR
 FDO’s
 FDOs
 findable
-foaf
+FOAF
 Freetext
 FROR
 furfill
@@ -65,6 +66,7 @@ GFF
 Goble
 granularities
 GraphDB
+GridFTP
 Groth
 hasChild
 HATEOAS
@@ -73,6 +75,7 @@ hetereogenity
 HLS
 hoc
 HTTP’s
+HTTPS
 IANA
 IEC
 IETF
@@ -94,15 +97,13 @@ Jena
 js
 JSON
 JSWS
-Kernal
 kickstarted
 LD
 LDP
 LOD
 LPD
-maintaned
 Marmotta
-metamodel
+Metamodel
 Microdata
 microformats
 Micropub
@@ -115,8 +116,8 @@ NIST
 NL
 OAI
 OBO
-occassionally
-Ontologies
+Occassionally
+ontologies
 OpenAPI
 OpenLink
 OSI
@@ -139,11 +140,10 @@ QUIC
 RDA’s
 RDF
 RDFa
-RDFLib
+rdflib
 RDFS
 RDMKit
 redirections
-rediretion
 Redland
 remainining
 RequirementSpec
@@ -154,7 +154,7 @@ ResourceSync
 RO
 ROR
 runtime
-scalability
+Scalability
 scalable
 schemas
 seemlessly
@@ -190,3 +190,4 @@ WebDAV
 WHATWG
 Worthwile
 WSDL
+XMP
