@@ -7,7 +7,7 @@
   <meta name="author" content="Stian Soiland-Reyes" />
   <meta name="author" content="Carole Goble" />
   <meta name="author" content="Paul Groth" />
-  <meta name="dcterms.date" content="2022-08-29" />
+  <meta name="dcterms.date" content="2022-08-31" />
   <meta name="keywords" content="FDO, distributed, digital object" />
   <title>Evaluating FAIR Digital Object as a distributed object system</title>
   <style>
@@ -46,8 +46,8 @@
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-08-29" />
-  <meta name="citation_publication_date" content="2022-08-29" />
+  <meta name="dc.date" content="2022-08-31" />
+  <meta name="citation_publication_date" content="2022-08-31" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -73,9 +73,9 @@
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/fd8377c5cc795dfdb5068ac3d755593c7f0d5fb0/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/fd8377c5cc795dfdb5068ac3d755593c7f0d5fb0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/fd8377c5cc795dfdb5068ac3d755593c7f0d5fb0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/46518b6dc214b86a422348edef1e0993fdd223d0/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/46518b6dc214b86a422348edef1e0993fdd223d0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/46518b6dc214b86a422348edef1e0993fdd223d0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,10 +92,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://stain.github.io/2022-fdo-paper/v/fd8377c5cc795dfdb5068ac3d755593c7f0d5fb0/">permalink</a>)
+(<a href="https://stain.github.io/2022-fdo-paper/v/46518b6dc214b86a422348edef1e0993fdd223d0/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/stain/2022-fdo-paper/tree/fd8377c5cc795dfdb5068ac3d755593c7f0d5fb0">stain/2022-fdo-paper@fd8377c</a>
-on August 29, 2022.
+from <a href="https://github.com/stain/2022-fdo-paper/tree/46518b6dc214b86a422348edef1e0993fdd223d0">stain/2022-fdo-paper@46518b6</a>
+on August 31, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -672,9 +672,11 @@ We have left out further comparisons on type systems, persistent identifiers and
 <p>…</p>
 <p>As for the aspect of <em>Performance</em>, it is interesting to note that while the first version of DOIP <span class="citation" data-cites="16uB3jxpa">[<a href="#ref-16uB3jxpa" role="doc-biblioref">23</a>]</span> supported multiplexed channels similar to HTTP/2, allowing concurrent transfer of several digital objects. However multiplexing was removed for the much simplified DOIP 2.0 <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">15</a>]</span>, which do support multiple asynchronous requests, but unlike DOIP 1.0 will require a DO response to be sent back completely, as a series of segments (which again can be split the bytes of each binary <em>element</em> into sized <em>chunks</em>), before transmission of another DO response can start on the transport channel. It is unclear what is the purpose of splitting a binary into chunks on a channel which no longer can be multiplexed and the only property of a chunk is its size <a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>.</p>
 <h3 id="sec:fair-compare">Assessing FDO against FAIR</h3>
+<p>In addition to having “FAIR” in its name, the FAIR Digital Object guidelines <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">7</a>]</span> also include <em>G3: FDOs must offer compliance with the FAIR principles through measurable indicators of
+FAIRness.</em> <span class="citation" data-cites="PR-RequirementSpec-2.0">[<a href="#ref-PR-RequirementSpec-2.0" role="doc-biblioref"><strong>PR-RequirementSpec-2.0?</strong></a>]</span>. Here we evaluate to which extent the FDO guidelines and its implementation with DOIP and Linked Data Platform <span class="citation" data-cites="7szz7dwO">[<a href="#ref-7szz7dwO" role="doc-biblioref">74</a>]</span> comply with the FAIR principles <span class="citation" data-cites="6DjakjNS">[<a href="#ref-6DjakjNS" role="doc-biblioref">1</a>]</span>. Here we’ve used the RDA’s FAIR Data Maturity Model <span class="citation" data-cites="1GrKTFaK2 UzQhqk0M">[<a href="#ref-UzQhqk0M" role="doc-biblioref">62</a>,<a href="#ref-1GrKTFaK2" role="doc-biblioref">110</a>]</span> as it has decomposed the FAIR principles to a structured list of FAIR indicators, importantly considering “Data” and “Metadata” separately. In our interpretation below we have chosen to interpret “data” in FDOs as the associated bytestream, with the remainining JSON/RDF structure as metadata.</p>
 <div id="tbl:fair-data-maturity-model" class="tablenos">
 <table id="tbl:fair-data-maturity-model" style="width:100%;">
-<caption><span>Table 5:</span> Assessing RDA’s FAIR Data Maturity Model <span class="citation" data-cites="1GrKTFaK2 UzQhqk0M">[<a href="#ref-UzQhqk0M" role="doc-biblioref">62</a>,<a href="#ref-1GrKTFaK2" role="doc-biblioref">110</a>]</span> (first 2 columns) against the FDO guidelines <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">7</a>]</span>, FDO implemented as DOIP <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">15</a>]</span>, Linked Data Platform <span class="citation" data-cites="7szz7dwO">[<a href="#ref-7szz7dwO" role="doc-biblioref">74</a>]</span> and Linked Data practices. –: Unspecified.
+<caption><span>Table 5:</span> Assessing RDA’s FAIR Data Maturity Model <span class="citation" data-cites="1GrKTFaK2 UzQhqk0M">[<a href="#ref-UzQhqk0M" role="doc-biblioref">62</a>,<a href="#ref-1GrKTFaK2" role="doc-biblioref">110</a>]</span> (first 2 columns) against the FDO guidelines <span class="citation" data-cites="RwvirqWg">[<a href="#ref-RwvirqWg" role="doc-biblioref">7</a>]</span>, FDO implemented with the protocol DOIPv2 <span class="citation" data-cites="13TcbsZF6">[<a href="#ref-13TcbsZF6" role="doc-biblioref">15</a>]</span>, Linked Data Platform (LDP) <span class="citation" data-cites="7szz7dwO">[<a href="#ref-7szz7dwO" role="doc-biblioref">74</a>]</span> and examples from Linked Data practices in general. (<code>--</code> indicates <em>Unspecified</em>, but may be possible with additional specifications)
 </caption>
 <colgroup>
 <col style="width: 6%" />
@@ -763,31 +765,31 @@ We have left out further comparisons on type systems, persistent identifiers and
 <td style="text-align: left;">RDA-A1-02M</td>
 <td style="text-align: left;">Metadata can be accessed manually (i.e. with human intervention)</td>
 <td style="text-align: center;">–</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;">(Cordra HTML landing page from <code>handle.net</code> URIs)</td>
+<td style="text-align: center;">Optional content-negotiation, e.g. by Apache Marmotta, OpenLink Virtuoso</td>
+<td style="text-align: center;">HTTP content-negotiation to HTML is common</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">RDA-A1-02D</td>
 <td style="text-align: left;">Data can be accessed manually (i.e. with human intervention)</td>
 <td style="text-align: center;">–</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;">(Cordra HTML landing page from <code>handle.net</code> URIs)</td>
+<td style="text-align: center;">Optional content-negotiation</td>
+<td style="text-align: center;">Direct download, HTML landing pages common for DOIs</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">RDA-A1-03M</td>
 <td style="text-align: left;">Metadata identifier resolves to a metadata record</td>
 <td style="text-align: center;">FDOF8+FDOF2</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;"><code>Content-Location</code> or HTTP rediretion may indicate metadata URI</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">RDA-A1-03D</td>
 <td style="text-align: left;">Data identifier resolves to a digital object</td>
 <td style="text-align: center;">FDOF2</td>
-<td style="text-align: center;">?doip</td>
+<td style="text-align: center;"></td>
 <td style="text-align: center;">?ldp</td>
 <td style="text-align: center;">?ld</td>
 </tr>
@@ -803,8 +805,8 @@ We have left out further comparisons on type systems, persistent identifiers and
 <td style="text-align: left;">RDA-A1-04D</td>
 <td style="text-align: left;">Data is accessible through standardised protocol</td>
 <td style="text-align: center;">G9</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">LDP <span class="citation" data-cites="KcDn7ZrN">[<a href="#ref-KcDn7ZrN" role="doc-biblioref">112</a>]</span>, HTTP <span class="citation" data-cites="8HJqcF1Q">[<a href="#ref-8HJqcF1Q" role="doc-biblioref">72</a>]</span></td>
 <td style="text-align: center;">?ld</td>
 </tr>
 <tr class="odd">
@@ -819,7 +821,7 @@ We have left out further comparisons on type systems, persistent identifiers and
 <td style="text-align: left;">RDA-A1.1-01M</td>
 <td style="text-align: left;">Metadata is accessible through a free access protocol</td>
 <td style="text-align: center;">G1 G8 G9</td>
-<td style="text-align: center;">Partially realized: Handle system is open protocol [<span class="citation" data-cites="I9Kx0Hjy">[<a href="#ref-I9Kx0Hjy" role="doc-biblioref">112</a>]</span>]<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>. One server implementation <span class="citation" data-cites="1CvYRVhy2">[<a href="#ref-1CvYRVhy2" role="doc-biblioref">113</a>]</span>, free but <a href="http://www.handle.net/HNRj/HNR-9-License.pdf">license</a>] not OSI-approved <span class="citation" data-cites="xVJMmGVr">[<a href="#ref-xVJMmGVr" role="doc-biblioref">114</a>]</span>. One DOIPv2 implementation (<a href="https://www.cordra.org/">CORDRA</a>): free under BSD-like license (not recognized as Open Source).</td>
+<td style="text-align: center;">Partially realized: Handle system is open protocol [<span class="citation" data-cites="I9Kx0Hjy">[<a href="#ref-I9Kx0Hjy" role="doc-biblioref">113</a>]</span>]<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>. One server implementation <span class="citation" data-cites="1CvYRVhy2">[<a href="#ref-1CvYRVhy2" role="doc-biblioref">114</a>]</span>, free[^license]. One DOIPv2 implementation (<a href="https://www.cordra.org/">CORDRA</a>): free under BSD-like license (not recognized as Open Source).</td>
 <td style="text-align: center;"><a href="http://www.w3.org/TR/ldp/">LDP</a> is open W3C recommendation. <a href="https://www.w3.org/wiki/LDP_Implementations">Multiple LDP implementations</a>.</td>
 <td style="text-align: center;">DNS, HTTP, TLS, RDF standards are open, free and universal, large number of Open Source clients and <a href="https://en.wikipedia.org/wiki/Comparison_of_web_server_software">servers</a>.</td>
 </tr>
@@ -963,17 +965,17 @@ We have left out further comparisons on type systems, persistent identifiers and
 <td style="text-align: left;">RDA-R1.1-02M</td>
 <td style="text-align: left;">Metadata refers to a standard reuse licence</td>
 <td style="text-align: center;">–</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;"><a href="https://spdx.org/licenses/">SPDX</a> and <a href="https://creativecommons.org/">Creative Commons</a> URIs common, identifiers often inconsistent</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">RDA-R1.1-03M</td>
 <td style="text-align: left;">Metadata refers to a machine-understandable reuse licence</td>
 <td style="text-align: center;">–</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;"><a href="https://spdx.org/licenses/">SPDX</a></td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;"><a href="https://spdx.dev/resources/use/#documents">SPDX documents</a> uncommon</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">RDA-R1.2-01M</td>
@@ -987,45 +989,58 @@ We have left out further comparisons on type systems, persistent identifiers and
 <td style="text-align: left;">RDA-R1.2-02M</td>
 <td style="text-align: left;">Metadata includes provenance information according to a cross-community language</td>
 <td style="text-align: center;">FDOR9 FDOR8</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">W3C PROV-O <span class="citation" data-cites="9T4j3N4e">[<a href="#ref-9T4j3N4e" role="doc-biblioref">80</a>]</span>, PAV <span class="citation" data-cites="1E4OfHyhI">[<a href="#ref-1E4OfHyhI" role="doc-biblioref">124</a>]</span>, Dublin Core Terms <span class="citation" data-cites="hKblceo6">[<a href="#ref-hKblceo6" role="doc-biblioref">125</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">RDA-R1.3-01M</td>
 <td style="text-align: left;">Metadata complies with a community standard</td>
 <td style="text-align: center;">FDOR10 FROR8</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;">(Emerging, e.g. DiSSCo Digital Specimen [@{doi:10.1162/dint_a_00134</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">}])</td>
+<td style="text-align: left;">–</td>
+<td style="text-align: center;">Common, e.g. DCAT 2 <span class="citation" data-cites="zt8AAjcZ">[<a href="#ref-zt8AAjcZ" role="doc-biblioref">126</a>]</span>, BioSchemas <span class="citation" data-cites="1F8S9FeHf">[<a href="#ref-1F8S9FeHf" role="doc-biblioref">127</a>]</span></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">RDA-R1.3-01D</td>
 <td style="text-align: left;">Data complies with a community standard</td>
 <td style="text-align: center;">(FDOR3)</td>
-<td style="text-align: center;">?doip</td>
-<td style="text-align: center;">?ldp</td>
-<td style="text-align: center;">?ld</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">Common, HTTP use registered IANA <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">media types</a>, additional scientific file formats frequently not standardized or identified</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">RDA-R1.3-02M</td>
 <td style="text-align: left;">Metadata is expressed in compliance with a machine-understandable community standard</td>
 <td style="text-align: center;">FDOF4 FDOF10</td>
 <td style="text-align: center;">Recommended</td>
-<td style="text-align: center;">Unspecified</td>
-<td style="text-align: center;">Common practice, specially in bioinformatics, e.g. BioSchemas <span class="citation" data-cites="1F8S9FeHf">[<a href="#ref-1F8S9FeHf" role="doc-biblioref">124</a>]</span>, BioPortal <span class="citation" data-cites="1Gsq23e51">[<a href="#ref-1Gsq23e51" role="doc-biblioref">111</a>]</span></td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">Common practice for ontologies, specially in bioinformatics, e.g. BioPortal <span class="citation" data-cites="1Gsq23e51">[<a href="#ref-1Gsq23e51" role="doc-biblioref">111</a>]</span>, Darwin Core <span class="citation" data-cites="9jaVzCbL">[<a href="#ref-9jaVzCbL" role="doc-biblioref">128</a>]</span></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">RDA-R1.3-02D</td>
 <td style="text-align: left;">Data is expressed in compliance with a machine-understandable community standard</td>
 <td style="text-align: center;">(FDOR2)</td>
 <td style="text-align: center;">No, FDO is typed but data can be any bytestream</td>
-<td style="text-align: center;">Unspecified</td>
-<td style="text-align: center;">Common, but not required (e.g. <a href="https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md">GFF3</a>, <a href="https://fits.gsfc.nasa.gov/fits_standard.html">FITS</a>, <a href="https://www.loc.gov/preservation/digital/formats/fdd/fdd000280.shtml">ESRI</a>)</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">Occassionally, (e.g. <a href="https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md">GFF3</a>, <a href="https://fits.gsfc.nasa.gov/fits_standard.html">FITS</a>, <a href="https://www.loc.gov/preservation/digital/formats/fdd/fdd000280.shtml">ESRI</a>)</td>
 </tr>
 </tbody>
 </table>
 </div>
+<p>From this evaluation we observe:</p>
+<ul>
+<li>…</li>
+<li></li>
+</ul>
 <h2 id="eosc-interoperability-framework">EOSC Interoperability Framework</h2>
 <p><strong>TODO</strong>: Introduce EOSC IF</p>
 <p>The EOSC Interoperability Framework <span class="citation" data-cites="aCye3KpE">[<a href="#ref-aCye3KpE" role="doc-biblioref">2</a>]</span> (…), and in section 3.6 recommends:</p>
@@ -1244,7 +1259,7 @@ We have left out further comparisons on type systems, persistent identifiers and
 <p><strong>TODO</strong></p>
 <h3 id="what-does-it-mean-for-linked-data">(What does it mean for Linked Data?)</h3>
 <p>The FAIR Digital Object approach raises many important points for Linked Data practictioners.
-At first glance, the explicit requirements of FDOs may seem to be easy to furfill by different parts of the Semantic Web Cake <span class="citation" data-cites="kYjzRJ0H">[<a href="#ref-kYjzRJ0H" role="doc-biblioref">125</a>]</span>.
+At first glance, the explicit requirements of FDOs may seem to be easy to furfill by different parts of the Semantic Web Cake <span class="citation" data-cites="kYjzRJ0H">[<a href="#ref-kYjzRJ0H" role="doc-biblioref">129</a>]</span>.
 However, our deeper investigation, based on multiple frameworks, highlights that the openness and variability of how Linked Data is deployed makes it difficult to achieve the FDO goals without significant effort.</p>
 <p>While RDF and Linked Data has been suggested as prime candidates for making FAIR data, we argue that when different developers have too many degrees of freedom (such as serialization formats, vocabularies, identifiers, navigation), interoperability is hampered – this makes it hard for machines to reliably consume multiple FAIR resources across repositories and data providers.</p>
 <p>We therefore identify the need for an explicit FDO profile of Linked Data that sets pragmatic constraints and stronger recommendations for consistent and developer-friendly deployment of digital objects.
@@ -1625,14 +1640,14 @@ As technological improvements to Semantic Web continue, and FDO requirements mat
 <div id="ref-1Gsq23e51" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">111. </div><div class="csl-right-inline"><strong>NCBO BioPortal</strong> <a href="https://bioportal.bioontology.org/ontologies">https://bioportal.bioontology.org/ontologies</a></div>
 </div>
+<div id="ref-KcDn7ZrN" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">112. </div><div class="csl-right-inline"><strong>Linked Data Platform 1.0</strong> <a href="https://www.w3.org/TR/2015/REC-ldp-20150226/">https://www.w3.org/TR/2015/REC-ldp-20150226/</a></div>
+</div>
 <div id="ref-I9Kx0Hjy" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">112. </div><div class="csl-right-inline"><strong>Handle System Protocol (ver 2.1) Specification</strong> <div class="csl-block">S Sun, S Reilly, L Lannom, J Petrone</div> <em>RFC Editor</em> (2003-11) <a href="https://doi.org/ggn83x">https://doi.org/ggn83x</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc3652">10.17487/rfc3652</a></div></div>
+<div class="csl-left-margin">113. </div><div class="csl-right-inline"><strong>Handle System Protocol (ver 2.1) Specification</strong> <div class="csl-block">S Sun, S Reilly, L Lannom, J Petrone</div> <em>RFC Editor</em> (2003-11) <a href="https://doi.org/ggn83x">https://doi.org/ggn83x</a> <div class="csl-block">DOI: <a href="https://doi.org/10.17487/rfc3652">10.17487/rfc3652</a></div></div>
 </div>
 <div id="ref-1CvYRVhy2" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">113. </div><div class="csl-right-inline"><strong>Handle.Net Registry</strong> <a href="https://www.handle.net/download_hnr.html">https://www.handle.net/download_hnr.html</a></div>
-</div>
-<div id="ref-xVJMmGVr" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">114. </div><div class="csl-right-inline"><strong>Licenses &amp; Standards | Open Source Initiative</strong> <a href="https://opensource.org/licenses">https://opensource.org/licenses</a></div>
+<div class="csl-left-margin">114. </div><div class="csl-right-inline"><strong>Handle.Net Registry</strong> <a href="https://www.handle.net/download_hnr.html">https://www.handle.net/download_hnr.html</a></div>
 </div>
 <div id="ref-o4h92LpS" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">115. </div><div class="csl-right-inline"><strong>Data - W3C</strong> <a href="https://www.w3.org/standards/semanticweb/data">https://www.w3.org/standards/semanticweb/data</a></div>
@@ -1661,11 +1676,23 @@ As technological improvements to Semantic Web continue, and FDO requirements mat
 <div id="ref-XmUY0cZB" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">123. </div><div class="csl-right-inline"><strong>FOAF spec</strong> <a href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a></div>
 </div>
+<div id="ref-1E4OfHyhI" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">124. </div><div class="csl-right-inline"><strong>PAV ontology: provenance, authoring and versioning</strong> <div class="csl-block">Paolo Ciccarese, Stian Soiland-Reyes, Khalid Belhajjame, Alasdair JG Gray, Carole Goble, Tim Clark</div> <em>Journal of Biomedical Semantics</em> (2013) <a href="https://doi.org/gftcpx">https://doi.org/gftcpx</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/2041-1480-4-37">10.1186/2041-1480-4-37</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24267948">24267948</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4177195">PMC4177195</a></div></div>
+</div>
+<div id="ref-hKblceo6" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">125. </div><div class="csl-right-inline"><strong>DCMI Metadata Terms</strong> (2020-01-20) <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/</a></div>
+</div>
+<div id="ref-zt8AAjcZ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">126. </div><div class="csl-right-inline"><strong>Data Catalog Vocabulary (DCAT) - Version 2</strong> <a href="https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/">https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/</a></div>
+</div>
 <div id="ref-1F8S9FeHf" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">124. </div><div class="csl-right-inline"><strong>Bioschemas - Bioschemas</strong> <a href="http://bioschemas.org/">http://bioschemas.org/</a></div>
+<div class="csl-left-margin">127. </div><div class="csl-right-inline"><strong>Bioschemas - Bioschemas</strong> <a href="http://bioschemas.org/">http://bioschemas.org/</a></div>
+</div>
+<div id="ref-9jaVzCbL" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">128. </div><div class="csl-right-inline"><strong>Darwin Core: An Evolving Community-Developed Biodiversity Data Standard</strong> <div class="csl-block">John Wieczorek, David Bloom, Robert Guralnick, Stan Blum, Markus Döring, Renato Giovanni, Tim Robertson, David Vieglais</div> <em>PLoS ONE</em> (2012-01-06) <a href="https://doi.org/fzrpwq">https://doi.org/fzrpwq</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pone.0029715">10.1371/journal.pone.0029715</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22238640">22238640</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3253084">PMC3253084</a></div></div>
 </div>
 <div id="ref-kYjzRJ0H" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">125. </div><div class="csl-right-inline"><strong>Semantic Web - XML2000 - slide "Architecture"</strong> <a href="https://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html">https://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html</a></div>
+<div class="csl-left-margin">129. </div><div class="csl-right-inline"><strong>Semantic Web - XML2000 - slide "Architecture"</strong> <a href="https://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html">https://www.w3.org/2000/Talks/1206-xml2k-tbl/slide10-0.html</a></div>
 </div>
 </div>
 <section class="footnotes footnotes-end-of-document" role="doc-endnotes">
