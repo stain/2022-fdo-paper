@@ -25,12 +25,12 @@ centric
 Consoritium
 consumptions
 CORDA
-Cordra
+CORDRA
 COVID
 CSV
 CWFP
 Datacite
-dataset
+Dataset
 datasets
 DCAT
 dereferenceable
@@ -51,13 +51,14 @@ ESRI
 examplify
 exisiting
 Extensibility
-FDO
+fdo
 FDOF
 FDOR
 FDO’s
 FDOs
+Findability
 findable
-FOAF
+foaf
 Freetext
 FROR
 furfill
@@ -76,7 +77,7 @@ hetereogenity
 HLS
 hoc
 HTTP’s
-HTTPS
+https
 IANA
 IEC
 IETF
@@ -110,7 +111,7 @@ Microdata
 microformats
 Micropub
 middleware
-Modularity
+modularity
 namespace
 namespaces
 navigatable
@@ -120,6 +121,7 @@ OAI
 OBO
 Occassionally
 ontologies
+OpenAIRE
 OpenAPI
 OpenLink
 OSI
@@ -132,7 +134,7 @@ PDFs
 persistant
 pgroth
 PHACTS
-PID
+pid
 PIDs
 PMH
 Polymorphism
