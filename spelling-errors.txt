@@ -15,6 +15,7 @@ bioinformatics
 Bioontologies
 Bioschemas
 bytestream
+bytestreams
 CaroleAnneGoble
 carolegoble
 CAs
@@ -100,15 +101,16 @@ JSWS
 kickstarted
 LD
 LDP
+LDP’s
 LOD
 LPD
 Marmotta
-Metamodel
+metamodel
 Microdata
 microformats
 Micropub
 middleware
-modularity
+Modularity
 namespace
 namespaces
 navigatable
@@ -127,6 +129,7 @@ pastable
 PAV
 pcinciple
 PDFs
+persistant
 pgroth
 PHACTS
 PID
@@ -140,7 +143,7 @@ QUIC
 RDA’s
 RDF
 RDFa
-rdflib
+RDFLib
 RDFS
 RDMKit
 redirections
@@ -150,6 +153,7 @@ RequirementSpec
 requried
 requries
 resiliant
+resolvers
 ResourceSync
 RO
 ROR
