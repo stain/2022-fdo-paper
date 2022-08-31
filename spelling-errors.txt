@@ -22,16 +22,17 @@ CAs
 CDN
 CDNs
 centric
+ChEMBL
 Consoritium
 consumptions
 CORDA
-CORDRA
+Cordra
 COVID
 CSV
 CWFP
 Datacite
-Dataset
-datasets
+dataset
+Datasets
 DCAT
 dereferenceable
 diciplinary
@@ -77,7 +78,7 @@ hetereogenity
 HLS
 hoc
 HTTP’s
-https
+HTTPS
 IANA
 IEC
 IETF
@@ -111,7 +112,8 @@ Microdata
 microformats
 Micropub
 middleware
-modularity
+middlewares
+Modularity
 namespace
 namespaces
 navigatable
@@ -120,7 +122,7 @@ NL
 OAI
 OBO
 Occassionally
-ontologies
+Ontologies
 OpenAIRE
 OpenAPI
 OpenLink
@@ -134,7 +136,7 @@ PDFs
 persistant
 pgroth
 PHACTS
-pid
+PID
 PIDs
 PMH
 Polymorphism
@@ -160,7 +162,7 @@ ResourceSync
 RO
 ROR
 runtime
-Scalability
+scalability
 scalable
 schemas
 seemlessly
@@ -188,6 +190,7 @@ TODO
 transparancy
 TypingFDOs
 UDP
+UNIPROT
 URI
 utillize
 utillized
