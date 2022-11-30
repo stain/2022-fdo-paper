@@ -1677,7 +1677,7 @@
     standard_id: url:https://www.iso.org/standard/79329.html
 - id: 103Hw8H43
   type: webpage
-  title: X.1255 : Framework for discovery of identity management information
+  title: "X.1255 : Framework for discovery of identity management information"
   URL: https://www.itu.int/rec/T-REC-X.1255-201309-I
   accessed:
     date-parts:
