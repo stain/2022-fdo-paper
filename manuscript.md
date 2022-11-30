@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/6cedae174d298dedf1370b9c0cca0225c3c3b356/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/6cedae174d298dedf1370b9c0cca0225c3c3b356/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/6cedae174d298dedf1370b9c0cca0225c3c3b356/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/1023b7c5a25c683cb3e344f1b2496a20da8aef8d/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1023b7c5a25c683cb3e344f1b2496a20da8aef8d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1023b7c5a25c683cb3e344f1b2496a20da8aef8d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/6cedae174d298dedf1370b9c0cca0225c3c3b356/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/1023b7c5a25c683cb3e344f1b2496a20da8aef8d/))
 was automatically generated
-from [stain/2022-fdo-paper@6cedae1](https://github.com/stain/2022-fdo-paper/tree/6cedae174d298dedf1370b9c0cca0225c3c3b356)
+from [stain/2022-fdo-paper@1023b7c](https://github.com/stain/2022-fdo-paper/tree/1023b7c5a25c683cb3e344f1b2496a20da8aef8d)
 on November 30, 2022.
 </em></small>
 
@@ -341,9 +341,11 @@ Based on the analysis shown in table @tbl:fdo-web-interoperability-framework, we
 
 Web have already showed us we can compose workflows of hetereogeneous Web Services [@10.1093/nar/gkt328]. However, this is mostly done via developer or human interaction [@10.12688/f1000research.54159.1]. Similiarly, FDO does not enable automatic composition because operation semantics are not well defined. There is a question as to whether the plethora of documentation and broad developer usage that is available for Web APIs can be developed for FDO.
 
-A difference between Web and FDO is the stringency of the requirements for both syntax and semantics. Whereas the Web allows many different syntactic formats (e.g. from HTML to XML, PDFs), FDO realized with DOIP requires JSON. On the semantic front, FDO requries that every object have a well-defined type and structured form. This is clearly not the case on the Web.
+A difference between Web and FDO is the stringency of the requirements for both syntax and semantics. Whereas the Web allows many different syntactic formats (e.g. from HTML to XML, PDFs), FDO realized with DOIP requires JSON. On the semantic front, FDO requires that every object have a well-defined type and structured form. This is clearly not the case on the Web.
 
-In terms of connectivity and the deployment of applications, the Web has a plethora of software, services, and protocols that are widely deployed. These have shown interoprability. The standards bodies (e.g. IETF and Web Consoritium) are mainly open and have a diverse representation []. In contrast, FDO has a small number of implementations and corresponding protocols. This is not to say that they cannot be developed in the future, but we note that the functionality provided by FDO implemenations can be easily implemented using Web technologies. It's also a question as to whether a highly constrained protocol revolving around persistent identifiers is in fact necessary. For example, DOIs are already implemented on the web [].
+In terms of connectivity and the deployment of applications, the Web has a plethora of software, services, and protocols that are widely deployed. These have shown interoperability. The Web standards bodies (e.g. IETF and W3C) follow the OpenStand principles [@{https://open-stand.org/about-us/principles/}] to embrace openness, transparency, and broad consensus. In contrast, FDO has a small number of implementations and corresponding protocols, although with a growing community, as evidenced at the first FDO conference [@doi:10.3897/rio.coll.190]. This is not to say that it is not worth developing further Handle+DOIP implementations in the future, but we note that the current FDO functionality can easily be implemented using Web technologies, even as DOIP-over-HTTP [@{https://www.cordra.org/documentation/api/doip-api-for-http-clients.html}].
+
+It's also a question as to whether a highly constrained protocol revolving around persistent identifiers is in fact necessary. For example, DOIs are mostly resolved on the web [@{https://www.doi.org/factsheets/DOIProxy.html}] using HTTP redirects with the common `https://doi.org/` prefix, hiding their Handle nature as an implementation detail [@{https://www.doi.org/doi_handbook/3_Resolution.html}].
 
 #### Mapping of Metamodel concepts
 

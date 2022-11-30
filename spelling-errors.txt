@@ -12,7 +12,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-BioSchemas
+Bioschemas
 bytestream
 bytestreams
 CaroleAnneGoble
@@ -22,7 +22,6 @@ CDN
 CDNs
 centric
 ChEMBL
-Consoritium
 consumptions
 CORDA
 Cordra
@@ -30,8 +29,8 @@ COVID
 CSV
 CWFP
 Datacite
-dataset
-Datasets
+Dataset
+datasets
 DCAT
 dereferenceable
 diciplinary
@@ -58,7 +57,7 @@ FDO’s
 FDOs
 Findability
 findable
-FOAF
+foaf
 Freetext
 FROR
 furfill
@@ -76,11 +75,10 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-https
+HTTPS
 IANA
 IEC
 IETF
-implemenations
 indempotent
 inexistent
 InfoType
@@ -90,7 +88,6 @@ inheritedly
 inheritently
 interferring
 interoperable
-interoprability
 interpretable
 ISWC
 ITU
@@ -105,7 +102,7 @@ LDP’s
 LOD
 LPD
 Marmotta
-Metamodel
+metamodel
 Microdata
 microformats
 Micropub
@@ -118,11 +115,12 @@ NIST
 NL
 OAI
 OBO
-occassionally
+Occassionally
 ontologies
 OpenAIRE
 OpenAPI
 OpenLink
+OpenStand
 OSI
 overengineering
 pastable
@@ -143,7 +141,7 @@ QUIC
 RDA’s
 RDF
 RDFa
-rdflib
+RDFLib
 RDFS
 RDMKit
 redirections
@@ -151,14 +149,13 @@ Redland
 remainining
 RequirementSpec
 requried
-requries
 resiliant
 resolvers
 ResourceSync
 RO
 ROR
 runtime
-scalability
+Scalability
 scalable
 schemas
 seemlessly
