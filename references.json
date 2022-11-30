@@ -1,6 +1,6 @@
 [
   {
-    "URL": "https://docs.google.com/document/d/{1me0L8C5yDe39cYP1Sxud4Y10hxhphOimLB}-K-{KgHQUk}/edit",
+    "URL": "https://docs.google.com/document/d/1me0L8C5yDe39cYP1Sxud4Y10hxhphOimLB-K-KgHQUk/edit",
     "abstract": "The DOIP Version 2.0 as released by the DONA Foundation is endorsed as an important contribution to the FDO Forum specification stack. The DOIP interfacing protocol specifies how clients can interact with DOs independent of the technology used by a DOIP server and independent of the data organization chosen. Since FD0s are a subset of DOs, restricted by the requirement to be FAIR compliant and thus machine actionable, DOIP will also work for FDOs as specified by the FDO Forum. DOIP is an important component for implementation of FDOs using the DO approach. It has been tested by several institutions, as the Demonstrator paper from the eING WG has shown, there is a tested Software Development Kit, and there is an open-source reference implementation.",
     "accessed": {
       "date-parts": [
@@ -57,7 +57,7 @@
     "type": "report"
   },
   {
-    "URL": "https://docs.google.com/document/d/{1fDR5VHbVIa2AbLsBR58idrfn\\_Ib3x6Fk}-{\\_LJ4c\\_Ftt4}/edit",
+    "URL": "https://docs.google.com/document/d/1fDR5VHbVIa2AbLsBR58idrfn_Ib3x6Fk-_LJ4c_Ftt4/edit",
     "abstract": "This document illustrates the type of operations and checks that need to be done when an FDO or a set of FDOs of two specific FDO configuration types are being uploaded to the domain of FDOs. It also indicates the type of services that can be thought of at different FDO levels (PID, PID record information, metadata and content based). Finally, it describes the scope of checks that can be carried out at different levels (PID, metadata, bit-sequence). A special problem is indicated that is related to the fact that the community-based metadata can include references that are relevant for FDO level checks. A suggestion is made on how to bridge between semantic spaces.",
     "accessed": {
       "date-parts": [
@@ -135,7 +135,7 @@
     "type": "report"
   },
   {
-    "URL": "https://docs.google.com/document/d/{1ivvg3C\\_QWSO9PIQwkKT89xG4fBhNAs7\\_6b0Dz11EwDg}/edit",
+    "URL": "https://docs.google.com/document/d/1ivvg3C_QWSO9PIQwkKT89xG4fBhNAs7_6b0Dz11EwDg/edit",
     "abstract": "Intensive discussions within the FDO Forum revealed that there are many different ways to organize FAIR Digital Objects and many of them listed in this document are being used in daily practice. Investigating these different organizations and checking the compliance with the FDO Requirement Specifications and the FAIR Principles are essential. For illustration purposes this document includes simple diagrams and verbose descriptions of the different configurations. The major conclusions from this analysis need to be integrated into the full FDO Specifications.",
     "accessed": {
       "date-parts": [
@@ -212,7 +212,7 @@
     "type": "report"
   },
   {
-    "URL": "https://docs.google.com/document/d/{1VJTYHxLXIbjHSoFnMEkKaTbpTz9CagoIJyoSafkVh\\_I}/edit",
+    "URL": "https://docs.google.com/document/d/1VJTYHxLXIbjHSoFnMEkKaTbpTz9CagoIJyoSafkVh_I/edit",
     "abstract": "The FDO Forum needs a comprehensive definition of what a FAIR Digital Object (FDO) is and what it is not. This requires understanding the various aspects of FDOs, of which aspects of granularity and versioning are highly important. When several ESFRI communities discussed the use of PIDs, the issues of granularity, versioning and mutability were broadly discussed. The results can be transferred to FDOs due to the direct relationship between PIDs and FDO. This document presents aspects that have been mentioned. The main message is that granularity needs to be defined by the community of users.",
     "accessed": {
       "date-parts": [
@@ -265,7 +265,7 @@
     "type": "report"
   },
   {
-    "URL": "https://docs.google.com/document/d/{1GHFPAUGpNvYaxctkx}-{CpvY1vKf\\_aGZpSlWGOWvyXSiQ}/edit",
+    "URL": "https://docs.google.com/document/d/1GHFPAUGpNvYaxctkx-CpvY1vKf_aGZpSlWGOWvyXSiQ/edit",
     "abstract": "The FDO Forum will refer in many of its documents to the term actionability”which was coined in an article by Wittenburg, Strawn, Mons, Boninho and Schultes and later exemplified by GO FAIR implementation networks in the realm of the FAIR principles. For the FDO work we need a clear definition of what is meant with the term actionability”. This document includes a verbose description of relevant terms and draws conclusions in the form of a definition for use in the FDO Forum.",
     "accessed": {
       "date-parts": [
@@ -330,7 +330,7 @@
     "type": "report"
   },
   {
-    "URL": "https://docs.google.com/document/d/{1c2mZziq5pIPmLxMHLcYqlWrjYsc2ezGMXvp0E46iljo}/edit",
+    "URL": "https://docs.google.com/document/d/1c2mZziq5pIPmLxMHLcYqlWrjYsc2ezGMXvp0E46iljo/edit",
     "abstract": "The FDO Forum needs a comprehensive definition of what a FAIR Digital Object (FDO) is and what its relevant components are. The PID Profiles and the set of kernel attributes that can be used in PID Profiles are such key pillars. The purpose of this paper is to specify these two aspects in order to incorporate them in the comprehensive FDO specification paper to be written.",
     "accessed": {
       "date-parts": [
@@ -407,7 +407,7 @@
     "type": "report"
   },
   {
-    "URL": "https://docs.google.com/document/d/{1aGA}-{TBr4XpORhMPtnf\\_}--{Nb4FYJccgeSvGmGh68jNws}/edit",
+    "URL": "https://docs.google.com/document/d/1aGA-TBr4XpORhMPtnf_--Nb4FYJccgeSvGmGh68jNws/edit",
     "abstract": "This FDO Requirement Specification document specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
     "accessed": {
       "date-parts": [
@@ -480,7 +480,7 @@
     "type": "report"
   },
   {
-    "URL": "https://docs.google.com/document/d/{1X0hcOVIqP7iYIJf9u}-{7x3RwcXK8ecsauy0FZg\\_6}-Bg0/edit",
+    "URL": "https://docs.google.com/document/d/1X0hcOVIqP7iYIJf9u-7x3RwcXK8ecsauy0FZg_6-Bg0/edit",
     "abstract": "FAIR Digital Objects promote machine-actionability by requiring that each digital object be characterized using signals that will clearly hint at the potential processing steps any machine accessing it may perform. We call those signals types and the remainder of this document describes the need for types and the principles that the FDO community is following in the development of a framework for creating and applying those types.",
     "accessed": {
       "date-parts": [
@@ -541,7 +541,7 @@
     "type": "report"
   },
   {
-    "URL": "https://docs.google.com/document/d/{1lPNBBROjEoZ6fTfrtdqcMa3Q2G27PoC\\_}/edit",
+    "URL": "https://docs.google.com/document/d/1lPNBBROjEoZ6fTfrtdqcMa3Q2G27PoC_/edit",
     "abstract": "The FDO Forum differentiates between different types of documents such as: 1. Documents that will include specifications for FDOs which are of relevance for all persons engaged in FDO usage and which therefore will have binding functions. These documents which we call  Recommendations”will need to undergo a phased process of review and endorsement. 2. Documents from external bodies which will play an important role in specifying and using FDOs. These need to be compliant with the FDO Recommendations and thus need to be endorsed by the FDO Forum. Obviously, a shorter process will be required. 3. Documents that will have a role in defining FDO Forum activities, but will not influence the FDO specifications directly (scoping documents, event announcements, liaison documents, etc.). In this paper we will primarily describe the process for FDO Recommendations of type 1 and the special process for documents from external bodies.",
     "accessed": {
       "date-parts": [
@@ -614,7 +614,7 @@
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-DocProcessStd-1.1-20220129"
   },
   {
-    "URL": "https://docs.google.com/document/d/{1RrOiwMhkl}-{hRzWmlluA2iXCzHK}-{bj7\\_80LlMXgWx4w4}/edit\\#",
+    "URL": "https://docs.google.com/document/d/1RrOiwMhkl-hRzWmlluA2iXCzHK-bj7_80LlMXgWx4w4/edit",
     "abstract": "This document describes the details that are implied by the working draft on typing from an implementation standpoint. It highlights the roles of FDOs, their PIDs, their attributes and services and registries for FDOs, that need to be established and that operate on objects.",
     "accessed": {
       "date-parts": [
@@ -725,7 +725,7 @@
     "collection-title": "FDOF technical implementation guideline",
     "edition": "1.02",
     "abstract": "This document includes some generic guidelines to be met (chapter 2), a normative part defining the FAIR Digital Object Framework (FDOF) at an abstract level which will develop over time (chapter 3) and a glossary of terms (chapter 4). Related documents such as implementation examples can be found at the Github site1 and a Google Doc version is used for open comments which will lead to new versions2.",
-    "URL": "{https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx}",
+    "URL": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx",
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.yaml\nstandard_id: bonino_2019"
   },
   {
