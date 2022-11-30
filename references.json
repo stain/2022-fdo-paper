@@ -1,6 +1,16 @@
 [
   {
+    "URL": "https://docs.google.com/document/d/{1me0L8C5yDe39cYP1Sxud4Y10hxhphOimLB}-K-{KgHQUk}/edit",
     "abstract": "The DOIP Version 2.0 as released by the DONA Foundation is endorsed as an important contribution to the FDO Forum specification stack. The DOIP interfacing protocol specifies how clients can interact with DOs independent of the technology used by a DOIP server and independent of the data organization chosen. Since FD0s are a subset of DOs, restricted by the requirement to be FAIR compliant and thus machine actionable, DOIP will also work for FDOs as specified by the FDO Forum. DOIP is an important component for implementation of FDOs using the DO approach. It has been tested by several institutions, as the Demonstrator paper from the eING WG has shown, there is a tested Software Development Kit, and there is an open-source reference implementation.",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
     "author": [
       {
         "dropping-particle": "FDO-TSIG",
@@ -8,7 +18,7 @@
       }
     ],
     "collection-title": "FDO forum",
-    "edition": "0.1",
+    "edition": "1.0",
     "editor": [
       {
         "family": "Schwardmann",
@@ -28,150 +38,36 @@
       }
     ],
     "genre": "Enforsement Request",
-    "id": "TIKhgTv2",
+    "id": "15yGpJ0wh",
     "issued": {
       "date-parts": [
         [
           2022,
-          3,
-          26
+          6,
+          8
         ]
       ]
     },
+    "keyword": "FDO",
+    "note": "PED-DOIPEndorsement-1.0-20220608\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: PED-DOIPEndorsement-1.0-20220608",
+    "number": "PED-DOIPEndorsement-1.0-20220608",
     "publisher": "FDO Forum",
     "publisher-place": "(internal draft)",
     "title": "DOIP endorsement request",
-    "type": "report",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: PED-DOIPEndorsement-0.1-20220326"
+    "type": "report"
   },
   {
-    "abstract": "Intensive discussions within the FDO Forum revealed that there are many different ways to organize FAIR Digital Objects and many of them listed in this document are being used in daily practice. Investigating these different organizations and checking the compliance with the FDO Requirement Specifications and the FAIR Principles are essential. For illustration purposes this document includes simple diagrams and verbose descriptions of the different configurations which are also called ”. The major conclusions from this analysis need to be integrated into the full FDO Specifications.",
-    "author": [
-      {
-        "family": "Lannom",
-        "given": "Larry"
-      },
-      {
-        "family": "Peters-von Gehlen",
-        "given": "Karsten"
-      },
-      {
-        "family": "Anders",
-        "given": "Ivonne"
-      },
-      {
-        "family": "Pfeil",
-        "given": "Andreas"
-      },
-      {
-        "family": "Schlemmer",
-        "given": "Alexander"
-      },
-      {
-        "family": "Trautt",
-        "given": "Zach"
-      },
-      {
-        "family": "Wittenburg",
-        "given": "Peter"
-      }
-    ],
-    "collection-title": "FDO forum",
-    "edition": "1.0",
-    "editor": [
-      {
-        "family": "Anders",
-        "given": "Ivonne"
-      },
-      {
-        "family": "Pfeil",
-        "given": "Andreas"
-      },
-      {
-        "family": "Wittenburg",
-        "given": "Peter"
-      }
-    ],
-    "genre": "Working Draft",
-    "id": "1FnJihgWr",
-    "issued": {
+    "URL": "https://docs.google.com/document/d/{1fDR5VHbVIa2AbLsBR58idrfn\\_Ib3x6Fk}-{\\_LJ4c\\_Ftt4}/edit",
+    "abstract": "This document illustrates the type of operations and checks that need to be done when an FDO or a set of FDOs of two specific FDO configuration types are being uploaded to the domain of FDOs. It also indicates the type of services that can be thought of at different FDO levels (PID, PID record information, metadata and content based). Finally, it describes the scope of checks that can be carried out at different levels (PID, metadata, bit-sequence). A special problem is indicated that is related to the fact that the community-based metadata can include references that are relevant for FDO level checks. A suggestion is made on how to bridge between semantic spaces.",
+    "accessed": {
       "date-parts": [
         [
           2022,
-          3,
-          17
+          11,
+          30
         ]
       ]
     },
-    "publisher": "FDO Forum",
-    "publisher-place": "(internal draft)",
-    "title": "FDO Configuration Types",
-    "type": "report",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-ConfigurationTypes-1.0-20220317"
-  },
-  {
-    "abstract": "The FDO Forum differentiates between different types of documents such as: 1. Documents that will include specifications for FDOs which are of relevance for all persons engaged in FDO usage and which therefore will have binding functions. These documents which we call  Recommendations”will need to undergo a phased process of review and endorsement. 2. Documents from external bodies which will play an important role in specifying and using FDOs. These need to be compliant with the FDO Recommendations and thus need to be endorsed by the FDO Forum. Obviously, a shorter process will be required. 3. Documents that will have a role in defining FDO Forum activities, but will not influence the FDO specifications directly (scoping documents, event announcements, liaison documents, etc.). In this paper we will primarily describe the process for FDO Recommendations of type 1 and the special process for documents from external bodies.",
-    "author": [
-      {
-        "family": "Weiland",
-        "given": "C."
-      },
-      {
-        "family": "Schwardmann",
-        "given": "U."
-      },
-      {
-        "family": "Wittenburg",
-        "given": "P."
-      },
-      {
-        "family": "Kirkpatrick",
-        "given": "C."
-      },
-      {
-        "family": "Hanisch",
-        "given": "R."
-      },
-      {
-        "family": "Trautt",
-        "given": "Z."
-      }
-    ],
-    "collection-title": "FDO forum",
-    "edition": "1.0",
-    "editor": [
-      {
-        "family": "Weiland",
-        "given": "C."
-      },
-      {
-        "family": "Schwardmann",
-        "given": "U."
-      },
-      {
-        "family": "Wittenburg",
-        "given": "P."
-      }
-    ],
-    "genre": "Working Draft",
-    "id": "TQdku4YF",
-    "issued": {
-      "date-parts": [
-        [
-          2022,
-          1,
-          29
-        ]
-      ]
-    },
-    "publisher": "FDO Forum",
-    "publisher-place": "(internal draft)",
-    "title": "FDO Forum Document Standards",
-    "type": "report",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-DocProcessStd-1.1-20220129"
-  },
-  {
-    "abstract": "This document illustrates the type of operations and checks that need to be done when an FDO or a set of FDOs of two specific FDO configuration types are being uploaded to the domain of FDOs. It also indicates the type of services that can be thought of at different FDO levels (PID, PID record information, metadata and content based). Finally, it describes the scope of checks that can be carried out at different levels (PID, metadata, bit-sequence). A special problem is indicated that is related to the fact that the community-based metadata can include references that are relevant for FDO level checks. A suggestion is made how to bridge between semantic spaces.",
     "author": [
       {
         "family": "Blanchi",
@@ -204,7 +100,7 @@
       }
     ],
     "collection-title": "FDO forum",
-    "edition": "0.1",
+    "edition": "1.0",
     "editor": [
       {
         "family": "Broeder",
@@ -219,32 +115,122 @@
         "given": "Peter"
       }
     ],
-    "genre": "Working Draft",
-    "id": "zl4AS4Sw",
+    "genre": "Proposed Endorsement Note",
+    "id": "1H7cmmr69",
     "issued": {
       "date-parts": [
         [
           2022,
-          3,
-          20
+          6,
+          8
         ]
       ]
     },
+    "keyword": "FDO",
+    "note": "PEN-FDO-Upload-1.0-20220608\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: PEN-FDO-Upload-1.0-20220608",
+    "number": "PEN-FDO-Upload-1.0-20220608",
     "publisher": "FDO Forum",
     "publisher-place": "(internal draft)",
-    "title": "Upload of FDO",
-    "type": "report",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-FDO-Upload-0.1-20220320"
+    "title": "FDO – upload of FDO",
+    "type": "report"
   },
   {
-    "abstract": "The FDO Forum needs a comprehensive definition of what a FAIR Digital Object (FDO) is and what it is not. This requires understanding the various aspects of FDOs, of which aspects of granularity and versioning are highly important. When several ESFRI communities discussed the use of PIDs, the issues of granularity, versioning and mutability were broadly discussed. The results can be transferred to FDOs due to the direct relationship between PIDs and FDO. This document presents aspects that have been mentioned. The main message is that granularity needs to be defined by the community of users.",
+    "URL": "https://docs.google.com/document/d/{1ivvg3C\\_QWSO9PIQwkKT89xG4fBhNAs7\\_6b0Dz11EwDg}/edit",
+    "abstract": "Intensive discussions within the FDO Forum revealed that there are many different ways to organize FAIR Digital Objects and many of them listed in this document are being used in daily practice. Investigating these different organizations and checking the compliance with the FDO Requirement Specifications and the FAIR Principles are essential. For illustration purposes this document includes simple diagrams and verbose descriptions of the different configurations. The major conclusions from this analysis need to be integrated into the full FDO Specifications.",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
     "author": [
       {
-        "literal": "FDO-TSIG Working Group"
+        "family": "Lannom",
+        "given": "Larry"
+      },
+      {
+        "family": "Peters-von Gehlen",
+        "given": "Karsten"
+      },
+      {
+        "family": "Anders",
+        "given": "Ivonne"
+      },
+      {
+        "family": "Pfeil",
+        "given": "Andreas"
+      },
+      {
+        "family": "Schlemmer",
+        "given": "Alexander"
+      },
+      {
+        "family": "Trautt",
+        "given": "Zach"
+      },
+      {
+        "family": "Wittenburg",
+        "given": "Peter"
       }
     ],
     "collection-title": "FDO forum",
-    "edition": "1.0",
+    "edition": "2.0",
+    "editor": [
+      {
+        "family": "Anders",
+        "given": "Ivonne"
+      },
+      {
+        "family": "Pfeil",
+        "given": "Andreas"
+      },
+      {
+        "family": "Wittenburg",
+        "given": "Peter"
+      }
+    ],
+    "genre": "Proposed Recommendation",
+    "id": "SPd0uEqO",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          6,
+          8
+        ]
+      ]
+    },
+    "keyword": "FDO",
+    "note": "PR-ConfigurationTypes-2.0-20220608\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: PR-ConfigurationTypes-2.0-20220608",
+    "number": "PR-ConfigurationTypes-2.0-20220608",
+    "publisher": "FDO Forum",
+    "publisher-place": "(internal draft)",
+    "title": "FDO configuration types",
+    "type": "report"
+  },
+  {
+    "URL": "https://docs.google.com/document/d/{1VJTYHxLXIbjHSoFnMEkKaTbpTz9CagoIJyoSafkVh\\_I}/edit",
+    "abstract": "The FDO Forum needs a comprehensive definition of what a FAIR Digital Object (FDO) is and what it is not. This requires understanding the various aspects of FDOs, of which aspects of granularity and versioning are highly important. When several ESFRI communities discussed the use of PIDs, the issues of granularity, versioning and mutability were broadly discussed. The results can be transferred to FDOs due to the direct relationship between PIDs and FDO. This document presents aspects that have been mentioned. The main message is that granularity needs to be defined by the community of users.",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
+    "author": [
+      {
+        "dropping-particle": "FDO-TSIG",
+        "family": "Working Group"
+      }
+    ],
+    "collection-title": "FDO forum",
+    "edition": "2.1",
     "editor": [
       {
         "family": "Hellström",
@@ -259,25 +245,37 @@
         "given": "Peter"
       }
     ],
-    "genre": "Working Draft",
-    "id": "1GSyvgyTr",
+    "genre": "Proposed Recommendation",
+    "id": "16W9AycSW",
     "issued": {
       "date-parts": [
         [
           2022,
-          3,
-          17
+          8,
+          26
         ]
       ]
     },
+    "keyword": "FDO",
+    "note": "PR-Granularity-2.1-20220826\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: PR-Granularity-2.1-20220826",
+    "number": "PR-Granularity-2.1-20220826",
     "publisher": "FDO Forum",
     "publisher-place": "(internal draft)",
-    "title": "FDO – Granularity, Versioning, Mutability",
-    "type": "report",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-Granularity-1.0-20220317"
+    "title": "FDO – granularity, versioning, mutability",
+    "type": "report"
   },
   {
-    "abstract": "The FDO Forum will refer in many of its documents to the term actionability”which was coined in the foundational article and later exemplified by GO FAIR implementation networks in the realm of the FAIR principles. For the FDO work we need a clear definition of what is meant with the term actionability”. This document includes a verbose description of relevant terms and draws conclusions in the form of a definition for use in the FDO Forum. Machine actionability, in the context of FDO, represents the FDO Forum communityfocus on architecting the FDO to maximize dynamic data accessibility, parsability, interpretability, understandability, and synthesizability by machines while minimizing or eliminating the need for human oversight.",
+    "URL": "https://docs.google.com/document/d/{1GHFPAUGpNvYaxctkx}-{CpvY1vKf\\_aGZpSlWGOWvyXSiQ}/edit",
+    "abstract": "The FDO Forum will refer in many of its documents to the term actionability”which was coined in an article by Wittenburg, Strawn, Mons, Boninho and Schultes and later exemplified by GO FAIR implementation networks in the realm of the FAIR principles. For the FDO work we need a clear definition of what is meant with the term actionability”. This document includes a verbose description of relevant terms and draws conclusions in the form of a definition for use in the FDO Forum.",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
     "author": [
       {
         "family": "Weiland",
@@ -297,11 +295,11 @@
       },
       {
         "family": "Wittenburg",
-        "given": "PEter"
+        "given": "Peter"
       }
     ],
     "collection-title": "FDO forum",
-    "edition": "1.1",
+    "edition": "2.0",
     "editor": [
       {
         "family": "Weiland",
@@ -312,25 +310,37 @@
         "given": "Peter"
       }
     ],
-    "genre": "Working Draft",
-    "id": "UTzzPcce",
+    "genre": "Proposed Recommendation",
+    "id": "iJeys0T5",
     "issued": {
       "date-parts": [
         [
           2022,
-          2,
-          25
+          6,
+          11
         ]
       ]
     },
+    "keyword": "FDO",
+    "note": "PR-MachineActionDef-2.0-20220611\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: PR-MachineActionDef-2.0-20220611",
+    "number": "PR-MachineActionDef-2.0-20220611",
     "publisher": "FDO Forum",
     "publisher-place": "(internal draft)",
-    "title": "FDO Machine Actionability",
-    "type": "report",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-MachineActionDef-1.1-20220301"
+    "title": "FDO machine actionability",
+    "type": "report"
   },
   {
+    "URL": "https://docs.google.com/document/d/{1c2mZziq5pIPmLxMHLcYqlWrjYsc2ezGMXvp0E46iljo}/edit",
     "abstract": "The FDO Forum needs a comprehensive definition of what a FAIR Digital Object (FDO) is and what its relevant components are. The PID Profiles and the set of kernel attributes that can be used in PID Profiles are such key pillars. The purpose of this paper is to specify these two aspects in order to incorporate them in the comprehensive FDO specification paper to be written.",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
     "author": [
       {
         "family": "Anders",
@@ -362,40 +372,84 @@
       }
     ],
     "collection-title": "FDO forum",
-    "edition": "1.0",
+    "edition": "2.0",
     "editor": [
       {
         "family": "Hellström",
         "given": "Maggie"
+      },
+      {
+        "family": "Islam",
+        "given": "Sharif"
+      },
+      {
+        "family": "Wittenburg",
+        "given": "Peter"
       }
     ],
-    "genre": "Working Draft",
-    "id": "1D3S8mpov",
+    "genre": "Proposed Recommendation",
+    "id": "ljVViWCl",
     "issued": {
       "date-parts": [
         [
           2022,
-          3,
-          17
+          6,
+          7
         ]
       ]
     },
+    "keyword": "FDO",
+    "note": "PR-PIDProfileAttributes-2.0-20220608\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: PR-PIDProfileAttributes-2.0-20220608",
+    "number": "PR-PIDProfileAttributes-2.0-20220608",
     "publisher": "FDO Forum",
     "publisher-place": "(internal draft)",
-    "title": "FDO PID Profiles & Attributes",
-    "type": "report",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-PIDProfileAttributes-1.0-20220317"
+    "title": "FDO PID profiles & attributes",
+    "type": "report"
   },
   {
+    "URL": "https://docs.google.com/document/d/{1aGA}-{TBr4XpORhMPtnf\\_}--{Nb4FYJccgeSvGmGh68jNws}/edit",
     "abstract": "This FDO Requirement Specification document specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
     "author": [
       {
-        "dropping-particle": "FDO-TSIG working",
-        "family": "group"
+        "family": "Strawn",
+        "given": "G."
+      },
+      {
+        "family": "Wittenburg",
+        "given": "P."
+      },
+      {
+        "family": "Soiland-Reyes",
+        "given": "St."
+      },
+      {
+        "family": "Peters",
+        "given": "K."
+      },
+      {
+        "family": "Lannom",
+        "given": "L."
+      },
+      {
+        "family": "Schwardmann",
+        "given": "U."
+      },
+      {
+        "family": "Blanch",
+        "given": "Ch."
       }
     ],
     "collection-title": "FDO forum",
-    "edition": "1.0",
+    "edition": "2.0",
     "editor": [
       {
         "family": "Strawn",
@@ -406,25 +460,37 @@
         "given": "P."
       }
     ],
-    "genre": "Working Draft",
-    "id": "STXtoppr",
+    "genre": "Proposed Recommendation",
+    "id": "yygVPoL0",
     "issued": {
       "date-parts": [
         [
           2022,
-          3,
-          17
+          8,
+          22
         ]
       ]
     },
+    "keyword": "FDO",
+    "note": "PR-RequirementSpec-2.0-20220826\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: PR-RequirementSpec-2.0-20220826",
+    "number": "PR-RequirementSpec-2.0-20220826",
     "publisher": "FDO Forum",
     "publisher-place": "(internal draft)",
-    "title": "FDO Requirement Specifications",
-    "type": "report",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-RequirementSpec-1.0-20220317"
+    "title": "FDO forum FDO requirement specifications",
+    "type": "report"
   },
   {
+    "URL": "https://docs.google.com/document/d/{1X0hcOVIqP7iYIJf9u}-{7x3RwcXK8ecsauy0FZg\\_6}-Bg0/edit",
     "abstract": "FAIR Digital Objects promote machine-actionability by requiring that each digital object be characterized using signals that will clearly hint at the potential processing steps any machine accessing it may perform. We call those signals types and the remainder of this document describes the need for types and the principles that the FDO community is following in the development of a framework for creating and applying those types.",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
     "author": [
       {
         "family": "Lannom",
@@ -444,29 +510,173 @@
       }
     ],
     "collection-title": "FDO forum",
-    "edition": "1.0",
+    "edition": "2.0",
     "editor": [
       {
         "family": "Lannom",
         "given": "Larry"
+      },
+      {
+        "family": "Schwardmann",
+        "given": "U."
       }
     ],
     "genre": "Enforsement Request",
-    "id": "11WHHh04H",
+    "id": "ZFzPxCNB",
     "issued": {
       "date-parts": [
         [
           2022,
-          3,
-          10
+          6,
+          8
         ]
       ]
     },
+    "keyword": "FDO",
+    "note": "PR-TypingFDOs-2.0-20220608\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: PR-TypingFDOs-2.0-20220608",
+    "number": "PR-TypingFDOs-2.0-20220608",
     "publisher": "FDO Forum",
     "publisher-place": "(internal draft)",
-    "title": "Typing FAIR Digital Objects",
+    "title": "Typing FAIR digital objects",
+    "type": "report"
+  },
+  {
+    "URL": "https://docs.google.com/document/d/{1lPNBBROjEoZ6fTfrtdqcMa3Q2G27PoC\\_}/edit",
+    "abstract": "The FDO Forum differentiates between different types of documents such as: 1. Documents that will include specifications for FDOs which are of relevance for all persons engaged in FDO usage and which therefore will have binding functions. These documents which we call  Recommendations”will need to undergo a phased process of review and endorsement. 2. Documents from external bodies which will play an important role in specifying and using FDOs. These need to be compliant with the FDO Recommendations and thus need to be endorsed by the FDO Forum. Obviously, a shorter process will be required. 3. Documents that will have a role in defining FDO Forum activities, but will not influence the FDO specifications directly (scoping documents, event announcements, liaison documents, etc.). In this paper we will primarily describe the process for FDO Recommendations of type 1 and the special process for documents from external bodies.",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Weiland",
+        "given": "C."
+      },
+      {
+        "family": "Schwardmann",
+        "given": "U."
+      },
+      {
+        "family": "Wittenburg",
+        "given": "P."
+      },
+      {
+        "family": "Kirkpatrick",
+        "given": "C."
+      },
+      {
+        "family": "Hanisch",
+        "given": "R."
+      },
+      {
+        "family": "Trautt",
+        "given": "Z."
+      }
+    ],
+    "collection-title": "FDO forum",
+    "edition": "1.1",
+    "editor": [
+      {
+        "family": "Weiland",
+        "given": "C."
+      },
+      {
+        "family": "Schwardmann",
+        "given": "U."
+      },
+      {
+        "family": "Wittenburg",
+        "given": "P."
+      }
+    ],
+    "genre": "Working Draft",
+    "id": "TQdku4YF",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          29
+        ]
+      ]
+    },
+    "keyword": "FDO",
+    "number": "WD-DocProcessStd-1.1-20220129",
+    "publisher": "FDO Forum",
+    "publisher-place": "(internal draft)",
+    "title": "FDO forum document standards",
     "type": "report",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-TypingFDOs-1.0-20220310"
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-DocProcessStd-1.1-20220129"
+  },
+  {
+    "URL": "https://docs.google.com/document/d/{1RrOiwMhkl}-{hRzWmlluA2iXCzHK}-{bj7\\_80LlMXgWx4w4}/edit\\#",
+    "abstract": "This document describes the details that are implied by the working draft on typing from an implementation standpoint. It highlights the roles of FDOs, their PIDs, their attributes and services and registries for FDOs, that need to be established and that operate on objects.",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Blanchi",
+        "given": "C."
+      },
+      {
+        "family": "Hellström",
+        "given": "M."
+      },
+      {
+        "family": "Lannom",
+        "given": "L."
+      },
+      {
+        "family": "Schwardmann",
+        "given": "U."
+      },
+      {
+        "family": "Wittenburg",
+        "given": "P."
+      }
+    ],
+    "collection-title": "FDO forum",
+    "edition": "0.2",
+    "editor": [
+      {
+        "family": "Schwardmann",
+        "given": "U."
+      },
+      {
+        "family": "Wittenburg",
+        "given": "P."
+      }
+    ],
+    "genre": "Working Draft",
+    "id": "126uxr5pI",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          27
+        ]
+      ]
+    },
+    "keyword": "FDO",
+    "note": "WD-ImplAttributesTypesProfiles-0.2-20221127\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: WD-ImplAttributesTypesProfiles-0.2-20221127",
+    "number": "WD-ImplAttributesTypesProfiles-0.2-20221127",
+    "publisher": "FDO Forum",
+    "publisher-place": "(internal draft)",
+    "title": "Implementation of attributes, types, profiles and registries",
+    "type": "report"
   },
   {
     "id": "RwvirqWg",
@@ -590,6 +800,34 @@
     "title": "FAIR data points supporting big data interoperability",
     "type": "chapter",
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: boninodasilvasantos_2016"
+  },
+  {
+    "publisher": "Springer Berlin Heidelberg",
+    "DOI": "10.1007/3-540-48005-6",
+    "type": "book",
+    "source": "Crossref",
+    "title": "The Semantic Web — ISWC 2002",
+    "container-title": "Lecture Notes in Computer Science",
+    "editor": [
+      {
+        "given": "Ian",
+        "family": "Horrocks"
+      },
+      {
+        "given": "James",
+        "family": "Hendler"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    },
+    "URL": "https://doi.org/fwjmhp",
+    "id": "yd2WE9eq",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1007/3-540-48005-6"
   },
   {
     "DOI": "10.1007/978-3-030-21348-0_39",
@@ -3453,6 +3691,39 @@
   },
   {
     "publisher": "Pensoft Publishers",
+    "abstract": "<jats:p>FAIR Digital Objects (FDOs) are typed by a well described set of attributes, where attributes are key value pairs with a key, which refers to a syntactic description of the value. Often the description of the set of attributes is called also profile. The exact description of the attribute keys is obviously crucial for machine actionability on one hand. On the other hand an exact description of attributes can be a way to allow also human readability of the used keys. Furthermore it can often integrate legacy attribute sets that are provided inside repositories for the description of their digital objects.</jats:p>\n          <jats:p>In the following we show two examples of FDO types with their attributes from different viewpoints. The two examples are: the Persistent Identifiers (PID) for Instruments example and the DARIAH (see https://de.dariah.eu) use case. In both cases the Handle system is used for the persistent identifiers, the FDO record is provided by the Handle record of the PID and the attributes can be found here as type-data pairs in the phrasing of the Handle system.</jats:p>\n          <jats:p>\n            <jats:bold>1 Example 1: PID for Instruments</jats:bold>\n          </jats:p>\n          <jats:p>The PID for instrument example goes back to the development of kernel metadata, which is seen as minimally required to reference and describe scientific instruments Stocker et al. 2020. The value space for the attributes here often contains hierarchical objects and can also be lists of attributes.</jats:p>\n          <jats:p>An example of such an attribute definition is that of a single manufacturer of an instrument that occurs in a list of manufacturers here: http://dtr-test.pidconsortium.eu/#objects/21.T11148/7adfcd13b3b01de0d875.</jats:p>\n          <jats:p>\n            <jats:bold>1.1. The Handle Record for a Full PID for Instruments</jats:bold>\n          </jats:p>\n          <jats:p>In this case one uses the references to the attribute definitions as keys for the values, which are often lists or objects. The Handle Record for a full attribute list of a PID for Instruments can be obtained from the Handle Proxy with https://hdl.handle.net/21.T11998/0000-001A-3905-1?noredirect</jats:p>\n          <jats:p>The structure of this FDO record is defined as a type definition at the ePIC Date Type Registry Schwardmann 2020 with http://dtr-test.pidconsortium.eu/objects/21.T11148/17ce618137e697852ea6 . This way we can also refer to this structure definition in a qualified key value pair like TYPE/0.TYPE and then use as keys in the FDO record the names as they are given for keys in this structure. This way an FDO record becomes a human readable form without loosing any machine readability. For further details see: https://hdl.handle.net/21.T11998/0000-001A-3905-8?noredirect</jats:p>\n          <jats:p>In both cases the full instrument descriptions are completely stored in the Handle database of the Handle PID service. The PID itself is a metadata object and can be seen as an FDO of its own.</jats:p>\n          <jats:p>\n            <jats:bold>1.2. Type for a PID4Inst based on Attributes</jats:bold>\n          </jats:p>\n          <jats:p>The type for such FDOs is given via proxy https://hdl.handle.net/21.T11148/17ce618137e697852ea6 in the ePIC DTR</jats:p>\n          <jats:p>\n            <jats:bold>1.3. PID4Inst in a Repository</jats:bold>\n          </jats:p>\n          <jats:p>Another option is to store the metadata objects of instrument descriptions in repositories. In this case a schema is needed to describe the metadata elements that are needed for the description. The existing attribute definitions could be bundled here into a single complex definition, which is syntactically almost identical to the type definition for instruments.</jats:p>\n          <jats:p>From such a complex definition one could derive a schema for the repository entries. In this case the schema was directly derived from the type, which is conceptually different from attribute definitions, but syntactically similar and therefore exploitable by the same services. The result of the schema derivation can then be directly fed into the ingest module of repositories, in the following figure for example into the CORDRA schema module for the definition of attribute types: https://hdl.handle.net/21.T11148/c2c8c452912d57a44117</jats:p>\n          <jats:p>An example of such a PID for instrument object in a repository is given at https://vm11.pid.gwdg.de:8445/objects/21.11145/8fefa88dea40956037ec</jats:p>\n          <jats:p>\n            <jats:bold>2. Example 2: The DARIAH Use Case </jats:bold>\n          </jats:p>\n          <jats:p>This example evolved in the humanities in the DARIAH project about five years ago with the DARIAH repository (Kálmán et al. 2016, DARIAH-DE 2016). The Handle record structure was created far before FDO records have been discussed. It uses key value pairs with human readable keys as the type and provides relatively atomic values. For humans the key here is a description for the value space that can be expected: https://hdl.handle.net/21.11113/0000-000B-CA4C-D?noredirect</jats:p>\n          <jats:p>The use of human readable keys does however not match the goal of machine readability of this description. Additionally it has the risk of uncertainty and ambiguity.</jats:p>\n          <jats:p>\n            <jats:bold>2.1. Attribute Definitions</jats:bold>\n          </jats:p>\n          <jats:p>In order to make these attributes machine readable, attribute definitions for the allowed value spaces were needed and can be found in the ePIC data type registries. The following basic information type for an email address can be used as the reference key for the value space given for the 'RESPONSIBLE' type above for instance: https://dtr-test.pidconsortium.eu/#objects/21.T11148/e117a4a29bfd07438c1e</jats:p>\n          <jats:p>Attribute definitions for all attributes used in the DARIAH example are given in the ePIC data type registrie. This way one is able to define a type for the DARIAH Handle records.</jats:p>\n          <jats:p>\n            <jats:bold>2.2. An FDO Type of Legacy Repository Records</jats:bold>\n          </jats:p>\n          <jats:p>Such a type definition is given at: https://dtr-test.pidconsortium.eu/#objects/21.T11148/f1eea855587d8b1f66da</jats:p>\n          <jats:p>If this type is the known type of all objects in the DARIAH repository, the references to the keys are named very similar the human readable form of the Handle record.</jats:p>\n          <jats:p>Usually and as we have seen in the previous PID4Inst example the type of the FDO would be another attribute of the FDO. This would require an adaption of the attributes of all digital objects of the DARIAH repository. But since all digital objects of the DARIAH repository follow the same profile and all its digital objects have the same PID prefix, it would be sufficient to implement this additional attribute at the prefix level. Together with a rule that attributes on a lower level dominate attributes on a higher level, this additional prefix attribute makes FDOs out of legacy digital objects that have been defined a long time ago.</jats:p>\n          <jats:p>\n            <jats:bold>3. Presentation</jats:bold>\n          </jats:p>\n          <jats:p>In the presentation we will describe based on the two examples above how machine and human readability can be supported at the same time by FDO types and discuss the implementation of hierarchical type definitions as the basic infrastructure for FAIRness of data in more detail.</jats:p>",
+    "DOI": "10.3897/rio.8.e96014",
+    "type": "article-journal",
+    "source": "Crossref",
+    "title": "Two Examples on How FDO Types can Support Machine and Human Readability",
+    "volume": "8",
+    "author": [
+      {
+        "given": "Ulrich",
+        "family": "Schwardmann"
+      },
+      {
+        "given": "Tibor",
+        "family": "Kálmán"
+      }
+    ],
+    "container-title": "Research Ideas and Outcomes",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          12
+        ]
+      ]
+    },
+    "URL": "https://doi.org/grcq23",
+    "container-title-short": "RIO",
+    "id": "1CqIZ47pu",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.3897/rio.8.e96014"
+  },
+  {
+    "publisher": "Pensoft Publishers",
     "DOI": "10.3897/rio.coll.190",
     "source": "Crossref",
     "title": "First International Conference on FAIR Digital Objects",
@@ -3519,12 +3790,17 @@
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: doi:10.4018/jswis.2009081901"
   },
   {
-    "type": "report",
-    "id": "jRWurmQc",
-    "categories": [
-      "FAIR, FAIR Digital Objects, Data Management, Data Science, Global Data Space"
-    ],
-    "language": "en",
+    "DOI": "10.5281/zenodo.5872645",
+    "abstract": "This paper gives a summary of implementation activities in the realm of FAIR Digital Objects (FDO). It gives an idea which software components are robust and used for many years, which components are comparatively new and are being tested out in pilot projects and what the challenges are that need to be urgently addressed by the FDO community. After basically only one year of advancing the FDO specifications by the FDO Forum we can recognise an increasing momentum to test and integrate essential FDO components. However, many developments still occur as soloistic engagements that offer a scattered picture. It is widely agreed that it is now time to combine these different pilots to comprehensive testbeds, to identify still existing gaps and to turn some services into components of a convincing and stable infrastructure. This step is urgently needed to convince even more institutions to invest in FDO technology and therefore to increase FAIRness of the evolving global data space.",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          18
+        ]
+      ]
+    },
     "author": [
       {
         "family": "Wittenburg",
@@ -3595,7 +3871,8 @@
         "given": "Robert"
       },
       {
-        "family": "van de Sanden",
+        "dropping-particle": "van de",
+        "family": "Sanden",
         "given": "Mark"
       },
       {
@@ -3627,22 +3904,19 @@
         "given": "Philipp"
       }
     ],
+    "container-title": "Zenodo",
+    "id": "jRWurmQc",
     "issued": {
       "date-parts": [
         [
-          2022,
-          1,
-          18
+          2022
         ]
       ]
     },
-    "abstract": "This paper gives a summary of implementation activities in the realm of FAIR Digital Objects (FDO). It gives an idea which software components are robust and used for many years, which components are comparatively new and are being tested out in pilot projects and what the challenges are that need to be urgently addressed by the FDO community. After basically only one year of advancing the FDO specifications by the FDO Forum we can recognise an increasing momentum to test and integrate essential FDO components. However, many developments still occur as soloistic engagements that offer a scattered picture. It is widely agreed that it is now time to combine these different pilots to comprehensive testbeds, to identify still existing gaps and to turn some services into components of a convincing and stable infrastructure. This step is urgently needed to convince even more institutions to invest in FDO technology and therefore to increase FAIRness of the evolving global data space.",
-    "DOI": "10.5281/zenodo.5872645",
-    "publisher": "Zenodo",
-    "title": "FAIR Digital Object Demonstrators 2021",
-    "URL": "https://doi.org/gp4wm4",
-    "version": "final",
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.5281/zenodo.5872645\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-manubot.yaml\noriginal_id: jRWurmQc"
+    "keyword": "FDO",
+    "title": "FAIR digital object demonstrators 2021",
+    "type": "article-journal",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: doi:10.5281/zenodo.5872645"
   },
   {
     "DOI": "10.5334/dsj-2020-041",
@@ -5134,131 +5408,5 @@
       ]
     },
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: url:https://www.w3.org/standards/semanticweb/data\n    \nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-manubot.yaml\noriginal_id: o4h92LpS"
-  },
-  {
-    "id": "GNm0278Y",
-    "type": "article-journal",
-    "author": [
-      {
-        "family": "Wittenburg",
-        "given": "Peter"
-      },
-      {
-        "family": "Anders",
-        "given": "Ivonne"
-      },
-      {
-        "family": "Blanchi",
-        "given": "Christophe"
-      },
-      {
-        "family": "Buurman",
-        "given": "Merret"
-      },
-      {
-        "family": "Goble",
-        "given": "Carole"
-      },
-      {
-        "family": "Grieb",
-        "given": "Jonas"
-      },
-      {
-        "family": "Hardisty",
-        "given": "Alex"
-      },
-      {
-        "family": "Islam",
-        "given": "Sharif"
-      },
-      {
-        "family": "Jejkal",
-        "given": "Thomas"
-      },
-      {
-        "family": "Kálmán",
-        "given": "Tibor"
-      },
-      {
-        "family": "Kirkpatrick",
-        "given": "Christine"
-      },
-      {
-        "family": "Lannom",
-        "given": "Laurence"
-      },
-      {
-        "family": "Lauer",
-        "given": "Thomas"
-      },
-      {
-        "family": "Manepalli",
-        "given": "Giridhar"
-      },
-      {
-        "family": "Peters-von Gehlen",
-        "given": "Karsten"
-      },
-      {
-        "family": "Pfeil",
-        "given": "Andreas"
-      },
-      {
-        "family": "Quick",
-        "given": "Robert"
-      },
-      {
-        "family": "Sanden",
-        "given": "Mark",
-        "dropping-particle": "van de"
-      },
-      {
-        "family": "Schwardmann",
-        "given": "Ulrich"
-      },
-      {
-        "family": "Soiland-Reyes",
-        "given": "Stian"
-      },
-      {
-        "family": "Stotzka",
-        "given": "Rainer"
-      },
-      {
-        "family": "Trautt",
-        "given": "Zachary"
-      },
-      {
-        "family": "Van Uytvanck",
-        "given": "Dieter"
-      },
-      {
-        "family": "Weiland",
-        "given": "Claus"
-      },
-      {
-        "family": "Wieder",
-        "given": "Philipp"
-      }
-    ],
-    "issued": [
-      {
-        "year": 2022
-      }
-    ],
-    "accessed": [
-      {
-        "year": 2022,
-        "month": 1,
-        "day": 18
-      }
-    ],
-    "title": "FAIR digital object demonstrators 2021",
-    "container-title": "Zenodo",
-    "abstract": "This paper gives a summary of implementation activities in the realm of FAIR Digital Objects (FDO). It gives an idea which software components are robust and used for many years, which components are comparatively new and are being tested out in pilot projects and what the challenges are that need to be urgently addressed by the FDO community. After basically only one year of advancing the FDO specifications by the FDO Forum we can recognise an increasing momentum to test and integrate essential FDO components. However, many developments still occur as soloistic engagements that offer a scattered picture. It is widely agreed that it is now time to combine these different pilots to comprehensive testbeds, to identify still existing gaps and to turn some services into components of a convincing and stable infrastructure. This step is urgently needed to convince even more institutions to invest in FDO technology and therefore to increase FAIRness of the evolving global data space.",
-    "keyword": "FDO",
-    "URL": "https://zenodo.org/record/5872645",
-    "DOI": "10.5281/zenodo.5872645",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.yaml\nstandard_id: wittenburg_2022"
   }
 ]

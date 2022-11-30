@@ -12,7 +12,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-Bioschemas
+BioSchemas
 bytestream
 bytestreams
 CaroleAnneGoble
@@ -28,8 +28,9 @@ Cordra
 COVID
 CSV
 CWFP
+DARIAH
 Datacite
-Dataset
+dataset
 datasets
 DCAT
 dereferenceable
@@ -47,6 +48,7 @@ eg
 EMEA
 EOSC
 ESRI
+examplified
 examplify
 exisiting
 Extensibility
@@ -54,10 +56,10 @@ FDO
 FDOF
 FDOR
 FDO’s
-FDOs
+fdos
 Findability
 findable
-foaf
+FOAF
 Freetext
 FROR
 furfill
@@ -115,7 +117,7 @@ NIST
 NL
 OAI
 OBO
-Occassionally
+occassionally
 ontologies
 OpenAIRE
 OpenAPI
@@ -137,6 +139,7 @@ Polymorphism
 practictioners
 pre
 Programmatically
+proto
 QUIC
 RDA’s
 RDF
@@ -155,7 +158,7 @@ ResourceSync
 RO
 ROR
 runtime
-Scalability
+scalability
 scalable
 schemas
 seemlessly
