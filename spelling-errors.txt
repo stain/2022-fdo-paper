@@ -12,7 +12,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-Bioschemas
+BioSchemas
 bytestream
 bytestreams
 CaroleAnneGoble
@@ -30,8 +30,8 @@ COVID
 CSV
 CWFP
 Datacite
-Dataset
-datasets
+dataset
+Datasets
 DCAT
 dereferenceable
 diciplinary
@@ -51,7 +51,7 @@ ESRI
 examplify
 exisiting
 Extensibility
-fdo
+FDO
 FDOF
 FDOR
 FDO’s
@@ -105,11 +105,11 @@ LDP’s
 LOD
 LPD
 Marmotta
-metamodel
+Metamodel
 Microdata
 microformats
 Micropub
-Middleware
+middleware
 middlewares
 modularity
 namespace
@@ -118,7 +118,7 @@ NIST
 NL
 OAI
 OBO
-Occassionally
+occassionally
 ontologies
 OpenAIRE
 OpenAPI

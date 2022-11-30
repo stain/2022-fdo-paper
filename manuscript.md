@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/68d695be47f7b4908bef196f968609c2709ee721/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/68d695be47f7b4908bef196f968609c2709ee721/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/68d695be47f7b4908bef196f968609c2709ee721/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/6cedae174d298dedf1370b9c0cca0225c3c3b356/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/6cedae174d298dedf1370b9c0cca0225c3c3b356/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/6cedae174d298dedf1370b9c0cca0225c3c3b356/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,13 +74,13 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/68d695be47f7b4908bef196f968609c2709ee721/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/6cedae174d298dedf1370b9c0cca0225c3c3b356/))
 was automatically generated
-from [stain/2022-fdo-paper@68d695b](https://github.com/stain/2022-fdo-paper/tree/68d695be47f7b4908bef196f968609c2709ee721)
+from [stain/2022-fdo-paper@6cedae1](https://github.com/stain/2022-fdo-paper/tree/6cedae174d298dedf1370b9c0cca0225c3c3b356)
 on November 30, 2022.
 </em></small>
 
-## Authors
+## Authors {.unnumbered}
 
 
 
@@ -121,7 +121,7 @@ on November 30, 2022.
 
 
 
-## Abstract {.page_break_before}
+## Abstract {.page_break_before .unnumbered}
 
 **TODO**: Rewrite from notes below to actual abstract.
 
@@ -161,6 +161,8 @@ One challenge that may, perhaps counter-intuitively, steer developers towards a 
 These approaches, thus, form two of the major avenues for allowing developers and the wider research community to achieve the goal of FAIR data. Given their importance, in this article, we aim to examine the relationships between FAIR and FAIR Digital Objects, contrasted with Linked Data and the Web in general. 
 
 Concretely, the contribution of this paper is a systematic comparison between FDO and Linked Data using 5 different conceptual frameworks that capture different perspectives on interoperability and readiness for implementation. 
+
+### FAIR Digital Object
 
 ::: {.breakout}
 
@@ -219,7 +221,6 @@ It is worth pointing out at that, except for the DOIP endorsement, all of these 
 :::
 
 
-### FAIR Digital Object
 
 The concept of **FAIR Digital Objects** [@doi:10.1007/978-3-030-23584-0_1] has been introduced as way to expose research data as active objects that conform to the FAIR principles [@doi:10.1038/sdata.2016.18]. This builds on the _Digital Object_ (DO) concept [@doi:10.1007/s00799-005-0128-x], first introduced in 1995 [@kahn_1995] as a system of _repositories_ containing _digital objects_ identified by _handles_ and described by _metadata_ which may have references to other handles. DO was the inspiration for the ITU X.1255 framework [@{https://www.itu.int/rec/T-REC-X.1255-201309-I}] which introduced an abstract _Digital Entity Interface Protocol_ for managing such objects programmatically, first realised by the Digital Object Interface Protocol (DOIP) v1 [@{https://www.dona.net/doipv1doc}].
 
