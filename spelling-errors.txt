@@ -1,7 +1,6 @@
 actionability
 API’s
 APIs
-apparant
 ary
 async
 AtomPub
@@ -31,8 +30,8 @@ COVID
 CSV
 CWFP
 Datacite
-dataset
-Datasets
+Dataset
+datasets
 DCAT
 dereferenceable
 diciplinary
@@ -52,7 +51,7 @@ ESRI
 examplify
 exisiting
 Extensibility
-FDO
+fdo
 FDOF
 FDOR
 FDO’s
@@ -74,7 +73,6 @@ Groth
 hasChild
 HATEOAS
 hetereogeneous
-hetereogenity
 HLS
 hoc
 HTTP’s
@@ -111,12 +109,11 @@ metamodel
 Microdata
 microformats
 Micropub
-middleware
+Middleware
 middlewares
 modularity
 namespace
 namespaces
-navigatable
 NIST
 NL
 OAI
@@ -128,7 +125,6 @@ OpenAPI
 OpenLink
 OSI
 overengineering
-partioning
 pastable
 PAV
 pcinciple
@@ -142,7 +138,7 @@ PMH
 Polymorphism
 practictioners
 pre
-programmatically
+Programmatically
 QUIC
 RDA’s
 RDF
@@ -162,13 +158,12 @@ ResourceSync
 RO
 ROR
 runtime
-Scalability
+scalability
 scalable
 schemas
 seemlessly
 SEM
 SEO
-Sevelopment
 SHACL
 ShEx
 Similiarly
@@ -192,8 +187,8 @@ TypingFDOs
 UDP
 UNIPROT
 URI
+utillised
 utillize
-utillized
 WD
 WebDAV
 WHATWG

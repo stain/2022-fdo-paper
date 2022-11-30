@@ -17,14 +17,12 @@ content/10.background.md:3:EOSC
 content/10.background.md:3:EOSC
 content/10.background.md:3:https
 content/10.background.md:3:interoperable
-content/10.background.md:5:apparant
-content/10.background.md:5:hetereogenity
-content/10.background.md:5:JSON
-content/10.background.md:7:EOSC
-content/10.background.md:7:FDO
-content/10.background.md:7:FDO
-content/10.background.md:7:interoperable
-content/10.background.md:9:utillize
+content/10.background.md:5:EOSC
+content/10.background.md:5:FDO
+content/10.background.md:5:FDO
+content/10.background.md:5:interoperable
+content/10.background.md:7:JSON
+content/10.background.md:13:FDO
 content/11b.fdo-next.md:3:fdo
 content/11b.fdo-next.md:3:FDO
 content/11b.fdo-next.md:5:FDO
@@ -133,7 +131,6 @@ content/11c.fdo.md:7:https
 content/11c.fdo.md:7:https
 content/11c.fdo.md:7:https
 content/11c.fdo.md:7:interoperable
-content/11c.fdo.md:7:Sevelopment
 content/11c.fdo.md:11:FDO
 content/11c.fdo.md:13:FDO
 content/11c.fdo.md:13:FDO
@@ -161,7 +158,7 @@ content/11c.fdo.md:16:LD
 content/11c.fdo.md:16:NIST
 content/11c.fdo.md:17:FDO
 content/11c.fdo.md:17:RO
-content/11c.fdo.md:19:apparant
+content/11c.fdo.md:19:ld
 content/11c.fdo.md:21:cordra
 content/11c.fdo.md:21:doip
 content/11c.fdo.md:21:DOIP
@@ -238,7 +235,6 @@ content/12.semweb.md:30:SPARQL
 content/12.semweb.md:32:dataset
 content/12.semweb.md:32:Datasets
 content/12.semweb.md:32:https
-content/12.semweb.md:32:partioning
 content/12.semweb.md:32:RDF
 content/12.semweb.md:32:RDF
 content/12.semweb.md:36:datasets
@@ -260,11 +256,10 @@ content/12.semweb.md:39:RDFS
 content/12.semweb.md:39:skos
 content/12.semweb.md:39:SKOS
 content/12.semweb.md:39:URI
-content/12.semweb.md:39:utillized
+content/12.semweb.md:39:utillised
 content/13.ld.md:3:ld
 content/13.ld.md:5:https
 content/13.ld.md:5:kickstarted
-content/13.ld.md:5:navigatable
 content/13.ld.md:7:https
 content/13.ld.md:7:https
 content/13.ld.md:7:https
@@ -310,7 +305,6 @@ content/20.comparison.md:2:FDO
 content/20.comparison.md:4:exisiting
 content/20.comparison.md:4:FDO
 content/20.comparison.md:8:Middleware
-content/20.comparison.md:8:transparancy
 content/20.comparison.md:9:FDO
 content/20.comparison.md:9:RDA's
 content/20.comparison.md:10:EOSC

@@ -2,6 +2,14 @@ input_id	dealiased_id	standard_id	short_id
 doi:10.1038/sdata.2016.18	doi:10.1038/sdata.2016.18	doi:10.1038/sdata.2016.18	6DjakjNS
 doi:10.2777/620649	doi:10.2777/620649	doi:10.2777/620649	aCye3KpE
 doi:10.1007/978-3-030-23584-0_1	doi:10.1007/978-3-030-23584-0_1	doi:10.1007/978-3-030-23584-0_1	IHLT6hye
+doi:10.4018/jswis.2009081901	doi:10.4018/jswis.2009081901	doi:10.4018/jswis.2009081901	19s3yyxDn
+doi:10.1007/978-3-319-98192-5_60	doi:10.1007/978-3-319-98192-5_60	doi:10.1007/978-3-319-98192-5_60	GJHYN6xW
+boninodasilvasantos_2016	boninodasilvasantos_2016	boninodasilvasantos_2016	EJDjHrUv
+doi:10.1007/978-3-031-01917-3_7	doi:10.1007/978-3-031-01917-3_7	doi:10.1007/978-3-031-01917-3_7	99MS5xE0
+doi:10.1109/TSC.2018.2847344	doi:10.1109/TSC.2018.2847344	doi:10.1109/tsc.2018.2847344	J2H8yssV
+doi:10.18151/7217489	doi:10.18151/7217489	doi:10.18151/7217489	uxWjmlio
+doi:10.1007/978-3-319-19593-3_18	doi:10.1007/978-3-319-19593-3_18	doi:10.1007/978-3-319-19593-3_18	v0WwFHgT
+doi:10.1007/978-3-031-01917-3_3	doi:10.1007/978-3-031-01917-3_3	doi:10.1007/978-3-031-01917-3_3	5V3GqSzR
 https://fairdo.org/	https://fairdo.org/	url:https://fairdo.org/	DMEBhHID
 WD-DocProcessStd-1.1-20220129	WD-DocProcessStd-1.1-20220129	WD-DocProcessStd-1.1-20220129	TQdku4YF
 WD-RequirementSpec-1.0-20220317	WD-RequirementSpec-1.0-20220317	WD-RequirementSpec-1.0-20220317	STXtoppr
@@ -26,6 +34,7 @@ doi:10.23728/b2share.b605d85809ca45679b110719b6c6cb11	doi:10.23728/b2share.b605d
 sec:next-step-fdo	sec:next-step-fdo	sec:next-step-fdo	oVsYljV7
 https://www.cordra.org/documentation/api/doip.html	https://www.cordra.org/documentation/api/doip.html	url:https://www.cordra.org/documentation/api/doip.html	xuQKRRx5
 https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00	https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00	url:https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00	15EZ2D0Rm
+sec:ld	sec:ld	sec:ld	rTuZic4t
 isbn:978-0-06-251587-2	isbn:978-0-06-251587-2	isbn:9780062515872	Guy7cjVY
 http://www.w3.org/TR/rdf11-primer/	http://www.w3.org/TR/rdf11-primer/	url:http://www.w3.org/TR/rdf11-primer/	16WGmCih8
 https://www.w3.org/TR/1999/REC-rdf-syntax-19990222	https://www.w3.org/TR/1999/REC-rdf-syntax-19990222	url:https://www.w3.org/TR/1999/REC-rdf-syntax-19990222	16wvFH4nh
@@ -36,8 +45,10 @@ doi:10.1093/nar/gkr1097	doi:10.1093/nar/gkr1097	doi:10.1093/nar/gkr1097	HqZ3r6J3
 doi:10.17487/RFC3987	doi:10.17487/RFC3987	doi:10.17487/rfc3987	rqjuXkEf
 doi:10.22028/D291-25086	doi:10.22028/D291-25086	doi:10.22028/d291-25086	rnzJ4khD
 http://www.w3.org/TR/sparql11-overview/	http://www.w3.org/TR/sparql11-overview/	url:http://www.w3.org/TR/sparql11-overview/	xww8fb1B
+doi:10.1016/j.jbi.2008.01.008	doi:10.1016/j.jbi.2008.01.008	doi:10.1016/j.jbi.2008.01.008	bMSxa8XW
+doi:10.1016/j.drudis.2012.05.016	doi:10.1016/j.drudis.2012.05.016	doi:10.1016/j.drudis.2012.05.016	Qlrlr2TZ
 http://www.w3.org/TR/skos-primer	http://www.w3.org/TR/skos-primer	url:http://www.w3.org/TR/skos-primer	15gQDya5B
-10.1007/978-3-642-21034-1_20	10.1007/978-3-642-21034-1_20	doi:10.1007/978-3-642-21034-1_20	FDDmgO6s
+doi:10.1007/978-3-642-21034-1_20	doi:10.1007/978-3-642-21034-1_20	doi:10.1007/978-3-642-21034-1_20	FDDmgO6s
 doi:10.1016/j.websem.2014.03.003	doi:10.1016/j.websem.2014.03.003	doi:10.1016/j.websem.2014.03.003	191ZkYZMt
 doi:10.3233/SW-160238	doi:10.3233/SW-160238	doi:10.3233/sw-160238	9CdJnsoJ
 10.1371/journal.pone.0115253	10.1371/journal.pone.0115253	doi:10.1371/journal.pone.0115253	AGHR9oyr
@@ -46,7 +57,6 @@ doi:10.3233/SSW200033	doi:10.3233/SSW200033	doi:10.3233/ssw200033	TUmA4KQT
 http://www.w3.org/TR/rdf-schema/	http://www.w3.org/TR/rdf-schema/	url:http://www.w3.org/TR/rdf-schema/	ZwAcGQKY
 http://www.w3.org/TR/owl2-overview/	http://www.w3.org/TR/owl2-overview/	url:http://www.w3.org/TR/owl2-overview/	1p4IWJpI
 doi:10.1186/2041-1480-2-S1-S3	doi:10.1186/2041-1480-2-S1-S3	doi:10.1186/2041-1480-2-s1-s3	1DalZuKct
-doi:10.4018/jswis.2009081901	doi:10.4018/jswis.2009081901	doi:10.4018/jswis.2009081901	19s3yyxDn
 https://www.w3.org/DesignIssues/LinkedData.html	https://www.w3.org/DesignIssues/LinkedData.html	url:https://www.w3.org/DesignIssues/LinkedData.html	OGXYtGZ8
 https://ogp.me/	https://ogp.me/	url:https://ogp.me/	oN9D5LkD
 http://www.w3.org/TR/rdfa-primer/	http://www.w3.org/TR/rdfa-primer/	url:http://www.w3.org/TR/rdfa-primer/	FKIF6ApB

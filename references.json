@@ -519,43 +519,149 @@
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.yaml\nstandard_id: bonino_2019"
   },
   {
-    "publisher": "Springer International Publishing",
-    "DOI": "10.1007/978-3-030-21348-0_39",
-    "type": "chapter",
-    "page": "606-620",
-    "source": "Crossref",
-    "title": "Using Shape Expressions (ShEx) to Share RDF Data Models and to Guide Curation with Rigorous Validation",
+    "ISBN": "9781847040442",
+    "URL": "https://www.researchgate.net/publication/{309468587\\_FAIR\\_Data\\_Points\\_Supporting\\_Big\\_Data\\_Interoperability}",
+    "abstract": "With the evolution and widespread adoption of contemporary informationtechnologies, data has taken an increasingly central role in almost all areas of human activity.While on one hand this protagonism of data brings significant benefits for the individuals andorganizations, on the other hand it is accompanied by a number of challenges. In the domain of Big Data, Linked Data and Semantic Web, common examples of these challenges includescale, performance, availability, security, diversity, complexity, semantics, manageability andfindability. In January 2014, a group of stakeholders involved in research data came together to debate how to further enhance infrastructures to support a data ecosystem that promotesdata interoperability and reuse. The main outcome of this meeting was the definition of the socalled FAIR Data guiding principles aimed at publishing data in a format that is Findable, Accessible, Interoperable and Reusable by both machines and human users. Since the seminal meeting, the FAIR Data initiative has grown with an increasing number of participantorganizations and involved projects. In this chapter we report the progress in the developmentof one of the components of the FAIR Data infrastructure, the FAIR Data Point (FDP). The FDP is software that, from one side, allows data owners to expose datasets in compliance withthe FAIR principles and, from another side, allows data users to discover information aboutthe available datasets and, ultimately, access the underlying data records.",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
     "author": [
       {
-        "given": "Katherine",
-        "family": "Thornton"
+        "family": "Bonino Da Silva Santos",
+        "given": "Luiz Olavo"
       },
       {
-        "given": "Harold",
-        "family": "Solbrig"
+        "family": "Wilkinson",
+        "given": "Mark D."
       },
       {
-        "given": "Gregory S.",
-        "family": "Stupp"
+        "family": "Kuzniar",
+        "given": "Arnold"
       },
       {
-        "given": "Jose Emilio",
-        "family": "Labra Gayo"
+        "family": "Kaliyaperumal",
+        "given": "Rajaram"
       },
       {
-        "given": "Daniel",
-        "family": "Mietchen"
+        "family": "Thompson",
+        "given": "Mark"
       },
       {
-        "given": "Eric",
-        "family": "Prud’hommeaux"
+        "family": "Dumontier",
+        "given": "Michel"
       },
       {
-        "given": "Andra",
-        "family": "Waagmeester"
+        "family": "Burger",
+        "given": "Kees"
       }
     ],
-    "container-title": "The Semantic Web",
+    "container-title": "Enterprise interoperability in the digitized and networked factory of the future",
+    "editor": [
+      {
+        "family": "Zelm",
+        "given": "Martin"
+      },
+      {
+        "family": "Doumeingts",
+        "given": "Guy"
+      },
+      {
+        "family": "Mendonça",
+        "given": "Joao Pedro"
+      }
+    ],
+    "id": "EJDjHrUv",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "keyword": "FAIR",
+    "page": "270-279",
+    "publisher": "iSTE Press",
+    "title": "FAIR data points supporting big data interoperability",
+    "type": "chapter",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: boninodasilvasantos_2016"
+  },
+  {
+    "DOI": "10.1007/978-3-030-21348-0_39",
+    "ISBN": "978-3-030-21347-3",
+    "ISSN": "0302-9743",
+    "author": [
+      {
+        "family": "Thornton",
+        "given": "Katherine"
+      },
+      {
+        "family": "Solbrig",
+        "given": "Harold"
+      },
+      {
+        "family": "Stupp",
+        "given": "Gregory S."
+      },
+      {
+        "family": "Labra Gayo",
+        "given": "Jose Emilio"
+      },
+      {
+        "family": "Mietchen",
+        "given": "Daniel"
+      },
+      {
+        "family": "Prud",
+        "given": "Eric"
+      },
+      {
+        "family": "Waagmeester",
+        "given": "Andra"
+      }
+    ],
+    "collection-title": "Lecture notes in computer science",
+    "container-title": "The semantic web: 16th international conference, ESWC 2019, portorož, slovenia, june 2–6, 2019, proceedings",
+    "editor": [
+      {
+        "family": "Hitzler",
+        "given": "Pascal"
+      },
+      {
+        "family": "Fernández",
+        "given": "Miriam"
+      },
+      {
+        "family": "Janowicz",
+        "given": "Krzysztof"
+      },
+      {
+        "family": "Zaveri",
+        "given": "Amrapali"
+      },
+      {
+        "family": "Gray",
+        "given": "Alasdair J. G."
+      },
+      {
+        "family": "Lopez",
+        "given": "Vanessa"
+      },
+      {
+        "family": "Haller",
+        "given": "Armin"
+      },
+      {
+        "family": "Hammar",
+        "given": "Karl"
+      }
+    ],
+    "id": "S5BI6Mwx",
     "issued": {
       "date-parts": [
         [
@@ -563,9 +669,13 @@
         ]
       ]
     },
-    "URL": "https://doi.org/gnd3bq",
-    "id": "S5BI6Mwx",
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1007/978-3-030-21348-0_39"
+    "page": "606-620",
+    "publisher": "Springer International Publishing",
+    "publisher-place": "Cham",
+    "title": "Using shape expressions (ShEx) to share RDF data models and to guide curation with rigorous validation",
+    "type": "chapter",
+    "volume": "11503",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: doi:10.1007/978-3-030-21348-0_39"
   },
   {
     "DOI": "{10.1007/978-3-030-23584-0_1}",
@@ -620,6 +730,149 @@
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: doi:10.1007/978-3-030-23584-0_1"
   },
   {
+    "DOI": "10.1007/978-3-031-01917-3_3",
+    "ISBN": "978-3-031-00789-7",
+    "ISSN": "2691-2023",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Meroño-Peñuela",
+        "given": "Albert"
+      },
+      {
+        "family": "Lisena",
+        "given": "Pasquale"
+      },
+      {
+        "family": "Martínez-Ortiz",
+        "given": "Carlos"
+      }
+    ],
+    "collection-title": "Synthesis lectures on data, semantics, and knowledge",
+    "container-title": "Web data apis for knowledge graphs: Easing access to semantic data for application developers",
+    "id": "5V3GqSzR",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "27-38",
+    "publisher": "Springer International Publishing",
+    "publisher-place": "Cham",
+    "title": "Web data apis over SPARQL",
+    "type": "chapter",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: doi:10.1007/978-3-031-01917-3_3"
+  },
+  {
+    "DOI": "10.1007/978-3-031-01917-3_7",
+    "ISBN": "978-3-031-00789-7",
+    "ISSN": "2691-2023",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Meroño-Peñuela",
+        "given": "Albert"
+      },
+      {
+        "family": "Lisena",
+        "given": "Pasquale"
+      },
+      {
+        "family": "Martínez-Ortiz",
+        "given": "Carlos"
+      }
+    ],
+    "collection-title": "Synthesis lectures on data, semantics, and knowledge",
+    "container-title": "Web data apis for knowledge graphs: Easing access to semantic data for application developers",
+    "id": "99MS5xE0",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "77-80",
+    "publisher": "Springer International Publishing",
+    "publisher-place": "Cham",
+    "title": "Conclusion and future challenges",
+    "type": "chapter",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: doi:10.1007/978-3-031-01917-3_7"
+  },
+  {
+    "DOI": "10.1007/978-3-319-19593-3_18",
+    "ISBN": "978-3-319-19592-6",
+    "ISSN": "1865-1348",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Stefi",
+        "given": "Anisa"
+      },
+      {
+        "family": "Hess",
+        "given": "Thomas"
+      }
+    ],
+    "collection-title": "Lecture notes in business information processing",
+    "container-title": "Software business",
+    "editor": [
+      {
+        "family": "Fernandes",
+        "given": "João M."
+      },
+      {
+        "family": "Machado",
+        "given": "Ricardo J."
+      },
+      {
+        "family": "Wnuk",
+        "given": "Krzysztof"
+      }
+    ],
+    "id": "v0WwFHgT",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "page": "192-206",
+    "publisher": "Springer International Publishing",
+    "publisher-place": "Cham",
+    "title": "To develop or to reuse? Two perspectives on external reuse in software projects",
+    "type": "chapter",
+    "volume": "210",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: doi:10.1007/978-3-319-19593-3_18"
+  },
+  {
     "publisher": "Springer International Publishing",
     "DOI": "10.1007/978-3-319-31861-5_1",
     "type": "chapter",
@@ -643,6 +896,82 @@
     "URL": "https://doi.org/gp3rds",
     "id": "KlCFFFyL",
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1007/978-3-319-31861-5_1"
+  },
+  {
+    "DOI": "10.1007/978-3-319-98192-5_60",
+    "ISBN": "978-3-319-98191-8",
+    "ISSN": "0302-9743",
+    "URL": "http://link.springer.com/10.1007/978-3-319-98192-5\\_60",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Hasnain",
+        "given": "Ali"
+      },
+      {
+        "family": "Rebholz-Schuhmann",
+        "given": "Dietrich"
+      }
+    ],
+    "collection-title": "Lecture notes in computer science",
+    "container-title": "The semantic web: ESWC 2018 satellite events: ESWC 2018 satellite events, heraklion, crete, greece, june 3-7, 2018, revised selected papers",
+    "editor": [
+      {
+        "family": "Gangemi",
+        "given": "Aldo"
+      },
+      {
+        "family": "Gentile",
+        "given": "Anna Lisa"
+      },
+      {
+        "family": "Nuzzolese",
+        "given": "Andrea Giovanni"
+      },
+      {
+        "family": "Rudolph",
+        "given": "Sebastian"
+      },
+      {
+        "family": "Maleshkova",
+        "given": "Maria"
+      },
+      {
+        "family": "Paulheim",
+        "given": "Heiko"
+      },
+      {
+        "family": "Pan",
+        "given": "Jeff Z"
+      },
+      {
+        "family": "Alam",
+        "given": "Mehwish"
+      }
+    ],
+    "id": "GJHYN6xW",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "469-477",
+    "publisher": "Springer International Publishing",
+    "publisher-place": "Cham",
+    "title": "Assessing FAIR data principles against the 5-star open data principles",
+    "type": "chapter",
+    "volume": "11155",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: doi:10.1007/978-3-319-98192-5_60"
   },
   {
     "publisher": "Springer Berlin Heidelberg",
@@ -680,31 +1009,69 @@
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1007/978-3-642-19193-0"
   },
   {
-    "publisher": "Springer Berlin Heidelberg",
     "DOI": "10.1007/978-3-642-21034-1_20",
-    "type": "chapter",
-    "page": "290-304",
-    "source": "Crossref",
-    "title": "How Matchable Are Four Thousand Ontologies on the Semantic Web",
+    "ISBN": "978-3-642-21033-4",
+    "ISSN": "0302-9743",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          5,
+          13
+        ]
+      ]
+    },
     "author": [
       {
-        "given": "Wei",
-        "family": "Hu"
+        "family": "Hu",
+        "given": "Wei"
       },
       {
-        "given": "Jianfeng",
-        "family": "Chen"
+        "family": "Chen",
+        "given": "Jianfeng"
       },
       {
-        "given": "Hang",
-        "family": "Zhang"
+        "family": "Zhang",
+        "given": "Hang"
       },
       {
-        "given": "Yuzhong",
-        "family": "Qu"
+        "family": "Qu",
+        "given": "Yuzhong"
       }
     ],
-    "container-title": "Lecture Notes in Computer Science",
+    "collection-title": "Lecture notes in computer science",
+    "container-title": "The semantic web: Research and applications",
+    "editor": [
+      {
+        "family": "Antoniou",
+        "given": "Grigoris"
+      },
+      {
+        "family": "Grobelnik",
+        "given": "Marko"
+      },
+      {
+        "family": "Simperl",
+        "given": "Elena"
+      },
+      {
+        "family": "Parsia",
+        "given": "Bijan"
+      },
+      {
+        "family": "Plexousakis",
+        "given": "Dimitris"
+      },
+      {
+        "family": "De Leenheer",
+        "given": "Pieter"
+      },
+      {
+        "family": "Pan",
+        "given": "Jeff"
+      }
+    ],
+    "id": "FDDmgO6s",
     "issued": {
       "date-parts": [
         [
@@ -712,9 +1079,13 @@
         ]
       ]
     },
-    "URL": "https://doi.org/bwdp52",
-    "id": "FDDmgO6s",
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1007/978-3-642-21034-1_20"
+    "page": "290-304",
+    "publisher": "Springer Berlin Heidelberg",
+    "publisher-place": "Berlin, Heidelberg",
+    "title": "How matchable are four thousand ontologies on the semantic web",
+    "type": "chapter",
+    "volume": "6643",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: doi:10.1007/978-3-642-21034-1_20"
   },
   {
     "DOI": "10.1007/s00799-005-0128-x",
@@ -755,7 +1126,119 @@
     "title": "A framework for distributed digital object services",
     "type": "article-journal",
     "volume": "6",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\noriginal_id: 10.1007/s00799-005-0128-x\noriginal_standard_id: 10.1007/s00799-005-0128-x\nstandard_id: doi:10.1007/s00799-005-0128-x"
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: doi:10.1007/s00799-005-0128-x"
+  },
+  {
+    "publisher": "Elsevier BV",
+    "issue": "21-22",
+    "DOI": "10.1016/j.drudis.2012.05.016",
+    "type": "article-journal",
+    "page": "1188-1198",
+    "source": "Crossref",
+    "title": "Open PHACTS: semantic interoperability for drug discovery",
+    "volume": "17",
+    "author": [
+      {
+        "given": "Antony J.",
+        "family": "Williams"
+      },
+      {
+        "given": "Lee",
+        "family": "Harland"
+      },
+      {
+        "given": "Paul",
+        "family": "Groth"
+      },
+      {
+        "given": "Stephen",
+        "family": "Pettifer"
+      },
+      {
+        "given": "Christine",
+        "family": "Chichester"
+      },
+      {
+        "given": "Egon L.",
+        "family": "Willighagen"
+      },
+      {
+        "given": "Chris T.",
+        "family": "Evelo"
+      },
+      {
+        "given": "Niklas",
+        "family": "Blomberg"
+      },
+      {
+        "given": "Gerhard",
+        "family": "Ecker"
+      },
+      {
+        "given": "Carole",
+        "family": "Goble"
+      },
+      {
+        "given": "Barend",
+        "family": "Mons"
+      }
+    ],
+    "container-title": "Drug Discovery Today",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          11
+        ]
+      ]
+    },
+    "URL": "https://doi.org/f4fdkd",
+    "container-title-short": "Drug Discovery Today",
+    "PMID": "22683805",
+    "id": "Qlrlr2TZ",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1016/j.drudis.2012.05.016"
+  },
+  {
+    "DOI": "10.1016/j.jbi.2008.01.008",
+    "PMID": "18358788",
+    "abstract": "Data integration is a perennial issue in bioinformatics, with many systems being developed and many technologies offered as a panacea for its resolution. The fact that it is still a problem indicates a persistence of underlying issues. Progress has been made, but we should ask \"what lessons have been learnt?\", and \"what still needs to be done?\" Semantic Web and Web 2.0 technologies are the latest to find traction within bioinformatics data integration. Now we can ask whether the Semantic Web, mashups, or their combination, have the potential to help. This paper is based on the opening invited talk by Carole Goble given at the Health Care and Life Sciences Data Integration for the Semantic Web Workshop collocated with WWW2007. The paper expands on that talk. We attempt to place some perspective on past efforts, highlight the reasons for success and failure, and indicate some pointers to the future.",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Goble",
+        "given": "Carole"
+      },
+      {
+        "family": "Stevens",
+        "given": "Robert"
+      }
+    ],
+    "container-title": "Journal of Biomedical Informatics",
+    "id": "bMSxa8XW",
+    "issue": "5",
+    "issued": {
+      "date-parts": [
+        [
+          2008,
+          10,
+          1
+        ]
+      ]
+    },
+    "page": "687-693",
+    "title": "State of the nation in data integration for bioinformatics.",
+    "type": "article-journal",
+    "volume": "41",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: doi:10.1016/j.jbi.2008.01.008"
   },
   {
     "publisher": "Elsevier BV",
@@ -1308,6 +1791,50 @@
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1109/sc.2005.72"
   },
   {
+    "DOI": "10.1109/TSC.2018.2847344",
+    "ISSN": "1939-1374",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          30
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Neumann",
+        "given": "Andy"
+      },
+      {
+        "family": "Laranjeiro",
+        "given": "Nuno"
+      },
+      {
+        "family": "Bernardino",
+        "given": "Jorge"
+      }
+    ],
+    "container-title": "IEEE Transactions on Services Computing",
+    "id": "J2H8yssV",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          7,
+          1
+        ]
+      ]
+    },
+    "page": "957-970",
+    "title": "An analysis of public REST web service apis",
+    "type": "article-journal",
+    "volume": "14",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\noriginal_id: doi:10.1109/TSC.2018.2847344\noriginal_standard_id: doi:10.1109/TSC.2018.2847344\nstandard_id: doi:10.1109/tsc.2018.2847344"
+  },
+  {
     "publisher": "ACM Press",
     "DOI": "10.1145/1967428.1967435",
     "type": "paper-conference",
@@ -1341,55 +1868,66 @@
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1145/1967428.1967435"
   },
   {
-    "publisher": "ACM",
     "DOI": "10.1145/3106237.3121282",
-    "type": "paper-conference",
-    "source": "Crossref",
-    "title": "Reflections on the REST architectural style and \"principled design of the modern web architecture\" (impact paper award)",
+    "ISBN": "9781450351058",
+    "URL": "http://dl.acm.org/citation.cfm?doid=3106237.3121282",
+    "abstract": "Seventeen years after its initial publication at ICSE 2000, the Representational State Transfer (REST) architectural style continues to hold significance as both a guide for understanding how the World Wide Web is designed to work and an example of how principled design, through the application of architectural styles, can impact the development and understanding of large-scale software architecture. However, REST has also become an industry buzzword: frequently abused to suit a particular argument, confused with the general notion of using HTTP, and denigrated for not being more like a programming methodology or implementation framework. In this paper, we chart the history, evolution, and shortcomings of REST, as well as several related architectural styles that it inspired, from the perspective of a chain of doctoral dissertations produced by the University of California’s Institute for Software Research at UC Irvine. These successive theses share a common theme: extending the insights of REST to new domains and, in their own way, exploring the boundary of software engineering as it applies to decentralized software architectures and architectural design. We conclude with discussion of the circumstances, environment, and organizational characteristics that gave rise to this body of work.",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          6,
+          28
+        ]
+      ]
+    },
     "author": [
       {
-        "given": "Roy T.",
-        "family": "Fielding"
+        "family": "Fielding",
+        "given": "Roy T."
       },
       {
-        "given": "Richard N.",
-        "family": "Taylor"
+        "family": "Taylor",
+        "given": "Richard N."
       },
       {
-        "given": "Justin R.",
-        "family": "Erenkrantz"
+        "family": "Erenkrantz",
+        "given": "Justin R."
       },
       {
-        "given": "Michael M.",
-        "family": "Gorlick"
+        "family": "Gorlick",
+        "given": "Michael M."
       },
       {
-        "given": "Jim",
-        "family": "Whitehead"
+        "family": "Whitehead",
+        "given": "Jim"
       },
       {
-        "given": "Rohit",
-        "family": "Khare"
+        "family": "Khare",
+        "given": "Rohit"
       },
       {
-        "given": "Peyman",
-        "family": "Oreizy"
+        "family": "Oreizy",
+        "given": "Peyman"
       }
     ],
-    "event": "ESEC/FSE'17: Joint Meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering",
-    "container-title": "Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering",
+    "container-title": "Proceedings of the 2017 11th joint meeting on foundations of software engineering - ESEC/FSE 2017",
+    "id": "11VxBOeZy",
     "issued": {
       "date-parts": [
         [
           2017,
-          8,
-          21
+          9,
+          4
         ]
       ]
     },
-    "URL": "https://doi.org/gfk22x",
-    "id": "11VxBOeZy",
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.1145/3106237.3121282"
+    "page": "4-14",
+    "publisher": "ACM Press",
+    "publisher-place": "New York, New York, USA",
+    "title": "Reflections on the REST architectural style and \"principled design of the modern web architecture\" (impact paper award)",
+    "type": "paper-conference",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: doi:10.1145/3106237.3121282"
   },
   {
     "publisher": "Springer Science and Business Media LLC",
@@ -2424,6 +2962,35 @@
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.17487/rfc9110"
   },
   {
+    "type": "article",
+    "id": "uxWjmlio",
+    "categories": [
+      "Mindfulness",
+      "Software reuse",
+      "Software components, Not-invented-here bias",
+      "Unified theory of acceptance and use of technology (UTAUT)"
+    ],
+    "author": [
+      {
+        "family": "Stefi",
+        "given": "Anisa"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "abstract": "Software reuse can lower costs and increase the quality of software development. Despite a large body of research focused on technical and organisational factors, there is still limited research on the software developers’ perspective regarding software component reuse. Therefore, this paper investigates the developers’ adoption intention to use existing software components. Information systems adoption research has extensively focused on the technological aspects and less on the individual factors. However, studying these individual differences is important, as research has shown that individuals do not always behave according to rational assumptions. This study analyses the adoption of software components based on the unified theory of acceptance and use of technology and extends the research model by integrating the not-invented-here bias and the concept of mindfulness to account for individual differences. An empirical study with 142 software developers was conducted to empirically validate the research model. The results show that performance expectancy, social influence and not-invented here bias play an important role in the developers’ decision to adopt software components. Furthermore, findings show that a mindfulness state has a negative influence on the not-invented-here bias and it directly affects the intention to adopt existing software components.",
+    "DOI": "10.18151/7217489",
+    "publisher": "University of Münster, Münster, Germany",
+    "title": "Do Developers Make Unbiased Decisions? - The Effect of Mindfulness and Not-Invented-Here Bias on the Adoption of Software Components",
+    "URL": "https://doi.org/grcpwg",
+    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.18151/7217489"
+  },
+  {
     "type": "article-journal",
     "id": "NxvhwSmG",
     "author": [
@@ -2471,6 +3038,7 @@
         "family": "Kontokostas"
       }
     ],
+    "container-title": "Synthesis Lectures on Data, Semantics, and Knowledge",
     "issued": {
       "date-parts": [
         [
@@ -2636,43 +3204,57 @@
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: doi:10.2777/620649"
   },
   {
-    "publisher": "IOS Press",
-    "abstract": "<jats:p>Ontology reuse aims to foster interoperability and facilitate knowledge reuse. Several approaches are typically evaluated by ontology engineers when bootstrapping a new project. However, current practices are often motivated by subjective, case-by-case decisions, which hamper the definition of a recommended behaviour. In this chapter we argue that to date there are no effective solutions for supporting developers’ decision-making process when deciding on an ontology reuse strategy. The objective is twofold: (i) to survey current approaches to ontology reuse, presenting motivations, strategies, benefits and limits, and (ii) to analyse two representative approaches and discuss their merits.</jats:p>",
-    "DOI": "10.3233/ssw200033",
-    "type": "chapter",
-    "source": "Crossref",
-    "title": "The Landscape of Ontology Reuse Approaches",
+    "DOI": "10.3233/SSW200033",
+    "ISBN": "9781643681429",
+    "ISSN": "18681158",
+    "abstract": "Ontology reuse aims to foster interoperability and facilitate knowledge reuse. Several approaches are typically evaluated by ontology engineers when bootstrapping a new project. However, current practices are often motivated by subjective, case-by-case decisions, which hamper the definition of a recommended behaviour. In this chapter we argue that to date there are no effective solutions for supporting developers’decision-making process when deciding on an ontology reuse strategy. The objective is twofold: (i) to survey current approaches to ontology reuse, presenting motivations, strategies, benefits and limits, and (ii) to analyse two representative approaches and discuss their merits.",
     "author": [
       {
-        "given": "Valentina Anita",
-        "family": "Carriero"
+        "family": "Carriero",
+        "given": "Valentina Anita"
       },
       {
-        "given": "Marilena",
-        "family": "Daquino"
+        "family": "Daquino",
+        "given": "Marilena"
       },
       {
-        "given": "Aldo",
-        "family": "Gangemi"
+        "family": "Gangemi",
+        "given": "Aldo"
       },
       {
-        "given": "Andrea Giovanni",
-        "family": "Nuzzolese"
+        "family": "Nuzzolese",
+        "given": "Andrea Giovanni"
       },
       {
-        "given": "Silvio",
-        "family": "Peroni"
+        "family": "Peroni",
+        "given": "Silvio"
       },
       {
-        "given": "Valentina",
-        "family": "Presutti"
+        "family": "Presutti",
+        "given": "Valentina"
       },
       {
-        "given": "Francesca",
-        "family": "Tomasi"
+        "family": "Tomasi",
+        "given": "Francesca"
       }
     ],
-    "container-title": "Applications and Practices in Ontology Design, Extraction, and Reasoning",
+    "collection-title": "Studies on the semantic web",
+    "container-title": "Applications and practices in ontology design, extraction, and reasoning",
+    "editor": [
+      {
+        "family": "Cota",
+        "given": "Giuseppe"
+      },
+      {
+        "family": "Daquino",
+        "given": "Marilena"
+      },
+      {
+        "family": "Pozzato",
+        "given": "Gian Luca"
+      }
+    ],
+    "id": "TUmA4KQT",
     "issued": {
       "date-parts": [
         [
@@ -2682,9 +3264,10 @@
         ]
       ]
     },
-    "URL": "https://doi.org/gntv2w",
-    "id": "TUmA4KQT",
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.3233/ssw200033"
+    "publisher": "IOS Press",
+    "title": "The landscape of ontology reuse approaches",
+    "type": "chapter",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\noriginal_id: doi:10.3233/SSW200033\noriginal_standard_id: doi:10.3233/SSW200033\nstandard_id: doi:10.3233/ssw200033"
   },
   {
     "publisher": "IOS Press",
@@ -2733,35 +3316,25 @@
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.3233/sw-160238"
   },
   {
-    "publisher": "IOS Press",
-    "issue": "4",
-    "DOI": "10.3233/sw-180316",
-    "type": "article-journal",
-    "page": "665-720",
-    "source": "Crossref",
-    "title": "Survey of tools for Linked Data consumption",
-    "volume": "10",
+    "DOI": "10.3233/SW-180316",
+    "ISSN": "22104968",
     "author": [
       {
-        "given": "Jakub",
-        "family": "Klímek"
+        "family": "Klímek",
+        "given": "Jakub"
       },
       {
-        "given": "Petr",
-        "family": "Škoda"
+        "family": "Škoda",
+        "given": "Petr"
       },
       {
-        "given": "Martin",
-        "family": "Nečaský"
+        "family": "Nečaský",
+        "given": "Martin"
       }
     ],
-    "container-title": "Semantic Web",
-    "editor": [
-      {
-        "given": "Ruben",
-        "family": "Verborgh"
-      }
-    ],
+    "container-title": "Satya Widya",
+    "id": "o596f2JM",
+    "issue": "4",
     "issued": {
       "date-parts": [
         [
@@ -2771,14 +3344,24 @@
         ]
       ]
     },
-    "URL": "https://doi.org/gp6znr",
-    "container-title-short": "SW",
-    "id": "o596f2JM",
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.3233/sw-180316"
+    "page": "665-720",
+    "title": "Survey of tools for linked data consumption",
+    "type": "article-journal",
+    "volume": "10",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\noriginal_id: doi:10.3233/SW-180316\noriginal_standard_id: doi:10.3233/SW-180316\nstandard_id: doi:10.3233/sw-180316"
   },
   {
     "DOI": "10.3233/SW-190372",
-    "URL": "https://ruben.verborgh.org/articles/the-semantic-web-identity-crisis/",
+    "ISSN": "22104968",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          5,
+          13
+        ]
+      ]
+    },
     "author": [
       {
         "family": "Verborgh",
@@ -2789,67 +3372,9 @@
         "given": "Miel"
       }
     ],
-    "container-title": "Semantic Web Journal",
+    "container-title": "Satya Widya",
     "id": "jHwttlTs",
     "issue": "1",
-    "issued": {
-      "date-parts": [
-        [
-          2020,
-          1
-        ]
-      ]
-    },
-    "page": "19-27",
-    "publisher": "IOS Press",
-    "title": "The Semantic Web identity crisis: In search of the trivialities that never were",
-    "title-short": "The Semantic Web identity crisis",
-    "type": "article-journal",
-    "volume": "11",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\noriginal_id: doi:10.3233/SW-190372\noriginal_standard_id: doi:10.3233/SW-190372\nstandard_id: doi:10.3233/sw-190372"
-  },
-  {
-    "publisher": "IOS Press",
-    "issue": "1",
-    "DOI": "10.3233/sw-190380",
-    "type": "article-journal",
-    "page": "101-113",
-    "source": "Crossref",
-    "title": "A more decentralized vision for Linked Data",
-    "volume": "11",
-    "author": [
-      {
-        "given": "Axel",
-        "family": "Polleres"
-      },
-      {
-        "given": "Maulik Rajendra",
-        "family": "Kamdar"
-      },
-      {
-        "given": "Javier David",
-        "family": "Fernández"
-      },
-      {
-        "given": "Tania",
-        "family": "Tudorache"
-      },
-      {
-        "given": "Mark Alan",
-        "family": "Musen"
-      }
-    ],
-    "container-title": "Semantic Web",
-    "editor": [
-      {
-        "given": "Pascal",
-        "family": "Hitzler"
-      },
-      {
-        "given": "Krzysztof",
-        "family": "Janowicz"
-      }
-    ],
     "issued": {
       "date-parts": [
         [
@@ -2859,49 +3384,109 @@
         ]
       ]
     },
-    "URL": "https://doi.org/gkdcmh",
-    "container-title-short": "SW",
-    "id": "5SuwLNdE",
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.3233/sw-190380"
+    "keyword": "linked data",
+    "page": "19-27",
+    "title": "The semantic web identity crisis: In search of the trivialities that never were",
+    "title-short": "The semantic web identity crisis",
+    "type": "article-journal",
+    "volume": "11",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\noriginal_id: doi:10.3233/SW-190372\noriginal_standard_id: doi:10.3233/SW-190372\nstandard_id: doi:10.3233/sw-190372"
   },
   {
-    "publisher": "IGI Global",
-    "issue": "3",
-    "abstract": "<p>The term “Linked Data” refers to a set of best practices for publishing and connecting structured data on the Web. These best practices have been adopted by an increasing number of data providers over the last three years, leading to the creation of a global data space containing billions of assertions— the Web of Data. In this article, the authors present the concept and technical principles of Linked Data, and situate these within the broader context of related technological developments. They describe progress to date in publishing Linked Data on the Web, review applications that have been developed to exploit the Web of Data, and map out a research agenda for the Linked Data community as it moves forward.</p>",
-    "DOI": "10.4018/jswis.2009081901",
-    "type": "article-journal",
-    "page": "1-22",
-    "source": "Crossref",
-    "title": "Linked Data - The Story So Far",
-    "volume": "5",
+    "DOI": "10.3233/SW-190380",
+    "ISSN": "22104968",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          5,
+          13
+        ]
+      ]
+    },
     "author": [
       {
-        "given": "Christian",
-        "family": "Bizer"
+        "family": "Polleres",
+        "given": "Axel"
       },
       {
-        "given": "Tom",
-        "family": "Heath"
+        "family": "Kamdar",
+        "given": "Maulik Rajendra"
       },
       {
-        "given": "Tim",
-        "family": "Berners-Lee"
+        "family": "Fernández",
+        "given": "Javier David"
+      },
+      {
+        "family": "Tudorache",
+        "given": "Tania"
+      },
+      {
+        "family": "Musen",
+        "given": "Mark Alan"
       }
     ],
-    "container-title": "International Journal on Semantic Web and Information Systems",
-    "language": "ng",
+    "container-title": "Satya Widya",
+    "id": "5SuwLNdE",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          1,
+          31
+        ]
+      ]
+    },
+    "page": "101-113",
+    "title": "A more decentralized vision for linked data",
+    "type": "article-journal",
+    "volume": "11",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\noriginal_id: doi:10.3233/SW-190380\noriginal_standard_id: doi:10.3233/SW-190380\nstandard_id: doi:10.3233/sw-190380"
+  },
+  {
+    "DOI": "10.4018/jswis.2009081901",
+    "ISSN": "1552-6283",
+    "URL": "http://services.igi-global.com/resolvedoi/resolve.aspx?doi=10.4018/jswis.2009081901",
+    "accessed": {
+      "date-parts": [
+        [
+          2022,
+          5,
+          13
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Bizer",
+        "given": "Christian"
+      },
+      {
+        "family": "Heath",
+        "given": "Tom"
+      },
+      {
+        "family": "Berners-Lee",
+        "given": "Tim"
+      }
+    ],
+    "container-title": "International journal on Semantic Web and information systems",
+    "id": "19s3yyxDn",
+    "issue": "3",
     "issued": {
       "date-parts": [
         [
           2009,
-          7,
-          1
+          7
         ]
       ]
     },
-    "URL": "https://doi.org/fc8zjt",
-    "id": "19s3yyxDn",
-    "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: doi:10.4018/jswis.2009081901"
+    "page": "1-22",
+    "title": "Linked data - the story so far",
+    "type": "article-journal",
+    "volume": "5",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: doi:10.4018/jswis.2009081901"
   },
   {
     "type": "report",
@@ -3326,7 +3911,7 @@
   {
     "id": "10HA0mMBx",
     "type": "post-weblog",
-    "abstract": "To date, schema.org has supported relatively simple relations between entities.  For example, if we wanted to describe Joe Montana as an at...",
+    "abstract": "Schema.org blog - structured data for the web. JSON-LD, RDFa, Microdata and more...",
     "language": "en",
     "title": "Introducing 'Role'",
     "URL": "http://blog.schema.org/2014/06/introducing-role.html",
@@ -3340,8 +3925,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3358,8 +3943,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3383,8 +3968,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3401,8 +3986,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3418,8 +4003,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3434,8 +4019,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3450,8 +4035,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3466,8 +4051,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3482,8 +4067,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3499,8 +4084,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3515,8 +4100,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3531,8 +4116,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3547,8 +4132,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3564,8 +4149,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3580,8 +4165,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3596,8 +4181,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3612,8 +4197,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3628,8 +4213,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3644,8 +4229,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3662,8 +4247,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3678,8 +4263,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3696,8 +4281,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3711,12 +4296,14 @@
   },
   {
     "id": "nlH2rm1s",
-    "type": "webpage",
+    "type": "report",
     "abstract": "This document updates RFC 6838 \"Media Type Specifications and Registration Procedures\" to describe how to interpret subtypes with multiple suffixes.",
-    "container-title": "IETF Datatracker",
-    "language": "en",
+    "genre": "Internet Draft",
+    "number": "draft-ietf-mediaman-suffixes-02",
+    "publisher": "Internet Engineering Task Force",
+    "source": "IETF",
     "title": "Media Types with Multiple Suffixes",
-    "URL": "https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/00/",
+    "URL": "https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/",
     "author": [
       {
         "family": "Sporny",
@@ -3731,8 +4318,17 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          "2022",
+          10,
+          10
         ]
       ]
     },
@@ -3740,16 +4336,39 @@
   },
   {
     "id": "15EZ2D0Rm",
-    "type": "webpage",
-    "abstract": "JSON Schema: A Media Type for Describing JSON Documents (Internet-Draft, 2020)",
-    "title": "draft-bhutton-json-schema-00",
-    "URL": "https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00",
+    "type": "report",
+    "abstract": "JSON Schema defines the media type \"application/schema+json\", a JSON- based format for describing the structure of JSON data. JSON Schema asserts what a JSON document must look like, ways to extract information from it, and how to interact with it. The \"application/ schema-instance+json\" media type provides additional feature-rich integration with \"application/schema+json\" beyond what can be offered for \"application/json\" documents.",
+    "genre": "Internet Draft",
+    "number": "draft-bhutton-json-schema-00",
+    "publisher": "Internet Engineering Task Force",
+    "source": "IETF",
+    "title": "JSON Schema: A Media Type for Describing JSON Documents",
+    "title-short": "JSON Schema",
+    "URL": "https://datatracker.ietf.org/doc/draft-bhutton-json-schema/00/",
+    "author": [
+      {
+        "family": "Wright",
+        "given": "Austin"
+      },
+      {
+        "family": "Andrews",
+        "given": "Henry"
+      },
+      {
+        "family": "Hutton",
+        "given": "Ben"
+      },
+      {
+        "family": "Dennis",
+        "given": "Greg"
+      }
+    ],
     "accessed": {
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3757,16 +4376,34 @@
   },
   {
     "id": "Amit86Tp",
-    "type": "webpage",
-    "abstract": "Hypertext Transfer Protocol Version 3 (HTTP/3) (Internet-Draft, 2021)",
-    "title": "draft-ietf-quic-http-34",
-    "URL": "https://datatracker.ietf.org/doc/html/draft-ietf-quic-http-34",
+    "type": "report",
+    "abstract": "The QUIC transport protocol has several features that are desirable in a transport for HTTP, such as stream multiplexing, per-stream flow control, and low-latency connection establishment. This document describes a mapping of HTTP semantics over QUIC. This document also identifies HTTP/2 features that are subsumed by QUIC and describes how HTTP/2 extensions can be ported to HTTP/3.",
+    "genre": "Request for Comments",
+    "number": "RFC 9114",
+    "publisher": "Internet Engineering Task Force",
+    "source": "IETF",
+    "title": "HTTP/3",
+    "URL": "https://datatracker.ietf.org/doc/draft-ietf-quic-http/34/",
+    "author": [
+      {
+        "family": "Bishop",
+        "given": "Mike"
+      }
+    ],
     "accessed": {
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          "2022",
+          6
         ]
       ]
     },
@@ -3774,16 +4411,35 @@
   },
   {
     "id": "nyrPYHoP",
-    "type": "webpage",
-    "abstract": "JSON Hypertext Application Language (Internet-Draft, 2016)",
-    "title": "draft-kelly-json-hal-08",
-    "URL": "https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-08",
+    "type": "report",
+    "abstract": "This document proposes a media type for representing resources and their relations with hyperlinks.",
+    "genre": "Internet Draft",
+    "number": "draft-kelly-json-hal-08",
+    "publisher": "Internet Engineering Task Force",
+    "source": "IETF",
+    "title": "JSON Hypertext Application Language",
+    "URL": "https://datatracker.ietf.org/doc/draft-kelly-json-hal/08/",
+    "author": [
+      {
+        "family": "Kelly",
+        "given": "Mike"
+      }
+    ],
     "accessed": {
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          "2016",
+          5,
+          12
         ]
       ]
     },
@@ -3792,15 +4448,15 @@
   {
     "id": "voDQ6diM",
     "type": "webpage",
-    "abstract": "\n       \nThe ARK (Archival Resource Key) naming scheme is designed to facilitate\nthe high-quality and persistent identification of information objects.\nThe label \"ark:\" marks the start of a core ARK identifier that can be made\nactionable by prepending the beginning of a URL. Meant to be usable after\ntoday's networking technologies become obsolete, that core should be\nrecognizable in the future as a globally unique ARK independent of the URL\nhostname, HTTP, etc. A founding principle of ARKs is that persistence is purely\na matter of service and neither inherent in an object nor conferred on it by\na particular naming syntax. The best any identifier can do is lead users to\nservices that support robust reference. A full-functioning ARK leads the user\nto the identified object and, with the \"?info\" inflection appended, returns\na metadata record and a commitment statement that is both human- and\nmachine-readable. Tools exist for minting, binding, and resolving ARKs.\n \n    ",
+    "abstract": "\n       The ARK (Archival Resource Key) naming scheme is designed to\nfacilitate the high-quality and persistent identification of\ninformation objects.  The label \"ark:\" marks the start of a core ARK\nidentifier that can be made actionable by prepending the beginning of\na URL.  Meant to be usable after today's networking technologies\nbecome obsolete, that core should be recognizable in the future as a\nglobally unique ARK independent of the URL hostname, HTTP, etc.  A\nfounding principle of ARKs is that persistence is purely a matter of\nservice and neither inherent in an object nor conferred on it by a\nparticular naming syntax.  The best any identifier can do is lead\nusers to services that support robust reference.  A full-functioning\nARK leads the user to the identified object and, with the \"?info\"\ninflection appended, returns a metadata record and a commitment\nstatement that is both human- and machine-readable.  Tools exist for\nminting, binding, and resolving ARKs. \n       Responsibility for this Document \n       The ARK Alliance Technical Working Group   is responsible\nfor the content of this Internet Draft.  The group homepage lists\nmonthly meeting notes and agendas starting from March 2019.\nRevisions of the spec are maintained on github at  . \n    ",
     "title": "The ARK Identifier Scheme",
     "URL": "https://datatracker.ietf.org/doc/id/draft-kunze-ark.html",
     "accessed": {
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3817,8 +4473,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3830,7 +4486,7 @@
     "abstract": "Learn the best practices for designing web APIs that support platform independence and service evolution.",
     "language": "en-us",
     "title": "Web API design best practices - Azure Architecture Center",
-    "URL": "https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design",
+    "URL": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design",
     "author": [
       {
         "family": "EdPrice-MSFT",
@@ -3841,8 +4497,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3857,8 +4513,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3874,17 +4530,27 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: url:https://fairdo.org/"
   },
   {
-    "URL": "https://hdl.handle.net/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87",
-    "type": "webpage",
     "id": "6LvydTsC",
+    "type": "webpage",
+    "title": "Data Information View",
+    "URL": "https://handle-esgf.dkrz.de/lp/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87",
+    "accessed": {
+      "date-parts": [
+        [
+          "2022",
+          11,
+          30
+        ]
+      ]
+    },
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: url:https://hdl.handle.net/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87"
   },
   {
@@ -3896,8 +4562,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3913,8 +4579,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3931,8 +4597,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3957,8 +4623,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3974,8 +4640,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -3990,8 +4656,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4007,8 +4673,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4023,8 +4689,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4034,14 +4700,14 @@
     "id": "j3SqQLBR",
     "type": "webpage",
     "abstract": "How many websites are using JSON-LD",
-    "title": "Usage Statistics of JSON-LD for Websites, August 2022",
+    "title": "Usage Statistics of JSON-LD for Websites, November 2022",
     "URL": "https://w3techs.com/technologies/details/da-jsonld",
     "accessed": {
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4056,8 +4722,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4072,8 +4738,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4088,8 +4754,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4105,8 +4771,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4121,8 +4787,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4136,7 +4802,7 @@
     "language": "en",
     "title": "ISO 16684-1:2019",
     "title-short": "ISO 16684-1",
-    "URL": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/51/75163.html",
+    "URL": "https://www.iso.org/standard/75163.html",
     "author": [
       {
         "family": "14:00-17:00",
@@ -4147,8 +4813,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4162,7 +4828,7 @@
     "language": "en",
     "title": "ISO/IEC 23009-1:2019",
     "title-short": "ISO/IEC 23009-1",
-    "URL": "https://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/07/93/79329.html",
+    "URL": "https://www.iso.org/standard/79329.html",
     "author": [
       {
         "family": "14:00-17:00",
@@ -4173,8 +4839,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4189,8 +4855,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4219,8 +4885,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4235,8 +4901,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4251,8 +4917,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4267,8 +4933,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4283,8 +4949,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4299,8 +4965,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4315,8 +4981,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4332,8 +4998,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4349,8 +5015,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4366,8 +5032,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4382,8 +5048,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4398,8 +5064,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4415,8 +5081,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4432,8 +5098,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
@@ -4448,8 +5114,8 @@
       "date-parts": [
         [
           "2022",
-          8,
-          31
+          11,
+          30
         ]
       ]
     },
