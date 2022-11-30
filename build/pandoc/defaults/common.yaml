@@ -4,6 +4,7 @@ input-file: output/manuscript.md
 filters:
 - pandoc-fignos
 - pandoc-eqnos
+- pandoc-seqnos
 - pandoc-tablenos
 - pandoc-manubot-cite
 - citeproc
