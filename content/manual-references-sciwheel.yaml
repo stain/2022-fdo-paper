@@ -53,7 +53,6 @@
   page: '144'
   volume: '7'
   issue: '1'
-  URL: http://www.nature.com/articles/s41597-020-0486-7
   DOI: 10.1038/s41597-020-0486-7
   ISSN: 2052-4463
   PMCID: PMC7224370
@@ -100,7 +99,6 @@
     core of a hyperinfrastructure initiative such as the European Open Science Cloud
     (EOSC).'
   keyword: data management and FAIR
-  URL: https://www.mdpi.com/2304-6775/8/2/21
   DOI: 10.3390/publications8020021
   ISSN: 2304-6775
 
@@ -129,7 +127,6 @@
   container-title: Journal of Network and Computer Applications
   page: 32-53
   volume: '60'
-  URL: https://linkinghub.elsevier.com/retrieve/pii/S1084804515002933
   DOI: 10.1016/j.jnca.2015.11.020
   ISSN: '10848045'
 
@@ -252,7 +249,7 @@
     Interoperability Framework governance and on aspects related to interoperability
     in the EOSC-Core and EOSC-Exchangeplatforms."
   keyword: EOSC and interoperability
-  URL: '{https://eosc-portal.eu/sites/default/files/EOSC%20Future-WP3-EOSC%20Architecture%20and%20Interoperability%20Framework-2021-12-22%5B17%5D%5B6%5D-2.pdf}'
+  URL: https://eosc-portal.eu/sites/default/files/EOSC%20Future-WP3-EOSC%20Architecture%20and%20Interoperability%20Framework-2021-12-22%5B17%5D%5B6%5D-2.pdf
 
 - id: wittenburg_2019
   type: article-journal
@@ -286,8 +283,8 @@
     claim that there are trustworthy PID systems already in broad use. It is argued,
     however, that assigning PIDs is just the first ...
   keyword: FDO and PID
-  DOI: 10.1162/dint\_a\_00004
-  ISSN: 2641-{435X}
+  DOI: 10.1162/dint_a_00004
+  ISSN: 2641-435X
 
 - id: surianarayanan_2019
   type: book
@@ -330,7 +327,6 @@
   page: '103'
   volume: '3'
   issue: '5'
-  URL: http://www.jot.fm/contents/issue\_2004\_05/article2.html
   DOI: 10.5381/jot.2004.3.5.a2
   ISSN: 1660-1769
 
@@ -371,7 +367,7 @@
   - year: 2022
     month: 5
     day: 3
-  title: The <span class="nocase">smartAPI</span> ecosystem for making web APIs FAIR
+  title: The smartAPI ecosystem for making web APIs FAIR
 
 - id: rao_2018
   type: article-journal
@@ -418,7 +414,6 @@
     to the current trend of big data. Investigating infrastructure tools for big data
     with recent developments provides a better understanding that how different tools
     and technologies apply to solve real-life applications.'
-  URL: http://link.springer.com/10.1007/s10115-018-1248-0
   DOI: 10.1007/s10115-018-1248-0
   ISSN: 0219-1377
 
@@ -441,8 +436,7 @@
   publisher: Springer International Publishing
   publisher-place: Cham
   page: 3-39
-  URL: http://link.springer.com/10.1007/978-3-319-31861-5\_1
-  DOI: 10.1007/978-3-319-31861-5\_1
+  DOI: 10.1007/978-3-319-31861-5_1
   ISBN: 978-3-319-31859-2
 
 - id: na_website_nd
@@ -506,7 +500,6 @@
   publisher-place: New York, NY
   page: 35-57
   keyword: REST
-  URL: http://link.springer.com/10.1007/978-1-4419-8303-9\_2
   DOI: 10.1007/978-1-4419-8303-9\_2
   ISBN: 978-1-4419-8302-2
 
@@ -610,7 +603,7 @@
     4). Related documents such as implementation examples can be found at the Github
     site1 and a Google Doc version is used for open comments which will lead to new
     versions2.
-  URL: '{https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx}'
+  URL: https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx
 
 - id: handle:0.DOIP/DOIPV2.0
   type: report
