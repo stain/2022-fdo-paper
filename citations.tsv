@@ -9,8 +9,8 @@ boninodasilvasantos_2016	boninodasilvasantos_2016	boninodasilvasantos_2016	EJDjH
 doi:10.3233/SW-190372	doi:10.3233/SW-190372	doi:10.3233/sw-190372	jHwttlTs
 doi:10.1007/978-3-031-01917-3_7	doi:10.1007/978-3-031-01917-3_7	doi:10.1007/978-3-031-01917-3_7	99MS5xE0
 doi:10.1109/TSC.2018.2847344	doi:10.1109/TSC.2018.2847344	doi:10.1109/tsc.2018.2847344	J2H8yssV
-doi:10.48550/arXiv.2209.09022	doi:10.48550/arXiv.2209.09022	doi:10.48550/arxiv.2209.09022	Pa67pUtR
 doi:10.55630/dipp.2014.4.11	doi:10.55630/dipp.2014.4.11	doi:10.55630/dipp.2014.4.11	DNTCUjpC
+doi:10.48550/arXiv.2209.09022	doi:10.48550/arXiv.2209.09022	doi:10.48550/arxiv.2209.09022	Pa67pUtR
 doi:10.18151/7217489	doi:10.18151/7217489	doi:10.18151/7217489	uxWjmlio
 doi:10.1007/978-3-319-19593-3_18	doi:10.1007/978-3-319-19593-3_18	doi:10.1007/978-3-319-19593-3_18	v0WwFHgT
 doi:10.1007/978-3-031-01917-3_3	doi:10.1007/978-3-031-01917-3_3	doi:10.1007/978-3-031-01917-3_3	5V3GqSzR
@@ -56,7 +56,7 @@ http://www.w3.org/TR/skos-primer	http://www.w3.org/TR/skos-primer	url:http://www
 doi:10.1007/978-3-642-21034-1_20	doi:10.1007/978-3-642-21034-1_20	doi:10.1007/978-3-642-21034-1_20	FDDmgO6s
 doi:10.1016/j.websem.2014.03.003	doi:10.1016/j.websem.2014.03.003	doi:10.1016/j.websem.2014.03.003	191ZkYZMt
 doi:10.3233/SW-160238	doi:10.3233/SW-160238	doi:10.3233/sw-160238	9CdJnsoJ
-10.1371/journal.pone.0115253	10.1371/journal.pone.0115253	doi:10.1371/journal.pone.0115253	AGHR9oyr
+doi:10.1371/journal.pone.0115253	doi:10.1371/journal.pone.0115253	doi:10.1371/journal.pone.0115253	AGHR9oyr
 doi:10.3233/SW-190380	doi:10.3233/SW-190380	doi:10.3233/sw-190380	5SuwLNdE
 doi:10.3233/SSW200033	doi:10.3233/SSW200033	doi:10.3233/ssw200033	TUmA4KQT
 http://www.w3.org/TR/rdf-schema/	http://www.w3.org/TR/rdf-schema/	url:http://www.w3.org/TR/rdf-schema/	ZwAcGQKY
@@ -94,18 +94,15 @@ doi:10.3897/rio.coll.190	doi:10.3897/rio.coll.190	doi:10.3897/rio.coll.190	jrZe6
 https://www.cordra.org/documentation/api/doip-api-for-http-clients.html	https://www.cordra.org/documentation/api/doip-api-for-http-clients.html	url:https://www.cordra.org/documentation/api/doip-api-for-http-clients.html	p7nwRj8E
 https://www.doi.org/factsheets/DOIProxy.html	https://www.doi.org/factsheets/DOIProxy.html	url:https://www.doi.org/factsheets/DOIProxy.html	1H9iQhQYq
 https://www.doi.org/doi_handbook/3_Resolution.html	https://www.doi.org/doi_handbook/3_Resolution.html	url:https://www.doi.org/doi_handbook/3_Resolution.html	68fzID2k
-10.17487/RFC9110	10.17487/RFC9110	doi:10.17487/rfc9110	8HJqcF1Q
+doi:10.17487/RFC9110	doi:10.17487/RFC9110	doi:10.17487/rfc9110	8HJqcF1Q
 ldp1.0	ldp1.0	ldp1.0	17OHlMRQA
 https://fairdigitalobjectframework.org/	https://fairdigitalobjectframework.org/	url:https://fairdigitalobjectframework.org/	7szz7dwO
-			17GTdj2XB
 doi:10.17487/RFC3650	doi:10.17487/RFC3650	doi:10.17487/rfc3650	2gXY2Nwh
-WD-DOC	WD-DOC	WD-DOC	mETedgux
-PID	PID	PID	1DWy2FOBN
 https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#organize-the-api-design-around-resources	https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#organize-the-api-design-around-resources	url:https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#organize-the-api-design-around-resources	i9Ang0rM
+doi:10.1038/nbt1346	doi:10.1038/nbt1346	doi:10.1038/nbt1346	CNP39tah
 https://hdl.handle.net/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87	https://hdl.handle.net/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87	url:https://hdl.handle.net/21.14100/2fcf49d3-0608-3373-a47f-0e721b7eaa87	6LvydTsC
 https://www.w3.org/TR/2022/WD-vocab-dcat-3-20220510/	https://www.w3.org/TR/2022/WD-vocab-dcat-3-20220510/	url:https://www.w3.org/TR/2022/WD-vocab-dcat-3-20220510/	1EW4hLN8U
 http://www.openarchives.org/ore/1.0/primer	http://www.openarchives.org/ore/1.0/primer	url:http://www.openarchives.org/ore/1.0/primer	gtGuSevK
-WD-RequirementSpec-1.0-20220317	WD-RequirementSpec-1.0-20220317	WD-RequirementSpec-1.0-20220317	STXtoppr
 http://www.w3.org/TR/2013/REC-prov-o-20130430/	http://www.w3.org/TR/2013/REC-prov-o-20130430/	url:http://www.w3.org/TR/2013/REC-prov-o-20130430/	9T4j3N4e
 doi:10.1007/978-3-642-19193-0	doi:10.1007/978-3-642-19193-0	doi:10.1007/978-3-642-19193-0	WzPECPDP
 https://5stardata.info/	https://5stardata.info/	url:https://5stardata.info/	11dInoyVF
@@ -141,7 +138,6 @@ https://www.iso.org/standard/79329.html	https://www.iso.org/standard/79329.html	
 PR-RequirementSpec-2.0	PR-RequirementSpec-2.0	PR-RequirementSpec-2.0	odRVR8uI
 doi:10.15497/rda00050	doi:10.15497/rda00050	doi:10.15497/rda00050	1GrKTFaK2
 https://bioportal.bioontology.org/ontologies	https://bioportal.bioontology.org/ontologies	url:https://bioportal.bioontology.org/ontologies	1Gsq23e51
-doi:10.17487/RFC9110	doi:10.17487/RFC9110	doi:10.17487/rfc9110	8HJqcF1Q
 doi:10.1109/SC.2005.72	doi:10.1109/SC.2005.72	doi:10.1109/sc.2005.72	18LsXvKGJ
 https://datatracker.ietf.org/doc/id/draft-kunze-ark.html	https://datatracker.ietf.org/doc/id/draft-kunze-ark.html	url:https://datatracker.ietf.org/doc/id/draft-kunze-ark.html	voDQ6diM
 10.17487/RFC3652	10.17487/RFC3652	doi:10.17487/rfc3652	I9Kx0Hjy
@@ -158,6 +154,7 @@ https://www.w3.org/TR/vocab-dcat-2/	https://www.w3.org/TR/vocab-dcat-2/	url:http
 http://xmlns.com/foaf/spec/	http://xmlns.com/foaf/spec/	url:http://xmlns.com/foaf/spec/	XmUY0cZB
 doi:10.1186/2041-1480-4-37	doi:10.1186/2041-1480-4-37	doi:10.1186/2041-1480-4-37	1E4OfHyhI
 http://dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/	http://dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/	url:http://dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/	hKblceo6
+doi:10.1162/dint_a_00134	doi:10.1162/dint_a_00134	doi:10.1162/dint_a_00134	zZTtJruI
 https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/	https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/	url:https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/	zt8AAjcZ
 https://bioschemas.org/	https://bioschemas.org/	url:https://bioschemas.org/	1F8S9FeHf
 doi:10.1371/journal.pone.0029715	doi:10.1371/journal.pone.0029715	doi:10.1371/journal.pone.0029715	9jaVzCbL
