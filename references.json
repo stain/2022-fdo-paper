@@ -330,6 +330,135 @@
     "type": "report"
   },
   {
+    "URL": "https://docs.google.com/document/d/1GAj-1owAAPDF7hVis2dYPPCOHiPHrIXIo4j-S5AdEFI/edit",
+    "accessed": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          5
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Anders",
+        "given": "I."
+      },
+      {
+        "family": "Blanchi",
+        "given": "Ch."
+      },
+      {
+        "family": "Broeder",
+        "given": "Daan"
+      },
+      {
+        "family": "Hellström",
+        "given": "M."
+      },
+      {
+        "family": "Islam",
+        "given": "Sh."
+      },
+      {
+        "family": "Jejkal",
+        "given": "Th."
+      },
+      {
+        "family": "Lannom",
+        "given": "L."
+      },
+      {
+        "family": "Peters",
+        "given": "K."
+      },
+      {
+        "family": "Quick",
+        "given": "R."
+      },
+      {
+        "family": "Schlemmer",
+        "given": "A."
+      },
+      {
+        "family": "Schwardmann",
+        "given": "U."
+      },
+      {
+        "family": "Soiland-Reyes",
+        "given": "Stian"
+      },
+      {
+        "family": "Strawn",
+        "given": "G."
+      },
+      {
+        "dropping-particle": "van",
+        "family": "Uytvanck",
+        "given": "D."
+      },
+      {
+        "family": "Weiland",
+        "given": "C."
+      },
+      {
+        "family": "Wittenburg",
+        "given": "P."
+      },
+      {
+        "family": "Zwölf",
+        "given": "Carlo"
+      }
+    ],
+    "collection-title": "FDO forum",
+    "edition": "1.2",
+    "editor": [
+      {
+        "family": "Lannom",
+        "given": "Larry"
+      },
+      {
+        "family": "Schwardmann",
+        "given": "Ulrich"
+      },
+      {
+        "family": "Wittenburg",
+        "given": "Peter"
+      },
+      {
+        "family": "Blanchi",
+        "given": "Christophe"
+      },
+      {
+        "family": "Anders",
+        "given": "Ivonne"
+      },
+      {
+        "family": "Weiland",
+        "given": "Claus"
+      }
+    ],
+    "genre": "Proposed Recommendation",
+    "id": "11NpETLq1",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          19
+        ]
+      ]
+    },
+    "keyword": "FDO",
+    "note": "PR-Overview-1.2-20221119\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: PR-Overview-1.2-20221119",
+    "number": "PR-Overview-1.2-20221119",
+    "publisher": "FDO Forum",
+    "publisher-place": "(internal draft)",
+    "title": "FAIR digital object overview and specifications",
+    "type": "report"
+  },
+  {
     "URL": "https://docs.google.com/document/d/1c2mZziq5pIPmLxMHLcYqlWrjYsc2ezGMXvp0E46iljo/edit",
     "abstract": "The FDO Forum needs a comprehensive definition of what a FAIR Digital Object (FDO) is and what its relevant components are. The PID Profiles and the set of kernel attributes that can be used in PID Profiles are such key pillars. The purpose of this paper is to specify these two aspects in order to incorporate them in the comprehensive FDO specification paper to be written.",
     "accessed": {

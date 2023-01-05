@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/6ffd6d8255ffca6dd9bb38aadf9167c99f37aa09/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/6ffd6d8255ffca6dd9bb38aadf9167c99f37aa09/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/6ffd6d8255ffca6dd9bb38aadf9167c99f37aa09/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/ed6148fe80d97ec7369fcb5c171b79f73610d1e7/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/ed6148fe80d97ec7369fcb5c171b79f73610d1e7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/ed6148fe80d97ec7369fcb5c171b79f73610d1e7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/6ffd6d8255ffca6dd9bb38aadf9167c99f37aa09/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/ed6148fe80d97ec7369fcb5c171b79f73610d1e7/))
 was automatically generated
-from [stain/2022-fdo-paper@6ffd6d8](https://github.com/stain/2022-fdo-paper/tree/6ffd6d8255ffca6dd9bb38aadf9167c99f37aa09)
+from [stain/2022-fdo-paper@ed6148f](https://github.com/stain/2022-fdo-paper/tree/ed6148fe80d97ec7369fcb5c171b79f73610d1e7)
 on January 5, 2023.
 </em></small>
 
@@ -174,11 +174,13 @@ In the following, we discuss the related work with respect to FAIR Digital Objec
 
 #### Next steps for FDO {#sec:next-step-fdo}
 
-The FAIR Digital Object Forum [@{https://fairdo.org/}] working groups are preparing more detailed [requirement documents](https://docs.google.com/spreadsheets/d/1O1PTLmVWqjQgvJsIcPgaZJe9BntHZt8_QndEG0eRwUY/edit) setting out the path for realising FDOs, named _FDO Recommendations_. As of 2022-11-30, these documents are in draft stages in Google Docs for internal review and not yet formally been made public. As these drafts clarify the future aims and focus of FAIR Digital Objects, we provide their brief summaries below:
+The FAIR Digital Object Forum [@{https://fairdo.org/}] working groups are preparing more detailed [requirement documents](https://docs.google.com/spreadsheets/d/1O1PTLmVWqjQgvJsIcPgaZJe9BntHZt8_QndEG0eRwUY/edit) setting out the path for realising FDOs, named _FDO Recommendations_. As of 2023-01-05, these documents are in draft stages in Google Docs for internal review and have not yet formally been made public. As these drafts clarify the future aims and focus of FAIR Digital Objects, we provide their brief summaries below:
+
+**FAIR Digital Object Overview and Specifications** [@PR-Overview-1.2-20221119] is a comprehensive overview of FAIR Digital Object specifications listed below. It serves as a primer that introduces FDO concepts and the remaining documents.
 
 The **FDO Forum Document Standards** [@WD-DocProcessStd-1.1-20220129] documents the recommendation process within the forum, starting at _Working Draft_ (WD) status within the closed working group and later within the open forum, then _Proposed Recommendation_ (PR) published for public review, finalised as _FDO Forum Recommendation_ (REC) following any revisions. In addition, the forum may choose to _endorse_ existing third-party notes and specifications.
 
-The **FDO Requirement Specifications** [@PR-RequirementSpec-2.0-20220826] is an update of [@bonino_2019] as the foundational definition of FDO. This sets the criteria for classifying an digital entity as a FAIR Digital Object, allowing for multiple implementations. The requirements shown in table [tbl:fdo-checks] are largely equivalent, but here clarified with references to other FDO documents.
+The **FDO Requirement Specifications** [@PR-RequirementSpec-2.0-20220826] is an update of [@bonino_2019] as the foundational definition of FDO. This sets the criteria for classifying an digital entity as a FAIR Digital Object, allowing for multiple implementations. The requirements shown in Table @tbl:fdo-checks are largely equivalent, but in this specification clarified with references to other FDO documents.
 
 The **Machine actionability** [@PR-MachineActionDef-2.0-20220611] sets out to define what is meant by _machine actionability_ for FDOs. _Machine readable_ is defined as elements of bit-sequences defined by structural specification, _machine interpretable_ elements that can be identified and related with  semantic artefacts, while _machine actionable_ are elements with a type with operations in a symbolic grammar. The document largely describes requirements for resolving an FDO to metadata, and how types should be related to possible operations.
 
@@ -360,8 +362,8 @@ The FAIR Digital Object guidelines [@bonino_2019] sets out recommendations for F
 |:------------------------------------------------:|:-------------------:|:-------------------:|:--------------------:|:--------------------:|
 | G1: _invest for many decades_                    | Handle system stable for 20 years, DOIP 2.0 since 2017. | Ensure FDO types will not be protocol-bound as DOIP might be updated/replaced | HTTP stable for 30 years, Semantic Web for 20 years. `http://` URIs replaced by `https://`. | Keep flexibility of RDF serialisation formats which may change more frequently | 
 | G2: _trustworthiness_                            | DOI/Handle trusted by all major academic publishers and data repositories. DOIP relatively unknown, in effect only one implementation. |  Further promote DOIP and justify its benefits. Build tutorials and OSI open source implementations. Standardise DOIP-over-HTTP alternative.  |  JSON-LD used by half of all websites [@{https://w3techs.com/technologies/details/da-jsonld}], however previous bad experiences with Semantic Web may deter adapters  |  Ensure simplicity for end developers, rather than semantic overengineering. Example-driven documentation.  |
-| G3: _follows FAIR principles_                    | See table @tbl:fair-fdos |  Ensure all FAIR principles are covered, build complete examples.   |  Touched briefly, see table @tbl:fair-fdos |  Add explicit expression to show each FAIR pcinciple fulfilled.  | 
-| G4: _machine actionability_                      | CRUD and extension operations dynamically listed (see table @#tbl:fdo-web-middleware) |  Specify which operations should work for a given type, to reduce need for dynamic lookup. Specify input/output expectations formally (e.g. JSON Schema).  |  HTTP CRUD operations, Open API (see table @#tbl:fdo-web-middleware) |  Document operations so client can make subsequent HTTP calls.  |
+| G3: _follows FAIR principles_                    | See Table @tbl:fair-data-maturity-model |  Ensure all FAIR principles are covered, build complete examples.   |  Touched briefly, see Table @tbl:fair-data-maturity-model |  Add explicit expression to show each FAIR pcinciple fulfilled.  | 
+| G4: _machine actionability_                      | CRUD and extension operations dynamically listed (see Table @tbl:fdo-web-middleware) |  Specify which operations should work for a given type, to reduce need for dynamic lookup. Specify input/output expectations formally (e.g. JSON Schema).  |  HTTP CRUD operations, Open API (see Table @tbl:fdo-web-middleware) |  Document operations so client can make subsequent HTTP calls.  |
 | G5: _abstraction principle_                      | Handle PIDs as abstraction base. DOIP operations can use any transport protocol.  | Document transport protocols as FDOs, recommend which transport to use. |  URI as abstraction base. Does not specify PID requirements.  | Give stronger deployment recommendations. |   
 | G6: _stable binding between entities_            | Machine-navigation through PIDs and operations specified per type. Unclear when metadata field is a PID or plain text. | Make datatype of fields explicit to support navigation. | Machine-navigation through URIs via properties and types. Unclear when URI should be followed or is just identifier, but always distinct from plain text. |    |
 | G7: _encapsulation_                              | Operations discovered at runtime (`0.DOIP/Op.ListOperations`).  |  Allow method discovery by type FDOs in advance (see PR-TypingFDOs-2.0-20220608). | HTTP methods discovered at runtime (`OPTIONS`), indempotent methods attempted directly. Unsupported methods reported using LDP constraints to human-readable text. |  Declare supported methods in advance, e.g. OpenAPI [@{https://spec.openapis.org/oas/v3.1.0.html}]  | 
@@ -511,14 +513,14 @@ Table: Assessing RDA's FAIR Data Maturity Model [@doi:10.15497/rda00050; @doi:10
 
 From this evaluation we observe:
 
-* Linked Data in general is strong on metadata indicators, but LDP approach is weak as it has no metadata guidance
+* Linked Data in general is strong on metadata indicators, but LDP approach is weak as it has little metadata guidance
 * FDO/DOIP are stronger on identifier indicators 
 * Indicators on standard protocols (RDA-A1-04M, RDA-A1-04D, RDA-A1.1-01M, RDA-A1.1-01D) favour LDP's mature standards (HTTP, URI) -- the DOIPv2 specification [@handle:0.DOIP/DOIPV2.0] has currently only a couple of implementations and is expressed informally. The underlying Handle system for PIDs is arguably mature and commonly used by researchers (this article alone references about 80 DOIs), however DOIs are more commonly accessed as HTTP redirects through resolvers like <https://doi.org/> and <http://hdl.handle.net/> rather than the Handle protocol.
 * RDA-A1-02M and RDA-A1-02D highlights access by manual intervention, which is common for http/https URIs, but also using above PID resolvers for DOIP implementation [CORDRA](https://www.cordra.org/) (e.g. <https://hdl.handle.net/21.14100/90ec1c7b-6f5e-4e12-9137-0cedd16d1bce>), yet neither LDP, FDO nor DOIP specifications recommends human-readable representations to be provided
-* Neither DOIP nor LDP require license to be expressed (RDA-R1.1-01M, RDA-R1.1-02M, RDA-R1.1-03M), yet this is crucial for re-use of FAIR data and metadata to be legal
-* Machine-understandable types, provenance and data/metadata standards (RDA-R1.1-03M RDA-R1.3-02M, RDA-R1.3-02M, RDA-R1.3-02D) are important for machine actionability, but are currently unspecified for FDOs.
-* Indicators for FAIR data are weak for either approach, as too much reliance is put on metadata. For instance in Linked Data, given a URL of a CSV file, what is its persistant identifier or license information? FAIR Signposting [@{https://signposting.org/FAIR/}] can improve this using HTTP Link relations, which enable an FDO-like overlay for any HTTP resource. In DOIP, responses for bytestreams can include the data identifier, if that is a PID (not enforced by DOIP), its metadata is accessible.
-* Resolving FDOs via resolution of Handle PIDs to the corresponding DOIP server is currently undefined by FDO and DOIP specifications. `0.TYPE/DOIPServiceInfo` lookup is only possible once DOIP server is known. 
+* Neither DOIP nor LDP require license to be expressed (RDA-R1.1-01M, RDA-R1.1-02M, RDA-R1.1-03M), yet this is crucial for re-use and machine actionability of FAIR data and metadata to be legal
+* Machine-understandable types, provenance and data/metadata standards (RDA-R1.1-03M RDA-R1.3-02M, RDA-R1.3-02M, RDA-R1.3-02D) are important for machine actionability, but are currently unspecified for FDOs. [@WD-ImplAttributesTypesProfiles-0.2-20221127] explores possible machine-readable FDO types, however the type systems themselves have not yet been formalised. Linked Data on the other side have too many semantic and syntactic type systems, making it difficult to write consistent clients.
+* Indicators for FAIR data are weak for either approach, as too much reliance is put on metadata. For instance in Linked Data, given a URL of a CSV file, what is its persistant identifier or license information? FAIR Signposting [@{https://signposting.org/FAIR/}] can improve findability of metadata using HTTP Link relations, which enable an FDO-like overlay for any HTTP resource. In DOIP, responses for bytestreams can include the data identifier: if that is a PID (not enforced by DOIP), its metadata is accessible.
+* Resolving FDOs via Handle PIDs to the corresponding DOIP server is currently undefined by FDO and DOIP specifications. `0.TYPE/DOIPServiceInfo` lookup is only possible once DOIP server is known. g
 
 ## EOSC Interoperability Framework
 
