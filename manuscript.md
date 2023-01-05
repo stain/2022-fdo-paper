@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/af8d9a1172935bc8ce42e7aaf0bbd964f20934eb/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/af8d9a1172935bc8ce42e7aaf0bbd964f20934eb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/af8d9a1172935bc8ce42e7aaf0bbd964f20934eb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/6ffd6d8255ffca6dd9bb38aadf9167c99f37aa09/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/6ffd6d8255ffca6dd9bb38aadf9167c99f37aa09/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/6ffd6d8255ffca6dd9bb38aadf9167c99f37aa09/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/af8d9a1172935bc8ce42e7aaf0bbd964f20934eb/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/6ffd6d8255ffca6dd9bb38aadf9167c99f37aa09/))
 was automatically generated
-from [stain/2022-fdo-paper@af8d9a1](https://github.com/stain/2022-fdo-paper/tree/af8d9a1172935bc8ce42e7aaf0bbd964f20934eb)
+from [stain/2022-fdo-paper@6ffd6d8](https://github.com/stain/2022-fdo-paper/tree/6ffd6d8255ffca6dd9bb38aadf9167c99f37aa09)
 on January 5, 2023.
 </em></small>
 
@@ -185,6 +185,8 @@ The **Machine actionability** [@PR-MachineActionDef-2.0-20220611] sets out to de
 **Configuration Types** [@PR-ConfigurationTypes-2.0-20220608] classifies different granularities for organising FDOs in terms of PIDs, PID Records, Metadata and bit sequences, e.g. as a single FDO or several daisy-chained FDOs. Different patterns used by current DOIP deployments are considered, as well as FAIR Signposting [@{https://signposting.org/FAIR/}]
 
 **PID Profiles & Attributes** [@PR-PIDProfileAttributes-2.0-20220608] specifies that PIDs must be formally associated with a _PID Profile_, a separate FDO that defines attributes required and recommended by FDOs following said profile. This forms the _kernel attributes_, building on recommendations from RDA's _PID Information Types_ working group [@doi:10.15497/rda00031]. This document makes a clear distinction between a minimal set of attributes needed for PID resolution and FDO navigation, which  needs to be part of the _PID Record_, compared with a richer set of more specific attributes as part of the _metadata_ for an FDO, possibly represented as a separate FDO. 
+
+**Kernel Attributes & Metadata** [@WD-KernelAttributes-1.0-20220828] elaborates on categories of FDO Mandatory, FDO Optional and Community Attributes, recommending kernel attributes like `dateCreated`, `ScientificDomain`, `PersistencePolicy`, `digitalObjectMutability`, etc. This document expands on RDA Recommendation on PID Kernel Information [@doi:10.15497/rda00031]. It is worth noting that both documents are relatively abstract and do not establish PIDs or namespaces for the kernel attributes.
 
 **Granularity, Versioning, Mutability** [@PR-Granularity-2.1-20220826] considers how granularity decisions for forming FDOs must be agreed by different communities depending on their pragmatic usage requirements. The affect on versioning, mutability and changes to PIDs are considered, based on use cases and existing PID practices.
 
@@ -489,8 +491,8 @@ Here we evaluate to what extent the FDO guidelines and its implementation with D
 | RDA-I3-02D     | Data includes qualified references to other data                           | FDOR3 FDOR11   |  Only indirectly through FDO metadata   |  Indirectly through LDP membership   |  Uncommon: Link relations, FAIR Signposting   |
 | RDA-I3-03M     | Metadata includes qualified references to other metadata                   | (FDOR3)    | Qualification by attribute keys defined per FDO Type | [LDP Direct Container](https://www.w3.org/TR/ldp/#dfn-linked-data-platform-direct-container)  | Qualifications by property, PROV bundles [@{https://www.w3.org/TR/2013/NOTE-prov-links-20130430/}], [schema.org/Role](https://schema.org/Role)   |
 | RDA-I3-04M     | Metadata include qualified references to other data                        | (FDOR3)    | Qualification by attribute keys defined per FDO type | [LDP Indirect Container](https://www.w3.org/TR/ldp/#dfn-linked-data-platform-indirect-container)   | Qualifications by property, n-ary indirection (schema.org Role [@{http://blog.schema.org/2014/06/introducing-role.html}], `prov:specializationOf` [@{https://www.w3.org/TR/prov-o/#specializationOf}], OAI-ORE Proxy [@{http://www.openarchives.org/ore/1.0/datamodel#Proxies}])  |
-| RDA-R1-01M     | Plurality of accurate and relevant attributes are provided to allow reuse  | FDOF4    | Required. Kernel metadata attributes desired, not yet decided.    | Unspecified. Multiple metadata records can allow multiple semantic profiles.    | Large number of general and domain-specific vocabularies can make it hard to find relevant attributes. Rough consensus on kernel metadata: schema.org [@{https://schema.org/}], Dublin Core Terms [@{http://purl.org/dc/terms/}], DCAT [@{https://www.w3.org/TR/vocab-dcat-2/}], FOAF [@{http://xmlns.com/foaf/spec/}]    | 
-| RDA-R1.1-01M   | Metadata includes information about the licence under which the data can be reused  | ---  | Unspecified (should be in PID Kernel metadata?)    | ---    | Dublin Core Terms `dct:license` frequently recommended, frequently not required, e.g. [by DCAT 2](https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license) [@{https://www.w3.org/TR/vocab-dcat-2/}]
+| RDA-R1-01M     | Plurality of accurate and relevant attributes are provided to allow reuse  | FDOF4    | Required. Kernel metadata attributes desired [@WD-KernelAttributes-1.0-20220828] but not assigned PIDs yet.   | Unspecified. Multiple metadata records can allow multiple semantic profiles.    | Large number of general and domain-specific vocabularies can make it hard to find relevant attributes. Rough consensus on kernel metadata: schema.org [@{https://schema.org/}], Dublin Core Terms [@{http://purl.org/dc/terms/}], DCAT [@{https://www.w3.org/TR/vocab-dcat-2/}], FOAF [@{http://xmlns.com/foaf/spec/}]    | 
+| RDA-R1.1-01M   | Metadata includes information about the licence under which the data can be reused  | ---  | `licenseConditions` URL/PID in kernel metadata [@WD-KernelAttributes-1.0-20220828]  | ---    | Dublin Core Terms `dct:license` frequently recommended, frequently not required, e.g. [by DCAT 2](https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license) [@{https://www.w3.org/TR/vocab-dcat-2/}]
 | RDA-R1.1-02M   | Metadata refers to a standard reuse licence                                | ---    | ---    | ---    | [SPDX](https://spdx.org/licenses/) and [Creative Commons](https://creativecommons.org/) URIs common, identifiers often inconsistent |
 | RDA-R1.1-03M   | Metadata refers to a machine-understandable reuse licence                  | ---    | ---    | ---    | [SPDX documents](https://spdx.dev/resources/use/#documents) uncommon  |
 | RDA-R1.2-01M   | Metadata includes provenance information according to community-specific standards  | FDOR9 FDOR10    | Unspecified (some CORDRA types add getProvenance methods). PID Kernel attributes? 	Unspecified 	W3C PROV-O, PAV    |
@@ -503,7 +505,7 @@ Here we evaluate to what extent the FDO guidelines and its implementation with D
 Table: Assessing RDA's FAIR Data Maturity Model [@doi:10.15497/rda00050; @doi:10.5334/dsj-2020-041] (first 2 columns) against the FDO guidelines [@bonino_2019], FDO implemented with the protocol DOIPv2 [@handle:0.DOIP/DOIPV2.0], Linked Data Platform (LDP) [@{https://fairdigitalobjectframework.org/}] and examples from Linked Data practices in general. (--- indicates _Unspecified_, may be possible with additional conventions)
 {#tbl:fair-data-maturity-model}
 
-[^free]: The [Handle.net public license](http://www.handle.net/HNRj/HNR-9-License.pdf)] is not OSI-approved [@{https://opensource.org/licenses}] as an open source license -- it includes usage restrictions and requires Service Agreements. It is not a DOIP requirement to host a local Handle instance, e.g. EOSC provides the [B2HANDLE](https://sp.eudat.eu/catalog/resources/fc6b2d30-09cd-4c25-b71a-7bc6de77910c) service for acquiring Handle prefixes.
+[^license]: The [Handle.net public license](http://www.handle.net/HNRj/HNR-9-License.pdf)] is not OSI-approved [@{https://opensource.org/licenses}] as an open source license -- it includes usage restrictions and requires Service Agreements. It is not a DOIP requirement to host a local Handle instance, e.g. EOSC provides the [B2HANDLE](https://sp.eudat.eu/catalog/resources/fc6b2d30-09cd-4c25-b71a-7bc6de77910c) service for acquiring Handle prefixes.
 
 [^patent]: The `Handle.net` system was previously covered by software patent [US6135646A](https://patents.google.com/patent/US6135646A/en) which [expired](https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461) in 2013.
 
@@ -537,7 +539,7 @@ The EOSC Interoperability Framework [@doi:10.2777/620649] in section 3.6 recomme
 | Semantic    | Documentation for each semantic artefact    | No direct rendering from FDO, no requirement for human-readable description    | Ontology rendering, content-negotiation    |
 | Semantic    | Repositories of artefacts    | Required, but not formalised    | Bioontologies, etc    |
 | Semantic    | Repositories w/ clear governance    | Recommended    | Largely self-governed repositories, if well-established may have clear governance.    | 
-| Semantic    | Minimal metadata model for federated discovery    | Kernel metadata (currently unspecified)    | DCAT, ++    | 
+| Semantic    | Minimal metadata model for federated discovery    | Kernel metadata [@WD-KernelAttributes-1.0-20220828]   | DCAT, ++    | 
 | Semantic    | Crosswalks from minimal metadata model    |  FDO Typing recommends referencing existing type definitions, but not as separate crosswalks   | Multiple crosswalks for common metadata models, but frequently not in semantic format    |
 | Semantic    | Extensibility options for diciplinary metadata    | Communities encouraged to establish own types    | Extensible by design, domain-specific metadata may be at different granularity    |
 | Semantic    | Clear protocols/building blocks for federation/harvesting of artefact catalogues    | Collection types not yet defined    | SWORD, OAI-PMH    | 
