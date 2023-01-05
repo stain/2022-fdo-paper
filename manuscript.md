@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2022-11-30'
+date-meta: '2023-01-05'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2022-11-30" />
-  <meta name="citation_publication_date" content="2022-11-30" />
+  <meta name="dc.date" content="2023-01-05" />
+  <meta name="citation_publication_date" content="2023-01-05" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/6c307bc961308d58a7fbf84d98b2697d1f3b04e7/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/6c307bc961308d58a7fbf84d98b2697d1f3b04e7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/6c307bc961308d58a7fbf84d98b2697d1f3b04e7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/d2d22ac61ad2e3abec181c9ca3b9b9782312255b/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/d2d22ac61ad2e3abec181c9ca3b9b9782312255b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/d2d22ac61ad2e3abec181c9ca3b9b9782312255b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,10 +74,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/6c307bc961308d58a7fbf84d98b2697d1f3b04e7/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/d2d22ac61ad2e3abec181c9ca3b9b9782312255b/))
 was automatically generated
-from [stain/2022-fdo-paper@6c307bc](https://github.com/stain/2022-fdo-paper/tree/6c307bc961308d58a7fbf84d98b2697d1f3b04e7)
-on November 30, 2022.
+from [stain/2022-fdo-paper@d2d22ac](https://github.com/stain/2022-fdo-paper/tree/d2d22ac61ad2e3abec181c9ca3b9b9782312255b)
+on January 5, 2023.
 </em></small>
 
 ## Authors {.unnumbered}
@@ -150,11 +150,11 @@ Emerging stack - how does it compare to what we've already done? What are the im
 
 ## Introduction {#sec:introduction}
 
-The FAIR principles [@doi:10.1038/sdata.2016.18]  encourage sharing of scientific data with machine-readable metadata and the use of interoperable formats, and are being adapted by a wide range of research infrastructures. They have been widely recognised by the research community and policy makers as a goal to strive for. In particular, the European Open Science Cloud ([EOSC](https://www.eosc.eu/)) has promoted FAIR data. The EOSC Interoperability Framework [@doi:10.2777/620649] puts particular emphasis on how interoperability can be achieved technically, semantically, organisationally and legally, laying out a vision of how data, publication, software and services can work together to form an ecosystem of rich digital objects.
+The FAIR principles [@doi:10.1038/sdata.2016.18]  encourage sharing of scientific data with machine-readable metadata and the use of interoperable formats, and are being adapted by a wide range of research infrastructures. They have been widely recognised by the research community and policy makers as a goal to strive for. In particular, the European Open Science Cloud ([EOSC](https://www.eosc.eu/)) has promoted adaptation of FAIR data sharing of data resources across electronic research infrastructures [@doi:10.3233/ISU-170824]. The EOSC Interoperability Framework [@doi:10.2777/620649] puts particular emphasis on how interoperability can be achieved technically, semantically, organisationally, and legally -- laying out a vision of how data, publication, software and services can work together to form an ecosystem of rich digital objects.
 
 Specifically, the EOSC Interoperability framework highlights the emerging FAIR Digital Object [@doi:10.1007/978-3-030-23584-0_1] (FDO) concept as a possible foundation for building a semantically interoperable ecosystem to fully realise the FAIR principles beyond individual repositories and infrastructures. The FDO approach has great potential, as it proposes strong requirements for identifiers, types, access and formalises interactive operations on objects.
 
-In other discourse, Linked Data [@doi:10.4018/jswis.2009081901] has been seen as an established set of principles based on Semantic Web technologies that can achieve the vision of the FAIR principles [@doi:10.1007/978-3-319-98192-5_60] [@boninodasilvasantos_2016]. Yet regular researchers and developers of emerging platforms for computation and data management are reluctant to adapt such a FAIR Linked Data approach fully, opting instead for custom in-house models and JSON-derived formats from RESTful Web services [@doi:10.1007/978-3-031-01917-3_7] [@doi:10.1109/TSC.2018.2847344]. While such focus on simplicity gives rapid development and highly specialised services, it raises wider concerns on interoperability [?].  
+In other discourse, Linked Data [@doi:10.4018/jswis.2009081901] has been seen as an established set of principles based on Semantic Web technologies that can achieve the vision of the FAIR principles [@doi:10.1007/978-3-319-98192-5_60] [@boninodasilvasantos_2016]. Yet regular researchers and developers of emerging platforms for computation and data management are reluctant to adapt such a FAIR Linked Data approach fully[@doi:10.3233/SW-190372], opting instead for custom in-house models and JSON-derived formats from RESTful Web services [@doi:10.1007/978-3-031-01917-3_7] [@doi:10.1109/TSC.2018.2847344]. While such focus on simplicity gives rapid development and highly specialised services, it raises wider concerns on interoperability [@doi:10.55630/dipp.2014.4.11, @doi:10.48550/arXiv.2209.09022].
 
 One challenge that may, perhaps counter-intuitively, steer developers towards a not-invented-here mentality [@doi:10.18151/7217489] [@doi:10.1007/978-3-319-19593-3_18] when exposing their data on the Web is the heterogeneity and apparent complexity of Semantic Web approaches themselves [@doi:10.1007/978-3-031-01917-3_3].
 
@@ -270,7 +270,7 @@ Vocabularies like [schema.org](https://schema.org/) evolved not long after, inte
 
 Recently there has been a renewed emphasis to improve the _Developer Experience_ [@{https://ruben.verborgh.org/blog/2018/12/28/designing-a-linked-data-developer-experience/}] for consumption of Linked Data, for instance RDF Shapes (expressed in SHACL [@{https://www.w3.org/TR/shacl/}] or ShEx [@{http://shex.io/shex-primer/}]) [@doi:10.1007/978-3-030-21348-0_39] can be used to validate RDF Data [@doi:10.2200/S00786ED1V01Y201707WBE016] <!-- https://book.validatingrdf.com/ --> before consuming it programmatically, or reshaping data to fit other models. While a varied set of tools for Linked Data consumptions have been identified, most of them still require developers to gain significant knowledge of the underlying technologies, which hampers adaption by non-LD experts [@doi:10.3233/SW-180316], <!--http://www.semantic-web-journal.net/system/files/swj1849.pdf --> which then tend to prefer non-semantic two-dimensional formats such as CSV files.  
 
-A valid concern is that the Semantic Web research community has still not fully embraced the Web, and that the "final 20%" engineering effort is frequently overlooked in favour of chasing new trends such as Big Data and AI, rather than making powerful Linked Data technologies available to the wider groups of Web developers [@doi:10.3233/SW-190372]. One bridging gap here by the Linked Data movement has been "linked data by stealth" approaches such as structured data entry spreadsheets powered by ontologies [@{doi:10.1093/bioinformatics/btr312}], the use of Linked Data as part of REST Web APIs [@10.1145/1967428.1967435] <!-- http://eprints.soton.ac.uk/id/eprint/272098 -->, and as shown by the big uptake by publishers to annotate the Web using schema.org [@doi:10.1109/MIC.2015.81], with vocabulary use patterns documented by copy-pastable JSON-LD examples, rather than by formalised ontologies or developer requirements to understand the full Semantic Web stack.
+A valid concern is that the Semantic Web research community has still not fully embraced the Web, and that the "final 20%" engineering effort is frequently overlooked in favour of chasing new trends such as Big Data and AI, rather than making powerful Linked Data technologies available to the wider groups of Web developers [@doi:10.3233/SW-190372]. One bridging gap here by the Linked Data movement has been "linked data by stealth" approaches such as structured data entry spreadsheets powered by ontologies [@doi:10.1093/bioinformatics/btr312], the use of Linked Data as part of REST Web APIs [@doi:10.1145/1967428.1967435] <!-- http://eprints.soton.ac.uk/id/eprint/272098 -->, and as shown by the big uptake by publishers to annotate the Web using schema.org [@doi:10.1109/MIC.2015.81, @doi:10.1145/2890489], with vocabulary use patterns documented by copy-pastable JSON-LD examples, rather than by formalised ontologies or developer requirements to understand the full Semantic Web stack.
 
 
 
@@ -566,6 +566,12 @@ Observations:
 ## Discussion {#sec:discussion}
 
 **TODO**
+
+- Ramnifications of ide
+- Finish tables
+- Bullet points per table
+- Send in Google Docs
+
 
 ### (What does it mean for Linked Data?)
 
