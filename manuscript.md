@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/c7e33b6a8e59a9126078cea57e64683a9eb15f7a/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/c7e33b6a8e59a9126078cea57e64683a9eb15f7a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/c7e33b6a8e59a9126078cea57e64683a9eb15f7a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/1bee59c988c1cda41c0255491571fa7442cf9401/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1bee59c988c1cda41c0255491571fa7442cf9401/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1bee59c988c1cda41c0255491571fa7442cf9401/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/c7e33b6a8e59a9126078cea57e64683a9eb15f7a/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/1bee59c988c1cda41c0255491571fa7442cf9401/))
 was automatically generated
-from [stain/2022-fdo-paper@c7e33b6](https://github.com/stain/2022-fdo-paper/tree/c7e33b6a8e59a9126078cea57e64683a9eb15f7a)
+from [stain/2022-fdo-paper@1bee59c](https://github.com/stain/2022-fdo-paper/tree/1bee59c988c1cda41c0255491571fa7442cf9401)
 on January 5, 2023.
 </em></small>
 
@@ -188,7 +188,7 @@ The **Machine actionability** [@PR-MachineActionDef-2.0-20220611] sets out to de
 
 **Granularity, Versioning, Mutability** [@PR-Granularity-2.1-20220826] considers how granularity decisions for forming FDOs must be agreed by different communities depending on their pragmatic usage requirements. The affect on versioning, mutability and changes to PIDs are considered, based on use cases and existing PID practices.
 
-**DOIP Endorsement Request** [@PED-DOIPEndorsement-1.0-20220608] is an endorsement of the DOIP v2.0 [@handle:0.DOIP/DOIPV2.0] specification as a potential FDO implementation, as it has been applied by several institutions [@doi:10.5281/zenodo.5872645]. The document proposes that DOIP shall be assessed for completeness against FDO; in this initial draft this is justified as _"we can state that DOIP is compliant with the FDO specification documents in process"_ (the documents listed above).
+**DOIP Endorsement Request** [@PED-DOIPEndorsement-1.0-20220608] is an endorsement of the DOIP v2.0 [@handle:0.DOIP/DOIPV2.0] specification as a potential FDO implementation, as it has been applied by several institutions [@doi:10.5281/zenodo.5872645]. The document proposes that DOIP shall be assessed for completeness against FDO -- in this initial draft this is justified as _"we can state that DOIP is compliant with the FDO specification documents in process"_ (the documents listed above).
 
 **Upload of FDO** [@PEN-FDO-Upload-1.0-20220608] illustrates the operations for uploading an FDO to a repository, what checks it should do (for instance conformance with the PID Profile, if PIDs resolve). ResourceSync [@{http://www.openarchives.org/rs/toc}] is suggested as one type of service to list FDOs. This document highlights potential practices by repositories and their clients, but adds no particular requirements (e.g. how should failed upload checks be reported?).
 
@@ -214,7 +214,7 @@ Recently, FDOs have been recognised by the European Open Science Cloud ([EOSC](h
 
 FDO is an evolving concept. A set of FDO Demonstrators [@doi:10.5281/zenodo.5872645] highlight how current adapters are approaching implementations of FDO from different angles:
 
- * Building on the Digital Object concept, using the simplified DOIP v2 specification [@handle:0.DOIP/DOIPV2.0], which detail how to exchange JSON objects through a text-based protocol[^3] (usually TCP/IP over TLS). The main DOIP operations are retrieving, creating and updating digital objects. These are mostly realised using the reference implementation [Cordra](https://cordra.org/). FDO types are registered in the local Cordra instance, where they are specified using JSON Schema [@{https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00}]gre and PIDs are assigned using the Handle system. Several type registries have been established.
+ * Building on the Digital Object concept, using the simplified DOIP v2 specification [@handle:0.DOIP/DOIPV2.0], which detail how to exchange JSON objects through a text-based protocol[^3] (usually TCP/IP over TLS). The main DOIP operations are retrieving, creating and updating digital objects. These are mostly realised using the reference implementation [Cordra](https://cordra.org/). FDO types are registered in the local Cordra instance, where they are specified using JSON Schema [@{https://datatracker.ietf.org/doc/html/draft-bhutton-json-schema-00}] and PIDs are assigned using the Handle system. Several type registries have been established.
  * Following the traditional Linked Data approach, but using the DOIP protocol, e.g. using JSON-LD and schema.org within DOIP (NIST for material science).
  * Approaching the FDO principles from existing Linked Data practices on the Web (e.g. WorkflowHub use of RO-Crate and schema.org).
 
@@ -620,7 +620,7 @@ As technological improvements to Semantic Web continue, and FDO requirements mat
 -->
 
 
-# Conclusion
+## Conclusion
 
 ...
 

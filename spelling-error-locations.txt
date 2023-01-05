@@ -135,7 +135,6 @@ content/11c.fdo.md:14:DOIP
 content/11c.fdo.md:14:DOIP
 content/11c.fdo.md:14:DOIP
 content/11c.fdo.md:14:FDO
-content/11c.fdo.md:14:gre
 content/11c.fdo.md:14:https
 content/11c.fdo.md:14:https
 content/11c.fdo.md:14:ietf
