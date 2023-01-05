@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/7c0034b9b91ec068e79f65fa861a9eb1af4b436e/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7c0034b9b91ec068e79f65fa861a9eb1af4b436e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/7c0034b9b91ec068e79f65fa861a9eb1af4b436e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/49ed6df76c1fc53476c875ae7502c85cdaab1bbc/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/49ed6df76c1fc53476c875ae7502c85cdaab1bbc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/49ed6df76c1fc53476c875ae7502c85cdaab1bbc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,9 +74,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/7c0034b9b91ec068e79f65fa861a9eb1af4b436e/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/49ed6df76c1fc53476c875ae7502c85cdaab1bbc/))
 was automatically generated
-from [stain/2022-fdo-paper@7c0034b](https://github.com/stain/2022-fdo-paper/tree/7c0034b9b91ec068e79f65fa861a9eb1af4b436e)
+from [stain/2022-fdo-paper@49ed6df](https://github.com/stain/2022-fdo-paper/tree/49ed6df76c1fc53476c875ae7502c85cdaab1bbc)
 on January 5, 2023.
 </em></small>
 
@@ -561,6 +561,7 @@ The EOSC Interoperability Framework [@doi:10.2777/620649] in section 3.6 recomme
 | Legal    | Alignment between EOSC and national legislation    | Not applicable    | Not applicable    | 
 
 Observations:
+
 * The recommendations from EOSC IF are at a higher level that mainly affect governance and practices by communities
 * Technical aspects highlighted by EOSC IF 
 * Search/indexing is important FAIR aspect for Findability, but is poorly supported by current FDO and Linked Data. There is a strong role for organizations like EOSC to provide broader registries than more specialised metadata federations like OpenAIRE.
