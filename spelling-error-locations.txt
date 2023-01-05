@@ -609,6 +609,8 @@ content/22.fdo-compare.md:31:FDO
 content/22.fdo-compare.md:31:FDO
 content/22.fdo-compare.md:31:RequirementSpec
 content/22.fdo-compare.md:31:RequirementSpec
+content/22.fdo-compare.md:33:FDOF
+content/22.fdo-compare.md:33:FDOR
 content/22.fdo-compare.md:33:RequirementSpec
 content/22.fdo-compare.md:35:DOIP
 content/22.fdo-compare.md:35:DOIP
