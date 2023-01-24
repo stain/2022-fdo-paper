@@ -23,7 +23,7 @@ on:
       BUILD_LATEX:
         type: boolean
         description: generate LaTeX output
-        default: false
+        default: true
       SPELLCHECK:
         type: boolean
         description: Check spelling
