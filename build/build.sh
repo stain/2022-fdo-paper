@@ -12,14 +12,20 @@ export TZ=Etc/UTC
 export LC_ALL=en_US.UTF-8
 
 
+# Overleaf workaround, where symlinks are not permitted in git
+ln -fs v/latest/manuscript.pdf webpage/
+ln -fs v/latest/images webpage/
+ln -fs v/latest/index.html webpage/
+ln -s ../latex/ro-crate.bib content/manual-references-ro-crate.bib
+
 # Set DOCKER_RUNNING to true if docker is running, otherwise false.
 DOCKER_RUNNING="$(docker info &> /dev/null && echo "true" || (true && echo "false"))"
 
 # Set option defaults
 CI="${CI:-false}"
-BUILD_PDF="${BUILD_PDF:-true}"
+BUILD_PDF="${BUILD_PDF:-false}"
 BUILD_DOCX="${BUILD_DOCX:-false}"
-BUILD_LATEX="${BUILD_LATEX:-false}"
+BUILD_LATEX="${BUILD_LATEX:-true}"
 SPELLCHECK="${SPELLCHECK:-false}"
 MANUBOT_USE_DOCKER="${MANUBOT_USE_DOCKER:-$DOCKER_RUNNING}"
 # Pandoc's configuration is specified via files of option defaults
