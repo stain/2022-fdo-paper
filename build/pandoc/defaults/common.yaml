@@ -10,7 +10,7 @@ filters:
 - citeproc
 wrap: preserve
 metadata:
-  csl: build/assets/style.csl
+  csl: build/assets/peerj.csl
   link-citations: true
   xx-number-offset: 1
   shift-heading-level-by: -1
