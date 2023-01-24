@@ -25,7 +25,7 @@ centric
 ChEMBL
 consumptions
 CORDA
-Cordra
+CORDRA
 COVID
 CSV
 CWFP
@@ -53,7 +53,7 @@ examplified
 examplify
 exisiting
 Extensibility
-fdo
+FDO
 FDOF
 FDOR
 FDO’s
@@ -110,14 +110,14 @@ microformats
 Micropub
 middleware
 middlewares
-modularity
+Modularity
 namespace
 namespaces
 NIST
 NL
 OAI
 OBO
-Occassionally
+occassionally
 ontologies
 OpenAIRE
 OpenAPI
@@ -157,7 +157,7 @@ ResourceSync
 RO
 ROR
 runtime
-Scalability
+scalability
 scalable
 schemas
 seemlessly
