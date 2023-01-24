@@ -23,7 +23,7 @@ on:
       BUILD_LATEX:
         type: boolean
         description: generate LaTeX output
-        default: true
+        default: false
       SPELLCHECK:
         type: boolean
         description: Check spelling
@@ -42,6 +42,7 @@ jobs:
       # For workflow dispatch jobs, this SPELLCHECK setting will be overridden by the user input.
       SPELLCHECK: true
       BUILD_DOCX: true
+      BUILD_LATEX: true
     defaults:
       run:
         shell: bash --login {0}
