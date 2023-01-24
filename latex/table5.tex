@@ -1,0 +1,51 @@
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0833}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3056}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3056}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3056}}@{}}
+\toprule
+\begin{minipage}[b]{\linewidth}\raggedright
+Layer
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Recommendation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+FDO
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Linked Data
+\end{minipage} \\
+\midrule
+\endhead
+Technical & Open Specification & FDO specifications are semi-open, process gradually more transparent & Open and transparent standard processes through W3C \& IETF \\
+Technical & Common security \& privacy framework & Unspecified & TLS for encryption, multiple approaches for single-sign-on (e.g.~ORCID, Life Science Login). Privacy largely unspecified. \\
+Technical & Easy SLAs for service providers & Unspecified & None \\
+Technical & Access data in different formats & None formalised, custom operations or relations & Content-negotiation, \texttt{rel=alternate} relations \\
+Technical & Coarse-grained/fine-grained search tools & Freetext \texttt{0.DOIP/Op.Search} on local DOIP, no federation & Coarse-grained e.g.~\href{https://datasetsearch.research.google.com/}{Google Dataset Search}, fine-grained (e.g.~federated SPARQL) require detailed vocabulary/metadata insight \\
+Technical & Clear PID policy & Strong FDO requirements, tends towards Handle system. & Not required, different communities set policies \\
+Semantic & Clear definitions for concepts/metadata/schemas & Required by FDO requirements, but not yet formalised & Ontologies, SKOS, OWL \\
+Semantic & Semantic artefacts w/ open licenses & All artefacts are PIDs w/ license required by kernel metadata? & Open License is best practice for ontology publishing \\
+Semantic & Documentation for each semantic artefact & No direct rendering from FDO, no requirement for human-readable description & Ontology rendering, content-negotiation \\
+Semantic & Repositories of artefacts & Required, but not formalised & Bioontologies, etc \\
+Semantic & Repositories w/ clear governance & Recommended & Largely self-governed repositories, if well-established may have clear governance. \\
+Semantic & Minimal metadata model for federated discovery & Kernel metadata (\protect\hyperlink{ref-Fi62cJAo}{Working Group \& Working Group, 2022}) & DCAT, ++ \\
+Semantic & Crosswalks from minimal metadata model & FDO Typing recommends referencing existing type definitions, but not as separate crosswalks & Multiple crosswalks for common metadata models, but frequently not in semantic format \\
+Semantic & Extensibility options for diciplinary metadata & Communities encouraged to establish own types & Extensible by design, domain-specific metadata may be at different granularity \\
+Semantic & Clear protocols/building blocks for federation/harvesting of artefact catalogues & Collection types not yet defined & SWORD, OAI-PMH \\
+Organisational & Interoperability-focused rules of participation recommendations & Recommended & Implied only by some communities, tendency to specialise \\
+Organisational & Usage recommendations of standardised data formats & None & None -- but common for metadata (e.g.~JSON-LD) \\
+Organisational & Usage recommendations of vocabularies & Recommended by community & Common (see \href{https://rdmkit.elixir-europe.org/metadata_management}{RDMKit}) \\
+Organisational & Usage recommendations of metadata & Recommended by community & RO-Crate, Bioschemas \\
+Organisational & Management of permanent organization names/functions & Handle owner, but unclear contact. Contact info in DOIP service provider & ROR. DCAT contacts. \\
+Legal & Standardised human and machine-readable licenses & None & \href{https://spdx.org/licenses/}{SPDX} \\
+Legal & Permissive licenses for metadata (CC0, CC-BY-4.0) & Undefined & Both CC0, CC-BY-4.0 common, e.g.~in DCAT \\
+Legal & Different licenses for different parts & Each part as separate FDO can have separate license & DCAT, RO-Crate, Named graphs for splitting metadata \\
+Legal & Mark expired/inexistent copyright & Undefined & Unclear, semantics assume copyright valid \\
+Legal & Mark orphaned data & Tombstone for deleted data, but no owner of DOIP server means FDO disappears & Frequently data and endpoint has no known maintainer, archiving in common repositories becoming common \\
+Legal & List recommended licenses & Undefined & Best practice recommendations \\
+Legal & Track license evolution for dataset & Undefined & Versioning with PAV/PROV/DCAT \\
+Legal & Policy/guidance for patent/trade secrets violation & Undefined & Undefined, legal owner may be specified \\
+Legal & GDPR compliance for personal data & Undefined & Undefined \\
+Legal & Restrict access/use if legally required & By transport protocol (undefined by FDO/DOIP) & Diverging approaches, typically landing pages w/ auth\&auth or click-thru \\
+Legal & Harmonised terms-of-use & Undefined & Undefined \\
+Legal & Alignment between EOSC and national legislation & Not applicable & Not applicable \\
+\bottomrule
+\end{longtable}
