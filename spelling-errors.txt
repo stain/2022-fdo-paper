@@ -12,7 +12,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-BioSchemas
+Bioschemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -58,9 +58,9 @@ FDOF
 FDOR
 FDO’s
 FDOs
-Findability
+findability
 findable
-FOAF
+foaf
 Freetext
 FROR
 furfill
@@ -78,7 +78,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-https
+HTTPS
 IANA
 IEC
 IETF
@@ -104,7 +104,7 @@ LDP’s
 LOD
 LPD
 Marmotta
-Metamodel
+metamodel
 Microdata
 microformats
 Micropub
@@ -117,7 +117,7 @@ NIST
 NL
 OAI
 OBO
-Occassionally
+occassionally
 ontologies
 OpenAIRE
 OpenAPI
