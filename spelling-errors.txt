@@ -32,7 +32,7 @@ CWFP
 DARIAH
 Datacite
 Dataset
-Datasets
+datasets
 DCAT
 dereferenceable
 diciplinary
@@ -53,12 +53,12 @@ examplified
 examplify
 exisiting
 Extensibility
-fdo
+FDO
 FDOF
 FDOR
 FDO’s
 FDOs
-findability
+Findability
 findable
 foaf
 Freetext
@@ -78,7 +78,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-HTTPS
+https
 IANA
 IEC
 IETF
@@ -104,7 +104,7 @@ LDP’s
 LOD
 LPD
 Marmotta
-metamodel
+Metamodel
 Microdata
 microformats
 Micropub
@@ -117,7 +117,7 @@ NIST
 NL
 OAI
 OBO
-occassionally
+Occassionally
 ontologies
 OpenAIRE
 OpenAPI
@@ -145,7 +145,7 @@ Ramnifications
 RDA’s
 RDF
 RDFa
-rdflib
+RDFLib
 RDFS
 RDMKit
 redirections
