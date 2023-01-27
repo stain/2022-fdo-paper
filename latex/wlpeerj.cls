@@ -41,16 +41,9 @@
                 labelsep=period,%
                 justification=raggedright]{caption}
                 
-\RequirePackage{natbib}
-\bibliographystyle{apalike}
-
-%
-% writeLaTeX logo
-%
-\newcommand\wllogo{%
-\renewcommand*\rmdefault{ugq}\normalfont\upshape{}write%
-\renewcommand*\rmdefault{cmr}\normalfont\upshape{\bf\LaTeX}}
-                
+%\RequirePackage{natbib}
+%\bibliographystyle{apalike}
+               
 %
 % headers and footers
 %
