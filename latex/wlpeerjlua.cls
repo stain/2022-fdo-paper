@@ -4,9 +4,12 @@
 % Created by Overleaf (writeLaTeX).
 %
 % Based on the SelfArx document class.
+% 
+% Modified to work with LuaLaTeX by Stian Soiland-Reyes
+% 2023-01-27
 %
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{wlpeerj}[18/08/2016, v1.2]
+\ProvidesClass{wlpeerjlua}[18/08/2016, v1.2]
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[english]{babel}
 

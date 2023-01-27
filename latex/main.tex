@@ -8,7 +8,7 @@
 %% version 1.1 or newer of the wlpeerj.cls file, and
 %% the corresponding author info requires v1.2
 
-\documentclass[fleqn,10pt,lineno]{wlpeerj2}
+\documentclass[fleqn,10pt,lineno]{wlpeerjlua}
 
 %% Definitions needed for pandoc's silly output
 
@@ -336,7 +336,7 @@ Based on the analysis in Table \ref{tbl:fdo-web-middleware}, we make the followi
 \begin{itemize}
 \tightlist
 \item
-  With respect to the aspect of \emph{Performance}, it is interesting to note that while the first version of DOIP (\cite{16uB3jxpa} DONA Foundation'}}) supported multiplexed channels similar to HTTP/2 (allowing concurrent transfer of several digital objects). Multiplexing was removed for the much simplified DOIP 2.0 \cite{13TcbsZF6}. Unlike DOIP 1.0, DOIP 2.0 will require a DO response to be sent back completely, as a series of segments (which again can be split the bytes of each binary \emph{element} into sized \emph{chunks}), before transmission of another DO response can start on the transport channel. It is unclear what is the purpose of splitting a binary into chunks on a channel which no longer can be multiplexed and the only property of a chunk is its size\footnote{Although it is possible with \texttt{0.DOIP/Op.Retrieve} to request only particular individual elements of an DO (e.g.~one file), unlike HTTP's \texttt{Range} request, it is not possible to select individual chunks of an element's bytestream.}.
+  With respect to the aspect of \emph{Performance}, it is interesting to note that while the first version of DOIP \cite{16uB3jxpa} supported multiplexed channels similar to HTTP/2 (allowing concurrent transfer of several digital objects). Multiplexing was removed for the much simplified DOIP 2.0 \cite{13TcbsZF6}. Unlike DOIP 1.0, DOIP 2.0 will require a DO response to be sent back completely, as a series of segments (which again can be split the bytes of each binary \emph{element} into sized \emph{chunks}), before transmission of another DO response can start on the transport channel. It is unclear what is the purpose of splitting a binary into chunks on a channel which no longer can be multiplexed and the only property of a chunk is its size\footnote{Although it is possible with \texttt{0.DOIP/Op.Retrieve} to request only particular individual elements of an DO (e.g.~one file), unlike HTTP's \texttt{Range} request, it is not possible to select individual chunks of an element's bytestream.}.
 \item
   HTTP has strong support for scalability and caching, but this mostly assumes read-operations from static resources. FDO has no view on immutability or validity of retrieved objects, but this should be taken into consideration to support large-scale usage.
 \item
