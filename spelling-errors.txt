@@ -12,7 +12,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-BioSchemas
+Bioschemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -60,7 +60,7 @@ FDO’s
 FDOs
 Findability
 findable
-foaf
+FOAF
 Freetext
 FROR
 furfill
@@ -108,7 +108,7 @@ metamodel
 Microdata
 microformats
 Micropub
-Middleware
+middleware
 middlewares
 modularity
 namespace
@@ -145,7 +145,7 @@ Ramnifications
 RDA’s
 RDF
 RDFa
-rdflib
+RDFLib
 RDFS
 RDMKit
 redirections
@@ -157,7 +157,7 @@ ResourceSync
 RO
 ROR
 runtime
-Scalability
+scalability
 scalable
 schemas
 seemlessly
