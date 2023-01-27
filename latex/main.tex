@@ -10,47 +10,20 @@
 
 \documentclass[fleqn,10pt,lineno]{wlpeerj2}
 
-%% Definitions needed for pandoc's silly output
+%% Note: This latex project needs lualatex from texlive 2022 or later.
 
+%% Definitions needed for pandoc's silly output
 \usepackage{hyperref}
 \hypersetup{
   pdflang={en-GB},
   hidelinks
 }
 
-
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+  
 \usepackage{longtable,booktabs,array}
-
-
-%% CSL definitions for pandoc's generated references
-%% https://github.com/jgm/pandoc/blob/2.19.2/data/templates/default.latex#L302
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{0.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{2em}
-\newlength{\cslentryspacingunit} % times entry-spacing
-\setlength{\cslentryspacingunit}{\parskip}
-\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
-  \setlength{\parindent}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1
-  \let\oldpar\par
-  \def\par{\hangindent=\cslhangindent\oldpar}
-  \fi
-  % set entry spacing
-  \setlength{\parskip}{#2\cslentryspacingunit}
- }%
- {}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
-
-%% END
+%% END pandoc
 
 %% STTYX2Fonts for lualatex
 % https://www.overleaf.com/learn/latex/Articles%2FOpenType-based_math_typesetting%3A_An_introduction_to_the_STIX2_OpenType_fonts
