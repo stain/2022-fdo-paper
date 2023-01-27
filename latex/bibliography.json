@@ -1722,14 +1722,13 @@
     "type": "article-journal",
     "page": "1251-1255",
     "source": "Crossref",
-    "title": "The OBO Foundry: coordinated evolution of ontologies to support biomedical data integration",
+    "title": "The OBO Foundry, coordinated evolution of ontologies to support biomedical data integration",
     "volume": "25",
     "author": [
       {
         "given": "Barry",
         "family": "Smith"
       },
-      {},
       {
         "given": "Michael",
         "family": "Ashburner"
