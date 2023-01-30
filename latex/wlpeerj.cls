@@ -41,8 +41,8 @@
                 labelsep=period,%
                 justification=raggedright]{caption}
                 
-%\RequirePackage{natbib}
-%\bibliographystyle{apalike}
+\RequirePackage{natbib}
+\bibliographystyle{apalike}
                
 %
 % headers and footers

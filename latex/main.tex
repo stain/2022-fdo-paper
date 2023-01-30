@@ -8,7 +8,7 @@
 %% version 1.1 or newer of the wlpeerj.cls file, and
 %% the corresponding author info requires v1.2
 
-\documentclass[fleqn,10pt,lineno]{wlpeerj2}
+\documentclass[fleqn,10pt,lineno]{wlpeerj}
 
 %% Note: This latex project needs lualatex from texlive 2022 or later.
 
@@ -25,34 +25,14 @@
 \usepackage{longtable,booktabs,array}
 %% END pandoc
 
-%% STTYX2Fonts for lualatex
-% https://www.overleaf.com/learn/latex/Articles%2FOpenType-based_math_typesetting%3A_An_introduction_to_the_STIX2_OpenType_fonts
-\usepackage{amsmath}
-%\usepackage{hyperref}
-\usepackage{fontspec}
-\usepackage{unicode-math}
-%\usepackage{hologo}
-%\usepackage{graphicx}
-\setmathfont{STIX2Math}[
-Extension={.otf},
-Path=./STIX2fonts/,
-Scale=1]
-\setmainfont{STIX2Text}[
-Extension={.otf},
-Path=./STIX2fonts/,
-UprightFont={*-Regular},
-BoldFont={*-Bold},
-ItalicFont={*-Italic},
-BoldItalicFont={*-BoldItalic}]
-%% END
 
 %%%% END pandoc defs
 %%% Additional packages/definitions
-\usepackage{citation-style-language}
-\cslsetup{
-style = peerj
-}
-\addbibresource{bibliography.json}
+%\usepackage{citation-style-language}
+%\cslsetup{
+%style = peerj
+%}
+%\addbibresource{bibliography.json}
 
 \usepackage{pdflscape} 
 %%% END own imports
@@ -91,7 +71,7 @@ Here goes
 \hypertarget{sec:introduction}{%
 \section*{Introduction}\label{sec:introduction}}
 
-The FAIR principles \cite{6DjakjNS} encourage sharing of scientific data with machine-readable metadata and the use of interoperable formats, and are being adapted by a wide range of research infrastructures. They have been widely recognised by the research community and policy makers as a goal to strive for. In particular, the European Open Science Cloud (\href{https://www.eosc.eu/}{EOSC}) has promoted adaptation of FAIR data sharing of data resources across electronic research infrastructures \cite{u8Cy0psL}. The EOSC Interoperability Framework \cite{aCye3KpE} puts particular emphasis on how interoperability can be achieved technically, semantically, organisationally, and legally -- laying out a vision of how data, publication, software and services can work together to form an ecosystem of rich digital objects.
+The FAIR principles \cite{wilkinson_fair_2016} and \cite{working_group_doip_2022} and \cite{noauthor_info_nodate} encourage sharing of scientific data with machine-readable metadata and the use of interoperable formats, and are being adapted by a wide range of research infrastructures. They have been widely recognised by the research community and policy makers as a goal to strive for. In particular, the European Open Science Cloud (\href{https://www.eosc.eu/}{EOSC}) has promoted adaptation of FAIR data sharing of data resources across electronic research infrastructures \cite{u8Cy0psL}. The EOSC Interoperability Framework \cite{aCye3KpE} puts particular emphasis on how interoperability can be achieved technically, semantically, organisationally, and legally -- laying out a vision of how data, publication, software and services can work together to form an ecosystem of rich digital objects.
 
 Specifically, the EOSC Interoperability framework highlights the emerging FAIR Digital Object \cite{IHLT6hye} (FDO) concept as a possible foundation for building a semantically interoperable ecosystem to fully realise the FAIR principles beyond individual repositories and infrastructures. The FDO approach has great potential, as it proposes strong requirements for identifiers, types, access and formalises interactive operations on objects.
 
@@ -426,7 +406,7 @@ Such a combination of efforts will utillise both the benefits of mature Semantic
 
 So long and thanks for all the fish.
 
-%%\bibliography{sample}
-\printbibliography
+\bibliography{bibliography}
+%\printbibliography
 
 \end{document}
