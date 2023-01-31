@@ -1,9 +1,10 @@
+\begin{landscape}
 \begin{longtable}[]{@{}
-  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.3676}}
-  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1544}}
-  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1544}}
-  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1618}}
-  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1618}}@{}}
+  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.25}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.25}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2}}@{}}
 \caption{Checking FDO guidelines \cite{RwvirqWg, yygVPoL0} against its current implementations as DOIP \cite{13TcbsZF6} and Linked Data Platform (LDP) \cite{7szz7dwO}, with suggestions for required additions.
 \label{tbl:fdo-checks}}\tabularnewline
 \toprule
@@ -51,9 +52,10 @@ FDOF5: \emph{Interface: operation by PID} & Extended operations use PID, but ``p
 FDOF6: \emph{CRUD operations + extensions} & \texttt{0.DOIP/Op.Create}, \texttt{Op.Retrieve}, \texttt{Op.Update}, \texttt{Op.Delete} but also \texttt{0.DOIP/Op.Search}. & Document & \texttt{PUT}, \texttt{GET}, \texttt{POST}, \texttt{DELETE}, \texttt{PATCH}, \texttt{HEAD} -- extension operations (e.g.~WebDAV \texttt{COPY}) not used, resource patterns \cite{i9Ang0rM} are used instead. & Document how operation resources can be discovered from an LPD container. Document search API. \\
 FDOF7: \emph{FDOF Types related to operations} & Not yet formalised, by DOIP discoverable on a given FDO rather than type. PR-TypingFDOs leaves this open. & Add explicit relation between type and operations & \texttt{OPTIONS} per LDP Resource, but not by type. Common types (\texttt{ldp:Resource}, \texttt{ldp:Container}) indicate LDP support, but are not required. & Always make LDP types explicit in FDO profile. \\
 FDOF8: \emph{Metadata as FDO, semantic assertions} & DOIP includes all metadata in PID Record. Separate Metadata FDO need custom property. & Specify a \texttt{0.FDO/metadata} or similar to point to Metadata FDOs. & Assertions are always with semantics, using RDF vocabularies. Unspecified how to find additional metadata resources, \texttt{rdfs:seeAlso} is common. & Use FAIR Signposting \texttt{describedby} link relation to additional metadata PIDs \\
-FDOF9: \emph{Different metadata levels} & Defines open-ended ``Response Attributes'' without namespaces, but mandated as ``None'' for all CRUD operations. Metadata would need to be bundled within custom FDO types/attributes. Unclear how levels are separated within single FDO representation (need FDOF8?). & Declare which metadata are expected within response attribute or within FDO object. Require PIDs for custom attributes. Define how alternate metadata levels can be represented separately. & Undefined how to handle multiple metadata granularities or domains, alternative LDP containers can present different views on same stored objects. & Define how to navigate to alternate views and their semantic implications, e.g.~\texttt{owl:sameAs} \\
+FDOF9: \emph{Different metadata levels} & Defines open-ended ``Response Attributes'' without namespaces, but mandated as ``None'' for all CRUD operations. Metadata would need to be bundled within custom FDO types or attributes. Unclear how levels are separated within single FDO representation (need FDOF8?). & Declare which metadata are expected within response attribute or within FDO object. Require PIDs for custom attributes. Define how alternate metadata levels can be represented separately. & Undefined how to handle multiple metadata granularities or domains, alternative LDP containers can present different views on same stored objects. & Define how to navigate to alternate views and their semantic implications, e.g.~\texttt{owl:sameAs} \\
 FDOF10: \emph{Metadata schemas by community} & Metadata schemas are in practice managed on single CORDA server as local types, using JSON Schema. & Require types to be FDOs with registered PIDs, implement shared types. & Plethora of existing RDF vocabularies/ontologies managed by larger communities, e.g.~\href{https://obofoundry.org/}{OBO Foundry} \cite{CNP39tah} & Rather document better how individual ad-hoc schemas can be started for prototypes. \\
 FDOF11: \emph{FDO collections w/ semantic relations} & Collection type undefined by DOIP. Informal use of \texttt{HAS\_PARTS} Handle attribute (e.g. \cite{6LvydTsC}). & & LDP Containers required by specification, also user-created (eg. \texttt{BasicContainer}). & Clarify relation to other collections like DCAT 3 \cite{1EW4hLN8U}, \href{https://schema.org/Dataset}{Schema.org Dataset}, OAI-ORE \cite{gtGuSevK} \\
 FDOF12: \emph{Deleted FDO preserve PID w/ tombstone} & Tombstone for deleted resource undefined by DOIP. \texttt{0.DOIP/Status.104} status code does not distinguish ``Not Found'' or ``Gone'' & Formalise tombstone requirements with new FDO type & \texttt{410\ Gone} recommended, but \texttt{404\ Not\ Found} common. No requirement for tombstone serialisation & Formalise tombstone requirements and serialisation \\
 \bottomrule
 \end{longtable}
+\end{landscape}
