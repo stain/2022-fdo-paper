@@ -41,6 +41,8 @@
 \usepackage[autostyle]{csquotes}
 \usepackage[backend=biber,style=authoryear]{biblatex}
 \addbibresource{bibliography.bib}
+\DeclareFieldFormat{doi}{%
+  \url{https://doi.org/#1}}
 
 %%% END own imports
 
@@ -64,15 +66,6 @@ FAIR Digital Object is an emerging concept from EOSC. This is important. Worthwi
 \flushbottom
 \maketitle
 \thispagestyle{empty}
-
-\section*{Introduction}
-Hello
-
-
-\subsection*{About PeerJ}
-
-
-Here goes
 
 \hypertarget{sec:introduction}{%
 \section*{Introduction}\label{sec:introduction}}
