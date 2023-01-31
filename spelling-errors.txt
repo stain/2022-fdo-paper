@@ -12,7 +12,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-BioSchemas
+Bioschemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -32,7 +32,7 @@ CWFP
 DARIAH
 Datacite
 dataset
-datasets
+Datasets
 DCAT
 dereferenceable
 diciplinary
@@ -58,7 +58,7 @@ FDOF
 FDOR
 FDO’s
 FDOs
-Findability
+findability
 findable
 FOAF
 Freetext
@@ -98,7 +98,7 @@ js
 JSON
 JSWS
 kickstarted
-LD
+ld
 LDP
 LDP’s
 LOD
@@ -108,7 +108,7 @@ metamodel
 Microdata
 microformats
 Micropub
-Middleware
+middleware
 middlewares
 Modularity
 namespace
@@ -118,7 +118,7 @@ NL
 OAI
 OBO
 Occassionally
-ontologies
+Ontologies
 OpenAIRE
 OpenAPI
 OpenLink
