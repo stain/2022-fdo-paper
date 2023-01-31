@@ -25,13 +25,13 @@ centric
 ChEMBL
 consumptions
 CORDA
-Cordra
+CORDRA
 COVID
 CSV
 CWFP
 DARIAH
 Datacite
-dataset
+Dataset
 datasets
 DCAT
 dereferenceable
@@ -60,7 +60,7 @@ FDO’s
 FDOs
 Findability
 findable
-FOAF
+foaf
 Freetext
 FROR
 furfill
@@ -98,7 +98,7 @@ js
 JSON
 JSWS
 kickstarted
-ld
+LD
 LDP
 LDP’s
 LOD
@@ -117,7 +117,7 @@ NIST
 NL
 OAI
 OBO
-Occassionally
+occassionally
 ontologies
 OpenAIRE
 OpenAPI
@@ -138,7 +138,7 @@ PMH
 Polymorphism
 practictioners
 pre
-programmatically
+Programmatically
 proto
 QUIC
 Ramnifications
@@ -157,7 +157,7 @@ ResourceSync
 RO
 ROR
 runtime
-scalability
+Scalability
 scalable
 schemas
 seemlessly
