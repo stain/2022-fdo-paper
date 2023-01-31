@@ -12,7 +12,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-BioSchemas
+Bioschemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -58,7 +58,7 @@ FDOF
 FDOR
 FDO’s
 FDOs
-Findability
+findability
 findable
 foaf
 Freetext
@@ -78,7 +78,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-https
+HTTPS
 IANA
 IEC
 IETF
@@ -117,8 +117,8 @@ NIST
 NL
 OAI
 OBO
-Occassionally
-Ontologies
+occassionally
+ontologies
 OpenAIRE
 OpenAPI
 OpenLink
@@ -138,14 +138,14 @@ PMH
 Polymorphism
 practictioners
 pre
-Programmatically
+programmatically
 proto
 QUIC
 Ramnifications
 RDA’s
 RDF
 RDFa
-RDFLib
+rdflib
 RDFS
 RDMKit
 redirections
