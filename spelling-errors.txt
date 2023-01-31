@@ -58,7 +58,7 @@ FDOF
 FDOR
 FDO’s
 FDOs
-Findability
+findability
 findable
 foaf
 Freetext
@@ -98,13 +98,13 @@ js
 JSON
 JSWS
 kickstarted
-LD
+ld
 LDP
 LDP’s
 LOD
 LPD
 Marmotta
-metamodel
+Metamodel
 Microdata
 microformats
 Micropub
@@ -132,7 +132,7 @@ PDFs
 persistant
 pgroth
 PHACTS
-PID
+pid
 PIDs
 PMH
 Polymorphism
