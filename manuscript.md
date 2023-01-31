@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/bfaaab005d18e6d1a45e17f5adbda0cf18649697/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/bfaaab005d18e6d1a45e17f5adbda0cf18649697/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/bfaaab005d18e6d1a45e17f5adbda0cf18649697/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/a78fcc264323c8aac5b5620d946ef6d07686c498/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/a78fcc264323c8aac5b5620d946ef6d07686c498/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/a78fcc264323c8aac5b5620d946ef6d07686c498/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,9 +75,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/bfaaab005d18e6d1a45e17f5adbda0cf18649697/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/a78fcc264323c8aac5b5620d946ef6d07686c498/))
 was automatically generated
-from [stain/2022-fdo-paper@bfaaab0](https://github.com/stain/2022-fdo-paper/tree/bfaaab005d18e6d1a45e17f5adbda0cf18649697)
+from [stain/2022-fdo-paper@a78fcc2](https://github.com/stain/2022-fdo-paper/tree/a78fcc264323c8aac5b5620d946ef6d07686c498)
 on January 31, 2023.
 </em></small>
 
