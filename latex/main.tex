@@ -90,6 +90,30 @@ In the following, we discuss the related work with respect to FAIR Digital Objec
 \hypertarget{sec:fdo}{%
 \subsection*{FAIR Digital Object}\label{sec:fdo}}
 
+The concept of \textbf{FAIR Digital Objects} \autocite{schultesFAIRPrinciplesDigital2019a} has been introduced as way to expose research data as active objects that conform to the FAIR principles \autocite{wilkinsonFAIRGuidingPrinciples2016e}. This builds on the \emph{Digital Object} (DO) concept \autocite{kahnFrameworkDistributedDigital2006b}, first introduced in 1995 \autocite{kahnFrameworkDistributedDigital1995a} as a system of \emph{repositories} containing \emph{digital objects} identified by \emph{handles} and described by \emph{metadata} which may have references to other handles. DO was the inspiration for the ITU X.1255 framework \autocite{x1255FrameworkDiscovery} which introduced an abstract \emph{Digital Entity Interface Protocol} for managing such objects programmatically, first realised by the Digital Object Interface Protocol (DOIP) v1 \autocite{DigitalObjectInterface}.
+
+In brief, the structure of a FAIR Digital Object (FDO) is to, given a \emph{persistent identifier} (PID) such as a DOI, resolve to a \emph{PID Record} that gives the object a \emph{type} along with a mechanism to retrieve its \emph{bit sequences}, \emph{metadata} and references to further programmatic \emph{operations}. The type of an FDO (itself an FDO) defines attributes to semantically describe and relate such FDOs to other concepts (typically other FDOs referenced by PIDs). The premise of systematically building an ecosystem of such digital objects is to give researchers a way to organise complex digital entities, associated with identifiers, metadata, and supporting automated processing \autocite{wittenburgDigitalObjectsDrivers2019a}.
+
+Recently, FDOs have been recognised by the European Open Science Cloud (\href{https://eosc.eu/}{EOSC}) as a suggested part of its Interoperability Framework \autocite{corchoEOSCInteroperabilityFramework2021b}, in particular for deploying active and interoperable FAIR resources that are \emph{machine actionable}. Development of the FDO concept continued within Research Data Alliance (\href{https://www.rd-alliance.org/}{RDA}) groups and EOSC projects like \href{https://www.go-fair.org/}{GO-FAIR}, concluding with a set of guidelines for implementing FDO \autocite{boninoFAIRDigitalObject}. The \href{https://fairdo.org/}{FAIR Digital Objects Forum} has since taken over the maturing of FDO through focused working groups which have currently drafted several more detailed specification documents (see section \ref{sec:next-step-fdo}).
+
+\hypertarget{fdo-approaches}{%
+\subsubsection*{FDO approaches}\label{fdo-approaches}}
+
+FDO is an evolving concept. A set of FDO Demonstrators \autocite{wittenburgFAIRDigitalObject2022b} highlight how current adapters are approaching implementations of FDO from different angles:
+
+\begin{itemize}
+\tightlist
+\item
+  Building on the Digital Object concept, using the simplified DOIP v2 specification \autocite{foundationDigitalObjectInterface}, which detail how to exchange JSON objects through a text-based protocol\footnote{For a brief introduction to DOIP 2.0, see \autocite{DOIPExamplesCordraa}} (usually TCP/IP over TLS). The main DOIP operations are retrieving, creating and updating digital objects. These are mostly realised using the reference implementation \href{https://cordra.org/}{Cordra}. FDO types are registered in the local Cordra instance, where they are specified using JSON Schema \autocite{Draftbhuttonjsonschema00} and PIDs are assigned using the Handle system. Several type registries have been established.
+\item
+  Following the traditional Linked Data approach, but using the DOIP protocol, e.g.~using JSON-LD and schema.org within DOIP (NIST for material science).
+\item
+  Approaching the FDO principles from existing Linked Data practices on the Web (e.g.~WorkflowHub use of RO-Crate and schema.org).
+\end{itemize}
+
+From this it becomes apparent that there is a potentially large overlap between the goals and approaches of FAIR Digital Objects and Linked Data, which we'll cover in the section \ref{sec:ld}.
+
+
 \hypertarget{sec:next-step-fdo}{%
 \subsubsection*{Next steps for FDO}\label{sec:next-step-fdo}}
 
@@ -121,28 +145,6 @@ The \textbf{Machine actionability} \autocite{fdo-MachineActionDef} sets out to d
 
 It is worth pointing out at that, except for the DOIP endorsement, all of these documents are abstract, in the sense that they permit any technical implementation of FDO, if used according to the recommendations.
 
-The concept of \textbf{FAIR Digital Objects} \autocite{schultesFAIRPrinciplesDigital2019a} has been introduced as way to expose research data as active objects that conform to the FAIR principles \autocite{wilkinsonFAIRGuidingPrinciples2016e}. This builds on the \emph{Digital Object} (DO) concept \autocite{kahnFrameworkDistributedDigital2006b}, first introduced in 1995 \autocite{kahnFrameworkDistributedDigital1995a} as a system of \emph{repositories} containing \emph{digital objects} identified by \emph{handles} and described by \emph{metadata} which may have references to other handles. DO was the inspiration for the ITU X.1255 framework \autocite{x1255FrameworkDiscovery} which introduced an abstract \emph{Digital Entity Interface Protocol} for managing such objects programmatically, first realised by the Digital Object Interface Protocol (DOIP) v1 \autocite{DigitalObjectInterface}.
-
-In brief, the structure of a FAIR Digital Object (FDO) is to, given a \emph{persistent identifier} (PID) such as a DOI, resolve to a \emph{PID Record} that gives the object a \emph{type} along with a mechanism to retrieve its \emph{bit sequences}, \emph{metadata} and references to further programmatic \emph{operations}. The type of an FDO (itself an FDO) defines attributes to semantically describe and relate such FDOs to other concepts (typically other FDOs referenced by PIDs). The premise of systematically building an ecosystem of such digital objects is to give researchers a way to organise complex digital entities, associated with identifiers, metadata, and supporting automated processing \autocite{wittenburgDigitalObjectsDrivers2019a}.
-
-Recently, FDOs have been recognised by the European Open Science Cloud (\href{https://eosc.eu/}{EOSC}) as a suggested part of its Interoperability Framework \autocite{corchoEOSCInteroperabilityFramework2021b}, in particular for deploying active and interoperable FAIR resources that are \emph{machine actionable}. Development of the FDO concept continued within Research Data Alliance (\href{https://www.rd-alliance.org/}{RDA}) groups and EOSC projects like \href{https://www.go-fair.org/}{GO-FAIR}, concluding with a set of guidelines for implementing FDO \autocite{boninoFAIRDigitalObject}. The \href{https://fairdo.org/}{FAIR Digital Objects Forum} has since taken over the maturing of FDO through focused working groups which have currently drafted several more detailed specification documents (see section \ref{sec:next-step-fdo}).
-
-\hypertarget{fdo-approaches}{%
-\subsubsection*{FDO approaches}\label{fdo-approaches}}
-
-FDO is an evolving concept. A set of FDO Demonstrators \cite{jRWurmQc} highlight how current adapters are approaching implementations of FDO from different angles:
-
-\begin{itemize}
-\tightlist
-\item
-  Building on the Digital Object concept, using the simplified DOIP v2 specification \cite{13TcbsZF6}, which detail how to exchange JSON objects through a text-based protocol\footnote{For a brief introduction to DOIP 2.0, see \cite{xuQKRRx5}} (usually TCP/IP over TLS). The main DOIP operations are retrieving, creating and updating digital objects. These are mostly realised using the reference implementation \href{https://cordra.org/}{Cordra}. FDO types are registered in the local Cordra instance, where they are specified using JSON Schema \cite{15EZ2D0Rm} and PIDs are assigned using the Handle system. Several type registries have been established.
-\item
-  Following the traditional Linked Data approach, but using the DOIP protocol, e.g.~using JSON-LD and schema.org within DOIP (NIST for material science).
-\item
-  Approaching the FDO principles from existing Linked Data practices on the Web (e.g.~WorkflowHub use of RO-Crate and schema.org).
-\end{itemize}
-
-From this it becomes apparent that there is a potentially large overlap between the goals and approaches of FAIR Digital Objects and Linked Data, which we'll cover in the section \ref{sec:ld}.
 
 \hypertarget{sec:ld}{%
 \subsection*{From the Semantic Web to Linked Data}\label{sec:ld}}
