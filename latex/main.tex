@@ -36,6 +36,9 @@
 
 \usepackage{pdflscape} 
 
+% Make tt font not so massive
+\renewcommand*\ttdefault{cmvtt}
+
 % https://www.overleaf.com/latex/examples/bibliographies-with-biber-and-biblatex/ccrkczqwnywf
 % use biblatex/biber as natbib is from 1990s and have no DOIs
 \usepackage[autostyle]{csquotes}
@@ -43,6 +46,7 @@
 \addbibresource{bibliography.bib}
 \DeclareFieldFormat{doi}{%
   \url{https://doi.org/#1}}
+%\urlstyle{tt}
 
 %%% END own imports
 
@@ -408,6 +412,7 @@ Such a combination of efforts will utillise both the benefits of mature Semantic
 So long and thanks for all the fish.
 
 %\bibliography{bibliography}
+\def\UrlFont{\small}
 \printbibliography
 
 \end{document}
