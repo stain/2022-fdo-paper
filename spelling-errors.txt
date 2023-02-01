@@ -25,7 +25,7 @@ centric
 ChEMBL
 consumptions
 CORDA
-Cordra
+CORDRA
 COVID
 CSV
 CWFP
@@ -53,14 +53,14 @@ examplified
 examplify
 exisiting
 Extensibility
-fdo
+FDO
 FDOF
 FDOR
 FDO’s
 FDOs
-findability
+Findability
 findable
-FOAF
+foaf
 Freetext
 FROR
 furfill
@@ -104,7 +104,7 @@ LDP’s
 LOD
 LPD
 Marmotta
-Metamodel
+metamodel
 Microdata
 microformats
 Micropub
@@ -117,8 +117,8 @@ NIST
 NL
 OAI
 OBO
-Occassionally
-Ontologies
+occassionally
+ontologies
 OpenAIRE
 OpenAPI
 OpenLink
@@ -145,7 +145,7 @@ Ramnifications
 RDA’s
 RDF
 RDFa
-rdflib
+RDFLib
 RDFS
 RDMKit
 redirections
