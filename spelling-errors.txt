@@ -25,14 +25,14 @@ centric
 ChEMBL
 consumptions
 CORDA
-CORDRA
+Cordra
 COVID
 CSV
 CWFP
 DARIAH
 Datacite
 dataset
-Datasets
+datasets
 DCAT
 dereferenceable
 diciplinary
@@ -58,9 +58,9 @@ FDOF
 FDOR
 FDO’s
 FDOs
-Findability
+findability
 findable
-FOAF
+foaf
 Freetext
 FROR
 furfill
@@ -78,7 +78,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-https
+HTTPS
 IANA
 IEC
 IETF
@@ -108,7 +108,7 @@ metamodel
 Microdata
 microformats
 Micropub
-Middleware
+middleware
 middlewares
 modularity
 namespace
@@ -117,7 +117,7 @@ NIST
 NL
 OAI
 OBO
-occassionally
+Occassionally
 ontologies
 OpenAIRE
 OpenAPI
@@ -138,7 +138,7 @@ PMH
 Polymorphism
 practictioners
 pre
-Programmatically
+programmatically
 proto
 QUIC
 Ramnifications
@@ -157,7 +157,7 @@ ResourceSync
 RO
 ROR
 runtime
-Scalability
+scalability
 scalable
 schemas
 seemlessly
