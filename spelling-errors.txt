@@ -12,7 +12,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-BioSchemas
+Bioschemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -25,7 +25,7 @@ centric
 ChEMBL
 consumptions
 CORDA
-Cordra
+CORDRA
 COVID
 CSV
 CWFP
@@ -53,12 +53,12 @@ examplified
 examplify
 exisiting
 Extensibility
-FDO
+fdo
 FDOF
 FDOR
 FDO’s
 FDOs
-findability
+Findability
 findable
 foaf
 Freetext
@@ -78,7 +78,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-https
+HTTPS
 IANA
 IEC
 IETF
@@ -98,13 +98,13 @@ js
 JSON
 JSWS
 kickstarted
-ld
+LD
 LDP
 LDP’s
 LOD
 LPD
 Marmotta
-Metamodel
+metamodel
 Microdata
 microformats
 Micropub
@@ -132,7 +132,7 @@ PDFs
 persistant
 pgroth
 PHACTS
-pid
+PID
 PIDs
 PMH
 Polymorphism
@@ -145,7 +145,7 @@ Ramnifications
 RDA’s
 RDF
 RDFa
-RDFLib
+rdflib
 RDFS
 RDMKit
 redirections
