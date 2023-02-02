@@ -53,12 +53,12 @@ examplified
 examplify
 exisiting
 Extensibility
-fdo
+FDO
 FDOF
 FDOR
 FDO’s
 FDOs
-findability
+Findability
 findable
 foaf
 Freetext
@@ -138,7 +138,7 @@ PMH
 Polymorphism
 practictioners
 pre
-programmatically
+Programmatically
 proto
 QUIC
 Ramnifications
