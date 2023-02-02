@@ -41,7 +41,7 @@ Linked Data examples
 \midrule
 \endhead
 RDA-F1-01M & Metadata is identified by a persistent identifier & FDOF4 & Optional \emph{Metadata FDO} w/separate PID & Content-negotiation to URL, not required to be PID & Metadata typically don't have own PID \\
-RDA-F1-01D & Data is identified by a persistent identifier & FDOF1 & PIDs required (FDOF1). Handle, DOI. & FDOF-IR (Identifier Record). PID can be any URI & ``Cool'' URIs {[}{`Hypertext Style: Cool URIs don't change.'};\{https://www.w3.org/TR/cooluris/\}{]}, PURL services incl.~\texttt{purl.org}, \texttt{w3id.org} \\
+RDA-F1-01D & Data is identified by a persistent identifier & FDOF1 & PIDs required (FDOF1). Handle, DOI. & FDOF-IR (Identifier Record). PID can be any URI & ``Cool'' URIs \autocite{berners-lee-cool-uris}, PURL services incl.~\texttt{purl.org}, \texttt{w3id.org} \\
 RDA-F1-02M & Metadata is identified by a globally unique identifier & FDOR4 FDOF8 & Optional \emph{Metadata FDO}, unspecified how to indicate & Content-negotiation to URL & Not required, content-negotiation can redirect to URL or \texttt{Content-Location}. FAIR Signposting. \\
 RDA-F1-02D & Data is identified by a globally unique identifier & FDOF1 & All FDOs have PIDs (FDOR1), DOIP uses Handle system & FDOF-IR (Identifier Record) & Always accessed by URL \\
 RDA-F2-01M & Rich metadata is provided to allow discovery & FDOF2 FDOF4 FDOF8 FDOF9 & FDO has key-value metadata. Unclear how to link to additional metadata. & FDOF-IR links to multiple metadata records & RDF-based metadata by content negotiation or FAIR Signposting. Embedded in landing page (RDFa). \\
