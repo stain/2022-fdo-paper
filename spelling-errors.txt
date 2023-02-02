@@ -25,14 +25,14 @@ centric
 ChEMBL
 consumptions
 CORDA
-Cordra
+CORDRA
 COVID
 CSV
 CWFP
 DARIAH
 Datacite
-Dataset
-datasets
+dataset
+Datasets
 DCAT
 dereferenceable
 diciplinary
@@ -58,9 +58,9 @@ FDOF
 FDOR
 FDO’s
 FDOs
-Findability
+findability
 findable
-foaf
+FOAF
 Freetext
 FROR
 furfill
@@ -98,7 +98,7 @@ js
 JSON
 JSWS
 kickstarted
-LD
+ld
 LDP
 LDP’s
 LOD
@@ -110,7 +110,7 @@ microformats
 Micropub
 middleware
 middlewares
-modularity
+Modularity
 namespace
 namespaces
 NIST
@@ -145,7 +145,7 @@ Ramnifications
 RDA’s
 RDF
 RDFa
-RDFLib
+rdflib
 RDFS
 RDMKit
 redirections
