@@ -2490,14 +2490,14 @@
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-sciwheel.bib\nstandard_id: doi:10.1145/3106237.3121282"
   },
   {
-    "publisher": "MIT Press - Journals",
+    "publisher": "MIT Press",
     "issue": "2",
-    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>A key limiting factor in organising and using information from physical specimens curated in natural science collections is making that information computable, with institutional digitization tending to focus more on imaging the specimens themselves than on efficiently capturing computable data about them. Label data are traditionally manually transcribed today with high cost and low throughput, rendering such a task constrained for many collection-holding institutions at current funding levels. We show how computer vision, optical character recognition, handwriting recognition, named entity recognition and language translation technologies can be implemented into canonical workflow component libraries with findable, accessible, interoperable, and reusable (FAIR) characteristics. These libraries are being developed in a cloud-based workflow platform—the ‘Specimen Data Refinery’ (SDR)—founded on Galaxy workflow engine, Common Workflow Language, Research Object Crates (RO-Crate) and WorkflowHub technologies. The SDR can be applied to specimens’ labels and other artefacts, offering the prospect of greatly accelerated and more accurate data capture in computable form. Two kinds of FAIR Digital Objects (FDO) are created by packaging outputs of SDR workflows and workflow components as digital objects with metadata, a persistent identifier, and a specific type definition. The first kind of FDO are computable Digital Specimen (DS) objects that can be consumed/produced by workflows, and other applications. A single DS is the input data structure submitted to a workflow that is modified by each workflow component in turn to produce a refined DS at the end. The Specimen Data Refinery provides a library of such components that can be used individually, or in series. To cofunction, each library component describes the fields it requires from the DS and the fields it will in turn populate or enrich. The second kind of FDO, RO-Crates gather and archive the diverse set of digital and real-world resources, configurations, and actions (the provenance) contributing to a unit of research work, allowing that work to be faithfully recorded and reproduced. Here we describe the Specimen Data Refinery with its motivating requirements, focusing on what is essential in the creation of canonical workflow component libraries and its conformance with the requirements of an emerging FDO Core Specification being developed by the FDO Forum.</jats:p>",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>A key limiting factor in organising and using information from physical specimens curated in natural science collections is making that information computable, with institutional digitization tending to focus more on imaging the specimens themselves than on efficiently capturing computable data about them. Label data are traditionally manually transcribed today with high cost and low throughput, rendering such a task constrained for many collection-holding institutions at current funding levels. We show how computer vision, optical character recognition, handwriting recognition, named entity recognition and language translation technologies can be implemented into canonical workflow component libraries with findable, accessible, interoperable, and reusable (FAIR) characteristics. These libraries are being developed in a cloud-based workflow platform—the ‘Specimen Data Refinery’ (SDR)—founded on Galaxy workflow engine, Common Workflow Language, Research Object Crates (RO-Crate) and WorkflowHub technologies. The SDR can be applied to specimens’ labels and other artefacts, offering the prospect of greatly accelerated and more accurate data capture in computable form. Two kinds of FAIR Digital Objects (FDO) are created by packaging outputs of SDR workflows and workflow components as digital objects with metadata, a persistent identifier, and a specific type definition. The first kind of FDO are computable Digital Specimen (DS) objects that can be consumed/produced by workflows, and other applications. A single DS is the input data structure submitted to a workflow that is modified by each workflow component in turn to produce a refined DS at the end. The Specimen Data Refinery provides a library of such components that can be used individually, or in series. To cofunction, each library component describes the fields it requires from the DS and the fields it will in turn populate or enrich. The second kind of FDO, RO-Crates gather and archive the diverse set of digital and real-world resources, configurations, and actions (the provenance) contributing to a unit of research work, allowing that work to be faithfully recorded and reproduced. Here we describe the Specimen Data Refinery with its motivating requirements, focusing on what is essential in the creation of canonical workflow component libraries and its conformance with the requirements of an emerging FDO Core Specification being developed by the FDO Forum.</jats:p>",
     "DOI": "10.1162/dint_a_00134",
     "type": "article-journal",
     "page": "320-341",
     "source": "Crossref",
-    "title": "The Specimen Data Refinery: A Canonical Workflow Framework and FAIR\n                    Digital Object Approach to Speeding up Digital Mobilisation of Natural History\n                    Collections",
+    "title": "The Specimen Data Refinery: A Canonical Workflow Framework and FAIR Digital Object Approach to Speeding up Digital Mobilisation of Natural History Collections",
     "volume": "4",
     "author": [
       {
@@ -4700,8 +4700,7 @@
     "URL": "http://blog.schema.org/2014/06/introducing-role.html",
     "author": [
       {
-        "family": "Unknown",
-        "given": ""
+        "literal": "Unknown"
       }
     ],
     "accessed": {
@@ -4709,7 +4708,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -4727,7 +4726,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -4752,7 +4751,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -4803,7 +4802,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -4819,7 +4818,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -4851,7 +4850,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -5031,7 +5030,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -5156,7 +5155,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -5189,8 +5188,7 @@
     "URL": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design",
     "author": [
       {
-        "family": "martinekuan",
-        "given": ""
+        "literal": "martinekuan"
       }
     ],
     "accessed": {
@@ -5198,7 +5196,16 @@
         [
           "2023",
           2,
-          3
+          16
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          "2022",
+          12,
+          16
         ]
       ]
     },
@@ -5247,7 +5254,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -5299,7 +5306,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -5308,14 +5315,26 @@
   {
     "id": "xVJMmGVr",
     "type": "webpage",
-    "title": "Licenses & Standards | Open Source Initiative",
-    "URL": "https://opensource.org/licenses",
+    "abstract": "OSI Approved Licenses Open source licenses are licenses that comply with the Open Source Definition – in brief, they allow software to be freely used, modified, and shared. To be approved by the Op…",
+    "container-title": "Open Source Initiative",
+    "language": "en-US",
+    "title": "Licenses",
+    "URL": "https://opensource.org/licenses/",
     "accessed": {
       "date-parts": [
         [
           "2023",
           2,
-          3
+          16
+        ]
+      ]
+    },
+    "issued": {
+      "date-parts": [
+        [
+          "2022",
+          9,
+          16
         ]
       ]
     },
@@ -5537,7 +5556,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -5560,32 +5579,22 @@
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: url:https://www.cordra.org/documentation/api/doip.html\nLoaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references-manubot.yaml\noriginal_id: xuQKRRx5"
   },
   {
-    "id": "68fzID2k",
-    "type": "webpage",
-    "title": "DOI Handbook - Resolution",
     "URL": "https://www.doi.org/doi_handbook/3_Resolution.html",
-    "accessed": {
-      "date-parts": [
-        [
-          "2023",
-          2,
-          3
-        ]
-      ]
-    },
+    "type": "webpage",
+    "id": "68fzID2k",
     "note": "This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard_id).\nstandard_id: url:https://www.doi.org/doi_handbook/3_Resolution.html"
   },
   {
     "id": "1H9iQhQYq",
     "type": "webpage",
-    "title": "DOI Resolution Documentation",
-    "URL": "https://www.doi.org/factsheets/DOIProxy.html",
+    "title": "DOI® Resolution Documentation",
+    "URL": "https://www.doi.org/the-identifier/resources/factsheets/doi-resolution-documentation",
     "accessed": {
       "date-parts": [
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -5618,7 +5627,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -5634,7 +5643,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -5651,8 +5660,7 @@
     "URL": "https://www.iso.org/standard/75163.html",
     "author": [
       {
-        "family": "14:00-17:00",
-        "given": ""
+        "literal": "14:00-17:00"
       }
     ],
     "accessed": {
@@ -5660,7 +5668,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -5748,7 +5756,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -5828,7 +5836,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -5845,7 +5853,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -5862,7 +5870,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },
@@ -5911,7 +5919,7 @@
         [
           "2023",
           2,
-          3
+          16
         ]
       ]
     },

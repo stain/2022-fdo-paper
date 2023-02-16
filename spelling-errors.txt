@@ -31,7 +31,7 @@ CSV
 CWFP
 DARIAH
 Datacite
-Dataset
+dataset
 datasets
 DCAT
 dereferenceable
@@ -53,14 +53,14 @@ examplified
 examplify
 exisiting
 Extensibility
-FDO
+fdo
 FDOF
 FDOR
 FDO’s
 FDOs
 Findability
 findable
-FOAF
+foaf
 Freetext
 FROR
 furfill
@@ -98,7 +98,7 @@ js
 JSON
 JSWS
 kickstarted
-LD
+ld
 LDP
 LDP’s
 LOD
@@ -118,7 +118,7 @@ NL
 OAI
 OBO
 occassionally
-Ontologies
+ontologies
 OpenAIRE
 OpenAPI
 OpenLink
@@ -138,7 +138,7 @@ PMH
 Polymorphism
 practictioners
 pre
-Programmatically
+programmatically
 proto
 QUIC
 Ramnifications
