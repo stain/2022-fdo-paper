@@ -7,9 +7,9 @@
 \toprule
 \begin{minipage}[b]{\linewidth}\centering
 Metamodel concept
-\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\end{minipage}	& \begin{minipage}[b]{\linewidth}\centering
 FDO/DOIP concept
-\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\end{minipage}	& \begin{minipage}[b]{\linewidth}\centering
 Web/HTTP concept
 \end{minipage} \\
 \midrule
@@ -17,23 +17,25 @@ Web/HTTP concept
 \toprule
 \begin{minipage}[b]{\linewidth}\centering
 Metamodel concept
-\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\end{minipage}	& \begin{minipage}[b]{\linewidth}\centering
 FDO/DOIP concept
-\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\end{minipage}	& \begin{minipage}[b]{\linewidth}\centering
 Web/HTTP concept
 \end{minipage} \\
 \midrule
 \endhead
-Resource & FDO/DO & Resource \\
-Service & DOIP service & Server/endpoint \\
-Transaction & (not supported) & Conditional requests, \texttt{409\ Conflict} \\
-Process & Extended operations & (primarily stateless), \texttt{100\ Continue}, \texttt{202\ Accepted} \\
-Operation & DOIP Operation & Method, query parameters \\
-Request & DOIP Request & Request \\
-Response & DOIP Response & Response \\
-Message & Segment, \texttt{requestId} & Message, Representation \\
-Channel & DOIP Transport protocol (e.g.~TCP/IP, TLS). JSWS signatures. & TCP/IP, TLS, UDP \\
-Protocol & DOIP 2.0, ++ & HTTP/1.1, HTTP/2, HTTP/3 \\
-Link & PID/Handle & URL \\
+Resource	  & FDO/DO	            & Resource \\
+Service	    & DOIP service	      & Server/endpoint \\
+Transaction	& (not supported)	    & Conditional requests, \texttt{409\ Conflict} \\
+Process	    & Extended operations	& (primarily stateless), \texttt{100\ Continue}, \texttt{202\ Accepted} \\
+Operation	  & DOIP Operation	    & Method, query parameters \\
+Request	    & DOIP Request	      & Request \\
+Response	  & DOIP Response	      & Response \\
+Message	    & Segment, \texttt{requestId} 
+                                  & Message, Representation \\
+Channel	    & DOIP Transport protocol (e.g.~TCP/IP, TLS). JSWS signatures.
+                                  & TCP/IP, TLS, UDP \\
+Protocol  	& DOIP 2.0, ++	      & HTTP/1.1, HTTP/2, HTTP/3 \\
+Link	      & PID/Handle	        & URL \\
 \bottomrule
 \end{longtable}
