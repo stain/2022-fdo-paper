@@ -25,14 +25,14 @@ centric
 ChEMBL
 consumptions
 CORDA
-CORDRA
+Cordra
 COVID
 CSV
 CWFP
 DARIAH
 Datacite
 dataset
-datasets
+Datasets
 DCAT
 dereferenceable
 diciplinary
@@ -104,11 +104,11 @@ LDP’s
 LOD
 LPD
 Marmotta
-metamodel
+Metamodel
 Microdata
 microformats
 Micropub
-middleware
+Middleware
 middlewares
 modularity
 namespace
@@ -118,7 +118,7 @@ NL
 OAI
 OBO
 Occassionally
-Ontologies
+ontologies
 OpenAIRE
 OpenAPI
 OpenLink
@@ -145,7 +145,7 @@ Ramnifications
 RDA’s
 RDF
 RDFa
-rdflib
+RDFLib
 RDFS
 RDMKit
 redirections
@@ -157,7 +157,7 @@ ResourceSync
 RO
 ROR
 runtime
-scalability
+Scalability
 scalable
 schemas
 seemlessly
