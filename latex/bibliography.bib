@@ -55,10 +55,8 @@
         author =    {John A. Kunze and Emmanuelle Bermès},
     title =     {{The ARK Identifier Scheme}},
     pagetotal = 45,
-    year =      2022,
-    month =     oct,
-    day =       17,
-    abstract =  {The ARK (Archival Resource Key) naming scheme is designed to facilitate the high-quality and persistent identification of information objects. The label "ark:" marks the start of a core ARK identifier that can be made actionable by prepending the beginning of a URL. Meant to be usable after today's networking technologies become obsolete, that core should be recognizable in the future as a globally unique ARK independent of the URL hostname, HTTP, etc. A founding principle of ARKs is that persistence is purely a matter of service and neither inherent in an object nor conferred on it by a particular naming syntax. The best any identifier can do is lead users to services that support robust reference. A full-functioning ARK leads the user to the identified object and, with the "?info" inflection appended, returns a metadata record and a commitment statement that is both human- and machine-readable. Tools exist for minting, binding, and resolving ARKs. Responsibility for this Document The ARK Alliance Technical Working Group {[}ARKAtech{]} is responsible for the content of this Internet Draft. The group homepage lists monthly meeting notes and agendas starting from March 2019. Revisions of the spec are maintained on github at {[}ARKdrafts{]}.},
+    date = {2022-10-17},
+    abstract =  {The ARK (Archival Resource Key) naming scheme is designed to facilitate the high-quality and persistent identification of information objects. The label "ark:" marks the start of a core ARK identifier that can be made actionable by prepending the beginning of a URL. Meant to be usable after today's networking technologies become obsolete, that core should be recognizable in the future as a globally unique ARK independent of the URL hostname, HTTP, etc. A founding principle of ARKs is that persistence is purely a matter of service and neither inherent in an object nor conferred on it by a particular naming syntax. The best any identifier can do is lead users to services that support robust reference. A full-functioning ARK leads the user to the identified object and, with the "?info" inflection appended, returns a metadata record and a commitment statement that is both human- and machine-readable. Tools exist for minting, binding, and resolving ARKs. Responsibility for this Document The ARK Alliance Technical Working Group {[}ARKAtech{]} is responsible for the content of this Internet Draft. The group homepage lists monthly meeting notes and agendas starting from March 2019. Revisions of the spec are maintained on github at {[}ARKdrafts{]}.}
 }
 
 
@@ -224,24 +222,33 @@ abstract = {The life sciences have a wealth of data resources with a wide range 
 }
 
 
-@report{w3-vocab-dcat-2,
+@online{w3-vocab-dcat-2,
   author      = {David Browning and Peter Winstanley and Andrea Perego and Simon Cox and Riccardo Albertoni and Alejandra Gonzalez Beltran},
   title       = {Data Catalog Vocabulary ({DCAT}) - Version 2},
   abstract = {DCAT is an RDF vocabulary designed to facilitate interoperability between data catalogs published on the Web.       This document defines the schema and provides examples for its use.},
   url        = {https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/},
   date = {2020-02-04},
   type        = {{W3C Recommendation}},
-  institution = "W3C",
+  institution = {W3C}
 }
 
-@report{w3-vocab-dcat-3,
+@online{w3-rdf11-concepts,
+  author      = {David Wood and Richard Cyganiak and Markus Lanthaler},
+  title       = {{RDF 1.1 Concepts and Abstract Syntax}},
+  url         = {https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/},
+  date        = {2014-02-25},
+  note        = {{W3C Recommendation}},
+  institution = {{W3C}}
+}
+
+@online{w3-vocab-dcat-3,
   editor = {Riccardo Albertoni and David Browning and Simon Cox and Alejandra Gonzalez Beltran and Andrea Perego and Peter Winstanley},
   author = {{Dataset Exchange Working Group}},
   title  = {{Data Catalog Vocabulary ({DCAT}) - Version 3}},
   url    = {https://www.w3.org/TR/2023/WD-vocab-dcat-3-20230307/},
-  date = {2023-03-07},
+  date   = {2023-03-07},
   type   = {{W3C Working Draft}},
-  institution = "W3C",
+  institution = "W3C"
 }
 
 @dataset{DataInformationView,
@@ -361,7 +368,7 @@ abstract = {The life sciences have a wealth of data resources with a wide range 
         author =    {Manu Sporny and Amy Guy},
     title =     {{Media Types with Multiple Suffixes}},
     date = {2023-01-01},
-    abstract =  {This document updates RFC 6838 "Media Type Specifications and Registration Procedures" to describe how to interpret subtypes with multiple suffixes.},
+    abstract =  {This document updates RFC 6838 "Media Type Specifications and Registration Procedures" to describe how to interpret subtypes with multiple suffixes.}
 }
 
 @techreport{Draftkellyjsonhal08,
@@ -371,13 +378,11 @@ abstract = {The life sciences have a wealth of data resources with a wide range 
     publisher = {Internet Engineering Task Force},
     note =      {Work in Progress},
     url =       {https://datatracker.ietf.org/doc/draft-kelly-json-hal/08/},
-        author =    {Mike Kelly},
+    author =    {Mike Kelly},
     title =     {{JSON Hypertext Application Language}},
     pagetotal = 11,
-    year =      2016,
-    month =     may,
-    day =       12,
-    abstract =  {This document proposes a media type for representing resources and their relations with hyperlinks.},
+    date = {2016-05-12},
+    abstract =  {This document proposes a media type for representing resources and their relations with hyperlinks.}
 }
 
 
@@ -1071,11 +1076,14 @@ turned into a PEN document to be subject of commenting after the conference. }
 }
 
 @online{OpenAPISpecificationV3,
-  title = {{{OpenAPI Specification}} v3.1.0 | {{Introduction}}, {{Definitions}}, \& {{More}}},
+  title = {{{OpenAPI Specification}} v3.1.0},
+  organization = {OpenAPI Initiative},
+  editor = {Miller, Darrel and Jeremy Whitlock and Marsh Gardiner and Mike Ralphson and Ron Ratovsky and Uri Sarid},
+  publisher = {The Linux Foundation},
   url = {https://spec.openapis.org/oas/v3.1.0.html},
-  urldate = {2022-05-26},
-  abstract = {The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for HTTP APIs.},
-  annotation = {This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard\_id). standard\_id: url:https://spec.openapis.org/oas/v3.1.0.html Loaded from an external bibliography file by Manubot. source\_bibliography: manual-references-manubot.yaml original\_id: k0AfCGzw}
+  date = {2021-02-15},
+  urldate = {2023-03-21},
+  abstract = {The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for HTTP APIs.}
 }
 
 @online{OpenData,
@@ -1342,7 +1350,7 @@ turned into a PEN document to be subject of commenting after the conference. }
   annotation = {This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard\_id). standard\_id: url:https://schema.org/docs/actions.html Loaded from an external bibliography file by Manubot. source\_bibliography: manual-references-manubot.yaml original\_id: dKAekUjL}
 }
 
-@online{SchemaOrgSchemaa,
+@online{SchemaOrg,
   title = {Schema.Org - {{Schema}}.Org},
   url = {https://schema.org/},
   urldate = {2022-05-26},
@@ -1557,54 +1565,52 @@ turned into a PEN document to be subject of commenting after the conference. }
   annotation = {Loaded from an external bibliography file by Manubot. source\_bibliography: manual-references-sciwheel.bib original\_id: doi:10.3233/SW-190372 original\_standard\_id: doi:10.3233/SW-190372 standard\_id: doi:10.3233/sw-190372}
 }
 
-@report{w3-micropub,
+@online{w3-micropub,
   title = {Micropub},
-  type = {{W3C Recommendation}},
+  note = {{W3C Recommendation}},
   url = {https://www.w3.org/TR/2017/REC-micropub-20170523/},
   date = {2017-05-23},
   publisher = {{W3C}},
   editor = {Aaron Parecki},
-  author = {{Social Web Working Group}}
+  organization = {{W3C, Social Web Working Group}}
 }
 
-@report{w3-json-ld,
+@online{w3-json-ld,
   title = {{{JSON-LD}} 1.1},
   editor = {Gregg Kellogg and Pierre-Antoine Champin and Dave Longley},
   author = {Manu Sporny and Dave Longley and Gregg Kellogg and Markus Lanthaler and Pierre-Antoine Champin and Niklas Lindström},
-  institution = {{JSON-LD Working Group}},
+  institution = {{W3C JSON-LD Working Group}},
   url = {https://www.w3.org/TR/2020/REC-json-ld11-20200716/},
-  type = {{W3C Recommendation}},
+  note = {{W3C Recommendation}},
   publisher = {W3C},
   date = {2020-07-16},
   abstract = {JSON is a useful data serialization and messaging format.     This specification defines JSON-LD 1.1, a JSON-based format to serialize     Linked Data. The syntax is designed to easily integrate into deployed     systems that already use JSON, and provides a smooth upgrade path from     JSON to JSON-LD.     It is primarily intended to be a way to use Linked Data in Web-based     programming environments, to build interoperable Web services, and to     store Linked Data in JSON-based storage engines.}
 }
 
-@report{w3-ldn,
+@online{w3-ldn,
   title = {Linked {{Data Notifications}}},
   url = {https://www.w3.org/TR/2017/REC-ldn-20170502/},
   editor = {Sarven Capadisli and Amy Guy},
-  author = {{Social Web Working Group}},
-  type = {{W3C Recommendation}},
+  organization = {{W3C Social Web Working Group}},
+  note = {{W3C Recommendation}},
   publisher = {{W3C}},
-  date = {2017-05-02},
-  urldate = {2022-05-26},
-  annotation = {This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard\_id). standard\_id: url:https://www.w3.org/TR/ldn/ Loaded from an external bibliography file by Manubot. source\_bibliography: manual-references-manubot.yaml original\_id: zlGYiuWC}
+  date = {2017-05-02}
 }
 
-@report{w3-ldp,
-  type = {{W3C} Recommendation},
+@online{w3-ldp,
+  note = {{W3C} Recommendation},
   title = {Linked Data Platform 1.0},
-  author = {{Linked Data Platform Working Group} and Speicher, Steve and Arwe, John and Malhotra, Ashok},
+  editor = {Speicher, Steve and Arwe, John and Malhotra, Ashok},
+  organization = {{W3C Linked Data Platform Working Group}},
   date = {2015-02-26},
   organization = {{W3C}},
   url = {https://www.w3.org/TR/2015/REC-ldp-20150226/},
-  urldate = {2022-08-23},
-  abstract = {This specification describes the useof HTTP for accessing, updating, creating and deleting resources fromservers that expose their resources as Linked Data. It provides clarificationsand extensions of the rules of Linked Data [LINKED-DATA]:Use URIs as names for thingsUse HTTP URIs so that people can look up those namesWhen someone looks up a URI, provide useful information, using the standards(RDF*, SPARQL)Include links to other URIs, so that they can discover more thingsThis specification discusses standard HTTP and RDF techniques used when constructing clients and servers that create, read, and write Linked Data Platform Resources.LDP Primer provides an entry-level introduction with many examples in the context of a fictional application.LDP Best Practices and Guidelines discusses best practices that you should use, and anti-patterns you should avoid, when constructing these clients and servers. This specification defines a special type of Linked Data Platform Resource: a Container. Containers are very useful in building application models involving collections of resources, often homogeneous ones. For example, universities offer a collection of classes and a collection of faculty members, each faculty member teaches a collection of courses, and so on. This specification discusses how to work with containers. Resources can be added to containers using standard HTTP operations like POST (see section 5.2.3 HTTP POST).The intention of this specification is to enable additional rules and layered groupings of rules as additional specifications. The scope is intentionally narrow to provide a set of key rules for reading and writing Linked Data that most, if not all, other specifications will depend upon and implementations will support.This specification provides some approaches to deal with large resources. An extension to this specificationprovides the ability to break large resource representations into multiple paged responses [LDP-PAGING].For context and background, it could be useful to read Linked Data Platform Use Case and Requirements [LDP-UCR] and section 6. Notable information from normative references.},
-  annotation = {Loaded from an external bibliography file by Manubot. source\_bibliography: manual-references-sciwheel.bib standard\_id: ldp1.0}
+  abstract = {This specification describes the useof HTTP for accessing, updating, creating and deleting resources fromservers that expose their resources as Linked Data. It provides clarificationsand extensions of the rules of Linked Data [LINKED-DATA]:Use URIs as names for thingsUse HTTP URIs so that people can look up those namesWhen someone looks up a URI, provide useful information, using the standards(RDF*, SPARQL)Include links to other URIs, so that they can discover more thingsThis specification discusses standard HTTP and RDF techniques used when constructing clients and servers that create, read, and write Linked Data Platform Resources.LDP Primer provides an entry-level introduction with many examples in the context of a fictional application.LDP Best Practices and Guidelines discusses best practices that you should use, and anti-patterns you should avoid, when constructing these clients and servers. This specification defines a special type of Linked Data Platform Resource: a Container. Containers are very useful in building application models involving collections of resources, often homogeneous ones. For example, universities offer a collection of classes and a collection of faculty members, each faculty member teaches a collection of courses, and so on. This specification discusses how to work with containers. Resources can be added to containers using standard HTTP operations like POST (see section 5.2.3 HTTP POST).The intention of this specification is to enable additional rules and layered groupings of rules as additional specifications. The scope is intentionally narrow to provide a set of key rules for reading and writing Linked Data that most, if not all, other specifications will depend upon and implementations will support.This specification provides some approaches to deal with large resources. An extension to this specificationprovides the ability to break large resource representations into multiple paged responses [LDP-PAGING].For context and background, it could be useful to read Linked Data Platform Use Case and Requirements [LDP-UCR] and section 6. Notable information from normative references.}
 }
 
 @online{w3-owl2-overview,
   title = {{{OWL}} 2 {{Web Ontology Language Document Overview}} ({{Second Edition}})},
+  editor = {{W3C OWL Working Group}},
   url = {http://www.w3.org/TR/owl2-overview/},
   urldate = {2022-05-26},
   annotation = {This CSL Item was generated by Manubot v0.5.2 from its persistent identifier (standard\_id). standard\_id: url:http://www.w3.org/TR/owl2-overview/ Loaded from an external bibliography file by Manubot. source\_bibliography: manual-references-manubot.yaml original\_id: 1p4IWJpI}
