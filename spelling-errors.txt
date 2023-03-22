@@ -12,7 +12,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-Bioschemas
+BioSchemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -31,8 +31,8 @@ CSV
 CWFP
 DARIAH
 Datacite
-dataset
-Datasets
+Dataset
+datasets
 DCAT
 dereferenceable
 diciplinary
@@ -53,14 +53,14 @@ examplified
 examplify
 exisiting
 Extensibility
-FDO
+fdo
 FDOF
 FDOR
 FDO’s
 FDOs
-Findability
+findability
 findable
-foaf
+FOAF
 Freetext
 FROR
 furfill
@@ -104,7 +104,7 @@ LDP’s
 LOD
 LPD
 Marmotta
-Metamodel
+metamodel
 Microdata
 microformats
 Micropub
@@ -117,7 +117,7 @@ NIST
 NL
 OAI
 OBO
-Occassionally
+occassionally
 ontologies
 OpenAIRE
 OpenAPI
@@ -157,7 +157,7 @@ ResourceSync
 RO
 ROR
 runtime
-Scalability
+scalability
 scalable
 schemas
 seemlessly
