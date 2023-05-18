@@ -133,7 +133,7 @@ The \textbf{Machine actionability} \autocite{fdo-MachineActionDef} sets out to d
 
 \textbf{Configuration Types} \autocite{fdo-ConfigurationTypes} classifies different granularities for organising FDOs in terms of PIDs, PID Records, Metadata and bit sequences, e.g.~as a single FDO or several daisy-chained FDOs. Different patterns used by current DOIP deployments are considered, as well as FAIR Signposting \autocite{vandesompelFAIRSignpostingProfile2022}
 
-\textbf{PID Profiles \& Attributes} \autocite{fdo-PIDProfileAttributes} specifies that PIDs must be formally associated with a \emph{PID Profile}, a separate FDO that defines attributes required and recommended by FDOs following said profile. This forms the \emph{kernel attributes}, building on recommendations from RDA's \emph{PID Information Types} working group \autocite{weigelRDARecommendationPID2018}. This document makes a clear distinction between a minimal set of attributes needed for PID resolution and FDO navigation, which needs to be part of the \emph{PID Record}, compared with a richer set of more specific attributes as part of the \emph{metadata} for an FDO, possibly represented as a separate FDO.
+\textbf{PID Profiles \& Attributes} \autocite{fdo-PIDProfileAttributes} specifies that PIDs must be formally associated with a \emph{PID Profile}, a separate FDO that defines attributes required and recommended by FDOs following said profile. This forms the \emph{kernel attributes}, building on recommendations from RDA's \emph{PID Information Types} working group \autocite{weigelRDARecommendationPID2018}. This document makes a clear distinction between a minimal set of attributes needed for PID resolution and FDO navigation, which needs to be part of the \emph{PID Record}\autocite{islam_2023}, compared with a richer set of more specific attributes as part of the \emph{metadata} for an FDO, possibly represented as a separate FDO.
 
 \textbf{Kernel Attributes \& Metadata} \autocite{fdo-KernelAttributes} elaborates on categories of FDO Mandatory, FDO Optional and Community Attributes, recommending kernel attributes like \texttt{dateCreated}, \texttt{ScientificDomain}, \texttt{PersistencePolicy}, \texttt{digitalObjectMutability}, etc. This document expands on RDA Recommendation on PID Kernel Information \autocite{weigelRDARecommendationPID2018}. It is worth noting that both documents are relatively abstract and do not establish PIDs or namespaces for the kernel attributes.
 
@@ -368,6 +368,11 @@ Observations:
 
 \textbf{TODO}
 
+% Signposting / RO-Crate
+% ProtocolBuffer
+% https://www.cordra.org/documentation/api/doip-api-for-http-clients.html
+% https://pages.educs-hosting.net/konsortswd/konsortswd-api/
+
 \begin{itemize}
 \tightlist
 \item
@@ -389,8 +394,6 @@ Such a combination of efforts will utillise both the benefits of mature Semantic
 
 \hypertarget{conclusion}{%
 \section*{Conclusion}\label{conclusion}}
-
-
 
 \section*{Acknowledgments}
 
