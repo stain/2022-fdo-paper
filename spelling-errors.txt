@@ -12,7 +12,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-BioSchemas
+Bioschemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -31,7 +31,7 @@ CSV
 CWFP
 DARIAH
 Datacite
-Dataset
+dataset
 datasets
 DCAT
 dereferenceable
@@ -58,9 +58,9 @@ FDOF
 FDOR
 FDO’s
 FDOs
-findability
+Findability
 findable
-FOAF
+foaf
 Freetext
 FROR
 furfill
@@ -78,7 +78,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-https
+HTTPS
 IANA
 IEC
 IETF
@@ -98,7 +98,7 @@ js
 JSON
 JSWS
 kickstarted
-LD
+ld
 LDP
 LDP’s
 LOD
@@ -108,7 +108,7 @@ metamodel
 Microdata
 microformats
 Micropub
-Middleware
+middleware
 middlewares
 modularity
 namespace
@@ -117,7 +117,7 @@ NIST
 NL
 OAI
 OBO
-occassionally
+Occassionally
 ontologies
 OpenAIRE
 OpenAPI
@@ -138,14 +138,14 @@ PMH
 Polymorphism
 practictioners
 pre
-Programmatically
+programmatically
 proto
 QUIC
 Ramnifications
 RDA’s
 RDF
 RDFa
-RDFLib
+rdflib
 RDFS
 RDMKit
 redirections

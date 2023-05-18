@@ -5,7 +5,7 @@ keywords:
 - distributed
 - digital object
 lang: en-GB
-date-meta: '2023-03-22'
+date-meta: '2023-05-18'
 author-meta:
 - Stian Soiland-Reyes
 - Carole Goble
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="og:title" content="Evaluating FAIR Digital Object as a distributed object system" />
   <meta property="twitter:title" content="Evaluating FAIR Digital Object as a distributed object system" />
-  <meta name="dc.date" content="2023-03-22" />
-  <meta name="citation_publication_date" content="2023-03-22" />
+  <meta name="dc.date" content="2023-05-18" />
+  <meta name="citation_publication_date" content="2023-05-18" />
   <meta name="dc.language" content="en-GB" />
   <meta name="citation_language" content="en-GB" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/17c99087d5562cf949ae5952e872d5d04271aae4/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/17c99087d5562cf949ae5952e872d5d04271aae4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/17c99087d5562cf949ae5952e872d5d04271aae4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/0e5545c8430c3f287c3b3a8c7618cf039d63b9d9/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/0e5545c8430c3f287c3b3a8c7618cf039d63b9d9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/0e5545c8430c3f287c3b3a8c7618cf039d63b9d9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -75,10 +75,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/17c99087d5562cf949ae5952e872d5d04271aae4/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/0e5545c8430c3f287c3b3a8c7618cf039d63b9d9/))
 was automatically generated
-from [stain/2022-fdo-paper@17c9908](https://github.com/stain/2022-fdo-paper/tree/17c99087d5562cf949ae5952e872d5d04271aae4)
-on March 22, 2023.
+from [stain/2022-fdo-paper@0e5545c](https://github.com/stain/2022-fdo-paper/tree/0e5545c8430c3f287c3b3a8c7618cf039d63b9d9)
+on May 18, 2023.
 </em></small>
 
 ## Authors {.unnumbered}
