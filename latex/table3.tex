@@ -1,48 +1,29 @@
 \begin{landscape}
-\begin{longtable}[]{@{}
-  >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.25}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.25}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2}}@{}}
-\caption{Checking FDO guidelines \autocite{boninoFAIRDigitalObject,fdo-RequirementSpec} against its current implementations as DOIP \autocite{foundationDigitalObjectInterface} and Linked Data Platform (LDP) \autocite{FDOFramework}, with suggestions for required additions.
-\label{tbl:fdo-checks}}\tabularnewline
-\toprule
-\begin{minipage}[b]{\linewidth}\centering
-\textbf{FDO Guideline}
-\end{minipage}
-  & \begin{minipage}[b]{\linewidth}\centering
-DOIP 2.0
-\end{minipage}
-  & \begin{minipage}[b]{\linewidth}\centering
-FDO suggestions
-\end{minipage}
-  & \begin{minipage}[b]{\linewidth}\centering
-Linked Data Platform
-\end{minipage}
-  & \begin{minipage}[b]{\linewidth}\centering
-LDP suggestion
-\end{minipage} \\
-\midrule
-\endfirsthead
-\toprule
-\begin{minipage}[b]{\linewidth}\centering
-\textbf{FDO Guideline}
-\end{minipage}
-  & \begin{minipage}[b]{\linewidth}\centering
-DOIP 2.0
-\end{minipage}
-  & \begin{minipage}[b]{\linewidth}\centering
-FDO suggestions
-\end{minipage}
-  & \begin{minipage}[b]{\linewidth}\centering
-Linked Data Platform
-\end{minipage}
-  & \begin{minipage}[b]{\linewidth}\centering
-LDP suggestion
-\end{minipage} \\
-\midrule
-\endhead
+  \begin{small}
+  \begin{longtable}[]{@{}
+    >{\centering\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1}}
+    >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.25}}
+    >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2}}
+    >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.25}}
+    >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2}}@{}}
+    \caption[Checking FDO guidelines against its implementations]{Checking FDO guidelines \cite{boninoFAIRDigitalObject,fdo-RequirementSpec} against its current implementations as DOIP \cite{foundationDigitalObjectInterface} and Linked Data Platform (LDP) \cite{FDOFramework}, with suggestions for required additions.
+  \label{tbl:fdo-checks}}\tabularnewline
+  \toprule
+  \textbf{FDO Guideline} & 
+  DOIP 2.0 & 
+  FDO suggestions & 
+  Linked Data Platform & 
+  LDP suggestion \\
+  \midrule
+  \endfirsthead
+  \toprule
+  \textbf{FDO Guideline} & 
+  DOIP 2.0 & 
+  FDO suggestions & 
+  Linked Data Platform & 
+  LDP suggestion \\
+  \midrule
+  \endhead
 G1: \emph{invest for many decades}
   & Handle system stable for 20 years, DOIP 2.0 since 2017.
   & Ensure FDO types will not be protocol-bound as DOIP might be updated/replaced
@@ -150,4 +131,5 @@ FDOF12: \emph{Deleted FDO preserve PID w/ tombstone}
   & Formalise tombstone requirements and serialisation \\
 \bottomrule
 \end{longtable}
+\end{small}
 \end{landscape}
