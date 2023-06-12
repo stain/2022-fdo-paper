@@ -31,7 +31,7 @@ CSV
 CWFP
 DARIAH
 Datacite
-Dataset
+dataset
 datasets
 DCAT
 dereferenceable
@@ -58,9 +58,9 @@ FDOF
 FDOR
 FDO’s
 FDOs
-Findability
+findability
 findable
-foaf
+FOAF
 Freetext
 FROR
 furfill
@@ -78,7 +78,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-HTTPS
+https
 IANA
 IEC
 IETF
@@ -117,7 +117,7 @@ NIST
 NL
 OAI
 OBO
-occassionally
+Occassionally
 ontologies
 OpenAIRE
 OpenAPI
@@ -138,7 +138,7 @@ PMH
 Polymorphism
 practictioners
 pre
-programmatically
+Programmatically
 proto
 QUIC
 Ramnifications
@@ -157,7 +157,7 @@ ResourceSync
 RO
 ROR
 runtime
-Scalability
+scalability
 scalable
 schemas
 seemlessly
