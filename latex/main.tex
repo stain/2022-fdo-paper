@@ -225,6 +225,7 @@ Based on the analysis shown in Table \ref{tbl:fdo-web-interoperability-framework
 The Web has already showed us how one can compose workflows of hetereogeneous Web Services \autocite{wolstencroftTavernaWorkflowSuite2013d}. However, this is mostly done via developer or human interaction \autocite{lamprechtPerspectivesAutomatedComposition2021b}. Similiarly, FDO does not enable automatic composition because operation semantics are not well defined. There is a question as to whether the extebsuve documentation and broad developer usage that is available for Web APIs could potentially be utillised for FDO.
 
 A difference between Web technologies and FDO is the stringency of the requirements for both syntax and semantics. Whereas the Web allows many different syntactic formats (e.g.~from HTML to XML, PDFs), FDO realised with DOIP requires JSON. On the semantic front, FDO mandates that every object have a well-defined type and structured form. This is clearly not the case on the Web.
+
 In terms of connectivity and the deployment of applications, the Web has a plethora of software, services, and protocols that are widely deployed. These have shown interoperability. The Web standards bodies (e.g.~IETF and W3C) follow the OpenStand principles \autocite{ModernStandardsParadigm} to embrace openness, transparency, and broad consensus. In contrast, FDO has a small number of implementations and corresponding protocols, although with a growing community, as evidenced at the first international FDO conference \autocite{looFirstInternationalConference2022}. This is not to say that it is not worth developing further Handle+DOIP implementations in the future, but we note that the current FDO functionality can easily be implemented using Web technologies, even as DOIP-over-HTTP \autocite{DOIPAPIHTTPa}.
 
 It's also a question as to whether a highly constrained protocol revolving around persistent identifiers is in fact necessary. For example, DOIs are mostly resolved on the web \autocite{DOIResolutionDocumentation} using HTTP redirects with the common \texttt{https://doi.org/} prefix, hiding their Handle nature as an implementation detail \autocite{DOIHandbookResolution}.
@@ -308,7 +309,7 @@ Based on the analysis in Table \vref{tbl:fdo-web-middleware}, we make the follow
 
 In addition to having ``FAIR'' in its name, the FAIR Digital Object guidelines \autocite{fdo-RequirementSpec} also include \emph{G3: FDOs must offer compliance with the FAIR principles through measurable indicators of FAIRness}.
 
-Here we evaluate to what extent the FDO guidelines and its implementation with DOIP and Linked Data Platform \autocite{FDOFramework} comply with the FAIR principles \autocite{wilkinsonFAIRGuidingPrinciples2016e}. Here we've used the RDA's FAIR Data Maturity Model \autocite{groupFAIRDataMaturity2020} as it has decomposed the FAIR principles to a structured list of FAIR indicators \autocite{bahimFAIRDataMaturity2020a}, importantly considering \emph{Data} and \emph{Metadata} separately. In our interpretation for Table \vref{tbl:fair-data-maturity-model} we have for simplicity chosen to interpret ``data'' in FDOs as the associated bytestream of arbitrary formats, with remaining JSON/RDF structures always considered as metadata.
+Here we evaluate to what extent the FDO guidelines and its implementation with DOIP and Linked Data Platform \autocite{FDOFramework} comply with the FAIR principles \autocite{wilkinsonFAIRGuidingPrinciples2016e}. Here we've used the RDA's FAIR Data Maturity Model \autocite{groupFAIRDataMaturity2020} as it has decomposed the FAIR principles to a structured list of FAIR indicators \autocite{bahimFAIRDataMaturity2020a}, importantly considering \emph{Data} and \emph{Metadata} separately. In our interpretation for Table \vref{tbl:fair-data-maturity-model} we have for simplicity chosen to interpret ``data'' in FDOs as the associated bytestream of arbitrary formats, with remaining JSON or RDF structures always considered as metadata.
 
 
 
@@ -317,9 +318,9 @@ From this evaluation we observe:
 \begin{itemize}
 \tightlist
 \item
-  Linked Data in general is strong on metadata indicators, but LDP approach is weak as it has little metadata guidance
+  Linked Data in general is strong on metadata indicators, but LDP approach is weak as it has little concrete metadata guidance.
 \item
-  FDO/DOIP are stronger on identifier indicators
+  FDO/DOIP are stronger on identifier indicators, while Linked Data approach for identifiers relies on best practices. 
 \item
   Indicators on standard protocols (RDA-A1-04M, RDA-A1-04D, RDA-A1.1-01M, RDA-A1.1-01D) favour LDP's mature standards (HTTP, URI) -- the DOIPv2 specification \autocite{foundationDigitalObjectInterface} has currently only a couple of implementations and is expressed informally. The underlying Handle system for PIDs is arguably mature and commonly used by researchers (this article alone references about 80 DOIs), however DOIs are more commonly accessed as HTTP redirects through resolvers like \url{https://doi.org/} and \url{http://hdl.handle.net/} rather than the Handle protocol.
 \item
@@ -337,7 +338,7 @@ From this evaluation we observe:
 \include{table5}
 
 
-\section*{EOSC Interoperability Framework}\label{eosc-interoperability-framework}
+\section*{EOSC Interoperability Framework}\label{sec:eosc-interoperability-framework}
 
 The European Open Science Cloud (EOSC) is a large EU initiative to promote Open Science by implementing a joint research infrastructure by federating existing and new services and focusing on interoperability, accessability, best practices as well as technical infrastructure \autocite{10.2777/940154}. The EOSC Interoperability Framework \autocite{corchoEOSCInteroperabilityFramework2021b} details the principles for creating a common way to achieve interoperability between all digital aspects of research activities in EOSC, including data, protocols and software. The recommendations are realized through 4 layers, Technical (e.g. protocols), Semantic (e.g. metadata models), Organisational (e.g. recommendations) and Legal (e.g. agreements), with a particular aim to address the FAIR interoperability principles and building on the concept of FAIR Digital Objects. 
 
@@ -351,34 +352,52 @@ The Legal layer of interoperability is perhaps the one most emphasised by EOSC, 
 
 \section*{Discussion}\label{sec:discussion}
 
-\textbf{TODO}
+We have evaluated the FAIR Digital Object concept using multiple frameworks, and contrasted FDO against existing experiences from Linked Data on the Web. In this section we discuss the implications of this evaluation, and propose how these two approaches can be better combined.
+
+\subsection*{Framework evaluation}
+
+Having considered FDO and the Web architecture as interoperability frameworks (\vref{sec:interoperability-compare}), we observe that neither are magic bullets, but each bring different aspects of interoperability. The Web comes with a large degree of flexibility and openness, however this means interoperability can suffer as services have different APIs and data models, although with common patterns. This is also true for Linked Data on the Web, with many overlapping ontologies and frequent inconsistencies in resolution mechanisms; although somewhat alleviated in recent years by schema.org becoming common metadata model for semantic markup inline in Web pages. The Web is based on a common HTTP protocol which has remained stable architecturally throughout its 32 years of largely backwards-compatible evolution. FDO on the other side sets down multiple rigid rules for identifiers, types, methods etc. that are advanterous for interoperability and predictability for FAIR consumption. Yet there is a large degree of freedom in how the FDO rules can be implemented by a given community, for instance there is no common metadata model or identifier resolution mechanism, and DOIP is just one possible transport method for FDOs, which itself does not enforce these rules. 
+
+When evaluating FDO implementations against the FDO guidelines (\vref{sec:doip-fdo-compare}) we see that several technical pieces and community practices still need to be developed and further defined, for instance the FDO type system, how to declare FDO actions, how to resolve persistent identifiers, or how to know which pattern of FDO composition is used. Achieving fully interoperable FAIR digital objects would require further convergence on implementation practices, and it is not given that his need to diverge from the established Web architecture.
+
+Considering this, by comparing FDO and Web as middleware (\vref{sec:middleware}) we saw that programmatic access to digital objects, a core promise of FDO, is not particularly improved by the use of the protocol DOIP as compared to HTTP, e.g. lack of concurrency transparancy. Recent updates to HTTP have added many features needed for large-scale usage such as video streaming services (e.g. caching, multiplexing, cloud deployments), and having the option to transparantly apply these also to FDOs seems like a strong incentive. Many programmatic features are however missing or needing custom extensions in both aspects, such as transactions, asynchronous operations and streaming.
+
+By assessing FDO against the FAIR principles (\vref{sec:fair-compare}) we found that both FDO implementations are underspecified in several aspects (licences, provenance, data references, data vocabularies, metadata persistence). While there are implementations of each of these in general Linked Data examples, there is no single set of implementation guides that fully realizes the FAIR principles. \emph{FAIRification} efforts like the FAIR Cookbook \autocite{faircookbook} and FAIR Implementation Profiles \autocite{FIP} are bringing existing practices together, but there remains a potential role for FDO in giving a coherent set of implementation practices that can practically achieve FAIR. Significant effort, also within EOSC, is now moving towards FAIR Assessment \autocite{Devaraju_2021}, which in practice need to make additional assumptions on how FAIR principles are implemented, but these are not always formalized. Given that most of the existing FAIR guides and assessment tools are focused on Web and Linked Data, it would be reasonable for FDO to then provide a profile of such implementation choices that achieve best of both worlds.
+
+EOSC has been largely supportive of FDO, FAIR and related services. By contrasting the EOSC Interoperability Framework (\vref{sec:eosc-interoperability-framework}) with FDO, we found that there are important dimensions that are not solved at a technical level, but through organization collaboration, legal requirements and building community practices. FDO recommendations highlight community aspects, but at the same time the largest FAIR communities in many science domains are already producing and consuming Linked Data. Just as the Linked Data community has a challenge in convincing more research fields to use Semantic Web technologies, FDO currently need to build many new communities in areas that have shown interest in this approach (e.g. material science).  It may be advantegous for both these effort to be aligned and jointly promoted under an EOSC umbrella. 
+
 
 % Signposting / RO-Crate
 % ProtocolBuffer
 % https://www.cordra.org/documentation/api/doip-api-for-http-clients.html
 % https://pages.educs-hosting.net/konsortswd/konsortswd-api/
 
-\begin{itemize}
-\tightlist
-\item
-  Ramnifications of ide
-\item
-  Bullet points per table
-\end{itemize}
 
-\subsection*{(What does it mean for Linked Data?)}\label{what-does-it-mean-for-linked-data}
+\subsection*{(What does FDO mean for Linked Data?)}\label{sec:what-does-it-mean-for-linked-data}
 
 The FAIR Digital Object approach raises many important points for Linked Data practictioners.
 At first glance, the explicit requirements of FDOs may seem to be easy to furfill by different parts of the Semantic Web Cake \autocite[][slide 10]{SemanticWebXML2000}.
 However, our deeper investigation, based on multiple frameworks, highlights that the openness and variability of how Linked Data is deployed makes it difficult to achieve the FDO goals without significant effort.
 
-While RDF and Linked Data have been suggested as prime candidates for making FAIR data, we argue that when different developers have too many degrees of freedom (such as serialization formats, vocabularies, identifiers, navigation), interoperability is hampered -- this makes it hard for machines to reliably consume multiple FAIR resources across repositories and data providers.
+While RDF and Linked Data have been suggested as prime candidates for making FAIR data, we argue that when different developers have too many degrees of freedom (such as serialization formats, vocabularies, identifiers, navigation), interoperability is hampered -- this makes it hard for machines to reliably consume multiple FAIR resources across repositories and data providers. Indeed, this may be one reason why the initial FDO effort steered away from Linked Data approaches, but now seems in a danger of opening the many same degrees of freedom within FDO.
 
-We therefore identify the need for an explicit FDO profile of Linked Data that sets pragmatic constraints and stronger recommendations for consistent and developer-friendly deployment of digital objects.
-Such a combination of efforts will utillise both the benefits of mature Semantic Web technologies (e.g.~federated knowledge graph queries and rich validation) and data management practices that follow FDO guidance in order to grow a rigid (yet flexible) ecosystem of machine-actionable scholarly objects.
+We therefore identify the need for a new explicit FDO profile of Linked Data that sets pragmatic constraints and stronger recommendations for consistent and developer-friendly deployment of digital objects.
+Such a combination of efforts will utillise both the benefits of mature Semantic Web technologies (e.g.~federated knowledge graph queries and rich validation) and data management practices that follow FDO guidance in order to grow a rigid (yet flexible) ecosystem of machine-actionable scholarly objects. It is beyond the scope of this work to detail such a profile, but its main priorities could be:
+
+\begin{itemize}
+  \tightlist
+  \item Use HTTP(S) as protocol
+  \item Use URIs as identifiers, with persistent identifier promises
+  \item Provide a consistent identifier resolution that does not require heuristics
+  \item Common core metadata model
+  \item References are always URIs, and should be to other FDOs
+  \item Types, attributes and actions are self-defined by their identifier
+\end{itemize}
 
 \hypertarget{conclusion}{%
 \section*{Conclusion}\label{conclusion}}
+
+
 
 \section*{Acknowledgments}
 
