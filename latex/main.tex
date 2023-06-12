@@ -65,7 +65,7 @@
 %\keywords{FAIR, FDO, digital object, Linked Data, EOSC, distributed objects, frameworks, interoperability, middleware}
 
 \begin{abstract}
-FAIR Digital Object (FDO) is an emerging concept that is highlighted by European Open Science Cloud (EOSC) as a potential candidate for building a ecosystem of machine-actionable research outputs. In this work we systematically evaluate FDO and its implementations as a global distributed object system, by using five different conceptual frameworks that cover interoperability, middleware, FAIR principles, EOSC requirements and FDO guidelines themself. We compare the FDO approach with established Linked Data practices and the existing Web architecture, and provide a brief history of the Semantic Web while discussing why these technologies may have been difficult to adopt for FDO purposes. We conclude with recommendations for both communities to 
+FAIR Digital Object (FDO) is an emerging concept that is highlighted by European Open Science Cloud (EOSC) as a potential candidate for building a ecosystem of machine-actionable research outputs. In this work we systematically evaluate FDO and its implementations as a global distributed object system, by using five different conceptual frameworks that cover interoperability, middleware, FAIR principles, EOSC requirements and FDO guidelines themself. We compare the FDO approach with established Linked Data practices and the existing Web architecture, and provide a brief history of the Semantic Web while discussing why these technologies may have been difficult to adopt for FDO purposes. We conclude with recommendations for both Linked Data and FDO communities to further their adaptation and alignment.
 \end{abstract}
 
 \begin{document}
@@ -96,7 +96,7 @@ In the following, we discuss the related work with respect to FAIR Digital Objec
 
 \subsection*{FAIR Digital Object}\label{sec:fdo}
 
-The concept of \textbf{FAIR Digital Objects} \autocite{schultesFAIRPrinciplesDigital2019a} has been introduced as way to expose research data as active objects that conform to the FAIR principles \autocite{wilkinsonFAIRGuidingPrinciples2016e}. This builds on the \emph{Digital Object} (DO) concept \autocite{kahnFrameworkDistributedDigital2006b}, first introduced in 1995 \autocite{kahnFrameworkDistributedDigital1995a} as a system of \emph{repositories} containing \emph{digital objects} identified by \emph{handles} and described by \emph{metadata} which may have references to other handles. DO was the inspiration for the ITU X.1255 framework \autocite{x1255FrameworkDiscovery} which introduced an abstract \emph{Digital Entity Interface Protocol} for managing such objects programmatically, first realised by the Digital Object Interface Protocol (DOIP) \autocite{DigitalObjectInterface}.
+The concept of \textbf{FAIR Digital Objects} \autocite{schultesFAIRPrinciplesDigital2019a} has been introduced as way to expose research data as active objects that conform to the FAIR principles \autocite{wilkinsonFAIRGuidingPrinciples2016e}. This builds on the \emph{Digital Object} (DO) concept \autocite{kahnFrameworkDistributedDigital2006b}, first introduced by \textcite{kahnFrameworkDistributedDigital1995a} as a system of \emph{repositories} containing \emph{digital objects} identified by \emph{handles} and described by \emph{metadata} which may have references to other handles. DO was the inspiration for the \textcite{x1255FrameworkDiscovery} framework which introduced an abstract \emph{Digital Entity Interface Protocol} for managing such objects programmatically, first realised by the Digital Object Interface Protocol (DOIP) \autocite{DigitalObjectInterface}.
 
 In brief, the structure of a FAIR Digital Object (FDO) is to, given a \emph{persistent identifier} (PID) such as a DOI, resolve to a \emph{PID Record} that gives the object a \emph{type} along with a mechanism to retrieve its \emph{bit sequences}, \emph{metadata} and references to further programmatic \emph{operations}. The type of an FDO (itself an FDO) defines attributes to semantically describe and relate such FDOs to other concepts (typically other FDOs referenced by PIDs). The premise of systematically building an ecosystem of such digital objects is to give researchers a way to organise complex digital entities, associated with identifiers, metadata, and supporting automated processing \autocite{wittenburgDigitalObjectsDrivers2019a}.
 
@@ -109,7 +109,7 @@ FDO is an evolving concept. A set of FDO Demonstrators \autocite{wittenburgFAIRD
 \begin{itemize}
 \tightlist
 \item
-  Building on the Digital Object concept, using the simplified DOIP v2 specification \autocite{foundationDigitalObjectInterface}, which detail how to exchange JSON objects through a text-based protocol\footnote{For a brief introduction to DOIP 2.0, see \autocite{DOIPExamplesCordraa}} (usually TCP/IP over TLS). The main DOIP operations are retrieving, creating and updating digital objects. These are mostly realised using the reference implementation \href{https://cordra.org/}{Cordra}. FDO types are registered in the local Cordra instance, where they are specified using JSON Schema \autocite{Draftbhuttonjsonschema} and PIDs are assigned using the Handle system. Several type registries have been established.
+  Building on the Digital Object concept, using the simplified \textcite{foundationDigitalObjectInterface} specification, which detail how to exchange JSON objects through a text-based protocol\footnote{For a brief introduction to DOIP 2.0, see \textcite{DOIPExamplesCordraa}} (usually TCP/IP over TLS). The main DOIP operations are retrieving, creating and updating digital objects. These are mostly realised using the reference implementation \href{https://cordra.org/}{Cordra}. FDO types are registered in the local Cordra instance, where they are specified using JSON Schema \autocite{Draftbhuttonjsonschema} and PIDs are assigned using the Handle system. Several type registries have been established.
 \item
   Following the traditional Linked Data approach, but using the DOIP protocol, e.g.~using JSON-LD and schema.org within DOIP (NIST for material science).
 \item
@@ -167,9 +167,9 @@ The mid-2000s saw large academic interest and growth of the Semantic Web, with t
 
 Established Semantic Web services and standards include SPARQL \autocite{w3-sparql11-overview} (pattern-based triple queries), \href{https://www.w3.org/TR/rdf11-concepts/\#section-dataset}{named graphs} \autocite{w3-rdf11-concepts} (triples expanded to \emph{quads} to indicate statement source or represent conflicting views), triple/quad stores (graph databases such as OpenLink Virtuoso, GraphDB, 4Store), mature RDF libraries (including Redland RDF, Apache Jena, Eclipse RDF4J, RDFLib, RDF.rb, rdflib.js), and numerous graph visualisation (many of which struggle with usability for more than 20 nodes).
 
-The creation of RDF-based knowledge graphs grew particularly in fields like bioinformatics, e.g.~for describing genomes and proteins \autocite{gobleStateNationData2008c,williamsOpenPHACTSSemantic2012c}. In theory, the use of RDF by the life sciences would enable interoperability between the many data repositories and support combined views of the many aspects of bio-entities -- however in practice most institutions ended up making their own ontologies and identifiers, for what to the untrained eye would mean roughly the same. One can argue that the toll of adding the semantic logic system of rich ontologies meant that small, but fundamental, differences in opinion (e.g.~should a \emph{gene identifier} signify just the particular DNA sequence letters, or those letters as they appear in a particular position on a human chromosome?) lead to large differences in representational granularity, and thus needed different identifiers.
+The creation of RDF-based knowledge graphs grew particularly in fields like bioinformatics, e.g.~for describing genomes and proteins \autocite{gobleStateNationData2008c,williamsOpenPHACTSSemantic2012c}. In theory, the use of RDF by the life sciences would enable interoperability between the many data repositories and support combined views of the many aspects of bio-entities -- however in practice most institutions ended up making their own ontologies and identifiers, for what to the untrained eye would mean roughly the same. One can argue that the toll of adding the semantic logic system of rich ontologies meant that small, but fundamental, differences in opinion (e.g.~\emph{should a gene identifier signify just the particular DNA sequence letters, or those letters as they appear in a particular position on a human chromosome?}) lead to large differences in representational granularity, and thus needed different identifiers.
 
-Facing these challenges, thanks to the use of universal identifiers in the form of URIs, \emph{mappings} could retrospectively be developed not just between resources, but also across vocabularies. Such mappings can be expressed themselves using lightweight and flexible RDF vocabularies such as SKOS \autocite{w3-skos-primer} (e.g.~\texttt{dct:title\ skos:closeMatch\ schema:name} to indicate near equivalence of two properties). Automated ontology mappings have identified large potential overlaps (e.g.~372 definitions of \texttt{Person}) \autocite{huHowMatchableAre2011a} .
+Facing these challenges, thanks to the use of universal identifiers in the form of URIs, \emph{mappings} could retrospectively be developed not just between resources, but also across vocabularies. Such mappings can be expressed themselves using lightweight and flexible RDF vocabularies such as SKOS \autocite{w3-skos-primer} (e.g.~\texttt{dct:title\ skos:closeMatch\ schema:name} to indicate near equivalence of two properties). Automated ontology mappings have identified large potential overlaps (e.g.~372 definitions of \texttt{Person}) \autocite{huHowMatchableAre2011a}.
 
 The move towards \emph{Open Science} data sharing practices did from the late 2000s encourage knowledge providers to distribute collections of RDF descriptions as downloadable \emph{datasets} \footnote{\emph{Datasets} that distribute RDF graphs should not be confused with \href{https://www.w3.org/TR/rdf11-concepts/\#section-dataset}{RDF Datasets} used for partitioning \emph{named graphs}.}, so that their clients can avoid thousands of HTTP requests for individual resources. This enabled local processing, mapping and data integration across datasets (e.g.~Open PHACTS \autocite{grothAPIcentricLinkedData2014b}), rather than relying on the providers' RDF and SPARQL endpoints (which could become overloaded when handling many concurrent, complex queries).
 
@@ -230,7 +230,7 @@ In terms of connectivity and the deployment of applications, the Web has a pleth
 
 It's also a question as to whether a highly constrained protocol revolving around persistent identifiers is in fact necessary. For example, DOIs are mostly resolved on the web \autocite{DOIResolutionDocumentation} using HTTP redirects with the common \texttt{https://doi.org/} prefix, hiding their Handle nature as an implementation detail \autocite{DOIHandbookResolution}.
 
-\include{table1}
+\input{table1}
 
 \subsubsection*{Mapping of Metamodel concepts}\label{mapping-of-metamodel-concepts}
 
@@ -238,7 +238,7 @@ The Interoperability Framework for Fast Data also provides a brief \emph{metamod
 
 From this mapping we can identify the conceptual similarities between DOIP and HTTP, often with common terminology. Notable are that neither DOIP or HTTP have strong support for transactions (explored further \vpageref{sec:middleware}), as well that HTTP has poor direct support for processes, as the Web is primarily stateless by design.
 
-\include{table2}
+\input{table2}
 
 \subsection*{Assessing FDO implementations}\label{sec:doip-fdo-compare}
 
@@ -350,7 +350,7 @@ The Legal layer of interoperability is perhaps the one most emphasised by EOSC, 
 
 Likewise, search and indexing is important FAIR aspect for Findability, but is poorly supported globally by FDO and Linked Data. Efforts such as Open Research Knowledge Graph (ORKG) \autocite{10.1007/978-3-030-30760-8_31}, DataCite's PID Graph \autocite{10.5438/jwvf-8a66} and Google Knowledge Graph \autocite{singhal2012} have improved programmatic findability to some degree, however not significantly for domain-specific semantic artefacts, currently scattered across multiple semantic catalogues \autocite{10.48550/arXiv.2305.06746}.  There is a strong role for organizations like EOSC to provide such broader registries, moving beyond scholarly output metadata federations. The EOSC Marketplace\footnote{\url{https://marketplace.eosc-portal.eu/}} has for instance recently been expanded to include training material, software and data sources.
 
-\include{table6}
+\input{table6}
 
 \section*{Discussion}\label{sec:discussion}
 
@@ -419,7 +419,26 @@ By implementing the goals of FAIR Digital Objects with the mature technology sta
 
 \section*{Acknowledgments}
 
-This work was funded by the European Union programmes \emph{Horizon 2020} under grant agreements H2020-INFRAEDI-02-2018 823830 (BioExcel-2), H2020\-INFRAEOSC\-2018\-2 824087 (EOSC-Life) and \emph{Horizon Europe} under grant agreements HORIZON\-INFRA\-2021\-EMERGENCY\-01 101046203 (BY\-COVID), HORIZON\-INFRA\-2021\-EOSC\-01 101057388 (EuroScienceGateway), HORIZON\-INFRA\-2021\-EOSC\-01\-05 101057344 (FAIR\-IMPACT), HORIZON\-INFRA\-2021\-TECH-01 101057437 (BioDT); and by UK Research and Innovation (UKRI) under the UK government’s \emph{Horizon Europe funding guarantee} grants 10038963 (EuroScienceGateway), 10038992(FAIR\-IMPACT), 10038930 (BioDT).
+\begin{small}
+This work was funded by the European Union programmes \emph{Horizon 2020} under grant agreements H2020-INFRAEDI-02-2018 823830 (BioExcel-2), H2020-INFRAEOSC-2018-2 824087 (EOSC-Life) and \emph{Horizon Europe} under grant agreements HORIZON-INFRA-2021-EMERGENCY-01 101046203 (BY-COVID), HORIZON-INFRA-2021-EOSC-01 101057388 (EuroScienceGateway), HORIZON-INFRA-2021-EOSC-01-05 101057344 (FAIR-IMPACT), HORIZON-INFRA-2021-TECH-01 101057437 (BioDT); and by UK Research and Innovation (UKRI) under the UK government’s \emph{Horizon Europe funding guarantee} grants 10038963 (EuroScienceGateway), 10038992(FAIR-IMPACT), 10038930 (BioDT).
+\end{small}
+
+\section*{Author contributions}
+\begin{small}
+
+Contributions to this article according to the CASRAI CRediT taxonomy\footnote{\url{https://credit.niso.org/}}:
+
+\begin{description}
+\tightlist
+\item[Stian Soiland-Reyes]
+Conceptualization, Funding acquisition, Investigation, Methodology,
+Writing -- original draft, Writing -- review \& editing
+\item[Carole Goble]
+Funding acquisition, Supervision, Writing -- review \& editing
+\item[Paul Groth]
+Conceptualization, Methodology, Supervision, Writing -- review \& editing
+\end{description}
+\end{small}
 
 
 %\bibliography{bibliography}
