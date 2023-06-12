@@ -52,7 +52,7 @@
 
 %%% END own imports
 
-\title{Evaluating FAIR Digital Object as a distributed object system}
+\title{Evaluating FAIR Digital Object and Linked Data as distributed object systems}
 
 \author[1,2]{Stian Soiland-Reyes} % https://orcid.org/0000-0001-9842-9718
 \author[1]{Carole Goble}          % https://orcid.org/0000-0003-1219-2137
@@ -62,10 +62,10 @@
 \affil[2]{Informatics Institute, Faculty of Science, University of Amsterdam, NL }
 \corrauthor[1]{Stian Soiland-Reyes}{soiland-reyes@manchester.ac.uk}
 
-% \keywords{Keyword1, Keyword2, Keyword3}
+%\keywords{FAIR, FDO, digital object, Linked Data, EOSC, distributed objects, frameworks, interoperability, middleware}
 
 \begin{abstract}
-FAIR Digital Object is an emerging concept from EOSC. This is important. Worthwile to understand how semantic technologies and semantic web vision relate to this emerging landscape. Here we do this systematically by comparing the technologies introduced under the banner of FAIR digital Object and Semantic Web.
+FAIR Digital Object (FDO) is an emerging concept that is highlighted by European Open Science Cloud (EOSC) as a potential candidate for building a ecosystem of machine-actionable research outputs. In this work we systematically evaluate FDO and its implementations as a global distributed object system, by using five different conceptual frameworks that cover interoperability, middleware, FAIR principles, EOSC requirements and FDO guidelines themself. We compare the FDO approach with established Linked Data practices and the existing Web architecture, and provide a brief history of the Semantic Web while discussing why these technologies may have been difficult to adopt for FDO purposes. We conclude with recommendations for both communities to 
 \end{abstract}
 
 \begin{document}
@@ -121,7 +121,7 @@ From this it becomes apparent that there is a potentially large overlap between 
 
 \subsubsection*{Next steps for FDO}\label{sec:next-step-fdo}
 
-The FAIR Digital Object Forum \autocite{FAIRDigitalObjects} working groups have prepared detailed requirement documents \autocite{fdo-Specs} setting out the path for realising FDOs, named \emph{FDO Recommendations}. As of 2023-02-02, most of these documents are open for public review, while some are still in draft stages in Google Docs for internal review. As these documents clarify the future aims and focus of FAIR Digital Objects \autocite{fdo-Roadmap}, we provide their brief summaries below:
+The FAIR Digital Object Forum \autocite{FAIRDigitalObjects} working groups have prepared detailed requirement documents \autocite{fdo-Specs} setting out the path for realising FDOs, named \emph{FDO Recommendations}. As of 2023-02-02, most of these documents are open for public review, while some are still in draft stages for internal review. As these documents clarify the future aims and focus of FAIR Digital Objects \autocite{fdo-Roadmap}, we provide their brief summaries below:
 
 \textbf{FAIR Digital Object Overview and Specifications} \autocite{fdo-Overview} is a comprehensive overview of FAIR Digital Object specifications listed below. It serves as a primer that introduces FDO concepts and the remaining documents. It is accompanied by an FDO Glossary \autocite{fdo-Glossary}.
 
@@ -147,7 +147,7 @@ The \textbf{Machine actionability} \autocite{fdo-MachineActionDef} sets out to d
 
 \textbf{Implementation of Attributes, Types, Profiles and Registries} \autocite{fdo-ImplAttributesTypesProfiles} details how to establish FDO registries for types and FDO profiles, with their association with PID systems. This document suggest policies and governance structures, together with guidelines for implementations, but without mandating any explicit technology choices. Differences in use of attributes are examplified using FDO PIDs for scientific instruments, and the proto-FDO approach of \href{https://de.dariah.eu/}{DARIAH-DE} \autocite{schwardmannTwoExamplesHow2022}.
 
-It is worth pointing out at that, except for the DOIP endorsement, all of these documents are conceptual, in the sense that they permit any technical implementation of FDO, if used according to the recommendations. See bibliography \vref{sec:fdo-bibliography} for the citation per document above.
+It is worth pointing out at that, except for the DOIP endorsement, all of these documents are conceptual, in the sense that they permit any technical implementation of FDO, if used according to the recommendations. See bibliography \vref*{sec:fdo-bibliography} for the citation per document above.
 
 \subsection*{From the Semantic Web to Linked Data}\label{sec:ld}
 
@@ -167,7 +167,7 @@ The mid-2000s saw large academic interest and growth of the Semantic Web, with t
 
 Established Semantic Web services and standards include SPARQL \autocite{w3-sparql11-overview} (pattern-based triple queries), \href{https://www.w3.org/TR/rdf11-concepts/\#section-dataset}{named graphs} \autocite{w3-rdf11-concepts} (triples expanded to \emph{quads} to indicate statement source or represent conflicting views), triple/quad stores (graph databases such as OpenLink Virtuoso, GraphDB, 4Store), mature RDF libraries (including Redland RDF, Apache Jena, Eclipse RDF4J, RDFLib, RDF.rb, rdflib.js), and numerous graph visualisation (many of which struggle with usability for more than 20 nodes).
 
-The creation of RDF-based knowledge graphs grew particularly in fields like bioinformatics, e.g.~for describing genomes and proteins \autocite{gobleStateNationData2008c,williamsOpenPHACTSSemantic2012c}. In theory, the use of RDF by the life sciences would enable interoperability between the many data repositories and support combined views of the many aspects of bio-entities -- however in practice most institutions ended up making their own ontologies and identifiers, for what to the untrained eye would mean roughly the same. One can argue that the toll of adding the semantic logic system of rich ontologies meant that small, but fundamental, differences in opinion (e.g.~should a \emph{gene identifier} signify which protein a DNA sequence would make, or just the particular DNA sequence letters, or those letters as they appear in a particular position on a human chromosome?) lead to large differences in representational granularity, and thus needed different identifiers.
+The creation of RDF-based knowledge graphs grew particularly in fields like bioinformatics, e.g.~for describing genomes and proteins \autocite{gobleStateNationData2008c,williamsOpenPHACTSSemantic2012c}. In theory, the use of RDF by the life sciences would enable interoperability between the many data repositories and support combined views of the many aspects of bio-entities -- however in practice most institutions ended up making their own ontologies and identifiers, for what to the untrained eye would mean roughly the same. One can argue that the toll of adding the semantic logic system of rich ontologies meant that small, but fundamental, differences in opinion (e.g.~should a \emph{gene identifier} signify just the particular DNA sequence letters, or those letters as they appear in a particular position on a human chromosome?) lead to large differences in representational granularity, and thus needed different identifiers.
 
 Facing these challenges, thanks to the use of universal identifiers in the form of URIs, \emph{mappings} could retrospectively be developed not just between resources, but also across vocabularies. Such mappings can be expressed themselves using lightweight and flexible RDF vocabularies such as SKOS \autocite{w3-skos-primer} (e.g.~\texttt{dct:title\ skos:closeMatch\ schema:name} to indicate near equivalence of two properties). Automated ontology mappings have identified large potential overlaps (e.g.~372 definitions of \texttt{Person}) \autocite{huHowMatchableAre2011a} .
 
@@ -385,7 +385,8 @@ While RDF and Linked Data have been suggested as prime candidates for making FAI
 Indeed, this may be one reason why the initial FDO effort steered away from Linked Data approaches, but now seems in a danger of opening the many same degrees of freedom within FDO.
 
 We therefore identify the need for a new explicit FDO profile of Linked Data that sets pragmatic constraints and stronger recommendations for consistent and developer-friendly deployment of digital objects. 
-Such a combination of efforts will utillise both the benefits of mature Semantic Web technologies (e.g.~federated knowledge graph queries and rich validation) and data management practices that follow FDO guidance in order to grow a rigid (yet flexible) ecosystem of machine-actionable scholarly objects. It is beyond the scope of this work to detail such a profile, but its main priorities could be:
+Such a combination of efforts will utillise both the benefits of mature Semantic Web technologies (e.g.~federated knowledge graph queries and rich validation) and data management practices that follow FDO guidance in order to grow a rigid (yet flexible) ecosystem of machine-actionable scholarly objects. 
+It is beyond the scope of this work to detail such a profile, but its main priorities could be:
 
 \begin{itemize}
   \tightlist
@@ -397,18 +398,28 @@ Such a combination of efforts will utillise both the benefits of mature Semantic
   \item Types, attributes and actions are self-defined by their identifier
 \end{itemize}
 
-The FAIR and Linked Data communities likewise need to recognize the need for simpler, more pragmatic approaches that make it easier for FAIR practitioners to adapt the technologies with "just enough" semantics. We have previously proposed the combination of RO-Crate \autocite{10.3233/ds-210053} and Signposting \autocite{vandesompelFAIRSignpostingProfile2022} as a mean to implement FDO \autocite{10.3897/rio.8.e93937} over HTTP using a common Linked Data metadata model. However it may be sufficient to use HTTP-based FAIR Signposting alone to achieve the above list, if one considers only a small metadata model, and rather reference from the signposting which metadata resources are additionally available. This will allow any Linked Data resource to gradually participate in the FDO ecosystem, with minimal effort and non-intrusive implementation changes. FDO implementations like Cordra typically already use HTTP APIs that align with DOIP \autocite{DOIPAPIHTTPa}, these can be augmented with signposting headers without necessarily moving to a Linked Data metadata model. 
+The FAIR and Linked Data communities likewise need to recognize the need for simpler, more pragmatic approaches that make it easier for FAIR practitioners to adapt the technologies with "just enough" semantics. 
+We have previously proposed the combination of RO-Crate \autocite{10.3233/ds-210053} and Signposting \autocite{vandesompelFAIRSignpostingProfile2022} as a mean to implement FDO \autocite{10.3897/rio.8.e93937} over HTTP using a common Linked Data metadata model. 
+
+However it may be sufficient to use HTTP-based FAIR Signposting alone to achieve the above list, if one considers only a small metadata model, and rather reference from the signposting which metadata resources are additionally available. 
+This will allow any Linked Data resource to gradually participate in the FDO ecosystem, with minimal effort and non-intrusive implementation changes. FDO implementations like Cordra typically already use HTTP APIs that align with DOIP \autocite{DOIPAPIHTTPa}, these can be augmented with Signposting headers without necessarily moving to a Linked Data metadata model. 
 
 
 \hypertarget{conclusion}{%
 \section*{Conclusion}\label{conclusion}}
 
-In this work we have considered FAIR Digital Objects (FDO) as a potential distributed object system and compared FDO with established Web approaches like Linked Data. We have described the background of the Semantic Web and FAIR Digital Objects, and evaluated both using multiple conceptual frameworks. We find that both directions can significantly benefit from each-other and should be aligned further. Namely Linked Data proponents need to make their technologies more approachable, agreeing on predictable and consistent implementations of FAIR principles. The FDO recommendations show that FAIR thinking in this regard need to move beyond data publishing and into machine actionability across digital objects, and with broader community consensus. While flexibility is a necessary ingredient alongside rigidity, the FDO community likewise need to settle on directly implementable specifications rather than just guidelines, and avoid making similar mistakes as the early Semantic Web adopters. 
+In this work we have considered FAIR Digital Objects (FDO) as a potential distributed object system and compared FDO with established Web approaches focusing on Linked Data. We have described the background of the Semantic Web and FAIR Digital Objects, and evaluated both using multiple conceptual frameworks.
 
+We find that both FDO and Linked Data approaches can significantly benefit from each-other and should be aligned further. Namely Linked Data proponents need to make their technologies more approachable, agreeing on predictable and consistent implementations of FAIR principles. 
+
+The FDO recommendations show that FAIR thinking in this regard need to move beyond data publishing and into machine actionability across digital objects, and with broader community consensus. 
+As flexibility for extensions is a necessary ingredient alongside rigidity for core concepts, the FDO community likewise need to settle on directly implementable specifications rather than just guidelines, and avoid making similar mistakes as the early Semantic Web adopters. 
+
+By implementing the goals of FAIR Digital Objects with the mature technology stack developed for Linked Data, EOSC research infrastructures and researchers in general can create and use FAIR machine-actionable research outputs for decades to come.
 
 \section*{Acknowledgments}
 
-This work was funded by the European Union programmes \emph{Horizon 2020} under grant agreements H2020-INFRAEDI-02-2018 823830 (BioExcel-2), H2020-INFRAEOSC-2018-2 824087 (EOSC-Life) and \emph{Horizon Europe} under grant agreements HORIZON-INFRA-2021-EMERGENCY-01 101046203 (BY-COVID), HORIZON-INFRA-2021-EOSC-01 101057388 (EuroScienceGateway), HORIZON-INFRA-2021-EOSC-01-05 101057344 (FAIR-IMPACT), HORIZON-INFRA-2021-TECH-01 101057437 (BioDT); and by UK Research and Innovation (UKRI) under the UK government’s \emph{Horizon Europe funding guarantee} grants 10038963 (EuroScienceGateway), 10038992(FAIR-IMPACT), 10038930 (BioDT).
+This work was funded by the European Union programmes \emph{Horizon 2020} under grant agreements H2020-INFRAEDI-02-2018 823830 (BioExcel-2), H2020\-INFRAEOSC\-2018\-2 824087 (EOSC-Life) and \emph{Horizon Europe} under grant agreements HORIZON\-INFRA\-2021\-EMERGENCY\-01 101046203 (BY\-COVID), HORIZON\-INFRA\-2021\-EOSC\-01 101057388 (EuroScienceGateway), HORIZON\-INFRA\-2021\-EOSC\-01\-05 101057344 (FAIR\-IMPACT), HORIZON\-INFRA\-2021\-TECH-01 101057437 (BioDT); and by UK Research and Innovation (UKRI) under the UK government’s \emph{Horizon Europe funding guarantee} grants 10038963 (EuroScienceGateway), 10038992(FAIR\-IMPACT), 10038930 (BioDT).
 
 
 %\bibliography{bibliography}
