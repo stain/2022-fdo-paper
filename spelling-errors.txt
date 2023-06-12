@@ -1,4 +1,6 @@
 actionability
+advantegous
+advanterous
 API’s
 APIs
 ary
@@ -12,7 +14,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-BioSchemas
+Bioschemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -25,7 +27,7 @@ centric
 ChEMBL
 consumptions
 CORDA
-Cordra
+CORDRA
 COVID
 CSV
 CWFP
@@ -53,7 +55,8 @@ examplified
 examplify
 exisiting
 Extensibility
-fdo
+FAIRification
+FDO
 FDOF
 FDOR
 FDO’s
@@ -108,17 +111,17 @@ metamodel
 Microdata
 microformats
 Micropub
-Middleware
+middleware
 middlewares
-modularity
+Modularity
 namespace
 namespaces
 NIST
 NL
 OAI
 OBO
-Occassionally
-Ontologies
+occassionally
+ontologies
 OpenAIRE
 OpenAPI
 OpenLink
@@ -141,7 +144,6 @@ pre
 programmatically
 proto
 QUIC
-Ramnifications
 RDA’s
 RDF
 RDFa
@@ -178,11 +180,14 @@ subtypes
 syntaxes
 TCP
 testbeds
+themself
 TLS
 TODO
 transparancy
+transparantly
 TypingFDOs
 UDP
+underspecified
 UNIPROT
 URI
 utillise
@@ -190,6 +195,5 @@ utillised
 WD
 WebDAV
 WHATWG
-Worthwile
 WSDL
 XMP
