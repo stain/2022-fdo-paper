@@ -1,29 +1,13 @@
-\begin{longtable}[]{@{}
-  >{\centering\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2923}}
-  >{\centering\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2769}}
-  >{\centering\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4308}}@{}}
+\begin{table}[h!]
+\centering
 \caption{Mapping the Metamodel concepts from the Interoperability Framework for Fast Data \autocite{delgadoInteroperabilityFrameworkDistributed2016a} to equivalent concepts for FDO and Web.
 \label{tbl:metamodel-concepts}}\tabularnewline
-\toprule
-\begin{minipage}[b]{\linewidth}\centering
-Metamodel concept
-\end{minipage}	& \begin{minipage}[b]{\linewidth}\centering
-FDO/DOIP concept
-\end{minipage}	& \begin{minipage}[b]{\linewidth}\centering
-Web/HTTP concept
-\end{minipage} \\
-\midrule
-\endfirsthead
-\toprule
-\begin{minipage}[b]{\linewidth}\centering
-Metamodel concept
-\end{minipage}	& \begin{minipage}[b]{\linewidth}\centering
-FDO/DOIP concept
-\end{minipage}	& \begin{minipage}[b]{\linewidth}\centering
-Web/HTTP concept
-\end{minipage} \\
-\midrule
-\endhead
+ \begin{tabular}{ m{5em}  m{15em} m{15em} } 
+ \hline
+Metamodel concept & 
+FDO/DOIP concept & 
+Web/HTTP concept \\ 
+ \hline
 Resource	  & FDO/DO	            & Resource \\
 Service	    & DOIP service	      & Server/endpoint \\
 Transaction	& (not supported)	    & Conditional requests, \texttt{409\ Conflict} \\
@@ -36,6 +20,6 @@ Message	    & Segment, \texttt{requestId}
 Channel	    & DOIP Transport protocol (e.g.~TCP/IP, TLS). JSWS signatures.
                                   & TCP/IP, TLS, UDP \\
 Protocol  	& DOIP 2.0, ++	      & HTTP/1.1, HTTP/2, HTTP/3 \\
-Link	      & PID/Handle	        & URL \\
-\bottomrule
-\end{longtable}
+Link	      & PID/Handle	        & URL \\ 
+ \hline
+ \end{tabular}\end{table}
