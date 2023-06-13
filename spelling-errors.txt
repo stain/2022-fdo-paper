@@ -14,7 +14,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-Bioschemas
+BioSchemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -27,7 +27,7 @@ centric
 ChEMBL
 consumptions
 CORDA
-CORDRA
+Cordra
 COVID
 CSV
 CWFP
@@ -40,7 +40,7 @@ dereferenceable
 diciplinary
 discoverable
 DNS
-DOIP
+doip
 DOIPs
 DOIPv
 DOIs
@@ -56,14 +56,14 @@ examplify
 exisiting
 Extensibility
 FAIRification
-FDO
+fdo
 FDOF
 FDOR
 FDO’s
 FDOs
 findability
 findable
-foaf
+FOAF
 Freetext
 FROR
 furfill
@@ -111,9 +111,9 @@ metamodel
 Microdata
 microformats
 Micropub
-middleware
+Middleware
 middlewares
-Modularity
+modularity
 namespace
 namespaces
 NIST
@@ -147,7 +147,7 @@ QUIC
 RDA’s
 RDF
 RDFa
-RDFLib
+rdflib
 RDFS
 RDMKit
 redirections
@@ -159,7 +159,7 @@ ResourceSync
 RO
 ROR
 runtime
-scalability
+Scalability
 scalable
 schemas
 seemlessly
