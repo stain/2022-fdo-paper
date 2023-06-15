@@ -30,7 +30,7 @@ Web w/ Linked Data \\
   & DOIP serialise FDOs as JSON, metadata commonly use JSON, typed with JSON Schema. Multiple byte stream attachments of any media type.
   & Textual HTTP headers (including any signposting), single byte stream of any media type, e.g.~Linked Data formats (JSON-LD, Turtle, RDF/XML) or embedded in document (HTML with RDFa, JSON-LD or Microdata). XML was previously the main syntax used by APIs, JSON is now dominant. \\
 \textbf{Connective}: \emph{transferring messages to another application, e.g.~wrapping in other protocols}
-  & DOIP \autocite{foundationDigitalObjectInterface} is transport-independent, commonly TLS TCP/IP port 9000), \href{https://www.cordra.org/documentation/api/doip-api-for-http-clients.html}{DOIP over HTTP}
+  & \textcite{foundationDigitalObjectInterface} is transport-independent, commonly TLS TCP/IP port 9000), \href{https://www.cordra.org/documentation/api/doip-api-for-http-clients.html}{DOIP over HTTP}
   & HTTP/1.1 (TCP/IP port 80), HTTP/1.1+TLS (TCP/IP 443), HTTP/2 (as HTTP/1* but binary), HTTP/3 (like HTTP/2+TLS but UDP) \\
 \textbf{Environmental}: \emph{how applications are deployed and affected by its environment, portability}
   & Main DOIP implementation is \href{https://www.cordra.org/}{Cordra}, which can be single-instance or \href{https://www.cordra.org/documentation/configuration/distributed-deployment.html}{distributed}. Cordra \href{https://www.cordra.org/documentation/configuration/storage-backends.html}{storage backends} include file system, S3, MongoDB (itself scalable). Unique DOIP protocol can be hard to add to existing Web application frameworks, although proxy services have been developed (e.g.~B2SHARE adapter).
