@@ -49,7 +49,7 @@ eare
 Ecma
 eg
 EMEA
-EOSC
+eosc
 ESRI
 examplified
 examplify
@@ -61,7 +61,7 @@ FDOF
 FDOR
 FDO’s
 FDOs
-Findability
+findability
 findable
 foaf
 Freetext
@@ -81,7 +81,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-HTTPS
+https
 IANA
 IEC
 IETF
@@ -107,7 +107,7 @@ LDP’s
 LOD
 LPD
 Marmotta
-metamodel
+Metamodel
 Microdata
 microformats
 Micropub
@@ -120,7 +120,7 @@ NIST
 NL
 OAI
 OBO
-Occassionally
+occassionally
 ontologies
 OpenAIRE
 OpenAPI
@@ -141,7 +141,7 @@ PMH
 Polymorphism
 practictioners
 pre
-programmatically
+Programmatically
 proto
 QUIC
 RDA’s
