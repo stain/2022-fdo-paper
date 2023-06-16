@@ -14,7 +14,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-BioSchemas
+Bioschemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -27,7 +27,7 @@ centric
 ChEMBL
 consumptions
 CORDA
-CORDRA
+Cordra
 COVID
 CSV
 CWFP
@@ -61,7 +61,7 @@ FDOF
 FDOR
 FDO’s
 FDOs
-Findability
+findability
 findable
 foaf
 Freetext
@@ -81,7 +81,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-HTTPS
+https
 IANA
 IEC
 IETF
@@ -107,7 +107,7 @@ LDP’s
 LOD
 LPD
 Marmotta
-metamodel
+Metamodel
 Microdata
 microformats
 Micropub
@@ -141,13 +141,13 @@ PMH
 Polymorphism
 practictioners
 pre
-Programmatically
+programmatically
 proto
 QUIC
 RDA’s
 RDF
 RDFa
-RDFLib
+rdflib
 RDFS
 RDMKit
 redirections
@@ -159,7 +159,7 @@ ResourceSync
 RO
 ROR
 runtime
-Scalability
+scalability
 scalable
 schemas
 seemlessly
