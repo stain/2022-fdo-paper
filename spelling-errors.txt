@@ -34,7 +34,7 @@ CWFP
 DARIAH
 Datacite
 dataset
-Datasets
+datasets
 DCAT
 dereferenceable
 diciplinary
@@ -56,14 +56,14 @@ examplify
 exisiting
 Extensibility
 FAIRification
-FDO
+fdo
 FDOF
 FDOR
 FDO’s
 FDOs
 Findability
 findable
-FOAF
+foaf
 Freetext
 FROR
 furfill
@@ -107,7 +107,7 @@ LDP’s
 LOD
 LPD
 Marmotta
-Metamodel
+metamodel
 Microdata
 microformats
 Micropub
@@ -141,7 +141,7 @@ PMH
 Polymorphism
 practictioners
 pre
-Programmatically
+programmatically
 proto
 QUIC
 RDA’s
