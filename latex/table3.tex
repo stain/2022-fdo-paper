@@ -1,3 +1,9 @@
+\newgeometry{left=4cm,%
+             right=2cm,%
+             top=2.25cm,%
+             bottom=2.25cm,%
+             headheight=12pt}
+
 \begin{landscape}
   \begin{small}
   \begin{longtable}[]{@{}
@@ -27,7 +33,7 @@
 G1: \emph{invest for many decades}
   & Handle system stable for 20 years, DOIP 2.0 since 2017.
   & Ensure FDO types will not be protocol-bound as DOIP might be updated/replaced
-  & HTTP stable for 30 years, Semantic Web for 20 years. \texttt{http://} URIs replaced by \texttt{https://}.
+  & HTTP stable for 30 years, Semantic Web for 20 years. \texttt{http://} URIs mostly replaced by \texttt{https://}.
   & Keep flexibility of RDF serialisation formats which may change more frequently \\
 G2: \emph{trustworthiness}
   & DOI/Handle trusted by all major academic publishers and data repositories. DOIP relatively unknown, in effect only one implementation.
@@ -38,7 +44,7 @@ G3: \emph{follows FAIR principles}
   & See Table \vref{tbl:fair-data-maturity-model}
   & Ensure all FAIR principles are covered, build complete examples.
   & Touched briefly, see Table \vref{tbl:fair-data-maturity-model}
-  & Add explicit expression to show each FAIR pcinciple fulfilled. \\
+  & Add explicit expression to show each FAIR principle fulfilled. \\
 G4: \emph{machine actionability}
   & CRUD and extension operations dynamically listed (see Table \vref{tbl:fdo-web-middleware})
   & Specify which operations should work for a given type, to reduce need for dynamic lookup. Specify input/output expectations formally (e.g.~JSON Schema).
@@ -56,7 +62,7 @@ G6: \emph{stable binding between entities}
   & \\
 G7: \emph{encapsulation}
   & Operations discovered at runtime (\texttt{0.DOIP/Op.ListOperations}).
-  & Allow method discovery by type FDOs in advance (see PR-TypingFDOs-2.0-20220608).
+  & Allow method discovery by type FDOs in advance \autocite{fdo-TypingFDOs}.
   & HTTP methods discovered at runtime (\texttt{OPTIONS}), indempotent methods attempted directly. Unsupported methods reported using LDP constraints to human-readable text.
   & Declare supported methods in advance, e.g.~OpenAPI \autocite{OpenAPISpecificationV3} \\
 G8: \emph{technology independence}
@@ -67,18 +73,18 @@ G8: \emph{technology independence}
 G9: \emph{standard compliance}
   & Handle \autocite{rfc3650}, DOIP \autocite{foundationDigitalObjectInterface}. FDO requirements not standardised yet.
   & Formalise standard process of FDO requirements \autocite{fdo-DocProcessStd}
-  & HTTP, LDP. FDOF not yet standardised
-  & Formalise FDOF from FDOF-SEM working group \\
+  & HTTP, LDP. However FDOF is not yet standardised.
+  & Formalise FDOF from FDOF-SEM working group. \\
 FDOF1: \emph{PID as basis}
   & Extensive use of Handle system.
-  & Clarify how local testing handles can be used during development, how ``temporary'' FDOs should evolve \autocite{fdo-PIDProfileAttributes}. Register \texttt{0.DOIP/*} and \texttt{0.FDO/*} as PIDs.
+  & Clarify how local testing handles can be used during development, how ``temporary'' FDOs should evolve \autocite{fdo-PIDProfileAttributes}. Register \texttt{0.DOIP/*} and \texttt{0.FDO/*} as actual PIDs.
   & HTTP URLs as basis for identifiers, but they are frequently not persistent.
-  & Add strong guidance for PID services like w3id and persistence policies. \\
+  & Add strong guidance for PID services like w3id and persistence policies \autocite{McMurry_2017}. \\
 FDOF2: \emph{PID record w/ type}
   & Unspecified how to resolve from Handle to DOIP Service (!), in practice \texttt{10320/loc}, \texttt{0.TYPE/DOIPService}, \texttt{URL}, \texttt{URL\_REPLICA}
   & Document requirements for PID Record
   & w3id/purl PIDs redirect without giving any metadata. Datacite DOIs content-negotiate to give registered metadata.
-  & Add FAIR Signposting at PID provider for minimal PID record \\
+  & Add FAIR Signposting \autocite{vandesompelFAIRSignpostingProfile2022} at PID provider for minimal PID record \\
 FDOF3: \emph{PID resolvable to bytestream \& metadata}
   & Byte stream resolvable (\texttt{0.DOIP/Retrieve}), \texttt{includeElementData} option can retrieve bytestream or full object structure. No method/attribute defined for separate metadata, only directly in PID Record. Unclear meaning of multiple items and bytestream chunks.
   & Clarify expectations for multiple items. Recommend chunks to not be used.
@@ -115,7 +121,7 @@ FDOF9: \emph{Different metadata levels}
   & Undefined how to handle multiple metadata granularities or domains, alternative LDP containers can present different views on same stored objects.
   & Define how to navigate to alternate views and their semantic implications, e.g.~\texttt{owl:sameAs} \\
 FDOF10: \emph{Metadata schemas by community}
-  & Metadata schemas are in practice managed on single CORDA server as local types, using JSON Schema.
+  & Metadata schemas are in practice managed on single Cordra server as local types, using JSON Schema.
   & Require types to be FDOs with registered PIDs, implement shared types.
   & Plethora of existing RDF vocabularies/ontologies managed by larger communities, e.g.~\href{https://obofoundry.org/}{OBO Foundry} \autocite{smithOBOFoundryCoordinated2007a}
   & Rather document better how individual ad-hoc schemas can be started for prototypes. \\
@@ -133,3 +139,4 @@ FDOF12: \emph{Deleted FDO preserve PID w/ tombstone}
 \end{longtable}
 \end{small}
 \end{landscape}
+\restoregeometry
