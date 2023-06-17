@@ -87,7 +87,7 @@ In other discourse, Linked Data \autocite{bizerLinkedDataStory2009a} has been se
 
 One challenge that may, perhaps counter-intuitively, steer developers towards a not-invented-here mentality \autocite{stefiDevelopersMakeUnbiased2015,stefiDevelopReuseTwo2015a} when exposing their data on the Web is the heterogeneity and apparent complexity of Semantic Web approaches themselves \autocite{merono-penuelaWebDataApis2021b}.
 
-These approaches -- FDO and Linked Data -- thus, form two of the major avenues for allowing developers and the wider research community to achieve the goal of FAIR data. Given their importance, in this article, we aim to compare FAIR Digital Objects, with Linked Data and the Web architecture in the context of the discourse around FAIR data.
+These approaches -- FDO and Linked Data -- thus, form two of the major avenues for allowing developers and the wider research community to achieve the goal of FAIR data. Given their importance, in this article, we aim to compare FAIR Digital Objects with Linked Data and the Web architecture in the context of the discourse around FAIR data.
 
 Concretely, the contribution of this paper is {\bf a systematic comparison between FDO and Linked Data using 5 different conceptual frameworks} that capture different perspectives on interoperability and readiness for implementation.
 
@@ -110,11 +110,11 @@ FDO is an evolving concept. A set of FDO Demonstrators \autocite{wittenburgFAIRD
 \begin{itemize}
 \tightlist
 \item
-  Building on the Digital Object concept, using the simplified \textcite{foundationDigitalObjectInterface} specification, which detail how to exchange JSON objects through a text-based protocol\footnote{For a brief introduction to DOIP 2.0, see \textcite{DOIPExamplesCordraa}} (usually TCP/IP over TLS). The main DOIP operations are retrieving, creating and updating digital objects. These are mostly realised using the reference implementation ( \href{https://cordra.org/}{Cordra}). FDO types are registered in the local Cordra instance, where they are specified using JSON Schema \autocite{Draftbhuttonjsonschema} and PIDs are assigned using the Handle system. Several type registries have been established.
+  Building on the Digital Object concept, using the simplified \textcite{foundationDigitalObjectInterface} specification, which detail how to exchange JSON objects through a text-based protocol\footnote{For a brief introduction to DOIP 2.0, see \textcite{DOIPExamplesCordraa}} (usually TCP/IP over TLS). The main DOIP operations are retrieving, creating and updating digital objects. These are mostly realised using the reference implementation Cordra \autocite{tupelo-schneckrobertBriefIntroductionCordra2022}. FDO types are registered in the local Cordra instance, where they are specified using JSON Schema \autocite{Draftbhuttonjsonschema} and PIDs are assigned using the Handle system. Several type registries have been established.
 \item
   Following a Linked Data approach, but using the DOIP protocol, e.g.~using JSON-LD and schema.org within DOIP in Materal Sciences archives \autocite{10.1002/jcc.26842}.
 \item
-  Approaching the FDO principles from existing Linked Data practices on the Web,e.g.~WorkflowHub use of RO-Crate and schema.org \autocite{10.3897/rio.8.e93937}.
+  Approaching the FDO principles from existing Linked Data practices on the Web, e.g.~WorkflowHub use of RO-Crate and schema.org \autocite{10.3897/rio.8.e93937}.
 \end{itemize}
 
 From this it becomes apparent that there is a potentially large overlap between the goals and approaches of FAIR Digital Objects and Linked Data, which we will cover \vpageref{sec:ld}.
@@ -122,7 +122,7 @@ From this it becomes apparent that there is a potentially large overlap between 
 
 \subsubsection*{Next steps for FDO}\label{sec:next-step-fdo}
 
-The FAIR Digital Object Forum \autocite{FAIRDigitalObjects} working groups have prepared detailed requirement documents \autocite{fdo-Specs} setting out the path for realising FDOs, named \emph{FDO Recommendations}. As of 2023-02-02, most of these documents are open for public review, while some are still in draft stages for internal review. As these documents clarify the future aims and focus of FAIR Digital Objects \autocite{fdo-Roadmap}, we provide a brief summary of each:
+The FAIR Digital Object Forum \autocite{FAIRDigitalObjects} working groups have prepared detailed requirement documents \autocite{fdo-Specs} setting out the path for realising FDOs, named \emph{FDO Recommendations}. As of 2023-06-17, most of these documents are open for public review, while some are still in draft stages for internal review. As these documents clarify the future aims and focus of FAIR Digital Objects \autocite{fdo-Roadmap}, we provide a brief summary of each:
 
 \textbf{FAIR Digital Object Overview and Specifications} \autocite{fdo-Overview} is a comprehensive overview of FAIR Digital Object specifications listed below. It serves as a primer that introduces FDO concepts and the remaining documents. It is accompanied by an FDO Glossary \autocite{fdo-Glossary}.
 
@@ -148,7 +148,7 @@ The \textbf{Machine actionability} \autocite{fdo-MachineActionDef} sets out to d
 
 \textbf{Implementation of Attributes, Types, Profiles and Registries} \autocite{fdo-ImplAttributesTypesProfiles} details how to establish FDO registries for types and FDO profiles, with their association with PID systems. This document suggest policies and governance structures, together with guidelines for implementations, but without mandating any explicit technology choices. Differences in use of attributes are examplified using FDO PIDs for scientific instruments, and the proto-FDO approach of \href{https://de.dariah.eu/}{DARIAH-DE} \autocite{schwardmannTwoExamplesHow2022}.
 
-See bibliography \vref*{sec:fdo-bibliography} for the citation per document above. It is worth pointing out at that, except for the DOIP endorsement, all of these documents are conceptual, in the sense that they permit any technical implementation of FDO, if used according to the recommendations. Existing FDO implementations \autocite{wittenburgFAIRDigitalObject2022b} are not fully consolidated in choices such as protocols, type systems and serialisations -- this divergence and corresponding additional technical requirements mean that FDO is not yet a single ecosystem. 
+See bibliography \vref*{sec:fdo-bibliography} for the citation per document above. It is worth pointing out that, except for the DOIP endorsement, all of these documents are conceptual, in the sense that they permit any technical implementation of FDO, if used according to the recommendations. Existing FDO implementations \autocite{wittenburgFAIRDigitalObject2022b} are thus not fully consolidated in choices such as protocols, type systems and serialisations -- this divergence and corresponding additional technical requirements mean that FDOs are not yet in a single ecosystem. 
 
 \subsection*{From the Semantic Web to Linked Data}\label{sec:ld}
 
@@ -180,15 +180,15 @@ With these trends, an emerging problem was that adopters of the Semantic Web pri
 
 \subsubsection*{Linked Data: Rebuilding the Web of Data}\label{sec:ld-web}
 
-The \textbf{Linked Data} concept \autocite{bizerLinkedDataStory2009a} was kickstarted as a set of best practices \autocite{LinkedDataDesign} to bring the Web aspect of the Semantic Web back into focus. Crucial to Linked Data is the \emph{reuse of existing URIs}, rather than making new identifiers. This means a loosening of the semantic restrictions previously applied, and an emphasis on building navigable data resources, rather than elaborate graph representations.
+The \textbf{Linked Data} (LD) concept \autocite{bizerLinkedDataStory2009a} was kickstarted as a set of best practices \autocite{LinkedDataDesign} to bring the Web aspect of the Semantic Web back into focus. Crucial to Linked Data is the \emph{reuse of existing URIs}, rather than making new identifiers. This means a loosening of the semantic restrictions previously applied, and an emphasis on building navigable data resources, rather than elaborate graph representations.
 
 Vocabularies like \href{https://schema.org/}{schema.org} evolved not long after, intended for lightweight semantic markup of existing Web pages, primarily to improve search engines' understanding of types and embedded data. In addition to several such embedded \emph{microformats} \autocite{OpenGraphProtocol,w3-rdfa-primer,HTMLStandard}, we find JSON-LD \autocite{w3-json-ld} as a Web-focused RDF serialisation that aims for improved programmatic generation and consumption, including from Web applications. JSON-LD is as of 2023-05-18 used\footnote{Presumably this large uptake of JSON-LD is mainly for the purpose of Search Engine Optimisation (SEO), with typically small amounts of metadata which may not constitute Linked Data as introduced above, however this deployment nevertheless constitute machine-actionable structured data.} by 45\% of the top 10 million websites \autocite{UsageStatisticsJSONLD}.
 
 Recently there has been a renewed emphasis to improve the \emph{Developer Experience} \autocite{DesigningLinkedData2018} for consumption of Linked Data, for instance RDF Shapes -- expressed in SHACL \autocite{w3-shacl} or ShEx \autocite{ShapeExpressionsShEx} -- can be used to validate RDF Data \autocite{gayoValidatingRDFData2017a,thorntonUsingShapeExpressions2019a} before consuming it programmatically, or reshaping data to fit other models. While a varied set of tools for Linked Data consumptions have been identified, most of them still require developers to gain significant knowledge of the underlying Semantic Web technologies, which hampers adaption by non-LD experts \autocite{klimekSurveyToolsLinked2019a}, which then tend to prefer non-semantic two-dimensional formats such as CSV files.
 
-A valid concern is that the Semantic Web research community has still not fully embraced the Web, and that the ``final 20\%'' engineering effort is frequently overlooked in favour of chasing new trends such as Big Data and AI, rather than making powerful Linked Data technologies available to the wider groups of Web developers \autocite{verborghSemanticWebIdentity2020a}. One bridging gap here by the Linked Data movement has been ``linked data by stealth'' approaches such as structured data entry spreadsheets powered by ontologies \autocite{wolstencroftRightFieldEmbeddingOntology2011b}, the use of Linked Data as part of REST Web APIs \autocite{pageRESTLinkedData2011}, and as shown by the big uptake by publishers to annotate the Web using schema.org \autocite{bernsteinNewLookSemantic2016a}, with vocabulary use patterns documented by copy-pastable JSON-LD examples, rather than by formalised ontologies or developer requirements to understand the full Semantic Web stack.
+A valid concern is that the Semantic Web research community has still not fully embraced the Web, and that the ``final 20\%'' engineering effort is frequently overlooked in favour of chasing new trends such as Big Data and AI, rather than making powerful Linked Data technologies available to the wider groups of Web developers \autocite{verborghSemanticWebIdentity2020a}. One bridging gap here by the Linked Data movement has been ``Linked Data by stealth'' approaches such as structured data entry spreadsheets powered by ontologies \autocite{wolstencroftRightFieldEmbeddingOntology2011b}, the use of Linked Data as part of REST Web APIs \autocite{pageRESTLinkedData2011}, and as shown by the big uptake by publishers to annotate the Web using schema.org \autocite{bernsteinNewLookSemantic2016a}, with vocabulary use patterns documented by copy-pastable JSON-LD examples, rather than by formalised ontologies or developer requirements to understand the full Semantic Web stack.
 
-Linked Data provides a technologies that have evolved over time to satisfy its primary purpose of data interoperability. The need to embrace the Web and developer experience have been central lessons learned.  In contrast, FDO is a new approach with many different potential paths forward, and having a partial overlap with the aims of Linked Data.
+Linked Data provides technologies that have evolved over time to satisfy its primary purpose of data interoperability. The needs to embrace the Web and developer experience have been central lessons learned.  In contrast, FDO is a new approach with many different potential paths forward, and having a partial overlap with the aims of Linked Data.
 
 
 
@@ -213,9 +213,9 @@ To better understand the relationship between the FDO framework and other existi
 \end{enumerate}
 
 The reason for this wide-ranged comparison is to exercise the different dimensions that together form FAIR Digital Objects: Data, Metadata, Service, Access, Operations, Computation.
-We have left out further comparisons on type systems, persistent identifiers and social aspects as principles and practices within these dimensions are still taking form within the FDO community (as detailed \vpageref{sec:next-step-fdo}).
+We have left out further considerations on type systems, persistent identifiers and social aspects as principles and practices within these dimensions are still taking form within the FDO community (as detailed \vpageref{sec:next-step-fdo}).
 
-Some of these frameworks invite a comparison on a conceptual level, while others relate better to implementations and current practices. For conceptual comparisons we consider FAIR Digital Objects and the Web broadly. For implementations,we contrast the main FDO realisation using the DOIPv2 protocol \autocite{foundationDigitalObjectInterface} against Linked Data as implemented in general practice.
+Some of these frameworks invite a comparison on a conceptual level, while others relate better to implementations and current practices. For conceptual comparisons we consider FAIR Digital Objects and the Web broadly. For implementations, we contrast the main FDO realisation using the DOIPv2 protocol \autocite{foundationDigitalObjectInterface} against Linked Data as implemented in general practice\footnote{For further background on FDO implemented with Linked Data see \autocite{FDOFramework,10.3897/rio.8.e94501}}.
 
 
 \subsection*{Considering FDO/Web as interoperability framework for Fast Data}\label{sec:interoperability-compare}
