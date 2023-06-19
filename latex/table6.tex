@@ -1,10 +1,12 @@
-\begin{landscape}
+\clearpage
+%\begin{landscape}
+\begin{small}
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0833}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3056}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3056}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3056}}@{}}
-\caption[Assessing EOSC Interoperability Framework, against FDO \& Linked Data]{Assessing EOSC Interoperability Framework \autocite[section 3.6]{corchoEOSCInteroperabilityFramework2021b} against the FDO guidelines \autocite{RwvirqWg} and Linked Data practices.}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.15}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.30}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.30}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.30}}@{}}
+\caption[Assessing EOSC Interoperability Framework, against FDO \& Linked Data]{Assessing EOSC Interoperability Framework \autocite[section 3.6]{corchoEOSCInteroperabilityFramework2021b} against the FDO guidelines \autocite{boninoFAIRDigitalObject} and Linked Data practices.}
 \label{tbl:eosc}\tabularnewline
 \toprule
 Layer &
@@ -96,7 +98,7 @@ Legal          & Track license evolution for dataset
   & Versioning with PAV/PROV/DCAT \\
 Legal          & Policy/guidance for patent/trade secrets violation 
   & Undefined 
-  & Undefined, legal owner may be specified \\
+  & Undefined, legal owner may be specified. \href{https://www.w3.org/TR/2018/REC-odrl-vocab-20180215/}{ODRL} can express policies. \\
 Legal          & GDPR compliance for personal data 
   & Undefined 
   & Undefined \\
@@ -111,5 +113,6 @@ Legal          & Alignment between EOSC and national legislation
   & Not applicable \\
 \bottomrule
 \end{longtable}
-\end{landscape}
+\end{small}
+%\end{landscape}
 
