@@ -14,7 +14,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-Bioschemas
+BioSchemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -27,7 +27,7 @@ centric
 ChEMBL
 consumptions
 CORDA
-CORDRA
+Cordra
 COVID
 CSV
 CWFP
@@ -61,7 +61,7 @@ FDOF
 FDOR
 FDO’s
 FDOs
-findability
+Findability
 findable
 foaf
 Freetext
@@ -81,7 +81,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-HTTPS
+https
 IANA
 IEC
 IETF
@@ -121,7 +121,7 @@ NL
 OAI
 OBO
 Occassionally
-ontologies
+Ontologies
 OpenAIRE
 OpenAPI
 OpenLink
@@ -141,6 +141,7 @@ PMH
 Polymorphism
 practictioners
 pre
+preprint
 programmatically
 proto
 QUIC

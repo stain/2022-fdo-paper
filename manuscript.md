@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/b1393612506612279d1adce2c9bc387fde40c48f/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/b1393612506612279d1adce2c9bc387fde40c48f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/b1393612506612279d1adce2c9bc387fde40c48f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/251c1d7a7c7a10ef9206e0a11ed9bb3d24dcf8b1/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/251c1d7a7c7a10ef9206e0a11ed9bb3d24dcf8b1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/251c1d7a7c7a10ef9206e0a11ed9bb3d24dcf8b1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -70,14 +70,15 @@ manubot-clear-requests-cache: false
 
 
 
-
+_An updated preprint of this manuscript is available at <https://doi.org/10.48550/arXiv.2306.07436> 
+-- these pages may not reflect the latest changes._.
 
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/b1393612506612279d1adce2c9bc387fde40c48f/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/251c1d7a7c7a10ef9206e0a11ed9bb3d24dcf8b1/))
 was automatically generated
-from [stain/2022-fdo-paper@b139361](https://github.com/stain/2022-fdo-paper/tree/b1393612506612279d1adce2c9bc387fde40c48f)
+from [stain/2022-fdo-paper@251c1d7](https://github.com/stain/2022-fdo-paper/tree/251c1d7a7c7a10ef9206e0a11ed9bb3d24dcf8b1)
 on June 22, 2023.
 </em></small>
 
