@@ -33,7 +33,7 @@ CSV
 CWFP
 DARIAH
 Datacite
-dataset
+Dataset
 Datasets
 DCAT
 dereferenceable
@@ -63,7 +63,7 @@ FDO’s
 FDOs
 findability
 findable
-FOAF
+foaf
 Freetext
 FROR
 furfill
@@ -81,7 +81,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-https
+HTTPS
 IANA
 IEC
 IETF
@@ -101,7 +101,7 @@ js
 JSON
 JSWS
 kickstarted
-LD
+ld
 LDP
 LDP’s
 LOD
@@ -120,8 +120,8 @@ NIST
 NL
 OAI
 OBO
-occassionally
-ontologies
+Occassionally
+Ontologies
 OpenAIRE
 OpenAPI
 OpenLink
