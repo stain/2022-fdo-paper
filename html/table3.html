@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>table3: Checking FDO guidelines (Bonino et al. 2019; Anders et al. 2023) against its current implementations as DOIP (“Digital Object Interface Protocol Specification, Version 2.0” 2018) and Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales</title>
+
+    <link rel="stylesheet" href="bundle.css">
+    <link rel="stylesheet" href="tablestyle.css">
+</head>
+<body>
+<div class="landscape">
+<div class="small">
+<div id="tbl:fdo-checks">
+<table>
+<caption>Checking FDO guidelines <span class="citation" data-cites="boninoFAIRDigitalObject fdo-RequirementSpec">(Bonino et al. 2019; Anders et al. 2023)</span> against its current implementations as DOIP <span class="citation" data-cites="foundationDigitalObjectInterface">(<span>“Digital Object Interface Protocol Specification, Version 2.0”</span> 2018)</span> and Linked Data Platform (LDP) <span class="citation" data-cites="FDOFramework">(Bonino da Silva Santos, Guizzardi, and Sales
+2022)</span>, with suggestions for required additions. </caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>FDO Guideline</strong></th>
+<th style="text-align: left;">DOIP 2.0</th>
+<th style="text-align: left;">FDO suggestions</th>
+<th style="text-align: left;">Linked Data Platform</th>
+<th style="text-align: left;">LDP suggestion</th>
+</tr>
+</thead>
+<tr class="even">
+<td style="text-align: left;">G1: <em>invest for many decades</em></td>
+<td style="text-align: left;">Handle system stable for 20 years, DOIP 2.0 since 2017.</td>
+<td style="text-align: left;">Ensure FDO types will not be protocol-bound as DOIP might be updated/replaced</td>
+<td style="text-align: left;">HTTP stable for 30 years, Semantic Web for 20 years. <code>http://</code> URIs mostly replaced by <code>https://</code>.</td>
+<td style="text-align: left;">Keep flexibility of RDF serialisation formats which may change more frequently</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">G2: <em>trustworthiness</em></td>
+<td style="text-align: left;">DOI/Handle trusted by all major academic publishers and data repositories. DOIP relatively unknown, in effect only one implementation.</td>
+<td style="text-align: left;">Further promote DOIP and justify its benefits. Build tutorials and OSI open source implementations. Standardise DOIP-over-HTTP alternative.</td>
+<td style="text-align: left;">JSON-LD used by half of all websites <span class="citation" data-cites="UsageStatisticsJSONLD">(W3Techs n.d.)</span>, however previous bad experiences with Semantic Web may deter adopters</td>
+<td style="text-align: left;">Ensure simplicity for end developers, rather than semantic overengineering. Example-driven documentation.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">G3: <em>follows FAIR principles</em></td>
+<td style="text-align: left;">See Table <a href="#tbl:fair-data-maturity-model" data-reference-type="ref+page" data-reference="tbl:fair-data-maturity-model">[tbl:fair-data-maturity-model]</a></td>
+<td style="text-align: left;">Ensure all FAIR principles are covered, build complete examples.</td>
+<td style="text-align: left;">Touched briefly, see Table <a href="#tbl:fair-data-maturity-model" data-reference-type="ref+page" data-reference="tbl:fair-data-maturity-model">[tbl:fair-data-maturity-model]</a></td>
+<td style="text-align: left;">Add explicit expression to show each FAIR principle fulfilled.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">G4: <em>machine actionability</em></td>
+<td style="text-align: left;">CRUD and extension operations dynamically listed (see Table <a href="#tbl:fdo-web-middleware" data-reference-type="ref+page" data-reference="tbl:fdo-web-middleware">[tbl:fdo-web-middleware]</a>)</td>
+<td style="text-align: left;">Specify which operations should work for a given type, to reduce need for dynamic lookup. Specify input/output expectations formally (e.g. JSON Schema).</td>
+<td style="text-align: left;">HTTP CRUD operations, Open API (see Table <a href="#tbl:fdo-web-middleware" data-reference-type="ref+page" data-reference="tbl:fdo-web-middleware">[tbl:fdo-web-middleware]</a>)</td>
+<td style="text-align: left;">Document operations so client can make subsequent HTTP calls.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">G5: <em>abstraction principle</em></td>
+<td style="text-align: left;">Handle PIDs as abstraction base. DOIP operations can use any transport protocol.</td>
+<td style="text-align: left;">Document transport protocols as FDOs, recommend which transport to use.</td>
+<td style="text-align: left;">URI as abstraction base. Does not specify PID requirements.</td>
+<td style="text-align: left;">Give stronger deployment recommendations.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">G6: <em>stable binding between entities</em></td>
+<td style="text-align: left;">Machine-navigation through PIDs and operations specified per type. Unclear when metadata field is a PID or plain text.</td>
+<td style="text-align: left;">Make datatype of fields explicit to support navigation.</td>
+<td style="text-align: left;">Machine-navigation through URIs via properties and types. Unclear when URI should be followed or is just identifier, but always distinct from plain text.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">G7: <em>encapsulation</em></td>
+<td style="text-align: left;">Operations discovered at runtime (<code>0.DOIP/Op.ListOperations</code>).</td>
+<td style="text-align: left;">Allow method discovery by type FDOs in advance <span class="citation" data-cites="fdo-TypingFDOs">(Lannom et al. 2022)</span>.</td>
+<td style="text-align: left;">HTTP methods discovered at runtime (<code>OPTIONS</code>), indempotent methods attempted directly. Unsupported methods reported using LDP constraints to human-readable text.</td>
+<td style="text-align: left;">Declare supported methods in advance, e.g. OpenAPI <span class="citation" data-cites="OpenAPISpecificationV3">(Miller et al. 2021)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">G8: <em>technology independence</em></td>
+<td style="text-align: left;">In theory independent, in reality depends on single implementations of Handle system and DOIP</td>
+<td style="text-align: left;">Encourage open source DOIP testbeds and lighter reference implementations</td>
+<td style="text-align: left;">Multiple HTTP implementations, multiple LDP implementations. No FDOF implementations.</td>
+<td style="text-align: left;">Develop demonstrator of FDOF usage based on existing LDP server.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">G9: <em>standard compliance</em></td>
+<td style="text-align: left;">Handle <span class="citation" data-cites="rfc3650">(Sun, Lannom, and Boesch 2003)</span>, DOIP <span class="citation" data-cites="foundationDigitalObjectInterface">(<span>“Digital Object Interface Protocol Specification, Version 2.0”</span> 2018)</span>. FDO requirements not standardised yet.</td>
+<td style="text-align: left;">Formalise standard process of FDO requirements <span class="citation" data-cites="fdo-DocProcessStd">(Weiland et al. 2022)</span></td>
+<td style="text-align: left;">HTTP, LDP. However FDOF is not yet standardised.</td>
+<td style="text-align: left;">Formalise FDOF from FDOF-SEM working group.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">FDOF1: <em>PID as basis</em></td>
+<td style="text-align: left;">Extensive use of Handle system.</td>
+<td style="text-align: left;">Clarify how local testing handles can be used during development, how “temporary” FDOs should evolve <span class="citation" data-cites="fdo-PIDProfileAttributes">(Anders et al. 2022)</span>. Register <code>0.DOIP/*</code> and <code>0.FDO/*</code> as actual PIDs.</td>
+<td style="text-align: left;">HTTP URLs as basis for identifiers, but they are frequently not persistent.</td>
+<td style="text-align: left;">Add strong guidance for PID services like w3id and persistence policies <span class="citation" data-cites="McMurry_2017">(McMurry et al. 2017)</span>.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">FDOF2: <em>PID record w/ type</em></td>
+<td style="text-align: left;">Unspecified how to resolve from Handle to DOIP Service (!), in practice <code>10320/loc</code>, <code>0.TYPE/DOIPService</code>, <code>URL</code>, <code>URL_REPLICA</code></td>
+<td style="text-align: left;">Document requirements for PID Record</td>
+<td style="text-align: left;">w3id/purl PIDs redirect without giving any metadata. Datacite DOIs content-negotiate to give registered metadata.</td>
+<td style="text-align: left;">Add FAIR Signposting <span class="citation" data-cites="vandesompelFAIRSignpostingProfile2022">(Van de Sompel et al. 2022)</span> at PID provider for minimal PID record</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">FDOF3: <em>PID resolvable to bytestream &amp; metadata</em></td>
+<td style="text-align: left;">Byte stream resolvable (<code>0.DOIP/Retrieve</code>), <code>includeElementData</code> option can retrieve bytestream or full object structure. No method/attribute defined for separate metadata, only directly in PID Record. Unclear meaning of multiple items and bytestream chunks.</td>
+<td style="text-align: left;">Clarify expectations for multiple items. Recommend chunks to not be used.</td>
+<td style="text-align: left;">URIs resolvable by default. Multiple ways to resolve metadata, unclear preference.</td>
+<td style="text-align: left;">Add FAIR Signposting and preference order.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">FDOF4: <em>Additional attributes</em></td>
+<td style="text-align: left;">Freetext attribute keys. Attributes should be defined for FDO type.</td>
+<td style="text-align: left;">Require that attribute keys should be PIDs (or have predefined mapping to PIDs). Explicitly allow attributes not already defined in type.</td>
+<td style="text-align: left;">All attributes individually identified. Any Linked Data attributes can be used by URI or with mapped prefix.</td>
+<td style="text-align: left;">Clarify type expectations of required/recommended/optional attributes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">FDOF5: <em>Interface: operation by PID</em></td>
+<td style="text-align: left;">Extended operations use PID, but “pid-like” DOIP operations/types are not registered as handles.</td>
+<td style="text-align: left;">Register <code>0.DOIP/*</code> and <code>0.FDO/*</code> as PIDs. Clarify that operations can be mapped to protocol directly.</td>
+<td style="text-align: left;">CRUD operations used directly in HTTP (e.g. <code>PUT</code>). Unclear how to provide PID for additional operations.</td>
+<td style="text-align: left;">Specify how additional operations should be called over HTTP.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">FDOF6: <em>CRUD operations + extensions</em></td>
+<td style="text-align: left;"><code>0.DOIP/Op.Create</code>, <code>Op.Retrieve</code>, <code>Op.Update</code>, <code>Op.Delete</code> but also <code>0.DOIP/Op.Search</code>.</td>
+<td style="text-align: left;">Document</td>
+<td style="text-align: left;"><code>PUT</code>, <code>GET</code>, <code>POST</code>, <code>DELETE</code>, <code>PATCH</code>, <code>HEAD</code> – extension operations (e.g. WebDAV <code>COPY</code>) not used, resource patterns <span class="citation" data-cites="martinekuanWebAPIDesign">(Ekuan et al. 2023)</span> are used instead.</td>
+<td style="text-align: left;">Document how operation resources can be discovered from an LPD container. Document search API.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">FDOF7: <em>FDOF Types related to operations</em></td>
+<td style="text-align: left;">Not yet formalised, by DOIP discoverable on a given FDO rather than type. PR-TypingFDOs leaves this open.</td>
+<td style="text-align: left;">Add explicit relation between type and operations</td>
+<td style="text-align: left;"><code>OPTIONS</code> per LDP Resource, but not by type. Common types (<code>ldp:Resource</code>, <code>ldp:Container</code>) indicate LDP support, but are not required.</td>
+<td style="text-align: left;">Always make LDP types explicit in FDO profile.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">FDOF8: <em>Metadata as FDO, semantic assertions</em></td>
+<td style="text-align: left;">DOIP includes all metadata in PID Record. Separate Metadata FDO need custom property.</td>
+<td style="text-align: left;">Specify a <code>0.FDO/metadata</code> or similar to point to Metadata FDOs.</td>
+<td style="text-align: left;">Assertions are always with semantics, using RDF vocabularies. Unspecified how to find additional metadata resources, <code>rdfs:seeAlso</code> is common.</td>
+<td style="text-align: left;">Use FAIR Signposting <code>describedby</code> link relation to additional metadata PIDs</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">FDOF9: <em>Different metadata levels</em></td>
+<td style="text-align: left;">Defines open-ended “Response Attributes” without namespaces, but mandated as “None” for all CRUD operations. Metadata would need to be bundled within custom FDO types or attributes. Unclear how levels are separated within single FDO representation (may need FDOF8).</td>
+<td style="text-align: left;">Declare which metadata are expected within response attribute or within FDO object. Require PIDs for custom attributes. Define how alternate metadata levels can be represented separately.</td>
+<td style="text-align: left;">Undefined how to handle multiple metadata granularities or domains, alternative LDP containers can present different views on same stored objects.</td>
+<td style="text-align: left;">Define how to navigate to alternate views and their semantic implications, e.g. <code>owl:sameAs</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">FDOF10: <em>Metadata schemas by community</em></td>
+<td style="text-align: left;">Metadata schemas are in practice managed on single Cordra server as local types, using JSON Schema.</td>
+<td style="text-align: left;">Require types to be FDOs with registered PIDs, implement shared types.</td>
+<td style="text-align: left;">Plethora of existing RDF vocabularies/ontologies managed by larger communities, e.g. <a href="https://obofoundry.org/">OBO Foundry</a> <span class="citation" data-cites="smithOBOFoundryCoordinated2007a">(Smith et al. 2007)</span></td>
+<td style="text-align: left;">Rather document better how individual ad-hoc schemas can be started for prototypes.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">FDOF11: <em>FDO collections w/ semantic relations</em></td>
+<td style="text-align: left;">Collection type undefined by DOIP. Informal use of <code>HAS_PARTS</code> Handle attribute (e.g. <span class="citation" data-cites="DataInformationView">(Semmler et al. 2022)</span>).</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">LDP Containers required by specification, also user-created (eg. <code>BasicContainer</code>).</td>
+<td style="text-align: left;">Clarify relation to other collections like DCAT 3 <span class="citation" data-cites="w3-vocab-dcat-3">(Dataset Exchange Working Group 2023)</span>, <a href="https://schema.org/Dataset">Schema.org Dataset</a>, OAI-ORE <span class="citation" data-cites="ORESpecificationAbstract">(Lagoze et al. 2008)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">FDOF12: <em>Deleted FDO preserve PID w/ tombstone</em></td>
+<td style="text-align: left;">Tombstone for deleted resource undefined by DOIP. <code>0.DOIP/Status.104</code> status code does not distinguish “Not Found” or “Gone”</td>
+<td style="text-align: left;">Formalise tombstone requirements with new FDO type</td>
+<td style="text-align: left;"><code>410 Gone</code> recommended, but <code>404 Not Found</code> common. No requirement for tombstone serialisation</td>
+<td style="text-align: left;">Formalise tombstone requirements and serialisation</td>
+</tr>
+</body>
+</html>

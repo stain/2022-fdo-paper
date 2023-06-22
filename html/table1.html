@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>table1: Considering FDO and Web according to the quality levels of the Interoperability Framework for Fast Data (Delgado 2016). </title>
+
+    <link rel="stylesheet" href="bundle.css">
+    <link rel="stylesheet" href="tablestyle.css">
+</head>
+<body>
+<div id="tbl:fdo-web-interoperability-framework">
+<table>
+<caption>Considering FDO and Web according to the quality levels of the Interoperability Framework for Fast Data <span class="citation" data-cites="delgadoInteroperabilityFrameworkDistributed2016a">(Delgado 2016)</span>. </caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Quality</th>
+<th style="text-align: left;">FDO w/ DOIP</th>
+<th style="text-align: left;">Web w/ Linked Data</th>
+</tr>
+</thead>
+<tr class="even">
+<td style="text-align: left;"><strong>Symbiotic</strong>: <em>to what extent multiple applications can agree to interact, align, collaborate or cooperate</em></td>
+<td style="text-align: left;">The purpose of FDO is to enable federated machine actionable digital objects for scholarly purposes, in practice this also requires agreement of compatibility between FDO types. FDO encourages research communities to develop common type registries to be shared across instances. In current DOIP practice, each service have their own types, attributes and operations. The wider symbiosis is consistent use of PIDs.</td>
+<td style="text-align: left;">The Web is loosely coupled and encourages collaboration and linking by URL. In practice, REST APIs <span class="citation" data-cites="fieldingArchitecturalStylesDesign2000a">(Roy Thomas Fielding 2000)</span> end up being mandated centrally by dominant (often commercial) providers <span class="citation" data-cites="fieldingReflectionsRESTArchitectural2017a">(Roy T. Fielding et al. 2017)</span>, and the clients are required to use each API as-is with special code per
+service. Use of Linked Data enables common tooling and semantic mapping across differences.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Pragmatic</strong>: <em>using interaction contracts so processes can be choreographed in workflows</em></td>
+<td style="text-align: left;">FDO types and operations enable detailed choreography (Canonical Workflows; <span class="citation" data-cites="cwfr">CWFR Group (2021)</span>). <code>0.TYPE/DOIPOperation</code> has lightweight definition of operation, <code>0.DOIP/Request</code> or <code>0.DOIP/Response</code> may give FDO Type or any other kind of “specifics” (incl. human readable docs). Semantics/purpose of operations not formalised (similar operations can be grouped with
+<code>0.DOIP/OperationReference</code>).</td>
+<td style="text-align: left;">“Follow your nose” crawler navigation, which may lead to frequent dead ends. Operational composition, typically within a single API provider, documented by OpenAPI 3 <span class="citation" data-cites="OpenAPISpecificationV3">(Miller et al. 2021)</span>, schema.org Actions <span class="citation" data-cites="SchemaOrgActions">(<span>“Schema.org <span>Actions</span>”</span> n.d.)</span>, WSDL/SOAP <span class="citation" data-cites="w3-wsdl20-primer">(Liu and Booth
+2007)</span>, but frequently just as human-readable developer documentation with examples.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Semantic</strong>: <em>ensuring consistent understanding of messages, interoperability of rules, knowledge and ontologies</em></td>
+<td style="text-align: left;">FDO semantic enable navigation and typing. Every FDO has a type. Types maintained in FDO Type registries, which may add additional semantics, e.g. the ePIC <a href="https://hdl.handle.net/21.11104/c1a0ec5ad347427f25d6">PID-InfoType for Model</a>. No single type semantic, Type FDOs can link to existing vocabularies &amp; ontologies. JSON-LD used within some FDO objects (e.g. DISSCO Digital Specimen, NIST Material Science schema) <span class="citation"
+data-cites="wittenburgFAIRDigitalObject2022b">(Wittenburg et al. 2022)</span></td>
+<td style="text-align: left;">Lightweight HTTP semantics for authenticity/navigation. Semantic Type not commonly expressed on PID/header level, may be declared within Linked Data metadata. Semantic of type implied by Linked Data formats (e.g. OWL2, RDFS), although choice of type system may not be explicit.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Syntactic</strong>: <em>serialising messages for digital exchange, structure representation</em></td>
+<td style="text-align: left;">DOIP serialise FDOs as JSON, metadata commonly use JSON, typed with JSON Schema. Multiple byte stream attachments of any media type.</td>
+<td style="text-align: left;">Textual HTTP headers (including any signposting), single byte stream of any media type, e.g. Linked Data formats (JSON-LD, Turtle, RDF/XML) or embedded in document (HTML with RDFa, JSON-LD or Microdata). XML was previously the main syntax used by APIs, JSON is now dominant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Connective</strong>: <em>transferring messages to another application, e.g. wrapping in other protocols</em></td>
+<td style="text-align: left;"><span class="citation" data-cites="foundationDigitalObjectInterface"><span>“Digital Object Interface Protocol Specification, Version 2.0”</span> (2018)</span> is transport-independent, commonly TLS TCP/IP port 9000, DOIP over HTTP <span class="citation" data-cites="DOIPAPIHTTPa">(CNRI 2023)</span></td>
+<td style="text-align: left;">HTTP/1.1, TCP/IP port 80 <span class="citation" data-cites="rfc2616">(Roy T. Fielding et al. 1999)</span>; HTTP/1.1+TLS, TCP/IP 443 <span class="citation" data-cites="rfc2818">(Rescorla 2000)</span>; HTTP/2, as HTTP/1* but binary <span class="citation" data-cites="rfc7540">(Belshe, Peon, and Thomson 2015)</span>; HTTP/3, like HTTP/2+TLS but UDP <span class="citation" data-cites="rfc9114">(Bishop 2022)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Environmental</strong>: <em>how applications are deployed and affected by its environment, portability</em></td>
+<td style="text-align: left;">Main DOIP implementation is <a href="https://www.cordra.org/"><em>Cordra</em></a>, which can be single-instance or <a href="https://www.cordra.org/documentation/configuration/distributed-deployment.html">distributed</a>. Cordra <a href="https://www.cordra.org/documentation/configuration/storage-backends.html">storage backends</a> include file system, S3, MongoDB (itself scalable). Unique DOIP protocol can be hard to add to existing Web application frameworks,
+although proxy services have been developed (e.g. B2SHARE adapter).</td>
+<td style="text-align: left;">HTTP services widely deployed in a myriad of ways, ranging from single instance servers, horizontally &amp; vertically scaled application servers, to multi-cloud Content-Delivery Networks (CDN). Current scalable cloud technologies for Web hosting may not support HTTP features previously seen as important for Semantic Web, e.g. content negotiation and semantic HTTP status codes.</td>
+</tr>
+</body>
+</html>
