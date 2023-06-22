@@ -26,11 +26,11 @@ table {
 .csl-entry { 
 	margin-top: 1ex;
 }
-.csl-entry em::before { 
+.csl-entry strong::before { 
     content: "\a";
     white-space: pre;
 }
-.csl-entry a::before {
+.csl-entry em::before { 
     content: "\a";
     white-space: pre;
 }

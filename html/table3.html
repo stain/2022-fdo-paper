@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>table3: Checking FDO guidelines (Bonino et al. 2019; Anders et al. 2023) against its current implementations as DOIP (“Digital Object Interface Protocol Specification, Version 2.0” 2018) and Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales</title>
+    <title>table3: Checking FDO guidelines [1–2] against its current implementations as DOIP [3] and Linked Data Platform (LDP) <span class="citation"</title>
 
     <link rel="stylesheet" href="bundle.css">
     <link rel="stylesheet" href="tablestyle.css">
@@ -13,8 +13,8 @@
 <div class="small">
 <div id="tbl:fdo-checks">
 <table>
-<caption>Checking FDO guidelines <span class="citation" data-cites="boninoFAIRDigitalObject fdo-RequirementSpec">(Bonino et al. 2019; Anders et al. 2023)</span> against its current implementations as DOIP <span class="citation" data-cites="foundationDigitalObjectInterface">(<span>“Digital Object Interface Protocol Specification, Version 2.0”</span> 2018)</span> and Linked Data Platform (LDP) <span class="citation" data-cites="FDOFramework">(Bonino da Silva Santos, Guizzardi, and Sales
-2022)</span>, with suggestions for required additions. </caption>
+<caption>Checking FDO guidelines <span class="citation" data-cites="boninoFAIRDigitalObject fdo-RequirementSpec">[<a href="#ref-boninoFAIRDigitalObject" role="doc-biblioref">1</a>–<a href="#ref-fdo-RequirementSpec" role="doc-biblioref">2</a>]</span> against its current implementations as DOIP <span class="citation" data-cites="foundationDigitalObjectInterface">[<a href="#ref-foundationDigitalObjectInterface" role="doc-biblioref">3</a>]</span> and Linked Data Platform (LDP) <span class="citation"
+data-cites="FDOFramework">[<a href="#ref-FDOFramework" role="doc-biblioref">4</a>]</span>, with suggestions for required additions. </caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;"><strong>FDO Guideline</strong></th>
@@ -35,7 +35,7 @@
 <td style="text-align: left;">G2: <em>trustworthiness</em></td>
 <td style="text-align: left;">DOI/Handle trusted by all major academic publishers and data repositories. DOIP relatively unknown, in effect only one implementation.</td>
 <td style="text-align: left;">Further promote DOIP and justify its benefits. Build tutorials and OSI open source implementations. Standardise DOIP-over-HTTP alternative.</td>
-<td style="text-align: left;">JSON-LD used by half of all websites <span class="citation" data-cites="UsageStatisticsJSONLD">(W3Techs n.d.)</span>, however previous bad experiences with Semantic Web may deter adopters</td>
+<td style="text-align: left;">JSON-LD used by half of all websites <span class="citation" data-cites="UsageStatisticsJSONLD">[<a href="#ref-UsageStatisticsJSONLD" role="doc-biblioref">5</a>]</span>, however previous bad experiences with Semantic Web may deter adopters</td>
 <td style="text-align: left;">Ensure simplicity for end developers, rather than semantic overengineering. Example-driven documentation.</td>
 </tr>
 <tr class="even">
@@ -69,9 +69,9 @@
 <tr class="even">
 <td style="text-align: left;">G7: <em>encapsulation</em></td>
 <td style="text-align: left;">Operations discovered at runtime (<code>0.DOIP/Op.ListOperations</code>).</td>
-<td style="text-align: left;">Allow method discovery by type FDOs in advance <span class="citation" data-cites="fdo-TypingFDOs">(Lannom et al. 2022)</span>.</td>
+<td style="text-align: left;">Allow method discovery by type FDOs in advance <span class="citation" data-cites="fdo-TypingFDOs">[<a href="#ref-fdo-TypingFDOs" role="doc-biblioref">6</a>]</span>.</td>
 <td style="text-align: left;">HTTP methods discovered at runtime (<code>OPTIONS</code>), indempotent methods attempted directly. Unsupported methods reported using LDP constraints to human-readable text.</td>
-<td style="text-align: left;">Declare supported methods in advance, e.g. OpenAPI <span class="citation" data-cites="OpenAPISpecificationV3">(Miller et al. 2021)</span></td>
+<td style="text-align: left;">Declare supported methods in advance, e.g. OpenAPI <span class="citation" data-cites="OpenAPISpecificationV3">[<a href="#ref-OpenAPISpecificationV3" role="doc-biblioref">7</a>]</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">G8: <em>technology independence</em></td>
@@ -82,24 +82,24 @@
 </tr>
 <tr class="even">
 <td style="text-align: left;">G9: <em>standard compliance</em></td>
-<td style="text-align: left;">Handle <span class="citation" data-cites="rfc3650">(Sun, Lannom, and Boesch 2003)</span>, DOIP <span class="citation" data-cites="foundationDigitalObjectInterface">(<span>“Digital Object Interface Protocol Specification, Version 2.0”</span> 2018)</span>. FDO requirements not standardised yet.</td>
-<td style="text-align: left;">Formalise standard process of FDO requirements <span class="citation" data-cites="fdo-DocProcessStd">(Weiland et al. 2022)</span></td>
+<td style="text-align: left;">Handle <span class="citation" data-cites="rfc3650">[<a href="#ref-rfc3650" role="doc-biblioref">8</a>]</span>, DOIP <span class="citation" data-cites="foundationDigitalObjectInterface">[<a href="#ref-foundationDigitalObjectInterface" role="doc-biblioref">3</a>]</span>. FDO requirements not standardised yet.</td>
+<td style="text-align: left;">Formalise standard process of FDO requirements <span class="citation" data-cites="fdo-DocProcessStd">[<a href="#ref-fdo-DocProcessStd" role="doc-biblioref">9</a>]</span></td>
 <td style="text-align: left;">HTTP, LDP. However FDOF is not yet standardised.</td>
 <td style="text-align: left;">Formalise FDOF from FDOF-SEM working group.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">FDOF1: <em>PID as basis</em></td>
 <td style="text-align: left;">Extensive use of Handle system.</td>
-<td style="text-align: left;">Clarify how local testing handles can be used during development, how “temporary” FDOs should evolve <span class="citation" data-cites="fdo-PIDProfileAttributes">(Anders et al. 2022)</span>. Register <code>0.DOIP/*</code> and <code>0.FDO/*</code> as actual PIDs.</td>
+<td style="text-align: left;">Clarify how local testing handles can be used during development, how “temporary” FDOs should evolve <span class="citation" data-cites="fdo-PIDProfileAttributes">[<a href="#ref-fdo-PIDProfileAttributes" role="doc-biblioref">10</a>]</span>. Register <code>0.DOIP/*</code> and <code>0.FDO/*</code> as actual PIDs.</td>
 <td style="text-align: left;">HTTP URLs as basis for identifiers, but they are frequently not persistent.</td>
-<td style="text-align: left;">Add strong guidance for PID services like w3id and persistence policies <span class="citation" data-cites="McMurry_2017">(McMurry et al. 2017)</span>.</td>
+<td style="text-align: left;">Add strong guidance for PID services like w3id and persistence policies <span class="citation" data-cites="McMurry_2017">[<a href="#ref-McMurry_2017" role="doc-biblioref">11</a>]</span>.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">FDOF2: <em>PID record w/ type</em></td>
 <td style="text-align: left;">Unspecified how to resolve from Handle to DOIP Service (!), in practice <code>10320/loc</code>, <code>0.TYPE/DOIPService</code>, <code>URL</code>, <code>URL_REPLICA</code></td>
 <td style="text-align: left;">Document requirements for PID Record</td>
 <td style="text-align: left;">w3id/purl PIDs redirect without giving any metadata. Datacite DOIs content-negotiate to give registered metadata.</td>
-<td style="text-align: left;">Add FAIR Signposting <span class="citation" data-cites="vandesompelFAIRSignpostingProfile2022">(Van de Sompel et al. 2022)</span> at PID provider for minimal PID record</td>
+<td style="text-align: left;">Add FAIR Signposting <span class="citation" data-cites="vandesompelFAIRSignpostingProfile2022">[<a href="#ref-vandesompelFAIRSignpostingProfile2022" role="doc-biblioref">12</a>]</span> at PID provider for minimal PID record</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">FDOF3: <em>PID resolvable to bytestream &amp; metadata</em></td>
@@ -126,7 +126,7 @@
 <td style="text-align: left;">FDOF6: <em>CRUD operations + extensions</em></td>
 <td style="text-align: left;"><code>0.DOIP/Op.Create</code>, <code>Op.Retrieve</code>, <code>Op.Update</code>, <code>Op.Delete</code> but also <code>0.DOIP/Op.Search</code>.</td>
 <td style="text-align: left;">Document</td>
-<td style="text-align: left;"><code>PUT</code>, <code>GET</code>, <code>POST</code>, <code>DELETE</code>, <code>PATCH</code>, <code>HEAD</code> – extension operations (e.g. WebDAV <code>COPY</code>) not used, resource patterns <span class="citation" data-cites="martinekuanWebAPIDesign">(Ekuan et al. 2023)</span> are used instead.</td>
+<td style="text-align: left;"><code>PUT</code>, <code>GET</code>, <code>POST</code>, <code>DELETE</code>, <code>PATCH</code>, <code>HEAD</code> – extension operations (e.g. WebDAV <code>COPY</code>) not used, resource patterns <span class="citation" data-cites="martinekuanWebAPIDesign">[<a href="#ref-martinekuanWebAPIDesign" role="doc-biblioref">13</a>]</span> are used instead.</td>
 <td style="text-align: left;">Document how operation resources can be discovered from an LPD container. Document search API.</td>
 </tr>
 <tr class="odd">
@@ -154,15 +154,15 @@
 <td style="text-align: left;">FDOF10: <em>Metadata schemas by community</em></td>
 <td style="text-align: left;">Metadata schemas are in practice managed on single Cordra server as local types, using JSON Schema.</td>
 <td style="text-align: left;">Require types to be FDOs with registered PIDs, implement shared types.</td>
-<td style="text-align: left;">Plethora of existing RDF vocabularies/ontologies managed by larger communities, e.g. <a href="https://obofoundry.org/">OBO Foundry</a> <span class="citation" data-cites="smithOBOFoundryCoordinated2007a">(Smith et al. 2007)</span></td>
+<td style="text-align: left;">Plethora of existing RDF vocabularies/ontologies managed by larger communities, e.g. <a href="https://obofoundry.org/">OBO Foundry</a> <span class="citation" data-cites="smithOBOFoundryCoordinated2007a">[<a href="#ref-smithOBOFoundryCoordinated2007a" role="doc-biblioref">14</a>]</span></td>
 <td style="text-align: left;">Rather document better how individual ad-hoc schemas can be started for prototypes.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">FDOF11: <em>FDO collections w/ semantic relations</em></td>
-<td style="text-align: left;">Collection type undefined by DOIP. Informal use of <code>HAS_PARTS</code> Handle attribute (e.g. <span class="citation" data-cites="DataInformationView">(Semmler et al. 2022)</span>).</td>
+<td style="text-align: left;">Collection type undefined by DOIP. Informal use of <code>HAS_PARTS</code> Handle attribute (e.g. <span class="citation" data-cites="DataInformationView">[<a href="#ref-DataInformationView" role="doc-biblioref">15</a>]</span>).</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;">LDP Containers required by specification, also user-created (eg. <code>BasicContainer</code>).</td>
-<td style="text-align: left;">Clarify relation to other collections like DCAT 3 <span class="citation" data-cites="w3-vocab-dcat-3">(Dataset Exchange Working Group 2023)</span>, <a href="https://schema.org/Dataset">Schema.org Dataset</a>, OAI-ORE <span class="citation" data-cites="ORESpecificationAbstract">(Lagoze et al. 2008)</span></td>
+<td style="text-align: left;">Clarify relation to other collections like DCAT 3 <span class="citation" data-cites="w3-vocab-dcat-3">[<a href="#ref-w3-vocab-dcat-3" role="doc-biblioref">16</a>]</span>, <a href="https://schema.org/Dataset">Schema.org Dataset</a>, OAI-ORE <span class="citation" data-cites="ORESpecificationAbstract">[<a href="#ref-ORESpecificationAbstract" role="doc-biblioref">17</a>]</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">FDOF12: <em>Deleted FDO preserve PID w/ tombstone</em></td>
@@ -171,5 +171,68 @@
 <td style="text-align: left;"><code>410 Gone</code> recommended, but <code>404 Not Found</code> common. No requirement for tombstone serialisation</td>
 <td style="text-align: left;">Formalise tombstone requirements and serialisation</td>
 </tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-boninoFAIRDigitalObject" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Luiz Bonino, Oeter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark Leggott, &amp; Carlo Zwölf (2019): <em><span>FAIR</span> digital object framework</em> (Group of European Data Experts in <span>RDA</span> (<span>GEDE-RDA</span>), 2019). <a
+href="https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx">https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx</a></div>
+</div>
+<div id="ref-fdo-RequirementSpec" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, &amp; Carlo Zwölf (2023): <em><span>FDO Forum FDO</span> requirement specifications. Version 3.0</em> (<span>FDO Forum</span>, 2023).
+&lt;https://doi.org/<a href="https://doi.org/10.5281/zenodo.7782262">10.5281/zenodo.7782262</a>&gt;</div>
+</div>
+<div id="ref-foundationDigitalObjectInterface" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">(2018): <em>Digital object interface protocol specification, version 2.0</em> (<span>DONA Foundation</span>, 2018). <a href="https://hdl.handle.net/0.DOIP/DOIPV2.0">https://hdl.handle.net/0.DOIP/DOIPV2.0</a></div>
+</div>
+<div id="ref-FDOFramework" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Luiz Olavo Bonino da Silva Santos, Giancarlo Guizzardi, &amp; Tiago Prince Sales (2022): <span>FAIR Digital Object Framework Documentation</span>. (2022). <a href="https://fairdigitalobjectframework.org/">https://fairdigitalobjectframework.org/</a> (accessed 26 May 2022)</div>
+</div>
+<div id="ref-UsageStatisticsJSONLD" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">W3Techs (n.d.): <span class="nocase">Usage Statistics of JSON-LD for Websites</span>. (n.d.). <a href="https://w3techs.com/technologies/details/da-jsonld">https://w3techs.com/technologies/details/da-jsonld</a> (accessed 18 May 2023)</div>
+</div>
+<div id="ref-fdo-TypingFDOs" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Larry Lannom, Ulrich Schwardmann, Cristophe Blanchi, &amp; Peter Wittenburg (2022): <em>Typing <span>FAIR</span> digital objects</em> (<span>FDO Forum</span>, 2022). &lt;https://doi.org/<a href="https://doi.org/10.5281/zenodo.7825599">10.5281/zenodo.7825599</a>&gt;</div>
+</div>
+<div id="ref-OpenAPISpecificationV3" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Darrel Miller, Jeremy Whitlock, Marsh Gardiner, Mike Ralphson, Ron Ratovsky, &amp; Uri Sarid, eds. (2021): <span>OpenAPI Specification</span> v3.1.0. (2021). <a href="https://spec.openapis.org/oas/v3.1.0.html">https://spec.openapis.org/oas/v3.1.0.html</a> (accessed 21 March 2023)</div>
+</div>
+<div id="ref-rfc3650" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Sam Sun, Larry Lannom, &amp; Brian P. Boesch (2003): <em>Handle <span>System Overview</span></em> (<span>RFC Editor</span>, 2003). &lt;https://doi.org/<a href="https://doi.org/10.17487/rfc3650">10.17487/rfc3650</a>&gt;</div>
+</div>
+<div id="ref-fdo-DocProcessStd" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">C. Weiland, U. Schwardmann, P. Wittenburg, C. Kirkpatrick, R. Hanisch, Z. Trautt, C. Weiland, U. Schwardmann, &amp; P. Wittenburg (2022): <em><span>FDO Forum Document Standards</span></em> (<span>FDO Forum</span>, 2022). <a href="https://drive.google.com/file/d/1lPNBBROjEoZ6fTfrtdqcMa3Q2G27PoC_">https://drive.google.com/file/d/1lPNBBROjEoZ6fTfrtdqcMa3Q2G27PoC_</a> (accessed 30 November 2022)</div>
+</div>
+<div id="ref-fdo-PIDProfileAttributes" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Ivonne Anders, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Ulrich Schwardmann, &amp; Peter Wittenburg (2022): <em><span>FDO PID</span> profiles &amp; attributes</em> (<span>FDO Forum</span>, 2022). &lt;https://doi.org/<a href="https://doi.org/10.5281/zenodo.7825630">10.5281/zenodo.7825630</a>&gt;</div>
+</div>
+<div id="ref-McMurry_2017" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Julie A. McMurry, Nick Juty, Niklas Blomberg, Tony Burdett, Tom Conlin, Nathalie Conte, Mélanie Courtot, John Deck, Michel Dumontier, Donal K. Fellows, Alejandra Gonzalez-Beltran, Philipp Gormanns, Jeffrey Grethe, Janna Hastings, Jean-Karim Hériché, Henning Hermjakob, Jon C. Ison, Rafael C. Jimenez, Simon Jupp, John Kunze, Camille Laibe, Nicolas Le Novère, James Malone, Maria Jesus Martin, Johanna R. McEntyre, Chris Morris,
+Juha Muilu, Wolfgang MÃ¼ller, Philippe Rocca-Serra, Susanna-Assunta Sansone, Murat Sariyar, Jacky L. Snoep, Stian Soiland-Reyes, Natalie J. Stanford, Neil Swainston, Nicole Washington, Alan R. Williams, Sarala M. Wimalaratne, Lilly M. Winfree, Katherine Wolstencroft, Carole Goble, Christopher J. Mungall, Melissa A. Haendel, &amp; Helen Parkinson (2017): Identifiers for the 21st century: How to design, provision, and reuse persistent identifiers to maximize utility and impact of life science
+data. <em><span>PLOS</span> Biology</em>, <strong>15</strong> (2017) e2001414. &lt;https://doi.org/<a href="https://doi.org/10.1371/journal.pbio.2001414">10.1371/journal.pbio.2001414</a>&gt;</div>
+</div>
+<div id="ref-vandesompelFAIRSignpostingProfile2022" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Herbert Van de Sompel, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warner, Anusuriya Devaraju, Robert Huber, Wilko Steinhoff, Vyacheslav Tykhonov, Luc Boruta, Enno Meijers, Stian Soiland-Reyes, &amp; Mark Wilkinson (2022): <span>FAIR Signposting Profile</span>. (2022). <a href="https://signposting.org/FAIR/">https://signposting.org/FAIR/</a> (accessed 5 January 2023)</div>
+</div>
+<div id="ref-martinekuanWebAPIDesign" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Martin Ekuan, Mick Alberts, Tim Sherer, Udi Dahan, &amp; Mike Kistler et al. (2023): <strong>Web <span>API</span> design best practices</strong>. <em>Azure architecture center</em> (Microsoft, 2023). <a href="https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design">https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design</a> (accessed 14 June 2023)</div>
+</div>
+<div id="ref-smithOBOFoundryCoordinated2007a" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Werner Ceusters, Louis J. Goldberg, Karen Eilbeck, Amelia Ireland, Christopher J. Mungall, Neocles Leontis, Philippe Rocca-Serra, Alan Ruttenberg, Susanna-Assunta Sansone, Richard H. Scheuermann, Nigam Shah, Patricia L. Whetzel, &amp; Suzanna Lewis (2007): The <span>OBO Foundry</span>: Coordinated evolution of ontologies to support biomedical data
+integration. <em>Nature Biotechnology</em>, <strong>25</strong> (2007) 1251–1255. &lt;https://doi.org/<a href="https://doi.org/10.1038/nbt1346">10.1038/nbt1346</a>&gt;</div>
+</div>
+<div id="ref-DataInformationView" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline">Tido Semmler, Sergey Danilov, Thomas Rackow, Dmitry Sidorenko, Dirk Barbi, Jan Hegewald, Dmitri Sein, Qiang Wang, &amp; Thomas Jung (2022): IPCC DDC: AWI AWI-CM1.1MR model output prepared for CMIP6 CMIP historical. (2022). <a href="https://www.wdc-climate.de/ui/entry?acronym=C6CMAWAWMhi">https://www.wdc-climate.de/ui/entry?acronym=C6CMAWAWMhi</a></div>
+</div>
+<div id="ref-w3-vocab-dcat-3" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline">Dataset Exchange Working Group (2023): <em><span>Data Catalog Vocabulary (<span>DCAT</span>) - Version 3</span></em> (W3C, 2023). <a href="https://www.w3.org/TR/2023/WD-vocab-dcat-3-20230307/">https://www.w3.org/TR/2023/WD-vocab-dcat-3-20230307/</a></div>
+</div>
+<div id="ref-ORESpecificationAbstract" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline">Carl Lagoze, Herbert Van de Sompel, Pete Johnston, Michael Nelson, Robert Sanderson, &amp; Simeon Warner (2008): <em><span>ORE Specification</span> - <span>Abstract Data Model</span></em> (Open Archives Initiative, 2008). <a href="http://www.openarchives.org/ore/1.0/datamodel#Proxies">http://www.openarchives.org/ore/1.0/datamodel#Proxies</a> (accessed 24 January 2023)</div>
+</div>
+</div>
 </body>
 </html>
