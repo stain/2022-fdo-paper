@@ -27,13 +27,13 @@ centric
 ChEMBL
 consumptions
 CORDA
-Cordra
+CORDRA
 COVID
 CSV
 CWFP
 DARIAH
 Datacite
-dataset
+Dataset
 datasets
 DCAT
 dereferenceable
@@ -49,7 +49,7 @@ eare
 Ecma
 eg
 EMEA
-eosc
+EOSC
 ESRI
 examplified
 examplify
@@ -61,7 +61,7 @@ FDOF
 FDOR
 FDO’s
 FDOs
-Findability
+findability
 findable
 foaf
 Freetext
@@ -111,7 +111,7 @@ metamodel
 Microdata
 microformats
 Micropub
-Middleware
+middleware
 middlewares
 modularity
 namespace
@@ -121,7 +121,7 @@ NL
 OAI
 OBO
 Occassionally
-Ontologies
+ontologies
 OpenAIRE
 OpenAPI
 OpenLink
@@ -147,7 +147,7 @@ QUIC
 RDA’s
 RDF
 RDFa
-rdflib
+RDFLib
 RDFS
 RDMKit
 redirections
@@ -159,7 +159,7 @@ ResourceSync
 RO
 ROR
 runtime
-Scalability
+scalability
 scalable
 schemas
 seemlessly
