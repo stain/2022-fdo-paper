@@ -9,21 +9,39 @@
             },
             "conformsTo": {
                 "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "license": {
+                "@id": "http://spdx.org/licenses/CC0-1.0"
             }
         },
         {
             "@id": "./",
             "@type": "Dataset",
             "identifier": {
-                "@id": "https://doi.org/10.4225/59/59672c09f4a4b"
+                "@id": "https://doi.org/10.5281/zenodo.8075229"
             },
-            "cite-as": "https://doi.org/10.4225/59/59672c09f4a4b",
+            "cite-as": "https://doi.org/10.5281/zenodo.8075229",
+            "url": "https://w3id.org/ro/doi/10.5281/zenodo.8075229",
             "datePublished": "2023-06-23",
-            "name": "Data files associated with the manuscript:Effects of facilitated family case conferencing for ...",
-            "description": "Palliative care planning for nursing home residents with advanced dementia ...",
+            "name": "Comparison tables for evaluating FAIR Digital Object and Linked Data",
+            "description": "RO-Crate and tables from the paper \"Evaluating FAIR Digital Object and Linked Data as distributed object systems\".\n\nWe systematically evaluate FDO and its implementations as a global distributed object system, by using five different conceptual frameworks that cover interoperability, middleware, FAIR principles, EOSC requirements and FDO guidelines themself.",
             "license": {
-                "@id": "https://creativecommons.org/licenses/by-nc-sa/3.0/au/"
-            }
+                "@id": "http://spdx.org/licenses/CC-BY-4.0"
+            },
+            "hasPart": [
+                {"@id": "table1.html"},
+                {"@id": "table2.html"},
+                {"@id": "table3.html"},
+                {"@id": "table4.html"},
+                {"@id": "table5.html"}
+            ]
+        },
+        {
+            "@id": "https://doi.org/10.5281/zenodo.8075229",
+            "@type": "PropertyValue",
+            "propertyID": "https://registry.identifiers.org/registry/doi",
+            "value": "doi:10.5281/zenodo.8075229",
+            "url": "https://doi.org/10.5281/zenodo.8075229"
         },
         {
             "@id": "table1.html",
@@ -53,7 +71,7 @@
             "@id": "table3.html",
             "@type": "File",
             "name": "Table 3",
-            "description": "Checking FDO guidelines (Bonino et al. 2019; Anders et al. 2023) against its current implementations as DOIP (“Digital Object Interface Protocol Specification, Version 2.0” 2018) and Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022), with suggestions for required additions. ",
+            "description": "Checking FDO guidelines (Bonino et al. 2019; Anders et al. 2023) against its current implementations as DOIP (DONA 2018) and Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022), with suggestions for required additions. ",
             "encodingFormat": [
                 "text/html",
                 {
@@ -65,7 +83,7 @@
             "@id": "table4.html",
             "@type": "File",
             "name": "Table 4",
-            "description": "Comparing FAIR Digital Object (with the DOIP 2.0 protocol (“Digital Object Interface Protocol Specification, Version 2.0” 2018)) and Web technologies (using Linked Data) as middleware infrastructures (Zarras 2004) ",
+            "description": "Comparing FAIR Digital Object (with the DOIP 2.0 protocol (DONA 2018)) and Web technologies (using Linked Data) as middleware infrastructures (Zarras 2004) ",
             "encodingFormat": [
                 "text/html",
                 {
@@ -77,7 +95,7 @@
             "@id": "table5.html",
             "@type": "File",
             "name": "Table 5",
-            "description": "Assessing RDA’s FAIR Data Maturity Model (FAIR Data Maturity Model Working Group 2020; Bahim et al. 2020) (first 2 columns) against the FDO guidelines (Bonino et al. 2019), FDO implemented with the protocol DOIPv2 (“Digital Object Interface Protocol Specification, Version 2.0” 2018), Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022) and examples from Linked Data practices in general. (— indicates Unspecified, may be possible with additional conventions) ",
+            "description": "Assessing RDA’s FAIR Data Maturity Model (FAIR Data Maturity Model Working Group 2020; Bahim et al. 2020) (first 2 columns) against the FDO guidelines (Bonino et al. 2019), FDO implemented with the protocol DOIPv2 (DONA 2018), Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022) and examples from Linked Data practices in general. (— indicates Unspecified, may be possible with additional conventions) ",
             "encodingFormat": [
                 "text/html",
                 {
@@ -98,10 +116,72 @@
             ]
         },
         {
+            "@id": "https://doi.org/10.48550/arXiv.2306.07436",
+            "name": "Evaluating FAIR Digital Object and Linked Data as distributed object systems",
+            "@type": "ScholarlyArticle",
+            "datePublished": "2023-06-12",
+            "identifier": "https://doi.org/10.48550/arXiv.2306.07436",
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-9842-9718"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0003-1219-2137"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0003-0183-6910"
+                }
+            ],
+            "description": "FAIR Digital Object (FDO) is an emerging concept that is highlighted by European Open Science Cloud (EOSC) as a potential candidate for building a ecosystem of machine-actionable research outputs. In this work we systematically evaluate FDO and its implementations as a global distributed object system, by using five different conceptual frameworks that cover interoperability, middleware, FAIR principles, EOSC requirements and FDO guidelines themself. We compare the FDO approach with established Linked Data practices and the existing Web architecture, and provide a brief history of the Semantic Web while discussing why these technologies may have been difficult to adopt for FDO purposes. We conclude with recommendations for both Linked Data and FDO communities to further their adaptation and alignment.",
+            "license": {"@id": "http://spdx.org/licenses/CC-BY-4.0"},
+            "version": "2",
+            "keywords": "Distributed, Parallel, and Cluster Computing (cs.DC), Networking and Internet Architecture (cs.NI), FOS: Computer and information sciences, FOS: Computer and information sciences, H.3; C.2",
+            "dateModified": "2023-06-14T00:03:40Z",
+            "publisher": {
+                "@id": "https://arxiv.org/"
+            }
+        },
+        {
+            "@id": "https://arxiv.org/",
+            "@type": "Organization",
+            "name": "arXiv"
+        },
+        {
+            "@id": "https://orcid.org/0000-0001-9842-9718",
+            "@type": "Person",
+            "name": "Stian Soiland-Reyes"
+        },
+        {
+            "@id": "https://orcid.org/0000-0003-0183-6910",
+            "@type": "Person",
+            "name": "Paul Groth"
+        },
+        {
+            "@id": "https://orcid.org/0000-0003-1219-2137",
+            "@type": "Person",
+            "name": "Carole Goble"
+        },
+        {
             "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471",
             "@type": "DefinedTerm",
             "name": "Hypertext Markup Language 5",
             "alternateName": "HTML5"
+        },
+        {
+            "@id": "http://spdx.org/licenses/CC-BY-4.0",
+            "@type": "CreativeWork",
+            "name": "CC-BY-4.0",
+            "description": "Creative Commons Attribution 4.0 International",
+            "version": "4.0",
+            "url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+            "@id": "http://spdx.org/licenses/CC0-1.0",
+            "@type": "CreativeWork",
+            "name": "CC0-1.0",
+            "description": "Creative Commons Zero v1.0 Universal",
+            "version": "1.0",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/"
         }
     ]
 }
