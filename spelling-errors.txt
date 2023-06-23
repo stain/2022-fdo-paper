@@ -14,7 +14,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-BioSchemas
+Bioschemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -33,8 +33,8 @@ CSV
 CWFP
 DARIAH
 Datacite
-dataset
-datasets
+Dataset
+Datasets
 DCAT
 dereferenceable
 diciplinary
@@ -49,7 +49,7 @@ eare
 Ecma
 eg
 EMEA
-EOSC
+eosc
 ESRI
 examplified
 examplify
@@ -61,7 +61,7 @@ FDOF
 FDOR
 FDO’s
 FDOs
-findability
+Findability
 findable
 foaf
 Freetext
@@ -81,7 +81,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-HTTPS
+https
 IANA
 IEC
 IETF
@@ -101,13 +101,13 @@ js
 JSON
 JSWS
 kickstarted
-LD
+ld
 LDP
 LDP’s
 LOD
 LPD
 Marmotta
-Metamodel
+metamodel
 Microdata
 microformats
 Micropub
@@ -142,7 +142,7 @@ Polymorphism
 practictioners
 pre
 preprint
-programmatically
+Programmatically
 proto
 QUIC
 RDA’s
