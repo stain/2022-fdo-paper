@@ -27,14 +27,14 @@ centric
 ChEMBL
 consumptions
 CORDA
-Cordra
+CORDRA
 COVID
 CSV
 CWFP
 DARIAH
 Datacite
 Dataset
-Datasets
+datasets
 DCAT
 dereferenceable
 diciplinary
@@ -49,7 +49,7 @@ eare
 Ecma
 eg
 EMEA
-eosc
+EOSC
 ESRI
 examplified
 examplify
@@ -61,9 +61,9 @@ FDOF
 FDOR
 FDO’s
 FDOs
-Findability
+findability
 findable
-foaf
+FOAF
 Freetext
 FROR
 furfill
@@ -101,7 +101,7 @@ js
 JSON
 JSWS
 kickstarted
-ld
+LD
 LDP
 LDP’s
 LOD
@@ -142,7 +142,7 @@ Polymorphism
 practictioners
 pre
 preprint
-Programmatically
+programmatically
 proto
 QUIC
 RDA’s
