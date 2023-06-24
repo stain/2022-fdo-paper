@@ -14,7 +14,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-Bioschemas
+BioSchemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -27,13 +27,13 @@ centric
 ChEMBL
 consumptions
 CORDA
-CORDRA
+Cordra
 COVID
 CSV
 CWFP
 DARIAH
 Datacite
-Dataset
+dataset
 datasets
 DCAT
 dereferenceable
@@ -56,12 +56,12 @@ examplify
 exisiting
 Extensibility
 FAIRification
-FDO
+fdo
 FDOF
 FDOR
 FDO’s
 FDOs
-findability
+Findability
 findable
 FOAF
 Freetext
@@ -142,7 +142,7 @@ Polymorphism
 practictioners
 pre
 preprint
-programmatically
+Programmatically
 proto
 QUIC
 RDA’s
@@ -160,7 +160,7 @@ ResourceSync
 RO
 ROR
 runtime
-scalability
+Scalability
 scalable
 schemas
 seemlessly
