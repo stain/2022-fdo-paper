@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>table6: Assessing EOSC Interoperability Framework (Corcho et al. 2021, sec. 3.6) against the FDO guidelines (Bonino et al. 2019) and Linked Data practices.</title>
+
+    <link rel="stylesheet" href="https://s11.no/2022/css/bundle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="small">
+<div id="tbl:eosc">
+<table>
+<caption>Assessing EOSC Interoperability Framework <span class="citation" data-cites="corchoEOSCInteroperabilityFramework2021b">(<a href="#ref-corchoEOSCInteroperabilityFramework2021b" role="doc-biblioref">Corcho et al. 2021, sec. 3.6</a>)</span> against the FDO guidelines <span class="citation" data-cites="boninoFAIRDigitalObject">(<a href="#ref-boninoFAIRDigitalObject" role="doc-biblioref">Bonino et al. 2019</a>)</span> and Linked Data practices.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Layer</th>
+<th style="text-align: left;">Recommendation</th>
+<th style="text-align: left;">FDO</th>
+<th style="text-align: left;">Linked Data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Technical</td>
+<td style="text-align: left;">Open Specification</td>
+<td style="text-align: left;">FDO specifications are semi-open, process gradually more transparent</td>
+<td style="text-align: left;">Open and transparent standard processes through W3C &amp; IETF</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Technical</td>
+<td style="text-align: left;">Common security &amp; privacy framework</td>
+<td style="text-align: left;">Unspecified</td>
+<td style="text-align: left;">TLS for encryption, multiple approaches for single-sign-on (e.g. ORCID, Life Science Login). Privacy largely unspecified.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Technical</td>
+<td style="text-align: left;">Easy SLAs for service providers</td>
+<td style="text-align: left;">Unspecified</td>
+<td style="text-align: left;">None</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Technical</td>
+<td style="text-align: left;">Access data in different formats</td>
+<td style="text-align: left;">None formalised, custom operations or relations</td>
+<td style="text-align: left;">Content-negotiation, <code>rel=alternate</code> relations</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Technical</td>
+<td style="text-align: left;">Coarse-grained/fine-grained search tools</td>
+<td style="text-align: left;">Freetext <code>0.DOIP/Op.Search</code> on local DOIP, no federation</td>
+<td style="text-align: left;">Coarse-grained e.g. <a href="https://datasetsearch.research.google.com/">Google Dataset Search</a>, fine-grained (e.g. federated SPARQL) require detailed vocabulary/metadata insight</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Technical</td>
+<td style="text-align: left;">Clear PID policy</td>
+<td style="text-align: left;">Strong FDO requirements, tends towards Handle system.</td>
+<td style="text-align: left;">Not required, different communities set policies</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Semantic</td>
+<td style="text-align: left;">Clear definitions for concepts/metadata/schemas</td>
+<td style="text-align: left;">Required by FDO requirements, but not yet formalised</td>
+<td style="text-align: left;">Ontologies, SKOS, OWL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Semantic</td>
+<td style="text-align: left;">Semantic artefacts w/ open licenses</td>
+<td style="text-align: left;">All artefacts are PIDs, license not yet required by kernel metadata</td>
+<td style="text-align: left;">Open License is best practice for ontology publishing</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Semantic</td>
+<td style="text-align: left;">Documentation for each semantic artefact</td>
+<td style="text-align: left;">No direct rendering from FDO, no requirement for human-readable description</td>
+<td style="text-align: left;">Ontology rendering, content-negotiation</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Semantic</td>
+<td style="text-align: left;">Repositories of artefacts</td>
+<td style="text-align: left;">Required, but not formalised</td>
+<td style="text-align: left;">Bioontologies, otherwise not usually federated</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Semantic</td>
+<td style="text-align: left;">Repositories w/ clear governance</td>
+<td style="text-align: left;">Recommended</td>
+<td style="text-align: left;">Largely self-governed repositories, if well-established may have clear governance.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Semantic</td>
+<td style="text-align: left;">Minimal metadata model for federated discovery</td>
+<td style="text-align: left;">Kernel metadata <span class="citation" data-cites="fdo-KernelAttributes">(<a href="#ref-fdo-KernelAttributes" role="doc-biblioref">Broeder et al. 2022</a>)</span> based on RDA recommendations <span class="citation" data-cites="weigelRDARecommendationPID2018">(<a href="#ref-weigelRDARecommendationPID2018" role="doc-biblioref">Weigel et al. 2018</a>)</span>.</td>
+<td style="text-align: left;">DCAT, schema.org, Dublin Core</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Semantic</td>
+<td style="text-align: left;">Crosswalks from minimal metadata model</td>
+<td style="text-align: left;">FDO Typing recommends referencing existing type definitions, but not as separate crosswalks</td>
+<td style="text-align: left;">Multiple crosswalks for common metadata models, but frequently not in semantic format</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Semantic</td>
+<td style="text-align: left;">Extensibility options for diciplinary metadata</td>
+<td style="text-align: left;">Communities encouraged to establish own types</td>
+<td style="text-align: left;">Extensible by design, domain-specific metadata may be at different granularity</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Semantic</td>
+<td style="text-align: left;">Clear protocols/building blocks for federation/harvesting of artefact catalogues</td>
+<td style="text-align: left;">Collection types not yet defined</td>
+<td style="text-align: left;">SWORD, OAI-PMH</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Organisational</td>
+<td style="text-align: left;">Interoperability-focused rules of participation recommendations</td>
+<td style="text-align: left;">Recommended</td>
+<td style="text-align: left;">Implied only by some communities, tendency to specialise</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Organisational</td>
+<td style="text-align: left;">Usage recommendations of standardised data formats</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">None – but common for metadata (e.g. JSON-LD)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Organisational</td>
+<td style="text-align: left;">Usage recommendations of vocabularies</td>
+<td style="text-align: left;">Recommended by community</td>
+<td style="text-align: left;">Common (see <a href="https://rdmkit.elixir-europe.org/metadata_management">RDMKit</a>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Organisational</td>
+<td style="text-align: left;">Usage recommendations of metadata</td>
+<td style="text-align: left;">Recommended by community</td>
+<td style="text-align: left;">RO-Crate, Bioschemas</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Organisational</td>
+<td style="text-align: left;">Management of permanent organization names/functions</td>
+<td style="text-align: left;">Handle owner, but unclear contact. Contact info in DOIP service provider</td>
+<td style="text-align: left;">ROR. DCAT contacts.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Legal</td>
+<td style="text-align: left;">Standardised human and machine-readable licenses</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;"><a href="https://spdx.org/licenses/">SPDX</a>, but not that frequently used</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Legal</td>
+<td style="text-align: left;">Permissive licenses for metadata (CC0, CC-BY-4.0)</td>
+<td style="text-align: left;">Undefined</td>
+<td style="text-align: left;">Both CC0, CC-BY-4.0 common, e.g. in DCAT</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Legal</td>
+<td style="text-align: left;">Different licenses for different parts</td>
+<td style="text-align: left;">Each part as separate FDO can have separate license</td>
+<td style="text-align: left;">DCAT, RO-Crate, Named graphs for splitting metadata</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Legal</td>
+<td style="text-align: left;">Mark expired/inexistent copyright</td>
+<td style="text-align: left;">Undefined</td>
+<td style="text-align: left;">Unclear, semantics assume copyright valid</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Legal</td>
+<td style="text-align: left;">Mark orphaned data</td>
+<td style="text-align: left;">Tombstone for deleted data, but no owner of DOIP server means FDO disappears</td>
+<td style="text-align: left;">Frequently data and endpoint has no known maintainer, archiving in common repositories becoming common</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Legal</td>
+<td style="text-align: left;">List recommended licenses</td>
+<td style="text-align: left;">Undefined</td>
+<td style="text-align: left;">Best practice recommendations</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Legal</td>
+<td style="text-align: left;">Track license evolution for dataset</td>
+<td style="text-align: left;">Undefined</td>
+<td style="text-align: left;">Versioning with PAV/PROV/DCAT</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Legal</td>
+<td style="text-align: left;">Policy/guidance for patent/trade secrets violation</td>
+<td style="text-align: left;">Undefined</td>
+<td style="text-align: left;">Undefined, legal owner may be specified. <a href="https://www.w3.org/TR/2018/REC-odrl-vocab-20180215/">ODRL</a> can express policies.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Legal</td>
+<td style="text-align: left;">GDPR compliance for personal data</td>
+<td style="text-align: left;">Undefined</td>
+<td style="text-align: left;">Undefined</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Legal</td>
+<td style="text-align: left;">Restrict access/use if legally required</td>
+<td style="text-align: left;">By transport protocol (undefined by FDO/DOIP)</td>
+<td style="text-align: left;">Diverging approaches, typically landing pages w/ auth&amp;auth or click-thru</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Legal</td>
+<td style="text-align: left;">Harmonised terms-of-use</td>
+<td style="text-align: left;">Undefined</td>
+<td style="text-align: left;">Undefined</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Legal</td>
+<td style="text-align: left;">Alignment between EOSC and national legislation</td>
+<td style="text-align: left;">Not applicable</td>
+<td style="text-align: left;">Not applicable</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-boninoFAIRDigitalObject" class="csl-entry" role="doc-biblioentry">
+Bonino, Luiz, Oeter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark Leggott, and Carlo Zwölf. 2019. <span>“<span>FAIR</span> Digital Object Framework.”</span> {{FDOF}} Technical Implementation Guideline. <span>FDOF</span> Technical Implementation Guideline. Group of European Data Experts in <span>RDA</span> (<span>GEDE-RDA</span>). <a
+href="https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx">https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx</a>.
+</div>
+<div id="ref-fdo-KernelAttributes" class="csl-entry" role="doc-biblioentry">
+Broeder, Daan, Peter Wittenburg, Ivonne Anders, and Karsten Peters-von Gehlen. 2022. <span>“<span>FDO</span> – Kernel Attributes &amp; Metadata.”</span> Proposed Recommendation PR-FDO-KernelAttributesAndMetadata-2.0-20221017. Edited by Daan Broeder, Peter Wittenburg, Ivonne Anders, and Karsten Peters-von Gehlen. <span>FDO Specification Documents - November 2022</span>. <span>FDO Forum</span>. <a href="https://doi.org/10.5281/zenodo.7825693">https://doi.org/10.5281/zenodo.7825693</a>.
+</div>
+<div id="ref-corchoEOSCInteroperabilityFramework2021b" class="csl-entry" role="doc-biblioentry">
+Corcho, Oscar, Magnus Eriksson, Krzysztof Kurowski, Milan Ojsteršek, Christine Choirat, Mark Sanden, Frederik Coppens, and EOSC Executive Board. 2021. <span>“<span>EOSC</span> Interoperability Framework.”</span> Report from the <span>EOSC</span> Executive Board Working Groups <span>FAIR</span> and Architecture. <span>Publications Office of the EU</span>. <a href="https://doi.org/10.2777/620649">https://doi.org/10.2777/620649</a>.
+</div>
+<div id="ref-weigelRDARecommendationPID2018" class="csl-entry" role="doc-biblioentry">
+Weigel, Tobias, Beth Plale, Mark Parsons, Gabriel Zhou, Yu Luo, Ulrich Schwardmann, Robert Quick, Margareta Hellström, and Kei Kurakawa. 2018. <span>“<span>RDA Recommendation</span> on <span>PID Kernel Information</span>.”</span> <em>Research Data Alliance</em>. Research Data Alliance. <a href="https://doi.org/10.15497/rda00031">https://doi.org/10.15497/rda00031</a>.
+</div>
+</div>
+</body>
+</html>

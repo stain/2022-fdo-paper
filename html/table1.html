@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>table1: Considering FDO and Web according to the quality levels of the Interoperability Framework for Fast Data (Delgado 2016). </title>
+
+    <link rel="stylesheet" href="https://s11.no/2022/css/bundle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="tbl:fdo-web-interoperability-framework">
+<table>
+<caption>Considering FDO and Web according to the quality levels of the Interoperability Framework for Fast Data <span class="citation" data-cites="delgadoInteroperabilityFrameworkDistributed2016a">(<a href="#ref-delgadoInteroperabilityFrameworkDistributed2016a" role="doc-biblioref">Delgado 2016</a>)</span>. </caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Quality</th>
+<th style="text-align: left;">FDO w/ DOIP</th>
+<th style="text-align: left;">Web w/ Linked Data</th>
+</tr>
+</thead>
+<tr class="even">
+<td style="text-align: left;"><strong>Symbiotic</strong>: <em>to what extent multiple applications can agree to interact, align, collaborate or cooperate</em></td>
+<td style="text-align: left;">The purpose of FDO is to enable federated machine actionable digital objects for scholarly purposes, in practice this also requires agreement of compatibility between FDO types. FDO encourages research communities to develop common type registries to be shared across instances. In current DOIP practice, each service have their own types, attributes and operations. The wider symbiosis is consistent use of PIDs.</td>
+<td style="text-align: left;">The Web is loosely coupled and encourages collaboration and linking by URL. In practice, REST APIs <span class="citation" data-cites="fieldingArchitecturalStylesDesign2000a">(<a href="#ref-fieldingArchitecturalStylesDesign2000a" role="doc-biblioref">Roy Thomas Fielding 2000</a>)</span> end up being mandated centrally by dominant (often commercial) providers <span class="citation" data-cites="fieldingReflectionsRESTArchitectural2017a">(<a href="#ref-fieldingReflectionsRESTArchitectural2017a" role="doc-biblioref">Roy T. Fielding et al. 2017</a>)</span>, and the
+clients are required to use each API as-is with special code per service. Use of Linked Data enables common tooling and semantic mapping across differences.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Pragmatic</strong>: <em>using interaction contracts so processes can be choreographed in workflows</em></td>
+<td style="text-align: left;">FDO types and operations enable detailed choreography (Canonical Workflows; <span class="citation" data-cites="cwfr">CWFR Group (<a href="#ref-cwfr" role="doc-biblioref">2021</a>)</span>). <code>0.TYPE/DOIPOperation</code> has lightweight definition of operation, <code>0.DOIP/Request</code> or <code>0.DOIP/Response</code> may give FDO Type or any other kind of “specifics” (incl. human readable docs). Semantics/purpose of operations not formalised (similar operations can be grouped with <code>0.DOIP/OperationReference</code>).</td>
+<td style="text-align: left;">“Follow your nose” crawler navigation, which may lead to frequent dead ends. Operational composition, typically within a single API provider, documented by OpenAPI 3 <span class="citation" data-cites="OpenAPISpecificationV3">(<a href="#ref-OpenAPISpecificationV3" role="doc-biblioref">Miller et al. 2021</a>)</span>, schema.org Actions <span class="citation" data-cites="SchemaOrgActions">(<a href="#ref-SchemaOrgActions" role="doc-biblioref"><span>“Schema.org <span>Actions</span>”</span> n.d.</a>)</span>, WSDL/SOAP <span class="citation"
+data-cites="w3-wsdl20-primer">(<a href="#ref-w3-wsdl20-primer" role="doc-biblioref">Liu and Booth 2007</a>)</span>, but frequently just as human-readable developer documentation with examples.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Semantic</strong>: <em>ensuring consistent understanding of messages, interoperability of rules, knowledge and ontologies</em></td>
+<td style="text-align: left;">FDO semantic enable navigation and typing. Every FDO has a type. Types maintained in FDO Type registries, which may add additional semantics, e.g. the ePIC <a href="https://hdl.handle.net/21.11104/c1a0ec5ad347427f25d6">PID-InfoType for Model</a>. No single type semantic, Type FDOs can link to existing vocabularies &amp; ontologies. JSON-LD used within some FDO objects (e.g. DISSCO Digital Specimen, NIST Material Science schema) <span class="citation" data-cites="wittenburgFAIRDigitalObject2022b">(<a href="#ref-wittenburgFAIRDigitalObject2022b"
+role="doc-biblioref">Wittenburg et al. 2022</a>)</span></td>
+<td style="text-align: left;">Lightweight HTTP semantics for authenticity/navigation. Semantic Type not commonly expressed on PID/header level, may be declared within Linked Data metadata. Semantic of type implied by Linked Data formats (e.g. OWL2, RDFS), although choice of type system may not be explicit.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Syntactic</strong>: <em>serialising messages for digital exchange, structure representation</em></td>
+<td style="text-align: left;">DOIP serialise FDOs as JSON, metadata commonly use JSON, typed with JSON Schema. Multiple byte stream attachments of any media type.</td>
+<td style="text-align: left;">Textual HTTP headers (including any signposting), single byte stream of any media type, e.g. Linked Data formats (JSON-LD, Turtle, RDF/XML) or embedded in document (HTML with RDFa, JSON-LD or Microdata). XML was previously the main syntax used by APIs, JSON is now dominant.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Connective</strong>: <em>transferring messages to another application, e.g. wrapping in other protocols</em></td>
+<td style="text-align: left;"><span class="citation" data-cites="foundationDigitalObjectInterface"><span>“Digital Object Interface Protocol Specification, Version 2.0”</span> (<a href="#ref-foundationDigitalObjectInterface" role="doc-biblioref">2018</a>)</span> is transport-independent, commonly TLS TCP/IP port 9000, DOIP over HTTP <span class="citation" data-cites="DOIPAPIHTTPa">(<a href="#ref-DOIPAPIHTTPa" role="doc-biblioref">CNRI 2023</a>)</span></td>
+<td style="text-align: left;">HTTP/1.1, TCP/IP port 80 <span class="citation" data-cites="rfc2616">(<a href="#ref-rfc2616" role="doc-biblioref">Roy T. Fielding et al. 1999</a>)</span>; HTTP/1.1+TLS, TCP/IP 443 <span class="citation" data-cites="rfc2818">(<a href="#ref-rfc2818" role="doc-biblioref">Rescorla 2000</a>)</span>; HTTP/2, as HTTP/1* but binary <span class="citation" data-cites="rfc7540">(<a href="#ref-rfc7540" role="doc-biblioref">Belshe, Peon, and Thomson 2015</a>)</span>; HTTP/3, like HTTP/2+TLS but UDP <span class="citation" data-cites="rfc9114">(<a href="#ref-rfc9114"
+role="doc-biblioref">Bishop 2022</a>)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Environmental</strong>: <em>how applications are deployed and affected by its environment, portability</em></td>
+<td style="text-align: left;">Main DOIP implementation is <a href="https://www.cordra.org/"><em>Cordra</em></a>, which can be single-instance or <a href="https://www.cordra.org/documentation/configuration/distributed-deployment.html">distributed</a>. Cordra <a href="https://www.cordra.org/documentation/configuration/storage-backends.html">storage backends</a> include file system, S3, MongoDB (itself scalable). Unique DOIP protocol can be hard to add to existing Web application frameworks, although proxy services have been developed (e.g. B2SHARE adapter).</td>
+<td style="text-align: left;">HTTP services widely deployed in a myriad of ways, ranging from single instance servers, horizontally &amp; vertically scaled application servers, to multi-cloud Content-Delivery Networks (CDN). Current scalable cloud technologies for Web hosting may not support HTTP features previously seen as important for Semantic Web, e.g. content negotiation and semantic HTTP status codes.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-rfc7540" class="csl-entry" role="doc-biblioentry">
+Belshe, Mike, Roberto Peon, and Martin Thomson. 2015. <em>Hypertext <span>Transfer Protocol Version</span> 2 (<span>HTTP</span>/2)</em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc7540">https://doi.org/10.17487/rfc7540</a>.
+</div>
+<div id="ref-rfc9114" class="csl-entry" role="doc-biblioentry">
+Bishop, Mike. 2022. <em><span>HTTP</span>/3</em>. Request for Comments. <span>RFC</span> Editor. <a href="https://doi.org/10.17487/rfc9114">https://doi.org/10.17487/rfc9114</a>.
+</div>
+<div id="ref-DOIPAPIHTTPa" class="csl-entry" role="doc-biblioentry">
+CNRI. 2023. <span>“<span>DOIP API</span> for <span>HTTP Clients</span>.”</span> In <em>Cordra® Software Technical Manual Version 2.5.0</em>. Corporation for National Research Initiatives. <a href="https://www.cordra.org/documentation/api/doip-api-for-http-clients.html">https://www.cordra.org/documentation/api/doip-api-for-http-clients.html</a>.
+</div>
+<div id="ref-cwfr" class="csl-entry" role="doc-biblioentry">
+CWFR Group. 2021. <span>“Canonical Workflow Frameworks for Research: <span>Position Paper</span>.”</span> Edited by Alex Hardisty and Peter Wittenburg. OSF. January 6, 2021. <a href="https://osf.io/3rekv/">https://osf.io/3rekv/</a>.
+</div>
+<div id="ref-delgadoInteroperabilityFrameworkDistributed2016a" class="csl-entry" role="doc-biblioentry">
+Delgado, José Carlos Martins. 2016. <span>“An <span>Interoperability Framework</span> and <span>Distributed Platform</span> for <span>Fast Data Applications</span>.”</span> In <em>Data <span>Science</span> and <span>Big Data Computing</span></em>, 3–39. <a href="https://doi.org/10.1007/978-3-319-31861-5_1">https://doi.org/10.1007/978-3-319-31861-5_1</a>.
+</div>
+<div id="ref-foundationDigitalObjectInterface" class="csl-entry" role="doc-biblioentry">
+<span>“Digital Object Interface Protocol Specification, Version 2.0.”</span> 2018. <span>DONA Foundation</span>. <a href="https://hdl.handle.net/0.DOIP/DOIPV2.0">https://hdl.handle.net/0.DOIP/DOIPV2.0</a>.
+</div>
+<div id="ref-rfc2616" class="csl-entry" role="doc-biblioentry">
+Fielding, Roy T., Jim Gettys, Jeffrey Mogul, Henrik Frystyk Nielsen, Larry M Masinter, Paul J. Leach, and Tim Berners-Lee. 1999. <em><span>Hypertext Transfer Protocol – HTTP/1.1</span></em>. Request for Comments. RFC Editor. <a href="https://doi.org/10.17487/rfc2616">https://doi.org/10.17487/rfc2616</a>.
+</div>
+<div id="ref-fieldingArchitecturalStylesDesign2000a" class="csl-entry" role="doc-biblioentry">
+Fielding, Roy Thomas. 2000. <span>“Architectural Styles and the Design of Network-Based Software Architectures.”</span> Doctoral Thesis, <span>University of California, Irvine</span>. <a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm">https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm</a>.
+</div>
+<div id="ref-fieldingReflectionsRESTArchitectural2017a" class="csl-entry" role="doc-biblioentry">
+Fielding, Roy T., Richard N. Taylor, Justin R. Erenkrantz, Michael M. Gorlick, Jim Whitehead, Rohit Khare, and Peyman Oreizy. 2017. <span>“Reflections on the <span>REST</span> Architectural Style and "Principled Design of the Modern Web Architecture" (Impact Paper Award).”</span> In <em>Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering - <span>ESEC</span>/<span>FSE</span> 2017</em>, 4–14. <a href="https://doi.org/10.1145/3106237.3121282">https://doi.org/10.1145/3106237.3121282</a>.
+</div>
+<div id="ref-w3-wsdl20-primer" class="csl-entry" role="doc-biblioentry">
+Liu, Kevin, and David Booth. 2007. <em>Web <span>Services Description Language</span> (<span>WSDL</span>) <span>Version</span> 2.0 <span>Part</span> 0: <span>Primer</span></em>. {W3C} Recommendation. W3C. <a href="https://www.w3.org/TR/2007/REC-wsdl20-primer-20070626/">https://www.w3.org/TR/2007/REC-wsdl20-primer-20070626/</a>.
+</div>
+<div id="ref-OpenAPISpecificationV3" class="csl-entry" role="doc-biblioentry">
+Miller, Darrel, Jeremy Whitlock, Marsh Gardiner, Mike Ralphson, Ron Ratovsky, and Uri Sarid, eds. 2021. <span>“<span>OpenAPI Specification</span> V3.1.0.”</span> OpenAPI Initiative; The Linux Foundation. February 15, 2021. <a href="https://spec.openapis.org/oas/v3.1.0.html">https://spec.openapis.org/oas/v3.1.0.html</a>.
+</div>
+<div id="ref-rfc2818" class="csl-entry" role="doc-biblioentry">
+Rescorla, Eric. 2000. <em><span>HTTP Over TLS</span></em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc2818">https://doi.org/10.17487/rfc2818</a>.
+</div>
+<div id="ref-SchemaOrgActions" class="csl-entry" role="doc-biblioentry">
+<span>“Schema.org <span>Actions</span>.”</span> n.d. Accessed May 26, 2022. <a href="https://schema.org/docs/actions.html">https://schema.org/docs/actions.html</a>.
+</div>
+<div id="ref-wittenburgFAIRDigitalObject2022b" class="csl-entry" role="doc-biblioentry">
+Wittenburg, Peter, Ivonne Anders, Christophe Blanchi, Merret Buurman, Carole Goble, Jonas Grieb, Alex Hardisty, et al. 2022. <span>“<span>FAIR</span> Digital Object Demonstrators 2021.”</span> <em>Zenodo</em>. <a href="https://doi.org/10.5281/zenodo.5872645">https://doi.org/10.5281/zenodo.5872645</a>.
+</div>
+</div>
+</body>
+</html>

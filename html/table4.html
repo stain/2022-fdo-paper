@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>table4: Comparing FAIR Digital Object (with the DOIP 2.0 protocol (“Digital Object Interface Protocol Specification, Version 2.0” 2018)) and Web technologies (using Linked Data) as middleware infrastructures (Zarras 2004) </title>
+
+    <link rel="stylesheet" href="https://s11.no/2022/css/bundle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="landscape">
+<div class="small">
+<div id="tbl:fdo-web-middleware">
+<table>
+<caption>Comparing FAIR Digital Object (with the DOIP 2.0 protocol <span class="citation" data-cites="foundationDigitalObjectInterface">(<a href="#ref-foundationDigitalObjectInterface" role="doc-biblioref"><span>“Digital Object Interface Protocol Specification, Version 2.0”</span> 2018</a>)</span>) and Web technologies (using Linked Data) as middleware infrastructures <span class="citation" data-cites="zarrasComparisonFrameworkMiddleware2004a">(<a href="#ref-zarrasComparisonFrameworkMiddleware2004a" role="doc-biblioref">Zarras 2004</a>)</span> </caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Quality</th>
+<th style="text-align: left;">FDO w/ DOIP</th>
+<th style="text-align: left;">Web w/ Linked Data</th>
+</tr>
+</thead>
+<tr class="even">
+<td style="text-align: left;"><strong>Openness</strong>: <em>framework enable extension of applications</em></td>
+<td style="text-align: left;">FDOs can be cross-linked using PIDs, pointing to multiple FDO endpoints. Custom DOIP operations can be exposed, although it is unclear if these can be outside the FDO server. PID minting requires Handle.net prefix subscription, or use of services like <a href="https://datacite.org/">Datacite</a>, <a href="https://eudat.eu/services/userdoc/b2handle">B2Handle</a>.</td>
+<td style="text-align: left;">The Web is inherently open and made by cross-linked URLs. Participation requires DNS domain purchase (many free alternatives also exists). PID minting can be free using PURL/ARK services, or can use DOI/Handle with HTTP redirects.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Scalability</strong>: <em>application should be effective at many different scales</em></td>
+<td style="text-align: left;">No defined methods for caching or mirroring, although this could be handled by backend, depending on exposed FDO operations (e.g. Cordra can scale to multiple backend nodes)</td>
+<td style="text-align: left;">Cache control headers reduce repeated transfer and assist explicit and transparent proxies for speed-up. HTTP <code>GET</code> can be scaled to world-population-wide with Content-Delivery Networks (CDNs), while write-access scalability is typically manage by backend.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Performance</strong>: <em>efficient and predictable execution</em></td>
+<td style="text-align: left;">DOIP has been shown moderately scalable to 100 millions of objects, create operation at 900 requests/second . DOIP protocol is reusable for many operations, multiple requests may be answered out of order (by <code>requestId</code>). Multiple connections possible. Setup is typically through TCP and TLS which adds latency.</td>
+<td style="text-align: left;">HTTP traffic is about 10% of global Internet traffic, excluding video and social networks <span class="citation" data-cites="sandvineGlobalInternetPhenomena">(<a href="#ref-sandvineGlobalInternetPhenomena" role="doc-biblioref">Sandvine n.d.</a>)</span>. HTTP 1 connections are serial and reusable, and concurrent connections is common. HTTP/2 adds asynchronous responses and multiplexed streams <span class="citation" data-cites="rfc7540">(<a href="#ref-rfc7540" role="doc-biblioref">Belshe, Peon, and Thomson 2015</a>)</span> but still has TCP+TLS startup costs. For
+reduced latency, HTTP/3 <span class="citation" data-cites="rfc9114">(<a href="#ref-rfc9114" role="doc-biblioref">Bishop 2022</a>)</span> use QUIC <span class="citation" data-cites="rfc9000">(<a href="#ref-rfc9000" role="doc-biblioref">Iyengar and Thomson 2021</a>)</span> rather than TCP, already adapted heavily (30% of EMEA traffic) of which Instagram &amp; Facebook video is the majority of traffic <span class="citation" data-cites="joras2020">(<a href="#ref-joras2020" role="doc-biblioref">Joras and Chi 2020</a>)</span>.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Distribution transparency</strong>: <em>application perceived as a consistent whole rather than independent elements.</em></td>
+<td style="text-align: left;">Each FDO is accessed separately along with its components (typically from the same endpoint). FDOs should provide the mandatory kernel metadata fields. FDOs of the same declared type typically share additional attributes (although that schema may not be declared). DOIP does not enforce metadata typing constraints, this need to be established as FDO conventions.</td>
+<td style="text-align: left;">Each URL accessed separately. Common HTTP headers provide basic metadata, although it is often not reliable. A multitude of schemas and serializations for metadata exists, conventions might be implied by a declared profile or certain media types. Metadata is not always machine findable, may need pre-agreed API URI Templates <span class="citation" data-cites="rfc6570">(<a href="#ref-rfc6570" role="doc-biblioref">Gregorio et al. 2012</a>)</span>, content-negotiation <span class="citation" data-cites="ContentNegotiationHTTP">(<a href="#ref-ContentNegotiationHTTP"
+role="doc-biblioref">MDN 2023</a>)</span> or FAIR Signposting <span class="citation" data-cites="vandesompelFAIRSignpostingProfile2022">(<a href="#ref-vandesompelFAIRSignpostingProfile2022" role="doc-biblioref">Van de Sompel et al. 2022</a>)</span>.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Access transparency</strong>: <em>local/remote elements accessed similarly</em></td>
+<td style="text-align: left;">FDOs should be accessed through PID indirection, this means difficult to make private test setup. Commonly a fixed DOIP server is used directly, which permits local non-PID identifiers.</td>
+<td style="text-align: left;">Global HTTP protocol frequently used locally and behind firewalls, but at risk of non-global URIs (e.g. <code>http://localhost/object/1</code>) and SSL issues (e.g. self-signed certificates, local CAs)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Location transparency</strong>: <em>elements accessed without knowledge of physical location</em></td>
+<td style="text-align: left;">FDOs always accessed through PIDs. Multiple locations possible in Handle system, can expose geo-info.</td>
+<td style="text-align: left;">PIDs and URL redirects. DNS aliases and IP routing can hide location. Geo-localised servers common for large cloud deployments.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Concurrency transparency</strong>: <em>concurrent processing without interference</em></td>
+<td style="text-align: left;">No explicit concurrency measures. FDO kernel metadata can include checksum and date.</td>
+<td style="text-align: left;">HTTP operations are classified as being stateless/idempotent or not (e.g. <code>PUT</code> changes state, but can be repeated on failure), although these constraints are occassionally violated by Web applications. Cache control, <code>ETag</code> (e.g. checksum) and modification date in HTTP headers allows detection of concurrent changes on a single resource.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Failure transparency</strong>: <em>service provisioning resilient to failures</em></td>
+<td style="text-align: left;">DOIP status codes, e.g. <code>0.DOIP/Status.104</code>, additional codes can be added as custom attributes</td>
+<td style="text-align: left;">HTTP <a href="https://datatracker.ietf.org/doc/html/rfc7231#section-6.5">status codes</a> e.g. <code>404 Not Found</code>, specific meaning of standard codes can be <a href="https://swagger.io/docs/specification/describing-responses/">documented in Open API</a>. Custom codes uncommon.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Migration transparency</strong>: <em>allow relocating elements without interfering application</em></td>
+<td style="text-align: left;">Update of PID record URLs, indirection through <code>0.TYPE/DOIPServiceInfo</code> (not always used consistently). No redirection from DOIP service.</td>
+<td style="text-align: left;">HTTP <code>30x</code> status codes provide temporary or permanent redirections, commonly used for PURLs but also by endpoints.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Persistence transparency</strong>: <em>conceal deactivation/reactivation of elements from their users</em></td>
+<td style="text-align: left;">FDO requires use of PIDs for object persistence, including a tombstone response for deleted objects. There is no guarantee that an FDO is immutable or will even stay the same type (note: CORDRA extends DOIP with <a href="https://www.cordra.org/documentation/design/object-versioning.html">version tracking</a>).</td>
+<td style="text-align: left;">URLs are not required to persist, although encouraged <span class="citation" data-cites="berners-lee-cool-uris">(<a href="#ref-berners-lee-cool-uris" role="doc-biblioref">Berners-Lee 1998</a>)</span>. Persistence requires convention to use PIDs/PURLs and HTTP <code>410 Gone</code>. An URL may change its content, change in type may sometimes force new URLs if exposing extensions like <code>.json</code>. Memento <span class="citation" data-cites="rfc7089">(<a href="#ref-rfc7089" role="doc-biblioref">Van de Sompel, Nelson, and Sanderson 2013</a>)</span> expose
+versioned snapshots. WebDAV <code>VERSION-CONTROL</code> method <span class="citation" data-cites="rfc3253">(<a href="#ref-rfc3253" role="doc-biblioref">Clemm et al. 2002</a>)</span> (used by SVN).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Transaction transparency</strong>: <em>coordinate execution of atomic/isolated transactions</em></td>
+<td style="text-align: left;">No transaction capabilities declared by FDO or DOIP. Internal synchronisation possible in backend for Extended operations.</td>
+<td style="text-align: left;">Limited transaction capabilities (e.g. <code>If-Unmodified-Since</code>) on same resource. WebDAV <a href="https://datatracker.ietf.org/doc/html/rfc4918#section-6">locking mechanisms</a> <span class="citation" data-cites="rfc4918">(<a href="#ref-rfc4918" role="doc-biblioref">Dusseault 2007</a>)</span> with <code>LOCK</code> and <code>UNLOCK</code> methods.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Modularity</strong>: <em>application as collection of connected/distributed elements</em></td>
+<td style="text-align: left;">FDOs are inheritedly modular using global PID spaces and their cross-references. In practice, FDOs of a given type are exposed through a single server shared within a particular community/institution.</td>
+<td style="text-align: left;">The Web is inheritently modular in that distributed objects are cross-referenced within a global URI space. In practice, an API’s set of resources will be exposed through a single HTTP service, but modularity enables fine-grained scalability in backend.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Encapsulation</strong>: <em>separate interface from implementation. Specify interface as contract, multiple implementations possible</em></td>
+<td style="text-align: left;">Indirection by PID gives separation. FDO principles are protocol independent, although it may be unclear which protocol to use for which FDO (although <code>0.DOIP/Transport</code> can be specified after already contacting DOIP). Cordra supports <a href="https://www.cordra.org/documentation/api/doip.html">native DOIP</a>, <a href="https://www.cordra.org/documentation/api/doip-api-for-http-clients.html">DOIP over HTTP</a> and <a href="https://www.cordra.org/documentation/api/rest-api.html">Cordra REST API</a>)</td>
+<td style="text-align: left;">HTTP/1.1 semantics can seemlessly upgrade to HTTP/2 and HTTP/3. <code>http</code> vs <code>https</code> URIs exposes encryption detail<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Implementation details may leak into URIs (e.g. <code>search.aspx</code>), countered by deliberate design of URI patterns <span class="citation" data-cites="berners-lee-cool-uris">(<a href="#ref-berners-lee-cool-uris" role="doc-biblioref">Berners-Lee 1998</a>)</span>) and PIDs via Persistent URLs (PURL).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Inheritance</strong>: <em>Deriving specialised interface from another type</em></td>
+<td style="text-align: left;">DOIP types nested with parents, implying shared FDO structures (unclear if operations are inherited). FDO establishes need for multiple Data Type Registries (e.g. managed by a community for a particular domain). Semantics of type system currently undefined for FDO and DOIP, syntactic types can also piggyback of FDO type’s schema (e.g. <a href="(https://www.cordra.org/documentation/design/schemas.html#schema-references)">CORDRA <code>$ref</code></a> use of <a href="https://json-schema.org/draft/2020-12/json-schema-core.html#references">JSON Schema references</a>
+<span class="citation" data-cites="Draftbhuttonjsonschema">(<a href="#ref-Draftbhuttonjsonschema" role="doc-biblioref">Wright et al. 2022</a>)</span>)</td>
+<td style="text-align: left;">Syntactically Media Type with multiple suffixes <span class="citation" data-cites="Draftietfmediamansuffixes00MediaTypes">(<a href="#ref-Draftietfmediamansuffixes00MediaTypes" role="doc-biblioref">Sporny and Guy 2023</a>)</span> (mainly used with <code>+json</code>), declaration of subtypes as profiles (RFC6906) . In metadata, semantic type systems (RDFS <span class="citation" data-cites="w3-rdf-schema">(<a href="#ref-w3-rdf-schema" role="doc-biblioref">Guha and Brickley 2014</a>)</span>), OWL2 <span class="citation" data-cites="w3-owl2-overview">(<a
+href="#ref-w3-owl2-overview" role="doc-biblioref">W3C OWL Working Group 2012</a>)</span>, SKOS <span class="citation" data-cites="w3-skos-primer">(<a href="#ref-w3-skos-primer" role="doc-biblioref">Isaac and Summers 2009</a>)</span>). OpenAPI 3 <span class="citation" data-cites="OpenAPISpecificationV3">(<a href="#ref-OpenAPISpecificationV3" role="doc-biblioref">Miller et al. 2021</a>)</span> <a href="https://spec.openapis.org/oas/v3.1.0#composition-and-inheritance-polymorphism">inheritance and Polymorphism</a>. XML <code>xsd:schemaLocation</code> or <code>xsd:type</code> <span class="citation"
+data-cites="w3-xmlschema11">(<a href="#ref-w3-xmlschema11" role="doc-biblioref">Thompson et al. 2012</a>)</span>, JSON <code>$schema</code> <span class="citation" data-cites="Draftbhuttonjsonschema">(<a href="#ref-Draftbhuttonjsonschema" role="doc-biblioref">Wright et al. 2022</a>)</span>), JSON-LD <code>@context</code> <span class="citation" data-cites="w3-json-ld">(<a href="#ref-w3-json-ld" role="doc-biblioref">Sporny et al. 2020</a>)</span>. Large number of domain-specific and general ontologies define semantic types, but finding and selecting remains a challenge.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Signal interfaces</strong>: <em>asynchronous handling of messages</em></td>
+<td style="text-align: left;">DOIP 2.0 is synchronous, in FDO async operations undefined. Could be handled as custom jobs/futures FDOs</td>
+<td style="text-align: left;">HTTP/2 <a href="https://datatracker.ietf.org/doc/html/rfc7540#section-5">multiplexed streams</a> <span class="citation" data-cites="rfc7540">(<a href="#ref-rfc7540" role="doc-biblioref">Belshe, Peon, and Thomson 2015</a>)</span>, Web Sockets <span class="citation" data-cites="WebSocketsStandard">(<a href="#ref-WebSocketsStandard" role="doc-biblioref">Rice et al. 2022</a>)</span>, Linked Data Notifications <span class="citation" data-cites="w3-ldn">(<a href="#ref-w3-ldn" role="doc-biblioref">Capadisli and Guy 2017</a>)</span>, AtomPub <span class="citation"
+data-cites="rfc5023">(<a href="#ref-rfc5023" role="doc-biblioref">Gregorio and de hÓra 2007</a>)</span>, SWORD <span class="citation" data-cites="SWORDSpecification">(<a href="#ref-SWORDSpecification" role="doc-biblioref">Jones and Jefferies 2021</a>)</span>, Micropub <span class="citation" data-cites="w3-micropub">(<a href="#ref-w3-micropub" role="doc-biblioref">Parecki 2017</a>)</span>, more typically ad-hoc jobs/futures REST resources</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Operation interfaces</strong>: <em>defining operations possible on an instance, interface of request/response messages</em></td>
+<td style="text-align: left;">CRUD predefined in DOIP, custom operations through <code>0.DOIP/Op.ListOperations</code> (can be FDOs of type <code>0.TYPE/DOIPOperation</code>, more typically local identifiers like <code>"getProvenance"</code>)</td>
+<td style="text-align: left;">CRUD predefined in <a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.3">HTTP methods</a> <span class="citation" data-cites="rfc7231">(<a href="#ref-rfc7231" role="doc-biblioref">Roy T. Fielding and Reschke 2014b</a>)</span>, (<a href="https://www.iana.org/assignments/http-methods/http-methods.xhtml">extended by registration</a>), URI Templates <span class="citation" data-cites="rfc6570">(<a href="#ref-rfc6570" role="doc-biblioref">Gregorio et al. 2012</a>)</span>, <a href="https://spec.openapis.org/oas/v3.1.0.html#operation-object">OpenAPI
+operations</a> <span class="citation" data-cites="OpenAPISpecificationV3">(<a href="#ref-OpenAPISpecificationV3" role="doc-biblioref">Miller et al. 2021</a>)</span>, HATEOAS<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> incl. Hydra <span class="citation" data-cites="HydraW3CCommunity">(<a href="#ref-HydraW3CCommunity" role="doc-biblioref">Lanthaler 2021</a>)</span>, schema.org Actions <span class="citation" data-cites="SchemaOrgActions">(<a href="#ref-SchemaOrgActions" role="doc-biblioref"><span>“Schema.org <span>Actions</span>”</span> n.d.</a>)</span>,
+JSON HAL <span class="citation" data-cites="Draftkellyjsonhal08">(<a href="#ref-Draftkellyjsonhal08" role="doc-biblioref">Kelly 2016</a>)</span> &amp; Link headers (RFC8288) <span class="citation" data-cites="rfc8288">(<a href="#ref-rfc8288" role="doc-biblioref">Nottingham 2017</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Stream interfaces</strong>: <em>operations that can handle continuous information streams</em></td>
+<td style="text-align: left;">Undefined in FDO. DOIP can support multiple byte stream elements (need custom FDO type to determine stream semantics)</td>
+<td style="text-align: left;">HTTP 1.1 <span class="citation" data-cites="rfc7230">(<a href="#ref-rfc7230" role="doc-biblioref">Roy T. Fielding and Reschke 2014a</a>)</span> <a href="https://datatracker.ietf.org/doc/html/rfc7230#section-4.1">chunked transfer</a>, HLS (RFC8216) <span class="citation" data-cites="rfc8216">(<a href="#ref-rfc8216" role="doc-biblioref">Pantos and May 2017</a>)</span>, MPEG-DASH <span class="citation" data-cites="iso23009">(<a href="#ref-iso23009" role="doc-biblioref"><em><span>ISO</span>/<span>IEC</span> 23009-1:2022 — Information Technology — Dynamic Adaptive
+Streaming over HTTP (DASH) — Part 1: Media Presentation Description and Segment Formats</em> 2022</a>)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-rfc7540" class="csl-entry" role="doc-biblioentry">
+Belshe, Mike, Roberto Peon, and Martin Thomson. 2015. <em>Hypertext <span>Transfer Protocol Version</span> 2 (<span>HTTP</span>/2)</em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc7540">https://doi.org/10.17487/rfc7540</a>.
+</div>
+<div id="ref-berners-lee-cool-uris" class="csl-entry" role="doc-biblioentry">
+Berners-Lee, Tim. 1998. <span>“Cool <span>URIs</span> Don’t Change.”</span> Style Guide for Online Hypertext. 1998. <a href="https://www.w3.org/Provider/Style/URI">https://www.w3.org/Provider/Style/URI</a>.
+</div>
+<div id="ref-rfc9114" class="csl-entry" role="doc-biblioentry">
+Bishop, Mike. 2022. <em><span>HTTP</span>/3</em>. Request for Comments. <span>RFC</span> Editor. <a href="https://doi.org/10.17487/rfc9114">https://doi.org/10.17487/rfc9114</a>.
+</div>
+<div id="ref-w3-ldn" class="csl-entry" role="doc-biblioentry">
+Capadisli, Sarven, and Amy Guy, eds. 2017. <em>Linked <span>Data Notifications</span></em>. <span>W3C Social Web Working Group</span>; <span>W3C</span>. <a href="https://www.w3.org/TR/2017/REC-ldn-20170502/">https://www.w3.org/TR/2017/REC-ldn-20170502/</a>.
+</div>
+<div id="ref-rfc3253" class="csl-entry" role="doc-biblioentry">
+Clemm, Geoffrey M., Jim Amsden, Tim Ellison, Christopher Kaler, and Jim Whitehead. 2002. <em>Versioning <span>Extensions</span> to <span>WebDAV</span> (<span>Web Distributed Authoring</span> and <span>Versioning</span>)</em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc3253">https://doi.org/10.17487/rfc3253</a>.
+</div>
+<div id="ref-foundationDigitalObjectInterface" class="csl-entry" role="doc-biblioentry">
+<span>“Digital Object Interface Protocol Specification, Version 2.0.”</span> 2018. <span>DONA Foundation</span>. <a href="https://hdl.handle.net/0.DOIP/DOIPV2.0">https://hdl.handle.net/0.DOIP/DOIPV2.0</a>.
+</div>
+<div id="ref-rfc4918" class="csl-entry" role="doc-biblioentry">
+Dusseault, Lisa M. 2007. <em><span>HTTP Extensions</span> for <span>Web Distributed Authoring</span> and <span>Versioning</span> (<span>WebDAV</span>)</em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc4918">https://doi.org/10.17487/rfc4918</a>.
+</div>
+<div id="ref-fieldingArchitecturalStylesDesign2000a" class="csl-entry" role="doc-biblioentry">
+Fielding, Roy Thomas. 2000. <span>“Architectural Styles and the Design of Network-Based Software Architectures.”</span> Doctoral Thesis, <span>University of California, Irvine</span>. <a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm">https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm</a>.
+</div>
+<div id="ref-rfc7230" class="csl-entry" role="doc-biblioentry">
+Fielding, Roy T., and Julian Reschke. 2014a. <em>Hypertext <span>Transfer Protocol</span> (<span>HTTP</span>/1.1): <span>Message Syntax</span> and <span>Routing</span></em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc7230">https://doi.org/10.17487/rfc7230</a>.
+</div>
+<div id="ref-rfc7231" class="csl-entry" role="doc-biblioentry">
+———. 2014b. <em>Hypertext <span>Transfer Protocol</span> (<span>HTTP</span>/1.1): <span>Semantics</span> and <span>Content</span></em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc7231">https://doi.org/10.17487/rfc7231</a>.
+</div>
+<div id="ref-rfc6570" class="csl-entry" role="doc-biblioentry">
+Gregorio, Joe, Roy T. Fielding, Marc Hadley, Mark Nottingham, and David Orchard. 2012. <em><span>URI Template</span></em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc6570">https://doi.org/10.17487/rfc6570</a>.
+</div>
+<div id="ref-rfc5023" class="csl-entry" role="doc-biblioentry">
+Gregorio, Joe, and Bill de hÓra. 2007. <em>The <span>Atom Publishing Protocol</span></em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc5023">https://doi.org/10.17487/rfc5023</a>.
+</div>
+<div id="ref-w3-rdf-schema" class="csl-entry" role="doc-biblioentry">
+Guha, Ramanathan, and Dan Brickley. 2014. <em><span>RDF Schema</span> 1.1</em>. {W3C} Recommendation. <a href="http://www.w3.org/TR/2014/REC-rdf-schema-20140225/">http://www.w3.org/TR/2014/REC-rdf-schema-20140225/</a>.
+</div>
+<div id="ref-w3-skos-primer" class="csl-entry" role="doc-biblioentry">
+Isaac, Antoine, and Ed Summers. 2009. <em><span>SKOS Simple Knowledge Organization System Primer</span></em>. {W3C} Note. W3C. <a href="https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/">https://www.w3.org/TR/2009/NOTE-skos-primer-20090818/</a>.
+</div>
+<div id="ref-iso23009" class="csl-entry" role="doc-biblioentry">
+<em><span>ISO</span>/<span>IEC</span> 23009-1:2022 — Information Technology — Dynamic Adaptive Streaming over HTTP (DASH) — Part 1: Media Presentation Description and Segment Formats</em>. 2022. <span>ISO</span>. <a href="https://www.iso.org/standard/83314.html">https://www.iso.org/standard/83314.html</a>.
+</div>
+<div id="ref-rfc9000" class="csl-entry" role="doc-biblioentry">
+Iyengar, Jana, and Martin Thomson. 2021. <em><span>QUIC</span>: <span>A UDP-Based Multiplexed</span> and <span>Secure Transport</span></em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc9000">https://doi.org/10.17487/rfc9000</a>.
+</div>
+<div id="ref-SWORDSpecification" class="csl-entry" role="doc-biblioentry">
+Jones, Richard, and Neil Jefferies, eds. 2021. <span>“<span>SWORD</span> 3.0 <span>Specification</span>.”</span> September 1, 2021. <a href="https://swordapp.github.io/swordv3/swordv3.html">https://swordapp.github.io/swordv3/swordv3.html</a>.
+</div>
+<div id="ref-joras2020" class="csl-entry" role="doc-biblioentry">
+Joras, Matt, and Yang Chi. 2020. <span>“How <span>Facebook</span> Is Bringing <span>QUIC</span> to Billions.”</span> Engineering at <span>Meta</span>. October 21, 2020. <a href="https://engineering.fb.com/2020/10/21/networking-traffic/how-facebook-is-bringing-quic-to-billions">https://engineering.fb.com/2020/10/21/networking-traffic/how-facebook-is-bringing-quic-to-billions</a>.
+</div>
+<div id="ref-Draftkellyjsonhal08" class="csl-entry" role="doc-biblioentry">
+Kelly, Mike. 2016. <span>“<span>JSON Hypertext Application Language</span>.”</span> Internet-Draft draft-kelly-json-hal-08. Internet Engineering Task Force; Internet Engineering Task Force. <a href="https://datatracker.ietf.org/doc/draft-kelly-json-hal/08/">https://datatracker.ietf.org/doc/draft-kelly-json-hal/08/</a>.
+</div>
+<div id="ref-rfc2817" class="csl-entry" role="doc-biblioentry">
+Khare, Rohit, and Scott Lawrence. 2000. <em>Upgrading to <span>TLS Within HTTP</span>/1.1</em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc2817">https://doi.org/10.17487/rfc2817</a>.
+</div>
+<div id="ref-HydraW3CCommunity" class="csl-entry" role="doc-biblioentry">
+Lanthaler, Markus. 2021. <span>“Hydra Core Vocabulary.”</span> Hydra <span>W3C Community Group</span>. <a href="http://www.hydra-cg.com/spec/latest/core/">http://www.hydra-cg.com/spec/latest/core/</a>.
+</div>
+<div id="ref-ContentNegotiationHTTP" class="csl-entry" role="doc-biblioentry">
+MDN. 2023. <span>“HTTP Content Negotiation.”</span> In <em>Web Technology for Developers</em>. MDN Web Docs. <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation">https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation</a>.
+</div>
+<div id="ref-OpenAPISpecificationV3" class="csl-entry" role="doc-biblioentry">
+Miller, Darrel, Jeremy Whitlock, Marsh Gardiner, Mike Ralphson, Ron Ratovsky, and Uri Sarid, eds. 2021. <span>“<span>OpenAPI Specification</span> V3.1.0.”</span> OpenAPI Initiative; The Linux Foundation. February 15, 2021. <a href="https://spec.openapis.org/oas/v3.1.0.html">https://spec.openapis.org/oas/v3.1.0.html</a>.
+</div>
+<div id="ref-rfc8288" class="csl-entry" role="doc-biblioentry">
+Nottingham, Mark. 2017. <em>Web <span>Linking</span></em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc8288">https://doi.org/10.17487/rfc8288</a>.
+</div>
+<div id="ref-rfc8216" class="csl-entry" role="doc-biblioentry">
+Pantos, Roger, and William May. 2017. <em><span>HTTP Live Streaming</span></em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc8216">https://doi.org/10.17487/rfc8216</a>.
+</div>
+<div id="ref-w3-micropub" class="csl-entry" role="doc-biblioentry">
+Parecki, Aaron. 2017. <em>Micropub</em>. <span>W3C, Social Web Working Group</span>; <span>W3C</span>. <a href="https://www.w3.org/TR/2017/REC-micropub-20170523/">https://www.w3.org/TR/2017/REC-micropub-20170523/</a>.
+</div>
+<div id="ref-WebSocketsStandard" class="csl-entry" role="doc-biblioentry">
+Rice, Adam, Ian Hickson, Anne van Kesteren, and Yutaka Hirano. 2022. <em><span>WebSockets Standard</span></em>. <span>WHATWG</span>. <a href="https://websockets.spec.whatwg.org/">https://websockets.spec.whatwg.org/</a>.
+</div>
+<div id="ref-sandvineGlobalInternetPhenomena" class="csl-entry" role="doc-biblioentry">
+Sandvine. n.d. <span>“Global <span>Internet Phenomena Report</span> 2022.”</span> Accessed May 26, 2022. <a href="https://www.sandvine.com/global-internet-phenomena-report-2022">https://www.sandvine.com/global-internet-phenomena-report-2022</a>.
+</div>
+<div id="ref-SchemaOrgActions" class="csl-entry" role="doc-biblioentry">
+<span>“Schema.org <span>Actions</span>.”</span> n.d. Accessed May 26, 2022. <a href="https://schema.org/docs/actions.html">https://schema.org/docs/actions.html</a>.
+</div>
+<div id="ref-Draftietfmediamansuffixes00MediaTypes" class="csl-entry" role="doc-biblioentry">
+Sporny, Manu, and Amy Guy. 2023. <span>“<span class="nocase">Media Types with Multiple Suffixes</span>.”</span> Internet-Draft draft-ietf-mediaman-suffixes-03. Internet Engineering Task Force; Internet Engineering Task Force. <a href="https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/03/">https://datatracker.ietf.org/doc/draft-ietf-mediaman-suffixes/03/</a>.
+</div>
+<div id="ref-w3-json-ld" class="csl-entry" role="doc-biblioentry">
+Sporny, Manu, Dave Longley, Gregg Kellogg, Markus Lanthaler, Pierre-Antoine Champin, and Niklas Lindström. 2020. <em><span>JSON-LD</span> 1.1</em>. {W3C Recommendation}. Edited by Gregg Kellogg, Pierre-Antoine Champin, and Dave Longley. <span>W3C JSON-LD Working Group</span>; W3C. <a href="https://www.w3.org/TR/2020/REC-json-ld11-20200716/">https://www.w3.org/TR/2020/REC-json-ld11-20200716/</a>.
+</div>
+<div id="ref-w3-xmlschema11" class="csl-entry" role="doc-biblioentry">
+Thompson, Henry, Sandy Gao, David Beech, Murray Maloney, Noah Mendelsohn, and Michael Sperberg-McQueen. 2012. <em><span>W3C XML Schema Definition Language</span> (<span>XSD</span>) 1.1 <span>Part</span> 1: <span>Structures</span></em>. {W3C} Recommendation. W3C. <a href="https://www.w3.org/TR/2012/REC-xmlschema11-1-20120405/">https://www.w3.org/TR/2012/REC-xmlschema11-1-20120405/</a>.
+</div>
+<div id="ref-vandesompelFAIRSignpostingProfile2022" class="csl-entry" role="doc-biblioentry">
+Van de Sompel, Herbert, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warner, Anusuriya Devaraju, Robert Huber, et al. 2022. <span>“<span>FAIR Signposting Profile</span>.”</span> July 27, 2022. <a href="https://signposting.org/FAIR/">https://signposting.org/FAIR/</a>.
+</div>
+<div id="ref-rfc7089" class="csl-entry" role="doc-biblioentry">
+Van de Sompel, Herbert, Michael Nelson, and Robert Sanderson. 2013. <em><span>HTTP Framework</span> for <span>Time-Based Access</span> to <span>Resource States</span> – <span>Memento</span></em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc7089">https://doi.org/10.17487/rfc7089</a>.
+</div>
+<div id="ref-w3-owl2-overview" class="csl-entry" role="doc-biblioentry">
+W3C OWL Working Group, ed. 2012. <em><span>OWL</span> 2 <span>Web Ontology Language Document Overview</span> (<span>Second Edition</span>)</em>. {W3C} Recommendation. W3C. <a href="https://www.w3.org/TR/2012/REC-owl2-overview-20121211/">https://www.w3.org/TR/2012/REC-owl2-overview-20121211/</a>.
+</div>
+<div id="ref-Draftbhuttonjsonschema" class="csl-entry" role="doc-biblioentry">
+Wright, Austin, Henry Andrews, Ben Hutton, and Greg Dennis. 2022. <span>“JSON Schema: A Media Type for Describing JSON Documents.”</span> Internet-Draft. Internet Engineering Task Force; Internet Engineering Task Force. <a href="https://datatracker.ietf.org/doc/draft-bhutton-json-schema/01/">https://datatracker.ietf.org/doc/draft-bhutton-json-schema/01/</a>.
+</div>
+<div id="ref-zarrasComparisonFrameworkMiddleware2004a" class="csl-entry" role="doc-biblioentry">
+Zarras, Apostolos. 2004. <span>“A <span>Comparison Framework</span> for <span>Middleware Infrastructures</span>.”</span> <em>The Journal of Object Technology</em> 3 (5): 103. <a href="https://doi.org/10.5381/jot.2004.3.5.a2">https://doi.org/10.5381/jot.2004.3.5.a2</a>.
+</div>
+</div>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>The <code>http</code> protocol (port 80) can in theory also upgrade <span class="citation" data-cites="rfc2817">(<a href="#ref-rfc2817" role="doc-biblioref">Khare and Lawrence 2000</a>)</span> to TLS encryption, as commonly used by <a href="https://www.rfc-editor.org/rfc/rfc8010.html#section-8.2">Internet Printing Protocol</a> for <code>ipp</code> URIs, but on the Web, best practice is explicit <code>https</code> (port 443) URLs to ensure following links stay secure.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>HATEOAS: Hypermedia as the Engine of Application State <span class="citation" data-cites="fieldingArchitecturalStylesDesign2000a">(<a href="#ref-fieldingArchitecturalStylesDesign2000a" role="doc-biblioref">Roy Thomas Fielding 2000</a>)</span>, an important element of the REST architectural style.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>

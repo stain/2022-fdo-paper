@@ -1,0 +1,37 @@
+tr th {
+        background: white;
+}
+tr.header {
+        border-bottom: black thin solid;
+}
+tr.odd {
+        background: white;
+}
+table caption {
+        font-style: italic;
+        font-variant: small-caps;
+}
+table { 
+	border-top: solid thin #333;
+	border-bottom: solid thin #333;
+}
+.references { 
+	padding-top: 2ex;
+	border-top: solid 1px black;
+}
+.references::before { 
+	content: "References";
+	font-weight: bold;
+}
+.csl-entry { 
+	margin-top: 1ex;
+}
+.csl-entry strong::before { 
+    content: "\a";
+    white-space: pre;
+}
+.csl-entry em::before { 
+    content: "\a";
+    white-space: pre;
+}
+

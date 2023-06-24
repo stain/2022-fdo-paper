@@ -1,0 +1,467 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>table5: Assessing RDA’s FAIR Data Maturity Model (FAIR Data Maturity Model Working Group 2020; Bahim et al. 2020) (first 2 columns) against the FDO guidelines (Bonino et al. 2019), FDO implemented with the protocol DOIPv2 <span</title>
+
+    <link rel="stylesheet" href="https://s11.no/2022/css/bundle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="landscape">
+<div class="small">
+<div id="RDA-A2-01M">
+<table>
+<caption>Assessing RDA’s FAIR Data Maturity Model <span class="citation" data-cites="groupFAIRDataMaturity2020 bahimFAIRDataMaturity2020a">(<a href="#ref-groupFAIRDataMaturity2020" role="doc-biblioref">FAIR Data Maturity Model Working Group 2020</a>; <a href="#ref-bahimFAIRDataMaturity2020a" role="doc-biblioref">Bahim et al. 2020</a>)</span> (first 2 columns) against the FDO guidelines <span class="citation" data-cites="boninoFAIRDigitalObject">(<a href="#ref-boninoFAIRDigitalObject" role="doc-biblioref">Bonino et al. 2019</a>)</span>, FDO implemented with the protocol DOIPv2 <span
+class="citation" data-cites="foundationDigitalObjectInterface">(<a href="#ref-foundationDigitalObjectInterface" role="doc-biblioref"><span>“Digital Object Interface Protocol Specification, Version 2.0”</span> 2018</a>)</span>, Linked Data Platform (LDP) <span class="citation" data-cites="FDOFramework">(<a href="#ref-FDOFramework" role="doc-biblioref">Bonino da Silva Santos, Guizzardi, and Sales 2022</a>)</span> and examples from Linked Data practices in general. (— indicates <em>Unspecified</em>, may be possible with additional conventions) <span id="tbl:fair-data-maturity-model"
+label="tbl:fair-data-maturity-model"></span></caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">FAIR ID</th>
+<th style="text-align: left;">Indicator</th>
+<th style="text-align: left;">FDO guidelines</th>
+<th style="text-align: left;">FDO/DOIP</th>
+<th style="text-align: left;">FDO/LDP</th>
+<th style="text-align: left;">Linked Data examples</th>
+</tr>
+</thead>
+<tr class="even">
+<td style="text-align: left;">RDA-F1-01M</td>
+<td style="text-align: left;">Metadata is identified by a persistent identifier</td>
+<td style="text-align: left;">FDOF4</td>
+<td style="text-align: left;">Optional <em>Metadata FDO</em> w/separate PID</td>
+<td style="text-align: left;">Content-negotiation to URL, not required to be PID</td>
+<td style="text-align: left;">Metadata typically don’t have own PID</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-F1-01D</td>
+<td style="text-align: left;">Data is identified by a persistent identifier</td>
+<td style="text-align: left;">FDOF1</td>
+<td style="text-align: left;">PIDs required (FDOF1). Handle, DOI.</td>
+<td style="text-align: left;">FDOF-IR (Identifier Record). PID can be any URI</td>
+<td style="text-align: left;">“Cool” URIs <span class="citation" data-cites="berners-lee-cool-uris">(<a href="#ref-berners-lee-cool-uris" role="doc-biblioref">Berners-Lee 1998</a>)</span>, PURL services incl. <code>purl.org</code>, <code>w3id.org</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-F1-02M</td>
+<td style="text-align: left;">Metadata is identified by a globally unique identifier</td>
+<td style="text-align: left;">FDOR4 FDOF8</td>
+<td style="text-align: left;">Optional <em>Metadata FDO</em>, unspecified how to indicate</td>
+<td style="text-align: left;">Content-negotiation to URL</td>
+<td style="text-align: left;">Not required, content-negotiation can redirect to URL or <code>Content-Location</code>. FAIR Signposting.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-F1-02D</td>
+<td style="text-align: left;">Data is identified by a globally unique identifier</td>
+<td style="text-align: left;">FDOF1</td>
+<td style="text-align: left;">All FDOs have PIDs (FDOR1), DOIP uses Handle system</td>
+<td style="text-align: left;">FDOF-IR (Identifier Record)</td>
+<td style="text-align: left;">Always accessed by URL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-F2-01M</td>
+<td style="text-align: left;">Rich metadata is provided to allow discovery</td>
+<td style="text-align: left;">FDOF2 FDOF4 FDOF8 FDOF9</td>
+<td style="text-align: left;">FDO has key-value metadata. Unclear how to link to additional metadata.</td>
+<td style="text-align: left;">FDOF-IR links to multiple metadata records</td>
+<td style="text-align: left;">RDF-based metadata by content negotiation or FAIR Signposting. Embedded in landing page (RDFa).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-F3-01M</td>
+<td style="text-align: left;">Metadata includes the identifier for the data</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><code>id</code> and <code>type</code> are required metadata elements PIDs, also implicit as requests must use PID</td>
+<td style="text-align: left;">PID only required in FDOF-IR record.</td>
+<td style="text-align: left;">PID inclusion typical, but often inconsistent (e.g. <code>www.example.com</code> vs <code>example.com</code>) or missing (use of <code>&lt;&gt;</code> as <em>this</em> subject)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-F4-01M</td>
+<td style="text-align: left;">Metadata is offered in such a way that it can be harvested and indexed</td>
+<td style="text-align: left;">FDOF10</td>
+<td style="text-align: left;">No, registries not required (except Data Type Registries). Handle registry only searchable by PID.</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">Not specified, several registries/catalogues for vocabularies/types (e.g. <span class="citation" data-cites="NCBOBioPortal">(<a href="#ref-NCBOBioPortal" role="doc-biblioref"><span>“<span>NCBO BioPortal</span>”</span> n.d.</a>)</span>). Indexing by search engines if exposing HTML w/schema.org.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-A1-01M</td>
+<td style="text-align: left;">Metadata contains information to enable the user to get access to the data</td>
+<td style="text-align: left;">FDOF3 FDOF6</td>
+<td style="text-align: left;">Directly by DOIP, but not included in FDO metadata. <code>handle.net</code> HTTP resolution may redirect to landing page</td>
+<td style="text-align: left;">Any property can point to URIs, but unclear if it is data</td>
+<td style="text-align: left;">Common with clickable “follow your nose” URLs</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-A1-02M</td>
+<td style="text-align: left;">Metadata can be accessed manually (i.e. with human intervention)</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">(Cordra HTML landing page from <code>handle.net</code> URIs)</td>
+<td style="text-align: left;">Optional content-negotiation, e.g. by Apache Marmotta, OpenLink Virtuoso</td>
+<td style="text-align: left;">HTTP content-negotiation to HTML is common</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-A1-02D</td>
+<td style="text-align: left;">Data can be accessed manually (i.e. with human intervention)</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">(Cordra HTML landing page from <code>handle.net</code> URIs)</td>
+<td style="text-align: left;">Optional content-negotiation</td>
+<td style="text-align: left;">Direct download, HTML landing pages common for DOIs</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-A1-03M</td>
+<td style="text-align: left;">Metadata identifier resolves to a metadata record</td>
+<td style="text-align: left;">FDOF8+FDOF2</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><code>Content-Location</code> or HTTP redirection may indicate metadata URI</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-A1-03D</td>
+<td style="text-align: left;">Data identifier resolves to a digital object</td>
+<td style="text-align: left;">FDOF2</td>
+<td style="text-align: left;">Required, but frequently not directly resolvable</td>
+<td style="text-align: left;">Recommended, but any URI acceptable</td>
+<td style="text-align: left;">Resolvable HTTP/HTTPS URIs are most common, now infrequent URNs are not directly resolvable</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-A1-04M</td>
+<td style="text-align: left;">Metadata is accessed through standardised protocol</td>
+<td style="text-align: left;">G9 FDOF3</td>
+<td style="text-align: left;">Retrievable from PID (FDOF3). Informal DOIP standard maintained by DONA Foundation</td>
+<td style="text-align: left;">LDP standard maintained by W3C, HTTP standards maintained by IETF, FDO components resolved by informal proposals (custom vocabulary, extra HTTP methods) or HTTP content negotiation)</td>
+<td style="text-align: left;">Formal HTTP standards maintained by IETF, HTTP content negotiation, informal FAIR Signposting</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-A1-04D</td>
+<td style="text-align: left;">Data is accessible through standardised protocol</td>
+<td style="text-align: left;">G9</td>
+<td style="text-align: left;">(see above)</td>
+<td style="text-align: left;">HTTP <span class="citation" data-cites="rfc9110">(<a href="#ref-rfc9110" role="doc-biblioref">Fielding, Nottingham, and Reschke 2022</a>)</span></td>
+<td style="text-align: left;">HTTP/HTTPS, FTP (now less common), GridFTP <span class="citation" data-cites="allcockGlobusStripedGridFTP">(<a href="#ref-allcockGlobusStripedGridFTP" role="doc-biblioref">Allcock et al. 2005</a>)</span> (for large data), ARK <span class="citation" data-cites="ARKIdentifierScheme">(<a href="#ref-ARKIdentifierScheme" role="doc-biblioref">Kunze and Bermès 2022</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-A1-05D</td>
+<td style="text-align: left;">Data can be accessed automatically (i.e. by a computer program)</td>
+<td style="text-align: left;">G4 FDOF3 FDOF6</td>
+<td style="text-align: left;">Required, but few client libraries</td>
+<td style="text-align: left;">HTTP <code>GET</code>, content-negotiation for <code>fdof/object</code></td>
+<td style="text-align: left;">Ubiquitous, hundreds of HTTP libraries</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-A1.1-01M</td>
+<td style="text-align: left;">Metadata is accessible through a free access protocol</td>
+<td style="text-align: left;">G1 G8 G9</td>
+<td style="text-align: left;">Partially realised: Handle system is open<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> protocol <span class="citation" data-cites="rfc3652">(<a href="#ref-rfc3652" role="doc-biblioref">Sun et al. 2003</a>)</span>. One server implementation <span class="citation" data-cites="HandleNetRegistry">(<a href="#ref-HandleNetRegistry" role="doc-biblioref">CNRI 2022</a>)</span>, free<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. One DOIPv2 implementation (<a
+href="https://www.cordra.org/">Cordra</a>): free under BSD-like license (not recognised as Open Source).</td>
+<td style="text-align: left;">LDP is open W3C recommendation <span class="citation" data-cites="w3-ldp">(<a href="#ref-w3-ldp" role="doc-biblioref">Speicher, Arwe, and Malhotra 2015</a>)</span>. <a href="https://www.w3.org/wiki/LDP_Implementations">Multiple LDP implementations</a>.</td>
+<td style="text-align: left;">DNS, HTTP, TLS, RDF standards are open, free and universal, large number of Open Source clients and <a href="https://en.wikipedia.org/wiki/Comparison_of_web_server_software">servers</a>.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-A1.1-01D</td>
+<td style="text-align: left;">Data is accessible through a free access protocol</td>
+<td style="text-align: left;">G9</td>
+<td style="text-align: left;">(see above)</td>
+<td style="text-align: left;">URI, DNS, HTTP, TLS</td>
+<td style="text-align: left;">URI, DNS, HTTP, TLS. Non-free DRM may be used (e.g. subscription video streaming)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-A1.2-01D</td>
+<td style="text-align: left;">Data is accessible through an access protocol that supports authentication and authorisation</td>
+<td style="text-align: left;">(FDOR9)</td>
+<td style="text-align: left;">TLS certificates, <code>authentication</code> field (details unspecified)</td>
+<td style="text-align: left;">Implied</td>
+<td style="text-align: left;">HTTP authentication, TLS certificates</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-A2-01M</td>
+<td style="text-align: left;">Metadata is guaranteed to remain available after data is no longer available</td>
+<td style="text-align: left;">FDOF12</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">Unspecified, however FDOF-IR links to separate metadata records</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-I1-01M</td>
+<td style="text-align: left;">Metadata uses knowledge representation expressed in standardised format</td>
+<td style="text-align: left;">FDOF8</td>
+<td style="text-align: left;">Required, but not currently defined</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">Always implied by use of RDF syntaxes.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-I1-01D</td>
+<td style="text-align: left;">Data uses knowledge representation expressed in standardised format</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">Common (e.g. HDF5, JSON, XML), yet common scientific data formats frequently not standardised</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-I1-02M</td>
+<td style="text-align: left;">Metadata uses machine-understandable knowledge representation</td>
+<td style="text-align: left;">FDOF8</td>
+<td style="text-align: left;">Required</td>
+<td style="text-align: left;">Optional RDF metadata with any vocabulary</td>
+<td style="text-align: left;">Always implied by use of RDF syntaxes.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-I1-02D</td>
+<td style="text-align: left;">Data uses machine-understandable knowledge representation</td>
+<td style="text-align: left;">G4 G7 FDOR2</td>
+<td style="text-align: left;">No requirements on binary data formats</td>
+<td style="text-align: left;">Only indirectly, <a href="https://www.w3.org/TR/ldp/#dfn-linked-data-platform-basic-container">LDP Basic Container</a> reference only information resources</td>
+<td style="text-align: left;">Common, specially for scientific data formats</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-I2-01M</td>
+<td style="text-align: left;">Metadata uses FAIR-compliant vocabularies</td>
+<td style="text-align: left;">G3 FDOF10</td>
+<td style="text-align: left;">Informally required</td>
+<td style="text-align: left;">Unspecified, implied by use of RDF?</td>
+<td style="text-align: left;">FAIR practices for LD vocabularies increasingly common, sometimes inconsistent (e.g. PURLs that don’t resolve) or incomplete (e.g. unknown license)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-I2-01D</td>
+<td style="text-align: left;">Data uses FAIR-compliant vocabularies</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">Uncommon, except for some XML and RDF-embedding formats, e.g. Extensible Metadata Platform (XMP) <span class="citation" data-cites="iso16684">(<a href="#ref-iso16684" role="doc-biblioref"><em><span>ISO</span> 16684-1:2019 — Graphic Technology — Extensible Metadata Platform (XMP) — Part 1: Data Model, Serialization and Core Properties</em> 2019</a>)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-I3-01M</td>
+<td style="text-align: left;">Metadata includes references to other metadata</td>
+<td style="text-align: left;">FDOR8</td>
+<td style="text-align: left;">Implied (attributes to PIDs), currently unspecified if given attribute is value or reference</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">By definition (Linked Data reference existing URIs <span class="citation" data-cites="DataW3C">(<a href="#ref-DataW3C" role="doc-biblioref"><span>“Linked Data”</span> 2015</a>)</span>), <code>rdfs:seeAlso</code>, FAIR signposting <span class="citation" data-cites="vandesompelFAIRSignpostingProfile2022">(<a href="#ref-vandesompelFAIRSignpostingProfile2022" role="doc-biblioref">Van de Sompel et al. 2022</a>)</span> <code>describedby</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-I3-01D</td>
+<td style="text-align: left;">Data includes references to other data</td>
+<td style="text-align: left;">G6 FDOR3 FDOR11</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">URL hyperlinks common in several formats (HTML, PDF, JSON, XML).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-I3-02M</td>
+<td style="text-align: left;">Metadata includes references to other data</td>
+<td style="text-align: left;">G6 FDOR3 FDOR8</td>
+<td style="text-align: left;">Implied from custom FDO type’s attribute</td>
+<td style="text-align: left;">LDP Direct Container members can be any resources</td>
+<td style="text-align: left;">URI objects are frequently data references, may be indirect via PID</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-I3-02D</td>
+<td style="text-align: left;">Data includes qualified references to other data</td>
+<td style="text-align: left;">FDOR3 FDOR11</td>
+<td style="text-align: left;">Only indirectly through FDO metadata</td>
+<td style="text-align: left;">Indirectly through LDP membership</td>
+<td style="text-align: left;">Uncommon: Link relations, FAIR Signposting</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-I3-03M</td>
+<td style="text-align: left;">Metadata includes qualified references to other metadata</td>
+<td style="text-align: left;">(FDOR3)</td>
+<td style="text-align: left;">Qualification by attribute keys defined per FDO Type</td>
+<td style="text-align: left;"><a href="https://www.w3.org/TR/ldp/#dfn-linked-data-platform-direct-container">LDP Direct Container</a></td>
+<td style="text-align: left;">Qualifications by property, PROV bundles <span class="citation" data-cites="w3-prov-links">(<a href="#ref-w3-prov-links" role="doc-biblioref">Lebo and Moreau 2013</a>)</span>, <a href="https://schema.org/Role">schema.org/Role</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-I3-04M</td>
+<td style="text-align: left;">Metadata include qualified references to other data</td>
+<td style="text-align: left;">(FDOR3)</td>
+<td style="text-align: left;">Qualification by attribute keys defined per FDO type</td>
+<td style="text-align: left;"><a href="https://www.w3.org/TR/ldp/#dfn-linked-data-platform-indirect-container">LDP Indirect Container</a></td>
+<td style="text-align: left;">Qualifications by property, n-ary indirection (schema.org Role <span class="citation" data-cites="hollandIntroducingRole2014">(<a href="#ref-hollandIntroducingRole2014" role="doc-biblioref">Holland and Johnson 2014</a>)</span>, <code>prov:specializationOf</code> <span class="citation" data-cites="w3-prov-o">(<a href="#ref-w3-prov-o" role="doc-biblioref">Lebo, McGuinness, and Sahoo 2013</a>)</span>, OAI-ORE Proxy <span class="citation" data-cites="ORESpecificationAbstract">(<a href="#ref-ORESpecificationAbstract" role="doc-biblioref">Lagoze et al.
+2008</a>)</span>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-R1-01M</td>
+<td style="text-align: left;">Plurality of accurate and relevant attributes are provided to allow reuse</td>
+<td style="text-align: left;">FDOF4</td>
+<td style="text-align: left;">Required. Kernel metadata attributes desired <span class="citation" data-cites="fdo-KernelAttributes">(<a href="#ref-fdo-KernelAttributes" role="doc-biblioref">Broeder et al. 2022</a>)</span> but not assigned PIDs yet.</td>
+<td style="text-align: left;">Unspecified. Multiple metadata records can allow multiple semantic profiles.</td>
+<td style="text-align: left;">Large number of general and domain-specific vocabularies can make it hard to find relevant attributes. Rough consensus on kernel metadata: schema.org <span class="citation" data-cites="SchemaOrg">(<a href="#ref-SchemaOrg" role="doc-biblioref"><span>“Schema.org - <span>Schema</span>.org”</span> n.d.</a>)</span>, Dublin Core Terms <span class="citation" data-cites="DCMIMetadataTerms">(<a href="#ref-DCMIMetadataTerms" role="doc-biblioref">DCMI Usage Board 2020</a>)</span>, DCAT <span class="citation" data-cites="w3-vocab-dcat-2">(<a href="#ref-w3-vocab-dcat-2"
+role="doc-biblioref">Browning et al. 2020</a>)</span>, FOAF <span class="citation" data-cites="FOAFVocabularySpecification">(<a href="#ref-FOAFVocabularySpecification" role="doc-biblioref">Brickley and Miller 2014</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-R1.1-01M</td>
+<td style="text-align: left;">Metadata includes information about the licence under which the data can be reused</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><code>licenseConditions</code> URL/PID in kernel metadata <span class="citation" data-cites="fdo-KernelAttributes">(<a href="#ref-fdo-KernelAttributes" role="doc-biblioref">Broeder et al. 2022</a>)</span></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">Dublin Core Terms <code>dct:license</code> frequently recommended, frequently not required, e.g. <a href="https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_license">by DCAT 2</a> <span class="citation" data-cites="w3-vocab-dcat-2">(<a href="#ref-w3-vocab-dcat-2" role="doc-biblioref">Browning et al. 2020</a>)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-R1.1-02M</td>
+<td style="text-align: left;">Metadata refers to a standard reuse licence</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="https://spdx.org/licenses/">SPDX</a> and <a href="https://creativecommons.org/">Creative Commons</a> URIs common, identifiers often inconsistent</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-R1.1-03M</td>
+<td style="text-align: left;">Metadata refers to a machine-understandable reuse licence</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"><a href="https://spdx.dev/resources/use/#documents">SPDX documents</a> uncommon</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-R1.2-01M</td>
+<td style="text-align: left;">Metadata includes provenance information according to community-specific standards</td>
+<td style="text-align: left;">FDOR9 FDOR10</td>
+<td style="text-align: left;">Unspecified (some Cordra types add getProvenance methods). PID Kernel attributes?</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">W3C PROV-O, PAV</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-R1.2-02M</td>
+<td style="text-align: left;">Metadata includes provenance information according to a cross-community language</td>
+<td style="text-align: left;">FDOR9 FDOR8</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">W3C PROV-O <span class="citation" data-cites="w3-prov-o">(<a href="#ref-w3-prov-o" role="doc-biblioref">Lebo, McGuinness, and Sahoo 2013</a>)</span>, PAV <span class="citation" data-cites="ciccaresePAVOntologyProvenance2013e">(<a href="#ref-ciccaresePAVOntologyProvenance2013e" role="doc-biblioref">Ciccarese et al. 2013</a>)</span>, Dublin Core Terms <span class="citation" data-cites="DCMIMetadataTerms">(<a href="#ref-DCMIMetadataTerms" role="doc-biblioref">DCMI Usage Board 2020</a>)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-R1.3-01M</td>
+<td style="text-align: left;">Metadata complies with a community standard</td>
+<td style="text-align: left;">FDOR10 FROR8</td>
+<td style="text-align: left;">(Emerging, e.g. DiSSCo Digital Specimen <span class="citation" data-cites="hardistySpecimenDataRefinery2022a">(<a href="#ref-hardistySpecimenDataRefinery2022a" role="doc-biblioref">Hardisty et al. 2022</a>)</span>)</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">Common, e.g. DCAT 2 <span class="citation" data-cites="w3-vocab-dcat-2">(<a href="#ref-w3-vocab-dcat-2" role="doc-biblioref">Browning et al. 2020</a>)</span>, BioSchemas <span class="citation" data-cites="Bioschemas">(<a href="#ref-Bioschemas" role="doc-biblioref">Gray et al. 2017</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-R1.3-01D</td>
+<td style="text-align: left;">Data complies with a community standard</td>
+<td style="text-align: left;">(FDOR3)</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">Common, HTTP use registered IANA <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">media types</a>, additional scientific file formats frequently not standardised or identified</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RDA-R1.3-02M</td>
+<td style="text-align: left;">Metadata is expressed in compliance with a machine-understandable community standard</td>
+<td style="text-align: left;">FDOF4 FDOF10</td>
+<td style="text-align: left;">Recommended</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">Common practice for ontologies, specially in bioinformatics, e.g. BioPortal <span class="citation" data-cites="NCBOBioPortal">(<a href="#ref-NCBOBioPortal" role="doc-biblioref"><span>“<span>NCBO BioPortal</span>”</span> n.d.</a>)</span>, Darwin Core <span class="citation" data-cites="wieczorekDarwinCoreEvolving2012">(<a href="#ref-wieczorekDarwinCoreEvolving2012" role="doc-biblioref">Wieczorek et al. 2012</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RDA-R1.3-02D</td>
+<td style="text-align: left;">Data is expressed in compliance with a machine-understandable community standard</td>
+<td style="text-align: left;">(FDOR2)</td>
+<td style="text-align: left;">No, FDO is typed but data can be any bytestream</td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">Occassionally, (e.g. <a href="https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md">GFF3</a>, <a href="https://fits.gsfc.nasa.gov/fits_standard.html">FITS</a>, <a href="https://www.loc.gov/preservation/digital/formats/fdd/fdd000280.shtml">ESRI</a>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-allcockGlobusStripedGridFTP" class="csl-entry" role="doc-biblioentry">
+Allcock, W., J. Bresnahan, R. Kettimuthu, and M. Link. 2005. <span>“The <span>Globus Striped GridFTP Framework</span> and <span>Server</span>.”</span> In <em><span class="nocase">SC ’05: Proceedings of the 2005 ACM/IEEE Conference on Supercomputing</span></em>. <span>Seattle, WA, USA</span>: <span>IEEE</span>. <a href="https://doi.org/10.1109/sc.2005.72">https://doi.org/10.1109/sc.2005.72</a>.
+</div>
+<div id="ref-bahimFAIRDataMaturity2020a" class="csl-entry" role="doc-biblioentry">
+Bahim, Christophe, Carlos Casorrán-Amilburu, Makx Dekkers, Edit Herczog, Nicolas Loozen, Konstantinos Repanas, Keith Russell, and Shelley Stall. 2020. <span>“The <span>FAIR</span> Data Maturity Model: <span>An</span> Approach to Harmonise <span>FAIR</span> Assessments.”</span> <em>Data Science Journal</em> 19 (October). <a href="https://doi.org/10.5334/dsj-2020-041">https://doi.org/10.5334/dsj-2020-041</a>.
+</div>
+<div id="ref-berners-lee-cool-uris" class="csl-entry" role="doc-biblioentry">
+Berners-Lee, Tim. 1998. <span>“Cool <span>URIs</span> Don’t Change.”</span> Style Guide for Online Hypertext. 1998. <a href="https://www.w3.org/Provider/Style/URI">https://www.w3.org/Provider/Style/URI</a>.
+</div>
+<div id="ref-FDOFramework" class="csl-entry" role="doc-biblioentry">
+Bonino da Silva Santos, Luiz Olavo, Giancarlo Guizzardi, and Tiago Prince Sales. 2022. <span>“<span>FAIR Digital Object Framework Documentation</span>.”</span> Working Draft. Edited by Luiz Olavo Bonino da Silva Santos. October 27, 2022. <a href="https://fairdigitalobjectframework.org/">https://fairdigitalobjectframework.org/</a>.
+</div>
+<div id="ref-boninoFAIRDigitalObject" class="csl-entry" role="doc-biblioentry">
+Bonino, Luiz, Oeter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark Leggott, and Carlo Zwölf. 2019. <span>“<span>FAIR</span> Digital Object Framework.”</span> {{FDOF}} Technical Implementation Guideline. <span>FDOF</span> Technical Implementation Guideline. Group of European Data Experts in <span>RDA</span> (<span>GEDE-RDA</span>). <a
+href="https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx">https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx</a>.
+</div>
+<div id="ref-FOAFVocabularySpecification" class="csl-entry" role="doc-biblioentry">
+Brickley, Dan, and Libby Miller. 2014. <span>“<span>FOAF Vocabulary Specification</span>.”</span> January 14, 2014. <a href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a>.
+</div>
+<div id="ref-fdo-KernelAttributes" class="csl-entry" role="doc-biblioentry">
+Broeder, Daan, Peter Wittenburg, Ivonne Anders, and Karsten Peters-von Gehlen. 2022. <span>“<span>FDO</span> – Kernel Attributes &amp; Metadata.”</span> Proposed Recommendation PR-FDO-KernelAttributesAndMetadata-2.0-20221017. Edited by Daan Broeder, Peter Wittenburg, Ivonne Anders, and Karsten Peters-von Gehlen. <span>FDO Specification Documents - November 2022</span>. <span>FDO Forum</span>. <a href="https://doi.org/10.5281/zenodo.7825693">https://doi.org/10.5281/zenodo.7825693</a>.
+</div>
+<div id="ref-w3-vocab-dcat-2" class="csl-entry" role="doc-biblioentry">
+Browning, David, Peter Winstanley, Andrea Perego, Simon Cox, Riccardo Albertoni, and Alejandra Gonzalez Beltran. 2020. <em>Data Catalog Vocabulary (<span>DCAT</span>) - Version 2</em>. {W3C Recommendation}. W3C. <a href="https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/">https://www.w3.org/TR/2020/REC-vocab-dcat-2-20200204/</a>.
+</div>
+<div id="ref-ciccaresePAVOntologyProvenance2013e" class="csl-entry" role="doc-biblioentry">
+Ciccarese, Paolo, Stian Soiland-Reyes, Khalid Belhajjame, Alasdair JG Gray, Carole Goble, and Tim Clark. 2013. <span>“<span>PAV</span> Ontology: Provenance, Authoring and Versioning.”</span> <em>Journal of Biomedical Semantics</em> 4 (1): 37. <a href="https://doi.org/10.1186/2041-1480-4-37">https://doi.org/10.1186/2041-1480-4-37</a>.
+</div>
+<div id="ref-HandleNetRegistry" class="csl-entry" role="doc-biblioentry">
+CNRI. 2022. <span>“Handle.net Software.”</span> Corporation for National Research Initiatives. 2022. <a href="https://www.handle.net/download_hnr.html">https://www.handle.net/download_hnr.html</a>.
+</div>
+<div id="ref-DCMIMetadataTerms" class="csl-entry" role="doc-biblioentry">
+DCMI Usage Board. 2020. <em><span>DCMI Metadata Terms</span></em>. {DCMI Recommendation}. <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/</a>.
+</div>
+<div id="ref-foundationDigitalObjectInterface" class="csl-entry" role="doc-biblioentry">
+<span>“Digital Object Interface Protocol Specification, Version 2.0.”</span> 2018. <span>DONA Foundation</span>. <a href="https://hdl.handle.net/0.DOIP/DOIPV2.0">https://hdl.handle.net/0.DOIP/DOIPV2.0</a>.
+</div>
+<div id="ref-groupFAIRDataMaturity2020" class="csl-entry" role="doc-biblioentry">
+FAIR Data Maturity Model Working Group. 2020. <span>“<span>FAIR</span> Data Maturity Model: <span>Specification</span> and Guidelines.”</span> Edited by Edit Herczog, Keith Russell, and Shelley Stall, June. <a href="https://doi.org/10.15497/rda00050">https://doi.org/10.15497/rda00050</a>.
+</div>
+<div id="ref-rfc9110" class="csl-entry" role="doc-biblioentry">
+Fielding, Roy T., Mark Nottingham, and Julian Reschke. 2022. <em><span>HTTP Semantics</span></em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc9110">https://doi.org/10.17487/rfc9110</a>.
+</div>
+<div id="ref-Bioschemas" class="csl-entry" role="doc-biblioentry">
+Gray, Alasdair, Carole Goble, Rafael Jimenez, and Bioschemas Community. 2017. <span>“Bioschemas: From Potato Salad to Protein Annotation.”</span> In <em>Proceedings of the ISWC 2017 Posters &amp; Demonstrations and Industry Tracks Co-Located with 16th International Semantic Web Conference (ISWC 2017)</em>, edited by Nadeschda Nikitina, Dezhao Song, Achille Fokoue, and Peter Haase. Vol. 1963. CEUR Workshop Proceedings. Vienna, Austria. <a href="https://ceur-ws.org/Vol-1963/paper579.pdf">https://ceur-ws.org/Vol-1963/paper579.pdf</a>.
+</div>
+<div id="ref-hardistySpecimenDataRefinery2022a" class="csl-entry" role="doc-biblioentry">
+Hardisty, Alex, Paul Brack, Carole Goble, Laurence Livermore, Ben Scott, Quentin Groom, Stuart Owen, and Stian Soiland-Reyes. 2022. <span>“The <span>Specimen Data Refinery</span>: <span>A Canonical Workflow Framework</span> and <span>FAIR</span> <span>Digital Object Approach</span> to <span>Speeding</span> up <span>Digital Mobilisation</span> of <span>Natural History</span> <span>Collections</span>.”</span> <em>Data Intelligence</em> 4 (2): 320–41. <a href="https://doi.org/10.1162/dint_a_00134">https://doi.org/10.1162/dint_a_00134</a>.
+</div>
+<div id="ref-hollandIntroducingRole2014" class="csl-entry" role="doc-biblioentry">
+Holland, Vicki Tardif, and Jason Johnson. 2014. <span>“Introducing ’<span>Role</span>’.”</span> Official Blog for Schema.org. June 14, 2014. <a href="http://blog.schema.org/2014/06/introducing-role.html">http://blog.schema.org/2014/06/introducing-role.html</a>.
+</div>
+<div id="ref-iso16684" class="csl-entry" role="doc-biblioentry">
+<em><span>ISO</span> 16684-1:2019 — Graphic Technology — Extensible Metadata Platform (XMP) — Part 1: Data Model, Serialization and Core Properties</em>. 2019. <span>ISO</span>. <a href="https://www.iso.org/standard/75163.html">https://www.iso.org/standard/75163.html</a>.
+</div>
+<div id="ref-ARKIdentifierScheme" class="csl-entry" role="doc-biblioentry">
+Kunze, John A., and Emmanuelle Bermès. 2022. <span>“<span>The ARK Identifier Scheme</span>.”</span> Internet-Draft draft-kunze-ark-36. Internet Engineering Task Force; Internet Engineering Task Force. <a href="https://datatracker.ietf.org/doc/draft-kunze-ark/36/">https://datatracker.ietf.org/doc/draft-kunze-ark/36/</a>.
+</div>
+<div id="ref-ORESpecificationAbstract" class="csl-entry" role="doc-biblioentry">
+Lagoze, Carl, Herbert Van de Sompel, Pete Johnston, Michael Nelson, Robert Sanderson, and Simeon Warner. 2008. <em><span>ORE Specification</span> - <span>Abstract Data Model</span></em>. Open Archives Initiative. <a href="http://www.openarchives.org/ore/1.0/datamodel#Proxies">http://www.openarchives.org/ore/1.0/datamodel#Proxies</a>.
+</div>
+<div id="ref-w3-prov-o" class="csl-entry" role="doc-biblioentry">
+Lebo, Timothy, Deborah McGuinness, and Satya Sahoo. 2013. <em><span>PROV-O</span>: <span>The PROV Ontology</span></em>. {W3C} Recommendation. W3C. <a href="https://www.w3.org/TR/2013/REC-prov-o-20130430/">https://www.w3.org/TR/2013/REC-prov-o-20130430/</a>.
+</div>
+<div id="ref-w3-prov-links" class="csl-entry" role="doc-biblioentry">
+Lebo, Timothy, and Luc Moreau. 2013. <em>Linking <span>Across Provenance Bundles</span></em>. {W3C} Note. W3C. <a href="https://www.w3.org/TR/2013/NOTE-prov-links-20130430/">https://www.w3.org/TR/2013/NOTE-prov-links-20130430/</a>.
+</div>
+<div id="ref-LicensesStandardsOpen" class="csl-entry" role="doc-biblioentry">
+<span>“Licenses &amp; <span>Standards</span>.”</span> 2022. <span>Open Source Initiative</span>. October 11, 2022. <a href="https://opensource.org/licenses">https://opensource.org/licenses</a>.
+</div>
+<div id="ref-DataW3C" class="csl-entry" role="doc-biblioentry">
+<span>“Linked Data.”</span> 2015. W3C. 2015. <a href="https://www.w3.org/standards/semanticweb/data">https://www.w3.org/standards/semanticweb/data</a>.
+</div>
+<div id="ref-NCBOBioPortal" class="csl-entry" role="doc-biblioentry">
+<span>“<span>NCBO BioPortal</span>.”</span> n.d. Accessed May 26, 2022. <a href="https://bioportal.bioontology.org/ontologies">https://bioportal.bioontology.org/ontologies</a>.
+</div>
+<div id="ref-SchemaOrg" class="csl-entry" role="doc-biblioentry">
+<span>“Schema.org - <span>Schema</span>.org.”</span> n.d. Accessed May 26, 2022. <a href="https://schema.org/">https://schema.org/</a>.
+</div>
+<div id="ref-w3-ldp" class="csl-entry" role="doc-biblioentry">
+Speicher, Steve, John Arwe, and Ashok Malhotra, eds. 2015. <em>Linked Data Platform 1.0</em>. <span>W3C Linked Data Platform Working Group</span>; <span>W3C</span>. <a href="https://www.w3.org/TR/2015/REC-ldp-20150226/">https://www.w3.org/TR/2015/REC-ldp-20150226/</a>.
+</div>
+<div id="ref-rfc3652" class="csl-entry" role="doc-biblioentry">
+Sun, Sam, Sean Reilly, Larry Lannom, and Jason Petrone. 2003. <em>Handle <span>System Protocol</span> (Ver 2.1) <span>Specification</span></em>. Request for Comments. <span>RFC Editor</span>. <a href="https://doi.org/10.17487/rfc3652">https://doi.org/10.17487/rfc3652</a>.
+</div>
+<div id="ref-vandesompelFAIRSignpostingProfile2022" class="csl-entry" role="doc-biblioentry">
+Van de Sompel, Herbert, Martin Klein, Shawn Jones, Michael L. Nelson, Simeon Warner, Anusuriya Devaraju, Robert Huber, et al. 2022. <span>“<span>FAIR Signposting Profile</span>.”</span> July 27, 2022. <a href="https://signposting.org/FAIR/">https://signposting.org/FAIR/</a>.
+</div>
+<div id="ref-wieczorekDarwinCoreEvolving2012" class="csl-entry" role="doc-biblioentry">
+Wieczorek, John, David Bloom, Robert Guralnick, Stan Blum, Markus Döring, Renato Giovanni, Tim Robertson, and David Vieglais. 2012. <span>“Darwin <span>Core</span>: <span>An Evolving Community-Developed Biodiversity Data Standard</span>.”</span> Edited by Indra Neil Sarkar. <em>PLOS ONE</em> 7 (1): e29715. <a href="https://doi.org/10.1371/journal.pone.0029715">https://doi.org/10.1371/journal.pone.0029715</a>.
+</div>
+</div>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>The <code>Handle.net</code> system was previously covered by software patent <a href="https://patents.google.com/patent/US6135646A/en">US6135646A</a> which <a href="https://circleid.com/posts/20161025_selling_dona_snake_oil_at_the_itu#11461">expired</a> in 2013.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>The <a href="http://www.handle.net/HNRj/HNR-9-License.pdf">Handle.net public license</a> is not OSI-approved <span class="citation" data-cites="LicensesStandardsOpen">(<a href="#ref-LicensesStandardsOpen" role="doc-biblioref"><span>“Licenses &amp; <span>Standards</span>”</span> 2022</a>)</span> as an open source license – it includes usage restrictions and requires Service Agreements. It is not a DOIP requirement to host a local Handle instance, e.g. EOSC provides the <a href="https://sp.eudat.eu/catalog/resources/fc6b2d30-09cd-4c25-b71a-7bc6de77910c">B2HANDLE</a> service for
+acquiring Handle prefixes.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>
