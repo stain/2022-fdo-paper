@@ -40,6 +40,8 @@
             "@id": "#table1-assessments",
             "@type": "AssessAction",
             "name": "Considerations for Table 1",
+            "startTime": "2022-05-04T10:31:56+0100",
+            "endTime": "2023-06-17T14:19:58+0100",
             "agent": {
                 "@id": "https://orcid.org/0000-0001-9842-9718"
             },
