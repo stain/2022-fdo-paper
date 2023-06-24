@@ -33,7 +33,7 @@ CSV
 CWFP
 DARIAH
 Datacite
-dataset
+Dataset
 datasets
 DCAT
 dereferenceable
@@ -61,7 +61,7 @@ FDOF
 FDOR
 FDO’s
 FDOs
-Findability
+findability
 findable
 FOAF
 Freetext
@@ -81,7 +81,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-https
+HTTPS
 IANA
 IEC
 IETF
@@ -101,7 +101,7 @@ js
 JSON
 JSWS
 kickstarted
-LD
+ld
 LDP
 LDP’s
 LOD
@@ -142,13 +142,13 @@ Polymorphism
 practictioners
 pre
 preprint
-Programmatically
+programmatically
 proto
 QUIC
 RDA’s
 RDF
 RDFa
-RDFLib
+rdflib
 RDFS
 RDMKit
 redirections
@@ -160,7 +160,7 @@ ResourceSync
 RO
 ROR
 runtime
-Scalability
+scalability
 scalable
 schemas
 seemlessly
