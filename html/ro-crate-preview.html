@@ -51,28 +51,30 @@
         {
           "@id": "table5.html"
         }
-      ],
-      "@reverse": {
-        "about": [
-          {
-            "@id": "ro-crate-metadata.json"
-          }
-        ]
-      }
+      ]
+    },
+    {
+      "@id": "http://spdx.org/licenses/CC0-1.0",
+      "@type": "CreativeWork",
+      "name": "CC0-1.0",
+      "description": "Creative Commons Zero v1.0 Universal",
+      "version": "1.0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/"
     },
     {
       "@id": "https://doi.org/10.5281/zenodo.8075229",
       "@type": "PropertyValue",
       "propertyID": "https://registry.identifiers.org/registry/doi",
       "value": "doi:10.5281/zenodo.8075229",
-      "url": "https://doi.org/10.5281/zenodo.8075229",
-      "@reverse": {
-        "identifier": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "url": "https://doi.org/10.5281/zenodo.8075229"
+    },
+    {
+      "@id": "http://spdx.org/licenses/CC-BY-4.0",
+      "@type": "CreativeWork",
+      "name": "CC-BY-4.0",
+      "description": "Creative Commons Attribution 4.0 International",
+      "version": "4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
       "@id": "table1.html",
@@ -85,12 +87,8 @@
           "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
         }
       ],
-      "@reverse": {
-        "hasPart": [
-          {
-            "@id": "./"
-          }
-        ]
+      "cites": {
+        "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
       }
     },
     {
@@ -104,32 +102,35 @@
           "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
         }
       ],
-      "@reverse": {
-        "hasPart": [
-          {
-            "@id": "./"
-          }
-        ]
+      "cites": {
+        "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
       }
     },
     {
       "@id": "table3.html",
       "@type": "File",
       "name": "Table 3",
-      "description": "Checking FDO guidelines (Bonino et al. 2019; Anders et al. 2023) against its current implementations as DOIP (DONA 2018) and Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022), with suggestions for required additions. ",
+      "description": "Checking FDO guidelines (Boinno et al. 2019; Anders et al. 2023) against its current implementations as DOIP (DONA 2018) and Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022), with suggestions for required additions.",
       "encodingFormat": [
         "text/html",
         {
           "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
         }
       ],
-      "@reverse": {
-        "hasPart": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      "cites": [
+        {
+          "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7782262"
+        },
+        {
+          "@id": "https://hdl.handle.net/0.DOIP/DOIPV2.0"
+        },
+        {
+          "@id": "https://fairdigitalobjectframework.org/"
+        }
+      ]
     },
     {
       "@id": "table4.html",
@@ -141,14 +142,7 @@
         {
           "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
         }
-      ],
-      "@reverse": {
-        "hasPart": [
-          {
-            "@id": "./"
-          }
-        ]
-      }
+      ]
     },
     {
       "@id": "table5.html",
@@ -160,14 +154,62 @@
         {
           "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
         }
-      ],
-      "@reverse": {
-        "hasPart": [
-          {
-            "@id": "./"
-          }
-        ]
+      ]
+    },
+    {
+      "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471",
+      "@type": "DefinedTerm",
+      "name": "Hypertext Markup Language 5",
+      "alternateName": "HTML5"
+    },
+    {
+      "@id": "https://doi.org/10.1007/978-3-319-31861-5_1",
+      "@type": "ScholarlyArticle",
+      "name": "Interoperability Framework and Distributed Platform for Fast Data Applications",
+      "author": "José Carlos Martins Delgado",
+      "year": "2016"
+    },
+    {
+      "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx",
+      "@type": "CreativeWork",
+      "name": "FAIR digital object framework v1.02",
+      "author": "Luiz Bonino, Peter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark Leggott, Carlo Zwölf"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.7782262",
+      "@type": "CreativeWork",
+      "name": "FAIR Digital Objects Forum FDO requirement specifications. Version 3.0",
+      "author": "Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, Carlo Zwölf",
+      "alternateName": "PR-RequirementSpec-3.0",
+      "publisher": {
+        "@id": "https://fairdo.org/"
       }
+    },
+    {
+      "@id": "https://hdl.handle.net/0.DOIP/DOIPV2.0",
+      "@type": "CreativeWork",
+      "name": "Digital Object Interface Protocol specification, version 2.0",
+      "publisher": {
+        "@id": "https://www.dona.net/"
+      }
+    },
+    {
+      "@id": "https://fairdigitalobjectframework.org/",
+      "@type": "CreativeWork",
+      "name": "FAIR Digital Object Framework Documentation",
+      "datePublished": "2022",
+      "author": "Luiz Olavo Bonino da Silva Santos, Giancarlo Guizzardi, Tiago Prince Sales"
+    },
+    {
+      "@id": "https://fairdo.org/",
+      "@type": "Organization",
+      "name": "FAIR Digital Objects Forum",
+      "url": "https://fairdo.org/"
+    },
+    {
+      "@id": "https://www.dona.net/",
+      "@type": "Organization",
+      "name": "DONA Foundation"
     },
     {
       "@id": "table6.html",
@@ -210,113 +252,24 @@
       }
     },
     {
-      "@id": "https://arxiv.org/",
-      "@type": "Organization",
-      "name": "arXiv",
-      "@reverse": {
-        "publisher": [
-          {
-            "@id": "https://doi.org/10.48550/arXiv.2306.07436"
-          }
-        ]
-      }
-    },
-    {
       "@id": "https://orcid.org/0000-0001-9842-9718",
       "@type": "Person",
-      "name": "Stian Soiland-Reyes",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://doi.org/10.48550/arXiv.2306.07436"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0183-6910",
-      "@type": "Person",
-      "name": "Paul Groth",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://doi.org/10.48550/arXiv.2306.07436"
-          }
-        ]
-      }
+      "name": "Stian Soiland-Reyes"
     },
     {
       "@id": "https://orcid.org/0000-0003-1219-2137",
       "@type": "Person",
-      "name": "Carole Goble",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://doi.org/10.48550/arXiv.2306.07436"
-          }
-        ]
-      }
+      "name": "Carole Goble"
     },
     {
-      "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471",
-      "@type": "DefinedTerm",
-      "name": "Hypertext Markup Language 5",
-      "alternateName": "HTML5",
-      "@reverse": {
-        "encodingFormat": [
-          {
-            "@id": "table1.html"
-          },
-          {
-            "@id": "table2.html"
-          },
-          {
-            "@id": "table3.html"
-          },
-          {
-            "@id": "table4.html"
-          },
-          {
-            "@id": "table5.html"
-          },
-          {
-            "@id": "table6.html"
-          }
-        ]
-      }
+      "@id": "https://orcid.org/0000-0003-0183-6910",
+      "@type": "Person",
+      "name": "Paul Groth"
     },
     {
-      "@id": "http://spdx.org/licenses/CC-BY-4.0",
-      "@type": "CreativeWork",
-      "name": "CC-BY-4.0",
-      "description": "Creative Commons Attribution 4.0 International",
-      "version": "4.0",
-      "url": "https://creativecommons.org/licenses/by/4.0/",
-      "@reverse": {
-        "license": [
-          {
-            "@id": "./"
-          },
-          {
-            "@id": "https://doi.org/10.48550/arXiv.2306.07436"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "http://spdx.org/licenses/CC0-1.0",
-      "@type": "CreativeWork",
-      "name": "CC0-1.0",
-      "description": "Creative Commons Zero v1.0 Universal",
-      "version": "1.0",
-      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "@reverse": {
-        "license": [
-          {
-            "@id": "ro-crate-metadata.json"
-          }
-        ]
-      }
+      "@id": "https://arxiv.org/",
+      "@type": "Organization",
+      "name": "arXiv"
     }
   ]
 }
@@ -324,7 +277,7 @@
 
     
 <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script -->
-<script src="https://unpkg.com/ro-crate-html-js/dist/ro-crate-dynamic.js"></script>
+<script src="https://unpkg.com/ro-crate-html@0.1/dist/ro-crate-dynamic.min.js"></script>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
@@ -528,6 +481,9 @@ We systematically evaluate FDO and its implementations as a global distributed o
                         
                         <li><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/fmt/471">Hypertext Markup Language 5</a></li>
                         </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">cites</th>
+            <td style='text-align:left'><a href="#https%3A//doi.org/10.1007/978-3-319-31861-5_1">Interoperability Framework and Distributed Platform for Fast Data Applications</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><a href="#./">Comparison tables for evaluating FAIR Digital Object and Linked Data</a></td>
@@ -565,6 +521,9 @@ We systematically evaluate FDO and its implementations as a global distributed o
                         
                         <li><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/fmt/471">Hypertext Markup Language 5</a></li>
                         </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">cites</th>
+            <td style='text-align:left'><a href="#https%3A//doi.org/10.1007/978-3-319-31861-5_1">Interoperability Framework and Distributed Platform for Fast Data Applications</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><a href="#./">Comparison tables for evaluating FAIR Digital Object and Linked Data</a></td>
@@ -594,13 +553,24 @@ We systematically evaluate FDO and its implementations as a global distributed o
             <td style='text-align:left'><span>File</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'><span>Checking FDO guidelines (Bonino et al. 2019; Anders et al. 2023) against its current implementations as DOIP (DONA 2018) and Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022), with suggestions for required additions. </span></td>
+            <td style='text-align:left'><span>Checking FDO guidelines (Boinno et al. 2019; Anders et al. 2023) against its current implementations as DOIP (DONA 2018) and Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022), with suggestions for required additions.</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">encodingFormat<span>&nbsp;</span><a href="http://schema.org/encodingFormat">[?]</a></th>
             <td style='text-align:left'><ul>
                         <li><span>text/html</span></li>
                         
                         <li><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/fmt/471">Hypertext Markup Language 5</a></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">cites</th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#https%3A//github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%2520Digital%2520Objects/FDOF/FAIR%2520Digital%2520Object%2520Framework-v1-02.docx">FAIR digital object framework v1.02</a></li>
+                        
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FAIR Digital Objects Forum FDO requirement specifications. Version 3.0</a></li>
+                        
+                        <li><a href="#https%3A//hdl.handle.net/0.DOIP/DOIPV2.0">Digital Object Interface Protocol specification, version 2.0</a></li>
+                        
+                        <li><a href="#https%3A//fairdigitalobjectframework.org/">FAIR Digital Object Framework Documentation</a></li>
                         </ul></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>

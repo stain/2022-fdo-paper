@@ -37,6 +37,22 @@
             ]
         },
         {
+            "@id": "#table1-assessments",
+            "@type": "AssessAction",
+            "name": "Considerations for Table 1",
+            "agent": {
+                "@id": "https://orcid.org/0000-0001-9842-9718"
+            },
+            "object": [
+                { "@id": "https://fairdo.org/1316-2/" },
+                { "@id": "http://dbpedia.org/resource/World_Wide_Web" }
+            ],
+            "instrument": {
+                "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
+            },
+            "result": "table1.html"
+        },
+        {
             "@id": "https://doi.org/10.5281/zenodo.8075229",
             "@type": "PropertyValue",
             "propertyID": "https://registry.identifiers.org/registry/doi",
@@ -54,9 +70,24 @@
                     "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
                 }
             ],
-            "cites": {
+            "about": [
+                { "@id": "https://fairdo.org/1316-2/" },
+                { "@id": "http://dbpedia.org/resource/World_Wide_Web" }
+            ],
+            "citation": {
                 "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
             }
+        },
+        {
+            "@id": "https://fairdo.org/1316-2/",
+            "@type": "Thing",
+            "name": "FAIR Digital Objects",
+            "alternateName": "FDO"
+        },
+        { 
+            "@id": "http://dbpedia.org/resource/World_Wide_Web",
+            "@type": "Thing",
+            "name": "World Wide Web"
         },
         { "@id": "https://doi.org/10.1007/978-3-319-31861-5_1",
             "@type": "ScholarlyArticle",
@@ -75,7 +106,7 @@
                     "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
                 }
             ],
-            "cites": {
+            "citation": {
                 "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
             }            
         },
@@ -90,7 +121,7 @@
                     "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
                 }
             ],
-            "cites": [
+            "citation": [
                 { "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx" },
                 { "@id": "https://doi.org/10.5281/zenodo.7782262" },
                 { "@id": "https://hdl.handle.net/0.DOIP/DOIPV2.0" },
