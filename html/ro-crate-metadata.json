@@ -29,11 +29,21 @@
                 "@id": "http://spdx.org/licenses/CC-BY-4.0"
             },
             "hasPart": [
-                {"@id": "table1.html"},
-                {"@id": "table2.html"},
-                {"@id": "table3.html"},
-                {"@id": "table4.html"},
-                {"@id": "table5.html"}
+                {
+                    "@id": "table1.html"
+                },
+                {
+                    "@id": "table2.html"
+                },
+                {
+                    "@id": "table3.html"
+                },
+                {
+                    "@id": "table4.html"
+                },
+                {
+                    "@id": "table5.html"
+                }
             ]
         },
         {
@@ -46,8 +56,12 @@
                 "@id": "https://orcid.org/0000-0001-9842-9718"
             },
             "object": [
-                { "@id": "https://fairdo.org/1316-2/" },
-                { "@id": "http://dbpedia.org/resource/World_Wide_Web" }
+                {
+                    "@id": "https://fairdo.org/1316-2/"
+                },
+                {
+                    "@id": "http://dbpedia.org/resource/World_Wide_Web"
+                }
             ],
             "instrument": {
                 "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
@@ -73,8 +87,12 @@
                 }
             ],
             "about": [
-                { "@id": "https://fairdo.org/1316-2/" },
-                { "@id": "http://dbpedia.org/resource/World_Wide_Web" }
+                {
+                    "@id": "https://fairdo.org/1316-2/"
+                },
+                {
+                    "@id": "http://dbpedia.org/resource/World_Wide_Web"
+                }
             ],
             "citation": {
                 "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
@@ -86,13 +104,17 @@
             "name": "FAIR Digital Objects",
             "alternateName": "FDO"
         },
-        { 
+        {
             "@id": "http://dbpedia.org/resource/World_Wide_Web",
             "@type": "Thing",
             "name": "World Wide Web"
         },
-        { "@id": "https://doi.org/10.1007/978-3-319-31861-5_1",
-            "@type": ["ScholarlyArticle","Chapter"],
+        {
+            "@id": "https://doi.org/10.1007/978-3-319-31861-5_1",
+            "@type": [
+                "ScholarlyArticle",
+                "Chapter"
+            ],
             "name": "Interoperability Framework and Distributed Platform for Fast Data Applications",
             "creditText": "(Delgado 2016)",
             "pageStart": "3",
@@ -122,100 +144,245 @@
             ],
             "citation": {
                 "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
-            }            
-        },
-        {
-            "@id": "https://link.springer.com/content/pdf/10.1007/978-3-319-31861-5.pdf?pdf=button#crlink_Fig50002714748",
-            "@type": "WebPageElement",
-            "name": "Figure 1.5 in (Delgado 2018)",
-            "isAccessibleForFree": false,
-            "copyrightNotice": "© Springer International Publishing Switzerland 2016",
-            "isPartOf": {
-                    "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
             }
         },
-        { 
+        {
+            "@id": "https://link.springer.com/chapter/10.1007/978-3-319-31861-5_1/figures/5",
+            "@type": "WebPageElement",
+            "name": "Figure 1.5 in (Delgado 2018)",
+            "isAccessibleForFree": true,
+            "copyrightNotice": "© Springer International Publishing Switzerland 2016",
+            "isPartOf": {
+                "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
+            }
+        },
+        {
             "@id": "#metamodel",
-            "@type": "DefinedTermSet",
+            "@type": [
+                "DefinedTermSet",
+                "ConceptScheme"
+            ],
             "name": "A structural metamodel of resources and of their interactions",
+            "description": "Terms from the (Delgado 2016) metamodel expressed hierarchically as a SKOS concept scheme. For definitions, see (Delgado 2018) which unfortunately is not Open Access",
+            "dct:title": "A structural metamodel of resources and of their interactions",
             "image": {
-                "@id": "https://link.springer.com/content/pdf/10.1007/978-3-319-31861-5.pdf?pdf=button#crlink_Fig50002714748"
+                "@id": "https://link.springer.com/chapter/10.1007/978-3-319-31861-5_1/figures/5"
             },
+            "dct:creator": [
+                {
+                    "@id": "https://orcid.org/0000-0002-2536-4906"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0001-9842-9718"
+                }
+            ],
             "author": {
                 "@id": "https://orcid.org/0000-0002-2536-4906"
             },
             "creator": {
                 "@id": "https://orcid.org/0000-0001-9842-9718"
             },
-            "isBasedOn": { "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"},
+            "isBasedOn": {
+                "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
+            },
+            "skos:hasTopConcept": {
+                "#metamodel-Resource"
+            },
             "hasDefinedTerm": [
-                { "@id": "#metamodel-Resource" },
-                { "@id": "#metamodel-Link" },
-                { "@id": "#metamodel-Service" },
-                { "@id": "#metamodel-Transaction" },
-                { "@id": "#metamodel-Process" },
-                { "@id": "#metamodel-Operation" },
-                { "@id": "#metamodel-Link" },
-                { "@id": "#metamodel-Message" },
-                { "@id": "#metamodel-Request" },
-                { "@id": "#metamodel-Response" },
-                { "@id": "#metamodel-Channel" },
-                { "@id": "#metamodel-Protocol" } 
+                {
+                    "@id": "#metamodel-Resource"
+                },
+                {
+                    "@id": "#metamodel-Link"
+                },
+                {
+                    "@id": "#metamodel-Service"
+                },
+                {
+                    "@id": "#metamodel-Transaction"
+                },
+                {
+                    "@id": "#metamodel-Process"
+                },
+                {
+                    "@id": "#metamodel-Operation"
+                },
+                {
+                    "@id": "#metamodel-Message"
+                },
+                {
+                    "@id": "#metamodel-Request"
+                },
+                {
+                    "@id": "#metamodel-Response"
+                },
+                {
+                    "@id": "#metamodel-Channel"
+                },
+                {
+                    "@id": "#metamodel-Protocol"
+                }
             ]
         },
-        { 
+        {
             "@id": "#metamodel-Resource",
-            "@type": ["DefinedTerm", "skos:Concept"],
-            "name": "Resource"
+            "@type": [
+                "DefinedTerm",
+                "skos:Concept"
+            ],
+            "name": "Resource",
+            "skos:related": {
+                "@id": "#metamodel-Service"
+            },
+            "skos:prefLabel": "Resource",
+            "skos:inScheme": {
+                "@id": "#metamodel"
+            }
         },
-        { 
+        {
             "@id": "#metamodel-Link",
-            "@type": ["DefinedTerm", "skos:Concept"],
-            "name": "Link"
-        },        { 
+            "@type": [
+                "DefinedTerm",
+                "skos:Concept"
+            ],
+            "name": "Link",
+            "skos:prefLabel": "Link",
+            "skos:broader": {
+                "@id": "#metamodel-Resource"
+            },
+            "skos:inScheme": {
+                "@id": "#metamodel"
+            }
+        },
+        {
             "@id": "#metamodel-Service",
-            "@type": ["DefinedTerm", "skos:Concept"],
-            "name": "Service"
-        },        { 
+            "@type": [
+                "DefinedTerm",
+                "skos:Concept"
+            ],
+            "name": "Service",
+            "skos:prefLabel": "Service",
+            "skos:inScheme": {
+                "@id": "#metamodel"
+            }
+        },
+        {
             "@id": "#metamodel-Transaction",
-            "@type": ["DefinedTerm", "skos:Concept"],
-            "name": "Transaction"
-        },        { 
+            "@type": [
+                "DefinedTerm",
+                "skos:Concept"
+            ],
+            "name": "Transaction",
+            "skos:prefLabel": "Transaction",
+            "skos:related": {
+                "@id": "#metamodel-Process"
+            },
+            "skos:inScheme": {
+                "@id": "#metamodel"
+            }
+        },
+        {
             "@id": "#metamodel-Process",
-            "@type": ["DefinedTerm", "skos:Concept"],
-            "name": "Process"
-        },        { 
+            "@type": [
+                "DefinedTerm",
+                "skos:Concept"
+            ],
+            "name": "Process",
+            "skos:prefLabel": "Process",
+            "skos:inScheme": {
+                "@id": "#metamodel"
+            }
+        },
+        {
             "@id": "#metamodel-Operation",
-            "@type": ["DefinedTerm", "skos:Concept"],
-            "name": "Operation"
-        },        { 
-            "@id": "#metamodel-Link",
-            "@type": ["DefinedTerm", "skos:Concept"],
-            "name": "Link"
+            "@type": [
+                "DefinedTerm",
+                "skos:Concept"
+            ],
+            "name": "Operation",
+            "skos:broader": {
+                "@id": "#metamodel-Resource"
+            },
+            "skos:inScheme": {
+                "@id": "#metamodel"
+            }
         },
-        { 
+        {
             "@id": "#metamodel-Message",
-            "@type": ["DefinedTerm", "skos:Concept"],
-            "name": "Message"
-        },        { 
-            "@id": "#metamodel-Request",
-            "@type": ["DefinedTerm", "skos:Concept"],
-            "name": "Request"
-        },        { 
-            "@id": "#metamodel-Response",
-            "@type": ["DefinedTerm", "skos:Concept"],
-            "name": "Response"
-        },        { 
-            "@id": "#metamodel-Channel",
-            "@type": ["DefinedTerm", "skos:Concept"],
-            "name": "Channel"
-        },        { 
-            "@id": "#metamodel-Protocol",
-            "@type": ["DefinedTerm", "skos:Concept"],
-            "name": "Protocol"
+            "@type": [
+                "DefinedTerm",
+                "skos:Concept"
+            ],
+            "name": "Message",
+            "skos:broader": {
+                "@id": "#metamodel-Resource"
+            },
+            "skos:related": {
+                "@id": "#metamodel-Channel"
+            },
+            "skos:inScheme": {
+                "@id": "#metamodel"
+            }
         },
-
-
+        {
+            "@id": "#metamodel-Request",
+            "@type": [
+                "DefinedTerm",
+                "skos:Concept"
+            ],
+            "name": "Request",
+            "skos:prefLabel": "Request",
+            "skos:broader": {
+                "@id": "#metamodel-Message"
+            },
+            "skos:inScheme": {
+                "@id": "#metamodel"
+            }
+        },
+        {
+            "@id": "#metamodel-Response",
+            "@type": [
+                "DefinedTerm",
+                "skos:Concept"
+            ],
+            "name": "Response",
+            "skos:broader": {
+                "@id": "#metamodel-Message"
+            },
+            "skos:inScheme": {
+                "@id": "#metamodel"
+            }
+        },
+        {
+            "@id": "#metamodel-Channel",
+            "@type": [
+                "DefinedTerm",
+                "skos:Concept"
+            ],
+            "name": "Channel",
+            "skos:inScheme": {
+                "@id": "#metamodel"
+            }
+        },
+        {
+            "@id": "#metamodel-Protocol",
+            "@type": [
+                "DefinedTerm",
+                "skos:Concept"
+            ],
+            "name": "Protocol",
+            "skos:related": [
+                {
+                    "@id": "#metamodel-Message"
+                },
+                {
+                    "@id": "#metamodel-Channel"
+                }
+            ],
+            "skos:inScheme": {
+                "@id": "#metamodel"
+            }
+        },
         {
             "@id": "table3.html",
             "@type": "File",
@@ -228,15 +395,23 @@
                 }
             ],
             "citation": [
-                { "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx" },
-                { "@id": "https://doi.org/10.5281/zenodo.7782262" },
-                { "@id": "https://hdl.handle.net/0.DOIP/DOIPV2.0" },
-                { "@id": "https://fairdigitalobjectframework.org/" }
-              ]            
+                {
+                    "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx"
+                },
+                {
+                    "@id": "https://doi.org/10.5281/zenodo.7782262"
+                },
+                {
+                    "@id": "https://hdl.handle.net/0.DOIP/DOIPV2.0"
+                },
+                {
+                    "@id": "https://fairdigitalobjectframework.org/"
+                }
+            ]
         },
-        { 
+        {
             "@id": "https://doi.org/10.5281/zenodo.7782262",
-            "@type": "CreativeWork", 
+            "@type": "CreativeWork",
             "name": "FAIR Digital Objects Forum FDO requirement specifications. Version 3.0",
             "author": "Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, Carlo Zwölf",
             "alternateName": "PR-RequirementSpec-3.0",
@@ -272,7 +447,7 @@
             "name": "FAIR Digital Objects Forum",
             "url": "https://fairdo.org/"
         },
-        { 
+        {
             "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx",
             "@type": "CreativeWork",
             "alternateName": "(Bonino et al. 2019)",
@@ -334,7 +509,9 @@
                 }
             ],
             "description": "FAIR Digital Object (FDO) is an emerging concept that is highlighted by European Open Science Cloud (EOSC) as a potential candidate for building a ecosystem of machine-actionable research outputs. In this work we systematically evaluate FDO and its implementations as a global distributed object system, by using five different conceptual frameworks that cover interoperability, middleware, FAIR principles, EOSC requirements and FDO guidelines themself. We compare the FDO approach with established Linked Data practices and the existing Web architecture, and provide a brief history of the Semantic Web while discussing why these technologies may have been difficult to adopt for FDO purposes. We conclude with recommendations for both Linked Data and FDO communities to further their adaptation and alignment.",
-            "license": {"@id": "http://spdx.org/licenses/CC-BY-4.0"},
+            "license": {
+                "@id": "http://spdx.org/licenses/CC-BY-4.0"
+            },
             "version": "2",
             "keywords": "Distributed, Parallel, and Cluster Computing (cs.DC), Networking and Internet Architecture (cs.NI), FOS: Computer and information sciences, FOS: Computer and information sciences, H.3; C.2",
             "dateModified": "2023-06-14T00:03:40Z",
