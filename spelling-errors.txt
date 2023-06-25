@@ -34,7 +34,7 @@ CWFP
 DARIAH
 Datacite
 Dataset
-datasets
+Datasets
 DCAT
 dereferenceable
 diciplinary
@@ -56,14 +56,14 @@ examplify
 exisiting
 Extensibility
 FAIRification
-fdo
+FDO
 FDOF
 FDOR
 FDO’s
 FDOs
 findability
 findable
-FOAF
+foaf
 Freetext
 FROR
 furfill
@@ -101,7 +101,7 @@ js
 JSON
 JSWS
 kickstarted
-ld
+LD
 LDP
 LDP’s
 LOD
@@ -148,7 +148,7 @@ QUIC
 RDA’s
 RDF
 RDFa
-rdflib
+RDFLib
 RDFS
 RDMKit
 redirections
@@ -160,7 +160,7 @@ ResourceSync
 RO
 ROR
 runtime
-scalability
+Scalability
 scalable
 schemas
 seemlessly
