@@ -176,7 +176,7 @@
                     "@id": "https://orcid.org/0000-0001-9842-9718"
                 }
             ],
-            "author": {
+            "author": { 
                 "@id": "https://orcid.org/0000-0002-2536-4906"
             },
             "creator": {
@@ -186,7 +186,7 @@
                 "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
             },
             "skos:hasTopConcept": {
-                "#metamodel-Resource"
+                "@id": "#metamodel-Resource"
             },
             "hasDefinedTerm": [
                 {

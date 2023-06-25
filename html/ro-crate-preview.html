@@ -87,7 +87,15 @@
           "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
         }
       ],
-      "cites": {
+      "about": [
+        {
+          "@id": "https://fairdo.org/1316-2/"
+        },
+        {
+          "@id": "http://dbpedia.org/resource/World_Wide_Web"
+        }
+      ],
+      "citation": {
         "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
       }
     },
@@ -102,7 +110,7 @@
           "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
         }
       ],
-      "cites": {
+      "citation": {
         "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
       }
     },
@@ -117,7 +125,7 @@
           "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
         }
       ],
-      "cites": [
+      "citation": [
         {
           "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx"
         },
@@ -157,23 +165,315 @@
       ]
     },
     {
+      "@id": "#table1-assessments",
+      "@type": "AssessAction",
+      "name": "Considerations for Table 1 based on literature",
+      "startTime": "2022-05-04T10:31:56+0100",
+      "endTime": "2023-06-17T14:19:58+0100",
+      "agent": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "object": [
+        {
+          "@id": "https://fairdo.org/1316-2/"
+        },
+        {
+          "@id": "http://dbpedia.org/resource/World_Wide_Web"
+        }
+      ],
+      "instrument": {
+        "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
+      },
+      "result": "table1.html"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9842-9718",
+      "@type": "Person",
+      "name": "Stian Soiland-Reyes"
+    },
+    {
+      "@id": "https://fairdo.org/1316-2/",
+      "@type": "Thing",
+      "name": "FAIR Digital Objects",
+      "alternateName": "FDO"
+    },
+    {
+      "@id": "http://dbpedia.org/resource/World_Wide_Web",
+      "@type": "Thing",
+      "name": "World Wide Web"
+    },
+    {
+      "@id": "https://doi.org/10.1007/978-3-319-31861-5_1",
+      "@type": [
+        "ScholarlyArticle",
+        "Chapter"
+      ],
+      "name": "Interoperability Framework and Distributed Platform for Fast Data Applications",
+      "creditText": "(Delgado 2016)",
+      "pageStart": "3",
+      "pageEnd": "40",
+      "isAccessibleForFree": false,
+      "copyrightNotice": "© Springer International Publishing Switzerland 2016",
+      "author": {
+        "@id": "https://orcid.org/0000-0002-2536-4906"
+      },
+      "year": "2016"
+    },
+    {
       "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471",
       "@type": "DefinedTerm",
       "name": "Hypertext Markup Language 5",
       "alternateName": "HTML5"
     },
     {
-      "@id": "https://doi.org/10.1007/978-3-319-31861-5_1",
-      "@type": "ScholarlyArticle",
-      "name": "Interoperability Framework and Distributed Platform for Fast Data Applications",
-      "author": "José Carlos Martins Delgado",
-      "year": "2016"
+      "@id": "https://orcid.org/0000-0002-2536-4906",
+      "@type": "Person",
+      "name": "José Carlos Martins Delgado"
+    },
+    {
+      "@id": "https://link.springer.com/chapter/10.1007/978-3-319-31861-5_1/figures/5",
+      "@type": "WebPageElement",
+      "name": "Figure 1.5 in (Delgado 2018)",
+      "isAccessibleForFree": true,
+      "copyrightNotice": "© Springer International Publishing Switzerland 2016",
+      "isPartOf": {
+        "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
+      }
+    },
+    {
+      "@id": "#metamodel",
+      "@type": [
+        "DefinedTermSet",
+        "ConceptScheme"
+      ],
+      "name": "A structural metamodel of resources and of their interactions",
+      "description": "Terms from the (Delgado 2016) metamodel expressed hierarchically as a SKOS concept scheme. For definitions, see (Delgado 2018) which unfortunately is not Open Access",
+      "dct:title": "A structural metamodel of resources and of their interactions",
+      "image": {
+        "@id": "https://link.springer.com/chapter/10.1007/978-3-319-31861-5_1/figures/5"
+      },
+      "dct:creator": [
+        {
+          "@id": "https://orcid.org/0000-0002-2536-4906"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        }
+      ],
+      "author": {
+        "@id": "https://orcid.org/0000-0002-2536-4906"
+      },
+      "creator": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "isBasedOn": {
+        "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
+      },
+      "skos:hasTopConcept": {
+        "@id": "#metamodel-Resource"
+      },
+      "hasDefinedTerm": [
+        {
+          "@id": "#metamodel-Resource"
+        },
+        {
+          "@id": "#metamodel-Link"
+        },
+        {
+          "@id": "#metamodel-Service"
+        },
+        {
+          "@id": "#metamodel-Transaction"
+        },
+        {
+          "@id": "#metamodel-Process"
+        },
+        {
+          "@id": "#metamodel-Operation"
+        },
+        {
+          "@id": "#metamodel-Message"
+        },
+        {
+          "@id": "#metamodel-Request"
+        },
+        {
+          "@id": "#metamodel-Response"
+        },
+        {
+          "@id": "#metamodel-Channel"
+        },
+        {
+          "@id": "#metamodel-Protocol"
+        }
+      ]
+    },
+    {
+      "@id": "#metamodel-Resource",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Resource",
+      "skos:related": {
+        "@id": "#metamodel-Service"
+      },
+      "skos:prefLabel": "Resource",
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      }
+    },
+    {
+      "@id": "#metamodel-Link",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Link",
+      "skos:prefLabel": "Link",
+      "skos:broader": {
+        "@id": "#metamodel-Resource"
+      },
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      }
+    },
+    {
+      "@id": "#metamodel-Service",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Service",
+      "skos:prefLabel": "Service",
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      }
+    },
+    {
+      "@id": "#metamodel-Transaction",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Transaction",
+      "skos:prefLabel": "Transaction",
+      "skos:related": {
+        "@id": "#metamodel-Process"
+      },
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      }
+    },
+    {
+      "@id": "#metamodel-Process",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Process",
+      "skos:prefLabel": "Process",
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      }
+    },
+    {
+      "@id": "#metamodel-Operation",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Operation",
+      "skos:broader": {
+        "@id": "#metamodel-Resource"
+      },
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      }
+    },
+    {
+      "@id": "#metamodel-Message",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Message",
+      "skos:broader": {
+        "@id": "#metamodel-Resource"
+      },
+      "skos:related": {
+        "@id": "#metamodel-Channel"
+      },
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      }
+    },
+    {
+      "@id": "#metamodel-Request",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Request",
+      "skos:prefLabel": "Request",
+      "skos:broader": {
+        "@id": "#metamodel-Message"
+      },
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      }
+    },
+    {
+      "@id": "#metamodel-Response",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Response",
+      "skos:broader": {
+        "@id": "#metamodel-Message"
+      },
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      }
+    },
+    {
+      "@id": "#metamodel-Channel",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Channel",
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      }
+    },
+    {
+      "@id": "#metamodel-Protocol",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Protocol",
+      "skos:related": [
+        {
+          "@id": "#metamodel-Message"
+        },
+        {
+          "@id": "#metamodel-Channel"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      }
     },
     {
       "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx",
       "@type": "CreativeWork",
+      "alternateName": "(Bonino et al. 2019)",
       "name": "FAIR digital object framework v1.02",
-      "author": "Luiz Bonino, Peter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark Leggott, Carlo Zwölf"
+      "author": "Luiz Bonino, Peter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark Leggott, Carlo Zwölf",
+      "datePublished": "2019"
     },
     {
       "@id": "https://doi.org/10.5281/zenodo.7782262",
@@ -181,6 +481,7 @@
       "name": "FAIR Digital Objects Forum FDO requirement specifications. Version 3.0",
       "author": "Ivonne Anders, Christophe Blanchi, Daan Broder, Maggie Hellström, Sharif Islam, Thomas Jejkal, Larry Lannom, Karsten Peters-von Gehlen, Robert Quick, Alexander Schlemmer, Ulrich Schwardmann, Stian Soiland-Reyes, George Strawn, Dieter van Uytvanck, Claus Weiland, Peter Wittenburg, Carlo Zwölf",
       "alternateName": "PR-RequirementSpec-3.0",
+      "creditText": "(Anders et al. 2023)",
       "publisher": {
         "@id": "https://fairdo.org/"
       }
@@ -197,6 +498,7 @@
       "@id": "https://fairdigitalobjectframework.org/",
       "@type": "CreativeWork",
       "name": "FAIR Digital Object Framework Documentation",
+      "creditText": "(Bonino 2022)",
       "datePublished": "2022",
       "author": "Luiz Olavo Bonino da Silva Santos, Giancarlo Guizzardi, Tiago Prince Sales"
     },
@@ -250,11 +552,6 @@
       "publisher": {
         "@id": "https://arxiv.org/"
       }
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9842-9718",
-      "@type": "Person",
-      "name": "Stian Soiland-Reyes"
     },
     {
       "@id": "https://orcid.org/0000-0003-1219-2137",
@@ -482,7 +779,14 @@ We systematically evaluate FDO and its implementations as a global distributed o
                         <li><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/fmt/471">Hypertext Markup Language 5</a></li>
                         </ul></td>
             </tr><tr>
-            <th style="text-align:left;" class="prop">cites</th>
+            <th style="text-align:left;" class="prop">about<span>&nbsp;</span><a href="http://schema.org/about">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#https%3A//fairdo.org/1316-2/">FAIR Digital Objects</a></li>
+                        
+                        <li><a href="#http%3A//dbpedia.org/resource/World_Wide_Web">World Wide Web</a></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">citation<span>&nbsp;</span><a href="http://schema.org/citation">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//doi.org/10.1007/978-3-319-31861-5_1">Interoperability Framework and Distributed Platform for Fast Data Applications</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
@@ -522,7 +826,7 @@ We systematically evaluate FDO and its implementations as a global distributed o
                         <li><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/fmt/471">Hypertext Markup Language 5</a></li>
                         </ul></td>
             </tr><tr>
-            <th style="text-align:left;" class="prop">cites</th>
+            <th style="text-align:left;" class="prop">citation<span>&nbsp;</span><a href="http://schema.org/citation">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//doi.org/10.1007/978-3-319-31861-5_1">Interoperability Framework and Distributed Platform for Fast Data Applications</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
@@ -562,7 +866,7 @@ We systematically evaluate FDO and its implementations as a global distributed o
                         <li><a href="#https%3A//www.nationalarchives.gov.uk/PRONOM/fmt/471">Hypertext Markup Language 5</a></li>
                         </ul></td>
             </tr><tr>
-            <th style="text-align:left;" class="prop">cites</th>
+            <th style="text-align:left;" class="prop">citation<span>&nbsp;</span><a href="http://schema.org/citation">[?]</a></th>
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%2520Digital%2520Objects/FDOF/FAIR%2520Digital%2520Object%2520Framework-v1-02.docx">FAIR digital object framework v1.02</a></li>
                         
