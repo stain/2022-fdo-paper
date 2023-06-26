@@ -14,7 +14,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-Bioschemas
+BioSchemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -49,7 +49,7 @@ eare
 Ecma
 eg
 EMEA
-eosc
+EOSC
 ESRI
 examplified
 examplify
@@ -61,7 +61,7 @@ FDOF
 FDOR
 FDO’s
 FDOs
-Findability
+findability
 findable
 foaf
 Freetext
@@ -101,7 +101,7 @@ js
 JSON
 JSWS
 kickstarted
-LD
+ld
 LDP
 LDP’s
 LOD
@@ -113,14 +113,14 @@ microformats
 Micropub
 middleware
 middlewares
-modularity
+Modularity
 namespace
 namespaces
 NIST
 NL
 OAI
 OBO
-occassionally
+Occassionally
 ontologies
 OpenAIRE
 OpenAPI
@@ -142,13 +142,13 @@ Polymorphism
 practictioners
 pre
 preprint
-programmatically
+Programmatically
 proto
 QUIC
 RDA’s
 RDF
 RDFa
-rdflib
+RDFLib
 RDFS
 RDMKit
 redirections
@@ -160,7 +160,7 @@ ResourceSync
 RO
 ROR
 runtime
-Scalability
+scalability
 scalable
 schemas
 seemlessly
