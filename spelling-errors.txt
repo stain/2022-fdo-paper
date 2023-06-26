@@ -14,7 +14,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-BioSchemas
+Bioschemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -33,14 +33,14 @@ CSV
 CWFP
 DARIAH
 Datacite
-dataset
+Dataset
 datasets
 DCAT
 dereferenceable
 diciplinary
 discoverable
 DNS
-DOIP
+doip
 DOIPs
 DOIPv
 DOIs
@@ -56,7 +56,7 @@ examplify
 exisiting
 Extensibility
 FAIRification
-FDO
+fdo
 FDOF
 FDOR
 FDO’s
@@ -81,7 +81,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-HTTPS
+https
 IANA
 IEC
 IETF
@@ -120,7 +120,7 @@ NIST
 NL
 OAI
 OBO
-Occassionally
+occassionally
 ontologies
 OpenAIRE
 OpenAPI
@@ -142,7 +142,7 @@ Polymorphism
 practictioners
 pre
 preprint
-Programmatically
+programmatically
 proto
 QUIC
 RDA’s
