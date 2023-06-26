@@ -14,7 +14,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-BioSchemas
+Bioschemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -40,7 +40,7 @@ dereferenceable
 diciplinary
 discoverable
 DNS
-DOIP
+doip
 DOIPs
 DOIPv
 DOIs
@@ -56,12 +56,12 @@ examplify
 exisiting
 Extensibility
 FAIRification
-FDO
+fdo
 FDOF
 FDOR
 FDO’s
 FDOs
-findability
+Findability
 findable
 foaf
 Freetext
@@ -81,7 +81,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-HTTPS
+https
 IANA
 IEC
 IETF
@@ -101,7 +101,7 @@ js
 JSON
 JSWS
 kickstarted
-ld
+LD
 LDP
 LDP’s
 LOD
@@ -142,7 +142,7 @@ Polymorphism
 practictioners
 pre
 preprint
-Programmatically
+programmatically
 proto
 QUIC
 RDA’s
@@ -160,7 +160,7 @@ ResourceSync
 RO
 ROR
 runtime
-scalability
+Scalability
 scalable
 schemas
 seemlessly
