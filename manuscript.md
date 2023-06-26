@@ -47,9 +47,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://stain.github.io/2022-fdo-paper/" />
   <meta name="citation_pdf_url" content="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://stain.github.io/2022-fdo-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/1fa38a4c54cf973f779ddf5f0320fe35cb36674f/" />
-  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1fa38a4c54cf973f779ddf5f0320fe35cb36674f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/1fa38a4c54cf973f779ddf5f0320fe35cb36674f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://stain.github.io/2022-fdo-paper/v/4b65e98117b1d8009b403ace5f9174d4e25dec32/" />
+  <meta name="manubot_html_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/4b65e98117b1d8009b403ace5f9174d4e25dec32/" />
+  <meta name="manubot_pdf_url_versioned" content="https://stain.github.io/2022-fdo-paper/v/4b65e98117b1d8009b403ace5f9174d4e25dec32/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -76,9 +76,9 @@ _An updated preprint of this manuscript is available at <https://doi.org/10.4855
 
 <small><em>
 This manuscript
-([permalink](https://stain.github.io/2022-fdo-paper/v/1fa38a4c54cf973f779ddf5f0320fe35cb36674f/))
+([permalink](https://stain.github.io/2022-fdo-paper/v/4b65e98117b1d8009b403ace5f9174d4e25dec32/))
 was automatically generated
-from [stain/2022-fdo-paper@1fa38a4](https://github.com/stain/2022-fdo-paper/tree/1fa38a4c54cf973f779ddf5f0320fe35cb36674f)
+from [stain/2022-fdo-paper@4b65e98](https://github.com/stain/2022-fdo-paper/tree/4b65e98117b1d8009b403ace5f9174d4e25dec32)
 on June 26, 2023.
 </em></small>
 

@@ -14,7 +14,7 @@ BioDT
 BioExcel
 bioinformatics
 Bioontologies
-Bioschemas
+BioSchemas
 boninodasilvasantos
 bytestream
 bytestreams
@@ -27,7 +27,7 @@ centric
 ChEMBL
 consumptions
 CORDA
-CORDRA
+Cordra
 COVID
 CSV
 CWFP
@@ -63,7 +63,7 @@ FDO’s
 FDOs
 Findability
 findable
-FOAF
+foaf
 Freetext
 FROR
 furfill
@@ -81,7 +81,7 @@ hetereogeneous
 HLS
 hoc
 HTTP’s
-https
+HTTPS
 IANA
 IEC
 IETF
@@ -113,14 +113,14 @@ microformats
 Micropub
 middleware
 middlewares
-Modularity
+modularity
 namespace
 namespaces
 NIST
 NL
 OAI
 OBO
-occassionally
+Occassionally
 ontologies
 OpenAIRE
 OpenAPI
@@ -160,7 +160,7 @@ ResourceSync
 RO
 ROR
 runtime
-Scalability
+scalability
 scalable
 schemas
 seemlessly
