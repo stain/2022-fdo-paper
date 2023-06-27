@@ -33,7 +33,7 @@ CSV
 CWFP
 DARIAH
 Datacite
-Dataset
+dataset
 datasets
 DCAT
 dereferenceable
@@ -49,7 +49,7 @@ eare
 Ecma
 eg
 EMEA
-eosc
+EOSC
 ESRI
 examplified
 examplify
@@ -135,7 +135,7 @@ PDFs
 persistant
 pgroth
 PHACTS
-pid
+PID
 PIDs
 PMH
 Polymorphism
@@ -148,7 +148,7 @@ QUIC
 RDA’s
 RDF
 RDFa
-rdflib
+RDFLib
 RDFS
 RDMKit
 redirections
