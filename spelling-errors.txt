@@ -27,7 +27,7 @@ centric
 ChEMBL
 consumptions
 CORDA
-Cordra
+CORDRA
 COVID
 CSV
 CWFP
@@ -40,7 +40,7 @@ dereferenceable
 diciplinary
 discoverable
 DNS
-DOIP
+doip
 DOIPs
 DOIPv
 DOIs
@@ -101,7 +101,7 @@ js
 JSON
 JSWS
 kickstarted
-ld
+LD
 LDP
 LDP’s
 LOD
@@ -148,7 +148,7 @@ QUIC
 RDA’s
 RDF
 RDFa
-RDFLib
+rdflib
 RDFS
 RDMKit
 redirections
