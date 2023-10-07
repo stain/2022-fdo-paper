@@ -1,0 +1,882 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "conformsTo": {
+              "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "about": {
+              "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+            },
+            "author": {
+              "@id": "https://orcid.org/0000-0001-9842-9718"
+            },
+            "isBasedOn": {
+                "@id": "https://doi.org/10.5281/zenodo.7782262"
+            }
+        },    
+        {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262",
+            "@type": "Dataset",
+            "author": [
+              {
+                "@id": "https://orcid.org/0000-0003-4098-0464"
+              },
+              {
+                "@id": "https://orcid.org/0000-0003-3538-0106"
+              },
+              {
+                "@id": "https://orcid.org/0000-0001-9842-9718"
+              },
+              {
+                "@id": "https://orcid.org/0000-0003-0158-2957"
+              },
+              {
+                "@id": "https://orcid.org/0000-0003-1254-7604"
+              },
+              {
+                "@id": "https://orcid.org/0000-0001-6337-8674"
+              },
+              {
+                "@id": "https://orcid.org/0000-0003-2277-5176"
+              }
+            ],
+            "description": "RO-Crate for the FDO Requirement Specification document specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
+            "datePublished": "2023-10-07",
+            "publisher": {
+                "@id": "https://orcid.org/0000-0001-9842-9718"
+            },
+            "hasPart": [
+              {
+                "@id": "https://doi.org/10.5281/zenodo.7782262"
+              },
+              {
+                "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generic-guidelines"
+              },
+              {
+                "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+              }
+            ],
+            "identifier": "https://w3id.org/ro/doi/10.5281/zenodo.7782262",
+            "license": {
+              "@id": "http://spdx.org/licenses/CC-BY-4.0"
+            },
+            "maintainer": {
+              "@id": "https://orcid.org/0000-0001-9842-9718"
+            },
+            "name": "FDO Forum FDO Requirement Specifications Version 3.0 (RO-Crate)",
+            "version": "3.0",
+            "cite-as": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+        {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262",
+            "@type": "Dataset",
+            "author": [
+              {
+                "@id": "https://orcid.org/0000-0001-7337-3009", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0003-2277-5176", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0002-8446-3410", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0002-4154-2610", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0001-8050-0299", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0003-2804-688X", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0003-1254-7604", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0003-0158-2957", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0002-0994-728X", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0003-4124-9649", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0001-6337-8674", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0001-9842-9718", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0003-4098-0464", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0001-7807-186X", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0003-0351-6523", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0003-3538-0106", 
+              }, 
+              {
+                "@id": "https://orcid.org/0000-0002-5762-6747", 
+              }
+            ],
+            "description": "RO-Crate for the FDO Requirement Specification document, which specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
+            "editor": [
+              {
+                "@id": "https://orcid.org/0000-0003-4098-0464"
+              },
+              {
+                "@id": "https://orcid.org/0000-0003-3538-0106"
+              }
+            ],
+            "hasPart": [
+              {
+                "@id": "https://doi.org/10.5281/zenodo.7782262"
+              },
+              {
+                "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generic-guidelines"
+              },
+              {
+                "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+              }
+            ],
+            "identifier": "https://w3id.org/ro/doi/10.5281/zenodo.7782262",
+            "license": {
+              "@id": "http://spdx.org/licenses/CC-BY-4.0"
+            },
+            "maintainer": {
+              "@id": "https://orcid.org/0000-0001-9842-9718"
+            },
+            "name": "FDO Forum FDO Requirement Specifications Version 3.0",
+            "version": "3.0",
+            "cite-as": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },        
+      {
+        "@id": "https://doi.org/10.5281/zenodo.7782262",
+        "@type": "HowTo",
+          "name": "FDO Forum FDO Requirement Specifications Version 3.0 (PDF)",
+          "description": "This FDO Requirement Specification document specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements",
+          "alternateName": "PR-RequirementSpec-3.0-20230112",
+          "datePublished": "2023-01-12",
+          "publisher": {
+            "@id": "https://fairdo.org/"
+          },
+          "version": "3.0",
+          "cite-as": "https://doi.org/10.5281/zenodo.7782262",
+          "editor": [
+            {
+              "@id": "https://orcid.org/0000-0003-4098-0464"
+            },
+            {
+              "@id": "https://orcid.org/0000-0003-3538-0106"
+            }
+          ],        
+        "step": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generic-guidelines"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "isBasedOn": {
+            "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx"
+        }
+      },
+      {
+        "@id": "https://fairdo.org/",
+        "@type": "Organization",
+        "name": "FAIR Digital Object Forum"
+      },
+      {
+        "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx",
+        "@type": "CreativeWork",
+        "name": "FAIR Digital Object Framework",
+        "publisher": {
+            "@id": "https://github.com/GEDE-RDA-Europe/"
+        },
+        "version": "1.02",
+        "datePublished": "2019-11-22"
+      },
+      {
+        "@id": "https://github.com/GEDE-RDA-Europe/",
+        "@type": "Organization",
+        "name": "Group of European Data Experts in RDA",
+        "alternateName": "GEDE-RDA",
+        "parentOrganization": {
+            "@id": "https://www.rd-alliance.org/"
+        }
+      },
+      {
+        "@id": "https://orcid.org/0000-0001-6337-8674",
+        "@type": "Person",
+        "name": "Ulrich Schwardmann"
+      },
+      {
+        "@id": "https://orcid.org/0000-0001-9842-9718",
+        "@type": "Person",
+        "name": "Stian Soiland-Reyes"
+      },
+      {
+        "@id": "https://orcid.org/0000-0003-0158-2957",
+        "@type": "Person",
+        "name": "Karsten Peters-von Gehlen"
+      },
+      {
+        "@id": "https://orcid.org/0000-0003-1254-7604",
+        "@type": "Person",
+        "name": "Larry Lannom"
+      },
+      {
+        "@id": "https://orcid.org/0000-0003-2277-5176",
+        "@type": "Person",
+        "name": "Christophe Blanch"
+      },
+      {
+        "@id": "https://orcid.org/0000-0003-3538-0106",
+        "@type": "Person",
+        "name": "Peter Wittenburg"
+      },
+      {
+        "@id": "https://orcid.org/0000-0003-4098-0464",
+        "@type": "Person",
+        "name": "George Strawn"
+      },
+
+      {
+        "@id": "https://orcid.org/0000-0001-7337-3009", 
+        "@type": "Person", 
+        "name": "Ivonne Anders"
+      }, 
+      {
+        "@id": "https://orcid.org/0000-0002-8446-3410", 
+        "@type": "Person", 
+        "name": "Daan Broder"
+      }, 
+      {
+        "@id": "https://orcid.org/0000-0002-4154-2610", 
+        "@type": "Person", 
+        "name": "Maggie Hellstr\u00f6m"
+      }, 
+      {
+        "@id": "https://orcid.org/0000-0001-8050-0299", 
+        "@type": "Person", 
+        "name": "Sharif Islam"
+      }, 
+      {
+        "@id": "https://orcid.org/0000-0003-2804-688X", 
+        "@type": "Person", 
+        "name": "Thomas Jejkal"
+      }, 
+      {
+        "@id": "https://orcid.org/0000-0002-0994-728X", 
+        "@type": "Person", 
+        "name": "Robert Quick"
+      }, 
+      {
+        "@id": "https://orcid.org/0000-0003-4124-9649", 
+        "@type": "Person", 
+        "name": "Alexander Schlemmer"
+      }, 
+      {
+        "@id": "https://orcid.org/0000-0001-7807-186X", 
+        "@type": "Person", 
+        "name": "Dieter van Uytvanck"
+      }, 
+      {
+        "@id": "https://orcid.org/0000-0003-0351-6523", 
+        "@type": "Person", 
+        "name": "Claus Weiland"
+      }, 
+      {
+        "@id": "https://orcid.org/0000-0002-5762-6747", 
+        "@type": "Person", 
+        "name": "Carlo Zw\u00f6lf"
+      }
+
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/TODO-PR-MachineActionDef",
+        "alternateName": "PR-MachineActionDef-2.0-20220611",
+        "name": "FDO Machine Actionability"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/TODO-WD-TypingFDOs",
+        "@type": "CreativeWork",
+        "alternateName": "PR-MachineActionDef-2.0-20220611"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR1",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "A PID, standing for a globally unique, persistent and resolvable identifier, is assumed to be the basis for FAIR Digital Objects. Every FDO is assigned one or more PIDs.",
+        "name": "FDOR1",
+        "position": "1",
+        "termCode": "FDOR1"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR10",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "citation": {
+          "@id": "https://w3id.org/ro/doi/10.5281/TODO-FAIR"
+        },
+        "description": "Metadata schemas are maintained by communities of practice and are FDOs. Such metadata schemas should therefore themselves follow FAIR principles",
+        "name": "FDOR10",
+        "position": "10",
+        "termCode": "FDOR10"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR11",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "A collection of FDOs is also an FDO. The content of collection FDOs describes its construction using an agreed formal language which specifies the relationships of the constituent members. An FDO may be a member of several collections.",
+        "name": "FDOR11",
+        "position": "11",
+        "termCode": "FDOR11"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR12",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "Deletion of an FDO must lead to standardised and thus machine interpretable tombstone notes in metadata and PID records. The PID itself is not deleted.",
+        "name": "FDOR12",
+        "position": "12",
+        "termCode": "FDOR12"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "A PID resolves to a structured record ( PID Record) compliant with a specified PID Profile which leads to resolution results that enable programmatic resolution from PID back to the FDO and its elements as specified by these requirements. PID Records represent the information characterizing FDOs and together with their resolving PIDs they can be themselves FDOs.",
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2-note1"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2-note2"
+          }
+        ],
+        "name": "FDOR2",
+        "position": "2",
+        "termCode": "FDOR2"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2-note1",
+        "@type": "HowToTip",
+        "name": "FDOR2 Note 1",
+        "position": "1",
+        "text": "The term “PID Record” has been used extensively for historical reasons, however, the term “FDO Record” would be more appropriate since it contains attributes describing FDO properties."
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2-note2",
+        "@type": "HowToTip",
+        "name": "FDOR2 Note 2",
+        "position": "2",
+        "text": "The FDO Typing System is currently being specified. PID Profiles will be specified by communities of practices."
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR3",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "If an FDO contains a structured bit-sequence, the structured PID record includes at least a reference to the location(s) where the bit-sequence encoding the content of a FAIR-DO (FDO) can be accessed and the type definition of the FDO. The structured record may also contain PIDs pointing to Metadata FDOs describing properties of the target FDO.",
+        "name": "FDOR3",
+        "position": "3",
+        "termCode": "FDOR3"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "The PID record needs to contain mandatory FDO attributes, may contain optional FDO attributes and attributes agreed upon by recognized communities. Values of attributes can be references. Expectations of such references should be specified in the PID profile or definition of said attribute in a Data Type Registry.",
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note1"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note2"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note3"
+          }
+        ],
+        "name": "FDOR4",
+        "position": "4",
+        "termCode": "FDOR4"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note1",
+        "@type": "HowToTip",
+        "name": "FDOR4 Note 1",
+        "position": "1",
+        "text": "Values of attributes can be presented as RDF assertions or as “attribute-value pairs” allowing machines to act."
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note2",
+        "@type": "HowToTip",
+        "citation": {
+          "@id": "https://w3id.org/ro/doi/10.5281/TODO-FAIR"
+        },
+        "name": "FDOR4 Note 2",
+        "position": "2",
+        "text": "Data Type Registry entries are identified by a PID and should be FAIR compliant."
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note3",
+        "@type": "HowToTip",
+        "name": "FDOR4 Note 3",
+        "position": "3",
+        "text": "It was discussed whether there should be just two categories (mandatory, optional), but it was agreed that:  (a) the set of mandatory attributes will be small given also different FDO configuration types, (b) the FDO Forum needs to define attributes which are widely used to increase interoperability and (c) the communities definitively will have the freedom to add attributes which are important for their needs."
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "Each FDO identified by a PID can be accessed or operated on using an interface protocol by specifying the PID of a registered supported operation",
+        "itemListElement": {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5-note1"
+        },
+        "name": "FDOR5",
+        "position": "5",
+        "termCode": "FDOR5"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5-note1",
+        "@type": "HowToTip",
+        "name": "FDOR5 Note 1",
+        "position": "1",
+        "text": "In general the protocol in the Internet is identified by a protocol specification such as “http, ftp” etc."
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR6",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "Any basic FDO interface protocol offers standard Create, Read, Update, Delete (CRUD) operations on FDOs and a possibility to use extended/domain operations for specific applications.",
+        "name": "FDOR6",
+        "position": "6",
+        "termCode": "FDOR6"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR7",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "The relations between FDO Types and supported operations are maintained in separate registries.",
+        "name": "FDOR7",
+        "position": "7",
+        "termCode": "FDOR7"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "Metadata can themselves be FDOs which describe the properties of the referenced FDO. They must be specified by a registered schema that refers to defined and registered metadata categories.",
+        "itemListElement": {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8-note1"
+        },
+        "name": "FDOR8",
+        "position": "8",
+        "termCode": "FDOR8"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8-note1",
+        "@type": "HowToTip",
+        "citation": "TODO-F1",
+        "name": "FDOR8 Note 1",
+        "position": "1",
+        "text": "The FAIR principle F1 requires (meta)data to be assigned a persistent identifier. Implementations need to indicate how this can be satisfied."
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "Metadata can be of different types such as descriptive, deep scientific, provenance, system, access permissions, transactions, etc.",
+        "itemListElement": {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9-note1"
+        },
+        "name": "FDOR9",
+        "position": "9",
+        "termCode": "FDOR9"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9-note1",
+        "@type": "HowToTip",
+        "name": "FDOR9 Note 1",
+        "position": "1",
+        "text": "Currently, these different types are dealt with by different mechanisms. A unification is required to enable machine actionability."
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G1",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "FDOs should provide a path for long term infrastructure investments that is not tied to any particular technology stack.",
+        "skos:exactMatch": "old#G1",
+        "name": "G1",
+        "position": "1",
+        "termCode": "G1"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G2",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "FDOs need to generate trust in accurate data survival over long periods of time, assuring researchers, funders, and developers that their significant effort in reusing them will be worthwhile.",
+        "skos:exactMatch": "old#G2",
+        "name": "G2",
+        "position": "2",
+        "termCode": "G2"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G3",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "FDOs must offer compliance with the FAIR principles through measurable indicators of FAIRness.",
+        "skos:exactMatch": "old#G3",
+        "itemListElement": {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G3-note1"
+        },
+        "name": "G3",
+        "position": "3",
+        "termCode": "G3"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G3-note1",
+        "@type": "HowToTip",
+        "citation": [
+          {
+            "@id": "https://www.rd-alliance.org/groups/fair-data-maturity-model-wg"
+          },
+          {
+            "@id": "https://codata.org/worldfair-global-cooperation-on-fair-data-policy-and-practice-a-major-two-year-project-starts-today/"
+          }
+        ],
+        "name": "G3 Note 1",
+        "position": "1",
+        "text": "The FDO Forum will not become engaged in measuring FAIRness. Initiatives organised in the framework of RDA or CODATA are working on this topic."
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G4",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "citation": {
+          "@id": "https://w3id.org/ro/doi/10.5281/TODO-PR-MachineActionDef"
+        },
+        "description": "FDOs need to support machine actionability as being specified by FDO PR-MachineActionDef-2.0 or later",
+        "skos:exactMatch": "old#G4",
+        "name": "G4",
+        "position": "4",
+        "termCode": "G4"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G5",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "FDOs need to support the abstraction principle, i.e., abstracting away details that are not needed at the basic object management level. At that level there is no need to distinguish among different types such as data, metadata, software, semantic assertions, etc., for data management operations.",
+        "skos:exactMatch": "old#G5",
+        "name": "G5",
+        "position": "5",
+        "termCode": "G5"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G6",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "FDOs need to support stable bindings among all information entities required for machine navigation of the global data space through the use of global, unique, and resolvable persistent identifiers.",
+        "skos:exactMatch": "old#G6",
+        "name": "G6",
+        "position": "6",
+        "termCode": "G6"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G7",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "FDOs need to support encapsulation, such that operations can be associated with FDOs of all types.",
+        "skos:exactMatch": "old#G7",
+        "itemListElement": {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G7-note1"
+        },
+        "name": "G7",
+        "position": "7",
+        "termCode": "G7"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G7-note1",
+        "@type": "HowToTip",
+        "name": "G7 Note 1",
+        "citation": {
+          "@id": "https://w3id.org/ro/doi/10.5281/TODO-WD-TypingFDOs"
+        },
+        "text": "A typing system for FDOs is currently being worked out by FDO Forum"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G8",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "FDOs need to support technology independence, allowing implementations using different technologies.",
+        "skos:exactMatch": "old#G8",
+        "name": "G8",
+        "position": "8",
+        "termCode": "G8"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G9",
+        "@type": [
+          "HowToStep",
+          "DefinedTerm"
+        ],
+        "description": "FDOs need to comply with minimal agreed standards, e.g., for movement of FDOs between systems, for interaction with FDOs, etc., to guarantee FDO interoperability across heterogeneous systems.",
+        "skos:exactMatch": "old#G9",
+        "itemListElement": {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G9-note1"
+        },
+        "name": "G9",
+        "position": "9",
+        "termCode": "G9"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G9-note1",
+        "@type": "HowToTip",
+        "name": "G9 Note 1",
+        "position": "1",
+        "text": "G9 needs to be amended when specific implementations have been made available as basis for FDOs and when additional standardization processes have been accomplished"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements",
+        "@type": [
+          "HowToSection",
+          "DefinedTermSet"
+        ],
+        "description": "These requirements specify the rules that must be met by all implementations claiming FDO compliance. These requirements may evolve due to the increasing insights obtained from implementation experience",
+        "disambiguatingDescription": "FDO Requirements FDOR1–FDOR12",
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR1"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR3"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR6"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR7"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR10"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR11"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR12"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR1"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR3"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR6"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR7"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR10"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR11"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR12"
+          }
+        ],
+        "name": "FDO Requirements",
+        "position": "2"
+      },
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generic-guidelines",
+        "@type": [
+          "HowToSection",
+          "DefinedTermSet"
+        ],
+        "description": "These generic guidelines are meant to describe the landscape in which FDOs can exist independent of any specific compliance requirements",
+        "disambiguatingDescription": "Generic FDO guidelines G1–G9",
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G1"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G2"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G3"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G4"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G5"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G6"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G7"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G8"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G9"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G1"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G2"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G3"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G4"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G5"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G6"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G7"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G8"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G9"
+          }
+        ],
+        "name": "Generic Guidelines",
+        "position": "1"
+      },
+      {
+        "@id": "https://www.rd-alliance.org/",
+        "@type": "Organization",
+        "name": "Research Data Alliance (RDA)"
+      },
+      {
+        "@id": "https://www.rd-alliance.org/groups/fair-data-maturity-model-wg",
+        "@type": ["Organization", "AboutPage"],
+        "name": "RDA FAIR Data Maturity Model working group",
+        "parentOrganization": {
+            "@id": "https://www.rd-alliance.org/"
+        },
+        "publisher": {
+          "@id": "https://www.rd-alliance.org/"
+        }
+      },
+      {
+        "@id": "http://spdx.org/licenses/CC-BY-4.0",
+        "@type": "CreativeWork",
+        "description": "Creative Commons Attribution 4.0 International",
+        "name": "CC-BY-4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "version": "4.0"
+      },
+      {
+        "@id": "https://codata.org/",
+        "@type": "Organization",
+        "name": "CODATA"
+      },
+      {
+        "@id": "https://codata.org/worldfair-global-cooperation-on-fair-data-policy-and-practice-a-major-two-year-project-starts-today/",
+        "@type": "CreativeWork",
+        "name": "WorldFAIR: Global cooperation on FAIR data policy and practice – a major two-year project starts today!",
+        "publisher": {
+          "@id": "https://codata.org/"
+        }
+      }
+
+    ]
+  }
