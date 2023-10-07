@@ -1,0 +1,563 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@type": "CreativeWork",
+            "@id": "ro-crate-metadata.json",
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "about": {
+                "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
+            },
+            "author": {
+                "@id": "https://orcid.org/0000-0001-9842-9718"
+            }
+        },
+        {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926",
+            "@type": "Dataset",
+            "cite-as": "https://w3id.org/ro/doi/10.5281/zenodo.7781926",
+            "identifier": "https://w3id.org/ro/doi/10.5281/zenodo.7781926",
+            "name": "FDO Forum FDO Requirement Specifications Version 2.1",
+            "version": "2.1",
+            "alternateName": "PR-RequirementSpec-2.1-20221017",
+            "description": "RO-Crate for the FDO Requirement Specification document, which specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
+            "license": {
+                "@id": "http://spdx.org/licenses/CC-BY-4.0"
+            },
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0003-4098-0464"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0003-3538-0106"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0001-9842-9718"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0003-0158-2957"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0003-1254-7604"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0001-6337-8674"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0003-2277-5176"
+                }
+            ],
+            "editor": [
+                {
+                    "@id": "https://orcid.org/0000-0003-4098-0464"
+                },
+                {
+                    "@id": "https://orcid.org/0000-0003-3538-0106"
+                }
+            ],
+            "maintainer": {
+                "@id": "https://orcid.org/0000-0001-9842-9718"
+            },
+            "hasPart": [
+                {
+                    "@id": "https://doi.org/10.5281/zenodo.7781926",
+                    "@type": "HowTo",
+                    "step": [
+                        {
+                            "@id": "#generic-guidelines"
+                        },
+                        {
+                            "@id": "#fdo-requirements"
+                        }
+                    ]
+                },
+                {
+                    "@id": "#generic-guidelines"
+                },
+                {
+                    "@id": "#fdo-requirements"
+                }
+            ]
+        },
+        {
+            "@id": "#generic-guidelines",
+            "@type": [
+                "HowToSection",
+                "DefinedTermSet"
+            ],
+            "name": "Generic Guidelines",
+            "description": "These generic guidelines are meant to describe the landscape in which FDOs can exist independent of any specific compliance requirements",
+            "disambiguatingDescription": "Generic FDO guidelines G1–G9",
+            "position": "1",
+            "itemListElement": [
+                {
+                    "@id": "#G1"
+                },
+                {
+                    "@id": "#G2"
+                },
+                {
+                    "@id": "#G3"
+                },
+                {
+                    "@id": "#G4"
+                },
+                {
+                    "@id": "#G5"
+                },
+                {
+                    "@id": "#G6"
+                },
+                {
+                    "@id": "#G7"
+                },
+                {
+                    "@id": "#G8"
+                },
+                {
+                    "@id": "#G9"
+                }
+            ],
+            "hasDefinedTerm": [
+                {
+                    "@id": "#G1"
+                },
+                {
+                    "@id": "#G2"
+                },
+                {
+                    "@id": "#G3"
+                },
+                {
+                    "@id": "#G4"
+                },
+                {
+                    "@id": "#G5"
+                },
+                {
+                    "@id": "#G6"
+                },
+                {
+                    "@id": "#G7"
+                },
+                {
+                    "@id": "#G8"
+                },
+                {
+                    "@id": "#G9"
+                }
+            ]
+        },
+        {
+            "@id": "#fdo-requirements",
+            "@type": [
+                "HowToSection",
+                "DefinedTermSet"
+            ],
+            "name": "FDO Requirements",
+            "disambiguatingDescription": "FDO Requirements FDOR1–FDOR12",
+            "description": "These requirements specify the rules that must be met by all implementations claiming FDO compliance. These requirements may evolve due to the increasing insights obtained from implementation experience",
+            "position": "2",
+            "itemListElement": [
+                {
+                    "@id": "#FDOR1"
+                },
+                {
+                    "@id": "#FDOR2"
+                },
+                {
+                    "@id": "#FDOR3"
+                },
+                {
+                    "@id": "#FDOR4"
+                },
+                {
+                    "@id": "#FDOR5"
+                },
+                {
+                    "@id": "#FDOR6"
+                },
+                {
+                    "@id": "#FDOR7"
+                },
+                {
+                    "@id": "#FDOR8"
+                },
+                {
+                    "@id": "#FDOR9"
+                },
+                {
+                    "@id": "#FDOR10"
+                },
+                {
+                    "@id": "#FDOR11"
+                },
+                {
+                    "@id": "#FDOR12"
+                }
+            ],
+            "hasDefinedTerm": [
+                {
+                    "@id": "#FDOR1"
+                },
+                {
+                    "@id": "#FDOR2"
+                },
+                {
+                    "@id": "#FDOR3"
+                },
+                {
+                    "@id": "#FDOR4"
+                },
+                {
+                    "@id": "#FDOR5"
+                },
+                {
+                    "@id": "#FDOR6"
+                },
+                {
+                    "@id": "#FDOR7"
+                },
+                {
+                    "@id": "#FDOR8"
+                },
+                {
+                    "@id": "#FDOR9"
+                },
+                {
+                    "@id": "#FDOR10"
+                },
+                {
+                    "@id": "#FDOR11"
+                },
+                {
+                    "@id": "#FDOR12"
+                }
+            ]
+        },
+        {
+            "@id": "#G1",
+            "@type": [
+                "HowToStep",
+                "DefinedTerm"
+            ],
+            "position": "1",
+            "termCode": "G1",
+            "name": "G1",
+            "description": "FDOs should provide a path for long term infrastructure investments that is not tied to any particular technology stack."
+        },
+        {
+            "@id": "#G2",
+            "@type": [
+                "HowToStep",
+                "DefinedTerm"
+            ],
+            "position": "2",
+            "termCode": "G2",
+            "name": "G2",
+            "description": "FDOs need to generate trust in accurate data survival over long periods of time, assuring researchers, funders, and developers that their significant effort in reusing them will be worthwhile."
+        },
+        {
+            "@id": "#G3",
+            "@type": [
+                "HowToStep",
+                "DefinedTerm"
+            ],
+            "position": "3",
+            "termCode": "G3",
+            "name": "G3",
+            "description": "FDOs must offer compliance with the FAIR principles through measurable indicators of FAIRness.",
+            "itemListElement": {
+                "@id": "#G3-note1",
+                "@type": "HowToTip",
+                "text": "The FDO Forum will not become engaged in measuring FAIRness. Initiatives organised in the framework of RDA or CODATA are working on this topic.",
+                "citation": [
+                    {
+                        "@id": "https://www.rd-alliance.org/groups/fair-data-maturity-model-wg",
+                        "@type": "CreativeWork",
+                        "name": "RDA FAIR Data Maturity Model working group",
+                        "publisher": {
+                            "@id": "https://www.rd-alliance.org/",
+                            "@type": "Organization",
+                            "name": "Research Data Alliance (RDA)"
+                        }
+                    },
+                    {
+                        "@id": "https://codata.org/worldfair-global-cooperation-on-fair-data-policy-and-practice-a-major-two-year-project-starts-today/",
+                        "@type": "CreativeWork",
+                        "name": "WorldFAIR: Global cooperation on FAIR data policy and practice – a major two-year project starts today!",
+                        "publisher": {
+                            "@id": "https://codata.org/",
+                            "name": "CODATA",
+                            "@type": "Organization"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "@id": "#G4",
+            "@type": [
+                "HowToStep",
+                "DefinedTerm"
+            ],
+            "position": "4",
+            "termCode": "G4",
+            "name": "G4",
+            "description": "FDOs need to support machine actionability as being specified by FDO PR-MachineActionDef-2.0 or later",
+            "citation": {
+                "@id": "TODO-PR-MachineActionDef",
+                "name": "FDO Machine Actionability",
+                "alternateName": "PR-MachineActionDef-2.0-20220611",
+            }
+        },
+        {
+            "@id": "#G5",
+            "@type": [
+                "HowToStep",
+                "DefinedTerm"
+            ],
+            "position": "5",
+            "termCode": "G5",
+            "name": "G5",
+            "description": "FDOs need to support the abstraction principle, i.e., abstracting away details that are not needed at the basic object management level. At that level there is no need to distinguish among different types such as data, metadata, software, semantic assertions, etc., for data management operations."
+        },
+        {
+            "@id": "#G6",
+            "@type": [
+                "HowToStep",
+                "DefinedTerm"
+            ],
+            "position": "6",
+            "termCode": "G6",
+            "name": "G6",
+            "description": "FDOs need to support stable bindings among all information entities required for machine navigation of the global data space through the use of global, unique, and resolvable persistent identifiers."
+        },
+        {
+            "@id": "#G7",
+            "@type": [
+                "HowToStep",
+                "DefinedTerm"
+            ],
+            "position": "7",
+            "termCode": "G7",
+            "name": "G7",
+            "description": "FDOs need to support encapsulation, such that operations can be associated with FDOs of all types.",
+            "itemListElement": {
+                "@id": "#G7-note1",
+                "@type": "HowToTip",
+                "text": "A typing system for FDOs is currently being worked out by FDO Forum",
+                "citation": [
+                    {
+                        "@id": "TODO-WD-TypingFDOs",
+                        "@type": "CreativeWork",
+                        "alternateName": "WD-TypingFDOs-1.0-20220310"
+                    },
+                    {
+                        "@id": "#G8",
+                        "@type": [
+                            "HowToStep",
+                            "DefinedTerm"
+                        ],
+                        "position": "8",
+                        "termCode": "G8",
+                        "name": "G8",
+                        "description": "FDOs need to support technology independence, allowing implementations using different technologies."
+                    },
+                    {
+                        "@id": "#G9",
+                        "@type": [
+                            "HowToStep",
+                            "DefinedTerm"
+                        ],
+                        "position": "9",
+                        "termCode": "G9",
+                        "name": "G9",
+                        "description": "FDOs need to comply with minimal agreed standards, e.g., for movement of FDOs between systems, for interaction with FDOs, etc., to guarantee FDO interoperability across heterogeneous systems.",
+                        "itemListElement": {
+                            "@id": "#G9-note1",
+                            "@type": "HowToTip",
+                            "text": "G9 needs to be amended when specific implementations have been made available as basis for FDOs and when additional standardization processes have been accomplished"
+                        }
+                    },
+                    {
+                        "@id": "#FDOR1",
+                        "@type": [
+                            "HowToStep",
+                            "DefinedTerm"
+                        ],
+                        "position": "1",
+                        "termCode": "FDOR1",
+                        "name": "FDOR1",
+                        "description": "A PID, standing for a globally unique, persistent and resolvable identifier, is assumed to be the basis for FAIR Digital Objects. Every FDO is assigned one or more PIDs."
+                    },
+                    {
+                        "@id": "#FDOR2",
+                        "@type": [
+                            "HowToStep",
+                            "DefinedTerm"
+                        ],
+                        "position": "2",
+                        "termCode": "FDOR2",
+                        "name": "FDOR2",
+                        "description": "A PID resolves to a structured record ( PID Record) compliant with a specified PID Profile which leads to resolution results that enable programmatic resolution from PID back to the FDO and its elements as specified by these requirements. PID Records represent the information characterizing FDOs and together with their resolving PIDs they can be themselves FDOs.",
+                        "itemListElement": [
+                            {
+                                "@id": "#FDOR2-note1",
+                                "@type": "HowToTip",
+                                "text": "The term “PID Record” has been used extensively for historical reasons, however, the term “FDO Record” would be more appropriate since it contains attributes describing FDO properties."
+                            },
+                            {
+                                "@id": "#FDOR2-note2",
+                                "@type": "HowToTip",
+                                "text": "The FDO Typing System is currently being specified. PID Profiles will be specified by communities of practices."
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "#FDOR3",
+                        "@type": [
+                            "HowToStep",
+                            "DefinedTerm"
+                        ],
+                        "position": "3",
+                        "termCode": "FDOR3",
+                        "name": "FDOR3"
+                    },
+                    {
+                        "@id": "#FDOR4",
+                        "@type": [
+                            "HowToStep",
+                            "DefinedTerm"
+                        ],
+                        "position": "4",
+                        "termCode": "FDOR4",
+                        "name": "FDOR4"
+                    },
+                    {
+                        "@id": "#FDOR5",
+                        "@type": [
+                            "HowToStep",
+                            "DefinedTerm"
+                        ],
+                        "position": "5",
+                        "termCode": "FDOR5",
+                        "name": "FDOR5"
+                    },
+                    {
+                        "@id": "#FDOR6",
+                        "@type": [
+                            "HowToStep",
+                            "DefinedTerm"
+                        ],
+                        "position": "6",
+                        "termCode": "FDOR6",
+                        "name": "FDOR6"
+                    },
+                    {
+                        "@id": "#FDOR7",
+                        "@type": [
+                            "HowToStep",
+                            "DefinedTerm"
+                        ],
+                        "position": "7",
+                        "termCode": "FDOR7",
+                        "name": "FDOR7"
+                    },
+                    {
+                        "@id": "#FDOR8",
+                        "@type": [
+                            "HowToStep",
+                            "DefinedTerm"
+                        ],
+                        "position": "8",
+                        "termCode": "FDOR8",
+                        "name": "FDOR8"
+                    },
+                    {
+                        "@id": "#FDOR9",
+                        "@type": [
+                            "HowToStep",
+                            "DefinedTerm"
+                        ],
+                        "position": "9",
+                        "termCode": "FDOR9",
+                        "name": "FDOR9"
+                    },
+                    {
+                        "@id": "#FDOR10",
+                        "@type": [
+                            "HowToStep",
+                            "DefinedTerm"
+                        ],
+                        "position": "10",
+                        "termCode": "FDOR10",
+                        "name": "FDOR10"
+                    },
+                    {
+                        "@id": "#FDOR11",
+                        "@type": [
+                            "HowToStep",
+                            "DefinedTerm"
+                        ],
+                        "position": "11",
+                        "termCode": "FDOR11",
+                        "name": "FDOR11"
+                    },
+                    {
+                        "@id": "#FDOR12",
+                        "@type": [
+                            "HowToStep",
+                            "DefinedTerm"
+                        ],
+                        "position": "12",
+                        "termCode": "FDOR12",
+                        "name": "FDOR12"
+                    },
+                    {
+                        "@id": "https://orcid.org/0000-0003-4098-0464",
+                        "@type": "Person",
+                        "name": "George Strawn"
+                    },
+                    {
+                        "@id": "https://orcid.org/0000-0003-3538-0106",
+                        "@type": "Person",
+                        "name": "Peter Wittenburg"
+                    },
+                    {
+                        "@id": "https://orcid.org/0000-0001-9842-9718",
+                        "@type": "Person",
+                        "name": "Stian Soiland-Reyes"
+                    },
+                    {
+                        "@id": "https://orcid.org/0000-0003-0158-2957",
+                        "@type": "Person",
+                        "name": "Karsten Peters-von Gehlen"
+                    },
+                    {
+                        "@id": "https://orcid.org/0000-0003-1254-7604",
+                        "@type": "Person",
+                        "name": "Larry Lannom"
+                    },
+                    {
+                        "@id": "https://orcid.org/0000-0001-6337-8674",
+                        "@type": "Person",
+                        "name": "Ulrich Schwardmann"
+                    },
+                    {
+                        "@id": "https://orcid.org/0000-0003-2277-5176",
+                        "@type": "Person",
+                        "name": "Christophe Blanch"
+                    },
+                    {
+                        "@id": "http://spdx.org/licenses/CC-BY-4.0",
+                        "@type": "CreativeWork",
+                        "name": "CC-BY-4.0",
+                        "description": "Creative Commons Attribution 4.0 International",
+                        "version": "4.0",
+                        "url": "https://creativecommons.org/licenses/by/4.0/"
+                    }
+                ]
+            }
