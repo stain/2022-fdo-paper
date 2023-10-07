@@ -66,7 +66,7 @@
             "maintainer": {
               "@id": "https://orcid.org/0000-0001-9842-9718"
             },
-            "name": "FDO Forum FDO Requirement Specifications Version 2.1",
+            "name": "FDO Forum FDO Requirement Specifications Version 2.1 (RO-Crate)",
             "version": "2.1",
             "cite-as": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
           },
@@ -153,7 +153,7 @@
               "@id": "https://orcid.org/0000-0003-2277-5176"
             }
           ],
-          "name": "FDO Forum FDO Requirement Specifications Version 2.1",
+          "name": "FDO Forum FDO Requirement Specifications Version 2.1 (PDF)",
           "alternateName": "PR-RequirementSpec-2.1-20221017",
           "datePublished": "2022-10-27",
           "publisher": {
@@ -184,7 +184,7 @@
       {
         "@id": "https://fairdo.org/",
         "@type": "Organization",
-        "name": "FAIR Digital OBject Forum"
+        "name": "FAIR Digital Object Forum"
       },
       {
         "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx",
@@ -520,7 +520,7 @@
             "@id": "https://codata.org/worldfair-global-cooperation-on-fair-data-policy-and-practice-a-major-two-year-project-starts-today/"
           }
         ],
-        "name": "Gr Note 1",
+        "name": "G3 Note 1",
         "position": "1",
         "text": "The FDO Forum will not become engaged in measuring FAIRness. Initiatives organised in the framework of RDA or CODATA are working on this topic."
       },
@@ -577,6 +577,7 @@
       {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G7-note1",
         "@type": "HowToTip",
+        "name": "G7 Note 1",
         "citation": {
           "@id": "https://w3id.org/ro/doi/10.5281/TODO-WD-TypingFDOs"
         },
