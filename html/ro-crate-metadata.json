@@ -67,7 +67,12 @@
         {
             "@id": "https://zenodo.org/record/8075230/files/evaluating-fdo-and-ld-crate.zip",
             "@type": "DataDownload",
-            "encodingFormat": ["application/zip", {"@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/263"}],
+            "encodingFormat": [
+                "application/zip",
+                {
+                    "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/263"
+                }
+            ],
             "contentSize": "174349"
         },
         {
