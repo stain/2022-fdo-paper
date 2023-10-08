@@ -16,7 +16,15 @@
             "isBasedOn": {
                 "@id": "https://doi.org/10.5281/zenodo.7782262"
             }
-        },    
+        }, 
+        {
+          "@id": "../PR-RequirementSpec-2.1/ro-crate-metadata.json",
+          "@type": "CreativeWork",
+          "encodingFormat": "application/ld+json",
+          "conformsTo": {
+            "@id": "https://w3id.org/ro/crate/1.1"
+          }
+        },  
         {
             "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262",
             "@type": "Dataset",
@@ -75,55 +83,55 @@
             "@type": "Dataset",
             "author": [
               {
-                "@id": "https://orcid.org/0000-0001-7337-3009", 
+                "@id": "https://orcid.org/0000-0001-7337-3009"
               }, 
               {
-                "@id": "https://orcid.org/0000-0003-2277-5176", 
+                "@id": "https://orcid.org/0000-0003-2277-5176"
               }, 
               {
-                "@id": "https://orcid.org/0000-0002-8446-3410", 
+                "@id": "https://orcid.org/0000-0002-8446-3410"
               }, 
               {
-                "@id": "https://orcid.org/0000-0002-4154-2610", 
+                "@id": "https://orcid.org/0000-0002-4154-2610"
               }, 
               {
-                "@id": "https://orcid.org/0000-0001-8050-0299", 
+                "@id": "https://orcid.org/0000-0001-8050-0299"
               }, 
               {
-                "@id": "https://orcid.org/0000-0003-2804-688X", 
+                "@id": "https://orcid.org/0000-0003-2804-688X"
               }, 
               {
-                "@id": "https://orcid.org/0000-0003-1254-7604", 
+                "@id": "https://orcid.org/0000-0003-1254-7604"
               }, 
               {
-                "@id": "https://orcid.org/0000-0003-0158-2957", 
+                "@id": "https://orcid.org/0000-0003-0158-2957"
               }, 
               {
-                "@id": "https://orcid.org/0000-0002-0994-728X", 
+                "@id": "https://orcid.org/0000-0002-0994-728X"
               }, 
               {
-                "@id": "https://orcid.org/0000-0003-4124-9649", 
+                "@id": "https://orcid.org/0000-0003-4124-9649"
               }, 
               {
-                "@id": "https://orcid.org/0000-0001-6337-8674", 
+                "@id": "https://orcid.org/0000-0001-6337-8674"
               }, 
               {
-                "@id": "https://orcid.org/0000-0001-9842-9718", 
+                "@id": "https://orcid.org/0000-0001-9842-9718"
               }, 
               {
-                "@id": "https://orcid.org/0000-0003-4098-0464", 
+                "@id": "https://orcid.org/0000-0003-4098-0464"
               }, 
               {
-                "@id": "https://orcid.org/0000-0001-7807-186X", 
+                "@id": "https://orcid.org/0000-0001-7807-186X"
               }, 
               {
-                "@id": "https://orcid.org/0000-0003-0351-6523", 
+                "@id": "https://orcid.org/0000-0003-0351-6523"
               }, 
               {
-                "@id": "https://orcid.org/0000-0003-3538-0106", 
+                "@id": "https://orcid.org/0000-0003-3538-0106"
               }, 
               {
-                "@id": "https://orcid.org/0000-0002-5762-6747", 
+                "@id": "https://orcid.org/0000-0002-5762-6747"
               }
             ],
             "description": "RO-Crate for the FDO Requirement Specification document, which specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
@@ -169,6 +177,59 @@
           },
           "version": "3.0",
           "cite-as": "https://doi.org/10.5281/zenodo.7782262",
+          "author": [
+          {
+            "@id": "https://orcid.org/0000-0001-7337-3009"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0003-2277-5176"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0002-8446-3410"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0002-4154-2610"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0001-8050-0299"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0003-2804-688X"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0003-1254-7604"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0003-0158-2957"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0002-0994-728X"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0003-4124-9649"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0001-6337-8674"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0001-9842-9718"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0003-4098-0464"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0001-7807-186X"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0003-0351-6523"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0003-3538-0106"
+          }, 
+          {
+            "@id": "https://orcid.org/0000-0002-5762-6747"
+          }
+        ],
           "editor": [
             {
               "@id": "https://orcid.org/0000-0003-4098-0464"
@@ -176,7 +237,7 @@
             {
               "@id": "https://orcid.org/0000-0003-3538-0106"
             }
-          ],        
+          ],  
         "step": [
           {
             "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generic-guidelines"
@@ -186,32 +247,78 @@
           }
         ],
         "isBasedOn": {
-            "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx"
+            "@id": "https://doi.org/10.5281/zenodo.7781926"
         }
       },
+      {
+        "@id": "https://doi.org/10.5281/zenodo.7781926",
+        "@type": "HowTo",
+        "author": [
+            {
+              "@id": "https://orcid.org/0000-0003-4098-0464"
+            },
+            {
+              "@id": "https://orcid.org/0000-0003-3538-0106"
+            },
+            {
+              "@id": "https://orcid.org/0000-0001-9842-9718"
+            },
+            {
+              "@id": "https://orcid.org/0000-0003-0158-2957"
+            },
+            {
+              "@id": "https://orcid.org/0000-0003-1254-7604"
+            },
+            {
+              "@id": "https://orcid.org/0000-0001-6337-8674"
+            },
+            {
+              "@id": "https://orcid.org/0000-0003-2277-5176"
+            }
+          ],
+          "name": "FDO Forum FDO Requirement Specifications Version 2.1 (PDF)",
+          "alternateName": "PR-RequirementSpec-2.1-20221017",
+          "datePublished": "2022-10-27",
+          "version": "2.1",
+          "cite-as": "https://doi.org/10.5281/zenodo.7781926"
+      },      
+      {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926",
+        "@type": "Dataset",
+        "author": [
+          {
+            "@id": "https://orcid.org/0000-0003-4098-0464"
+          },
+          {
+            "@id": "https://orcid.org/0000-0003-3538-0106"
+          },
+          {
+            "@id": "https://orcid.org/0000-0001-9842-9718"
+          },
+          {
+            "@id": "https://orcid.org/0000-0003-0158-2957"
+          },
+          {
+            "@id": "https://orcid.org/0000-0003-1254-7604"
+          },
+          {
+            "@id": "https://orcid.org/0000-0001-6337-8674"
+          },
+          {
+            "@id": "https://orcid.org/0000-0003-2277-5176"
+          }
+        ],
+        "identifier": "https://w3id.org/ro/doi/10.5281/zenodo.7781926",
+        "subjectOf": {
+          "@id": "../PR-RequirementSpec-2.1/ro-crate-metadata.json"
+        },
+        "name": "FDO Forum FDO Requirement Specifications Version 2.1 (RO-Crate)",
+        "version": "2.1"
+      },      
       {
         "@id": "https://fairdo.org/",
         "@type": "Organization",
         "name": "FAIR Digital Object Forum"
-      },
-      {
-        "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx",
-        "@type": "CreativeWork",
-        "name": "FAIR Digital Object Framework",
-        "publisher": {
-            "@id": "https://github.com/GEDE-RDA-Europe/"
-        },
-        "version": "1.02",
-        "datePublished": "2019-11-22"
-      },
-      {
-        "@id": "https://github.com/GEDE-RDA-Europe/",
-        "@type": "Organization",
-        "name": "Group of European Data Experts in RDA",
-        "alternateName": "GEDE-RDA",
-        "parentOrganization": {
-            "@id": "https://www.rd-alliance.org/"
-        }
       },
       {
         "@id": "https://orcid.org/0000-0001-6337-8674",
