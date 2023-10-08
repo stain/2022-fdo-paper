@@ -257,14 +257,14 @@
         "name": "George Strawn"
       },
       {
-        "@id": "https://w3id.org/ro/doi/10.5281/TODO-PR-MachineActionDef",
+        "@id": "https://docs.google.com/document/d/1GHFPAUGpNvYaxctkx-CpvY1vKf_aGZpSlWGOWvyXSiQ/edit",
         "alternateName": "PR-MachineActionDef-2.0-20220611",
         "name": "FDO Machine Actionability"
       },
       {
-        "@id": "https://w3id.org/ro/doi/10.5281/TODO-WD-TypingFDOs",
+        "@id": "https://docs.google.com/document/d/1qp3N4ccLF6XGWdCEpideEwCSwp6tqc-O3pnV_d8qap4/edit",
         "@type": "CreativeWork",
-        "alternateName": "WD-TypingFDOs-1.0-20220310"
+        "alternateName": "WD-Typing-FAIR-DO-1.0-20220310"
       },
       {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR1",
@@ -284,7 +284,7 @@
           "DefinedTerm"
         ],
         "citation": {
-          "@id": "https://w3id.org/ro/doi/10.5281/TODO-FAIR"
+          "@id": "https://doi.org/10.1038/sdata.2016.18"
         },
         "description": "Metadata schemas are maintained by communities of practice and are FDOs. Such metadata schemas should therefore themselves follow FAIR principles",
         "name": "FDOR10",
@@ -390,7 +390,7 @@
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR4-note2",
         "@type": "HowToTip",
         "citation": {
-          "@id": "https://w3id.org/ro/doi/10.5281/TODO-FAIR"
+          "@id": "https://doi.org/10.1038/sdata.2016.18"
         },
         "name": "FDOR4 Note 2",
         "position": "2",
@@ -547,7 +547,7 @@
           "DefinedTerm"
         ],
         "citation": {
-          "@id": "https://w3id.org/ro/doi/10.5281/TODO-PR-MachineActionDef"
+          "@id": "https://docs.google.com/document/d/1GHFPAUGpNvYaxctkx-CpvY1vKf_aGZpSlWGOWvyXSiQ/edit"
         },
         "description": "FDOs need to support machine actionability as being specified by FDO PR-MachineActionDef-2.0 or later",
         "name": "G4",
@@ -595,7 +595,7 @@
         "@type": "HowToTip",
         "name": "G7 Note 1",
         "citation": {
-          "@id": "https://w3id.org/ro/doi/10.5281/TODO-WD-TypingFDOs"
+          "@id": "https://docs.google.com/document/d/1qp3N4ccLF6XGWdCEpideEwCSwp6tqc-O3pnV_d8qap4/edit"
         },
         "text": "A typing system for FDOs is currently being worked out by FDO Forum"
       },
@@ -823,7 +823,11 @@
         "publisher": {
           "@id": "https://codata.org/"
         }
+      },
+      {
+        "@id": "https://doi.org/10.1038/sdata.2016.18",
+        "name": "The FAIR Guiding Principles for scientific data management and stewardship",
+        "@type": "ScholarlyArticle"
       }
-
     ]
   }
