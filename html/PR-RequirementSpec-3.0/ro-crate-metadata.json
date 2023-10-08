@@ -839,6 +839,99 @@
       "position": "2"
     },
     {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#pidLayer",
+      "@type": "HowToSection",
+      "position": "2",
+      "name": "PID Layer Specifications",
+      "disambiguatingDescription": "FDO PID Layer specifications FDO-PIDR1–FDO-PIDR6",
+      "itemListElement": [
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR1"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR2"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR3"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR4"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR5"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR6"
+        }
+
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer",
+      "@type": "HowToSection",
+      "position": "3",
+      "name": "FDO Layer Specifications",
+      "disambiguatingDescription": "FDO FDO Layer specifications FDO-FDOR1–FDO-FDOR11",
+      "description": "This document does not include details about the schemas defining FDO profiles and attributes. For this we refer to the document on Implementation of Attributes, Types, Profiles and Registries.",
+      "citation": {
+        "@id": "https://doi.org/10.5281/zenodo.7825572"
+      },
+      "itemListElement": [
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR1"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR2"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR3"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR5"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR6"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR7"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR8"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR9"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR10"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR11"
+        }
+      ]
+    },   
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#resourceLayer",
+      "@type": "HowToSection",
+      "position": "4",
+      "name": "Resource Layer Specifications",
+      "disambiguatingDescription": "FDO Resource Layer specifications FDO-RESR1–FDO-RESR2",
+      "description": "As has been mentioned, the resources referenced by the FDO are being managed by different service providers and we are confronted with a great amount of legacy data and a variety of practices. Therefore, we can only make general statements and should expect an extended period during which existing approaches will move towards interoperability and machine-navigability.",
+      "citation": {
+        "@id": "https://doi.org/10.5281/zenodo.7825572"
+      },
+      "itemListElement": [
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR1"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR2"
+        }
+      ]
+    },
+    {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements",
       "@type": "HowToSection",
       "position": "1",
