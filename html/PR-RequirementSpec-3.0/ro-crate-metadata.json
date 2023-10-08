@@ -424,10 +424,11 @@
         "HowToStep",
         "DefinedTerm"
       ],
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR1"},
       "description": "A PID, standing for a globally unique, persistent and resolvable identifier, is assumed to be the basis for FAIR Digital Objects. Every FDO is assigned one or more PIDs.",
-      "name": "FDOR1",
+      "name": "FDOR-GR1",
       "position": "1",
-      "termCode": "FDOR1"
+      "termCode": "FDOR-GR1"
     },
     {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR10",
@@ -435,6 +436,7 @@
         "HowToStep",
         "DefinedTerm"
       ],
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR10"},
       "citation": {
         "@id": "https://doi.org/10.1038/sdata.2016.18"
       },
@@ -449,6 +451,7 @@
         "HowToStep",
         "DefinedTerm"
       ],
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR11"},
       "description": "A collection of FDOs is also an FDO. The content of collection FDOs describes its construction using an agreed formal language which specifies the relationships of the constituent members. An FDO may be a member of several collections.",
       "name": "FDOR11",
       "position": "11",
@@ -460,6 +463,7 @@
         "HowToStep",
         "DefinedTerm"
       ],
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR12"},
       "description": "Deletion of an FDO must lead to standardised and thus machine interpretable tombstone notes in metadata and PID records. The PID itself is not deleted.",
       "name": "FDOR12",
       "position": "12",
@@ -471,32 +475,23 @@
         "HowToStep",
         "DefinedTerm"
       ],
-      "description": "A PID resolves to a structured record ( PID Record) compliant with a specified PID Profile which leads to resolution results that enable programmatic resolution from PID back to the FDO and its elements as specified by these requirements. PID Records represent the information characterizing FDOs and together with their resolving PIDs they can be themselves FDOs.",
+      "skos:closeMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR2"},
+      "description": "A PID resolves to a structured record (PID Record) compliant with a specified PID Profile which leads to resolution results that enable programmatic resolution from PID back to the FDO and its elements as specified by these requirements. PID Records represent the information characterizing FDOs and together with their resolving PIDs they can be themselves FDOs.",
       "itemListElement": [
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2-note1"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2-note2"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR-GR2-note1"
         }
       ],
-      "name": "FDOR2",
+      "name": "FDOR-GR2",
       "position": "2",
-      "termCode": "FDOR2"
+      "termCode": "FDOR-GR2"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2-note1",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR-GR2-note1",
       "@type": "HowToTip",
-      "name": "FDOR2 Note 1",
+      "name": "FDOR-GR2 Note 1",
       "position": "1",
-      "text": "The term “PID Record” has been used extensively for historical reasons, however, the term “FDO Record” would be more appropriate since it contains attributes describing FDO properties."
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2-note2",
-      "@type": "HowToTip",
-      "name": "FDOR2 Note 2",
-      "position": "2",
-      "text": "The FDO Typing System is currently being specified. PID Profiles will be specified by communities of practices."
+      "text": "The term “PID Record” is synonymous to the term “FDO Record”."
     },
     {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR3",
@@ -504,10 +499,17 @@
         "HowToStep",
         "DefinedTerm"
       ],
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR3"},
       "description": "If an FDO contains a structured bit-sequence, the structured PID record includes at least a reference to the location(s) where the bit-sequence encoding the content of a FAIR-DO (FDO) can be accessed and the type definition of the FDO. The structured record may also contain PIDs pointing to Metadata FDOs describing properties of the target FDO.",
-      "name": "FDOR3",
+      "name": "FDOR-GR3",
       "position": "3",
-      "termCode": "FDOR3"
+      "termCode": "FDOR-GR3",
+      "itemListElement": {
+        "@id": "FDOR-GR3-note1",
+        "@type": "HowToTip",
+        "name": "FDOR-GR3 Note 1",
+        "text": "Note that ‘location’ here means the network access point providing FDO access, not necessarily the network storage location of the underlying bits."
+      }
     },
     {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4",
@@ -515,45 +517,11 @@
         "HowToStep",
         "DefinedTerm"
       ],
-      "description": "The PID record needs to contain mandatory FDO attributes, may contain optional FDO attributes and attributes agreed upon by recognized communities. Values of attributes can be references. Expectations of such references should be specified in the PID profile or definition of said attribute in a Data Type Registry.",
-      "itemListElement": [
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note1"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note2"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note3"
-        }
-      ],
-      "name": "FDOR4",
+      "skos:closeMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR4"},
+      "description": "The PID record needs to contain mandatory FDO attributes, may contain optional FDO attributes and attributes agreed upon by recognized communities. Values of attributes can be references. Expectations of which attribute values are contained within the PID record and which are references pointing from the record to external sources should be specified in the PID profile or definition of said attribute in a Data Type Registry.",
+      "name": "FDO-GR4",
       "position": "4",
-      "termCode": "FDOR4"
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note1",
-      "@type": "HowToTip",
-      "name": "FDOR4 Note 1",
-      "position": "1",
-      "text": "Values of attributes can be presented as RDF assertions or as “attribute-value pairs” allowing machines to act."
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note2",
-      "@type": "HowToTip",
-      "citation": {
-        "@id": "https://doi.org/10.1038/sdata.2016.18"
-      },
-      "name": "FDOR4 Note 2",
-      "position": "2",
-      "text": "Data Type Registry entries are identified by a PID and should be FAIR compliant."
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note3",
-      "@type": "HowToTip",
-      "name": "FDOR4 Note 3",
-      "position": "3",
-      "text": "It was discussed whether there should be just two categories (mandatory, optional), but it was agreed that:  (a) the set of mandatory attributes will be small given also different FDO configuration types, (b) the FDO Forum needs to define attributes which are widely used to increase interoperability and (c) the communities definitively will have the freedom to add attributes which are important for their needs."
+      "termCode": "FDO-GR4"
     },
     {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5",
@@ -561,6 +529,7 @@
         "HowToStep",
         "DefinedTerm"
       ],
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR5"},
       "description": "Each FDO identified by a PID can be accessed or operated on using an interface protocol by specifying the PID of a registered supported operation",
       "itemListElement": {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5-note1"
@@ -582,6 +551,7 @@
         "HowToStep",
         "DefinedTerm"
       ],
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR6"},
       "description": "Any basic FDO interface protocol offers standard Create, Read, Update, Delete (CRUD) operations on FDOs and a possibility to use extended/domain operations for specific applications.",
       "name": "FDOR6",
       "position": "6",
@@ -593,6 +563,7 @@
         "HowToStep",
         "DefinedTerm"
       ],
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR7"},
       "description": "The relations between FDO Types and supported operations are maintained in separate registries.",
       "name": "FDOR7",
       "position": "7",
@@ -604,6 +575,7 @@
         "HowToStep",
         "DefinedTerm"
       ],
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR8"},
       "description": "Metadata can themselves be FDOs which describe the properties of the referenced FDO. They must be specified by a registered schema that refers to defined and registered metadata categories.",
       "itemListElement": {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8-note1"
@@ -626,6 +598,7 @@
         "HowToStep",
         "DefinedTerm"
       ],
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR9"},
       "description": "Metadata can be of different types such as descriptive, deep scientific, provenance, system, access permissions, transactions, etc.",
       "itemListElement": {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9-note1"
@@ -648,7 +621,7 @@
         "DefinedTerm"
       ],
       "description": "FDOs should provide a path for long term infrastructure investments that is not tied to any particular technology stack.",
-      "skos:exactMatch": "old#G1",
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G1"},
       "name": "G1",
       "position": "1",
       "termCode": "G1"
@@ -660,7 +633,7 @@
         "DefinedTerm"
       ],
       "description": "FDOs need to generate trust in accurate data survival over long periods of time, assuring researchers, funders, and developers that their significant effort in reusing them will be worthwhile.",
-      "skos:exactMatch": "old#G2",
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G2"},
       "name": "G2",
       "position": "2",
       "termCode": "G2"
@@ -672,7 +645,7 @@
         "DefinedTerm"
       ],
       "description": "FDOs must offer compliance with the FAIR principles through measurable indicators of FAIRness.",
-      "skos:exactMatch": "old#G3",
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G3"},
       "itemListElement": {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G3-note1"
       },
@@ -705,7 +678,7 @@
         "@id": "https://doi.org/10.5281/zenodo.7825650"
       },
       "description": "FDOs need to support machine actionability as being specified by FDO PR-MachineActionDef-2.0 or later",
-      "skos:exactMatch": "old#G4",
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G4"},
       "name": "G4",
       "position": "4",
       "termCode": "G4"
@@ -717,7 +690,7 @@
         "DefinedTerm"
       ],
       "description": "FDOs need to support the abstraction principle, i.e., abstracting away details that are not needed at the basic object management level. At that level there is no need to distinguish among different types such as data, metadata, software, semantic assertions, etc., for data management operations.",
-      "skos:exactMatch": "old#G5",
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G5"},
       "name": "G5",
       "position": "5",
       "termCode": "G5"
@@ -729,7 +702,7 @@
         "DefinedTerm"
       ],
       "description": "FDOs need to support stable bindings among all information entities required for machine navigation of the global data space through the use of global, unique, and resolvable persistent identifiers.",
-      "skos:exactMatch": "old#G6",
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G6"},
       "name": "G6",
       "position": "6",
       "termCode": "G6"
@@ -741,7 +714,7 @@
         "DefinedTerm"
       ],
       "description": "FDOs need to support encapsulation, such that operations can be associated with FDOs of all types.",
-      "skos:exactMatch": "old#G7",
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G7"},
       "itemListElement": {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G7-note1"
       },
@@ -765,7 +738,7 @@
         "DefinedTerm"
       ],
       "description": "FDOs need to support technology independence, allowing implementations using different technologies.",
-      "skos:exactMatch": "old#G8",
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G8"},
       "name": "G8",
       "position": "8",
       "termCode": "G8"
@@ -777,7 +750,7 @@
         "DefinedTerm"
       ],
       "description": "FDOs need to comply with minimal agreed standards, e.g., for movement of FDOs between systems, for interaction with FDOs, etc., to guarantee FDO interoperability across heterogeneous systems.",
-      "skos:exactMatch": "old#G9",
+      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G9"},
       "itemListElement": {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G9-note1"
       },
@@ -798,8 +771,7 @@
         "HowToSection",
         "DefinedTermSet"
       ],
-      "description": "These requirements specify the rules that must be met by all implementations claiming FDO compliance. These requirements may evolve due to the increasing insights obtained from implementation experience",
-      "disambiguatingDescription": "FDO Requirements FDOR1–FDOR12",
+      "disambiguatingDescription": "FDO Requirements FDO-GR*, FDO-PIDR*, FDO-FDOR*, FDO-RESR*",
       "hasDefinedTerm": [
         {
           "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR1"
@@ -840,6 +812,30 @@
       ],
       "itemListElement": [
         {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#pidLayer"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#resourceLayer"
+        }
+
+      ],
+      "name": "FDO Requirements",
+      "position": "2"
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements",
+      "@type": "HowToSection",
+      "position": "1",
+      "name": "General Requirements",
+      "disambiguatingDescription": "FDO general requirements FDOR-GR1–FDOR-GR15",
+      "itemListElement": [
+        {
           "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR1"
         },
         {
@@ -875,10 +871,9 @@
         {
           "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR12"
         }
-      ],
-      "name": "FDO Requirements",
-      "position": "2"
+      ]
     },
+
     {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generic-guidelines",
       "@type": [
