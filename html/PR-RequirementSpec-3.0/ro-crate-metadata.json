@@ -139,9 +139,9 @@
     {
       "@id": "https://doi.org/10.5281/zenodo.7782262",
       "@type": "HowTo",
-      "name": "FDO Forum FDO Requirement Specifications Version 3.0 (PDF)",
+      "alternateName": "FDO Forum FDO Requirement Specifications Version 3.0",
       "description": "This FDO Requirement Specification document specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements",
-      "alternateName": "PR-RequirementSpec-3.0-20230112",
+      "name": "PR-RequirementSpec-3.0-20230112",
       "datePublished": "2023-01-12",
       "publisher": {
         "@id": "https://fairdo.org/"
@@ -217,9 +217,51 @@
           "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
         }
       ],
-      "isBasedOn": {
-        "@id": "https://doi.org/10.5281/zenodo.7781926"
-      }
+      "isBasedOn": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7825703",
+          "@type": "CreateWork",
+          "name": "PR-ConfigurationTypes-2.1-20221017"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7825650",
+          "@type": "CreateWork",
+          "name": "PR-MachineActionDef-2.2-20221119"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7825630",
+          "@type": "CreateWork",
+          "name": "PR-PIDProfileAttributes-2.1-20221017"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7825693",
+          "@type": "CreateWork",
+          "name": "PR-FDO-KernelAttributesAndMetadata-2.0-20221017"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7825686",
+          "@type": "CreateWork",
+          "name": "PR-Granularity-2.2-20221017"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7825599",
+          "@type": "CreateWork",
+          "name": "PR-TypingFDOs-2.0-20220608"
+        },
+        { "@id": "https://doi.org/10.5281/zenodo.7825572",
+          "@type": "CreateWork",
+          "name": "WD-Implementation-of-Attributes-0.4-20230314"
+        },
+        { "@id": "https://doi.org/10.5281/zenodo.7825549",
+          "@type": "CreativeWork",
+          "name": "PEN-FDO-Upload-1.1-20221017"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7824796",
+          "@type": "CreateWork",
+          "name": "PED-DOIPEndorsement-1.1-20221017"
+        }
+      ]
     },
     {
       "@id": "https://doi.org/10.5281/zenodo.7781926",
@@ -247,8 +289,8 @@
           "@id": "https://orcid.org/0000-0003-2277-5176"
         }
       ],
-      "name": "FDO Forum FDO Requirement Specifications Version 2.1 (PDF)",
-      "alternateName": "PR-RequirementSpec-2.1-20221017",
+      "alternateName": "FDO Forum FDO Requirement Specifications Version 2.1",
+      "name": "PR-RequirementSpec-2.1-20221017",
       "datePublished": "2022-10-27",
       "version": "2.1",
       "cite-as": "https://doi.org/10.5281/zenodo.7781926"
@@ -365,7 +407,7 @@
       "@id": "https://orcid.org/0000-0001-7807-186X",
       "@type": "Person",
       "name": "Dieter van Uytvanck"
-    },
+    },FDO Configuration Types:
     {
       "@id": "https://orcid.org/0000-0003-0351-6523",
       "@type": "Person",
@@ -375,16 +417,6 @@
       "@id": "https://orcid.org/0000-0002-5762-6747",
       "@type": "Person",
       "name": "Carlo Zw\u00f6lf"
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/TODO-PR-MachineActionDef",
-      "alternateName": "PR-MachineActionDef-2.0-20220611",
-      "name": "FDO Machine Actionability"
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/TODO-WD-TypingFDOs",
-      "@type": "CreativeWork",
-      "alternateName": "PR-MachineActionDef-2.0-20220611"
     },
     {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR1",
@@ -404,7 +436,7 @@
         "DefinedTerm"
       ],
       "citation": {
-        "@id": "https://w3id.org/ro/doi/10.5281/TODO-FAIR"
+        "@id": "https://doi.org/10.1038/sdata.2016.18"
       },
       "description": "Metadata schemas are maintained by communities of practice and are FDOs. Such metadata schemas should therefore themselves follow FAIR principles",
       "name": "FDOR10",
@@ -510,7 +542,7 @@
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note2",
       "@type": "HowToTip",
       "citation": {
-        "@id": "https://w3id.org/ro/doi/10.5281/TODO-FAIR"
+        "@id": "https://doi.org/10.1038/sdata.2016.18"
       },
       "name": "FDOR4 Note 2",
       "position": "2",
@@ -670,7 +702,7 @@
         "DefinedTerm"
       ],
       "citation": {
-        "@id": "https://w3id.org/ro/doi/10.5281/TODO-PR-MachineActionDef"
+        "@id": "https://doi.org/10.5281/zenodo.7825650"
       },
       "description": "FDOs need to support machine actionability as being specified by FDO PR-MachineActionDef-2.0 or later",
       "skos:exactMatch": "old#G4",
@@ -722,7 +754,7 @@
       "@type": "HowToTip",
       "name": "G7 Note 1",
       "citation": {
-        "@id": "https://w3id.org/ro/doi/10.5281/TODO-WD-TypingFDOs"
+        "@id": "https://doi.org/10.5281/zenodo.7825599"
       },
       "text": "A typing system for FDOs is currently being worked out by FDO Forum"
     },
@@ -955,6 +987,11 @@
       "publisher": {
         "@id": "https://codata.org/"
       }
+    },
+    {
+      "@id": "https://doi.org/10.1038/sdata.2016.18",
+      "name": "The FAIR Guiding Principles for scientific data management and stewardship",
+      "@type": "ScholarlyArticle"
     }
   ]
 }
