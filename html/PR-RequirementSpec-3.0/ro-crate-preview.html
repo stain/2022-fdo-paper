@@ -25,21 +25,6 @@
       }
     },
     {
-      "@id": "../PR-RequirementSpec-2.1/ro-crate-metadata.json",
-      "@type": "CreativeWork",
-      "encodingFormat": "application/ld+json",
-      "conformsTo": {
-        "@id": "https://w3id.org/ro/crate/1.1"
-      },
-      "@reverse": {
-        "subjectOf": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
-          }
-        ]
-      }
-    },
-    {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262",
       "@type": "Dataset",
       "author": [
@@ -95,11 +80,8 @@
           "@id": "https://orcid.org/0000-0002-5762-6747"
         }
       ],
-      "description": "RO-Crate for the FDO Requirement Specification document PR-RequirementSpec-3.0-20230112, which specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
       "datePublished": "2023-10-07",
-      "publisher": {
-        "@id": "https://orcid.org/0000-0001-9842-9718"
-      },
+      "description": "RO-Crate for the FDO Requirement Specification document PR-RequirementSpec-3.0-20230112, which specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
       "editor": [
         {
           "@id": "https://orcid.org/0000-0003-4098-0464"
@@ -126,12 +108,13 @@
       "maintainer": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
-      "mentions": [
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#create"
-        }
-      ],
+      "mentions": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#create"
+      },
       "name": "FDO Forum FDO Requirement Specifications Version 3.0",
+      "publisher": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
       "version": "3.0",
       "cite-as": "https://w3id.org/ro/doi/10.5281/zenodo.7782262",
       "@reverse": {
@@ -148,31 +131,14 @@
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#create",
-      "@type": "CreateAction",
-      "startTime": "2023-10-07T13:09:19+02:00",
-      "endTime": "2023-10-08T22:21:57+01:00",
-      "actionStatus": {
-        "@id": "http://schema.org/ActiveActionStatus"
-      },
-      "agent": {
-        "@id": "https://orcid.org/0000-0001-9842-9718"
-      },
-      "name": "Creating this RO-Crate",
-      "description": "By updating RO-Crate for PR-RequirementSpec-2.1-20221017 with changes in PR-RequirementSpec-3.0-20230112",
-      "object": [
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
-        },
-        {
-          "@id": "https://doi.org/10.5281/zenodo.7782262"
-        }
-      ],
-      "result": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-      },
+      "@id": "http://spdx.org/licenses/CC-BY-4.0",
+      "@type": "CreativeWork",
+      "description": "Creative Commons Attribution 4.0 International",
+      "name": "CC-BY-4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "4.0",
       "@reverse": {
-        "mentions": [
+        "license": [
           {
             "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
           }
@@ -180,17 +146,80 @@
       }
     },
     {
+      "@id": "https://codata.org/",
+      "@type": "Organization",
+      "name": "CODATA",
+      "@reverse": {
+        "publisher": [
+          {
+            "@id": "https://codata.org/worldfair-global-cooperation-on-fair-data-policy-and-practice-a-major-two-year-project-starts-today/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://codata.org/worldfair-global-cooperation-on-fair-data-policy-and-practice-a-major-two-year-project-starts-today/",
+      "@type": "CreativeWork",
+      "name": "WorldFAIR: Global cooperation on FAIR data policy and practice – a major two-year project starts today!",
+      "publisher": {
+        "@id": "https://codata.org/"
+      },
+      "@reverse": {
+        "citation": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G3-note1"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1038/sdata.2016.18",
+      "@type": "ScholarlyArticle",
+      "name": "The FAIR Guiding Principles for scientific data management and stewardship",
+      "@reverse": {
+        "citation": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR10"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.7781926",
+      "@type": "HowTo",
+      "alternateName": "FDO Forum FDO Requirement Specifications Version 2.1",
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0003-4098-0464"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3538-0106"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0158-2957"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1254-7604"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6337-8674"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-2277-5176"
+        }
+      ],
+      "datePublished": "2022-10-27",
+      "name": "PR-RequirementSpec-2.1-20221017",
+      "version": "2.1",
+      "cite-as": "https://doi.org/10.5281/zenodo.7781926"
+    },
+    {
       "@id": "https://doi.org/10.5281/zenodo.7782262",
       "@type": "HowTo",
-      "name": "FDO Forum FDO Requirement Specifications Version 3.0 (PDF)",
-      "description": "This FDO Requirement Specification document specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements",
-      "alternateName": "PR-RequirementSpec-3.0-20230112",
-      "datePublished": "2023-01-12",
-      "publisher": {
-        "@id": "https://fairdo.org/"
-      },
-      "version": "3.0",
-      "cite-as": "https://doi.org/10.5281/zenodo.7782262",
+      "alternateName": "FDO Forum FDO Requirement Specifications Version 3.0",
       "author": [
         {
           "@id": "https://orcid.org/0000-0001-7337-3009"
@@ -244,6 +273,8 @@
           "@id": "https://orcid.org/0000-0002-5762-6747"
         }
       ],
+      "datePublished": "2023-01-12",
+      "description": "This FDO Requirement Specification document specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements",
       "editor": [
         {
           "@id": "https://orcid.org/0000-0003-4098-0464"
@@ -252,6 +283,39 @@
           "@id": "https://orcid.org/0000-0003-3538-0106"
         }
       ],
+      "isBasedOn": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7825703"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7825650"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7825630"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7825693"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7825686"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7825599"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7825572"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7825549"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7824796"
+        }
+      ],
+      "name": "PR-RequirementSpec-3.0-20230112",
+      "publisher": {
+        "@id": "https://fairdo.org/"
+      },
       "step": [
         {
           "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generic-guidelines"
@@ -260,9 +324,8 @@
           "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
         }
       ],
-      "isBasedOn": {
-        "@id": "https://doi.org/10.5281/zenodo.7781926"
-      },
+      "version": "3.0",
+      "cite-as": "https://doi.org/10.5281/zenodo.7782262",
       "@reverse": {
         "isBasedOn": [
           {
@@ -282,38 +345,468 @@
       }
     },
     {
-      "@id": "https://doi.org/10.5281/zenodo.7781926",
-      "@type": "HowTo",
-      "author": [
-        {
-          "@id": "https://orcid.org/0000-0003-4098-0464"
-        },
-        {
-          "@id": "https://orcid.org/0000-0003-3538-0106"
-        },
-        {
-          "@id": "https://orcid.org/0000-0001-9842-9718"
-        },
-        {
-          "@id": "https://orcid.org/0000-0003-0158-2957"
-        },
-        {
-          "@id": "https://orcid.org/0000-0003-1254-7604"
-        },
-        {
-          "@id": "https://orcid.org/0000-0001-6337-8674"
-        },
-        {
-          "@id": "https://orcid.org/0000-0003-2277-5176"
-        }
-      ],
-      "name": "FDO Forum FDO Requirement Specifications Version 2.1 (PDF)",
-      "alternateName": "PR-RequirementSpec-2.1-20221017",
-      "datePublished": "2022-10-27",
-      "version": "2.1",
-      "cite-as": "https://doi.org/10.5281/zenodo.7781926",
+      "@id": "https://doi.org/10.5281/zenodo.7824796",
+      "@type": "CreateWork",
+      "name": "PED-DOIPEndorsement-1.1-20221017",
       "@reverse": {
         "isBasedOn": [
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.7825549",
+      "@type": "CreativeWork",
+      "name": "PEN-FDO-Upload-1.1-20221017",
+      "@reverse": {
+        "isBasedOn": [
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.7825572",
+      "@type": "CreateWork",
+      "name": "WD-Implementation-of-Attributes-0.4-20230314",
+      "@reverse": {
+        "isBasedOn": [
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ],
+        "citation": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#resourceLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.7825599",
+      "@type": "CreateWork",
+      "name": "PR-TypingFDOs-2.0-20220608",
+      "@reverse": {
+        "isBasedOn": [
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ],
+        "citation": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G7-note1"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.7825630",
+      "@type": "CreateWork",
+      "name": "PR-PIDProfileAttributes-2.1-20221017",
+      "@reverse": {
+        "isBasedOn": [
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.7825650",
+      "@type": "CreateWork",
+      "name": "PR-MachineActionDef-2.2-20221119",
+      "@reverse": {
+        "isBasedOn": [
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ],
+        "citation": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G4"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.7825686",
+      "@type": "CreateWork",
+      "name": "PR-Granularity-2.2-20221017",
+      "@reverse": {
+        "isBasedOn": [
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.7825693",
+      "@type": "CreateWork",
+      "name": "PR-FDO-KernelAttributesAndMetadata-2.0-20221017",
+      "@reverse": {
+        "isBasedOn": [
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.7825703",
+      "@type": "CreateWork",
+      "name": "PR-ConfigurationTypes-2.1-20221017",
+      "@reverse": {
+        "isBasedOn": [
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://fairdo.org/",
+      "@type": "Organization",
+      "name": "FAIR Digital Object Forum",
+      "@reverse": {
+        "publisher": [
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6337-8674",
+      "@type": "Person",
+      "name": "Ulrich Schwardmann",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7781926"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7337-3009",
+      "@type": "Person",
+      "name": "Ivonne Anders",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7807-186X",
+      "@type": "Person",
+      "name": "Dieter van Uytvanck",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8050-0299",
+      "@type": "Person",
+      "name": "Sharif Islam",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9842-9718",
+      "@type": "Person",
+      "name": "Stian Soiland-Reyes",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "ro-crate-metadata.json"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7781926"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
+          }
+        ],
+        "maintainer": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          }
+        ],
+        "publisher": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          }
+        ],
+        "agent": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#create"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0994-728X",
+      "@type": "Person",
+      "name": "Robert Quick",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4154-2610",
+      "@type": "Person",
+      "name": "Maggie Hellström",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5762-6747",
+      "@type": "Person",
+      "name": "Carlo Zwölf",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8446-3410",
+      "@type": "Person",
+      "name": "Daan Broder",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0158-2957",
+      "@type": "Person",
+      "name": "Karsten Peters-von Gehlen",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7781926"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0351-6523",
+      "@type": "Person",
+      "name": "Claus Weiland",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1254-7604",
+      "@type": "Person",
+      "name": "Larry Lannom",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7781926"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2277-5176",
+      "@type": "Person",
+      "name": "Christophe Blanch",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7781926"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2804-688X",
+      "@type": "Person",
+      "name": "Thomas Jejkal",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3538-0106",
+      "@type": "Person",
+      "name": "Peter Wittenburg",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7781926"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
+          }
+        ],
+        "editor": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4098-0464",
+      "@type": "Person",
+      "name": "George Strawn",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7781926"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
+          }
+        ],
+        "editor": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-4124-9649",
+      "@type": "Person",
+      "name": "Alexander Schlemmer",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          },
           {
             "@id": "https://doi.org/10.5281/zenodo.7782262"
           }
@@ -347,10 +840,10 @@
         }
       ],
       "identifier": "https://w3id.org/ro/doi/10.5281/zenodo.7781926",
+      "name": "FDO Forum FDO Requirement Specifications Version 2.1 (RO-Crate)",
       "subjectOf": {
         "@id": "../PR-RequirementSpec-2.1/ro-crate-metadata.json"
       },
-      "name": "FDO Forum FDO Requirement Specifications Version 2.1 (RO-Crate)",
       "version": "2.1",
       "@reverse": {
         "object": [
@@ -361,382 +854,15 @@
       }
     },
     {
-      "@id": "https://fairdo.org/",
-      "@type": "Organization",
-      "name": "FAIR Digital Object Forum",
-      "@reverse": {
-        "publisher": [
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-6337-8674",
-      "@type": "Person",
-      "name": "Ulrich Schwardmann",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7781926"
-          },
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9842-9718",
-      "@type": "Person",
-      "name": "Stian Soiland-Reyes",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "ro-crate-metadata.json"
-          },
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7781926"
-          },
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
-          }
-        ],
-        "publisher": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          }
-        ],
-        "maintainer": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          }
-        ],
-        "agent": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#create"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0158-2957",
-      "@type": "Person",
-      "name": "Karsten Peters-von Gehlen",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7781926"
-          },
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1254-7604",
-      "@type": "Person",
-      "name": "Larry Lannom",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7781926"
-          },
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-2277-5176",
-      "@type": "Person",
-      "name": "Christophe Blanch",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7781926"
-          },
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-3538-0106",
-      "@type": "Person",
-      "name": "Peter Wittenburg",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7781926"
-          },
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
-          }
-        ],
-        "editor": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-4098-0464",
-      "@type": "Person",
-      "name": "George Strawn",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7781926"
-          },
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
-          }
-        ],
-        "editor": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-7337-3009",
-      "@type": "Person",
-      "name": "Ivonne Anders",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-8446-3410",
-      "@type": "Person",
-      "name": "Daan Broder",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-4154-2610",
-      "@type": "Person",
-      "name": "Maggie Hellström",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-8050-0299",
-      "@type": "Person",
-      "name": "Sharif Islam",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-2804-688X",
-      "@type": "Person",
-      "name": "Thomas Jejkal",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-0994-728X",
-      "@type": "Person",
-      "name": "Robert Quick",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-4124-9649",
-      "@type": "Person",
-      "name": "Alexander Schlemmer",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-7807-186X",
-      "@type": "Person",
-      "name": "Dieter van Uytvanck",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0351-6523",
-      "@type": "Person",
-      "name": "Claus Weiland",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-5762-6747",
-      "@type": "Person",
-      "name": "Carlo Zwölf",
-      "@reverse": {
-        "author": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          },
-          {
-            "@id": "https://doi.org/10.5281/zenodo.7782262"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/TODO-PR-MachineActionDef",
-      "alternateName": "PR-MachineActionDef-2.0-20220611",
-      "name": "FDO Machine Actionability",
-      "@reverse": {
-        "citation": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G4"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/TODO-WD-TypingFDOs",
-      "@type": "CreativeWork",
-      "alternateName": "PR-MachineActionDef-2.0-20220611",
-      "@reverse": {
-        "citation": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G7-note1"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR1",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR1",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
-      "description": "A PID, standing for a globally unique, persistent and resolvable identifier, is assumed to be the basis for FAIR Digital Objects. Every FDO is assigned one or more PIDs.",
-      "name": "FDOR1",
-      "position": "1",
-      "termCode": "FDOR1",
+      "description": "The content of each FDO record must be structured according to an FDO profile in accordance with an FDO defined schema registered in a recognized registry.",
+      "name": "FDO-FDOR1",
+      "position": "",
+      "termCode": "FDO-FDOR1",
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -745,24 +871,284 @@
         ],
         "itemListElement": [
           {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer"
           }
         ]
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR10",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR10",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "Every FDO Type and type is associated with a PID which resolves to the FDO that includes the type definition. So it is of type FDO type definition.",
+      "name": "FDO-FDOR10",
+      "position": "10",
+      "termCode": "FDO-FDOR10",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR11",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "The FDO Type Framework specifies methods for defining types for and attaching types to FDOs",
+      "name": "FDO-FDOR11",
+      "position": "11",
+      "termCode": "FDO-FDOR11",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR2",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "The FDO record consists of a set of attribute-value pairs as defined by the FDO Profile and all used attributes need to be defined and registered according to the type specification schema.",
+      "name": "FDO-FDOR2",
+      "position": "",
+      "termCode": "FDO-FDO2",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR3",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "Each FDO record needs to contain the mandatory kernel attributes, as defined by the FDO profile, including the type of the FDO.",
+      "name": "FDO-FDOR3",
+      "position": "3",
+      "termCode": "FDO-FDOR3",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "FDO records can include a) optional kernel attributes which are defined by the FDO Forum or b) can include other community defined and registered attributes if machine actionability is guaranteed.",
+      "name": "FDO-FDOR4",
+      "position": "4",
+      "termCode": "FDO-FDO4",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR5",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "In the canonical case that an FDO includes bit-sequences encoding FDO content, the attribute-value set must contain the reference to these bit-sequences and a rich metadata description as requested by the FAIR principles.",
+      "name": "FDO-FDO5",
+      "position": "5",
+      "termCode": "FDO-FDO5",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR6",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "Every FDO must have an FDO Type, facilitating automated machine validation and processing of the FDO.",
+      "name": "FDO-FDOR6",
+      "position": "6",
+      "termCode": "FDO-FDO6",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR7",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "An FDO may have included any sort of bit-sequences (data, metadata, software, semantic assertions, etc.) but each must be typed using a type-value pair in compliance with the FAIR principles.",
+      "name": "FDO-FDOR7",
+      "position": "7",
+      "termCode": "FDO-FDOR7",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR8",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "FDOs can use any existing types or define new types, either completely new or derived from existing types.",
+      "name": "FDO-FDOR8",
+      "position": "8",
+      "termCode": "FDO-FDOR8",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR9",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "The type of an FDO is specified using an agreed upon syntactic description that may be structured and dependent on components that are themselves FDOs. This syntactic description is called FDO Type definition in the following and is an FDO itself and thus FAIR compliant.",
+      "name": "FDO-FDOR9",
+      "position": "9",
+      "termCode": "FDO-FDOR9",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR1",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "alternateName": "FDOR-GR1",
+      "description": "A PID, standing for a globally unique, persistent and resolvable identifier, is assumed to be the basis for FAIR Digital Objects. Every FDO is assigned one or more PIDs.",
+      "name": "FDO-GR1",
+      "position": "1",
+      "termCode": "FDO-GR1",
+      "skos:exactMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR1"
+      },
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR10",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
       "citation": {
-        "@id": "https://w3id.org/ro/doi/10.5281/TODO-FAIR"
+        "@id": "https://doi.org/10.1038/sdata.2016.18"
       },
       "description": "Metadata schemas are maintained by communities of practice and are FDOs. Such metadata schemas should therefore themselves follow FAIR principles",
-      "name": "FDOR10",
+      "name": "FDO-GR10",
       "position": "10",
-      "termCode": "FDOR10",
+      "termCode": "FDO-GR10",
+      "skos:exactMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR10"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -771,21 +1157,24 @@
         ],
         "itemListElement": [
           {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
           }
         ]
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR11",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR11",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
       "description": "A collection of FDOs is also an FDO. The content of collection FDOs describes its construction using an agreed formal language which specifies the relationships of the constituent members. An FDO may be a member of several collections.",
-      "name": "FDOR11",
+      "name": "FDO-GR11",
       "position": "11",
-      "termCode": "FDOR11",
+      "termCode": "FDO-GR11",
+      "skos:exactMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR11"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -794,208 +1183,232 @@
         ],
         "itemListElement": [
           {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
           }
         ]
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR12",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR12",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
       "description": "Deletion of an FDO must lead to standardised and thus machine interpretable tombstone notes in metadata and PID records. The PID itself is not deleted.",
-      "name": "FDOR12",
+      "name": "FDO-GR12",
       "position": "12",
-      "termCode": "FDOR12",
-      "@reverse": {
-        "hasDefinedTerm": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
-          }
-        ],
-        "itemListElement": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2",
-      "@type": [
-        "HowToStep",
-        "DefinedTerm"
-      ],
-      "description": "A PID resolves to a structured record ( PID Record) compliant with a specified PID Profile which leads to resolution results that enable programmatic resolution from PID back to the FDO and its elements as specified by these requirements. PID Records represent the information characterizing FDOs and together with their resolving PIDs they can be themselves FDOs.",
-      "itemListElement": [
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2-note1"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2-note2"
-        }
-      ],
-      "name": "FDOR2",
-      "position": "2",
-      "termCode": "FDOR2",
-      "@reverse": {
-        "hasDefinedTerm": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
-          }
-        ],
-        "itemListElement": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2-note1",
-      "@type": "HowToTip",
-      "name": "FDOR2 Note 1",
-      "position": "1",
-      "text": "The term “PID Record” has been used extensively for historical reasons, however, the term “FDO Record” would be more appropriate since it contains attributes describing FDO properties.",
-      "@reverse": {
-        "itemListElement": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2-note2",
-      "@type": "HowToTip",
-      "name": "FDOR2 Note 2",
-      "position": "2",
-      "text": "The FDO Typing System is currently being specified. PID Profiles will be specified by communities of practices.",
-      "@reverse": {
-        "itemListElement": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR3",
-      "@type": [
-        "HowToStep",
-        "DefinedTerm"
-      ],
-      "description": "If an FDO contains a structured bit-sequence, the structured PID record includes at least a reference to the location(s) where the bit-sequence encoding the content of a FAIR-DO (FDO) can be accessed and the type definition of the FDO. The structured record may also contain PIDs pointing to Metadata FDOs describing properties of the target FDO.",
-      "name": "FDOR3",
-      "position": "3",
-      "termCode": "FDOR3",
-      "@reverse": {
-        "hasDefinedTerm": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
-          }
-        ],
-        "itemListElement": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4",
-      "@type": [
-        "HowToStep",
-        "DefinedTerm"
-      ],
-      "description": "The PID record needs to contain mandatory FDO attributes, may contain optional FDO attributes and attributes agreed upon by recognized communities. Values of attributes can be references. Expectations of such references should be specified in the PID profile or definition of said attribute in a Data Type Registry.",
-      "itemListElement": [
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note1"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note2"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note3"
-        }
-      ],
-      "name": "FDOR4",
-      "position": "4",
-      "termCode": "FDOR4",
-      "@reverse": {
-        "hasDefinedTerm": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
-          }
-        ],
-        "itemListElement": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note1",
-      "@type": "HowToTip",
-      "name": "FDOR4 Note 1",
-      "position": "1",
-      "text": "Values of attributes can be presented as RDF assertions or as “attribute-value pairs” allowing machines to act.",
-      "@reverse": {
-        "itemListElement": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note2",
-      "@type": "HowToTip",
-      "citation": {
-        "@id": "https://w3id.org/ro/doi/10.5281/TODO-FAIR"
+      "termCode": "FDO-GR12",
+      "skos:exactMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR12"
       },
-      "name": "FDOR4 Note 2",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR13",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "The PID resolution and the FDO Layer information must be “machine actionable” i.e., are machine interpretable and belong to a type for which operations have been specified in symbolic grammar.",
+      "name": "FDO-GR13",
+      "position": "13",
+      "termCode": "FDO-GR13",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR14",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "FDOs can be configured in different ways as long as the configurations are compliant with the FDO Specifications.",
+      "name": "FDO-GR14",
+      "position": "14",
+      "termCode": "FDO-GR14",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR15",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "The granularity of FDOs is dependent on pragmatic utility decisions within the communities of practice Those communities define the level of useful entities to use in the corresponding application field.",
+      "name": "FDO-GR15",
+      "position": "15",
+      "termCode": "FDO-GR15",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "alternateName": "FDOR-GR2",
+      "description": "A PID resolves to a structured record (PID Record) compliant with a specified PID Profile which leads to resolution results that enable programmatic resolution from PID back to the FDO and its elements as specified by these requirements. PID Records represent the information characterizing FDOs and together with their resolving PIDs they can be themselves FDOs.",
+      "itemListElement": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2-note1"
+      },
+      "name": "FDO-GR2",
       "position": "2",
-      "text": "Data Type Registry entries are identified by a PID and should be FAIR compliant.",
+      "termCode": "FDO-GR2",
+      "skos:closeMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR2"
+      },
       "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
         "itemListElement": [
           {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4"
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
           }
         ]
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4-note3",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2-note1",
       "@type": "HowToTip",
-      "name": "FDOR4 Note 3",
-      "position": "3",
-      "text": "It was discussed whether there should be just two categories (mandatory, optional), but it was agreed that:  (a) the set of mandatory attributes will be small given also different FDO configuration types, (b) the FDO Forum needs to define attributes which are widely used to increase interoperability and (c) the communities definitively will have the freedom to add attributes which are important for their needs.",
+      "name": "FDO-GR2 Note 1",
+      "position": "1",
+      "text": "The term “PID Record” is synonymous to the term “FDO Record”.",
       "@reverse": {
         "itemListElement": [
           {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4"
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2"
           }
         ]
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR3",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "alternateName": "FDOR-GR3",
+      "description": "If an FDO contains a structured bit-sequence, the structured PID record includes at least a reference to the location(s) where the bit-sequence encoding the content of a FAIR-DO (FDO) can be accessed and the type definition of the FDO. The structured record may also contain PIDs pointing to Metadata FDOs describing properties of the target FDO.",
+      "itemListElement": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR3-note1"
+      },
+      "name": "FDO-GR3",
+      "position": "3",
+      "termCode": "FDO-GR3",
+      "skos:exactMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR3"
+      },
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR3-note1",
+      "@type": "HowToTip",
+      "name": "FDO-GR3 Note 1",
+      "text": "Note that ‘location’ here means the network access point providing FDO access, not necessarily the network storage location of the underlying bits.",
+      "@reverse": {
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR3"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR4",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "The PID record needs to contain mandatory FDO attributes, may contain optional FDO attributes and attributes agreed upon by recognized communities. Values of attributes can be references. Expectations of which attribute values are contained within the PID record and which are references pointing from the record to external sources should be specified in the PID profile or definition of said attribute in a Data Type Registry.",
+      "name": "FDO-GR4",
+      "position": "4",
+      "termCode": "FDO-GR4",
+      "skos:closeMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR4"
+      },
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR5",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
       "description": "Each FDO identified by a PID can be accessed or operated on using an interface protocol by specifying the PID of a registered supported operation",
-      "itemListElement": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5-note1"
-      },
-      "name": "FDOR5",
+      "name": "FDO-GR5",
       "position": "5",
-      "termCode": "FDOR5",
+      "termCode": "FDO-GR5",
+      "skos:closeMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR5"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -1004,35 +1417,24 @@
         ],
         "itemListElement": [
           {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
           }
         ]
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5-note1",
-      "@type": "HowToTip",
-      "name": "FDOR5 Note 1",
-      "position": "1",
-      "text": "In general the protocol in the Internet is identified by a protocol specification such as “http, ftp” etc.",
-      "@reverse": {
-        "itemListElement": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR6",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR6",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
-      "description": "Any basic FDO interface protocol offers standard Create, Read, Update, Delete (CRUD) operations on FDOs and a possibility to use extended/domain operations for specific applications.",
-      "name": "FDOR6",
+      "description": "Any basic FDO interface protocol offers standard Create, Read, Update, Delete (CRUD) operations on FDOs and a possibility to use extended/domain operations for specific applications. The addition of an operation to list available extended/domain operation for specific FDO types is strongly recommended.",
+      "name": "FDO-GR6",
       "position": "6",
-      "termCode": "FDOR6",
+      "termCode": "FDO-GR6",
+      "skos:closeMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR6"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -1041,21 +1443,24 @@
         ],
         "itemListElement": [
           {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
           }
         ]
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR7",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR7",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
       "description": "The relations between FDO Types and supported operations are maintained in separate registries.",
-      "name": "FDOR7",
+      "name": "FDO-GR7",
       "position": "7",
-      "termCode": "FDOR7",
+      "termCode": "FDO-GR7",
+      "skos:exactMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR7"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -1064,24 +1469,24 @@
         ],
         "itemListElement": [
           {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
           }
         ]
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR8",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
       "description": "Metadata can themselves be FDOs which describe the properties of the referenced FDO. They must be specified by a registered schema that refers to defined and registered metadata categories.",
-      "itemListElement": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8-note1"
-      },
-      "name": "FDOR8",
+      "name": "FDO-GR8",
       "position": "8",
-      "termCode": "FDOR8",
+      "termCode": "FDO-GR8",
+      "skos:closeMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR8"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -1090,39 +1495,24 @@
         ],
         "itemListElement": [
           {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
           }
         ]
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8-note1",
-      "@type": "HowToTip",
-      "citation": "TODO-F1",
-      "name": "FDOR8 Note 1",
-      "position": "1",
-      "text": "The FAIR principle F1 requires (meta)data to be assigned a persistent identifier. Implementations need to indicate how this can be satisfied.",
-      "@reverse": {
-        "itemListElement": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR9",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
-      "description": "Metadata can be of different types such as descriptive, deep scientific, provenance, system, access permissions, transactions, etc.",
-      "itemListElement": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9-note1"
-      },
-      "name": "FDOR9",
+      "description": "Metadata can be of different types such as descriptive, domain specific, provenance, system, access permissions, transactions, etc.",
+      "name": "FDO-GR9",
       "position": "9",
-      "termCode": "FDOR9",
+      "termCode": "FDO-GR9",
+      "skos:closeMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR9"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -1131,21 +1521,191 @@
         ],
         "itemListElement": [
           {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
           }
         ]
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9-note1",
-      "@type": "HowToTip",
-      "name": "FDOR9 Note 1",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR1",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "In accordance with the FAIR principles the protocols to resolve a PID into useful information need to be standardised, freely accessible, and publicly usable.",
+      "name": "FDO-PIDR1",
       "position": "1",
-      "text": "Currently, these different types are dealt with by different mechanisms. A unification is required to enable machine actionability.",
+      "termCode": "FDO-PIDR1",
       "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
         "itemListElement": [
           {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9"
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#pidLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR2",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "The resolution of a PID needs to lead to predictable results which are specified by a machine actionable FDO profile.",
+      "name": "FDO-PIDR2",
+      "position": "2",
+      "termCode": "FDO-PIDR2",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#pidLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR3",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "The PID is resolved to a set of key attribute-value pairs defined by the FDO profile. The profile needs to be machine actionable, i.e., all attributes need to be defined and registered in open registries which are compliant with the overall FDO or community-specific standards.",
+      "name": "FDO-PIDR3",
+      "position": "3",
+      "termCode": "FDO-PIDR3",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#pidLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR4",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "The PID system which is used for the identification of FDOs must be global, robust, scalable, and demonstrate persistence.",
+      "name": "FDO-PIDR4",
+      "position": "4",
+      "termCode": "FDO-PIDR4",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#pidLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR5",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "The PID System which is used for the identification of FDOs must support high security capabilities. The owner, or owner-delegated agent, of a PID and its associated attribute-value pairs is the only actor allowed to make changes, to define accessibility to attribute-value pair information, and to request encryption of information.",
+      "name": "FDO-PIDR5",
+      "position": "5",
+      "termCode": "FDO-PIDR5",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#pidLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR6",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "Management access to the PID system needs to be secured by a public key infrastructure and if necessary the use of standardised certificates must be possible.",
+      "name": "FDO-PIDR6",
+      "position": "6",
+      "termCode": "FDO-PIDR6",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#pidLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR1",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "All resources referenced by FDOs must be FAIR compliant.",
+      "name": "FDO-REST1",
+      "position": "1",
+      "termCode": "FDO-RESR1",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#resourceLayer"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR2",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "All resource and service providers should demonstrate trustworthiness by regularly assessing the quality of the procedures applied according to standards such as CoreTrustSeal.",
+      "name": "FDO-RESR2",
+      "position": "2",
+      "termCode": "FDO-RESR2",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ],
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#resourceLayer"
           }
         ]
       }
@@ -1157,10 +1717,12 @@
         "DefinedTerm"
       ],
       "description": "FDOs should provide a path for long term infrastructure investments that is not tied to any particular technology stack.",
-      "skos:exactMatch": "old#G1",
       "name": "G1",
       "position": "1",
       "termCode": "G1",
+      "skos:exactMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G1"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -1181,10 +1743,12 @@
         "DefinedTerm"
       ],
       "description": "FDOs need to generate trust in accurate data survival over long periods of time, assuring researchers, funders, and developers that their significant effort in reusing them will be worthwhile.",
-      "skos:exactMatch": "old#G2",
       "name": "G2",
       "position": "2",
       "termCode": "G2",
+      "skos:exactMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G2"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -1205,13 +1769,15 @@
         "DefinedTerm"
       ],
       "description": "FDOs must offer compliance with the FAIR principles through measurable indicators of FAIRness.",
-      "skos:exactMatch": "old#G3",
       "itemListElement": {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G3-note1"
       },
       "name": "G3",
       "position": "3",
       "termCode": "G3",
+      "skos:exactMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G3"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -1254,13 +1820,15 @@
         "DefinedTerm"
       ],
       "citation": {
-        "@id": "https://w3id.org/ro/doi/10.5281/TODO-PR-MachineActionDef"
+        "@id": "https://doi.org/10.5281/zenodo.7825650"
       },
       "description": "FDOs need to support machine actionability as being specified by FDO PR-MachineActionDef-2.0 or later",
-      "skos:exactMatch": "old#G4",
       "name": "G4",
       "position": "4",
       "termCode": "G4",
+      "skos:exactMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G4"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -1281,10 +1849,12 @@
         "DefinedTerm"
       ],
       "description": "FDOs need to support the abstraction principle, i.e., abstracting away details that are not needed at the basic object management level. At that level there is no need to distinguish among different types such as data, metadata, software, semantic assertions, etc., for data management operations.",
-      "skos:exactMatch": "old#G5",
       "name": "G5",
       "position": "5",
       "termCode": "G5",
+      "skos:exactMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G5"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -1305,10 +1875,12 @@
         "DefinedTerm"
       ],
       "description": "FDOs need to support stable bindings among all information entities required for machine navigation of the global data space through the use of global, unique, and resolvable persistent identifiers.",
-      "skos:exactMatch": "old#G6",
       "name": "G6",
       "position": "6",
       "termCode": "G6",
+      "skos:exactMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G6"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -1329,13 +1901,15 @@
         "DefinedTerm"
       ],
       "description": "FDOs need to support encapsulation, such that operations can be associated with FDOs of all types.",
-      "skos:exactMatch": "old#G7",
       "itemListElement": {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G7-note1"
       },
       "name": "G7",
       "position": "7",
       "termCode": "G7",
+      "skos:exactMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G7"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -1352,10 +1926,10 @@
     {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G7-note1",
       "@type": "HowToTip",
-      "name": "G7 Note 1",
       "citation": {
-        "@id": "https://w3id.org/ro/doi/10.5281/TODO-WD-TypingFDOs"
+        "@id": "https://doi.org/10.5281/zenodo.7825599"
       },
+      "name": "G7 Note 1",
       "text": "A typing system for FDOs is currently being worked out by FDO Forum",
       "@reverse": {
         "itemListElement": [
@@ -1372,10 +1946,12 @@
         "DefinedTerm"
       ],
       "description": "FDOs need to support technology independence, allowing implementations using different technologies.",
-      "skos:exactMatch": "old#G8",
       "name": "G8",
       "position": "8",
       "termCode": "G8",
+      "skos:exactMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G8"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -1396,13 +1972,15 @@
         "DefinedTerm"
       ],
       "description": "FDOs need to comply with minimal agreed standards, e.g., for movement of FDOs between systems, for interaction with FDOs, etc., to guarantee FDO interoperability across heterogeneous systems.",
-      "skos:exactMatch": "old#G9",
       "itemListElement": {
         "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G9-note1"
       },
       "name": "G9",
       "position": "9",
       "termCode": "G9",
+      "skos:exactMatch": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G9"
+      },
       "@reverse": {
         "hasDefinedTerm": [
           {
@@ -1431,87 +2009,160 @@
       }
     },
     {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#create",
+      "@type": "CreateAction",
+      "actionStatus": {
+        "@id": "schema:ActiveActionStatus"
+      },
+      "agent": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "description": "This RO-Crate was made by updating the RO-Crate for PR-RequirementSpec-2.1-20221017 with changes in PR-RequirementSpec-3.0-20230112. Additional HowToSteps are added by splitting the numbered requirement text. Citations have been formalized with the closest published DOI in Zenodo rather than Google Docs as in upstream document. Inconsistent FDOR-GR/FDO-GR identifiers have been normalized, such assumed typos are indicated by alternateName.",
+      "endTime": "2023-10-08T22:21:57+01:00",
+      "name": "Creating this RO-Crate",
+      "object": [
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7782262"
+        }
+      ],
+      "result": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+      },
+      "startTime": "2023-10-07T13:09:19+02:00",
+      "@reverse": {
+        "mentions": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements",
       "@type": [
         "HowToSection",
         "DefinedTermSet"
       ],
-      "description": "These requirements specify the rules that must be met by all implementations claiming FDO compliance. These requirements may evolve due to the increasing insights obtained from implementation experience",
-      "disambiguatingDescription": "FDO Requirements FDOR1–FDOR12",
+      "disambiguatingDescription": "FDO Requirements FDO-GR*, FDO-PIDR*, FDO-FDOR*, FDO-RESR*",
       "hasDefinedTerm": [
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR1"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR1"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR3"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR3"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR4"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR5"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR6"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR6"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR7"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR7"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR8"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR9"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR10"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR10"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR11"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR11"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR12"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR12"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR13"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR14"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR15"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR1"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR2"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR3"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR4"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR5"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR6"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR1"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR2"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR3"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR5"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR6"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR7"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR8"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR9"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR10"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR11"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR1"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR2"
         }
       ],
       "itemListElement": [
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR1"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#pidLayer"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR3"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR6"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR7"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR10"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR11"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR12"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#resourceLayer"
         }
       ],
       "name": "FDO Requirements",
@@ -1525,6 +2176,120 @@
         "step": [
           {
             "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer",
+      "@type": "HowToSection",
+      "citation": {
+        "@id": "https://doi.org/10.5281/zenodo.7825572"
+      },
+      "description": "This document does not include details about the schemas defining FDO profiles and attributes. For this we refer to the document on Implementation of Attributes, Types, Profiles and Registries.",
+      "disambiguatingDescription": "FDO FDO Layer specifications FDO-FDOR1–FDO-FDOR11",
+      "itemListElement": [
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR1"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR2"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR3"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR5"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR6"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR7"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR8"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR9"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR10"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR11"
+        }
+      ],
+      "name": "FDO Layer Specifications",
+      "position": "3",
+      "@reverse": {
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements",
+      "@type": "HowToSection",
+      "disambiguatingDescription": "FDO general requirements FDO-GR1–FDO-GR15",
+      "itemListElement": [
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR1"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR3"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR4"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR5"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR6"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR7"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR8"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR9"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR10"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR11"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR12"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR13"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR14"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR15"
+        }
+      ],
+      "name": "General Requirements",
+      "position": "1",
+      "@reverse": {
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
           }
         ]
       }
@@ -1611,6 +2376,66 @@
       }
     },
     {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#pidLayer",
+      "@type": "HowToSection",
+      "disambiguatingDescription": "FDO PID Layer specifications FDO-PIDR1–FDO-PIDR6",
+      "itemListElement": [
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR1"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR2"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR3"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR4"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR5"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR6"
+        }
+      ],
+      "name": "PID Layer Specifications",
+      "position": "2",
+      "@reverse": {
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#resourceLayer",
+      "@type": "HowToSection",
+      "citation": {
+        "@id": "https://doi.org/10.5281/zenodo.7825572"
+      },
+      "description": "As has been mentioned, the resources referenced by the FDO are being managed by different service providers and we are confronted with a great amount of legacy data and a variety of practices. Therefore, we can only make general statements and should expect an extended period during which existing approaches will move towards interoperability and machine-navigability.",
+      "disambiguatingDescription": "FDO Resource Layer specifications FDO-RESR1–FDO-RESR2",
+      "itemListElement": [
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR1"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR2"
+        }
+      ],
+      "name": "Resource Layer Specifications",
+      "position": "4",
+      "@reverse": {
+        "itemListElement": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          }
+        ]
+      }
+    },
+    {
       "@id": "https://www.rd-alliance.org/",
       "@type": "Organization",
       "name": "Research Data Alliance (RDA)",
@@ -1649,43 +2474,16 @@
       }
     },
     {
-      "@id": "http://spdx.org/licenses/CC-BY-4.0",
+      "@id": "../PR-RequirementSpec-2.1/ro-crate-metadata.json",
       "@type": "CreativeWork",
-      "description": "Creative Commons Attribution 4.0 International",
-      "name": "CC-BY-4.0",
-      "url": "https://creativecommons.org/licenses/by/4.0/",
-      "version": "4.0",
-      "@reverse": {
-        "license": [
-          {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://codata.org/",
-      "@type": "Organization",
-      "name": "CODATA",
-      "@reverse": {
-        "publisher": [
-          {
-            "@id": "https://codata.org/worldfair-global-cooperation-on-fair-data-policy-and-practice-a-major-two-year-project-starts-today/"
-          }
-        ]
-      }
-    },
-    {
-      "@id": "https://codata.org/worldfair-global-cooperation-on-fair-data-policy-and-practice-a-major-two-year-project-starts-today/",
-      "@type": "CreativeWork",
-      "name": "WorldFAIR: Global cooperation on FAIR data policy and practice – a major two-year project starts today!",
-      "publisher": {
-        "@id": "https://codata.org/"
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
       },
+      "encodingFormat": "application/ld+json",
       "@reverse": {
-        "citation": [
+        "subjectOf": [
           {
-            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G3-note1"
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
           }
         ]
       }
@@ -1801,9 +2599,6 @@ table.table {
                         <li><a href="#https%3A//orcid.org/0000-0002-5762-6747">Carlo Zwölf</a></li>
                         </ul></td>
             </tr><tr>
-            <th style="text-align:left;" class="prop">publisher<span>&nbsp;</span><a href="http://schema.org/publisher">[?]</a></th>
-            <td style='text-align:left'><a href="#https%3A//orcid.org/0000-0001-9842-9718">Stian Soiland-Reyes</a></td>
-            </tr><tr>
             <th style="text-align:left;" class="prop">editor<span>&nbsp;</span><a href="http://schema.org/editor">[?]</a></th>
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//orcid.org/0000-0003-4098-0464">George Strawn</a></li>
@@ -1813,7 +2608,7 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><ul>
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23generic-guidelines">Generic Guidelines</a></li>
                         
@@ -1831,6 +2626,9 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">mentions<span>&nbsp;</span><a href="http://schema.org/mentions">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23create">Creating this RO-Crate</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">publisher<span>&nbsp;</span><a href="http://schema.org/publisher">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//orcid.org/0000-0001-9842-9718">Stian Soiland-Reyes</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">version<span>&nbsp;</span><a href="http://schema.org/version">[?]</a></th>
             <td style='text-align:left'><span>3.0</span></td>
@@ -1872,7 +2670,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -1903,9 +2701,9 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">PR-RequirementSpec-2.1-20221017</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (RO-Crate)</a></li>
                         </ul></td>
@@ -1938,7 +2736,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -1969,7 +2767,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -2000,7 +2798,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -2031,7 +2829,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -2062,9 +2860,9 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">PR-RequirementSpec-2.1-20221017</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (RO-Crate)</a></li>
                         </ul></td>
@@ -2097,9 +2895,9 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">PR-RequirementSpec-2.1-20221017</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (RO-Crate)</a></li>
                         </ul></td>
@@ -2132,7 +2930,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -2163,7 +2961,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -2194,9 +2992,9 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">PR-RequirementSpec-2.1-20221017</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (RO-Crate)</a></li>
                         </ul></td>
@@ -2231,17 +3029,17 @@ table.table {
                         
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">PR-RequirementSpec-2.1-20221017</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (RO-Crate)</a></li>
                         </ul></td>
             </tr><tr>
-            <th style="text-align:left;" class="prop">publisher<span>&nbsp;</span><a href="http://schema.org/publisher">[?]</a></th>
+            <th style="text-align:left;" class="prop">maintainer<span>&nbsp;</span><a href="http://schema.org/maintainer">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></td>
             </tr><tr>
-            <th style="text-align:left;" class="prop">maintainer<span>&nbsp;</span><a href="http://schema.org/maintainer">[?]</a></th>
+            <th style="text-align:left;" class="prop">publisher<span>&nbsp;</span><a href="http://schema.org/publisher">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">agent<span>&nbsp;</span><a href="http://schema.org/agent">[?]</a></th>
@@ -2275,9 +3073,9 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">PR-RequirementSpec-2.1-20221017</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (RO-Crate)</a></li>
                         </ul></td>
@@ -2286,7 +3084,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -2317,7 +3115,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -2348,7 +3146,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -2379,9 +3177,9 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">PR-RequirementSpec-2.1-20221017</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (RO-Crate)</a></li>
                         </ul></td>
@@ -2390,7 +3188,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -2421,7 +3219,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -2430,7 +3228,7 @@ table.table {
         </div>
         <hr/><br/><br/>
            <div>
-            <h3><a href="https://doi.org/10.5281/zenodo.7782262">Go to: </a> FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</h3>
+            <h3><a href="https://doi.org/10.5281/zenodo.7782262">Go to: </a> PR-RequirementSpec-3.0-20230112</h3>
             
             
             
@@ -2443,7 +3241,7 @@ table.table {
             <td style='text-align:left'><a href="https://doi.org/10.5281/zenodo.7782262">https://doi.org/10.5281/zenodo.7782262</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</span></td>
+            <td style='text-align:left'><span>PR-RequirementSpec-3.0-20230112</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
             <td style='text-align:left'><span>HowTo</span></td>
@@ -2492,16 +3290,7 @@ table.table {
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">alternateName<span>&nbsp;</span><a href="http://schema.org/alternateName">[?]</a></th>
-            <td style='text-align:left'><span>PR-RequirementSpec-3.0-20230112</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">publisher<span>&nbsp;</span><a href="http://schema.org/publisher">[?]</a></th>
-            <td style='text-align:left'><a href="#https%3A//fairdo.org/">FAIR Digital Object Forum</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">version<span>&nbsp;</span><a href="http://schema.org/version">[?]</a></th>
-            <td style='text-align:left'><span>3.0</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">cite-as<span>&nbsp;</span><a href="https://www.w3.org/ns/iana/link-relations/relation#cite-as">[?]</a></th>
-            <td style='text-align:left'><a href="https://doi.org/10.5281/zenodo.7782262">https://doi.org/10.5281/zenodo.7782262</a></td>
+            <td style='text-align:left'><span>FDO Forum FDO Requirement Specifications Version 3.0</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">editor<span>&nbsp;</span><a href="http://schema.org/editor">[?]</a></th>
             <td style='text-align:left'><ul>
@@ -2510,6 +3299,30 @@ table.table {
                         <li><a href="#https%3A//orcid.org/0000-0003-3538-0106">Peter Wittenburg</a></li>
                         </ul></td>
             </tr><tr>
+            <th style="text-align:left;" class="prop">isBasedOn<span>&nbsp;</span><a href="http://schema.org/isBasedOn">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7825703">PR-ConfigurationTypes-2.1-20221017</a></li>
+                        
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7825650">PR-MachineActionDef-2.2-20221119</a></li>
+                        
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7825630">PR-PIDProfileAttributes-2.1-20221017</a></li>
+                        
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7825693">PR-FDO-KernelAttributesAndMetadata-2.0-20221017</a></li>
+                        
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7825686">PR-Granularity-2.2-20221017</a></li>
+                        
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7825599">PR-TypingFDOs-2.0-20220608</a></li>
+                        
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7825572">WD-Implementation-of-Attributes-0.4-20230314</a></li>
+                        
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7825549">PEN-FDO-Upload-1.1-20221017</a></li>
+                        
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7824796">PED-DOIPEndorsement-1.1-20221017</a></li>
+                        </ul></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">publisher<span>&nbsp;</span><a href="http://schema.org/publisher">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//fairdo.org/">FAIR Digital Object Forum</a></td>
+            </tr><tr>
             <th style="text-align:left;" class="prop">step<span>&nbsp;</span><a href="http://schema.org/step">[?]</a></th>
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23generic-guidelines">Generic Guidelines</a></li>
@@ -2517,8 +3330,11 @@ table.table {
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23fdo-requirements">FDO Requirements</a></li>
                         </ul></td>
             </tr><tr>
-            <th style="text-align:left;" class="prop">isBasedOn<span>&nbsp;</span><a href="http://schema.org/isBasedOn">[?]</a></th>
-            <td style='text-align:left'><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></td>
+            <th style="text-align:left;" class="prop">version<span>&nbsp;</span><a href="http://schema.org/version">[?]</a></th>
+            <td style='text-align:left'><span>3.0</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">cite-as<span>&nbsp;</span><a href="https://www.w3.org/ns/iana/link-relations/relation#cite-as">[?]</a></th>
+            <td style='text-align:left'><a href="https://doi.org/10.5281/zenodo.7782262">https://doi.org/10.5281/zenodo.7782262</a></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">isBasedOn<span>&nbsp;</span><a href="http://schema.org/isBasedOn">[?]</a></th>
             <td style='text-align:left'><a href="#ro-crate-metadata.json">ro-crate-metadata.json</a></td>
@@ -2612,7 +3428,7 @@ table.table {
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">step<span>&nbsp;</span><a href="http://schema.org/step">[?]</a></th>
-            <td style='text-align:left'><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></td>
+            <td style='text-align:left'><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -2642,64 +3458,89 @@ table.table {
                         <li><span>DefinedTermSet</span></li>
                         </ul></td>
             </tr><tr>
-            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'><span>These requirements specify the rules that must be met by all implementations claiming FDO compliance. These requirements may evolve due to the increasing insights obtained from implementation experience</span></td>
-            </tr><tr>
             <th style="text-align:left;" class="prop">disambiguatingDescription<span>&nbsp;</span><a href="http://schema.org/disambiguatingDescription">[?]</a></th>
-            <td style='text-align:left'><span>FDO Requirements FDOR1–FDOR12</span></td>
+            <td style='text-align:left'><span>FDO Requirements FDO-GR*, FDO-PIDR*, FDO-FDOR*, FDO-RESR*</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">hasDefinedTerm<span>&nbsp;</span><a href="http://schema.org/hasDefinedTerm">[?]</a></th>
             <td style='text-align:left'><ul>
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR1">FDOR1</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-GR1">FDO-GR1</a></li>
                         
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR2">FDOR2</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-GR2">FDO-GR2</a></li>
                         
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR3">FDOR3</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-GR3">FDO-GR3</a></li>
                         
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR4">FDOR4</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-GR4">FDO-GR4</a></li>
                         
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR5">FDOR5</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-GR5">FDO-GR5</a></li>
                         
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR6">FDOR6</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-GR6">FDO-GR6</a></li>
                         
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR7">FDOR7</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-GR7">FDO-GR7</a></li>
                         
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR8">FDOR8</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-GR8">FDO-GR8</a></li>
                         
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR9">FDOR9</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-GR9">FDO-GR9</a></li>
                         
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR10">FDOR10</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-GR10">FDO-GR10</a></li>
                         
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR11">FDOR11</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-GR11">FDO-GR11</a></li>
                         
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR12">FDOR12</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-GR12">FDO-GR12</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-GR13">FDO-GR13</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-GR14">FDO-GR14</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-GR15">FDO-GR15</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-PIDR1">FDO-PIDR1</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-PIDR2">FDO-PIDR2</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-PIDR3">FDO-PIDR3</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-PIDR4">FDO-PIDR4</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-PIDR5">FDO-PIDR5</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-PIDR6">FDO-PIDR6</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-FDOR1">FDO-FDOR1</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-FDOR2">FDO-FDOR2</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-FDOR3">FDO-FDOR3</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-FDOR4">FDO-FDOR4</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-FDOR5">FDO-FDO5</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-FDOR6">FDO-FDOR6</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-FDOR7">FDO-FDOR7</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-FDOR8">FDO-FDOR8</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-FDOR9">FDO-FDOR9</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-FDOR10">FDO-FDOR10</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-FDOR11">FDO-FDOR11</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-RESR1">FDO-REST1</a></li>
+                        
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDO-RESR2">FDO-RESR2</a></li>
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">itemListElement<span>&nbsp;</span><a href="http://schema.org/itemListElement">[?]</a></th>
             <td style='text-align:left'><ul>
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR1">FDOR1</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23generalRequirements">General Requirements</a></li>
                         
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR2">FDOR2</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23pidLayer">PID Layer Specifications</a></li>
                         
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR3">FDOR3</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23fdoLayer">FDO Layer Specifications</a></li>
                         
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR4">FDOR4</a></li>
-                        
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR5">FDOR5</a></li>
-                        
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR6">FDOR6</a></li>
-                        
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR7">FDOR7</a></li>
-                        
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR8">FDOR8</a></li>
-                        
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR9">FDOR9</a></li>
-                        
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR10">FDOR10</a></li>
-                        
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR11">FDOR11</a></li>
-                        
-                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23FDOR12">FDOR12</a></li>
+                        <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23resourceLayer">Resource Layer Specifications</a></li>
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">position<span>&nbsp;</span><a href="http://schema.org/position">[?]</a></th>
@@ -2709,7 +3550,7 @@ table.table {
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">step<span>&nbsp;</span><a href="http://schema.org/step">[?]</a></th>
-            <td style='text-align:left'><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></td>
+            <td style='text-align:left'><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -2772,29 +3613,29 @@ table.table {
             <td style='text-align:left'><span>CreateAction</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'><span>By updating RO-Crate for PR-RequirementSpec-2.1-20221017 with changes in PR-RequirementSpec-3.0-20230112</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">startTime<span>&nbsp;</span><a href="http://schema.org/startTime">[?]</a></th>
-            <td style='text-align:left'><span>2023-10-07T13:09:19+02:00</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">endTime<span>&nbsp;</span><a href="http://schema.org/endTime">[?]</a></th>
-            <td style='text-align:left'><span>2023-10-08T22:21:57+01:00</span></td>
+            <td style='text-align:left'><span>This RO-Crate was made by updating the RO-Crate for PR-RequirementSpec-2.1-20221017 with changes in PR-RequirementSpec-3.0-20230112. Additional HowToSteps are added by splitting the numbered requirement text. Citations have been formalized with the closest published DOI in Zenodo rather than Google Docs as in upstream document. Inconsistent FDOR-GR/FDO-GR identifiers have been normalized, such assumed typos are indicated by alternateName.</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">actionStatus<span>&nbsp;</span><a href="http://schema.org/actionStatus">[?]</a></th>
-            <td style='text-align:left'><a href="http://schema.org/ActiveActionStatus">http://schema.org/ActiveActionStatus</a></td>
+            <td style='text-align:left'>schema:ActiveActionStatus</td>
             </tr><tr>
             <th style="text-align:left;" class="prop">agent<span>&nbsp;</span><a href="http://schema.org/agent">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//orcid.org/0000-0001-9842-9718">Stian Soiland-Reyes</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">endTime<span>&nbsp;</span><a href="http://schema.org/endTime">[?]</a></th>
+            <td style='text-align:left'><span>2023-10-08T22:21:57+01:00</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">object<span>&nbsp;</span><a href="http://schema.org/object">[?]</a></th>
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (RO-Crate)</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0 (PDF)</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7782262">PR-RequirementSpec-3.0-20230112</a></li>
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">result<span>&nbsp;</span><a href="http://schema.org/result">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">startTime<span>&nbsp;</span><a href="http://schema.org/startTime">[?]</a></th>
+            <td style='text-align:left'><span>2023-10-07T13:09:19+02:00</span></td>
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">mentions<span>&nbsp;</span><a href="http://schema.org/mentions">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262">FDO Forum FDO Requirement Specifications Version 3.0</a></td>
