@@ -407,7 +407,7 @@
       "@id": "https://orcid.org/0000-0001-7807-186X",
       "@type": "Person",
       "name": "Dieter van Uytvanck"
-    },FDO Configuration Types:
+    },
     {
       "@id": "https://orcid.org/0000-0003-0351-6523",
       "@type": "Person",
@@ -834,7 +834,7 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "In accordance with the FAIR principles the protocols to resolve a PID into useful information need to be standardised, freely accessible, and publicly usable.",
           "name": "FDO-PIDR1",
           "position": "1",
           "termCode": "FDO-PIDR1"
@@ -845,7 +845,7 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "The resolution of a PID needs to lead to predictable results which are specified by a machine actionable FDO profile.",
           "name": "FDO-PIDR2",
           "position": "2",
           "termCode": "FDO-PIDR2"
@@ -856,7 +856,7 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "The PID is resolved to a set of key attribute-value pairs defined by the FDO profile. The profile needs to be machine actionable, i.e., all attributes need to be defined and registered in open registries which are compliant with the overall FDO or community-specific standards.",
           "name": "FDO-PIDR3",
           "position": "3",
           "termCode": "FDO-PIDR3"
@@ -867,7 +867,7 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "The PID system which is used for the identification of FDOs must be global, robust, scalable, and demonstrate persistence.",
           "name": "FDO-PIDR4",
           "position": "4",
           "termCode": "FDO-PIDR4"
@@ -878,7 +878,7 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "The PID System which is used for the identification of FDOs must support high security capabilities. The owner, or owner-delegated agent, of a PID and its associated attribute-value pairs is the only actor allowed to make changes, to define accessibility to attribute-value pair information, and to request encryption of information.",
           "name": "FDO-PIDR5",
           "position": "5",
           "termCode": "FDO-PIDR5"
@@ -889,7 +889,7 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "Management access to the PID system needs to be secured by a public key infrastructure and if necessary the use of standardised certificates must be possible.",
           "name": "FDO-PIDR6",
           "position": "6",
           "termCode": "FDO-PIDR6"
@@ -900,7 +900,7 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "The content of each FDO record must be structured according to an FDO profile in accordance with an FDO defined schema registered in a recognized registry.",
           "name": "FDO-FDOR1",
           "position": "",
           "termCode": "FDO-FDOR1"
@@ -911,7 +911,7 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "The FDO record consists of a set of attribute-value pairs as defined by the FDO Profile and all used attributes need to be defined and registered according to the type specification schema.",
           "name": "FDO-FDOR2",
           "position": "",
           "termCode": "FDO-FDO2"
@@ -922,9 +922,9 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "Each FDO record needs to contain the mandatory kernel attributes, as defined by the FDO profile, including the type of the FDO.",
           "name": "FDO-FDOR3",
-          "position": "",
+          "position": "3",
           "termCode": "FDO-FDOR3"
         },
         {
@@ -933,9 +933,9 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "FDO records can include a) optional kernel attributes which are defined by the FDO Forum or b) can include other community defined and registered attributes if machine actionability is guaranteed.",
           "name": "FDO-FDOR4",
-          "position": "",
+          "position": "4",
           "termCode": "FDO-FDO4"
         },
         {
@@ -944,9 +944,9 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "In the canonical case that an FDO includes bit-sequences encoding FDO content, the attribute-value set must contain the reference to these bit-sequences and a rich metadata description as requested by the FAIR principles.",
           "name": "FDO-FDO5",
-          "position": "",
+          "position": "5",
           "termCode": "FDO-FDO5"
         },
         {
@@ -955,9 +955,9 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "Every FDO must have an FDO Type, facilitating automated machine validation and processing of the FDO.",
           "name": "FDO-FDOR6",
-          "position": "",
+          "position": "6",
           "termCode": "FDO-FDO6"
         },
         {
@@ -966,7 +966,7 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "An FDO may have included any sort of bit-sequences (data, metadata, software, semantic assertions, etc.) but each must be typed using a type-value pair in compliance with the FAIR principles.",
           "name": "FDO-FDOR7",
           "position": "7",
           "termCode": "FDO-FDOR7"
@@ -977,7 +977,7 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "FDOs can use any existing types or define new types, either completely new or derived from existing types.",
           "name": "FDO-FDOR8",
           "position": "8",
           "termCode": "FDO-FDOR8"
@@ -988,7 +988,7 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "The type of an FDO is specified using an agreed upon syntactic description that may be structured and dependent on components that are themselves FDOs. This syntactic description is called FDO Type definition in the following and is an FDO itself and thus FAIR compliant.",
           "name": "FDO-FDOR9",
           "position": "9",
           "termCode": "FDO-FDOR9"
@@ -999,7 +999,7 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "Every FDO Type and type is associated with a PID which resolves to the FDO that includes the type definition. So it is of type FDO type definition.",
           "name": "FDO-FDOR10",
           "position": "10",
           "termCode": "FDO-FDOR10"
@@ -1010,7 +1010,7 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "The FDO Type Framework specifies methods for defining types for and attaching types to FDOs",
           "name": "FDO-FDOR11",
           "position": "11",
           "termCode": "FDO-FDOR11"
@@ -1021,7 +1021,7 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "All resources referenced by FDOs must be FAIR compliant.",
           "name": "FDO-REST1",
           "position": "1",
           "termCode": "FDO-RESR1"
@@ -1032,7 +1032,7 @@
             "HowToStep",
             "DefinedTerm"
           ],
-          "description": "",
+          "description": "All resource and service providers should demonstrate trustworthiness by regularly assessing the quality of the procedures applied according to standards such as CoreTrustSeal.",
           "name": "FDO-RESR2",
           "position": "2",
           "termCode": "FDO-RESR2"
