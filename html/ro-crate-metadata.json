@@ -147,7 +147,13 @@
                 },
                 {
                     "@id": "table5.html"
-                }
+                },
+                {
+                    "@id": "PR-RequirementSpec-2.1/"
+                },
+                {
+                    "@id": "PR-RequirementSpec-3.0/"
+                }                
             ],
             "url": "https://s11.no/2023/phd/evaluating-fdo/"
         },
@@ -240,6 +246,58 @@
             "citation": {
                 "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
             }
+        },
+        {
+            "@id": "PR-RequirementSpec-2.1/",
+            "@type": "Dataset",
+            "name": "FDO Forum FDO Requirement Specifications Version 2.1 (RO-Crate)",
+            "subjectOf": [
+                {
+                    "@id": "PR-RequirementSpec-2.1/ro-crate-metadata.json"
+                },
+                {
+                    "@id": "PR-RequirementSpec-2.1/ro-crate-preview.html"
+                }
+            ]
+        },
+        {
+            "@id": "PR-RequirementSpec-2.1/ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "conformsTo": {
+              "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "encodingFormat": "application/ld+json"
+        },
+        {
+            "@id": "PR-RequirementSpec-2.1/ro-crate-preview.html",
+            "@type": "CreativeWork",
+            "encodingFormat": "text/html"
+        },
+        {
+            "@id": "PR-RequirementSpec-3.0/",
+            "@type": "Dataset",
+            "name": "FDO Forum FDO Requirement Specifications Version 3.0 (RO-Crate)",
+            "subjectOf": [
+                {
+                    "@id": "PR-RequirementSpec-3.0/ro-crate-metadata.json"
+                },
+                {
+                    "@id": "PR-RequirementSpec-3.0/ro-crate-preview.html"
+                }
+            ]
+        },
+        {
+            "@id": "PR-RequirementSpec-3.0/ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "conformsTo": {
+              "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "encodingFormat": "application/ld+json"
+        },
+        {
+            "@id": "PR-RequirementSpec-3.0/ro-crate-preview.html",
+            "@type": "CreativeWork",
+            "encodingFormat": "text/html"
         },
         {
             "@id": "https://link.springer.com/chapter/10.1007/978-3-319-31861-5_1/figures/5",

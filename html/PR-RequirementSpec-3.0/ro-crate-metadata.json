@@ -73,7 +73,7 @@
           "@id": "https://orcid.org/0000-0002-5762-6747"
         }
       ],
-      "datePublished": "2023-10-07",
+      "datePublished": "2023-10-09",
       "description": "RO-Crate for the FDO Requirement Specification document PR-RequirementSpec-3.0-20230112, which specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
       "editor": [
         {
@@ -1082,7 +1082,7 @@
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
       "description": "This RO-Crate was made by updating the RO-Crate for PR-RequirementSpec-2.1-20221017 with changes in PR-RequirementSpec-3.0-20230112. Additional HowToSteps are added by splitting the numbered requirement text. Citations have been formalized with the closest published DOI in Zenodo rather than Google Docs as in upstream document. Inconsistent FDOR-GR/FDO-GR identifiers have been normalized, such assumed typos are indicated by alternateName.",
-      "endTime": "2023-10-08T22:21:57+01:00",
+      "endTime": "2023-10-09T00:45:10+01:00",
       "name": "Creating this RO-Crate",
       "object": [
         {
