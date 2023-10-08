@@ -818,6 +818,224 @@
         },
         {
           "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR12"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR13"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR14"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR15"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR1",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-PIDR1",
+          "position": "1",
+          "termCode": "FDO-PIDR1"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR2",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-PIDR2",
+          "position": "2",
+          "termCode": "FDO-PIDR2"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR3",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-PIDR3",
+          "position": "3",
+          "termCode": "FDO-PIDR3"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR4",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-PIDR4",
+          "position": "4",
+          "termCode": "FDO-PIDR4"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR5",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-PIDR5",
+          "position": "5",
+          "termCode": "FDO-PIDR5"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR6",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-PIDR6",
+          "position": "6",
+          "termCode": "FDO-PIDR6"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR1",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-FDOR1",
+          "position": "",
+          "termCode": "FDO-FDOR1"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR2",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-FDOR2",
+          "position": "",
+          "termCode": "FDO-FDO2"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR3",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-FDOR3",
+          "position": "",
+          "termCode": "FDO-FDOR3"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-FDOR4",
+          "position": "",
+          "termCode": "FDO-FDO4"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR5",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-FDO5",
+          "position": "",
+          "termCode": "FDO-FDO5"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR6",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-FDOR6",
+          "position": "",
+          "termCode": "FDO-FDO6"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR7",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-FDOR7",
+          "position": "7",
+          "termCode": "FDO-FDOR7"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR8",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-FDOR8",
+          "position": "8",
+          "termCode": "FDO-FDOR8"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR9",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-FDOR9",
+          "position": "9",
+          "termCode": "FDO-FDOR9"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR10",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-FDOR10",
+          "position": "10",
+          "termCode": "FDO-FDOR10"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR11",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-FDOR11",
+          "position": "11",
+          "termCode": "FDO-FDOR11"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR1",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-REST1",
+          "position": "1",
+          "termCode": "FDO-RESR1"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR2",
+          "@type": [
+            "HowToStep",
+            "DefinedTerm"
+          ],
+          "description": "",
+          "name": "FDO-RESR2",
+          "position": "2",
+          "termCode": "FDO-RESR2"
         }
       ],
       "itemListElement": [
@@ -833,7 +1051,6 @@
         {
           "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#resourceLayer"
         }
-
       ],
       "name": "FDO Requirements",
       "position": "2"
@@ -863,7 +1080,6 @@
         {
           "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR6"
         }
-
       ]
     },
     {
