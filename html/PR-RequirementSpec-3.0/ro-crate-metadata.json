@@ -127,7 +127,7 @@
       "actionStatus":  { "@id": "http://schema.org/ActiveActionStatus" },
       "agent": {"@id": "https://orcid.org/0000-0001-9842-9718"},
       "name": "Creating this RO-Crate",
-      "description": "By updating RO-Crate for PR-RequirementSpec-2.1-20221017 with changes in PR-RequirementSpec-3.0-20230112",
+      "description": "This RO-Crate was made by updating the RO-Crate for PR-RequirementSpec-2.1-20221017 with changes in PR-RequirementSpec-3.0-20230112. Additional HowToSteps are added by splitting the numbered requirement text. Citations have been formalized with the closest published DOI in Zenodo rather than Google Docs as in upstream document. Inconsistent FDOR-GR/FDO-GR identifiers have been normalized, such assumed typos are indicated by alternateName.",
       "object": [
         {"@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"},
         {"@id": "https://doi.org/10.5281/zenodo.7782262"}
@@ -419,19 +419,20 @@
       "name": "Carlo Zw\u00f6lf"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR1",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR1",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
       "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR1"},
       "description": "A PID, standing for a globally unique, persistent and resolvable identifier, is assumed to be the basis for FAIR Digital Objects. Every FDO is assigned one or more PIDs.",
-      "name": "FDOR-GR1",
+      "name": "FDO-GR1",
+      "alternateName": "FDOR-GR1",
       "position": "1",
-      "termCode": "FDOR-GR1"
+      "termCode": "FDO-GR1"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR10",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR10",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -441,36 +442,74 @@
         "@id": "https://doi.org/10.1038/sdata.2016.18"
       },
       "description": "Metadata schemas are maintained by communities of practice and are FDOs. Such metadata schemas should therefore themselves follow FAIR principles",
-      "name": "FDOR10",
+      "name": "FDO-GR10",
       "position": "10",
-      "termCode": "FDOR10"
+      "termCode": "FDO-GR10"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR11",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR11",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
       "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR11"},
       "description": "A collection of FDOs is also an FDO. The content of collection FDOs describes its construction using an agreed formal language which specifies the relationships of the constituent members. An FDO may be a member of several collections.",
-      "name": "FDOR11",
+      "name": "FDO-GR11",
       "position": "11",
-      "termCode": "FDOR11"
+      "termCode": "FDO-GR11"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR12",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR12",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
       "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR12"},
       "description": "Deletion of an FDO must lead to standardised and thus machine interpretable tombstone notes in metadata and PID records. The PID itself is not deleted.",
-      "name": "FDOR12",
+      "name": "FDO-GR12",
       "position": "12",
-      "termCode": "FDOR12"
+      "termCode": "FDO-GR12"
     },
+
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR13",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "The PID resolution and the FDO Layer information must be “machine actionable” i.e., are machine interpretable and belong to a type for which operations have been specified in symbolic grammar.",
+      "name": "FDO-GR13",
+      "position": "13",
+      "termCode": "FDO-GR13"
+    },
+
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR14",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "FDOs can be configured in different ways as long as the configurations are compliant with the FDO Specifications.",
+      "name": "FDO-GR14",
+      "position": "14",
+      "termCode": "FDO-GR14"
+    },
+
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR15",
+      "@type": [
+        "HowToStep",
+        "DefinedTerm"
+      ],
+      "description": "The granularity of FDOs is dependent on pragmatic utility decisions within the communities of practice Those communities define the level of useful entities to use in the corresponding application field.",
+      "name": "FDO-GR15",
+      "position": "15",
+      "termCode": "FDO-GR15"
+    },
+
+
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -479,40 +518,42 @@
       "description": "A PID resolves to a structured record (PID Record) compliant with a specified PID Profile which leads to resolution results that enable programmatic resolution from PID back to the FDO and its elements as specified by these requirements. PID Records represent the information characterizing FDOs and together with their resolving PIDs they can be themselves FDOs.",
       "itemListElement": [
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR-GR2-note1"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2-note1"
         }
       ],
-      "name": "FDOR-GR2",
+      "name": "FDO-GR2",
+      "alternateName": "FDOR-GR2",
       "position": "2",
-      "termCode": "FDOR-GR2"
+      "termCode": "FDO-GR2"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR-GR2-note1",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2-note1",
       "@type": "HowToTip",
-      "name": "FDOR-GR2 Note 1",
+      "name": "FDO-GR2 Note 1",
       "position": "1",
       "text": "The term “PID Record” is synonymous to the term “FDO Record”."
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR3",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR3",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
       "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR3"},
       "description": "If an FDO contains a structured bit-sequence, the structured PID record includes at least a reference to the location(s) where the bit-sequence encoding the content of a FAIR-DO (FDO) can be accessed and the type definition of the FDO. The structured record may also contain PIDs pointing to Metadata FDOs describing properties of the target FDO.",
-      "name": "FDOR-GR3",
+      "name": "FDO-GR3",
+      "alternateName": "FDOR-GR3",
       "position": "3",
-      "termCode": "FDOR-GR3",
+      "termCode": "FDO-GR3",
       "itemListElement": {
-        "@id": "FDOR-GR3-note1",
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR3-note1",
         "@type": "HowToTip",
-        "name": "FDOR-GR3 Note 1",
+        "name": "FDO-GR3 Note 1",
         "text": "Note that ‘location’ here means the network access point providing FDO access, not necessarily the network storage location of the underlying bits."
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR4",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -524,95 +565,64 @@
       "termCode": "FDO-GR4"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR5",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
-      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR5"},
+      "skos:closeMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR5"},
       "description": "Each FDO identified by a PID can be accessed or operated on using an interface protocol by specifying the PID of a registered supported operation",
-      "itemListElement": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5-note1"
-      },
-      "name": "FDOR5",
+      "name": "FDO-GR5",
       "position": "5",
-      "termCode": "FDOR5"
+      "termCode": "FDO-GR5"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5-note1",
-      "@type": "HowToTip",
-      "name": "FDOR5 Note 1",
-      "position": "1",
-      "text": "In general the protocol in the Internet is identified by a protocol specification such as “http, ftp” etc."
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR6",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR6",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
-      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR6"},
-      "description": "Any basic FDO interface protocol offers standard Create, Read, Update, Delete (CRUD) operations on FDOs and a possibility to use extended/domain operations for specific applications.",
-      "name": "FDOR6",
+      "skos:closeMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR6"},
+      "description": "Any basic FDO interface protocol offers standard Create, Read, Update, Delete (CRUD) operations on FDOs and a possibility to use extended/domain operations for specific applications. The addition of an operation to list available extended/domain operation for specific FDO types is strongly recommended.",
+      "name": "FDO-GR6",
       "position": "6",
-      "termCode": "FDOR6"
+      "termCode": "FDO-GR6"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR7",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR7",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
       "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR7"},
       "description": "The relations between FDO Types and supported operations are maintained in separate registries.",
-      "name": "FDOR7",
+      "name": "FDO-GR7",
       "position": "7",
-      "termCode": "FDOR7"
+      "termCode": "FDO-GR7"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR8",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
-      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR8"},
+      "skos:closeMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR8"},
       "description": "Metadata can themselves be FDOs which describe the properties of the referenced FDO. They must be specified by a registered schema that refers to defined and registered metadata categories.",
-      "itemListElement": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8-note1"
-      },
-      "name": "FDOR8",
+      "name": "FDO-GR8",
       "position": "8",
-      "termCode": "FDOR8"
+      "termCode": "FDO-GR8"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8-note1",
-      "@type": "HowToTip",
-      "citation": "TODO-F1",
-      "name": "FDOR8 Note 1",
-      "position": "1",
-      "text": "The FAIR principle F1 requires (meta)data to be assigned a persistent identifier. Implementations need to indicate how this can be satisfied."
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR9",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
-      "skos:exactMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR9"},
-      "description": "Metadata can be of different types such as descriptive, deep scientific, provenance, system, access permissions, transactions, etc.",
-      "itemListElement": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9-note1"
-      },
-      "name": "FDOR9",
+      "skos:closeMatch": { "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR9"},
+      "description": "Metadata can be of different types such as descriptive, domain specific, provenance, system, access permissions, transactions, etc.",
+      "name": "FDO-GR9",
       "position": "9",
-      "termCode": "FDOR9"
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9-note1",
-      "@type": "HowToTip",
-      "name": "FDOR9 Note 1",
-      "position": "1",
-      "text": "Currently, these different types are dealt with by different mechanisms. A unification is required to enable machine actionability."
+      "termCode": "FDO-GR9"
     },
     {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G1",
@@ -774,40 +784,40 @@
       "disambiguatingDescription": "FDO Requirements FDO-GR*, FDO-PIDR*, FDO-FDOR*, FDO-RESR*",
       "hasDefinedTerm": [
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR1"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR1"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR3"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR3"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR4"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR5"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR6"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR6"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR7"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR7"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR8"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR9"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR10"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR10"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR11"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR11"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR12"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR12"
         }
       ],
       "itemListElement": [
@@ -833,43 +843,52 @@
       "@type": "HowToSection",
       "position": "1",
       "name": "General Requirements",
-      "disambiguatingDescription": "FDO general requirements FDOR-GR1–FDOR-GR15",
+      "disambiguatingDescription": "FDO general requirements FDO-GR1–FDO-GR15",
       "itemListElement": [
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR1"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR1"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR2"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR3"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR3"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR4"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR4"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR5"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR5"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR6"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR6"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR7"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR7"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR8"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR8"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR9"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR9"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR10"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR10"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR11"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR11"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDOR12"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR12"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR13"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR14"
+        },
+        {
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR15"
         }
       ]
     },
