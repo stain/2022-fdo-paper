@@ -135,7 +135,7 @@
             "actionStatus":  { "@id": "http://schema.org/CompletedActionStatus" },
             "agent": {"@id": "https://orcid.org/0000-0001-9842-9718"},
             "name": "Creating this RO-Crate",
-            "description": "By formalizing the requirements from PR-RequirementSpec-2.1-20221017",
+            "description": "This RO-Crate was made by formalizing the requirements from PR-RequirementSpec-2.1-20221017 document, splitting the numbered requirement text into schema.org HowToSteps. Implied citations have been formalized with the closest known DOI/URL.",
             "object": [
               {"@id": "https://doi.org/10.5281/zenodo.7781926"}
             ],
