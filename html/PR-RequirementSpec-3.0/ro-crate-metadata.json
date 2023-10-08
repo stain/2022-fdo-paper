@@ -512,7 +512,27 @@
       "description": "FDO records can include a) optional kernel attributes which are defined by the FDO Forum or b) can include other community defined and registered attributes if machine actionability is guaranteed.",
       "name": "FDO-FDOR4",
       "position": "4",
-      "termCode": "FDO-FDO4"
+      "termCode": "FDO-FDO4",
+      "itemListElement": [
+        {"@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4a"},
+        {"@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4b"}
+      ]
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4a",
+      "@type": [
+        "HowToDirection"
+      ],
+      "position": "a)",
+      "text": "optional kernel attributes which are defined by the FDO Forum"
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4b",
+      "@type": [
+        "HowToDirection"
+      ],
+      "position": "b)",
+      "text": "can include other community defined and registered attributes if machine actionability is guaranteed"
     },
     {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR5",
