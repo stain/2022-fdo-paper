@@ -69,22 +69,14 @@
         {
           "@id": "#web"
         }
-      ]
-    },
-    {
-      "@id": "http://spdx.org/licenses/CC0-1.0",
-      "@type": "CreativeWork",
-      "name": "CC0-1.0",
-      "description": "Creative Commons Zero v1.0 Universal",
-      "version": "1.0",
-      "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-    },
-    {
-      "@id": "https://doi.org/10.5281/zenodo.8075229",
-      "@type": "PropertyValue",
-      "propertyID": "https://registry.identifiers.org/registry/doi",
-      "value": "doi:10.5281/zenodo.8075229",
-      "url": "https://doi.org/10.5281/zenodo.8075229"
+      ],
+      "@reverse": {
+        "about": [
+          {
+            "@id": "ro-crate-metadata.json"
+          }
+        ]
+      }
     },
     {
       "@id": "https://zenodo.org/record/8075230/files/evaluating-fdo-and-ld-crate.zip",
@@ -95,42 +87,49 @@
           "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/263"
         }
       ],
-      "contentSize": "174349"
+      "contentSize": "174349",
+      "@reverse": {
+        "distribution": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
     },
     {
-      "@id": "http://spdx.org/licenses/CC-BY-4.0",
-      "@type": "CreativeWork",
-      "name": "CC-BY-4.0",
-      "description": "Creative Commons Attribution 4.0 International",
-      "version": "4.0",
-      "url": "https://creativecommons.org/licenses/by/4.0/"
-    },
-    {
-      "@id": "https://doi.org/10.48550/arXiv.2306.07436",
-      "name": "Evaluating FAIR Digital Object and Linked Data as distributed object systems (PDF)",
-      "@type": "ScholarlyArticle",
-      "datePublished": "2023-06-12",
-      "identifier": "https://doi.org/10.48550/arXiv.2306.07436",
-      "author": [
+      "@id": "#table1-assessments",
+      "@type": "AssessAction",
+      "name": "Considerations for Table 1 based on literature",
+      "startTime": "2022-05-04T10:31:56+0100",
+      "endTime": "2023-06-17T14:19:58+0100",
+      "agent": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "object": [
         {
-          "@id": "https://orcid.org/0000-0001-9842-9718"
+          "@id": "https://fairdo.org/1316-2/"
         },
         {
-          "@id": "https://orcid.org/0000-0003-1219-2137"
-        },
-        {
-          "@id": "https://orcid.org/0000-0003-0183-6910"
+          "@id": "http://dbpedia.org/resource/World_Wide_Web"
         }
       ],
-      "description": "FAIR Digital Object (FDO) is an emerging concept that is highlighted by European Open Science Cloud (EOSC) as a potential candidate for building a ecosystem of machine-actionable research outputs. In this work we systematically evaluate FDO and its implementations as a global distributed object system, by using five different conceptual frameworks that cover interoperability, middleware, FAIR principles, EOSC requirements and FDO guidelines themself. We compare the FDO approach with established Linked Data practices and the existing Web architecture, and provide a brief history of the Semantic Web while discussing why these technologies may have been difficult to adopt for FDO purposes. We conclude with recommendations for both Linked Data and FDO communities to further their adaptation and alignment.",
-      "license": {
-        "@id": "http://spdx.org/licenses/CC-BY-4.0"
+      "instrument": {
+        "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
       },
-      "version": "2",
-      "keywords": "Distributed, Parallel, and Cluster Computing (cs.DC), Networking and Internet Architecture (cs.NI), FOS: Computer and information sciences, FOS: Computer and information sciences, H.3; C.2",
-      "dateModified": "2023-06-14T00:03:40Z",
-      "publisher": {
-        "@id": "https://arxiv.org/"
+      "result": "table1.html"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.8075229",
+      "@type": "PropertyValue",
+      "propertyID": "https://registry.identifiers.org/registry/doi",
+      "value": "doi:10.5281/zenodo.8075229",
+      "url": "https://doi.org/10.5281/zenodo.8075229",
+      "@reverse": {
+        "identifier": [
+          {
+            "@id": "./"
+          }
+        ]
       }
     },
     {
@@ -178,7 +177,14 @@
           "@id": "table5.html"
         }
       ],
-      "url": "https://s11.no/2023/phd/evaluating-fdo/"
+      "url": "https://s11.no/2023/phd/evaluating-fdo/",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
     },
     {
       "@id": "table1.html",
@@ -205,6 +211,113 @@
       ],
       "citation": {
         "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
+      },
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          },
+          {
+            "@id": "main.html"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://fairdo.org/1316-2/",
+      "@type": "Thing",
+      "name": "FAIR Digital Objects",
+      "alternateName": "FDO",
+      "@reverse": {
+        "object": [
+          {
+            "@id": "#table1-assessments"
+          }
+        ],
+        "about": [
+          {
+            "@id": "table1.html"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://dbpedia.org/resource/World_Wide_Web",
+      "@type": "Thing",
+      "name": "World Wide Web",
+      "@reverse": {
+        "object": [
+          {
+            "@id": "#table1-assessments"
+          }
+        ],
+        "about": [
+          {
+            "@id": "table1.html"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://doi.org/10.1007/978-3-319-31861-5_1",
+      "@type": [
+        "ScholarlyArticle",
+        "Chapter"
+      ],
+      "name": "Interoperability Framework and Distributed Platform for Fast Data Applications",
+      "creditText": "(Delgado 2016)",
+      "pageStart": "3",
+      "pageEnd": "40",
+      "isAccessibleForFree": false,
+      "copyrightNotice": "© Springer International Publishing Switzerland 2016",
+      "author": {
+        "@id": "https://orcid.org/0000-0002-2536-4906"
+      },
+      "year": "2016",
+      "@reverse": {
+        "instrument": [
+          {
+            "@id": "#table1-assessments"
+          }
+        ],
+        "citation": [
+          {
+            "@id": "table1.html"
+          },
+          {
+            "@id": "table2.html"
+          }
+        ],
+        "isPartOf": [
+          {
+            "@id": "https://link.springer.com/chapter/10.1007/978-3-319-31861-5_1/figures/5"
+          }
+        ],
+        "isBasedOn": [
+          {
+            "@id": "#metamodel"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2536-4906",
+      "@type": "Person",
+      "name": "José Carlos Martins Delgado",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
+          },
+          {
+            "@id": "#metamodel"
+          }
+        ],
+        "dct:creator": [
+          {
+            "@id": "#metamodel"
+          }
+        ]
       }
     },
     {
@@ -235,69 +348,34 @@
       ],
       "citation": {
         "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
+      },
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          },
+          {
+            "@id": "main.html"
+          }
+        ]
       }
     },
     {
-      "@id": "table3.html",
-      "@type": [
-        "File",
-        "Table"
-      ],
-      "cssSelector": "#tbl:fdo-checks",
-      "name": "Table 3",
-      "description": "Checking FDO guidelines (Boinno et al. 2019; Anders et al. 2023) against its current implementations as DOIP (DONA 2018) and Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022), with suggestions for required additions.",
-      "encodingFormat": [
-        "text/html",
-        {
-          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
-        }
-      ],
-      "citation": [
-        {
-          "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx"
-        },
-        {
-          "@id": "https://doi.org/10.5281/zenodo.7782262"
-        },
-        {
-          "@id": "https://hdl.handle.net/0.DOIP/DOIPV2.0"
-        },
-        {
-          "@id": "https://fairdigitalobjectframework.org/"
-        }
-      ]
-    },
-    {
-      "@id": "table4.html",
-      "@type": [
-        "File",
-        "Table"
-      ],
-      "cssSelector": "#tbl:fdo-web-middleware",
-      "name": "Table 4",
-      "description": "Comparing FAIR Digital Object (with the DOIP 2.0 protocol (DONA 2018)) and Web technologies (using Linked Data) as middleware infrastructures (Zarras 2004) ",
-      "encodingFormat": [
-        "text/html",
-        {
-          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
-        }
-      ]
-    },
-    {
-      "@id": "table5.html",
-      "@type": [
-        "File",
-        "Table"
-      ],
-      "cssSelector": "#tbl:fair-data-maturity-model",
-      "name": "Table 5",
-      "description": "Assessing RDA’s FAIR Data Maturity Model (FAIR Data Maturity Model Working Group 2020; Bahim et al. 2020) (first 2 columns) against the FDO guidelines (Bonino et al. 2019), FDO implemented with the protocol DOIPv2 (DONA 2018), Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022) and examples from Linked Data practices in general. (— indicates Unspecified, may be possible with additional conventions) ",
-      "encodingFormat": [
-        "text/html",
-        {
-          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
-        }
-      ]
+      "@id": "https://link.springer.com/chapter/10.1007/978-3-319-31861-5_1/figures/5",
+      "@type": "WebPageElement",
+      "name": "Figure 1.5 in (Delgado 2018)",
+      "isAccessibleForFree": true,
+      "copyrightNotice": "© Springer International Publishing Switzerland 2016",
+      "isPartOf": {
+        "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
+      },
+      "@reverse": {
+        "image": [
+          {
+            "@id": "#metamodel"
+          }
+        ]
+      }
     },
     {
       "@id": "#metamodel",
@@ -365,7 +443,441 @@
         {
           "@id": "#metamodel-Protocol"
         }
-      ]
+      ],
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          }
+        ],
+        "encodesCreativeWork": [
+          {
+            "@id": "table2.html"
+          }
+        ],
+        "skos:inScheme": [
+          {
+            "@id": "#metamodel-Resource"
+          },
+          {
+            "@id": "#metamodel-Link"
+          },
+          {
+            "@id": "#metamodel-Service"
+          },
+          {
+            "@id": "#metamodel-Transaction"
+          },
+          {
+            "@id": "#metamodel-Process"
+          },
+          {
+            "@id": "#metamodel-Operation"
+          },
+          {
+            "@id": "#metamodel-Message"
+          },
+          {
+            "@id": "#metamodel-Request"
+          },
+          {
+            "@id": "#metamodel-Response"
+          },
+          {
+            "@id": "#metamodel-Channel"
+          },
+          {
+            "@id": "#metamodel-Protocol"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#metamodel-Resource",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Resource",
+      "skos:related": {
+        "@id": "#metamodel-Service"
+      },
+      "skos:closeMatch": [
+        {
+          "@id": "#fdo-DO"
+        },
+        {
+          "@id": "#web-Resource"
+        }
+      ],
+      "skos:narrowMatch": [
+        {
+          "@id": "#fdo-FDO"
+        }
+      ],
+      "skos:prefLabel": "Resource",
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      },
+      "@reverse": {
+        "skos:hasTopConcept": [
+          {
+            "@id": "#metamodel"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#metamodel"
+          }
+        ],
+        "skos:broader": [
+          {
+            "@id": "#metamodel-Link"
+          },
+          {
+            "@id": "#metamodel-Operation"
+          },
+          {
+            "@id": "#metamodel-Message"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#metamodel-Link",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Link",
+      "skos:prefLabel": "Link",
+      "skos:closeMatch": [
+        {
+          "@id": "http://dbpedia.org/resource/Persistent_identifier"
+        }
+      ],
+      "skos:narrowMatch": [
+        {
+          "@id": "http://dbpedia.org/resource/Handle"
+        },
+        {
+          "@id": "http://dbpedia.org/resource/URL"
+        }
+      ],
+      "skos:broader": {
+        "@id": "#metamodel-Resource"
+      },
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      },
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "#metamodel"
+          }
+        ],
+        "skos:closeMatch": [
+          {
+            "@id": "http://dbpedia.org/resource/URL"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#metamodel-Service",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Service",
+      "skos:prefLabel": "Service",
+      "skos:closeMatch": [
+        {
+          "@id": "#fdo-DOIP-service"
+        },
+        {
+          "@id": "#web-Server"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      },
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "#metamodel"
+          }
+        ],
+        "skos:related": [
+          {
+            "@id": "#metamodel-Resource"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#metamodel-Transaction",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Transaction",
+      "skos:narrowMatch": {
+        "@id": "#web-ConditionalRequests"
+      },
+      "skos:prefLabel": "Transaction",
+      "skos:related": {
+        "@id": "#metamodel-Process"
+      },
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      },
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "#metamodel"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#metamodel-Process",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Process",
+      "skos:narrowMatch": [
+        {
+          "@id": "#fdo-Extended-operations"
+        }
+      ],
+      "skos:prefLabel": "Process",
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      },
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "#metamodel"
+          }
+        ],
+        "skos:related": [
+          {
+            "@id": "#metamodel-Transaction"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#metamodel-Operation",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Operation",
+      "skos:closeMatch": [
+        {
+          "@id": "#fdo-DOIPOperation"
+        },
+        {
+          "@id": "#web-Method"
+        }
+      ],
+      "skos:narrowMatch": {
+        "@id": "#web-query"
+      },
+      "skos:broader": {
+        "@id": "#metamodel-Resource"
+      },
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      },
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "#metamodel"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#metamodel-Message",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Message",
+      "skos:closeMatch": [
+        {
+          "@id": "#fdo-Segment"
+        },
+        {
+          "@id": "#web-Message"
+        }
+      ],
+      "skos:narrowMatch": {
+        "@id": "#web-Representation"
+      },
+      "skos:broader": {
+        "@id": "#metamodel-Resource"
+      },
+      "skos:related": {
+        "@id": "#metamodel-Channel"
+      },
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      },
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "#metamodel"
+          }
+        ],
+        "skos:broader": [
+          {
+            "@id": "#metamodel-Request"
+          },
+          {
+            "@id": "#metamodel-Response"
+          }
+        ],
+        "skos:related": [
+          {
+            "@id": "#metamodel-Protocol"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#metamodel-Request",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Request",
+      "skos:prefLabel": "Request",
+      "skos:closeMatch": [
+        {
+          "@id": "#fdo-DOIPRequest"
+        },
+        {
+          "@id": "#web-Request"
+        }
+      ],
+      "skos:broader": {
+        "@id": "#metamodel-Message"
+      },
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      },
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "#metamodel"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#metamodel-Response",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Response",
+      "skos:closeMatch": [
+        {
+          "@id": "#fdo-DOIPRequest"
+        },
+        {
+          "@id": "#web-Response"
+        }
+      ],
+      "skos:broader": {
+        "@id": "#metamodel-Message"
+      },
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      },
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "#metamodel"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#metamodel-Channel",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "skos:closeMatch": [
+        {
+          "@id": "#fdo-DOIPTransportProtocol"
+        }
+      ],
+      "name": "Channel",
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      },
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "#metamodel"
+          }
+        ],
+        "skos:related": [
+          {
+            "@id": "#metamodel-Message"
+          },
+          {
+            "@id": "#metamodel-Protocol"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#metamodel-Protocol",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "name": "Protocol",
+      "skos:narrowMatch": [
+        {
+          "@id": "https://hdl.handle.net/0.DOIP/DOIPV2.0"
+        },
+        {
+          "@id": "https://doi.org/10.17487/rfc7230"
+        },
+        {
+          "@id": "https://doi.org/10.17487/rfc7540"
+        },
+        {
+          "@id": "https://doi.org/10.17487/rfc9114"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "#metamodel-Message"
+        },
+        {
+          "@id": "#metamodel-Channel"
+        }
+      ],
+      "skos:inScheme": {
+        "@id": "#metamodel"
+      },
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "#metamodel"
+          }
+        ]
+      }
     },
     {
       "@id": "#fdo",
@@ -428,7 +940,334 @@
         {
           "@id": "http://dbpedia.org/resource/JSON_Web_Signature"
         }
-      ]
+      ],
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          }
+        ],
+        "encodesCreativeWork": [
+          {
+            "@id": "table2.html"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#fdo-FDO",
+      "@type": "DefinedTerm",
+      "name": "FAIR Digital Object",
+      "alternateName": "FDO",
+      "skos:broader": {
+        "@id": "#fdo-DO"
+      },
+      "url": "https://doi.org/10.5281/zenodo.7782262",
+      "@reverse": {
+        "skos:narrowMatch": [
+          {
+            "@id": "#metamodel-Resource"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#fdo"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#fdo-DO",
+      "@type": "DefinedTerm",
+      "name": "Digital Object",
+      "identifier": "0.TYPE/DO",
+      "alternateName": "DO",
+      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=23",
+      "@reverse": {
+        "skos:closeMatch": [
+          {
+            "@id": "#metamodel-Resource"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#fdo"
+          }
+        ],
+        "skos:broader": [
+          {
+            "@id": "#fdo-FDO"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#fdo-DOIP-service",
+      "@type": "DefinedTerm",
+      "name": "DOIP service",
+      "identifier": "0.TYPE/DOIPServiceInfo",
+      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=10",
+      "@reverse": {
+        "skos:closeMatch": [
+          {
+            "@id": "#metamodel-Service"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#fdo"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#fdo-Extended-operations",
+      "@type": "DefinedTerm",
+      "name": "Extended operations",
+      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=12",
+      "skos:broader": {
+        "@id": "#fdo-DOIPOperation"
+      },
+      "@reverse": {
+        "skos:narrowMatch": [
+          {
+            "@id": "#metamodel-Process"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#fdo"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#fdo-DOIPOperation",
+      "@type": "DefinedTerm",
+      "name": "DOIP Operation",
+      "identifier": "0.TYPE/DOIPOperation",
+      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=11",
+      "@reverse": {
+        "skos:closeMatch": [
+          {
+            "@id": "#metamodel-Operation"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#fdo"
+          }
+        ],
+        "skos:broader": [
+          {
+            "@id": "#fdo-Extended-operations"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#fdo-DOIPRequest",
+      "@type": "DefinedTerm",
+      "identifier": "0.DOIP/Request",
+      "name": "DOIP Request",
+      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=15",
+      "@reverse": {
+        "skos:closeMatch": [
+          {
+            "@id": "#metamodel-Request"
+          },
+          {
+            "@id": "#metamodel-Response"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#fdo"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#fdo-DOIPResponse",
+      "@type": "DefinedTerm",
+      "identifier": "0.DOIP/Response",
+      "name": "DOIP Response",
+      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=16",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "#fdo"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#fdo-Segment",
+      "@type": "DefinedTerm",
+      "name": "Segment",
+      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=14",
+      "@reverse": {
+        "skos:closeMatch": [
+          {
+            "@id": "#metamodel-Message"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#fdo"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#fdo-requestId",
+      "@type": "DefinedTerm",
+      "name": "requestId",
+      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=22",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "#fdo"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#fdo-DOIPTransportProtocol",
+      "@type": "DefinedTerm",
+      "identifier": "0.DOIP/Transport",
+      "name": "DOIP Transport Protocol",
+      "skos:narrower": [
+        {
+          "@id": "http://dbpedia.org/resource/Transmission_Control_Protocol"
+        },
+        {
+          "@id": "http://dbpedia.org/resource/Transport_Layer_Security"
+        },
+        {
+          "@id": "http://dbpedia.org/resource/JSON_Web_Signature"
+        }
+      ],
+      "@reverse": {
+        "skos:closeMatch": [
+          {
+            "@id": "#metamodel-Channel"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#fdo"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://dbpedia.org/resource/Persistent_identifier",
+      "@type": "DefinedTerm",
+      "name": "Persistent Identifier",
+      "alternateName": "PID",
+      "skos:narrower": {
+        "@id": "http://dbpedia.org/resource/Handle"
+      },
+      "url": "https://doi.org/10.1371/journal.pbio.2001414",
+      "@reverse": {
+        "skos:closeMatch": [
+          {
+            "@id": "#metamodel-Link"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#fdo"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://dbpedia.org/resource/Handle",
+      "@type": "DefinedTerm",
+      "name": "Handle",
+      "url": "https://doi.org/10.17487/rfc3650",
+      "@reverse": {
+        "skos:narrowMatch": [
+          {
+            "@id": "#metamodel-Link"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#fdo"
+          }
+        ],
+        "skos:narrower": [
+          {
+            "@id": "http://dbpedia.org/resource/Persistent_identifier"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://dbpedia.org/resource/Transmission_Control_Protocol",
+      "@type": "DefinedTerm",
+      "name": "Transmission Control Protocol",
+      "alternateName": "TCP/IP",
+      "url": "https://doi.org/10.17487/RFC9293",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "#fdo"
+          },
+          {
+            "@id": "#web"
+          }
+        ],
+        "skos:narrower": [
+          {
+            "@id": "#fdo-DOIPTransportProtocol"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://dbpedia.org/resource/Transport_Layer_Security",
+      "@type": "DefinedTerm",
+      "name": "Transport Layer Security",
+      "alternateName": "TLS",
+      "url": "https://doi.org/10.17487/RFC8446",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "#fdo"
+          },
+          {
+            "@id": "#web"
+          }
+        ],
+        "skos:narrower": [
+          {
+            "@id": "#fdo-DOIPTransportProtocol"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://dbpedia.org/resource/JSON_Web_Signature",
+      "@type": "DefinedTerm",
+      "name": "JSON Web Signature",
+      "alternateName": "JWS",
+      "url": "https://doi.org/10.17487/RFC7515",
+      "@reverse": {
+        "hasDefinedTerm": [
+          {
+            "@id": "#fdo"
+          }
+        ],
+        "skos:narrower": [
+          {
+            "@id": "#fdo-DOIPTransportProtocol"
+          }
+        ]
+      }
     },
     {
       "@id": "#web",
@@ -437,9 +1276,11 @@
       "creator": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
-      "isBasedOn": {
-        "@id": "https://doi.org/10.17487/RFC9110"
-      },
+      "isBasedOn": [
+        {
+          "@id": "https://doi.org/10.17487/RFC9110"
+        }
+      ],
       "hasDefinedTerm": [
         {
           "@id": "#web-Resource"
@@ -486,389 +1327,230 @@
         {
           "@id": "http://dbpedia.org/resource/URL"
         }
-      ]
-    },
-    {
-      "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/263",
-      "@type": "DefinedTerm",
-      "name": "ZIP Format",
-      "alternateName": "ZIP"
-    },
-    {
-      "@id": "#table1-assessments",
-      "@type": "AssessAction",
-      "name": "Considerations for Table 1 based on literature",
-      "startTime": "2022-05-04T10:31:56+0100",
-      "endTime": "2023-06-17T14:19:58+0100",
-      "agent": {
-        "@id": "https://orcid.org/0000-0001-9842-9718"
-      },
-      "object": [
-        {
-          "@id": "https://fairdo.org/1316-2/"
-        },
-        {
-          "@id": "http://dbpedia.org/resource/World_Wide_Web"
-        }
       ],
-      "instrument": {
-        "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
-      },
-      "result": "table1.html"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9842-9718",
-      "@type": "Person",
-      "name": "Stian Soiland-Reyes"
-    },
-    {
-      "@id": "https://fairdo.org/1316-2/",
-      "@type": "Thing",
-      "name": "FAIR Digital Objects",
-      "alternateName": "FDO"
-    },
-    {
-      "@id": "http://dbpedia.org/resource/World_Wide_Web",
-      "@type": "Thing",
-      "name": "World Wide Web"
-    },
-    {
-      "@id": "https://doi.org/10.1007/978-3-319-31861-5_1",
-      "@type": [
-        "ScholarlyArticle",
-        "Chapter"
-      ],
-      "name": "Interoperability Framework and Distributed Platform for Fast Data Applications",
-      "creditText": "(Delgado 2016)",
-      "pageStart": "3",
-      "pageEnd": "40",
-      "isAccessibleForFree": false,
-      "copyrightNotice": "© Springer International Publishing Switzerland 2016",
-      "author": {
-        "@id": "https://orcid.org/0000-0002-2536-4906"
-      },
-      "year": "2016"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1219-2137",
-      "@type": "Person",
-      "name": "Carole Goble"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0183-6910",
-      "@type": "Person",
-      "name": "Paul Groth"
-    },
-    {
-      "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471",
-      "@type": "DefinedTerm",
-      "name": "Hypertext Markup Language 5",
-      "alternateName": "HTML5"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-2536-4906",
-      "@type": "Person",
-      "name": "José Carlos Martins Delgado"
-    },
-    {
-      "@id": "https://link.springer.com/chapter/10.1007/978-3-319-31861-5_1/figures/5",
-      "@type": "WebPageElement",
-      "name": "Figure 1.5 in (Delgado 2018)",
-      "isAccessibleForFree": true,
-      "copyrightNotice": "© Springer International Publishing Switzerland 2016",
-      "isPartOf": {
-        "@id": "https://doi.org/10.1007/978-3-319-31861-5_1"
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          }
+        ],
+        "encodesCreativeWork": [
+          {
+            "@id": "table2.html"
+          }
+        ]
       }
-    },
-    {
-      "@id": "#metamodel-Resource",
-      "@type": [
-        "DefinedTerm",
-        "skos:Concept"
-      ],
-      "name": "Resource",
-      "skos:related": {
-        "@id": "#metamodel-Service"
-      },
-      "skos:closeMatch": [
-        {
-          "@id": "#fdo-DO"
-        },
-        {
-          "@id": "#web-Resource"
-        }
-      ],
-      "skos:narrowMatch": {
-        "@id": "#fdo-FDO"
-      },
-      "skos:prefLabel": "Resource",
-      "skos:inScheme": {
-        "@id": "#metamodel"
-      }
-    },
-    {
-      "@id": "#metamodel-Link",
-      "@type": [
-        "DefinedTerm",
-        "skos:Concept"
-      ],
-      "name": "Link",
-      "skos:prefLabel": "Link",
-      "skos:closeMatch": {
-        "@id": "http://dbpedia.org/resource/Persistent_identifier"
-      },
-      "skos:narrowMatch": [
-        {
-          "@id": "http://dbpedia.org/resource/Handle"
-        },
-        {
-          "@id": "http://dbpedia.org/resource/URL"
-        }
-      ],
-      "skos:broader": {
-        "@id": "#metamodel-Resource"
-      },
-      "skos:inScheme": {
-        "@id": "#metamodel"
-      }
-    },
-    {
-      "@id": "#metamodel-Service",
-      "@type": [
-        "DefinedTerm",
-        "skos:Concept"
-      ],
-      "name": "Service",
-      "skos:prefLabel": "Service",
-      "skos:closeMatch": [
-        {
-          "@id": "#fdo-DOIP-service"
-        },
-        {
-          "@id": "#web-Server"
-        }
-      ],
-      "skos:inScheme": {
-        "@id": "#metamodel"
-      }
-    },
-    {
-      "@id": "#metamodel-Transaction",
-      "@type": [
-        "DefinedTerm",
-        "skos:Concept"
-      ],
-      "name": "Transaction",
-      "skos:narrowMatch": {
-        "@id": "#web-ConditionalRequests"
-      },
-      "skos:prefLabel": "Transaction",
-      "skos:related": {
-        "@id": "#metamodel-Process"
-      },
-      "skos:inScheme": {
-        "@id": "#metamodel"
-      }
-    },
-    {
-      "@id": "#metamodel-Process",
-      "@type": [
-        "DefinedTerm",
-        "skos:Concept"
-      ],
-      "name": "Process",
-      "skos:narrowMatch": {
-        "@id": "#fdo-Extended-operations"
-      },
-      "skos:prefLabel": "Process",
-      "skos:inScheme": {
-        "@id": "#metamodel"
-      }
-    },
-    {
-      "@id": "#metamodel-Operation",
-      "@type": [
-        "DefinedTerm",
-        "skos:Concept"
-      ],
-      "name": "Operation",
-      "skos:closeMatch": [
-        {
-          "@id": "#fdo-DOIPOperation"
-        },
-        {
-          "@id": "#web-Method"
-        }
-      ],
-      "skos:narrowMatch": {
-        "@id": "#web-query"
-      },
-      "skos:broader": {
-        "@id": "#metamodel-Resource"
-      },
-      "skos:inScheme": {
-        "@id": "#metamodel"
-      }
-    },
-    {
-      "@id": "#metamodel-Message",
-      "@type": [
-        "DefinedTerm",
-        "skos:Concept"
-      ],
-      "name": "Message",
-      "skos:closeMatch": [
-        {
-          "@id": "#fdo-Segment"
-        },
-        {
-          "@id": "#web-Message"
-        }
-      ],
-      "skos:narrowMatch": {
-        "@id": "#web-Representation"
-      },
-      "skos:broader": {
-        "@id": "#metamodel-Resource"
-      },
-      "skos:related": {
-        "@id": "#metamodel-Channel"
-      },
-      "skos:inScheme": {
-        "@id": "#metamodel"
-      }
-    },
-    {
-      "@id": "#metamodel-Request",
-      "@type": [
-        "DefinedTerm",
-        "skos:Concept"
-      ],
-      "name": "Request",
-      "skos:prefLabel": "Request",
-      "skos:closeMatch": [
-        {
-          "@id": "#fdo-DOIPRequest"
-        },
-        {
-          "@id": "#web-Request"
-        }
-      ],
-      "skos:broader": {
-        "@id": "#metamodel-Message"
-      },
-      "skos:inScheme": {
-        "@id": "#metamodel"
-      }
-    },
-    {
-      "@id": "#metamodel-Response",
-      "@type": [
-        "DefinedTerm",
-        "skos:Concept"
-      ],
-      "name": "Response",
-      "skos:closeMatch": [
-        {
-          "@id": "#fdo-DOIPRequest"
-        },
-        {
-          "@id": "#web-Response"
-        }
-      ],
-      "skos:broader": {
-        "@id": "#metamodel-Message"
-      },
-      "skos:inScheme": {
-        "@id": "#metamodel"
-      }
-    },
-    {
-      "@id": "#metamodel-Channel",
-      "@type": [
-        "DefinedTerm",
-        "skos:Concept"
-      ],
-      "skos:closeMatch": {
-        "@id": "#fdo-DOIPTransportProtocol"
-      },
-      "name": "Channel",
-      "skos:inScheme": {
-        "@id": "#metamodel"
-      }
-    },
-    {
-      "@id": "#metamodel-Protocol",
-      "@type": [
-        "DefinedTerm",
-        "skos:Concept"
-      ],
-      "name": "Protocol",
-      "skos:narrowMatch": [
-        {
-          "@id": "https://hdl.handle.net/0.DOIP/DOIPV2.0"
-        },
-        {
-          "@id": "https://doi.org/10.17487/rfc7230"
-        },
-        {
-          "@id": "https://doi.org/10.17487/rfc7540"
-        },
-        {
-          "@id": "https://doi.org/10.17487/rfc9114"
-        }
-      ],
-      "skos:related": [
-        {
-          "@id": "#metamodel-Message"
-        },
-        {
-          "@id": "#metamodel-Channel"
-        }
-      ],
-      "skos:inScheme": {
-        "@id": "#metamodel"
-      }
-    },
-    {
-      "@id": "#fdo-DO",
-      "@type": "DefinedTerm",
-      "name": "Digital Object",
-      "identifier": "0.TYPE/DO",
-      "alternateName": "DO",
-      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=23"
     },
     {
       "@id": "#web-Resource",
       "@type": "DefinedTerm",
       "name": "Resource",
-      "url": "https://www.rfc-editor.org/rfc/rfc9110#name-resources"
+      "url": "https://www.rfc-editor.org/rfc/rfc9110#name-resources",
+      "@reverse": {
+        "skos:closeMatch": [
+          {
+            "@id": "#metamodel-Resource"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#web"
+          }
+        ]
+      }
     },
     {
-      "@id": "#fdo-FDO",
+      "@id": "#web-Server",
       "@type": "DefinedTerm",
-      "name": "FAIR Digital Object",
-      "alternateName": "FDO",
-      "skos:broader": {
-        "@id": "#fdo-DO"
-      },
-      "url": "https://doi.org/10.5281/zenodo.7782262"
+      "name": "Server",
+      "alternateName": "Origin Server",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110#name-origin-server",
+      "@reverse": {
+        "skos:closeMatch": [
+          {
+            "@id": "#metamodel-Service"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#web"
+          }
+        ]
+      }
     },
     {
-      "@id": "http://dbpedia.org/resource/Persistent_identifier",
+      "@id": "#web-ConditionalRequests",
       "@type": "DefinedTerm",
-      "name": "Persistent Identifier",
-      "alternateName": "PID",
-      "skos:narrower": {
-        "@id": "http://dbpedia.org/resource/Handle"
-      },
-      "url": "https://doi.org/10.1371/journal.pbio.2001414"
+      "name": "Conditional Requests",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110#name-conditional-requests",
+      "@reverse": {
+        "skos:narrowMatch": [
+          {
+            "@id": "#metamodel-Transaction"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#web"
+          }
+        ]
+      }
     },
     {
-      "@id": "http://dbpedia.org/resource/Handle",
+      "@id": "#web-Method",
       "@type": "DefinedTerm",
-      "name": "Handle",
-      "url": "https://doi.org/10.17487/rfc3650"
+      "name": "Method",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110#name-methods",
+      "@reverse": {
+        "skos:closeMatch": [
+          {
+            "@id": "#metamodel-Operation"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#web"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#web-query",
+      "@type": "DefinedTerm",
+      "name": "Query",
+      "url": "https://www.rfc-editor.org/rfc/rfc3986#section-3.4",
+      "@reverse": {
+        "skos:narrowMatch": [
+          {
+            "@id": "#metamodel-Operation"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#web"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#web-Request",
+      "@type": "DefinedTerm",
+      "name": "Request",
+      "url": "https://www.rfc-editor.org/rfc/rfc7230.html#section-3.1.1",
+      "@reverse": {
+        "skos:closeMatch": [
+          {
+            "@id": "#metamodel-Request"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#web"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#web-Response",
+      "@type": "DefinedTerm",
+      "name": "Response",
+      "url": "https://www.rfc-editor.org/rfc/rfc7230.html#section-3.1.2",
+      "@reverse": {
+        "skos:closeMatch": [
+          {
+            "@id": "#metamodel-Response"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#web"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#web-Message",
+      "@type": "DefinedTerm",
+      "name": "Message",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110#name-messages",
+      "@reverse": {
+        "skos:closeMatch": [
+          {
+            "@id": "#metamodel-Message"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#web"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "#web-Representation",
+      "@type": "DefinedTerm",
+      "name": "Representation",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110#name-representations",
+      "@reverse": {
+        "skos:narrowMatch": [
+          {
+            "@id": "#metamodel-Message"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#web"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://doi.org/10.17487/rfc7230",
+      "name": "HTTP/1.1",
+      "@reverse": {
+        "skos:narrowMatch": [
+          {
+            "@id": "#metamodel-Protocol"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#web"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://doi.org/10.17487/rfc7540",
+      "name": "HTTP/2",
+      "@reverse": {
+        "skos:narrowMatch": [
+          {
+            "@id": "#metamodel-Protocol"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#web"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://doi.org/10.17487/rfc9114",
+      "name": "HTTP/3",
+      "@reverse": {
+        "skos:narrowMatch": [
+          {
+            "@id": "#metamodel-Protocol"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#web"
+          }
+        ]
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/URL",
@@ -878,132 +1560,59 @@
       },
       "name": "Uniform Resource Locator",
       "alternateName": "URL",
-      "url": "https://doi.org/10.17487/rfc3986"
-    },
-    {
-      "@id": "#fdo-DOIP-service",
-      "@type": "DefinedTerm",
-      "name": "DOIP service",
-      "identifier": "0.TYPE/DOIPServiceInfo",
-      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=10"
-    },
-    {
-      "@id": "#web-Server",
-      "@type": "DefinedTerm",
-      "name": "Server",
-      "alternateName": "Origin Server",
-      "url": "https://www.rfc-editor.org/rfc/rfc9110#name-origin-server"
-    },
-    {
-      "@id": "#web-ConditionalRequests",
-      "@type": "DefinedTerm",
-      "name": "Conditional Requests",
-      "url": "https://www.rfc-editor.org/rfc/rfc9110#name-conditional-requests"
-    },
-    {
-      "@id": "#fdo-Extended-operations",
-      "@type": "DefinedTerm",
-      "name": "Extended operations",
-      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=12",
-      "skos:broader": {
-        "@id": "#fdo-DOIPOperation"
+      "url": "https://doi.org/10.17487/rfc3986",
+      "@reverse": {
+        "skos:narrowMatch": [
+          {
+            "@id": "#metamodel-Link"
+          }
+        ],
+        "hasDefinedTerm": [
+          {
+            "@id": "#web"
+          }
+        ]
       }
     },
     {
-      "@id": "#fdo-DOIPOperation",
-      "@type": "DefinedTerm",
-      "name": "DOIP Operation",
-      "identifier": "0.TYPE/DOIPOperation",
-      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=11"
-    },
-    {
-      "@id": "#web-Method",
-      "@type": "DefinedTerm",
-      "name": "Method",
-      "url": "https://www.rfc-editor.org/rfc/rfc9110#name-methods"
-    },
-    {
-      "@id": "#web-query",
-      "@type": "DefinedTerm",
-      "name": "Query",
-      "url": "https://www.rfc-editor.org/rfc/rfc3986#section-3.4"
-    },
-    {
-      "@id": "#fdo-Segment",
-      "@type": "DefinedTerm",
-      "name": "Segment",
-      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=14"
-    },
-    {
-      "@id": "#web-Message",
-      "@type": "DefinedTerm",
-      "name": "Message",
-      "url": "https://www.rfc-editor.org/rfc/rfc9110#name-messages"
-    },
-    {
-      "@id": "#web-Representation",
-      "@type": "DefinedTerm",
-      "name": "Representation",
-      "url": "https://www.rfc-editor.org/rfc/rfc9110#name-representations"
-    },
-    {
-      "@id": "#fdo-DOIPRequest",
-      "@type": "DefinedTerm",
-      "identifier": "0.DOIP/Request",
-      "name": "DOIP Request",
-      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=15"
-    },
-    {
-      "@id": "#web-Request",
-      "@type": "DefinedTerm",
-      "name": "Request",
-      "url": "https://www.rfc-editor.org/rfc/rfc7230.html#section-3.1.1"
-    },
-    {
-      "@id": "#web-Response",
-      "@type": "DefinedTerm",
-      "name": "Response",
-      "url": "https://www.rfc-editor.org/rfc/rfc7230.html#section-3.1.2"
-    },
-    {
-      "@id": "#fdo-DOIPTransportProtocol",
-      "@type": "DefinedTerm",
-      "identifier": "0.DOIP/Transport",
-      "name": "DOIP Transport Protocol",
-      "skos:narrower": [
+      "@id": "table3.html",
+      "@type": [
+        "File",
+        "Table"
+      ],
+      "cssSelector": "#tbl:fdo-checks",
+      "name": "Table 3",
+      "description": "Checking FDO guidelines (Boinno et al. 2019; Anders et al. 2023) against its current implementations as DOIP (DONA 2018) and Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022), with suggestions for required additions.",
+      "encodingFormat": [
+        "text/html",
         {
-          "@id": "http://dbpedia.org/resource/Transmission_Control_Protocol"
-        },
-        {
-          "@id": "http://dbpedia.org/resource/Transport_Layer_Security"
-        },
-        {
-          "@id": "http://dbpedia.org/resource/JSON_Web_Signature"
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
         }
-      ]
-    },
-    {
-      "@id": "https://hdl.handle.net/0.DOIP/DOIPV2.0",
-      "@type": "CreativeWork",
-      "name": "Digital Object Interface Protocol specification, version 2.0",
-      "publisher": {
-        "@id": "https://www.dona.net/"
+      ],
+      "citation": [
+        {
+          "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7782262"
+        },
+        {
+          "@id": "https://hdl.handle.net/0.DOIP/DOIPV2.0"
+        },
+        {
+          "@id": "https://fairdigitalobjectframework.org/"
+        }
+      ],
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          },
+          {
+            "@id": "main.html"
+          }
+        ]
       }
-    },
-    {
-      "@id": "https://doi.org/10.17487/rfc7230",
-      "name": "HTTP/1.1",
-      "@type": "Thing"
-    },
-    {
-      "@id": "https://doi.org/10.17487/rfc7540",
-      "name": "HTTP/2",
-      "@type": "Thing"
-    },
-    {
-      "@id": "https://doi.org/10.17487/rfc9114",
-      "name": "HTTP/3",
-      "@type": "Thing"
     },
     {
       "@id": "https://doi.org/10.5281/zenodo.7782262",
@@ -1014,49 +1623,44 @@
       "creditText": "(Anders et al. 2023)",
       "publisher": {
         "@id": "https://fairdo.org/"
+      },
+      "@reverse": {
+        "isBasedOn": [
+          {
+            "@id": "#fdo"
+          }
+        ],
+        "citation": [
+          {
+            "@id": "table3.html"
+          }
+        ]
       }
     },
     {
-      "@id": "#fdo-DOIPResponse",
-      "@type": "DefinedTerm",
-      "identifier": "0.DOIP/Response",
-      "name": "DOIP Response",
-      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=16"
-    },
-    {
-      "@id": "#fdo-requestId",
-      "@type": "DefinedTerm",
-      "name": "requestId",
-      "url": "https://www.dona.net/sites/default/files/2018-11/DOIPv2Spec_1.pdf#page=22"
-    },
-    {
-      "@id": "http://dbpedia.org/resource/Transmission_Control_Protocol",
-      "@type": "DefinedTerm",
-      "name": "Transmission Control Protocol",
-      "alternateName": "TCP/IP",
-      "url": "https://doi.org/10.17487/RFC9293"
-    },
-    {
-      "@id": "http://dbpedia.org/resource/Transport_Layer_Security",
-      "@type": "DefinedTerm",
-      "name": "Transport Layer Security",
-      "alternateName": "TLS",
-      "url": "https://doi.org/10.17487/RFC8446"
-    },
-    {
-      "@id": "http://dbpedia.org/resource/JSON_Web_Signature",
-      "@type": "DefinedTerm",
-      "name": "JSON Web Signature",
-      "alternateName": "JWS",
-      "url": "https://doi.org/10.17487/RFC7515"
-    },
-    {
-      "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx",
+      "@id": "https://hdl.handle.net/0.DOIP/DOIPV2.0",
       "@type": "CreativeWork",
-      "alternateName": "(Bonino et al. 2019)",
-      "name": "FAIR digital object framework v1.02",
-      "author": "Luiz Bonino, Peter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark Leggott, Carlo Zwölf",
-      "datePublished": "2019"
+      "name": "Digital Object Interface Protocol specification, version 2.0",
+      "publisher": {
+        "@id": "https://www.dona.net/"
+      },
+      "@reverse": {
+        "skos:narrowMatch": [
+          {
+            "@id": "#metamodel-Protocol"
+          }
+        ],
+        "isBasedOn": [
+          {
+            "@id": "#fdo"
+          }
+        ],
+        "citation": [
+          {
+            "@id": "table3.html"
+          }
+        ]
+      }
     },
     {
       "@id": "https://fairdigitalobjectframework.org/",
@@ -1064,18 +1668,106 @@
       "name": "FAIR Digital Object Framework Documentation",
       "creditText": "(Bonino 2022)",
       "datePublished": "2022",
-      "author": "Luiz Olavo Bonino da Silva Santos, Giancarlo Guizzardi, Tiago Prince Sales"
+      "author": "Luiz Olavo Bonino da Silva Santos, Giancarlo Guizzardi, Tiago Prince Sales",
+      "@reverse": {
+        "citation": [
+          {
+            "@id": "table3.html"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://www.dona.net/",
+      "@type": "Organization",
+      "name": "DONA Foundation",
+      "@reverse": {
+        "publisher": [
+          {
+            "@id": "https://hdl.handle.net/0.DOIP/DOIPV2.0"
+          }
+        ]
+      }
     },
     {
       "@id": "https://fairdo.org/",
       "@type": "Organization",
       "name": "FAIR Digital Objects Forum",
-      "url": "https://fairdo.org/"
+      "url": "https://fairdo.org/",
+      "@reverse": {
+        "publisher": [
+          {
+            "@id": "https://doi.org/10.5281/zenodo.7782262"
+          }
+        ]
+      }
     },
     {
-      "@id": "https://www.dona.net/",
-      "@type": "Organization",
-      "name": "DONA Foundation"
+      "@id": "https://github.com/GEDE-RDA-Europe/GEDE/blob/master/FAIR%20Digital%20Objects/FDOF/FAIR%20Digital%20Object%20Framework-v1-02.docx",
+      "@type": "CreativeWork",
+      "alternateName": "(Bonino et al. 2019)",
+      "name": "FAIR digital object framework v1.02",
+      "author": "Luiz Bonino, Peter Wittenburg, Bonnie Carroll, Alex Hardisty, Mark Leggott, Carlo Zwölf",
+      "datePublished": "2019",
+      "@reverse": {
+        "citation": [
+          {
+            "@id": "table3.html"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "table4.html",
+      "@type": [
+        "File",
+        "Table"
+      ],
+      "cssSelector": "#tbl:fdo-web-middleware",
+      "name": "Table 4",
+      "description": "Comparing FAIR Digital Object (with the DOIP 2.0 protocol (DONA 2018)) and Web technologies (using Linked Data) as middleware infrastructures (Zarras 2004) ",
+      "encodingFormat": [
+        "text/html",
+        {
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
+        }
+      ],
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          },
+          {
+            "@id": "main.html"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "table5.html",
+      "@type": [
+        "File",
+        "Table"
+      ],
+      "cssSelector": "#tbl:fair-data-maturity-model",
+      "name": "Table 5",
+      "description": "Assessing RDA’s FAIR Data Maturity Model (FAIR Data Maturity Model Working Group 2020; Bahim et al. 2020) (first 2 columns) against the FDO guidelines (Bonino et al. 2019), FDO implemented with the protocol DOIPv2 (DONA 2018), Linked Data Platform (LDP) (Bonino da Silva Santos, Guizzardi, and Sales 2022) and examples from Linked Data practices in general. (— indicates Unspecified, may be possible with additional conventions) ",
+      "encodingFormat": [
+        "text/html",
+        {
+          "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471"
+        }
+      ],
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          },
+          {
+            "@id": "main.html"
+          }
+        ]
+      }
     },
     {
       "@id": "table6.html",
@@ -1094,9 +1786,199 @@
       ]
     },
     {
+      "@id": "https://doi.org/10.48550/arXiv.2306.07436",
+      "name": "Evaluating FAIR Digital Object and Linked Data as distributed object systems (PDF)",
+      "@type": "ScholarlyArticle",
+      "datePublished": "2023-06-12",
+      "identifier": "https://doi.org/10.48550/arXiv.2306.07436",
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0001-9842-9718"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-1219-2137"
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-0183-6910"
+        }
+      ],
+      "description": "FAIR Digital Object (FDO) is an emerging concept that is highlighted by European Open Science Cloud (EOSC) as a potential candidate for building a ecosystem of machine-actionable research outputs. In this work we systematically evaluate FDO and its implementations as a global distributed object system, by using five different conceptual frameworks that cover interoperability, middleware, FAIR principles, EOSC requirements and FDO guidelines themself. We compare the FDO approach with established Linked Data practices and the existing Web architecture, and provide a brief history of the Semantic Web while discussing why these technologies may have been difficult to adopt for FDO purposes. We conclude with recommendations for both Linked Data and FDO communities to further their adaptation and alignment.",
+      "license": {
+        "@id": "http://spdx.org/licenses/CC-BY-4.0"
+      },
+      "version": "2",
+      "keywords": "Distributed, Parallel, and Cluster Computing (cs.DC), Networking and Internet Architecture (cs.NI), FOS: Computer and information sciences, FOS: Computer and information sciences, H.3; C.2",
+      "dateModified": "2023-06-14T00:03:40Z",
+      "publisher": {
+        "@id": "https://arxiv.org/"
+      },
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          }
+        ],
+        "sameAs": [
+          {
+            "@id": "main.html"
+          }
+        ]
+      }
+    },
+    {
       "@id": "https://arxiv.org/",
       "@type": "Organization",
-      "name": "arXiv"
+      "name": "arXiv",
+      "@reverse": {
+        "publisher": [
+          {
+            "@id": "https://doi.org/10.48550/arXiv.2306.07436"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9842-9718",
+      "@type": "Person",
+      "name": "Stian Soiland-Reyes",
+      "@reverse": {
+        "agent": [
+          {
+            "@id": "#table1-assessments"
+          }
+        ],
+        "author": [
+          {
+            "@id": "main.html"
+          },
+          {
+            "@id": "https://doi.org/10.48550/arXiv.2306.07436"
+          }
+        ],
+        "dct:creator": [
+          {
+            "@id": "#metamodel"
+          }
+        ],
+        "creator": [
+          {
+            "@id": "#metamodel"
+          },
+          {
+            "@id": "#fdo"
+          },
+          {
+            "@id": "#web"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0183-6910",
+      "@type": "Person",
+      "name": "Paul Groth",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "main.html"
+          },
+          {
+            "@id": "https://doi.org/10.48550/arXiv.2306.07436"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1219-2137",
+      "@type": "Person",
+      "name": "Carole Goble",
+      "@reverse": {
+        "author": [
+          {
+            "@id": "main.html"
+          },
+          {
+            "@id": "https://doi.org/10.48550/arXiv.2306.07436"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/471",
+      "@type": "DefinedTerm",
+      "name": "Hypertext Markup Language 5",
+      "alternateName": "HTML5",
+      "@reverse": {
+        "encodingFormat": [
+          {
+            "@id": "main.html"
+          },
+          {
+            "@id": "table1.html"
+          },
+          {
+            "@id": "table2.html"
+          },
+          {
+            "@id": "table3.html"
+          },
+          {
+            "@id": "table4.html"
+          },
+          {
+            "@id": "table5.html"
+          },
+          {
+            "@id": "table6.html"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/263",
+      "@type": "DefinedTerm",
+      "name": "ZIP Format",
+      "alternateName": "ZIP",
+      "@reverse": {
+        "encodingFormat": [
+          {
+            "@id": "https://zenodo.org/record/8075230/files/evaluating-fdo-and-ld-crate.zip"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://spdx.org/licenses/CC-BY-4.0",
+      "@type": "CreativeWork",
+      "name": "CC-BY-4.0",
+      "description": "Creative Commons Attribution 4.0 International",
+      "version": "4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "@reverse": {
+        "license": [
+          {
+            "@id": "./"
+          },
+          {
+            "@id": "https://doi.org/10.48550/arXiv.2306.07436"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://spdx.org/licenses/CC0-1.0",
+      "@type": "CreativeWork",
+      "name": "CC0-1.0",
+      "description": "Creative Commons Zero v1.0 Universal",
+      "version": "1.0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "@reverse": {
+        "license": [
+          {
+            "@id": "ro-crate-metadata.json"
+          }
+        ]
+      }
     }
   ]
 }
@@ -1106,7 +1988,9 @@
 <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script -->
 <script src="ro-crate-preview_files/ro-crate-dynamic.min.js"></script>
 
-<link rel="stylesheet" href="ro-crate-preview_files/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <meta charset='utf-8'/>
 <style>
@@ -1758,13 +2642,13 @@ We systematically evaluate FDO and its implementations as a global distributed o
             <th style="text-align:left;" class="prop">author<span>&nbsp;</span><a href="http://schema.org/author">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//orcid.org/0000-0002-2536-4906">José Carlos Martins Delgado</a></td>
             </tr><tr>
-            <th style="text-align:left;" class="prop">dct:title<span>&nbsp;</span><a href="http://purl.org/dc/terms/title">[?]</a></th>
+            <th style="text-align:left;" class="prop">dct:title</th>
             <td style='text-align:left'><span>A structural metamodel of resources and of their interactions</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">image<span>&nbsp;</span><a href="http://schema.org/image">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//link.springer.com/chapter/10.1007/978-3-319-31861-5_1/figures/5">Figure 1.5 in (Delgado 2018)</a></td>
             </tr><tr>
-            <th style="text-align:left;" class="prop">dct:creator<span>&nbsp;</span><a href="http://purl.org/dc/terms/creator">[?]</a></th>
+            <th style="text-align:left;" class="prop">dct:creator</th>
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//orcid.org/0000-0002-2536-4906">José Carlos Martins Delgado</a></li>
                         

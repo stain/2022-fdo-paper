@@ -43,7 +43,7 @@
                 "@id": "https://orcid.org/0000-0003-2277-5176"
               }
             ],
-            "description": "RO-Crate for the FDO Requirement Specification document, which specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
+            "description": "RO-Crate for the FDO Requirement Specification document PR-RequirementSpec-2.1-20221017, which specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
             "datePublished": "2023-10-07",
             "publisher": {
                 "@id": "https://orcid.org/0000-0001-9842-9718"
@@ -127,6 +127,22 @@
             "version": "2.1",
             "cite-as": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
           },        
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#create",
+            "@type": "CreateAction",
+            "startTime": "2023-10-07T10:10:46+02:00",
+            "endTime": "2023-10-07T12:51:46+02:00",
+            "actionStatus":  { "@id": "http://schema.org/CompletedActionStatus" },
+            "agent": {"@id": "https://orcid.org/0000-0001-9842-9718"},
+            "name": "Creating this RO-Crate",
+            "description": "By formalizing the requirements from PR-RequirementSpec-2.1-20221017",
+            "object": [
+              {"@id": "https://doi.org/10.5281/zenodo.7781926"}
+            ],
+            "result": {
+              "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
+            }
+          },
       {
         "@id": "https://doi.org/10.5281/zenodo.7781926",
         "@type": "HowTo",

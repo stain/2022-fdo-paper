@@ -50,7 +50,7 @@
           "@id": "https://orcid.org/0000-0003-2277-5176"
         }
       ],
-      "description": "RO-Crate for the FDO Requirement Specification document, which specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
+      "description": "RO-Crate for the FDO Requirement Specification document PR-RequirementSpec-2.1-20221017, which specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
       "datePublished": "2023-10-07",
       "publisher": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
@@ -73,7 +73,7 @@
       "maintainer": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
-      "name": "FDO Forum FDO Requirement Specifications Version 2.1",
+      "name": "FDO Forum FDO Requirement Specifications Version 2.1 (RO-Crate)",
       "version": "2.1",
       "cite-as": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
     },
@@ -138,7 +138,34 @@
           {
             "@id": "ro-crate-metadata.json"
           }
+        ],
+        "result": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#create"
+          }
         ]
+      }
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#create",
+      "@type": "CreateAction",
+      "startTime": "2023-10-07T10:10:46+02:00",
+      "endTime": "2023-10-07T12:51:46+02:00",
+      "actionStatus": {
+        "@id": "http://schema.org/CompletedActionStatus"
+      },
+      "agent": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "name": "Creating this RO-Crate",
+      "description": "By formalizing the requirements from PR-RequirementSpec-2.1-20221017",
+      "object": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.7781926"
+        }
+      ],
+      "result": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
       }
     },
     {
@@ -167,7 +194,7 @@
           "@id": "https://orcid.org/0000-0003-2277-5176"
         }
       ],
-      "name": "FDO Forum FDO Requirement Specifications Version 2.1",
+      "name": "FDO Forum FDO Requirement Specifications Version 2.1 (PDF)",
       "alternateName": "PR-RequirementSpec-2.1-20221017",
       "datePublished": "2022-10-27",
       "publisher": {
@@ -204,13 +231,18 @@
           {
             "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
           }
+        ],
+        "object": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#create"
+          }
         ]
       }
     },
     {
       "@id": "https://fairdo.org/",
       "@type": "Organization",
-      "name": "FAIR Digital OBject Forum",
+      "name": "FAIR Digital Object Forum",
       "@reverse": {
         "publisher": [
           {
@@ -291,6 +323,11 @@
         "maintainer": [
           {
             "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"
+          }
+        ],
+        "agent": [
+          {
+            "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#create"
           }
         ]
       }
@@ -916,7 +953,7 @@
           "@id": "https://codata.org/worldfair-global-cooperation-on-fair-data-policy-and-practice-a-major-two-year-project-starts-today/"
         }
       ],
-      "name": "Gr Note 1",
+      "name": "G3 Note 1",
       "position": "1",
       "text": "The FDO Forum will not become engaged in measuring FAIRness. Initiatives organised in the framework of RDA or CODATA are working on this topic.",
       "@reverse": {
@@ -1028,6 +1065,7 @@
     {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G7-note1",
       "@type": "HowToTip",
+      "name": "G7 Note 1",
       "citation": {
         "@id": "https://w3id.org/ro/doi/10.5281/TODO-WD-TypingFDOs"
       },
@@ -1370,9 +1408,13 @@
 }
 </script>
 
+    
+<!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script -->
 <script src="ro-crate-preview_files/ro-crate-dynamic.min.js"></script>
 
-<link rel="stylesheet" href="ro-crate-preview_files/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <meta charset='utf-8'/>
 <style>
@@ -1459,7 +1501,7 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><ul>
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
                         
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926%23generic-guidelines">Generic Guidelines</a></li>
                         
@@ -1483,6 +1525,9 @@ table.table {
             </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
             <th style="text-align:left;" class="prop">about<span>&nbsp;</span><a href="http://schema.org/about">[?]</a></th>
             <td style='text-align:left'><a href="#ro-crate-metadata.json">ro-crate-metadata.json</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">result<span>&nbsp;</span><a href="http://schema.org/result">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23create">Creating this RO-Crate</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1512,14 +1557,14 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">editor<span>&nbsp;</span><a href="http://schema.org/editor">[?]</a></th>
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -1550,14 +1595,14 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">editor<span>&nbsp;</span><a href="http://schema.org/editor">[?]</a></th>
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -1590,7 +1635,7 @@ table.table {
                         
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">publisher<span>&nbsp;</span><a href="http://schema.org/publisher">[?]</a></th>
@@ -1598,6 +1643,9 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">maintainer<span>&nbsp;</span><a href="http://schema.org/maintainer">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">agent<span>&nbsp;</span><a href="http://schema.org/agent">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23create">Creating this RO-Crate</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1627,7 +1675,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -1658,7 +1706,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -1689,7 +1737,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -1720,7 +1768,7 @@ table.table {
             <td style='text-align:left'><ul>
                         <li><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
                         
-                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></li>
+                        <li><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -1729,7 +1777,7 @@ table.table {
         </div>
         <hr/><br/><br/>
            <div>
-            <h3><a href="https://doi.org/10.5281/zenodo.7781926">Go to: </a> FDO Forum FDO Requirement Specifications Version 2.1</h3>
+            <h3><a href="https://doi.org/10.5281/zenodo.7781926">Go to: </a> FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</h3>
             
             
             
@@ -1742,7 +1790,7 @@ table.table {
             <td style='text-align:left'><a href="https://doi.org/10.5281/zenodo.7781926">https://doi.org/10.5281/zenodo.7781926</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>FDO Forum FDO Requirement Specifications Version 2.1</span></td>
+            <td style='text-align:left'><span>FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">@type</th>
             <td style='text-align:left'><span>HowTo</span></td>
@@ -1771,7 +1819,7 @@ table.table {
             <td style='text-align:left'><span>PR-RequirementSpec-2.1-20221017</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">publisher<span>&nbsp;</span><a href="http://schema.org/publisher">[?]</a></th>
-            <td style='text-align:left'><a href="#https%3A//fairdo.org/">FAIR Digital OBject Forum</a></td>
+            <td style='text-align:left'><a href="#https%3A//fairdo.org/">FAIR Digital Object Forum</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">version<span>&nbsp;</span><a href="http://schema.org/version">[?]</a></th>
             <td style='text-align:left'><span>2.1</span></td>
@@ -1801,6 +1849,9 @@ table.table {
             </tr><tr>
             <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">object<span>&nbsp;</span><a href="http://schema.org/object">[?]</a></th>
+            <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7782262%23create">Creating this RO-Crate</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1885,7 +1936,7 @@ table.table {
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">step<span>&nbsp;</span><a href="http://schema.org/step">[?]</a></th>
-            <td style='text-align:left'><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></td>
+            <td style='text-align:left'><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></td>
             </tr></tbody>
             </table>
         </div>
@@ -1982,7 +2033,7 @@ table.table {
             <td style='text-align:left'><a href="#https%3A//w3id.org/ro/doi/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">step<span>&nbsp;</span><a href="http://schema.org/step">[?]</a></th>
-            <td style='text-align:left'><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1</a></td>
+            <td style='text-align:left'><a href="#https%3A//doi.org/10.5281/zenodo.7781926">FDO Forum FDO Requirement Specifications Version 2.1 (PDF)</a></td>
             </tr></tbody>
             </table>
         </div>

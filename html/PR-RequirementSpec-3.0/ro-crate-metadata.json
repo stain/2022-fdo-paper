@@ -30,59 +30,6 @@
       "@type": "Dataset",
       "author": [
         {
-          "@id": "https://orcid.org/0000-0003-4098-0464"
-        },
-        {
-          "@id": "https://orcid.org/0000-0003-3538-0106"
-        },
-        {
-          "@id": "https://orcid.org/0000-0001-9842-9718"
-        },
-        {
-          "@id": "https://orcid.org/0000-0003-0158-2957"
-        },
-        {
-          "@id": "https://orcid.org/0000-0003-1254-7604"
-        },
-        {
-          "@id": "https://orcid.org/0000-0001-6337-8674"
-        },
-        {
-          "@id": "https://orcid.org/0000-0003-2277-5176"
-        }
-      ],
-      "description": "RO-Crate for the FDO Requirement Specification document specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
-      "datePublished": "2023-10-07",
-      "publisher": {
-        "@id": "https://orcid.org/0000-0001-9842-9718"
-      },
-      "hasPart": [
-        {
-          "@id": "https://doi.org/10.5281/zenodo.7782262"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generic-guidelines"
-        },
-        {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
-        }
-      ],
-      "identifier": "https://w3id.org/ro/doi/10.5281/zenodo.7782262",
-      "license": {
-        "@id": "http://spdx.org/licenses/CC-BY-4.0"
-      },
-      "maintainer": {
-        "@id": "https://orcid.org/0000-0001-9842-9718"
-      },
-      "name": "FDO Forum FDO Requirement Specifications Version 3.0 (RO-Crate)",
-      "version": "3.0",
-      "cite-as": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
-    },
-    {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262",
-      "@type": "Dataset",
-      "author": [
-        {
           "@id": "https://orcid.org/0000-0001-7337-3009"
         },
         {
@@ -134,7 +81,11 @@
           "@id": "https://orcid.org/0000-0002-5762-6747"
         }
       ],
-      "description": "RO-Crate for the FDO Requirement Specification document, which specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
+      "description": "RO-Crate for the FDO Requirement Specification document PR-RequirementSpec-3.0-20230112, which specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
+      "datePublished": "2023-10-07",
+      "publisher": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
       "editor": [
         {
           "@id": "https://orcid.org/0000-0003-4098-0464"
@@ -161,9 +112,29 @@
       "maintainer": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
+      "mentions": [
+        {"@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#create"}
+      ],
       "name": "FDO Forum FDO Requirement Specifications Version 3.0",
       "version": "3.0",
       "cite-as": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+    },
+    {
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#create",
+      "@type": "CreateAction",
+      "startTime": "2023-10-07T13:09:19+02:00",
+      "endTime": "2023-10-08T22:21:57+01:00",
+      "actionStatus":  { "@id": "http://schema.org/ActiveActionStatus" },
+      "agent": {"@id": "https://orcid.org/0000-0001-9842-9718"},
+      "name": "Creating this RO-Crate",
+      "description": "By updating RO-Crate for PR-RequirementSpec-2.1-20221017 with changes in PR-RequirementSpec-3.0-20230112",
+      "object": [
+        {"@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926"},
+        {"@id": "https://doi.org/10.5281/zenodo.7782262"}
+      ],
+      "result": {
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262"
+      }
     },
     {
       "@id": "https://doi.org/10.5281/zenodo.7782262",
