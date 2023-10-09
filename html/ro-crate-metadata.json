@@ -61,6 +61,12 @@
                 },
                 {
                     "@id": "#web"
+                },
+                {
+                    "@id": "PR-RequirementSpec-2.1/"
+                },
+                {
+                    "@id": "PR-RequirementSpec-3.0/"
                 }
             ]
         },
@@ -147,13 +153,7 @@
                 },
                 {
                     "@id": "table5.html"
-                },
-                {
-                    "@id": "PR-RequirementSpec-2.1/"
-                },
-                {
-                    "@id": "PR-RequirementSpec-3.0/"
-                }                
+                }
             ],
             "url": "https://s11.no/2023/phd/evaluating-fdo/"
         },
