@@ -88,10 +88,10 @@
           "@id": "https://doi.org/10.5281/zenodo.7782262"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generic-guidelines"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;generic-guidelines"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;fdo-requirements"
         }
       ],
       "identifier": "https://w3id.org/ro/doi/10.5281/zenodo.7782262",
@@ -102,7 +102,7 @@
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
       "mentions": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#create"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;create"
       },
       "name": "FDO Forum FDO Requirement Specifications Version 3.0",
       "publisher": {
@@ -271,10 +271,10 @@
       },
       "step": [
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generic-guidelines"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;generic-guidelines"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;fdo-requirements"
         }
       ],
       "version": "3.0",
@@ -449,7 +449,7 @@
       "version": "2.1"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR1",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR1",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -460,7 +460,7 @@
       "termCode": "FDO-FDOR1"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR10",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR10",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -472,7 +472,7 @@
       "termCode": "FDO-FDOR10"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR11",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR11",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -484,7 +484,7 @@
       "termCode": "FDO-FDOR11"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR2",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR2",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -495,7 +495,7 @@
       "termCode": "FDO-FDOR2"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR3",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR3",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -506,7 +506,7 @@
       "termCode": "FDO-FDOR3"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR4",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -516,12 +516,12 @@
       "position": "4",
       "termCode": "FDO-FDOR4",
       "itemListElement": [
-        {"@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4a"},
-        {"@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4b"}
+        {"@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR4a"},
+        {"@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR4b"}
       ]
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4a",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR4a",
       "@type": [
         "HowToDirection"
       ],
@@ -529,7 +529,7 @@
       "text": "optional kernel attributes which are defined by the FDO Forum"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4b",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR4b",
       "@type": [
         "HowToDirection"
       ],
@@ -537,7 +537,7 @@
       "text": "can include other community defined and registered attributes if machine actionability is guaranteed"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR5",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR5",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -548,7 +548,7 @@
       "termCode": "FDO-FDOR5"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR6",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR6",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -559,7 +559,7 @@
       "termCode": "FDO-FDOR6"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR7",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR7",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -570,7 +570,7 @@
       "termCode": "FDO-FDOR7"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR8",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR8",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -581,7 +581,7 @@
       "termCode": "FDO-FDOR8"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR9",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR9",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -593,7 +593,7 @@
       "termCode": "FDO-FDOR9"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR1",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR1",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -604,11 +604,11 @@
       "position": "1",
       "termCode": "FDO-GR1",
       "skos:exactMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR1"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;FDOR1"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR10",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR10",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -621,11 +621,11 @@
       "position": "10",
       "termCode": "FDO-GR10",
       "skos:exactMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR10"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;FDOR10"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR11",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR11",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -635,11 +635,11 @@
       "position": "11",
       "termCode": "FDO-GR11",
       "skos:exactMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR11"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;FDOR11"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR12",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR12",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -649,11 +649,11 @@
       "position": "12",
       "termCode": "FDO-GR12",
       "skos:exactMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR12"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;FDOR12"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR13",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR13",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -664,7 +664,7 @@
       "termCode": "FDO-GR13"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR14",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR14",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -675,7 +675,7 @@
       "termCode": "FDO-GR14"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR15",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR15",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -686,7 +686,7 @@
       "termCode": "FDO-GR15"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR2",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -694,24 +694,24 @@
       "alternateName": "FDOR-GR2",
       "description": "A PID resolves to a structured record (PID Record) compliant with a specified PID Profile which leads to resolution results that enable programmatic resolution from PID back to the FDO and its elements as specified by these requirements. PID Records represent the information characterizing FDOs and together with their resolving PIDs they can be themselves FDOs.",
       "itemListElement": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2-note1"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR2-note1"
       },
       "name": "FDO-GR2",
       "position": "2",
       "termCode": "FDO-GR2",
       "skos:closeMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR2"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;FDOR2"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2-note1",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR2-note1",
       "@type": "HowToTip",
       "name": "FDO-GR2 Note 1",
       "position": "1",
       "text": "The term “PID Record” is synonymous to the term “FDO Record”."
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR3",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR3",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -719,23 +719,23 @@
       "alternateName": "FDOR-GR3",
       "description": "If an FDO contains a structured bit-sequence, the structured PID record includes at least a reference to the location(s) where the bit-sequence encoding the content of a FAIR-DO (FDO) can be accessed and the type definition of the FDO. The structured record may also contain PIDs pointing to Metadata FDOs describing properties of the target FDO.",
       "itemListElement": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR3-note1"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR3-note1"
       },
       "name": "FDO-GR3",
       "position": "3",
       "termCode": "FDO-GR3",
       "skos:exactMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR3"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;FDOR3"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR3-note1",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR3-note1",
       "@type": "HowToTip",
       "name": "FDO-GR3 Note 1",
       "text": "Note that ‘location’ here means the network access point providing FDO access, not necessarily the network storage location of the underlying bits."
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR4",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR4",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -745,11 +745,11 @@
       "position": "4",
       "termCode": "FDO-GR4",
       "skos:closeMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR4"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;FDOR4"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR5",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR5",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -759,11 +759,11 @@
       "position": "5",
       "termCode": "FDO-GR5",
       "skos:closeMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR5"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;FDOR5"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR6",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR6",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -773,11 +773,11 @@
       "position": "6",
       "termCode": "FDO-GR6",
       "skos:closeMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR6"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;FDOR6"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR7",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR7",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -787,11 +787,11 @@
       "position": "7",
       "termCode": "FDO-GR7",
       "skos:exactMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR7"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;FDOR7"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR8",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR8",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -801,11 +801,11 @@
       "position": "8",
       "termCode": "FDO-GR8",
       "skos:closeMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR8"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;FDOR8"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR9",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR9",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -815,11 +815,11 @@
       "position": "9",
       "termCode": "FDO-GR9",
       "skos:closeMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#FDOR9"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;FDOR9"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR1",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR1",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -830,7 +830,7 @@
       "termCode": "FDO-PIDR1"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR2",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR2",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -841,7 +841,7 @@
       "termCode": "FDO-PIDR2"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR3",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR3",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -852,7 +852,7 @@
       "termCode": "FDO-PIDR3"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR4",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR4",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -863,7 +863,7 @@
       "termCode": "FDO-PIDR4"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR5",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR5",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -874,7 +874,7 @@
       "termCode": "FDO-PIDR5"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR6",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR6",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -885,7 +885,7 @@
       "termCode": "FDO-PIDR6"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR1",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-RESR1",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -896,7 +896,7 @@
       "termCode": "FDO-RESR1"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR2",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-RESR2",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -907,7 +907,7 @@
       "termCode": "FDO-RESR2"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G1",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G1",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -917,11 +917,11 @@
       "position": "1",
       "termCode": "G1",
       "skos:exactMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G1"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;G1"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G2",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G2",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -931,28 +931,28 @@
       "position": "2",
       "termCode": "G2",
       "skos:exactMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G2"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;G2"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G3",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G3",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
       "description": "FDOs must offer compliance with the FAIR principles through measurable indicators of FAIRness.",
       "itemListElement": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G3-note1"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G3-note1"
       },
       "name": "G3",
       "position": "3",
       "termCode": "G3",
       "skos:exactMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G3"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;G3"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G3-note1",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G3-note1",
       "@type": "HowToTip",
       "citation": [
         {
@@ -967,7 +967,7 @@
       "text": "The FDO Forum will not become engaged in measuring FAIRness. Initiatives organised in the framework of RDA or CODATA are working on this topic."
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G4",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G4",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -980,11 +980,11 @@
       "position": "4",
       "termCode": "G4",
       "skos:exactMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G4"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;G4"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G5",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G5",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -994,11 +994,11 @@
       "position": "5",
       "termCode": "G5",
       "skos:exactMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G5"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;G5"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G6",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G6",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -1008,28 +1008,28 @@
       "position": "6",
       "termCode": "G6",
       "skos:exactMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G6"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;G6"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G7",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G7",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
       "description": "FDOs need to support encapsulation, such that operations can be associated with FDOs of all types.",
       "itemListElement": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G7-note1"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G7-note1"
       },
       "name": "G7",
       "position": "7",
       "termCode": "G7",
       "skos:exactMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G7"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;G7"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G7-note1",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G7-note1",
       "@type": "HowToTip",
       "citation": {
         "@id": "https://doi.org/10.5281/zenodo.7825599"
@@ -1038,7 +1038,7 @@
       "text": "A typing system for FDOs is currently being worked out by FDO Forum"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G8",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G8",
       "@type": [
         "HowToStep",
         "DefinedTerm"
@@ -1048,35 +1048,35 @@
       "position": "8",
       "termCode": "G8",
       "skos:exactMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G8"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;G8"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G9",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G9",
       "@type": [
         "HowToStep",
         "DefinedTerm"
       ],
       "description": "FDOs need to comply with minimal agreed standards, e.g., for movement of FDOs between systems, for interaction with FDOs, etc., to guarantee FDO interoperability across heterogeneous systems.",
       "itemListElement": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G9-note1"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G9-note1"
       },
       "name": "G9",
       "position": "9",
       "termCode": "G9",
       "skos:exactMatch": {
-        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926#G9"
+        "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7781926;G9"
       }
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G9-note1",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G9-note1",
       "@type": "HowToTip",
       "name": "G9 Note 1",
       "position": "1",
       "text": "G9 needs to be amended when specific implementations have been made available as basis for FDOs and when additional standardization processes have been accomplished"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#create",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;create",
       "@type": "CreateAction",
       "actionStatus": {
         "@id": "schema:ActiveActionStatus"
@@ -1101,7 +1101,7 @@
       "startTime": "2023-10-07T13:09:19+02:00"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdo-requirements",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;fdo-requirements",
       "@type": [
         "HowToSection",
         "DefinedTermSet"
@@ -1109,127 +1109,127 @@
       "disambiguatingDescription": "FDO Requirements FDO-GR*, FDO-PIDR*, FDO-FDOR*, FDO-RESR*",
       "hasDefinedTerm": [
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR1"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR1"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR2"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR3"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR3"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR4"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR4"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR5"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR5"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR6"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR6"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR7"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR7"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR8"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR8"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR9"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR9"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR10"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR10"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR11"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR11"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR12"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR12"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR13"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR13"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR14"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR14"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR15"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR15"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR1"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR1"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR2"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR2"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR3"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR3"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR4"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR4"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR5"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR5"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR6"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR6"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR1"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR1"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR2"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR2"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR3"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR3"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR4"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR5"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR5"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR6"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR6"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR7"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR7"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR8"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR8"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR9"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR9"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR10"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR10"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR11"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR11"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR1"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-RESR1"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR2"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-RESR2"
         }
       ],
       "itemListElement": [
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;generalRequirements"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#pidLayer"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;pidLayer"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;fdoLayer"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#resourceLayer"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;resourceLayer"
         }
       ],
       "name": "FDO Requirements",
       "position": "2"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#fdoLayer",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;fdoLayer",
       "@type": "HowToSection",
       "citation": {
         "@id": "https://doi.org/10.5281/zenodo.7825572"
@@ -1238,98 +1238,98 @@
       "disambiguatingDescription": "FDO FDO Layer specifications FDO-FDOR1–FDO-FDOR11",
       "itemListElement": [
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR1"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR1"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR2"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR2"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR3"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR3"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR4"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR5"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR5"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR6"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR6"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR7"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR7"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR8"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR8"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR9"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR9"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR10"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR10"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR11"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-FDOR11"
         }
       ],
       "name": "FDO Layer Specifications",
       "position": "3"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generalRequirements",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;generalRequirements",
       "@type": "HowToSection",
       "disambiguatingDescription": "FDO general requirements FDO-GR1–FDO-GR15",
       "itemListElement": [
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR1"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR1"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR2"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR2"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR3"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR3"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR4"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR4"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR5"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR5"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR6"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR6"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR7"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR7"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR8"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR8"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR9"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR9"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR10"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR10"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR11"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR11"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR12"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR12"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR13"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR13"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR14"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR14"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-GR15"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-GR15"
         }
       ],
       "name": "General Requirements",
       "position": "1"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#generic-guidelines",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;generic-guidelines",
       "@type": [
         "HowToSection",
         "DefinedTermSet"
@@ -1338,94 +1338,94 @@
       "disambiguatingDescription": "Generic FDO guidelines G1–G9",
       "hasDefinedTerm": [
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G1"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G1"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G2"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G2"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G3"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G3"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G4"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G4"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G5"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G5"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G6"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G6"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G7"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G7"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G8"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G8"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G9"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G9"
         }
       ],
       "itemListElement": [
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G1"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G1"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G2"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G2"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G3"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G3"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G4"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G4"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G5"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G5"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G6"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G6"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G7"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G7"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G8"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G8"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#G9"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;G9"
         }
       ],
       "name": "Generic Guidelines",
       "position": "1"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#pidLayer",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;pidLayer",
       "@type": "HowToSection",
       "disambiguatingDescription": "FDO PID Layer specifications FDO-PIDR1–FDO-PIDR6",
       "itemListElement": [
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR1"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR1"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR2"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR2"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR3"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR3"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR4"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR4"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR5"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR5"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-PIDR6"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-PIDR6"
         }
       ],
       "name": "PID Layer Specifications",
       "position": "2"
     },
     {
-      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#resourceLayer",
+      "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;resourceLayer",
       "@type": "HowToSection",
       "citation": {
         "@id": "https://doi.org/10.5281/zenodo.7825572"
@@ -1434,10 +1434,10 @@
       "disambiguatingDescription": "FDO Resource Layer specifications FDO-RESR1–FDO-RESR2",
       "itemListElement": [
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR1"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-RESR1"
         },
         {
-          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-RESR2"
+          "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262;FDO-RESR2"
         }
       ],
       "name": "Resource Layer Specifications",
