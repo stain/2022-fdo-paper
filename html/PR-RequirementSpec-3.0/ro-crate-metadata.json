@@ -73,7 +73,7 @@
           "@id": "https://orcid.org/0000-0002-5762-6747"
         }
       ],
-      "datePublished": "2023-10-09",
+      "datePublished": "2023-10-09",      
       "description": "RO-Crate for the FDO Requirement Specification document PR-RequirementSpec-3.0-20230112, which specifies the criteria which digital entities need to fulfill to be accepted as FAIR Digital Objects. These specifications need to be adhered to by all implementations that claim to be FDO compliant. The requirements are written at a level that allows for different implementations. The specifications are split into generic guidelines to characterize the landscape in which FDOs will exist and more specific requirements.",
       "editor": [
         {
@@ -467,6 +467,7 @@
       ],
       "description": "Every FDO Type and type is associated with a PID which resolves to the FDO that includes the type definition. So it is of type FDO type definition.",
       "name": "FDO-FDOR10",
+      "alternateName": "FDO-FDO10",
       "position": "10",
       "termCode": "FDO-FDOR10"
     },
@@ -478,6 +479,7 @@
       ],
       "description": "The FDO Type Framework specifies methods for defining types for and attaching types to FDOs",
       "name": "FDO-FDOR11",
+      "alternateName": "FDO-FDO11",
       "position": "11",
       "termCode": "FDO-FDOR11"
     },
@@ -490,7 +492,7 @@
       "description": "The FDO record consists of a set of attribute-value pairs as defined by the FDO Profile and all used attributes need to be defined and registered according to the type specification schema.",
       "name": "FDO-FDOR2",
       "position": "",
-      "termCode": "FDO-FDO2"
+      "termCode": "FDO-FDOR2"
     },
     {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR3",
@@ -512,7 +514,7 @@
       "description": "FDO records can include a) optional kernel attributes which are defined by the FDO Forum or b) can include other community defined and registered attributes if machine actionability is guaranteed.",
       "name": "FDO-FDOR4",
       "position": "4",
-      "termCode": "FDO-FDO4",
+      "termCode": "FDO-FDOR4",
       "itemListElement": [
         {"@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4a"},
         {"@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR4b"}
@@ -541,9 +543,9 @@
         "DefinedTerm"
       ],
       "description": "In the canonical case that an FDO includes bit-sequences encoding FDO content, the attribute-value set must contain the reference to these bit-sequences and a rich metadata description as requested by the FAIR principles.",
-      "name": "FDO-FDO5",
+      "name": "FDO-FDOR5",
       "position": "5",
-      "termCode": "FDO-FDO5"
+      "termCode": "FDO-FDOR5"
     },
     {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR6",
@@ -554,7 +556,7 @@
       "description": "Every FDO must have an FDO Type, facilitating automated machine validation and processing of the FDO.",
       "name": "FDO-FDOR6",
       "position": "6",
-      "termCode": "FDO-FDO6"
+      "termCode": "FDO-FDOR6"
     },
     {
       "@id": "https://w3id.org/ro/doi/10.5281/zenodo.7782262#FDO-FDOR7",
@@ -586,6 +588,7 @@
       ],
       "description": "The type of an FDO is specified using an agreed upon syntactic description that may be structured and dependent on components that are themselves FDOs. This syntactic description is called FDO Type definition in the following and is an FDO itself and thus FAIR compliant.",
       "name": "FDO-FDOR9",
+      "alternateName": "FDO-FDO9",
       "position": "9",
       "termCode": "FDO-FDOR9"
     },
@@ -1082,7 +1085,7 @@
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
       "description": "This RO-Crate was made by updating the RO-Crate for PR-RequirementSpec-2.1-20221017 with changes in PR-RequirementSpec-3.0-20230112. Additional HowToSteps are added by splitting the numbered requirement text. Citations have been formalized with the closest published DOI in Zenodo rather than Google Docs as in upstream document. Inconsistent FDOR-GR/FDO-GR identifiers have been normalized, such assumed typos are indicated by alternateName.",
-      "endTime": "2023-10-09T00:45:10+01:00",
+      "endTime": "2023-10-09T15:44:54+01:00",
       "name": "Creating this RO-Crate",
       "object": [
         {
