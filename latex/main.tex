@@ -82,9 +82,7 @@ An \href{https://w3id.org/ro/doi/10.5281/zenodo.8075229}{RO-Crate for this artic
 
 \section*{Introduction}\label{sec:introduction}
 
-The FAIR principles \autocite{wilkinsonFAIRGuidingPrinciples2016e} encourage sharing of scientific data with machine-readable metadata and the use of interoperable formats, and are being adapted by a wide range of research infrastructures. They have been recognised by the research community and policy makers as a goal to strive for \autocite{h2020fair2016}. In particular, the European Open Science Cloud (\href{https://www.eosc.eu/}{EOSC}) has promoted adaptation of FAIR data sharing of data resources across electronic research infrastructures \autocite{monsCloudyIncreasinglyFAIR2017b}. The EOSC Interoperability Framework \autocite{corchoEOSCInteroperabilityFramework2021b} puts particular emphasis on how interoperability can be achieved technically, semantically, organisationally, and legally -- laying out a vision of how data, publication, software and services can work together to form an ecosystem of digital objects that are extensively described by connecting to range of information ranging from protocols and presentations to hardware designs and scientific workflows including extensive metadata for all this information.
-
-
+The FAIR principles \autocite{wilkinsonFAIRGuidingPrinciples2016e} encourage sharing of scientific data with machine-readable metadata and the use of interoperable formats, and are being adapted by a wide range of research infrastructures. They have been recognised by the research community and policy makers as a goal to strive for \autocite{h2020fair2016}. In particular, the European Open Science Cloud (\href{https://www.eosc.eu/}{EOSC}) has promoted adaptation of FAIR data sharing of data resources across electronic research infrastructures \autocite{monsCloudyIncreasinglyFAIR2017b}. The EOSC Interoperability Framework \autocite{corchoEOSCInteroperabilityFramework2021b} puts particular emphasis on how interoperability can be achieved technically, semantically, organisationally, and legally -- laying out a vision of how data, publication, software and services can work together to form an ecosystem of digital objects that are extensively described. Such descriptions for interoperability connect a range of information -- from protocols and presentations, to hardware designs and scientific workflows, including extensive metadata of the information itself.
 
 Specifically, the EOSC Interoperability framework highlights the emerging FAIR Digital Object (FDO) concept \autocite{schultesFAIRPrinciplesDigital2019a} as a possible foundation for building a semantically interoperable ecosystem to fully realise the FAIR principles beyond individual repositories and infrastructures. The FDO approach has great potential, as it proposes strong requirements for identifiers, types, access and formalises interactive operations on objects.
 
@@ -129,7 +127,7 @@ From this it becomes apparent that there is a potentially large overlap between 
 
 \subsubsection*{Next steps for FDO}\label{sec:next-step-fdo}
 
-The FAIR Digital Object Forum \autocite{FAIRDigitalObjects} working groups have prepared detailed requirement documents \autocite{fdo-Specs} setting out the path for realising FDOs, named \emph{FDO Recommendations}. As of 2023-06-17, most of these documents are open for public review, while some are still in draft stages for internal review.  We provide an overview of these documents in Appendix \ref{appendixfdo}. These documents clarify the future aims and focus of FAIR Digital Objects \autocite{fdo-Roadmap}.  Except for the DOIP endorsement, all of these documents are conceptual, in the sense that they permit any technical implementation of FDO, if used according to the recommendations. Going forward a key strategy of the Forum is the use of profiles to help define specific attributes in metadata that are necessary for domains or application contexts. However, these are not yet fully implemented in the implementations considered here. 
+The FAIR Digital Object Forum \autocite{FAIRDigitalObjects} working groups have prepared detailed requirement documents \autocite{fdo-Specs} setting out the path for realising FDOs, named \emph{FDO Recommendations}. As of 2023-06-17, most of these documents are open for public review, while some are still in draft stages for internal review.  We provide an overview of these documents in Appendix \ref{sec:appendixfdo}. These documents clarify the future aims and focus of FAIR Digital Objects \autocite{fdo-Roadmap}.  Except for the DOIP endorsement, all of these documents are conceptual, in the sense that they permit any technical implementation of FDO, if used according to the recommendations. Going forward a key strategy of the Forum is the use of profiles to help define specific attributes in metadata that are necessary for domains or application contexts. However, these are not yet fully implemented in the implementations considered here. 
 
 Existing FDO implementations \autocite{wittenburgFAIRDigitalObject2022b} are thus not fully consolidated in choices such as protocols, type systems and serialisations -- this divergence and corresponding additional technical requirements mean that FDOs are not yet in a single ecosystem. 
 
@@ -175,7 +173,7 @@ Linked Data provides technologies that have evolved over time to satisfy its pri
 
 
 
-\section*{Method}
+\section*{Methods}\label{sec:methods}
 
 Our main motivation for this article is to investigate how FAIR Digital Objects may differ from the learnt experiences of Linked Data and the Web. We also aim to reflect back from FDO's motivation of machine-actionability to consider the Web as a distributed computational system.
 
@@ -195,7 +193,7 @@ To better understand the relationship between the FDO framework and other existi
   EOSC Interoperability Framework \autocite{corchoEOSCInteroperabilityFramework2021b} which gives recommendations for technical, semantic, organisational and legal interoperability, particularly from a metadata perspective.
 \end{enumerate}
 
-Conceptual framework 1, 3, 5 are more general look at existing views of interoperability between systems whereas frameworks 2 and 4 are developed specifically addressing FAIR principles. 
+Conceptual framework 1, 3, 5 consider more general views of interoperability between systems, whereas frameworks 2 and 4 are developed specifically for addressing FAIR principles. 
 
 The reason for this wide-ranged comparison is to exercise the different dimensions that together form FAIR Digital Objects: Data, Metadata, Service, Access, Operations, Computation.
 We have left out further considerations on type systems, persistent identifiers and social aspects as principles and practices within these dimensions are still taking form within the FDO community.
@@ -206,7 +204,7 @@ Some of these frameworks invite a comparison on a conceptual level, while others
 
 For all our comparisons, our process was to perform a mapping between the relevant specifications and/or implementation and the given conceptual model through detailed reading of the defining documents. We aim in all cases for traceability between the given specification and our mapping such that readers can validate our analysis. 
 
-\section*{Results}
+\section*{Results}\label{sec:results}
 
 \subsection*{Considering FDO/Web as interoperability framework for Fast Data}\label{sec:interoperability-compare}
 
@@ -231,7 +229,7 @@ It is also a question as to whether a highly constrained protocol revolving arou
 
 The Interoperability Framework for Fast Data also provides a brief \emph{metamodel} which we use in Table \vref{tbl:metamodel-concepts} to map and examplify corresponding concepts in FDO's DOIP realization and the Web using HTTP semantics \autocite{rfc9110}. 
 
-From this mapping\footnote{An equivalent SKOS mapping \autocite{w3-skos-primer} is provided as part of the \href{https://w3id.org/ro/doi/10.5281/zenodo.8075229}{RO-Crate for this article} \autocite{soilandreyes2023}.} we can identify the conceptual similarities between DOIP and HTTP, often with common terminology. Notable are that neither DOIP or HTTP have strong support for transactions (explored further \vpageref{sec:middleware}), as well that HTTP has poor direct support for processes, as the Web is primarily stateless by design.
+From this mapping\footnote{A SKOS mapping \autocite{w3-skos-primer} is provided as part of the \href{https://w3id.org/ro/doi/10.5281/zenodo.8075229}{RO-Crate for this article} \autocite{soilandreyes2023}.} we can identify the conceptual similarities between DOIP and HTTP, often with common terminology. Notable are that neither DOIP or HTTP have strong support for transactions (explored further \vpageref{sec:middleware}), as well that HTTP has poor direct support for processes, as the Web is primarily stateless by design.
 
 \input{table2}
 
@@ -239,13 +237,11 @@ From this mapping\footnote{An equivalent SKOS mapping \autocite{w3-skos-primer} 
 
 The FAIR Digital Object guidelines \autocite{boninoFAIRDigitalObject} sets out recommendations for FDO implementations. Note that the proposed update to FDO specification \autocite{fdo-RequirementSpec} clarifies these definitions with equivalent identifiers\footnote{Newer \autocite{fdo-RequirementSpec} renames \texttt{FDOF*} to \texttt{FDOR*} but follows same ordering.} and relates them to further FDO requirements such as FDO Data Type Registries.
 
-In Table \vref{tbl:fdo-checks}, we evaluate completeness of the guidelines in two current FDO realisations: 1) DOIPv2 \autocite{foundationDigitalObjectInterface} and 2) Linked Data Platform \autocite{w3-ldp}, as proposed by \textcite{FDOFramework}. For each realisation, we provide our analysis of that realization with respect to the FDO Guidline and also provide suggestions for that realization to meet the given guideline. 
+In Table \vref{tbl:fdo-checks}, we evaluate completeness of the guidelines in two current FDO realisations: 1) DOIPv2 \autocite{foundationDigitalObjectInterface} and 2) Linked Data Platform \autocite{w3-ldp}, as proposed by \textcite{FDOFramework}. We provide our analysis of each realization with respect to the FDO Guidline and also provide suggestions for that realization to meet the given guideline. 
 
-A key insight from this is that simply using DOIP does not achieve many of the FDO guidelines. Rather the guidelines set out how a protocol like DOIPs should be used to achieve FAIR Digital Object goals. The DOIP Endorsement \autocite{fdo-DOIPEndorsement} set out that to comply, DOIP must be used according to the set of FDO requirement documents and notes \emph{Achieving FDO compliance requires more than DOIP and full compliance is thus left to system designers}. Likewise, a Linked Data approach will need to follow the same requirements to actually comply as an FDO implementation.
+A key insight from this is that simply using DOIP does not achieve many of the FDO guidelines. Rather the guidelines set out how a protocol like DOIP should be used to achieve FAIR Digital Object goals. The DOIP Endorsement \autocite{fdo-DOIPEndorsement} set out that to comply, DOIP must be used according to the set of FDO requirement documents and notes \emph{Achieving FDO compliance requires more than DOIP and full compliance is thus left to system designers}. Likewise, a Linked Data approach will need to follow the same FDO requirements to actually comply as an FDO implementation.
 
 \subsubsection*{Observations}
-
-From our analysis, we can observe:
 
 \begin{itemize}
 \tightlist
@@ -310,8 +306,6 @@ Here we evaluate to what extent the FDO guidelines and its implementation with D
 
 
 \subsubsection*{Observations}
-
-From this evaluation, we observe:
 
 \begin{itemize}
 \tightlist
@@ -409,7 +403,7 @@ The FAIR and Linked Data communities likewise need to recognize the need for sim
 %This will allow any Linked Data resource to gradually participate in the FDO ecosystem, with minimal effort and non-intrusive implementation changes. FDO implementations like Cordra typically already use HTTP APIs that align with DOIP \autocite{DOIPAPIHTTPa}, these can be augmented with Signposting headers without necessarily moving to a Linked Data metadata model. 
 
 
-\section*{Conclusion}\label{conclusion}
+\section*{Conclusion}\label{sec:conclusion}
 
 In this work, we have considered FAIR Digital Objects (FDO) as a potential distributed object system for FAIR data and compared it with established Web approaches focusing on Linked Data. We have described the background of the Semantic Web and FAIR Digital Objects, and evaluated both using multiple conceptual frameworks.
 
@@ -456,7 +450,7 @@ Conceptualization, Methodology, Supervision, Writing -- review \& editing
 \clearpage
 
 \appendix
-\section{An overview of upcoming FDO specifications} \label{appendixfdo}
+\section{An overview of upcoming FDO specifications} \label{sec:appendixfdo}
 
 \textbf{FAIR Digital Object Overview and Specifications} \autocite{fdo-Overview} is a comprehensive overview of FAIR Digital Object specifications listed below. It serves as a primer that introduces FDO concepts and the remaining documents. It is accompanied by an FDO Glossary \autocite{fdo-Glossary}.
 
