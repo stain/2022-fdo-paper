@@ -69,8 +69,6 @@
 FAIR Digital Object (FDO) is an emerging concept that is highlighted by European Open Science Cloud (EOSC) as a potential candidate for building an ecosystem of machine-actionable research outputs. In this work we systematically evaluate FDO and its implementations as a global distributed object system, by using five different conceptual frameworks that cover interoperability, middleware, FAIR principles, EOSC requirements and FDO guidelines themself. 
 
 We compare the FDO approach with established Linked Data practices and the existing Web architecture, and provide a brief history of the Semantic Web while discussing why these technologies may have been difficult to adopt for FDO purposes. We conclude with recommendations for both Linked Data and FDO communities to further their adaptation and alignment.
-
-An \href{https://w3id.org/ro/doi/10.5281/zenodo.8075229}{RO-Crate for this article} is archived at \url{https://doi.org/10.5281/zenodo.8075229}
 \end{abstract}
 
 \begin{document}
@@ -108,7 +106,7 @@ Recently, FDOs have been recognised by the European Open Science Cloud (\href{ht
 
 \subsubsection*{FDO approaches}\label{sec:fdo-approaches}
 
-FDO is an evolving concept. A set of FDO Demonstrators \autocite{wittenburgFAIRDigitalObject2022b} highlights how current adapters are approaching implementations of FDO from different angles:
+FDO is an evolving concept. A set of FDO Demonstrators \autocite{wittenburgFAIRDigitalObject2022b} highlight how current adapters are approaching implementations of FDO from different angles:
 
 \begin{itemize}
 \tightlist
@@ -173,7 +171,7 @@ More human-readable syntaxes for RDF such as Turtle evolved at this time, and co
 
 Established Semantic Web services and standards include: SPARQL \autocite{w3-sparql11-overview} (pattern-based triple queries), \href{https://www.w3.org/TR/rdf11-concepts/\#section-dataset}{named graphs} \autocite{w3-rdf11-concepts} (triples expanded to \emph{quads} to indicate statement source or represent conflicting views), triple/quad stores (graph databases such as OpenLink Virtuoso, GraphDB, 4Store), mature RDF libraries (including Redland RDF, Apache Jena, Eclipse RDF4J, RDFLib, RDF.rb, rdflib.js), and  graph visualisation.
 
-RDF is one way to implement \emph{knowledge graphs}, a system of named edges and nodes\footnote{In RDF, each triple represent an edge that is named using its property URI, and the nodes are subject/object as URIs, blank nodes or (for objects) typed literal values \autocite{w3-rdf11-primer}.} \autocite{nurdiati2008}, which when used to represent a sufficiently detailed model of the world, can then be queried and processed to answer detailed research questions. The creation of RDF-based knowledge graphs grew particularly in fields like bioinformatics, e.g.~for describing genomes and proteins \autocite{gobleStateNationData2008c,williamsOpenPHACTSSemantic2012c}. In theory, the use of RDF by the life sciences would enable interoperability between the many data repositories and support combined views of the many aspects of bio-entities -- however in practice most institutions ended up making their own ontologies and identifiers, for what to the untrained eye would mean roughly the same. One can argue that the toll of adding the semantic logic system of rich ontologies meant that small, but fundamental, differences in opinion (e.g.~\emph{should a gene identifier signify just the particular DNA sequence letters, or those letters as they appear in a particular position on a human chromosome?}) led to large differences in representational granularity, and thus needed different identifiers.
+RDF is one way to implement \emph{knowledge graphs}, a system of named edges and nodes\footnote{In RDF, each triple represent an edge that is named using its property URI, and the nodes are subject/object as URIs, blank nodes or (for objects) typed literal values \autocite{w3-rdf11-primer}.} \autocite{nurdiati2008}, which when used to represent a sufficiently detailed model of the world, can then be queried and processed to answer detailed research questions. The creation of RDF-based knowledge graphs grew particularly in fields like bioinformatics, e.g.~for describing genomes and proteins \autocite{gobleStateNationData2008c,williamsOpenPHACTSSemantic2012c}. In theory, the use of RDF by the life sciences would enable interoperability between the many data repositories and support combined views of the many aspects of bio-entities -- however in practice most institutions ended up making their own ontologies and identifiers, for what to the untrained eye would mean roughly the same. One can argue that the toll of adding the semantic logic system of rich ontologies meant that small, but fundamental, differences in opinion (e.g.~\emph{should a gene identifier signify just the particular DNA sequence letters, or those letters as they appear in a particular position on a human chromosome?}) lead to large differences in representational granularity, and thus needed different identifiers.
 
 Facing these challenges, thanks to the use of universal identifiers in the form of URIs, \emph{mappings} could retrospectively be developed not just between resources, but also across vocabularies. Such mappings can be expressed themselves using lightweight and flexible RDF vocabularies such as SKOS \autocite{w3-skos-primer} (e.g.~\texttt{dct:title\ skos:closeMatch\ schema:name} to indicate near equivalence of two properties). Exemplifying the need for such cross-references, automated ontology mappings have identified large potential overlaps like 372 definitions of \texttt{Person} \autocite{huHowMatchableAre2011a}.
 
@@ -244,7 +242,7 @@ It is also a question as to whether a highly constrained protocol revolving arou
 
 The Interoperability Framework for Fast Data also provides a brief \emph{metamodel} which we use in Table \vref{tbl:metamodel-concepts} to map and examplify corresponding concepts in FDO's DOIP realization and the Web using HTTP semantics \autocite{rfc9110}. 
 
-From this mapping\footnote{An equivalent SKOS mapping \autocite{w3-skos-primer} is provided as part of the \href{https://w3id.org/ro/doi/10.5281/zenodo.8075229}{RO-Crate for this article} \autocite{soilandreyes2023}.} we can identify the conceptual similarities between DOIP and HTTP, often with common terminology. Notable are that neither DOIP or HTTP have strong support for transactions (explored further \vpageref{sec:middleware}), as well that HTTP has poor direct support for processes, as the Web is primarily stateless by design.
+From this mapping\footnote{An equivalent SKOS mapping \autocite{w3-skos-primer} is provided as part of the \href{https://w3id.org/ro/doi/10.5281/zenodo.8075229}{RO-Crate for this article} \autocite{stian_soiland_reyes_2023_8075230}.} we can identify the conceptual similarities between DOIP and HTTP, often with common terminology. Notable are that neither DOIP or HTTP have strong support for transactions (explored further \vpageref{sec:middleware}), as well that HTTP has poor direct support for processes, as the Web is primarily stateless by design.
 
 \input{table2}
 
@@ -435,9 +433,6 @@ This work was funded by the European Union programmes \emph{Horizon 2020} under 
 \end{small}
 
 We would like to acknowledge the FAIR Digital Object Forum \autocite{FAIRDigitalObjects} community and working groups, where SSR and CG are members. 
-
-Views and opinions expressed in this work are those of the authors only and do not necessarily reflect those of the funded projects, FAIR Digital Object Forum, European Union nor the European Commission. 
-
 
 \section*{Author contributions}
 \begin{small}
