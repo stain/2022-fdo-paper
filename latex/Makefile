@@ -20,7 +20,10 @@ latexmk=docker run -v `pwd`:/work -w /work -e TEXMFCACHE=/work/build/cache -u `i
 #biber=biber
 biber=docker run -v `pwd`:/work -w /work -e TEXMFCACHE=/work/build/cache -u `id -u` -it registry.gitlab.com/islandoftex/images/texlive:TL2023-2023-05-14-full biber
 
-all: build/main.pdf
+#latexdiff=latexdiff
+latexdiff=docker run -v `pwd`:/work -w /work -e TEXMFCACHE=/work/build/cache -u `id -u` -it registry.gitlab.com/islandoftex/images/texlive:TL2023-2023-05-14-full latexdiff 
+
+all: build/main.pdf build/diff.pdf build/main.html
 
 clean:
 	rm -rf build
@@ -34,5 +37,12 @@ build/main.pdf: *.tex bibliography.bib build/cache
 #	$(latexmk) main
 #
 
+build/diff.tex: main-peerj-first-submission.tex main.tex
+	$(latexdiff) --replace-context2cmd="\author" main-peerj-first-submission.tex main.tex > build/diff.tex
+	
+build/diff.pdf: build/diff.tex
+	$(latexmk) build/diff
+
 build/main.html: *.tex bibliography.bib
 	pandoc --filter pandoc-citeproc main.tex --bibliography=bibliography.bib -M link-citations=true -o build/main.html
+
