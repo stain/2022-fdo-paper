@@ -23,7 +23,7 @@ biber=docker run -v `pwd`:/work -w /work -e TEXMFCACHE=/work/build/cache -u `id 
 #latexdiff=latexdiff
 latexdiff=docker run -v `pwd`:/work -w /work -e TEXMFCACHE=/work/build/cache -u `id -u` -it registry.gitlab.com/islandoftex/images/texlive:TL2023-2023-05-14-full latexdiff 
 
-all: build/main.pdf build/diff.pdf build/main.html
+all: build/main.pdf build/diff.pdf build/main.html build/dist.zip
 
 clean:
 	rm -rf build
@@ -46,3 +46,6 @@ build/diff.pdf: build/diff.tex
 build/main.html: *.tex bibliography.bib
 	pandoc --filter pandoc-citeproc main.tex --bibliography=bibliography.bib -M link-citations=true -o build/main.html
 
+build/dist.zip: *.tex bibliography.bib
+	rm -f build/dist.zip
+	zip build/dist.zip latexmkrc main.tex table*tex bibliography.bib wlpeerjlua.cls
