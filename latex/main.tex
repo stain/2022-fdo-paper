@@ -76,7 +76,7 @@ FAIR Digital Object (FDO) is an emerging concept that is highlighted by European
 
 We compare the FDO approach with established Linked Data practices and the existing Web architecture, and provide a brief history of the Semantic Web while discussing why these technologies may have been difficult to adopt for FDO purposes. We conclude with recommendations for both Linked Data and FDO communities to further their adaptation and alignment.
 
-An \href{https://w3id.org/ro/doi/10.5281/zenodo.8075229}{RO-Crate for this article} is archived at \url{https://doi.org/10.5281/zenodo.8075229}
+An \href{https://w3id.org/ro/doi/10.5281/zenodo.8075229}{RO-Crate for this article} is archived at \url{https://doi.org/10.5281/zenodo.8075229}. 
 \end{abstract}
 
 \begin{document}
@@ -85,6 +85,7 @@ An \href{https://w3id.org/ro/doi/10.5281/zenodo.8075229}{RO-Crate for this artic
 \maketitle
 \thispagestyle{empty}
 
+\emph{An earlier version of this article was published as a preprint \autocite{soilandreyes2023evaluating}, which is embedded in the corresponding RO-Crate for this article \autocite{soilandreyes2023} and the PhD thesis \autocite{soilandreyesthesis}}.
 
 \section*{Introduction}
 \label{sec:introduction}
@@ -284,7 +285,7 @@ A key insight from this is that simply using DOIP does not achieve many of the F
 \item
   FDO collections are not yet defined for DOIP, while Linked Data seemingly have too many alternatives. LDP has specific native support for containers.
 \item
-  Tombstones for deleted resources are not well supported, nor specified, for either approach, although the continued availability of metadata when data is removed is a requirement for FAIR principles (see RDA-A2-01M in Table \vref{RDA-A2-01M} introduced by section \emph{Assessing FDO against FAIR}).
+  Tombstones for deleted resources are not well supported, nor specified, for either approach, although the continued availability of metadata when data is removed is a requirement for FAIR principles (RDA-A2-01M).
 %\vref{sec:fair-compare}
 \item
   DOIP supports multiple chunks of data for an object (FDOF3), while Linked Data can support content-negotiation. In either case it can be unclear to clients what is the meaning or equivalence of any additional chunks.
@@ -466,8 +467,6 @@ By implementing the goals of FAIR Digital Objects with the mature technology sta
 We would like to acknowledge the FAIR Digital Object Forum \autocite{FAIRDigitalObjects} community and working groups, where SSR and CG are members. 
 
 Views and opinions expressed in this work are those of the authors only and do not necessarily reflect those of the funded projects, FAIR Digital Object Forum, European Union nor the European Commission. 
-
-An earlier version of this article was published as a preprint \autocite{soilandreyes2023evaluating}, which is embedded in the corresponding RO-Crate for this article \autocite{soilandreyes2023} and the PhD thesis \autocite{soilandreyesthesis}.
 
 \section*{Author contributions}
 \begin{small}
